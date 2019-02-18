@@ -1,0 +1,36 @@
+{
+  "name": "sfeirschoolpwa",
+  "version": "1.0.0",
+  "description": "Sfeir School PWA with revealJS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./scss/pwa.scss -o ./css/ --source-map=true --watch=\"scss\" --recursive=\"scss\"",
+    "sass-once": "node-sass ./scss/pwa.scss -o ./css/ --source-map=true ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown/\"",
+    "start": "parallelshell \"npm run serve\" \"npm run sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefBinomed/SfeirSchoolTheme.git"
+  },
+  "keywords": [
+    "pwa",
+    "sfeir"
+  ],
+  "author": "jefbinomed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jefBinomed/SfeirSchoolTheme/issues"
+  },
+  "homepage": "https://github.com/jefBinomed/SfeirSchoolTheme#readme",
+  "dependencies": {
+    "chokidar-cli": "^1.2.1",
+    "cpx": "^1.5.0",
+    "highlight.js": "^9.13.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0",
+    "parallelshell": "3.0.1",
+    "reveal.js": "^3.7.0"
+  }
+}
