@@ -62,3 +62,6 @@ typings/
 
 #Max OS Files
 .DS_Store
+
+#SfeirSchoolSpecifics
+.tmp/

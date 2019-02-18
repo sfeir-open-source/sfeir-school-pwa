@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" ng-app="peopleApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020307">
+  <title>Sfeir People</title>
+
+  <link rel="manifest" href="manifest/manifest.json">
+
+  <link rel="stylesheet" href="/css/material-icons.css">
+  <link rel="stylesheet" href="/mdl/material.min.css">
+  <link rel="stylesheet" href="css/md-overwrite.css">
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <script src="/mdl/material.min.js"></script>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">
+          <a data-link="/home">
+            <img src="/img/logo-app.png" aria-label="People" alt="People">
+          </a>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a data-link="/people"><i class="material-icons">list</i></a>
+        </nav>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div id="root"></div>
+      </div>
+    </main>
+  </div>
+
+  <section id="shellToolbar" class="extend-toolbar">
+      <button id="installButton" class="mdl-button mdl-js-button mdl-button--fab mdl-button--primary">
+          <i class="material-icons">vertical_align_bottom</i>
+        </button>
+    </section>
+
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('service-worker.js')
+      .then(function () {
+        console.log('Service worker installed');
+      })
+      .catch(err => {
+        consle.error('Error registering Service Worker', err);
+      });
+    }
+  </script>
+  
+  <script>
+    const installButton = document.getElementById('installButton');
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      deferredEvent = e;
+      //Show button
+      installButton.classList.add('show');
+    });
+    var deferredEvent;
+    installButton.addEventListener('click', function onInstall() {
+      if (deferredEvent !== undefined) {
+        // The user has had a postive interaction with our app and Chrome
+        // has tried to prompt previously, so let's show the prompt.
+        deferredEvent.prompt();
+        // Follow what the user has done with the prompt.
+        deferredEvent.userChoice.then(function (choiceResult) {
+          console.log(choiceResult.outcome);
+          if (choiceResult.outcome == 'dismissed') {
+            console.log('User cancelled home screen install');
+          }
+          else {
+            console.log('User added to home screen');
+          }
+          installButton.classList.remove('show');
+          // We no longer need the prompt.  Clear it up.
+          deferredEvent = null;
+        });
+      }
+    });
+    function urlB64ToUint8Array(base64String) {
+        const padding = '='.repeat((4 - base64String.length % 4) % 4);
+        const base64 = (base64String + padding)
+        .replace(/\-/g, '+')
+        .replace(/_/g, '/');
+        const rawData = window.atob(base64);
+        const outputArray = new Uint8Array(rawData.length);
+        for (let i = 0; i < rawData.length; ++i) {
+        outputArray[i] = rawData.charCodeAt(i);
+        }
+        return outputArray;
+    }
+  </script>
+
+</body>
+
+</html>

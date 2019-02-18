@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="peopleApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020307">
+  <title>Sfeir People</title>
+
+  <!-- add your manifest.json file here -->
+
+  <link rel="stylesheet" href="/css/material-icons.css">
+  <link rel="stylesheet" href="/mdl/material.min.css">
+  <link rel="stylesheet" href="css/md-overwrite.css">
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <script src="/mdl/material.min.js"></script>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">
+          <a data-link="/home">
+            <img src="/img/logo-app.png" aria-label="People" alt="People">
+          </a>
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a data-link="/people"><i class="material-icons">list</i></a>
+        </nav>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div id="root"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- TODO: your script for init service worker -->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('service-worker.js')
+      .then(function () {
+        console.log('Service worker installed');
+      })
+      .catch(err => {
+        consle.error('Error registering Service Worker', err);
+      });
+    }
+  </script>
+
+</body>
+
+</html>

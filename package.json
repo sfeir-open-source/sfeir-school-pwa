@@ -1,0 +1,61 @@
+{
+  "name": "@sfeir/school-pwa200",
+  "version": "2.0.0-rc.1",
+  "description": "Exercices and demos for the PWA SFEIR School",
+  "contributors": [
+    {
+      "name": "Florian Orpelière",
+      "email": "florian.orpeliere@gmail.com"
+    },
+    {
+      "name": "Wassim Chegham",
+      "email": "github@wassimchegham.com"
+    },
+    {
+      "name": "Jean-Francois Garreau",
+      "email": "jean.francois.garreau@gmail.com"
+    },
+    {
+      "name": "Noël Macé",
+      "email": "contact@noelmace.com"
+    },
+    {
+      "name": "Cyril Balit",
+      "email": "balit.c@sfeir.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sfeir/pwa-200.git"
+  },
+  "keywords": [
+    "PWA, service worker, vanillajs, materials"
+  ],
+  "scripts": {
+    "start": "webpack-dev-server --step-$npm_config_step",
+    "dev": "webpack-dev-server"
+  },
+  "bugs": {
+    "url": "https://github.com/Sfeir/pwa-200/issues"
+  },
+  "homepage": "https://github.com/Sfeir/pwa-200#readme",
+  "dependencies": {
+    "normalize.css": "8.0.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "babel-core": "~6.26.3",
+    "babel-loader": "~7.1.4",
+    "babel-polyfill": "~6.26.0",
+    "babel-preset-env": "~1.7.0",
+    "css-loader": "~1.0.0",
+    "file-loader": "~2.0.0",
+    "html-webpack-harddisk-plugin": "~0.2.0",
+    "html-webpack-plugin": "~3.2.0",
+    "style-loader": "~0.23.0",
+    "url-loader": "~1.1.1",
+    "webpack": "~4.17.1",
+    "webpack-cli": "~3.1.0",
+    "webpack-dev-server": "~3.1.14"
+  }
+}

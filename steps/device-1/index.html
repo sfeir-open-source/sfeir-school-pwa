@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" ng-app="peopleApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020307">
+  <title>Sfeir People</title>
+
+  <!-- add your manifest.json file here -->
+  <link rel="manifest" href="manifest/manifest.json">
+
+  <!-- build:css(node_modules) css/vendor.css-->
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="angular-material/angular-material.min.css">
+  <!-- endbuild -->
+
+  <!-- build:css css/app.css-->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/md-overwrite.css">
+  <!-- endbuild -->
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+</head>
+<body>
+
+  <header>
+    <md-toolbar class="toolbar">
+      <div class="md-toolbar-tools">
+        <a href="#/home" class="toolbar-menu" layout="row" layout-align="center center">
+          <img src="img/logo-sfeir.svg" aria-label="sfeir" alt="Sfeir">
+        </a>
+        <span flex=""></span>
+        <a href="#/people" class="toolbar-menu" layout="row" layout-align="center center"><h1>People</h1></a>
+
+      </div>
+    </md-toolbar>
+  </header>
+
+  <section id="shellToolbar" class="extend-toolbar">
+    <button class="md-fab md-primary md-install md-button md-ink-ripple" type="button" id="installButton" aria-label="Install app">
+      <md-icon md-svg-src="img/md-install.svg"></md-icon>
+    </button>
+  </section>
+
+  <main class="view-container">
+    <div ng-view autoscroll="true" class="view-frame view-animate"></div>
+  </main>
+
+  <!-- here your script for init service worker -->
+  <script>
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('service-worker.js').then(function () {
+      console.log('Service worker installed');
+    });
+  }
+  const installButton = document.getElementById('installButton');
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    deferredEvent = e;
+    //Show button
+    installButton.classList.add('show');
+  });
+  var deferredEvent;
+  installButton.addEventListener('click', function onInstall() {
+    if (deferredEvent !== undefined) {
+      // The user has had a postive interaction with our app and Chrome
+      // has tried to prompt previously, so let's show the prompt.
+      deferredEvent.prompt();
+      // Follow what the user has done with the prompt.
+      deferredEvent.userChoice.then(function (choiceResult) {
+        console.log(choiceResult.outcome);
+        if (choiceResult.outcome == 'dismissed') {
+          console.log('User cancelled home screen install');
+        }
+        else {
+          console.log('User added to home screen');
+        }
+        installButton.classList.remove('show');
+        // We no longer need the prompt.  Clear it up.
+        deferredEvent = null;
+      });
+    }
+  });
+  </script>
+
+  <!-- build:js(node_modules) js/vendor.js-->
+  <script src="angular/angular.min.js"></script>
+  <script src="angular-route/angular-route.min.js"></script>
+  <script src="angular-animate/angular-animate.min.js"></script>
+  <script src="angular-material/angular-material.min.js"></script>
+  <script src="angular-aria/angular-aria.min.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:jsapp js/core.js-->
+  <script src="angularjs/app.module.js"></script>
+  <script src="angularjs/app.config.js"></script>
+  <script src="angularjs/home/home.module.js"></script>
+  <script src="angularjs/home/home.controller.js"></script>
+  <script src="angularjs/components/components.module.js"></script>
+  <script src="angularjs/components/services/people.service.js"></script>
+  <script src="angularjs/components/directives/people-card/people-card.js"></script>
+  <script src="angularjs/components/filters/capitalize.js"></script>
+
+  <script src="angularjs/components/filters/checkmark.js"></script>
+  <script src="angularjs/components/directives/scroll.js"></script>
+  <script src="angularjs/components/directives/errSrc.js"></script>
+  <script src="angularjs/components/directives/focus.js"></script>
+  <script src="angularjs/components/directives/search-bar/search-bar.js"></script>
+  <script src="angularjs/list/list.module.js"></script>
+  <script src="angularjs/list/list.controller.js"></script>
+  <script src="angularjs/details/details.module.js"></script>
+  <script src="angularjs/details/details.controller.js"></script>
+  <script src="angularjs/skills/skills.module.js"></script>
+  <script src="angularjs/skills/skills.controller.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
