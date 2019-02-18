@@ -40,7 +40,10 @@
   },
   "homepage": "https://github.com/Sfeir/pwa-200#readme",
   "dependencies": {
-    "normalize.css": "8.0.0"
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "lit-element": "^2.0.1",
+    "normalize.css": "8.0.0",
+    "pwa-helpers": "^0.9.1"
   },
   "private": true,
   "devDependencies": {
