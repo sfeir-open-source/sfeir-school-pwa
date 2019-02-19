@@ -3,7 +3,7 @@ import { PlainComponent } from "../../utils/component/PlainComponent";
 
 import "./Home.css";
 import { PeopleCardComponent } from "./PeopleCard";
-import {PeopleCard} from "./PeopleComponent";
+import {PeopleCard} from "./PeopleCardComponent";
 
 export class HomeComponent extends RoutedComponent {
   constructor(parent, { peoples }, appRouter) {

@@ -1,7 +1,7 @@
 import { RoutedComponent } from "../../utils/component/RoutedComponent";
 import { PlainComponent } from "../../utils/component/PlainComponent";
 import { PeopleCardComponent } from "./PeopleCard";
-import { PeopleCard } from './PeopleComponent';
+import { PeopleCard } from './PeopleCardComponent';
 
 export class PeopleComponent extends RoutedComponent {
   constructor(parent, { peoples }, appRouter) {
@@ -99,7 +99,7 @@ export class PeopleComponent extends RoutedComponent {
             ></people-card>
           `).join('')}
         `;
-        /* 
+        /*
         // TODO: optimization for re-rendering
         this.peopleCards = this.filteredPeople.map(people => ({
           component: new PeopleCardComponent(peopleCardsWrapper, this.appRouter),

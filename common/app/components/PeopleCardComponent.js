@@ -1,8 +1,5 @@
 import {LitElement, html} from 'lit-element';
-
-const capitalize = ([s, ...tring]) => [s.toUpperCase(), ...tring].join('');
-const mySplit = (string) => string ? string.split('@')[0] : '';
-
+import {capitalize, splitEmail} from '../../utils/helpers.js';
 
 export class PeopleCard extends LitElement {
     static get properties(){
@@ -19,7 +16,7 @@ export class PeopleCard extends LitElement {
         this.skillOn = skillOn;
         this.describe = describe;*/
     }
-    
+
     render(){
         return html`
             <link rel="stylesheet" href="./mdl/material.min.css">
@@ -30,7 +27,7 @@ export class PeopleCard extends LitElement {
                     display: block;
                 }
 
-                .mdl-card .mdl-card__media{
+                .mdl-card .mdl-card__media .thumb{
                   width: var(--card-media-width, 100%);
                 }
 
@@ -38,6 +35,20 @@ export class PeopleCard extends LitElement {
                 .mdl-card {
                     width: 100%;
                 }
+
+
+                .mdl-card a[href^=mailto],
+                .mdl-card a[href^=tel]{
+                    font-size:var(--card-font-size, 24px);
+                }
+
+                .first{
+                    box-shadow: 0px 1px 3px 0px #0168AB, 0px 1px 1px 0px #0168AB, 0px 2px 1px -1px #0168AB;
+                }
+
+
+
+
             </style>
             <div class="mdl-card mdl-shadow--4dp">
                 <div data-card-title>${this.title({people:this.people, describe: this.describe})}</div>
@@ -46,12 +57,12 @@ export class PeopleCard extends LitElement {
                     Manager :  <span>${this.people.manager}</span>
                     <br>
                     Location : <a href="http://www.sfeir.com/contact/">${this.people.entity}</a>
-                    ${this.people.entity == 'Sfeir-Benelux' ? 
-                    html`<a target="_blank" title="Locate" href="http://sfeirmaplux.appspot.com/#sferian/${mySplit(this.people.email)}">
+                    ${this.people.entity == 'Sfeir-Benelux' ?
+                    html`<a target="_blank" title="Locate" href="http://sfeirmaplux.appspot.com/#sferian/${splitEmail(this.people.email)}">
                     <md-icon md-svg-icon="img/md-map.svg"></md-icon>
                     </a>`
                     : this.people.entity == 'Sfeir-Paris' ?
-                    html`<a target="_blank" title="Locate" href="http://map.sfeir.com/#sferian/${mySplit(this.people.email)}">
+                    html`<a target="_blank" title="Locate" href="http://map.sfeir.com/#sferian/${splitEmail(this.people.email)}">
                         <md-icon md-svg-icon="img/md-map.svg"></md-icon>
                     </a>̀`
                     : ''
@@ -77,7 +88,7 @@ export class PeopleCard extends LitElement {
                             <md-icon md-people-random svg-icon="img/md-email.svg"></md-icon>
                             <a href="mailto:${people.name}<${people.email}>">${people.email}</a>
                         </div>
-                        ${people.contactInfoPro.mobilePhone ? 
+                        ${people.contactInfoPro.mobilePhone ?
                             html`<div>
                                 <md-icon md-svg-icon="img/md-phone.svg"></md-icon>
                                 <a href="tel:${people.contactInfoPro.mobilePhone}">${people.contactInfoPro.mobilePhone}</a>
@@ -124,7 +135,7 @@ export class PeopleCard extends LitElement {
             </div>
           </div>`
       }
-    
+
       tabInfo({ people, manager}) {
         return html`
           <md-tabs md-dynamic-height md-border-bottom class="tab-information">
@@ -149,20 +160,20 @@ export class PeopleCard extends LitElement {
             <md-tab disabled="${!manager.isManager}" label="Collaborateurs">
                 <md-content id="skills" class="md-padding">
                     <div layout="row" layout-wrap layout-align="space-around center">
-    
+
                     ${manager.collab.map(collab => html`
                         <p>
                           <a data-link="/people/${collab}">${collab}</a>
                         </p>
                     `).join()}
-    
+
                     </div>
                 </md-content>
             </md-tab>
           </md-tabs>
         `
       }
-    
+
       footer({ people }) {
         return html`
           <md-card-footer class="information-footer" layout="row" layout-wrap layout-align="center center">
@@ -195,7 +206,7 @@ export class PeopleCard extends LitElement {
           </md-card-footer>
         `
       }
-    
+
 
 }
 customElements.define('people-card', PeopleCard);

@@ -14,6 +14,12 @@ body {
   background-color: #FAFAFA !important;
 }
 
+.people-list-all form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 label{
   font-weight: normal;
 }
@@ -156,7 +162,8 @@ section > h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   --card-media-width: 100px;
-  
+  --card-font-size: 15px;
+
 }
 
 .people-card-list .mdl-card,
