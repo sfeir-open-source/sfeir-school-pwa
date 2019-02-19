@@ -3,6 +3,7 @@ import { PlainComponent } from "../../utils/component/PlainComponent";
 
 import "./Home.css";
 import { PeopleCardComponent } from "./PeopleCard";
+import {PeopleCard} from "./PeopleComponent";
 
 export class HomeComponent extends RoutedComponent {
   constructor(parent, { peoples }, appRouter) {
@@ -55,8 +56,13 @@ export class HomeComponent extends RoutedComponent {
         </div>
       `);
       const randomPeopleWrapper = this.content.container.querySelector('[data-people-card]');
-      this.peopleCard = new PeopleCardComponent(randomPeopleWrapper, this.appRouter);
-      this.peopleCard.render({ people: this.random });
+      //this.peopleCard = new PeopleCardComponent(randomPeopleWrapper, this.appRouter);
+      //this.peopleCard.render({ people: this.random });
+      randomPeopleWrapper.innerHTML += `
+          <people-card
+            people='${JSON.stringify(this.random)}'
+            ></people-card>
+      `
     }
   }
 }

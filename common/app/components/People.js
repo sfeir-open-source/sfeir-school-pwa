@@ -1,6 +1,7 @@
 import { RoutedComponent } from "../../utils/component/RoutedComponent";
 import { PlainComponent } from "../../utils/component/PlainComponent";
 import { PeopleCardComponent } from "./PeopleCard";
+import { PeopleCard } from './PeopleComponent';
 
 export class PeopleComponent extends RoutedComponent {
   constructor(parent, { peoples }, appRouter) {
@@ -89,7 +90,16 @@ export class PeopleComponent extends RoutedComponent {
       );
 
       const renderList = () => {
-        peopleCardsWrapper.innerHTML = '';
+        //peopleCardsWrapper.innerHTML = '';
+       peopleCardsWrapper.innerHTML = `
+          ${this.filteredPeople.map(people => `
+          <people-card
+            class="people-card-list-mode"
+            people='${JSON.stringify(people)}'
+            ></people-card>
+          `).join('')}
+        `;
+        /* 
         // TODO: optimization for re-rendering
         this.peopleCards = this.filteredPeople.map(people => ({
           component: new PeopleCardComponent(peopleCardsWrapper, this.appRouter),
@@ -98,6 +108,7 @@ export class PeopleComponent extends RoutedComponent {
         this.peopleCards.forEach(({ component, people }) => {
           component.render({ people, describe: false });
         });
+        /**/
       };
 
       renderList();

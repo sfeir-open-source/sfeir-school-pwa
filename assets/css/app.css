@@ -155,11 +155,14 @@ section > h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  --card-media-width: 100px;
   
 }
 
-.people-card-list .mdl-card{
+.people-card-list .mdl-card,
+.people-card-list people-card{
   margin-bottom: 10px;
+  width: 330px;
 }
 
 .people-card-list .mdl-card a[href^=mailto],
@@ -183,7 +186,7 @@ section > h1 {
   background-color: #FAFAFA;
 }
 
-.people-random .mdl-card{
+.people-random .mdl-card, .people-random people-card{
   margin: auto;
   width: 500px;
 }
