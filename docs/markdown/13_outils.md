@@ -42,3 +42,8 @@ Audits> "Run audits"
 CLI:
 
 npm i -g lighthouse lighthouse <url>
+
+Notes:
+Lighthouse, which you'll learn more about, has tools from the app and from the command line to help check security.
+
+--chrome-flags=”no-sandbox” pour linux
