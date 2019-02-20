@@ -9,6 +9,9 @@
 .reveal .slides section.sfeir-basic-slide h1.center-big {
   font-size: 3em; }
 
+/**
+Specifics
+*/
 .target-capacities {
   position: absolute;
   transform: rotateZ(270deg);
@@ -22,5 +25,23 @@
   color: gray;
   text-align: center;
   width: 100%; }
+
+.reveal section img[alt*=border-circle] {
+  border-radius: 300px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 25px; }
+
+.reveal section img[alt*=border-circle][alt*=red] {
+  background: red; }
+
+.reveal section img[alt*=border-circle][alt*=green] {
+  background: green; }
+
+.reveal section img[alt*=border-circle][alt*=blue] {
+  background: blue; }
+
+.reveal section img[alt*=border-circle][alt*=purple] {
+  background: purple; }
 
 /*# sourceMappingURL=pwa.css.map */
