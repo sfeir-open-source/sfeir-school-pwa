@@ -1,4 +1,26 @@
 .center {
   text-align: center; }
 
+.reveal .slides section.sfeir-basic-slide .center-big {
+  text-align: center;
+  font-size: 2.5em;
+  color: black; }
+
+.reveal .slides section.sfeir-basic-slide h1.center-big {
+  font-size: 3em; }
+
+.target-capacities {
+  position: absolute;
+  transform: rotateZ(270deg);
+  font-size: 2em;
+  color: gray;
+  top: 50%; }
+
+.target-touch {
+  position: absolute;
+  font-size: 2em;
+  color: gray;
+  text-align: center;
+  width: 100%; }
+
 /*# sourceMappingURL=pwa.css.map */
