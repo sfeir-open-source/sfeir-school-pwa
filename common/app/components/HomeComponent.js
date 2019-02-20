@@ -16,7 +16,7 @@ export class Home extends LitElement {
       async getPeoples() {
         this.peoples = await this.peoplesService.getPeoples();
         this.loading = false;
-        this.render();
+        this.requestUpdate();
       }
 
       get random() {

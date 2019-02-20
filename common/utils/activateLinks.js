@@ -3,8 +3,8 @@ export const activateLinks = (element, appRouter) => {
     const route = el.getAttribute('data-link');
     el.setAttribute('href', '');
     el.addEventListener('click', e => {
-      e.preventDefault();
-      appRouter.navigate(route);
+      //e.preventDefault();
+      //appRouter.navigate(route);
     });
   })
 }

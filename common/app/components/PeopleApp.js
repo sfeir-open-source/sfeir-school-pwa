@@ -12,12 +12,17 @@ export class PeopleApp extends LitElement{
             }else {
                 this.page = 'home';
             }
-            this.render();
+            this.requestUpdate();
             console.log(this.page)});
     }
 
     render(){
         return html`
+            <style>
+                :host {
+                    display: block;
+                }
+            </style>
             ${this.page === 'home' ?
                 html`<home-component></home-component>`
             :

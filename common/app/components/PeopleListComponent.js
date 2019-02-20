@@ -18,6 +18,7 @@ export class PeopleList extends LitElement {
         super();
         this.peoplesService = new PeoplesService();
         this.peoples = [];
+        this.peopleId = undefined;
         this.filteredPeople = [];
         this.loading = true;
         this.query = "";
@@ -26,16 +27,9 @@ export class PeopleList extends LitElement {
     async getPeoples() {
         this.loading = true;
         this.peoples = await this.peoplesService.getPeoples();
+        this.filteredPeople = this.peoples;
         this.loading = false;
-        this.render();
-    }
-
-    async init() {
-        const container = document.createElement("div");
-        this.usernamePrompt = new PlainComponent(container);
-        this.content = new PlainComponent(container);
-        this.container = this.parent.appendChild(container);
-        await this.getPeoples();
+        this.requestUpdate();
     }
 
     filterPeopleById(id) {
@@ -51,13 +45,12 @@ export class PeopleList extends LitElement {
         });
     }
 
-    async render() {
+    render() {
         if (this.peoples.length === 0) {
             this.getPeoples();
         }
-        this.filteredPeople = this.peoples;
         return html `
-        <link rel="stylesheet" href="./mdl/material.min.css">
+            <link rel="stylesheet" href="./mdl/material.min.css">
             <link rel="stylesheet" href="css/app.css">
             <link rel="stylesheet" href="css/md-overwrite.css">
             <style>
@@ -95,14 +88,14 @@ export class PeopleList extends LitElement {
                     </div>
                     </form>
                     `
-                : ''}
+                : html``}
                 <div class="people-card-list" data-people-cards-wrapper>
                 ${this.filteredPeople.map(people => html`
                     <people-card
                         class="people-card-list-mode"
                         people='${JSON.stringify(people)}'
                         ></people-card>
-                    `).join('')}
+                    `)}
                 </div>
             </div>
             `
