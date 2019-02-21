@@ -1,4 +1,10 @@
 
+<!-- .slide: class="transition-white sfeir-bg-blue" -->
+
+# Contexte
+
+##==##
+
 # Le mobile aujourd'hui
 
 ![center w-1000](./assets/images/dileme_app_mobile.png)
@@ -20,7 +26,7 @@ Elles sont en revanche limite dans leurs interactions avec le téléphone, car l
 
 ![center](./assets/images/alex_russel.png)
 
-* “There is now another way. An **evolution** has taken place in browsers.” 
+* “There is now another way. An **evolution** has taken place in browsers.”
 * “**Just websites** that took all the right vitamins.”
 * “Sites [..] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
 * “Thoughtful application design and construction will give early movers a **major advantage**”
