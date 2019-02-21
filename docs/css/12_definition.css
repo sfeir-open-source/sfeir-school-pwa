@@ -1,0 +1,33 @@
+.reveal .slides section .target-capacities {
+  position: absolute;
+  transform: rotateZ(270deg);
+  font-size: 2em;
+  color: gray;
+  top: 50%; }
+
+.reveal .slides section .target-touch {
+  position: absolute;
+  font-size: 2em;
+  color: gray;
+  text-align: center;
+  width: 100%; }
+
+.reveal .slides section img[alt*=border-circle] {
+  border-radius: 300px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 25px; }
+
+.reveal .slides section img[alt*=border-circle][alt*=red] {
+  background: red; }
+
+.reveal .slides section img[alt*=border-circle][alt*=green] {
+  background: green; }
+
+.reveal .slides section img[alt*=border-circle][alt*=blue] {
+  background: blue; }
+
+.reveal .slides section img[alt*=border-circle][alt*=purple] {
+  background: purple; }
+
+/*# sourceMappingURL=12_definition.css.map */

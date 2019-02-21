@@ -1,0 +1,34 @@
+@import 'pwa-colors.scss';
+
+.reveal .slides section {
+    .https {
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            color:#333;
+            text-align: left;
+            padding: 0;
+        }
+
+        hr{
+            height: 20px;
+            width: 100%;
+            box-shadow: 2px 2px 5px #212121
+        }
+
+        hr.blue{
+            background: $blue;
+        }
+
+        hr.red{
+            background: $red;
+        }
+
+        hr.green{
+            background: $green;
+        }
+    }
+}
