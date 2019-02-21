@@ -1,4 +1,4 @@
-.center {
+.reveal .slides section .center {
   text-align: center; }
 
 .reveal .slides section .big-text {
@@ -12,10 +12,19 @@
 .reveal .slides section.sfeir-basic-slide h1.center-big {
   font-size: 3em; }
 
-.reveal .slides section.with-code pre.big-code:not(.literal),
-.reveal .slides section.with-code-dark pre.big-code:not(.literal) {
+.reveal .slides section.with-code pre.big-code:not(.literal), .reveal .slides section.with-code-dark pre.big-code:not(.literal) {
   position: relative;
   top: 0; }
+
+.reveal .slides section img[alt*=full-width-screen] {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%; }
+
+.reveal .slides section img[alt*=bottom] {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 /**
 Specifics
