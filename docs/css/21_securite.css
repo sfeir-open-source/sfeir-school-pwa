@@ -1,57 +1,3 @@
-.center {
-  text-align: center; }
-
-.reveal .slides section .big-text {
-  font-size: 3em; }
-
-.reveal .slides section.sfeir-basic-slide .center-big {
-  text-align: center;
-  font-size: 2.5em;
-  color: black; }
-
-.reveal .slides section.sfeir-basic-slide h1.center-big {
-  font-size: 3em; }
-
-.reveal .slides section.with-code pre.big-code:not(.literal),
-.reveal .slides section.with-code-dark pre.big-code:not(.literal) {
-  position: relative;
-  top: 0; }
-
-/**
-Specifics
-*/
-.reveal .slides section .target-capacities {
-  position: absolute;
-  transform: rotateZ(270deg);
-  font-size: 2em;
-  color: gray;
-  top: 50%; }
-
-.reveal .slides section .target-touch {
-  position: absolute;
-  font-size: 2em;
-  color: gray;
-  text-align: center;
-  width: 100%; }
-
-.reveal .slides section img[alt*=border-circle] {
-  border-radius: 300px;
-  border-color: #dcdee0;
-  border-style: solid;
-  border-width: 25px; }
-
-.reveal .slides section img[alt*=border-circle][alt*=red] {
-  background: #dd311f; }
-
-.reveal .slides section img[alt*=border-circle][alt*=green] {
-  background: #249f5a; }
-
-.reveal .slides section img[alt*=border-circle][alt*=blue] {
-  background: #314ffe; }
-
-.reveal .slides section img[alt*=border-circle][alt*=purple] {
-  background: #773f9b; }
-
 .reveal .slides section .https .flex-col {
   display: flex;
   flex-direction: column; }
@@ -98,4 +44,4 @@ Specifics
   .reveal .slides section .grid-worker .cell-4 {
     grid-area: d; }
 
-/*# sourceMappingURL=pwa.css.map */
+/*# sourceMappingURL=21_securite.css.map */

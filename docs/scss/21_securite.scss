@@ -31,4 +31,38 @@
             background: $green;
         }
     }
+
+    .grid-worker {
+
+        color:white;
+        display:grid;
+        grid-template-columns: 50%;
+        grid-template-areas: "a b" "c d";
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+
+        h1 {
+            color:white;
+            text-transform: uppercase;
+        }
+        .cell-1, .cell-2, .cell-3, .cell-4{
+            justify-self: center;
+            padding-top: 100px;
+        }
+
+        .cell-1{
+            grid-area: a;
+        }
+        .cell-2{
+            grid-area: b;
+        }
+        .cell-3{
+            grid-area: c;
+        }
+        .cell-4{
+            grid-area: d;
+        }
+    }
 }
