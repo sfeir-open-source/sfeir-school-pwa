@@ -20,6 +20,48 @@
 /**
 Specifics
 */
+.reveal .slides section.exercice {
+  width: calc(100% - 200px);
+  height: calc(100% - 200px);
+  color: white;
+  padding-top: 200px;
+  padding-left: 200px;
+  position: relative; }
+  .reveal .slides section.exercice:before {
+    content: '';
+    background: url(../assets/images/exercice_logo.png) no-repeat;
+    position: absolute;
+    background-size: calc(1750px / 10) calc(2500px / 10);
+    left: 0;
+    top: 0;
+    width: calc(1750px / 10);
+    height: calc(2500px / 10); }
+  .reveal .slides section.exercice h1, .reveal .slides section.exercice h2, .reveal .slides section.exercice h3 {
+    all: unset;
+    position: absolute;
+    color: white;
+    font-size: 2em; }
+  .reveal .slides section.exercice h1 {
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+  .reveal .slides section.exercice h2 {
+    transform: rotateZ(270deg);
+    font-weight: 800;
+    top: 50%;
+    left: -100px;
+    text-shadow: -4px -4px grey; }
+  .reveal .slides section.exercice h3 {
+    font-size: 1.5em;
+    text-align: center;
+    bottom: 50px;
+    width: 100%;
+    left: 0; }
+  .reveal .slides section.exercice ul, .reveal .slides section.exercice p {
+    text-align: left;
+    font-size: 1.5em; }
+
 .reveal .slides section .target-capacities {
   position: absolute;
   transform: rotateZ(270deg);
