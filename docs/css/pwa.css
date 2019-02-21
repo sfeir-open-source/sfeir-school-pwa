@@ -25,8 +25,7 @@ Specifics
   height: calc(100% - 200px);
   color: white;
   padding-top: 200px;
-  padding-left: 200px;
-  position: relative; }
+  padding-left: 200px; }
   .reveal .slides section.exercice:before {
     content: '';
     background: url(../assets/images/exercice_logo.png) no-repeat;
