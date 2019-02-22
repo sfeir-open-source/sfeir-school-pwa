@@ -62,7 +62,7 @@ Demandez vous :
 
 # On install
 
-![center h-700](./assets/images/sw_mecanism.png)
+![center h-700](./assets/images/sw_install.png)
 
 ##==##
 
