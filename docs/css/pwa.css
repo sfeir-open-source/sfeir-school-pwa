@@ -151,4 +151,8 @@ Specifics
 .reveal .slides section.no-margin h1 {
   margin-top: 20px; }
 
+.reveal .slides section h1.border-orange {
+  padding: 30px;
+  background: orange; }
+
 /*# sourceMappingURL=pwa.css.map */
