@@ -155,4 +155,8 @@ Specifics
   padding: 30px;
   background: orange; }
 
+.reveal .slides section.mariane h1 {
+  position: absolute;
+  bottom: 0; }
+
 /*# sourceMappingURL=pwa.css.map */
