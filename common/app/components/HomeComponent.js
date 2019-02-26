@@ -37,6 +37,10 @@ export class Home extends LitElement {
                 :host {
                     display: block;
                 }
+                .home-spinner-wrapper {
+                  text-align: center;
+                  margin: 20px;
+                }
             </style>
 
             <div>
