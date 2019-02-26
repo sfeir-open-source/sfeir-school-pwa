@@ -1,14 +1,12 @@
 import "babel-polyfill";
 import { setupErrorListener } from "../../../common/utils/setupErrorListener";
-import { appRouter } from "./app-router";
+import "../../../../common/app/components/HomeComponent";
+import "../../../../common/app/components/PeopleCardComponent";
+import "./components/PeopleListComponent";
+import "../../../../common/app/components/PeopleApp";
 
 import 'normalize.css';
 import "../../../assets/css/app.css";
-import { activateLinks } from "../../../common/utils/activateLinks";
 
 setupErrorListener();
-
-appRouter.resolve();
-
-activateLinks(document, appRouter);
 

@@ -4,7 +4,7 @@ import {
 } from 'lit-element';
 import {
     PeoplesService
-} from '../sevices/People.js';
+} from '../../../../common/app/sevices/People.js';
 
 export class PeopleList extends LitElement {
 
@@ -22,6 +22,7 @@ export class PeopleList extends LitElement {
         this.filteredPeople = [];
         this.loading = true;
         this.query = "";
+        this.geolocQuerying = false;
     }
 
     async getPeoples() {
@@ -43,6 +44,49 @@ export class PeopleList extends LitElement {
             const name = `${people.firstname} ${people.lastname}`.toLowerCase();
             return name.includes(query);
         });
+    }
+
+    filterAccordingGeoloc(e){
+        if (!this.geolocQuerying){
+          // YOUR CODE HERE
+        } else {
+          this.getNearestAgency(null);
+          this.requestUpdate();
+        }
+        this.geolocQuerying = !this.geolocQuerying;
+        this.content.container.querySelector('#location-button i').innerHTML = this.geolocQuerying ? 'location_on' : 'location_off';
+      }
+    }
+
+    _deg2rad(deg) {
+	    return deg * (Math.PI/180);
+	  }
+
+    _getDistanceFromLatLongInKm(coord1, coord2) {
+    const RADIUS_EARTH = 6371; // Radius of the earth in km
+    const dLat = this._deg2rad(coord2.lat - coord1.lat);
+    const dLong = this._deg2rad(coord2.long - coord1.long);
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.cos(this._deg2rad(coord1.lat)) * Math.cos(this._deg2rad(coord2.lat)) *
+        Math.sin(dLong/2) * Math.sin(dLong/2)
+        ;
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    const d = RADIUS_EARTH * c; // Distance in km
+    return d;
+    }
+
+    getNearestAgency(coord) {
+    if (coord) {
+        const tempMapDistance = {};
+        const minDistance = Math.min(...this.peoples.map(people => {
+        const distance = this._getDistanceFromLatLongInKm(people.workCoords, coord)
+        tempMapDistance[people.id] = distance;
+        return distance;
+        }))
+        this.filteredPeople = this.peoples.filter(people => tempMapDistance[people.id] === minDistance);
+    } else {
+        this.filteredPeople = this.peoples;
+    }
     }
 
     render() {
@@ -86,6 +130,9 @@ export class PeopleList extends LitElement {
                         <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
                         </div>
                     </div>
+                    <label id="location-button" class="mdl-button mdl-js-button mdl-button--icon" @click="${this.filterAccordingGeoloc}">
+                        <i class="material-icons">location_off</i>
+                    </label>
                     </form>
                     `
                 : html``}

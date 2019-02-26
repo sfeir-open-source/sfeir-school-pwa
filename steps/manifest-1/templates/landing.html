@@ -20,19 +20,21 @@
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <span class="mdl-layout-title">
-          <a data-link="/home">
+          <a href="/home">
             <img src="/img/logo-app.png" aria-label="People" alt="People">
           </a>
         </span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation">
-          <a data-link="/people"><i class="material-icons">list</i></a>
+          <a href="/people"><i class="material-icons">list</i></a>
         </nav>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="page-content">
-        <div id="root"></div>
+        <div id="root">
+          <people-app></people-app>
+        </div>
       </div>
     </main>
   </div>

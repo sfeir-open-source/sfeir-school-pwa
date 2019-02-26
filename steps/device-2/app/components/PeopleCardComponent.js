@@ -17,6 +17,10 @@ export class PeopleCard extends LitElement {
         this.describe = describe;*/
     }
 
+    fullScreenToggle() {
+        // YOUR CODE HERE!!!
+    }
+
     render(){
         return html`
             <link rel="stylesheet" href="./mdl/material.min.css">
@@ -51,6 +55,9 @@ export class PeopleCard extends LitElement {
 
             </style>
             <div class="mdl-card mdl-shadow--4dp">
+                <label class="mdl-button mdl-js-button mdl-button--icon fullscreen-button" @click=${this.fullScreenToggle}>
+                    <i class="material-icons">fullscreen</i>
+                </label>
                 <div data-card-title>${this.title({people:this.people, describe: this.describe})}</div>
                 <div data-skills>${this.skillOn? this.skills({people:this.people}): ''}</div>
                 <div class="mdl-card__supporting-text">

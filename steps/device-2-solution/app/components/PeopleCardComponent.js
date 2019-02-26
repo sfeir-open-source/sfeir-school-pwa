@@ -17,6 +17,19 @@ export class PeopleCard extends LitElement {
         this.describe = describe;*/
     }
 
+    fullScreenToggle() {
+        const docEl = this.content.container;
+        const doc = window.document;
+        const requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+        const cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+        if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+            requestFullScreen.call(docEl);
+        }
+        else {
+            cancelFullScreen.call(doc);
+        }
+    }
+
     render(){
         return html`
             <link rel="stylesheet" href="./mdl/material.min.css">
@@ -51,6 +64,9 @@ export class PeopleCard extends LitElement {
 
             </style>
             <div class="mdl-card mdl-shadow--4dp">
+                <label class="mdl-button mdl-js-button mdl-button--icon fullscreen-button" @click=${this.fullScreenToggle}>
+                    <i class="material-icons">fullscreen</i>
+                </label>
                 <div data-card-title>${this.title({people:this.people, describe: this.describe})}</div>
                 <div data-skills>${this.skillOn? this.skills({people:this.people}): ''}</div>
                 <div class="mdl-card__supporting-text">
