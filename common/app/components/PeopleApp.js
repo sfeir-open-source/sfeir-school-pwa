@@ -5,11 +5,18 @@ export class PeopleApp extends LitElement{
     constructor(){
         super();
         this.page = 'home';
+        this.peopleId = undefined;
         installRouter((location)=> {
             console.log(location);
+            const pathRegex = /\/people\/([0-9]+)/;
             if (location.pathname === '/people'){
                 this.page = 'people';
+                this.peopleId = undefined;
+            }else if (pathRegex.test(location.pathname)){
+                this.page = 'people';
+                this.peopleId = pathRegex.exec(location.pathname)[1];
             }else {
+                this.peopleId = undefined;
                 this.page = 'home';
             }
             this.requestUpdate();
@@ -26,7 +33,12 @@ export class PeopleApp extends LitElement{
             ${this.page === 'home' ?
                 html`<home-component></home-component>`
             :
-                html`<people-list></people-list>`
+                html`${this.peopleId ?
+                    html`<people-list peopleid="${this.peopleId}"></people-list>`
+                    :
+                    html`<people-list></people-list>`
+                    }
+                `
             }
         `
     }

@@ -10,7 +10,7 @@ export class PeopleList extends LitElement {
 
     static get properties() {
         return {
-            peopleId: String
+            peopleid: String
         }
     }
 
@@ -18,7 +18,7 @@ export class PeopleList extends LitElement {
         super();
         this.peoplesService = new PeoplesService();
         this.peoples = [];
-        this.peopleId = undefined;
+        this.peopleid = undefined;
         this.filteredPeople = [];
         this.loading = true;
         this.query = "";
@@ -28,14 +28,14 @@ export class PeopleList extends LitElement {
     async getPeoples() {
         this.loading = true;
         this.peoples = await this.peoplesService.getPeoples();
-        this.filteredPeople = this.peoples;
+        this.filterPeopleById(this.peopleid);
         this.loading = false;
         this.requestUpdate();
     }
 
     filterPeopleById(id) {
         const people = this.peoples.find(people => id === ("" + people.id));
-        this.filteredPeople = people ? [people] : [];
+        this.filteredPeople = people ? [people] : this.peoples;
     }
 
     filterPeopleByName(str) {
@@ -94,9 +94,9 @@ export class PeopleList extends LitElement {
             this.getPeoples();
         }
         return html `
-            <link rel="stylesheet" href="./mdl/material.min.css">
-            <link rel="stylesheet" href="css/app.css">
-            <link rel="stylesheet" href="css/md-overwrite.css">
+            <link rel="stylesheet" href="/mdl/material.min.css">
+            <link rel="stylesheet" href="/css/app.css">
+            <link rel="stylesheet" href="/css/md-overwrite.css">
             <style>
                 :host {
                     display: block;
@@ -117,7 +117,7 @@ export class PeopleList extends LitElement {
             :
             html`
             <div class="people-list-all md-padding" layout="row" layout-wrap layout-align="center center">
-                ${!this.peopleId
+                ${!this.peopleid
                 ?
                     html`
                     <form>

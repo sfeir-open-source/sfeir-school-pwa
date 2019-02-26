@@ -30,9 +30,9 @@ export class Home extends LitElement {
         }
 
         return html`
-            <link rel="stylesheet" href="./mdl/material.min.css">
-            <link rel="stylesheet" href="css/app.css">
-            <link rel="stylesheet" href="css/md-overwrite.css">
+            <link rel="stylesheet" href="/mdl/material.min.css">
+            <link rel="stylesheet" href="/css/app.css">
+            <link rel="stylesheet" href="/css/md-overwrite.css">
             <style>
                 :host {
                     display: block;
