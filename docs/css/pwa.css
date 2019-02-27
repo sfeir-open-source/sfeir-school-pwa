@@ -74,6 +74,7 @@ Specifics
   position: absolute;
   transform: rotateZ(270deg);
   font-size: 2em;
+  left: -1em;
   color: gray;
   top: 50%; }
 
@@ -157,6 +158,8 @@ Specifics
 
 .reveal .slides section.mariane h1 {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  width: 100%;
+  color: white; }
 
 /*# sourceMappingURL=pwa.css.map */

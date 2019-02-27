@@ -2,6 +2,7 @@
   position: absolute;
   transform: rotateZ(270deg);
   font-size: 2em;
+  left: -1em;
   color: gray;
   top: 50%; }
 
