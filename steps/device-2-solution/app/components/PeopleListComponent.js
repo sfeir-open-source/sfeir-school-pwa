@@ -67,9 +67,8 @@ export class PeopleList extends LitElement {
           this.requestUpdate();
         }
         this.geolocQuerying = !this.geolocQuerying;
-        this.content.container.querySelector('#location-button i').innerHTML = this.geolocQuerying ? 'location_on' : 'location_off';
+        this.requestUpdate();
       }
-    }
 
     _deg2rad(deg) {
         return deg * (Math.PI/180);
@@ -144,7 +143,11 @@ export class PeopleList extends LitElement {
                         </div>
                     </div>
                     <label id="location-button" class="mdl-button mdl-js-button mdl-button--icon" @click="${this.filterAccordingGeoloc}">
-                        <i class="material-icons">location_off</i>
+                        ${this.geolocQuerying ? 
+                            html`<i class="material-icons">location_on</i>`
+                            : 
+                            html`<i class="material-icons">location_off</i>`
+                        } 
                     </label>
                     </form>
                     `

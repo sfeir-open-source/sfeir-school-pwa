@@ -1,5 +1,5 @@
 import {LitElement, html} from 'lit-element';
-import {capitalize, splitEmail} from '../../utils/helpers.js';
+import {capitalize, splitEmail} from '../../../../common/utils/helpers.js';
 
 export class PeopleCard extends LitElement {
     static get properties(){

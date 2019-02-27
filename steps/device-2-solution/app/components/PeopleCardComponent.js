@@ -1,5 +1,5 @@
 import {LitElement, html} from 'lit-element';
-import {capitalize, splitEmail} from '../../utils/helpers.js';
+import {capitalize, splitEmail} from '../../../../common/utils/helpers.js';
 
 export class PeopleCard extends LitElement {
     static get properties(){
@@ -17,8 +17,8 @@ export class PeopleCard extends LitElement {
         this.describe = describe;*/
     }
 
-    fullScreenToggle() {
-        const docEl = this.content.container;
+    fullScreenToggle(event) {
+        const docEl = this;
         const doc = window.document;
         const requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
         const cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;

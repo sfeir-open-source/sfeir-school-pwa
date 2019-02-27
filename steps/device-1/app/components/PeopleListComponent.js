@@ -54,25 +54,24 @@ export class PeopleList extends LitElement {
           this.requestUpdate();
         }
         this.geolocQuerying = !this.geolocQuerying;
-        this.content.container.querySelector('#location-button i').innerHTML = this.geolocQuerying ? 'location_on' : 'location_off';
-      }
+        this.requestUpdate();
     }
 
-    _deg2rad(deg) {
-	    return deg * (Math.PI/180);
-	  }
+    _deg2rad(deg){
+        return deg * (Math.PI/180);
+    }
 
     _getDistanceFromLatLongInKm(coord1, coord2) {
-    const RADIUS_EARTH = 6371; // Radius of the earth in km
-    const dLat = this._deg2rad(coord2.lat - coord1.lat);
-    const dLong = this._deg2rad(coord2.long - coord1.long);
-    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-        Math.cos(this._deg2rad(coord1.lat)) * Math.cos(this._deg2rad(coord2.lat)) *
-        Math.sin(dLong/2) * Math.sin(dLong/2)
-        ;
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-    const d = RADIUS_EARTH * c; // Distance in km
-    return d;
+        const RADIUS_EARTH = 6371; // Radius of the earth in km
+        const dLat = this._deg2rad(coord2.lat - coord1.lat);
+        const dLong = this._deg2rad(coord2.long - coord1.long);
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(this._deg2rad(coord1.lat)) * Math.cos(this._deg2rad(coord2.lat)) *
+            Math.sin(dLong/2) * Math.sin(dLong/2)
+            ;
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        const d = RADIUS_EARTH * c; // Distance in km
+        return d;
     }
 
     getNearestAgency(coord) {
@@ -131,7 +130,11 @@ export class PeopleList extends LitElement {
                         </div>
                     </div>
                     <label id="location-button" class="mdl-button mdl-js-button mdl-button--icon" @click="${this.filterAccordingGeoloc}">
-                        <i class="material-icons">location_off</i>
+                        ${this.geolocQuerying ? 
+                            html`<i class="material-icons">location_on</i>`
+                            : 
+                            html`<i class="material-icons">location_off</i>`
+                        }                        
                     </label>
                     </form>
                     `

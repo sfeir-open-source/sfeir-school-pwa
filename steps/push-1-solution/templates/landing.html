@@ -48,18 +48,38 @@
     </section>
 
   <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('service-worker.js')
-      .then(function () {
-        console.log('Service worker installed');
-      })
-      .catch(err => {
-        consle.error('Error registering Service Worker', err);
-      });
-    }
-  </script>
+    let swRegistration = null;
 
-  <script>
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('service-worker.js').then(function (swReg) {
+            console.log('Service worker installed');
+            swRegistration = swReg;
+            initializeUI();
+        });
+    }
+
+    function initializeUI() {
+        swRegistration.pushManager.getSubscription()
+        .then(function(subscription) {
+            isSubscribed = !(subscription === null);
+
+            updateSubscriptionOnServer(subscription);
+
+            if (isSubscribed) {
+            console.log('User IS subscribed.');
+            } else {
+            subscribeUser();
+            console.log('User is NOT subscribed.');
+            }
+        });
+    }
+
+    function updateSubscriptionOnServer(subscription) {
+        if (subscription) {
+            console.log(JSON.stringify(subscription));
+        }
+    }
+
     const installButton = document.getElementById('installButton');
     window.addEventListener('beforeinstallprompt', function (e) {
       e.preventDefault();
@@ -99,6 +119,41 @@
         outputArray[i] = rawData.charCodeAt(i);
         }
         return outputArray;
+    }
+    function subscribeUser() {
+        const applicationServerKey = urlB64ToUint8Array('BKY3p1_rua9VoEMI4XRT2UcvyW-1sN4LMXWkLTdIPZtULtvEVK144ELr1J8OZ1G77tTk1jL3CLcWsdSfVB1ssbM');
+        swRegistration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: applicationServerKey
+        })
+        .then(function(subscription) {
+        console.log('User is subscribed.');
+
+        updateSubscriptionOnServer(subscription);
+
+        isSubscribed = true;
+        })
+        .catch(function(err) {
+        console.log('Failed to subscribe the user: ', err);
+        });
+    }
+
+    function unsubscribeUser() {
+        swRegistration.pushManager.getSubscription()
+        .then(function(subscription) {
+        if (subscription) {
+            return subscription.unsubscribe();
+        }
+        })
+        .catch(function(error) {
+        console.log('Error unsubscribing', error);
+        })
+        .then(function() {
+        updateSubscriptionOnServer(null);
+
+        console.log('User is unsubscribed.');
+        isSubscribed = false;
+        });
     }
   </script>
 
