@@ -1,10 +1,18 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js');
 
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
 } else {
   console.log(`Boo! Workbox didn't load 😬`);
 }
+
+const preCache = [
+  {"url":"/index.html","revision":"7dc612bd22a1710ad8c318480f474ea5"}
+]
+
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(preCache, {});
+
 
 workbox.routing.registerRoute(
   // Cache CSS files
