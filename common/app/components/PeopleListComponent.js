@@ -45,6 +45,16 @@ export class PeopleList extends LitElement {
         });
     }
 
+    keyUpPeople(e){
+        const query = e.srcElement.value;
+        if (query.length > 2) {
+            this.filterPeopleByName(query);
+        } else {
+            this.filteredPeople = this.peoples;
+        }
+        this.performUpdate();
+    }
+
     render() {
         if (this.peoples.length === 0) {
             this.getPeoples();
@@ -82,7 +92,7 @@ export class PeopleList extends LitElement {
                         <i class="material-icons">search</i>
                         </label>
                         <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" id="pleople-search">
+                        <input class="mdl-textfield__input" type="text" id="pleople-search" @keyup="${this.keyUpPeople}">
                         <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
                         </div>
                     </div>
