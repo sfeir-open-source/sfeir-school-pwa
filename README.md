@@ -8,7 +8,7 @@ A [SFEIR School](https://www.sfeir.com/formation/school/)
 
 # Slides
 
-You can view the slides [here](https://docs.google.com/presentation/d/1PwG8OTCYcIeCZ5768ihpY7vEladmkmEKRLNU37fNuHU/edit?usp=sharing).
+You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-pwa/).
 
 # Run project
 
