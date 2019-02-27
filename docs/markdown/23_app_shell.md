@@ -23,8 +23,6 @@ https://github.com/GoogleChrome/application-shell/
 
 <br>
 Notes:
-https://developer.mozilla.org/fr/docs/Web/API/Fetch_API
-La méthode fetch() prend un argument obligatoire, le chemin vers la ressource souhaitée. Elle retourne une promesse qui résout la Response de cette requête, qu'elle soit couronnée de succès ou non. Vous pouvez aussi optionnellement lui passer un objet d'options init comme second argument (voir Request.)
 
 
 ##==##

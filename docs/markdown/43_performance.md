@@ -238,7 +238,7 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 # Chargement des scrtips tiers
 
-![h-300](./assets/images/load_scrip_order.png)
+![h-600](./assets/images/load_scrip_order.png)
 
 Notes:
 https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer

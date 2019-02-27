@@ -27,3 +27,6 @@
 <br><br>
 
 ![center h-600](./assets/images/offline_dinosaur.png)
+
+Notes:
+Cache-Only / Network-Only / Cache-First / Network-First / Fallback
