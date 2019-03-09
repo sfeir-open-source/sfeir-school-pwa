@@ -1,6 +1,6 @@
 export class PeoplesService {
   constructor() {
-    this.API_URL = "/mocks/people.json";
+    this.API_URL = '/mocks/people.json';
     this.peoples = null;
     this.peopleMap = new Map();
     this.hasRequestPending = false;
@@ -9,15 +9,12 @@ export class PeoplesService {
 
   async initialize() {
     this.hasRequestPending = true;
-    const response = await fetch(this.API_URL)
+    const response = await fetch(this.API_URL);
     const data = await response.json();
     this.hasRequestPending = false;
     if (this.peoples) {
       //Replace this.peoples
-      Array.prototype.splice.apply(
-        this.peoples,
-        [0, this.peoples.length].concat(data)
-      );
+      Array.prototype.splice.apply(this.peoples, [0, this.peoples.length].concat(data));
     } else {
       this.peoples = data;
     }
@@ -25,14 +22,14 @@ export class PeoplesService {
 
   onResult() {
     this.peoples.forEach(people => {
-      people.name = people.firstname + " " + people.lastname;
+      people.name = people.firstname + ' ' + people.lastname;
       this.peopleMap.set(people.email, people);
     });
     return this.peoples;
   }
 
   async getPeoples() {
-    await this.networkPromise
+    await this.networkPromise;
     return this.onResult();
   }
 

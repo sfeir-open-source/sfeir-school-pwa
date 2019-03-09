@@ -1,4 +1,3 @@
-
 <!-- .slide: class="transition-white sfeir-bg-blue" -->
 
 # Sécurité
@@ -36,7 +35,6 @@
 Notes:
 And finally, integrity. The browser and the server, have a guarantee under HTTPS that when they send data from one to the other, the data they send is what the other party receives. So an intermediary on the network can’t modify or tamper with the data that’s being sent. Only the browser and the server can. So these are the three security properties that we get from HTTPS.
 
-
 ##==##
 
 # Solutions
@@ -46,6 +44,7 @@ And finally, integrity. The browser and the server, have a guarantee under HTTPS
 <br>
 
 ## Hosting Services
+
 <!-- .element: class="center"-->
 
 ![h-100](./assets/images/firebase.png)
@@ -56,6 +55,7 @@ And finally, integrity. The browser and the server, have a guarantee under HTTPS
 <br>
 
 ## Servers
+
 <!-- .element: class="center"-->
 
 ![h-100](./assets/images/ngnix.png)
@@ -64,12 +64,11 @@ And finally, integrity. The browser and the server, have a guarantee under HTTPS
 <br>
 
 ## Certificat Authorities
+
 <!-- .element: class="center"-->
 
 ![h-100](./assets/images/letsencrypt.png)
 ![h-100](./assets/images/comodo.png)
-
-
 
 Notes:
 Certif : souvent dispo via (votre) registrar / hébergeur (ex: Gandi utilise Comodo)
@@ -90,11 +89,13 @@ https://developers.google.com/web/tools/chrome-devtools/security
 <br><br>
 
 ## 127.0.0.1 / localhost
+
 <!-- .element: class="center"-->
 
 <br>
 
 ## OK sans HTTPS
+
 <!-- .element: class="center"-->
 
 <br>
@@ -166,4 +167,5 @@ MàJ: 2018-09-18 - https://caniuse.com/#feat=serviceworkers
 <br>
 
 example.com/product/description.html,
+
 <!-- .element: class="center" -->

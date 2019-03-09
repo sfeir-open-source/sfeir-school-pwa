@@ -1,4 +1,3 @@
-
 <!-- .slide: class="transition-white sfeir-bg-blue" -->
 
 # Contexte
@@ -15,22 +14,18 @@ Malheureusement, ces applications sont aussi très chères : langage de dévelop
 Les applications Web, de leur côté, sont bien moins chères, multiplateforme, et ont l'avantage d'être mise à jour sans intervention de l'utilisateur.
 Elles sont en revanche limite dans leurs interactions avec le téléphone, car le Javascript et HTML5 ne sont pas encore tout à fait matures pour exploiter pleinement les terminaux mobiles. De plus, ne pas etre dans les shops peut être un inconvénient pour la visibilité.
 
-
-
 ##==##
 
 # Les débuts : Juin 2015
-
 
 [Progressive Web Apps: Escaping Tabs Without Losing Our Soul by Alex Russell](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
 
 ![center](./assets/images/alex_russel.png)
 
-* “There is now another way. An **evolution** has taken place in browsers.”
-* “**Just websites** that took all the right vitamins.”
-* “Sites [..] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
-* “Thoughtful application design and construction will give early movers a **major advantage**”
-
+- “There is now another way. An **evolution** has taken place in browsers.”
+- “**Just websites** that took all the right vitamins.”
+- “Sites [..] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
+- “Thoughtful application design and construction will give early movers a **major advantage**”
 
 Notes:
 Chrome, Blink, and the Web Platform at Google
@@ -46,5 +41,3 @@ Served over TLS
 Offline support
 Web App Manifest
 Can run without browser chrome
-
-

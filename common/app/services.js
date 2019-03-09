@@ -1,5 +1,3 @@
-import { PeoplesService } from './sevices/People';
+import { PeoplesService } from './sevices/People';
 
-export const services = new Map([
-  ['peoples', new PeoplesService()]
-]);
+export const services = new Map([['peoples', new PeoplesService()]]);

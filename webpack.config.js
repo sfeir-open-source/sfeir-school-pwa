@@ -14,9 +14,12 @@ module.exports = function(env = {}, args) {
   let stepDir = stepArg && stepArg.replace('--step-', '');
   const STEPS_DIRECTORY = 'steps/';
   stepDir = stepDir === '' || stepDir === 'true' ? DEFAULT_STEP : `${STEPS_DIRECTORY}${stepDir}`;
-  const stepGenericName = stepDir.substring(STEPS_DIRECTORY.length).split('-').shift();
+  const stepGenericName = stepDir
+    .substring(STEPS_DIRECTORY.length)
+    .split('-')
+    .shift();
   if (!fs.existsSync(stepDir)) {
-      stepDir = DEFAULT_STEP;
+    stepDir = DEFAULT_STEP;
   }
 
   console.log(`Will run step ${stepDir}`);
@@ -24,10 +27,9 @@ module.exports = function(env = {}, args) {
 
   let paths;
   try {
-
     paths = {
       step: stepDir,
-      dist: env.prod ? 'build': '.tmp',
+      dist: env.prod ? 'build' : '.tmp',
       assets: 'assets',
       commons: 'common',
       indexTemplate: ''
@@ -43,7 +45,6 @@ module.exports = function(env = {}, args) {
       paths.indexTemplate = path.join('common/default-for-steps/', stepGenericName, landingFile);
       fs.accessSync(paths.indexTemplate, fs.constants.R_OK);
     }
-
   } catch (err) {
     console.error(`
 
@@ -61,7 +62,7 @@ Check the folder name in steps/, read the README and try again.
     fs.accessSync(stepIndex, fs.constants.R_OK);
     paths.indexjs = stepIndex;
   } catch (err) {
-    paths.indexjs = path.resolve('common/app', 'index.js')
+    paths.indexjs = path.resolve('common/app', 'index.js');
   }
 
   console.log(`Will use ${paths.indexjs} as entry point`);

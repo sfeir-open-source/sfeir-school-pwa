@@ -1,30 +1,38 @@
 .reveal .slides section .center {
-  text-align: center; }
+  text-align: center;
+}
 
 .reveal .slides section .big-text {
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 .reveal .slides section.sfeir-basic-slide .center-big {
   text-align: center;
   font-size: 2.5em;
-  color: black; }
+  color: black;
+}
 
 .reveal .slides section.sfeir-basic-slide h1.center-big {
-  font-size: 3em; }
+  font-size: 3em;
+}
 
-.reveal .slides section.with-code pre.big-code:not(.literal), .reveal .slides section.with-code-dark pre.big-code:not(.literal) {
+.reveal .slides section.with-code pre.big-code:not(.literal),
+.reveal .slides section.with-code-dark pre.big-code:not(.literal) {
   position: relative;
-  top: 0; }
+  top: 0;
+}
 
-.reveal .slides section img[alt*=full-width-screen] {
+.reveal .slides section img[alt*='full-width-screen'] {
   width: 100%;
   max-width: 100%;
-  max-height: 100%; }
+  max-height: 100%;
+}
 
-.reveal .slides section img[alt*=bottom] {
+.reveal .slides section img[alt*='bottom'] {
   position: absolute;
   bottom: 0;
-  left: 0; }
+  left: 0;
+}
 
 /**
 Specifics
@@ -34,41 +42,51 @@ Specifics
   height: calc(100% - 200px);
   color: white;
   padding-top: 200px;
-  padding-left: 200px; }
-  .reveal .slides section.exercice:before {
-    content: '';
-    background: url(../assets/images/exercice_logo.png) no-repeat;
-    position: absolute;
-    background-size: calc(1750px / 10) calc(2500px / 10);
-    left: 0;
-    top: 0;
-    width: calc(1750px / 10);
-    height: calc(2500px / 10); }
-  .reveal .slides section.exercice h1, .reveal .slides section.exercice h2, .reveal .slides section.exercice h3 {
-    all: unset;
-    position: absolute;
-    color: white;
-    font-size: 2em; }
-  .reveal .slides section.exercice h1 {
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 100%; }
-  .reveal .slides section.exercice h2 {
-    transform: rotateZ(270deg);
-    font-weight: 800;
-    top: 50%;
-    left: -100px;
-    text-shadow: -4px -4px grey; }
-  .reveal .slides section.exercice h3 {
-    font-size: 1.5em;
-    text-align: center;
-    bottom: 50px;
-    width: 100%;
-    left: 0; }
-  .reveal .slides section.exercice ul, .reveal .slides section.exercice p {
-    text-align: left;
-    font-size: 1.5em; }
+  padding-left: 200px;
+}
+.reveal .slides section.exercice:before {
+  content: '';
+  background: url(../assets/images/exercice_logo.png) no-repeat;
+  position: absolute;
+  background-size: calc(1750px / 10) calc(2500px / 10);
+  left: 0;
+  top: 0;
+  width: calc(1750px / 10);
+  height: calc(2500px / 10);
+}
+.reveal .slides section.exercice h1,
+.reveal .slides section.exercice h2,
+.reveal .slides section.exercice h3 {
+  all: unset;
+  position: absolute;
+  color: white;
+  font-size: 2em;
+}
+.reveal .slides section.exercice h1 {
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.reveal .slides section.exercice h2 {
+  transform: rotateZ(270deg);
+  font-weight: 800;
+  top: 50%;
+  left: -100px;
+  text-shadow: -4px -4px grey;
+}
+.reveal .slides section.exercice h3 {
+  font-size: 1.5em;
+  text-align: center;
+  bottom: 50px;
+  width: 100%;
+  left: 0;
+}
+.reveal .slides section.exercice ul,
+.reveal .slides section.exercice p {
+  text-align: left;
+  font-size: 1.5em;
+}
 
 .reveal .slides section .target-capacities {
   position: absolute;
@@ -76,90 +94,116 @@ Specifics
   font-size: 2em;
   left: -1em;
   color: gray;
-  top: 50%; }
+  top: 50%;
+}
 
 .reveal .slides section .target-touch {
   position: absolute;
   font-size: 2em;
   color: gray;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
-.reveal .slides section img[alt*=border-circle] {
+.reveal .slides section img[alt*='border-circle'] {
   border-radius: 300px;
   border-color: #dcdee0;
   border-style: solid;
-  border-width: 25px; }
+  border-width: 25px;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=red] {
-  background: #dd311f; }
+.reveal .slides section img[alt*='border-circle'][alt*='red'] {
+  background: #dd311f;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=green] {
-  background: #249f5a; }
+.reveal .slides section img[alt*='border-circle'][alt*='green'] {
+  background: #249f5a;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=blue] {
-  background: #314ffe; }
+.reveal .slides section img[alt*='border-circle'][alt*='blue'] {
+  background: #314ffe;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=purple] {
-  background: #773f9b; }
+.reveal .slides section img[alt*='border-circle'][alt*='purple'] {
+  background: #773f9b;
+}
 
 .reveal .slides section .https .flex-col {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .reveal .slides section .https h2 {
   color: #333;
   text-align: left;
-  padding: 0; }
+  padding: 0;
+}
 
 .reveal .slides section .https hr {
   height: 20px;
   width: 100%;
-  box-shadow: 2px 2px 5px #212121; }
+  box-shadow: 2px 2px 5px #212121;
+}
 
 .reveal .slides section .https hr.blue {
-  background: #314ffe; }
+  background: #314ffe;
+}
 
 .reveal .slides section .https hr.red {
-  background: #dd311f; }
+  background: #dd311f;
+}
 
 .reveal .slides section .https hr.green {
-  background: #249f5a; }
+  background: #249f5a;
+}
 
 .reveal .slides section .grid-worker {
   color: white;
   display: grid;
   grid-template-columns: 50%;
-  grid-template-areas: "a b" "c d";
+  grid-template-areas: 'a b' 'c d';
   width: 100%;
   height: 100%;
-  text-align: center; }
-  .reveal .slides section .grid-worker h1 {
-    color: white;
-    text-transform: uppercase; }
-  .reveal .slides section .grid-worker .cell-1, .reveal .slides section .grid-worker .cell-2, .reveal .slides section .grid-worker .cell-3, .reveal .slides section .grid-worker .cell-4 {
-    justify-self: center;
-    padding-top: 100px; }
-  .reveal .slides section .grid-worker .cell-1 {
-    grid-area: a; }
-  .reveal .slides section .grid-worker .cell-2 {
-    grid-area: b; }
-  .reveal .slides section .grid-worker .cell-3 {
-    grid-area: c; }
-  .reveal .slides section .grid-worker .cell-4 {
-    grid-area: d; }
+  text-align: center;
+}
+.reveal .slides section .grid-worker h1 {
+  color: white;
+  text-transform: uppercase;
+}
+.reveal .slides section .grid-worker .cell-1,
+.reveal .slides section .grid-worker .cell-2,
+.reveal .slides section .grid-worker .cell-3,
+.reveal .slides section .grid-worker .cell-4 {
+  justify-self: center;
+  padding-top: 100px;
+}
+.reveal .slides section .grid-worker .cell-1 {
+  grid-area: a;
+}
+.reveal .slides section .grid-worker .cell-2 {
+  grid-area: b;
+}
+.reveal .slides section .grid-worker .cell-3 {
+  grid-area: c;
+}
+.reveal .slides section .grid-worker .cell-4 {
+  grid-area: d;
+}
 
 .reveal .slides section.no-margin h1 {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .reveal .slides section h1.border-orange {
   padding: 30px;
-  background: orange; }
+  background: orange;
+}
 
 .reveal .slides section.mariane h1 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: white; }
+  color: white;
+}
 
 /*# sourceMappingURL=pwa.css.map */

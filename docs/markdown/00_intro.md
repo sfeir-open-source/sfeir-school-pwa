@@ -1,6 +1,7 @@
 <!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" -->
 
 # **Welcome to Sfeir School**
+
 ## **PWA 200**
 
 ##==##
@@ -15,7 +16,6 @@
 ##==##
 
 # Déroulement de la formation
-
 
 <p class="center">
 C'est quand la pause ?<br>

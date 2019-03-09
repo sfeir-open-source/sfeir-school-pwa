@@ -7,11 +7,12 @@
 # WebAPIs for your Device
 
 <br><br>
-* permettre l’accès à des éléments extérieurs au browser
-<br><br>
-* très nombreuses APIs
-<br><br>
-* évolution constante
+
+- permettre l’accès à des éléments extérieurs au browser
+  <br><br>
+- très nombreuses APIs
+  <br><br>
+- évolution constante
 
 <br>
 
@@ -20,7 +21,6 @@
 <a href="https://developer.mozilla.org/fr/docs/WebAPI" target="_blank">Mozilla (wiki)</a>
 <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=category%3Adevice" target="_blank">Edge</a>
 </div>
-
 
 ##==##
 
@@ -74,7 +74,6 @@
 Notes:
 Tous sauf IE8, Safari 4 & Opera Mini
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -82,15 +81,14 @@ Tous sauf IE8, Safari 4 & Opera Mini
 # Vérifier que l’API est supportée
 
 ```javascript
- // check for Geolocation support
+// check for Geolocation support
 if (navigator.geolocation) {
   console.log('Geolocation is supported!');
 } else {
-  console.log(
-    'Geolocation is not supported for this Browser/OS.'
-  );
+  console.log('Geolocation is not supported for this Browser/OS.');
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -104,19 +102,19 @@ window.onload = function() {
   var startPos;
   var geoSuccess = function(position) {
     startPos = position;
-    document.getElementById('startLat')
-      .innerHTML = startPos.coords.latitude;
-    document.getElementById('startLon')
-      .innerHTML = startPos.coords.longitude;
+    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
   };
   navigator.geolocation.getCurrentPosition(geoSuccess);
 };
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>
 
 ⚠️ permission demandée automatiquement
+
 <!-- .element: class="center" -->
 
 ##==##
@@ -151,16 +149,13 @@ const geoError = (error) => {
 # Observer en continue la position
 
 ```javascript
-const watchID = navigator.geolocation
-  .watchPosition(position => {
-    do_something(
-      position.coords.latitude,
-      position.coords.longitude
-    );
-  });
+const watchID = navigator.geolocation.watchPosition(position => {
+  do_something(position.coords.latitude, position.coords.longitude);
+});
 // ...
 navigator.geolocation.clearWatch(watchID);
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -170,31 +165,30 @@ navigator.geolocation.clearWatch(watchID);
 # Timeout
 
 ```javascript
-  var startPos;
-  var geoOptions = {
-    maximumAge: 5 * 60 * 1000,
-  }
+var startPos;
+var geoOptions = {
+  maximumAge: 5 * 60 * 1000
+};
 
-  var geoSuccess = function(position) {
-    startPos = position;
-    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-  };
-  var geoError = function(error) {
-    console.log('Error occurred. Error code: ' + error.code);
-    // error.code can be:
-    //   0: unknown error
-    //   1: permission denied
-    //   2: position unavailable (error response from location provider)
-    //   3: timed out
-  };
+var geoSuccess = function(position) {
+  startPos = position;
+  document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+  document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+};
+var geoError = function(error) {
+  console.log('Error occurred. Error code: ' + error.code);
+  // error.code can be:
+  //   0: unknown error
+  //   1: permission denied
+  //   2: position unavailable (error response from location provider)
+  //   3: timed out
+};
 
-  navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
+navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
 ```
 
 Notes:
 Unless you set a timeout, your request for the current position might never return.
-
 
 ##==##
 
@@ -202,28 +196,27 @@ Unless you set a timeout, your request for the current position might never retu
 
 # Améliorer la précision
 
-
 ```javascript
-  var startPos;
-  var geoOptions = {
-    enableHighAccuracy: true
-  }
+var startPos;
+var geoOptions = {
+  enableHighAccuracy: true
+};
 
-  var geoSuccess = function(position) {
-    startPos = position;
-    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-  };
-  var geoError = function(error) {
-    console.log('Error occurred. Error code: ' + error.code);
-    // error.code can be:
-    //   0: unknown error
-    //   1: permission denied
-    //   2: position unavailable (error response from location provider)
-    //   3: timed out
-  };
+var geoSuccess = function(position) {
+  startPos = position;
+  document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+  document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+};
+var geoError = function(error) {
+  console.log('Error occurred. Error code: ' + error.code);
+  // error.code can be:
+  //   0: unknown error
+  //   1: permission denied
+  //   2: position unavailable (error response from location provider)
+  //   3: timed out
+};
 
-  navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
+navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
 ```
 
 Notes:
@@ -237,4 +230,3 @@ If you do need a high level of precision, it's possible to override the default 
 <br>
 
 ![center h-800](./assets/images/devtools_emulate_position.png)
-

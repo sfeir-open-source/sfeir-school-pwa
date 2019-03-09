@@ -1,9 +1,8 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url("font/regular.eot");
-  src: url("font/regular.eot?#iefix") format("embedded-opentype"),
-  url("font/regular.woff") format("woff"),
-  url("font/regular.ttf") format("truetype");
+  src: url('font/regular.eot');
+  src: url('font/regular.eot?#iefix') format('embedded-opentype'), url('font/regular.woff') format('woff'),
+    url('font/regular.ttf') format('truetype');
   font-weight: normal; /* 400 */
   font-style: normal;
 }
@@ -11,7 +10,7 @@
 /* app css stylesheet */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #FAFAFA !important;
+  background-color: #fafafa !important;
 }
 
 .people-list-all form {
@@ -20,11 +19,12 @@ body {
   flex-direction: column;
 }
 
-label{
+label {
   font-weight: normal;
 }
 
-.people-side button, .people-side input{
+.people-side button,
+.people-side input {
   width: 100%;
 }
 
@@ -40,12 +40,12 @@ label{
 }
 
 .people-name {
-   margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .thumb {
   width: 100%;
-  border: 10px solid #F1F1F1;
+  border: 10px solid #f1f1f1;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -78,7 +78,6 @@ ul.people-thumbs img:hover {
   cursor: pointer;
 }
 
-
 ul.specs {
   clear: both;
   margin: 0;
@@ -86,13 +85,13 @@ ul.specs {
   list-style: none;
 }
 
-ul.specs > li{
+ul.specs > li {
   display: inline-block;
   width: 200px;
   vertical-align: top;
 }
 
-ul.specs > li > span{
+ul.specs > li > span {
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -118,14 +117,13 @@ article > header a {
 
 header {
   background: url('../img/bg_left.png') no-repeat left, url('../img/bg_right.png') no-repeat right;
-  background-color: #0168AB;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  background-color: #0168ab;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   z-index: 3;
   height: 175px;
   position: fixed;
   width: 100%;
 }
-
 
 article section {
   float: left;
@@ -139,11 +137,11 @@ section > h1 {
   font-size: 14pt;
 }
 
-#skills ul{
+#skills ul {
   padding: 0;
 }
 
-#skills li{
+#skills li {
   display: inline;
   padding: 0 6pt;
   margin: 1px;
@@ -152,7 +150,7 @@ section > h1 {
   background-color: #eee;
   list-style: none;
 }
-#skills li:first-child{
+#skills li:first-child {
   font-weight: normal;
 }
 
@@ -163,43 +161,51 @@ section > h1 {
   justify-content: space-around;
   --card-media-width: 100px;
   --card-font-size: 15px;
-
 }
 
 .people-card-list .mdl-card,
-.people-card-list people-card{
+.people-card-list people-card {
   margin-bottom: 10px;
   width: 330px;
 }
 
-.people-card-list .mdl-card a[href^=mailto],
-.people-card-list .mdl-card a[href^=tel]{
-  font-size:15px;
+.people-card-list .mdl-card a[href^='mailto'],
+.people-card-list .mdl-card a[href^='tel'] {
+  font-size: 15px;
 }
 
-.people-card-list .mdl-card .mdl-card__media{
+.people-card-list .mdl-card .mdl-card__media {
   width: 100px;
 }
 
-.people-card-list .first{
-  box-shadow: 0px 1px 3px 0px #0168AB, 0px 1px 1px 0px #0168AB, 0px 2px 1px -1px #0168AB;
+.people-card-list .first {
+  box-shadow: 0px 1px 3px 0px #0168ab, 0px 1px 1px 0px #0168ab, 0px 2px 1px -1px #0168ab;
 }
 
-.people-card-list md-card-title, .people-random md-card-title, .people-list-all md-card-title{
+.people-card-list md-card-title,
+.people-random md-card-title,
+.people-list-all md-card-title {
   min-height: 200px;
 }
 
-.people-random, .people-list-all, .people-list, .people-detail, .view-frame{
-  background-color: #FAFAFA;
+.people-random,
+.people-list-all,
+.people-list,
+.people-detail,
+.view-frame {
+  background-color: #fafafa;
 }
 
-.people-random .mdl-card, .people-random people-card{
+.people-random .mdl-card,
+.people-random people-card {
   margin: auto;
   width: 500px;
 }
 
-.people-list-all, .people-detail, .people-random {
- padding-top: 175px;
+.people-list-all,
+.people-detail,
+.people-random {
+  padding-top: 175px;
 }
 
 .mdl-card label.fullscreen-button {
@@ -208,25 +214,25 @@ section > h1 {
 }
 
 /*TOOLBAR MENU*/
-.toolbar-menu{
+.toolbar-menu {
   height: 100%;
   margin: 0px 10px 0px 10px;
   border-bottom: 2px solid transparent;
 }
 
-.toolbar-menu:not(.active):hover{
+.toolbar-menu:not(.active):hover {
   border-bottom: 2px solid white;
 }
 
-.toolbar .md-toolbar-tools > h1{
+.toolbar .md-toolbar-tools > h1 {
   height: 100%;
 }
 
-.toolbar .md-toolbar-tools h1{
+.toolbar .md-toolbar-tools h1 {
   font-size: 0.8em;
 }
 
-.toolbar .md-toolbar-tools img{
+.toolbar .md-toolbar-tools img {
   height: 100%;
   margin-left: -90px;
 }
@@ -241,67 +247,67 @@ section > h1 {
   background-color: transparent;
 }
 
-.min.extend-toolbar{
-    height: 150px;
+.min.extend-toolbar {
+  height: 150px;
 }
 
-.people-list-loading{
+.people-list-loading {
   height: 200px;
 }
 
-.people-random h1{
+.people-random h1 {
   text-align: center;
   padding: 10px;
 }
 
 /* PEOPLE INFO */
-.people-detail{
+.people-detail {
   min-height: 650px;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0); /* pour probleme index iphone */
 }
 
 @media screen and (max-width: 720px) {
-  .first-info-people a{
+  .first-info-people a {
     padding: 0px;
   }
 }
 
-.background-md-card{
+.background-md-card {
   background-color: '#E84FOE';
-  box-shadow: 0 4px 5px -2px rgba(0,0,0,.26);
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.26);
 }
 
-.tab-information li{
+.tab-information li {
   display: inline;
 }
-.tab-information li:first-child{
+.tab-information li:first-child {
   font-weight: bold;
 }
-.tab-information md-content{
-  background-color: rgba(0,0,0,.05);
+.tab-information md-content {
+  background-color: rgba(0, 0, 0, 0.05);
 }
-.information-footer{
-  border-top: 1px solid rgba(0,0,0,0.12);
+.information-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 /* SKILL */
-#skills .skillActive{
-  background-color: #E84F0E;
+#skills .skillActive {
+  background-color: #e84f0e;
 }
 
 /* FAB */
-#shellToolbar{
+#shellToolbar {
   position: absolute;
   bottom: 5px;
   right: 10px;
   z-index: 200;
 }
-#installButton.mdl-button{
+#installButton.mdl-button {
   display: none;
 }
 
-#installButton.mdl-button.show{
+#installButton.mdl-button.show {
   display: block;
 }
 
@@ -310,14 +316,16 @@ section > h1 {
   display: none !important;
 }
 
-#subscribeButton.show{
+#subscribeButton.show {
   display: block;
 }
 
-#subscribeButton.show .unsubscribe, #subscribeButton.show.subscribe .subscribe{
+#subscribeButton.show .unsubscribe,
+#subscribeButton.show.subscribe .subscribe {
   display: block;
 }
 
-#subscribeButton.show .subscribe, #subscribeButton.show.subscribe .unsubscribe{
+#subscribeButton.show .subscribe,
+#subscribeButton.show.subscribe .unsubscribe {
   display: none !important;
 }

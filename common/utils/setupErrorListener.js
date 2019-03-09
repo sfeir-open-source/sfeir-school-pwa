@@ -11,7 +11,7 @@ export const setupErrorListener = () => {
         padding: '18px 12px 30px',
         fontFamily: 'sans-serif',
         background: '#aa3333',
-        color: 'white',
+        color: 'white'
       });
 
       document.body.appendChild(errorContainer);

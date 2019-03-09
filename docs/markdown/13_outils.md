@@ -1,4 +1,3 @@
-
 <!-- .slide: class="transition-white sfeir-bg-blue" -->
 
 # Outils
@@ -15,7 +14,6 @@
 
 ![center h-900](./assets/images/firefox_devtools.png)
 
-
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
@@ -28,9 +26,7 @@
 
 ![center](./assets/images/lighthouse.png)
 
-
 ##--##
-
 
 <br><br><br>
 
