@@ -35,7 +35,7 @@
     "start": "webpack-dev-server --step-$npm_config_step",
     "dev": "webpack-dev-server",
     "precommit": "lint-staged",
-    "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}"
+    "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
   },
   "bugs": {
     "url": "https://github.com/Sfeir/pwa-200/issues"
