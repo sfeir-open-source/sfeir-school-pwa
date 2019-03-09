@@ -1,9 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-
-<h1>Performance<br>
-(Bonus - sujet avancé)
-</h1>
-
 <!-- .slide: class="transition-white sfeir-bg-pink" -->
 
 # Chargement
