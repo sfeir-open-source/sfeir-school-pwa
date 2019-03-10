@@ -45,25 +45,28 @@
     "@webcomponents/webcomponentsjs": "^2.2.7",
     "lit-element": "^2.0.1",
     "normalize.css": "8.0.0",
-    "pwa-helpers": "^0.9.1"
+    "pwa-helpers": "^0.9.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "private": true,
   "devDependencies": {
-    "babel-core": "~6.26.3",
-    "babel-loader": "~7.1.4",
-    "babel-polyfill": "~6.26.0",
-    "babel-preset-env": "~1.7.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/core": "~7.3.4",
+    "babel-loader": "~8.0.5",
+    "@babel/polyfill": "~7.2.5",
+    "@babel/preset-env": "~7.3.4",
     "css-loader": "~1.0.0",
     "file-loader": "~2.0.0",
     "html-webpack-harddisk-plugin": "~0.2.0",
     "html-webpack-plugin": "~3.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.12.1",
     "style-loader": "~0.23.0",
     "url-loader": "~1.1.1",
     "webpack": "~4.17.1",
     "webpack-cli": "~3.1.0",
-    "webpack-dev-server": "~3.1.14",
-    "prettier": "^1.12.1",
-    "lint-staged": "^7.1.2",
-    "husky": "^0.14.3"
+    "webpack-dev-server": "~3.1.14"
   }
 }

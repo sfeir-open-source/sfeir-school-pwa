@@ -1,7 +1,10 @@
-import { LitElement, html } from 'lit-element';
+import { html } from 'lit-element';
 import { PeoplesService } from '../sevices/People.js';
+import { PageViewElement } from './PageViewElement.js';
 
-export class PeopleList extends LitElement {
+import './PeopleCardComponent';
+
+export class PeopleList extends PageViewElement {
   static get properties() {
     return {
       peopleid: String
@@ -23,7 +26,6 @@ export class PeopleList extends LitElement {
     this.peoples = await this.peoplesService.getPeoples();
     this.filterPeopleById(this.peopleid);
     this.loading = false;
-    this.requestUpdate();
   }
 
   filterPeopleById(id) {
@@ -46,22 +48,14 @@ export class PeopleList extends LitElement {
     } else {
       this.filteredPeople = this.peoples;
     }
-    this.performUpdate();
+    this.requestUpdate();
   }
 
   render() {
-    if (this.peoples.length === 0) {
-      this.getPeoples();
-    }
     return html`
       <link rel="stylesheet" href="/mdl/material.min.css" />
       <link rel="stylesheet" href="/css/app.css" />
       <link rel="stylesheet" href="/css/md-overwrite.css" />
-      <style>
-        :host {
-          display: block;
-        }
-      </style>
       <div>
         ${this.filteredPeople.length < 1
           ? html`
@@ -106,6 +100,11 @@ export class PeopleList extends LitElement {
             `}
       </div>
     `;
+  }
+
+  async performUpdate() {
+    await this.getPeoples();
+    super.performUpdate();
   }
 }
 customElements.define('people-list', PeopleList);

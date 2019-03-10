@@ -10,11 +10,8 @@ export class PeopleCard extends LitElement {
     };
   }
 
-  constructor(/*{people = {}, skillOn, describe}*/) {
+  constructor() {
     super();
-    /*this.people = people;
-        this.skillOn = skillOn;
-        this.describe = describe;*/
   }
 
   render() {

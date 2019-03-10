@@ -1,7 +1,10 @@
-import { LitElement, html } from 'lit-element';
+import { html } from 'lit-element';
 import { PeoplesService } from '../sevices/People.js';
+import { PageViewElement } from './PageViewElement.js';
 
-export class Home extends LitElement {
+import './PeopleCardComponent';
+
+export class Home extends PageViewElement {
   constructor() {
     super();
     this.peoplesService = new PeoplesService();
@@ -31,9 +34,6 @@ export class Home extends LitElement {
       <link rel="stylesheet" href="/css/app.css" />
       <link rel="stylesheet" href="/css/md-overwrite.css" />
       <style>
-        :host {
-          display: block;
-        }
         .home-spinner-wrapper {
           text-align: center;
           margin: 20px;

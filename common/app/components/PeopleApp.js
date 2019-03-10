@@ -1,48 +1,57 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, css } from 'lit-element';
 import { installRouter } from 'pwa-helpers/router';
+import { connect } from 'pwa-helpers/connect-mixin.js';
 
-export class PeopleApp extends LitElement {
+// This element is connected to the Redux store.
+import { store } from '../store.js';
+
+import { navigate } from '../actions/app';
+
+export class PeopleApp extends connect(store)(LitElement) {
+  static get properties() {
+    return {
+      _page: { type: String },
+      _peopleId: { type: String }
+    };
+  }
+
+  static get styles() {
+    return [
+      css`
+        :host {
+          display: block;
+        }
+
+        .page {
+          display: none;
+        }
+        .page[active] {
+          display: block;
+        }
+      `
+    ];
+  }
+
   constructor() {
     super();
-    this.page = 'home';
-    this.peopleId = undefined;
-    installRouter(location => {
-      const pathRegex = /\/people\/([0-9]+)/;
-      if (location.pathname === '/people') {
-        this.page = 'people';
-        this.peopleId = undefined;
-      } else if (pathRegex.test(location.pathname)) {
-        this.page = 'people';
-        this.peopleId = pathRegex.exec(location.pathname)[1];
-      } else {
-        this.peopleId = undefined;
-        this.page = 'home';
-      }
-      this.requestUpdate();
-    });
+    this._page = 'home';
+    this._peopleId = undefined;
+    installRouter(location => store.dispatch(navigate(decodeURIComponent(location.pathname))));
   }
 
   render() {
     return html`
-      <style>
-        :host {
-          display: block;
-        }
-      </style>
-      ${this.page === 'home'
-        ? html`
-            <home-component></home-component>
-          `
-        : html`
-            ${this.peopleId
-              ? html`
-                  <people-list peopleid="${this.peopleId}"></people-list>
-                `
-              : html`
-                  <people-list></people-list>
-                `}
-          `}
+      <div>
+        <home-component class="page" ?active="${this._page === 'home'}"></home-component>
+        <people-list class="page" ?active="${this._page === 'people'}" peopleid="${this._peopleId}"></people-list>
+      </div>
     `;
+  }
+
+  stateChanged(state) {
+    console.log(state);
+    this._page = state.app.page;
+    this._peopleId = state.app.peopleId;
   }
 }
 

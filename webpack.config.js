@@ -70,6 +70,7 @@ Check the folder name in steps/, read the README and try again.
   return {
     mode: 'development',
     entry: paths.indexjs,
+    devtool: 'cheap-module-source-map',
     output: {
       path: path.resolve(__dirname, '.build'),
       filename: 'bundle.js',
@@ -79,8 +80,11 @@ Check the folder name in steps/, read the README and try again.
       rules: [
         {
           test: /\.js$/,
-          loader: 'babel-loader'
-          // Babel options are loaded from .babelrc
+          loader: 'babel-loader',
+          options: {
+            presets: [['@babel/preset-env']],
+            plugins: ['@babel/plugin-syntax-dynamic-import']
+          }
         },
         {
           test: /\.css$/,
