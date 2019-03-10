@@ -1,7 +1,36 @@
 {
   "/": {
+    "/css/material-icons.css": {
+      "crossorigin": "anonymous",
+      "type": "style",
+      "weight": 1
+    },
+    "/mdl/material.min.css": {
+      "crossorigin": "anonymous",
+      "type": "style",
+      "weight": 1
+    },
+    "/css/md-overwrite.css": {
+      "crossorigin": "anonymous",
+      "type": "style",
+      "weight": 1
+    },
+    "/css/app.css": {
+      "crossorigin": "anonymous",
+      "type": "style",
+      "weight": 1
+    },
+    "node_modules/normalize.css/normalize.css": {
+      "crossorigin": "anonymous",
+      "type": "style",
+      "weight": 1
+    },
     "common/app/components/PeopleApp.js": {
       "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "/mdl/material.min.js": {
       "type": "script",
       "weight": 1
     },
