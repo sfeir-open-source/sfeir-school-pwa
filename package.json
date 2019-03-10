@@ -34,9 +34,10 @@
   "scripts": {
     "start": "webpack-dev-server --step-$npm_config_step",
     "dev": "webpack-dev-server",
-    "api": "node api_server/server.js",
+    "api": "node server/api/server.js",
     "prpl:build": "polymer build --auto-base-path && gulp prpl-server",
     "prpl:start": "prpl-server --root server/build",
+    "prpl:proxy": "cd server/http2-proxy && ./nghttpx -f127.0.0.1,8443 -b127.0.0.1,8080 server.key server.crt --no-ocsp",
     "prpl": "npm run prpl:build && npm run prpl:start",
     "precommit": "lint-staged",
     "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
