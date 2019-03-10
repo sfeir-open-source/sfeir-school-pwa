@@ -1,8 +1,12 @@
 {
-  "entrypoint": "steps/prpl/index.html",
-  "shell": "steps/prpl/index.js",
-  "sources": ["assets/**/*", "common/**/*", "css/**/*", "mock"],
-  "extraDependencies": ["common/mdl/**", "node_modules/@webcomponents/webcomponentsjs/**", "push-manifest.json"],
+  "entrypoint": "index.html",
+  "shell": "common/app/components/PeopleApp.js",
+  "sources": ["img/**/*"],
+  "extraDependencies": [
+    "node_modules/@webcomponents/webcomponentsjs/**",
+    "node_modules/normalize.css/normalize.css",
+    "push-manifest.json"
+  ],
   "builds": [
     {
       "name": "esm-bundled",

@@ -1,0 +1,67 @@
+[
+  {
+    'repeat(10)': {
+      id: '{{objectId()}}',
+      gender:'{{random("male","female")}}',
+      photo: function(){
+        var g='men';
+        if(this.gender=='female'){
+        	g='women';
+        }
+        return 'https://randomuser.me/portraits/'+g+'/'+integer(1, 100)+'.jpg';
+      },
+      firstname: '{{firstName()}}',
+      lastname: '{{surname()}}',
+      entity: '{{company().toUpperCase()}}',
+      entryDate: '{{moment(this.date(new Date(2015, 0, 1), new Date())).format("DD/MM/YYYY")}}',
+      birthDate: '{{moment(this.date(new Date(1945, 0, 1), new Date(1985, 0, 1))).format("DD/MM/YYYY")}}',
+      email: function (tags) {
+        return (this.firstname + '.' + this.lastname + '@' + this.entity + '.com');
+      },
+      skills:[
+      {
+          'repeat(5)': '{{lorem(1, "words")}}'
+       }],
+      geo:function(){
+        var center={
+          lat:48.8534100,
+          lng:2.3488000
+        };
+        var radius=2000;
+  var x0 = center.lng;
+  var y0 = center.lat;
+  // Convert Radius from meters to degrees.
+  var rd = radius/111300;
+
+  var u = Math.random();
+  var v = Math.random();
+
+  var w = rd * Math.sqrt(u);
+  var t = 2 * Math.PI * v;
+  var x = w * Math.cos(t);
+  var y = w * Math.sin(t);
+
+  var xp = x/Math.cos(y0);
+
+  // Resulting point.
+  return {'lat': y+y0, 'lng': xp+x0};
+	},
+
+      phone: '+1 {{phone()}}',
+      address: {
+       street: '{{street()}}',
+       postalCode: '{{integer(100, 10000)}}',
+       city: '{{city()}}'
+      },
+      links:{
+       twitter: 'https://twitter.com/{{lorem(1,"words")}}',
+       slack: 'https://slack.com/{{lorem(1,"words")}}',
+       github: 'https://github.com/{{lorem(1,"words")}}',
+       linkedin: 'https://www.linkedin.com/in/{{lorem(1,"words")}}'
+      },
+      isManager: '{{bool()}}',
+      manager: '{{firstName()}}',
+      managerId: '{{objectId()}}'
+    }
+  }
+]
