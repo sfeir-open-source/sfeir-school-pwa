@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/material-icons.css" />
     <link rel="stylesheet" href="mdl/material.min.css" />
     <link rel="stylesheet" href="css/md-overwrite.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <script src="mdl/material.min.js"></script>
   </head>
@@ -23,7 +25,7 @@
           <!-- Title -->
           <span class="mdl-layout-title">
             <a href="/home">
-              <img src="/img/logo-app.png" aria-label="People" alt="People" />
+              <img src="img/logo-app.png" aria-label="People" alt="People" />
             </a>
           </span>
           <!-- Add spacer, to align navigation to the right -->
@@ -104,5 +106,21 @@
         }
       });
     </script>
+    <script>
+      // HACK(keanulee): The Redux package assumes `process` exists - mock it here before
+      // the module is loaded.
+      window.process = {
+        env: {
+          NODE_ENV: 'production'
+        }
+      };
+    </script>
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+    <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <!-- Built with love using PWA Starter Kit -->
+    <script type="module" src="steps/prpl/index.js"></script>
   </body>
 </html>

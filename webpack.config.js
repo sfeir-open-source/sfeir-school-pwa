@@ -30,8 +30,6 @@ module.exports = function(env = {}, args) {
     paths = {
       step: stepDir,
       dist: env.prod ? 'build' : '.tmp',
-      assets: 'assets',
-      commons: 'common',
       indexTemplate: ''
     };
 
@@ -114,12 +112,7 @@ Check the folder name in steps/, read the README and try again.
           ]
     ),
     devServer: {
-      contentBase: [
-        path.join(__dirname, paths.dist),
-        path.join(__dirname, paths.assets),
-        path.join(__dirname, paths.commons),
-        path.join(__dirname, paths.step)
-      ],
+      contentBase: [path.join(__dirname, paths.dist), __dirname, path.join(__dirname, paths.step)],
       compress: true,
       historyApiFallback: true
     }

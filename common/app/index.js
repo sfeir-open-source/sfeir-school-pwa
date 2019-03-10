@@ -5,6 +5,6 @@ import { setupErrorListener } from '../utils/setupErrorListener';
 import './components/PeopleApp';
 
 import 'normalize.css';
-import '../../assets/css/app.css';
+import '../../css/app.css';
 
 setupErrorListener();
