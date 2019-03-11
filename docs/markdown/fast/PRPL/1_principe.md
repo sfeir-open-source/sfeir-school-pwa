@@ -21,3 +21,13 @@
 # App Structure
 
 ![center h-800](./assets/images/PRPL/app-build-components.png)
+
+##==##
+
+# Minimal Entrypoint
+
+![center h-600](./assets/images/PRPL/prpl_loading-appshell_html-vs-js.png)
+
+Notes:
+left: initial template is in html -> heavy entry point
+right: - in PeopleApp -> light entry point = better first paint and T.T.I.

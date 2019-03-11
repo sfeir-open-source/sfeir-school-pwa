@@ -53,9 +53,10 @@ export class PeopleList extends PageViewElement {
 
   render() {
     return html`
-      <link rel="stylesheet" href="/mdl/material.min.css" />
-      <link rel="stylesheet" href="/css/app.css" />
-      <link rel="stylesheet" href="/css/md-overwrite.css" />
+      <link rel="stylesheet" href="/mdl/material.min.css" crossorigin="anonymous" />
+      <link rel="stylesheet" href="/css/app.css" crossorigin="anonymous" />
+      <link rel="stylesheet" href="/css/md-overwrite.css" crossorigin="anonymous" />
+
       <div>
         ${this.filteredPeople.length < 1
           ? html`
