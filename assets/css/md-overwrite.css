@@ -1,51 +1,50 @@
-md-toolbar:not(.md-menu-toolbar){
+md-toolbar:not(.md-menu-toolbar) {
   background-color: transparent;
   color: white;
   position: fixed;
   z-index: 10;
 }
 
-md-card{
+md-card {
   border-radius: 0px;
 }
 
 /*champs de recherche*/
 md-input-container:not(.md-input-invalid).md-input-focused .md-input {
-    border-color: white;
+  border-color: white;
 }
 
 md-input-container:not(.md-input-invalid) .md-input,
-md-input-container:not(.md-input-invalid) .md-input-has-value{
-	color: white;
-}
-
-md-input-container label:not(.md-container-ignore){
-  bottom: 55%!important;
+md-input-container:not(.md-input-invalid) .md-input-has-value {
   color: white;
 }
 
-md-input-container:not(.md-container-ignore).md-input-focused label{
-	color: white;
+md-input-container label:not(.md-container-ignore) {
+  bottom: 55% !important;
+  color: white;
 }
 
-md-input-container .md-input{
+md-input-container:not(.md-container-ignore).md-input-focused label {
+  color: white;
+}
+
+md-input-container .md-input {
   width: 100%;
   font-size: 44px;
   height: 56px !important;
   border-color: white;
-
 }
 
 md-input-container {
   margin-left: 20px;
 }
 
-.extend-toolbar md-input-container.md-has-icon{
+.extend-toolbar md-input-container.md-has-icon {
   margin: 18px 10px;
 }
 
-.view-frame md-input-container > md-icon{
-	height: 40px;
+.view-frame md-input-container > md-icon {
+  height: 40px;
   width: 40px;
   top: 15px;
   left: -10px;
@@ -53,25 +52,26 @@ md-input-container {
   fill: currentColor;
 }
 
-.view-frame md-input-container:not(.md-input-invalid).md-input-focused md-icon{
+.view-frame md-input-container:not(.md-input-invalid).md-input-focused md-icon {
   color: white;
   fill: currentColor;
 }
 
-.view-frame md-input-container .md-errors-spacer{
-	display: none;
+.view-frame md-input-container .md-errors-spacer {
+  display: none;
 }
 
-nav.mdl-navigation a, nav.mdl-navigation a:visited{
-  color:white;
+nav.mdl-navigation a,
+nav.mdl-navigation a:visited {
+  color: white;
 }
 
-.mdl-layout a, .mdl-card a {
+.mdl-layout a,
+.mdl-card a {
   color: #337ab7;
 }
 
-
-header.mdl-layout__header{
+header.mdl-layout__header {
   background-color: #0268ab;
 }
 

@@ -19,5 +19,6 @@
 ![center h-700](./assets/images/css_preformance_trigger.png)
 
 https://csstriggers.com
+
 <!-- .element: class="center" -->
 <br>

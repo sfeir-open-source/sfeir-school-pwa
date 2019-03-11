@@ -8,7 +8,6 @@
 
 # Chargement
 
-
 ##==##
 
 <!-- .slide: data-background="./assets/images/compression_bg.jpg" class="transition" -->
@@ -19,14 +18,14 @@
 
 # Compression
 
-|Library|Size|Compressed size|Compression ratio|
-|-----|------|-|----------|
-|jquery-1.11.0.js|276 KB|82 KB|70%|
-|jquery-1.11.0.min.js|94 KB|33 KB|65%|
-|angular-1.2.15.js|729 KB|182 KB|75%|
-|angular-1.2.15.min.js|101 KB|37 KB|63%|
-|bootstrap-3.1.1.css|118 KB|18 KB|85%|
-|bootstrap-3.1.1.min.css|98 KB|17 KB|83%
+| Library                 | Size   | Compressed size | Compression ratio |
+| ----------------------- | ------ | --------------- | ----------------- |
+| jquery-1.11.0.js        | 276 KB | 82 KB           | 70%               |
+| jquery-1.11.0.min.js    | 94 KB  | 33 KB           | 65%               |
+| angular-1.2.15.js       | 729 KB | 182 KB          | 75%               |
+| angular-1.2.15.min.js   | 101 KB | 37 KB           | 63%               |
+| bootstrap-3.1.1.css     | 118 KB | 18 KB           | 85%               |
+| bootstrap-3.1.1.min.css | 98 KB  | 17 KB           | 83%               |
 
 ##==##
 
@@ -34,9 +33,9 @@
 
 ## Brotli
 
-* 14% smaller than gzip for JavaScript
-* 21% smaller than gzip for HTML
-* 17% smaller than gzip for CSS
+- 14% smaller than gzip for JavaScript
+- 21% smaller than gzip for HTML
+- 17% smaller than gzip for CSS
 
 <br>
 
@@ -50,7 +49,6 @@ Brotli default compression level is higher than the one in gzip, which is mislea
 
 https://certsimple.com/blog/nginx-brotli
 💡difference between static and dynamic content
-
 
 ##==##
 
@@ -68,6 +66,7 @@ MAJ: 2018-08-31
 <!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition-white " -->
 
 # Images
+
 <!-- .element: class="border-orange" -->
 
 <br>
@@ -108,7 +107,6 @@ Offrent de meilleures performances et plus de souplesse
 
 Les fichiers WebP sont 26% plus petit que les PNG.
 
-
 Les fichiers WebP sont 25-34% plus petit que les JPEG.
 
 ![center h-400](./assets/images/caniuse_webp.png)
@@ -124,7 +122,6 @@ Les fichiers WebP sont 25-34% plus petit que les JPEG.
 
 PNG reste meilleur avec peu de couleurs (diagrammes)
 
-
 Performances de compressions similaires mais bien plus souple (ex: compressions différentes par région)
 
 ![center h-400](./assets/images/caniuse_jpeg2000.png)
@@ -135,8 +132,8 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 
 ![h-150 center](./assets/images/edge_logo.png)
 
-
 ~35% plus petit que le JPEG
+
 <!-- .element: class="center" -->
 
 <br>
@@ -156,21 +153,22 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 ```sh
 ffmpeg -i input.gif output.mp4
 ```
+
 <!-- .element: class="big-code" -->
 <br>
 
 ```html
-<video autoplay loop muted playsinline> </video>
+<video autoplay loop muted playsinline></video>
 ```
-<!-- .element: class="big-code" -->
 
+<!-- .element: class="big-code" -->
 
 ##==##
 
 <!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition-white" -->
 
-
 # Scripts
+
 <!-- .element: class="border-orange" -->
 
 ##==##
@@ -187,11 +185,11 @@ ffmpeg -i input.gif output.mp4
 
 <br>
 
-* Uniquement le code **nécessaire** : code splitting, lazy loading
-* **Minifier** : UglifyJS (ES5) / babel-minify ou uglify-es (ES6+)
-* **Compression** : Gzip, Brotli
-* **Supprimer** le code superflus : DevTools code coverage, browserlist, webpack bundle analyzer, Tree Shaking
-* **Caching** : Http Caching, Service Worker, long term caching (filename hashing)
+- Uniquement le code **nécessaire** : code splitting, lazy loading
+- **Minifier** : UglifyJS (ES5) / babel-minify ou uglify-es (ES6+)
+- **Compression** : Gzip, Brotli
+- **Supprimer** le code superflus : DevTools code coverage, browserlist, webpack bundle analyzer, Tree Shaking
+- **Caching** : Http Caching, Service Worker, long term caching (filename hashing)
 
 ##==##
 
@@ -203,7 +201,6 @@ ffmpeg -i input.gif output.mp4
 
 Notes:
 https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage
-
 
 ##==##
 
@@ -225,7 +222,6 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 ![h-800](./assets/images/javascript_parse_cost_phone.png)
 
-
 ##==##
 
 <!-- .slide: class="full-center" -->
@@ -242,8 +238,6 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 Notes:
 https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer
-
-
 
 ##==##
 

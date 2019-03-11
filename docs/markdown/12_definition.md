@@ -1,4 +1,3 @@
-
 <!-- .slide: class="transition-white sfeir-bg-blue" -->
 
 # Définition
@@ -9,7 +8,6 @@ Progressive Web Apps are really a response to changes we've seen on the web, an 
 Making the most of the reach and capabilities of the platform — but also showing respect to users by being honest about real world constraints on connectivity and devices.
 
 But... What does this actually mean in practice?
-
 
 ##==##
 
@@ -25,6 +23,7 @@ De nouvelles technos pour un MEILLEUR web, sans oublier les best practices “hi
 ##==##
 
 # Progressive
+
 <!-- .element: class="center-big" -->
 
 <br><br>
@@ -42,8 +41,8 @@ But... What does this actually mean in practice?
 
 ##==##
 
-
 # Progressive
+
 <!-- .element: class="center-big" -->
 
 <br><br>
@@ -122,7 +121,6 @@ Re-engageable → Utilisation des push notification (Service-Worker)
 Installable → Permettre l’utilisateur de garder l’application sur son bureau
 Linkable → Peut être tout simplement identifier par une URL
 
-
 ##==##
 
 <!-- .slide: class="flex-row" -->
@@ -152,12 +150,10 @@ Linkable → Peut être tout simplement identifier par une URL
 ![center](./assets/images/courrier_international.png)
 ![center w-300](./assets/images/logo_sfeir_bleu_orange.png)
 
-
 ![w-200](./assets/images/logo_courrier_international.png)
 https://reveil.courrierinternational.com
+
 <!-- .element: class="float-right" style="top:-100px; margin-left:50px;"-->
-
-
 
 ##--##
 

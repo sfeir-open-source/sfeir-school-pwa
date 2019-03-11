@@ -1,24 +1,30 @@
 .reveal .slides section .https .flex-col {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .reveal .slides section .https h2 {
   color: #333;
   text-align: left;
-  padding: 0; }
+  padding: 0;
+}
 
 .reveal .slides section .https hr {
   height: 20px;
   width: 100%;
-  box-shadow: 2px 2px 5px #212121; }
+  box-shadow: 2px 2px 5px #212121;
+}
 
 .reveal .slides section .https hr.blue {
-  background: #314ffe; }
+  background: #314ffe;
+}
 
 .reveal .slides section .https hr.red {
-  background: #dd311f; }
+  background: #dd311f;
+}
 
 .reveal .slides section .https hr.green {
-  background: #249f5a; }
+  background: #249f5a;
+}
 
 /*# sourceMappingURL=20_fiabilite.css.map */

@@ -25,20 +25,13 @@
     "currentClient": "Adeo",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "rue...",
     "manager": "Didier",
     "department": "Compta",
-    "skills": [
-      "Java",
-      "AngularJS",
-      "React",
-      "git",
-      "ES6",
-      "JavaScript"
-    ],
+    "skills": ["Java", "AngularJS", "React", "git", "ES6", "JavaScript"],
     "entryDate": "21/10/2014",
     "birthDate": "11/12/2001",
     "socialNumber": "4785882151",
@@ -92,21 +85,13 @@
     "currentClient": "Adeo",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "Place...",
     "manager": "Bruno",
     "department": "Recrutement",
-    "skills": [
-      "ad",
-      "dolore",
-      "ullamco",
-      "sunt",
-      "exercitation",
-      "Lorem",
-      "sint"
-    ],
+    "skills": ["ad", "dolore", "ullamco", "sunt", "exercitation", "Lorem", "sint"],
     "entryDate": "27/03/2005",
     "birthDate": "17/10/2008",
     "socialNumber": "16499299613",
@@ -160,21 +145,13 @@
     "currentClient": "Adeo",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "DO",
-    "skills": [
-      "dolore",
-      "in",
-      "officia",
-      "deserunt",
-      "Java",
-      "irure",
-      "velit"
-    ],
+    "skills": ["dolore", "in", "officia", "deserunt", "Java", "irure", "velit"],
     "entryDate": "13/01/2014",
     "birthDate": "30/09/2010",
     "socialNumber": "9527509429",
@@ -228,21 +205,13 @@
     "currentClient": "Sanofi",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "Place...",
     "manager": "Christophe",
     "department": "Commerce",
-    "skills": [
-      "magna",
-      "est",
-      "quis",
-      "reprehenderit",
-      "officia",
-      "velit",
-      "est"
-    ],
+    "skills": ["magna", "est", "quis", "reprehenderit", "officia", "velit", "est"],
     "entryDate": "08/07/2000",
     "birthDate": "13/08/2003",
     "socialNumber": "16786202449",
@@ -296,21 +265,13 @@
     "currentClient": "Generali",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "Boulevard..",
     "manager": "Céline",
     "department": "Compta",
-    "skills": [
-      "proident",
-      "commodo",
-      "pariatur",
-      "officia",
-      "ullamco",
-      "sint",
-      "laborum"
-    ],
+    "skills": ["proident", "commodo", "pariatur", "officia", "ullamco", "sint", "laborum"],
     "entryDate": "04/11/2002",
     "birthDate": "23/06/2013",
     "socialNumber": "6592428004",
@@ -364,21 +325,13 @@
     "currentClient": "Adeo",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "Place...",
     "manager": "Didier",
     "department": "DO",
-    "skills": [
-      "labore",
-      "sint",
-      "sit",
-      "dolore",
-      "est",
-      "duis",
-      "laboris"
-    ],
+    "skills": ["labore", "sint", "sit", "dolore", "est", "duis", "laboris"],
     "entryDate": "08/08/2003",
     "birthDate": "03/12/2009",
     "socialNumber": "10176756867",
@@ -432,21 +385,13 @@
     "currentClient": "Generali",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "DO",
-    "skills": [
-      "aliqua",
-      "mollit",
-      "irure",
-      "pariatur",
-      "ex",
-      "ES6",
-      "et"
-    ],
+    "skills": ["aliqua", "mollit", "irure", "pariatur", "ex", "ES6", "et"],
     "entryDate": "20/06/2000",
     "birthDate": "03/04/2012",
     "socialNumber": "7854914196",
@@ -500,21 +445,13 @@
     "currentClient": "Sanofi",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "Recrutement",
-    "skills": [
-      "Java",
-      "JavaScript",
-      "ipsum",
-      "veniam",
-      "nulla",
-      "do",
-      "aliqua"
-    ],
+    "skills": ["Java", "JavaScript", "ipsum", "veniam", "nulla", "do", "aliqua"],
     "entryDate": "12/01/2000",
     "birthDate": "30/09/2001",
     "socialNumber": "3193874425",
@@ -568,21 +505,13 @@
     "currentClient": "Generali",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "Boulevard..",
     "manager": "Céline",
     "department": "Commerce",
-    "skills": [
-      "aute",
-      "dolor",
-      "sint",
-      "incididunt",
-      "deserunt",
-      "ex",
-      "non"
-    ],
+    "skills": ["aute", "dolor", "sint", "incididunt", "deserunt", "ex", "non"],
     "entryDate": "26/04/2007",
     "birthDate": "29/08/2014",
     "socialNumber": "10904542270",
@@ -636,21 +565,13 @@
     "currentClient": "Sanofi",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "rue...",
     "manager": "Céline",
     "department": "Recrutement",
-    "skills": [
-      "laboris",
-      "anim",
-      "veniam",
-      "sit",
-      "adipisicing",
-      "cillum",
-      "React"
-    ],
+    "skills": ["laboris", "anim", "veniam", "sit", "adipisicing", "cillum", "React"],
     "entryDate": "13/03/2004",
     "birthDate": "25/11/2007",
     "socialNumber": "4204274692",
@@ -704,21 +625,13 @@
     "currentClient": "Adeo",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "Compta",
-    "skills": [
-      "ex",
-      "git",
-      "tempor",
-      "quis",
-      "AngularJS",
-      "ad",
-      "magna"
-    ],
+    "skills": ["ex", "git", "tempor", "quis", "AngularJS", "ad", "magna"],
     "entryDate": "25/05/2004",
     "birthDate": "22/01/2006",
     "socialNumber": "5268805734",
@@ -772,21 +685,13 @@
     "currentClient": "Adeo",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "Place...",
     "manager": "Céline",
     "department": "Recrutement",
-    "skills": [
-      "dolore",
-      "eiusmod",
-      "React",
-      "elit",
-      "officia",
-      "culpa",
-      "cillum"
-    ],
+    "skills": ["dolore", "eiusmod", "React", "elit", "officia", "culpa", "cillum"],
     "entryDate": "05/08/2005",
     "birthDate": "14/06/2011",
     "socialNumber": "9275039863",
@@ -840,21 +745,13 @@
     "currentClient": "Sanofi",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "rue...",
     "manager": "Christophe",
     "department": "Commerce",
-    "skills": [
-      "git",
-      "dolore",
-      "et",
-      "labore",
-      "veniam",
-      "sit",
-      "dolore"
-    ],
+    "skills": ["git", "dolore", "et", "labore", "veniam", "sit", "dolore"],
     "entryDate": "12/06/2008",
     "birthDate": "25/09/2003",
     "socialNumber": "15749101628",
@@ -908,21 +805,13 @@
     "currentClient": "Generali",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "Boulevard..",
     "manager": "Christophe",
     "department": "Commerce",
-    "skills": [
-      "velit",
-      "sunt",
-      "cupidatat",
-      "adipisicing",
-      "laborum",
-      "elit",
-      "do"
-    ],
+    "skills": ["velit", "sunt", "cupidatat", "adipisicing", "laborum", "elit", "do"],
     "entryDate": "13/07/2012",
     "birthDate": "29/06/2009",
     "socialNumber": "5122752902",
@@ -976,21 +865,13 @@
     "currentClient": "Sanofi",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "Commerce",
-    "skills": [
-      "proident",
-      "git",
-      "qui",
-      "et",
-      "in",
-      "AngularJS",
-      "qui"
-    ],
+    "skills": ["proident", "git", "qui", "et", "in", "AngularJS", "qui"],
     "entryDate": "26/01/2002",
     "birthDate": "18/09/2005",
     "socialNumber": "9963575055",
@@ -1044,21 +925,13 @@
     "currentClient": "Generali",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "Boulevard..",
     "manager": "Didier",
     "department": "Commerce",
-    "skills": [
-      "consequat",
-      "deserunt",
-      "id",
-      "aute",
-      "anim",
-      "commodo",
-      "aute"
-    ],
+    "skills": ["consequat", "deserunt", "id", "aute", "anim", "commodo", "aute"],
     "entryDate": "04/01/2005",
     "birthDate": "27/12/2010",
     "socialNumber": "13145851920",
@@ -1112,21 +985,13 @@
     "currentClient": "Sanofi",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "rue...",
     "manager": "Céline",
     "department": "Recrutement",
-    "skills": [
-      "tempor",
-      "aute",
-      "labore",
-      "velit",
-      "aliquip",
-      "excepteur",
-      "sit"
-    ],
+    "skills": ["tempor", "aute", "labore", "velit", "aliquip", "excepteur", "sit"],
     "entryDate": "12/01/2012",
     "birthDate": "09/11/2006",
     "socialNumber": "14829745059",
@@ -1180,21 +1045,13 @@
     "currentClient": "Sanofi",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "Boulevard..",
     "manager": "Céline",
     "department": "Recrutement",
-    "skills": [
-      "JavaScript",
-      "ex",
-      "cillum",
-      "non",
-      "reprehenderit",
-      "JavaScript",
-      "duis"
-    ],
+    "skills": ["JavaScript", "ex", "cillum", "non", "reprehenderit", "JavaScript", "duis"],
     "entryDate": "28/07/2003",
     "birthDate": "15/09/2013",
     "socialNumber": "12194744430",
@@ -1248,21 +1105,13 @@
     "currentClient": "Adeo",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "rue...",
     "manager": "Bruno",
     "department": "Compta",
-    "skills": [
-      "tempor",
-      "veniam",
-      "incididunt",
-      "velit",
-      "cupidatat",
-      "reprehenderit",
-      "proident"
-    ],
+    "skills": ["tempor", "veniam", "incididunt", "velit", "cupidatat", "reprehenderit", "proident"],
     "entryDate": "14/01/2001",
     "birthDate": "31/12/2003",
     "socialNumber": "13635038970",
@@ -1316,21 +1165,13 @@
     "currentClient": "Generali",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "Boulevard..",
     "manager": "Bruno",
     "department": "Recrutement",
-    "skills": [
-      "amet",
-      "quis",
-      "culpa",
-      "React",
-      "laborum",
-      "git",
-      "eiusmod"
-    ],
+    "skills": ["amet", "quis", "culpa", "React", "laborum", "git", "eiusmod"],
     "entryDate": "02/06/2010",
     "birthDate": "26/07/2010",
     "socialNumber": "6066273135",
@@ -1384,21 +1225,13 @@
     "currentClient": "Generali",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "Place...",
     "manager": "Bruno",
     "department": "DO",
-    "skills": [
-      "aute",
-      "nisi",
-      "reprehenderit",
-      "dolor",
-      "magna",
-      "est",
-      "excepteur"
-    ],
+    "skills": ["aute", "nisi", "reprehenderit", "dolor", "magna", "est", "excepteur"],
     "entryDate": "27/08/2009",
     "birthDate": "12/06/2010",
     "socialNumber": "12894801054",
@@ -1452,21 +1285,13 @@
     "currentClient": "Sanofi",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "Boulevard..",
     "manager": "Aurélien",
     "department": "Compta",
-    "skills": [
-      "occaecat",
-      "non",
-      "ipsum",
-      "elit",
-      "ES6",
-      "culpa",
-      "sit"
-    ],
+    "skills": ["occaecat", "non", "ipsum", "elit", "ES6", "culpa", "sit"],
     "entryDate": "05/01/2000",
     "birthDate": "26/01/2003",
     "socialNumber": "3091430665",
@@ -1520,21 +1345,13 @@
     "currentClient": "Adeo",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "rue...",
     "manager": "Bruno",
     "department": "Compta",
-    "skills": [
-      "qui",
-      "esse",
-      "duis",
-      "cillum",
-      "Java",
-      "proident",
-      "fugiat"
-    ],
+    "skills": ["qui", "esse", "duis", "cillum", "Java", "proident", "fugiat"],
     "entryDate": "19/09/2005",
     "birthDate": "18/11/2011",
     "socialNumber": "11949750189",
@@ -1588,21 +1405,13 @@
     "currentClient": "Sanofi",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "rue...",
     "manager": "Bruno",
     "department": "DO",
-    "skills": [
-      "reprehenderit",
-      "dolore",
-      "est",
-      "enim",
-      "non",
-      "incididunt",
-      "dolore"
-    ],
+    "skills": ["reprehenderit", "dolore", "est", "enim", "non", "incididunt", "dolore"],
     "entryDate": "30/12/2014",
     "birthDate": "01/08/2003",
     "socialNumber": "6221502209",
@@ -1656,21 +1465,13 @@
     "currentClient": "Sanofi",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "DO",
-    "skills": [
-      "sit",
-      "JavaScript",
-      "non",
-      "irure",
-      "ipsum",
-      "aute",
-      "dolor"
-    ],
+    "skills": ["sit", "JavaScript", "non", "irure", "ipsum", "aute", "dolor"],
     "entryDate": "01/01/2008",
     "birthDate": "26/02/2009",
     "socialNumber": "14879200058",
@@ -1724,21 +1525,13 @@
     "currentClient": "Adeo",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "rue...",
     "manager": "Christophe",
     "department": "DO",
-    "skills": [
-      "exercitation",
-      "mollit",
-      "non",
-      "proident",
-      "dolor",
-      "aliquip",
-      "amet"
-    ],
+    "skills": ["exercitation", "mollit", "non", "proident", "dolor", "aliquip", "amet"],
     "entryDate": "30/11/2000",
     "birthDate": "07/10/2007",
     "socialNumber": "9542445500",
@@ -1792,21 +1585,13 @@
     "currentClient": "Adeo",
     "workcity": "Nantes",
     "workCoords": {
-      "lat":47.2383171,
-      "long":-1.6302674
+      "lat": 47.2383171,
+      "long": -1.6302674
     },
     "workAdress": "Place...",
     "manager": "Céline",
     "department": "Commerce",
-    "skills": [
-      "qui",
-      "aute",
-      "aute",
-      "qui",
-      "nulla",
-      "laborum",
-      "duis"
-    ],
+    "skills": ["qui", "aute", "aute", "qui", "nulla", "laborum", "duis"],
     "entryDate": "30/10/2006",
     "birthDate": "17/01/2014",
     "socialNumber": "11917961949",
@@ -1860,21 +1645,13 @@
     "currentClient": "Sanofi",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "Place...",
     "manager": "Christophe",
     "department": "Compta",
-    "skills": [
-      "reprehenderit",
-      "proident",
-      "irure",
-      "React",
-      "non",
-      "ullamco",
-      "aute"
-    ],
+    "skills": ["reprehenderit", "proident", "irure", "React", "non", "ullamco", "aute"],
     "entryDate": "31/01/2011",
     "birthDate": "16/06/2000",
     "socialNumber": "7479137865",
@@ -1928,21 +1705,13 @@
     "currentClient": "Generali",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "Recrutement",
-    "skills": [
-      "esse",
-      "nisi",
-      "non",
-      "culpa",
-      "labore",
-      "esse",
-      "aute"
-    ],
+    "skills": ["esse", "nisi", "non", "culpa", "labore", "esse", "aute"],
     "entryDate": "09/08/2003",
     "birthDate": "14/01/2000",
     "socialNumber": "8096292131",
@@ -1996,21 +1765,13 @@
     "currentClient": "Sanofi",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "Place...",
     "manager": "Bruno",
     "department": "Recrutement",
-    "skills": [
-      "esse",
-      "culpa",
-      "cupidatat",
-      "elit",
-      "AngularJS",
-      "git",
-      "proident"
-    ],
+    "skills": ["esse", "culpa", "cupidatat", "elit", "AngularJS", "git", "proident"],
     "entryDate": "26/01/2004",
     "birthDate": "05/08/2000",
     "socialNumber": "13199062662",
@@ -2064,21 +1825,13 @@
     "currentClient": "Adeo",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "Place...",
     "manager": "Céline",
     "department": "Commerce",
-    "skills": [
-      "aute",
-      "deserunt",
-      "sunt",
-      "commodo",
-      "aliquip",
-      "cillum",
-      "consequat"
-    ],
+    "skills": ["aute", "deserunt", "sunt", "commodo", "aliquip", "cillum", "consequat"],
     "entryDate": "07/07/2014",
     "birthDate": "28/06/2003",
     "socialNumber": "10279959827",
@@ -2132,21 +1885,13 @@
     "currentClient": "Sanofi",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "rue...",
     "manager": "Didier",
     "department": "Compta",
-    "skills": [
-      "reprehenderit",
-      "velit",
-      "mollit",
-      "AngularJS",
-      "eiusmod",
-      "esse",
-      "officia"
-    ],
+    "skills": ["reprehenderit", "velit", "mollit", "AngularJS", "eiusmod", "esse", "officia"],
     "entryDate": "04/11/2011",
     "birthDate": "05/09/2001",
     "socialNumber": "12082427498",
@@ -2200,21 +1945,13 @@
     "currentClient": "Adeo",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "Boulevard..",
     "manager": "Christophe",
     "department": "Recrutement",
-    "skills": [
-      "est",
-      "commodo",
-      "et",
-      "culpa",
-      "reprehenderit",
-      "fugiat",
-      "duis"
-    ],
+    "skills": ["est", "commodo", "et", "culpa", "reprehenderit", "fugiat", "duis"],
     "entryDate": "06/10/2005",
     "birthDate": "09/03/2006",
     "socialNumber": "10712128961",
@@ -2268,21 +2005,13 @@
     "currentClient": "Generali",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "rue...",
     "manager": "Didier",
     "department": "Recrutement",
-    "skills": [
-      "commodo",
-      "JavaScript",
-      "qui",
-      "dolor",
-      "nisi",
-      "cillum",
-      "tempor"
-    ],
+    "skills": ["commodo", "JavaScript", "qui", "dolor", "nisi", "cillum", "tempor"],
     "entryDate": "15/09/2007",
     "birthDate": "10/12/2014",
     "socialNumber": "12094501908",
@@ -2336,21 +2065,13 @@
     "currentClient": "Sanofi",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "Place...",
     "manager": "Christophe",
     "department": "Recrutement",
-    "skills": [
-      "duis",
-      "et",
-      "adipisicing",
-      "cupidatat",
-      "aliquip",
-      "est",
-      "irure"
-    ],
+    "skills": ["duis", "et", "adipisicing", "cupidatat", "aliquip", "est", "irure"],
     "entryDate": "05/04/2000",
     "birthDate": "15/01/2006",
     "socialNumber": "8779501153",
@@ -2404,21 +2125,13 @@
     "currentClient": "Generali",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "Boulevard..",
     "manager": "Christophe",
     "department": "Commerce",
-    "skills": [
-      "amet",
-      "esse",
-      "sunt",
-      "laborum",
-      "enim",
-      "JavaScript",
-      "officia"
-    ],
+    "skills": ["amet", "esse", "sunt", "laborum", "enim", "JavaScript", "officia"],
     "entryDate": "27/01/2013",
     "birthDate": "30/11/2006",
     "socialNumber": "11743085818",
@@ -2472,21 +2185,13 @@
     "currentClient": "Generali",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "rue...",
     "manager": "Aurélien",
     "department": "Commerce",
-    "skills": [
-      "ipsum",
-      "labore",
-      "labore",
-      "nulla",
-      "duis",
-      "do",
-      "enim"
-    ],
+    "skills": ["ipsum", "labore", "labore", "nulla", "duis", "do", "enim"],
     "entryDate": "13/06/2006",
     "birthDate": "20/10/2010",
     "socialNumber": "12066586427",
@@ -2540,21 +2245,13 @@
     "currentClient": "Generali",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "Boulevard..",
     "manager": "Aurélien",
     "department": "Compta",
-    "skills": [
-      "aute",
-      "magna",
-      "dolore",
-      "eiusmod",
-      "ullamco",
-      "excepteur",
-      "JavaScript"
-    ],
+    "skills": ["aute", "magna", "dolore", "eiusmod", "ullamco", "excepteur", "JavaScript"],
     "entryDate": "25/03/2005",
     "birthDate": "29/08/2000",
     "socialNumber": "16880984099",
@@ -2608,21 +2305,13 @@
     "currentClient": "Adeo",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "Place...",
     "manager": "Didier",
     "department": "Commerce",
-    "skills": [
-      "esse",
-      "esse",
-      "tempor",
-      "incididunt",
-      "dolor",
-      "veniam",
-      "ullamco"
-    ],
+    "skills": ["esse", "esse", "tempor", "incididunt", "dolor", "veniam", "ullamco"],
     "entryDate": "08/07/2001",
     "birthDate": "24/02/2012",
     "socialNumber": "16549231054",
@@ -2676,21 +2365,13 @@
     "currentClient": "Generali",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "rue...",
     "manager": "Didier",
     "department": "DO",
-    "skills": [
-      "cupidatat",
-      "nulla",
-      "ES6",
-      "dolore",
-      "veniam",
-      "culpa",
-      "dolor"
-    ],
+    "skills": ["cupidatat", "nulla", "ES6", "dolore", "veniam", "culpa", "dolor"],
     "entryDate": "13/03/2001",
     "birthDate": "31/10/2003",
     "socialNumber": "13202155083",
@@ -2744,21 +2425,13 @@
     "currentClient": "Generali",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "Place...",
     "manager": "Didier",
     "department": "Compta",
-    "skills": [
-      "amet",
-      "React",
-      "excepteur",
-      "deserunt",
-      "JavaScript",
-      "ex",
-      "et"
-    ],
+    "skills": ["amet", "React", "excepteur", "deserunt", "JavaScript", "ex", "et"],
     "entryDate": "28/07/2008",
     "birthDate": "09/02/2011",
     "socialNumber": "5670562177",
@@ -2812,21 +2485,13 @@
     "currentClient": "Adeo",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "Place...",
     "manager": "Bruno",
     "department": "Compta",
-    "skills": [
-      "commodo",
-      "exercitation",
-      "do",
-      "React",
-      "incididunt",
-      "culpa",
-      "sint"
-    ],
+    "skills": ["commodo", "exercitation", "do", "React", "incididunt", "culpa", "sint"],
     "entryDate": "12/09/2003",
     "birthDate": "27/01/2013",
     "socialNumber": "10641120239",
@@ -2880,21 +2545,13 @@
     "currentClient": "Generali",
     "workcity": "Strasbourg",
     "workCoords": {
-      "lat":48.5692058,
-      "long":7.6918828
+      "lat": 48.5692058,
+      "long": 7.6918828
     },
     "workAdress": "rue...",
     "manager": "Bruno",
     "department": "DO",
-    "skills": [
-      "anim",
-      "nulla",
-      "excepteur",
-      "ES6",
-      "ex",
-      "incididunt",
-      "culpa"
-    ],
+    "skills": ["anim", "nulla", "excepteur", "ES6", "ex", "incididunt", "culpa"],
     "entryDate": "28/09/2013",
     "birthDate": "14/11/2010",
     "socialNumber": "3048243950",
@@ -2948,21 +2605,13 @@
     "currentClient": "Adeo",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "Boulevard..",
     "manager": "Aurélien",
     "department": "Recrutement",
-    "skills": [
-      "duis",
-      "aliquip",
-      "cillum",
-      "do",
-      "labore",
-      "dolor",
-      "reprehenderit"
-    ],
+    "skills": ["duis", "aliquip", "cillum", "do", "labore", "dolor", "reprehenderit"],
     "entryDate": "24/09/2008",
     "birthDate": "29/09/2008",
     "socialNumber": "9428109191",
@@ -3016,21 +2665,13 @@
     "currentClient": "Generali",
     "workcity": "Lille",
     "workCoords": {
-      "lat":50.6311167,
-      "long":3.0120553
+      "lat": 50.6311167,
+      "long": 3.0120553
     },
     "workAdress": "Boulevard..",
     "manager": "Bruno",
     "department": "Commerce",
-    "skills": [
-      "mollit",
-      "aliqua",
-      "anim",
-      "exercitation",
-      "cillum",
-      "culpa",
-      "irure"
-    ],
+    "skills": ["mollit", "aliqua", "anim", "exercitation", "cillum", "culpa", "irure"],
     "entryDate": "24/04/2001",
     "birthDate": "15/04/2009",
     "socialNumber": "12451216663",
@@ -3084,21 +2725,13 @@
     "currentClient": "Adeo",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "Boulevard..",
     "manager": "Didier",
     "department": "DO",
-    "skills": [
-      "incididunt",
-      "est",
-      "ullamco",
-      "irure",
-      "AngularJS",
-      "occaecat",
-      "esse"
-    ],
+    "skills": ["incididunt", "est", "ullamco", "irure", "AngularJS", "occaecat", "esse"],
     "entryDate": "10/03/2006",
     "birthDate": "03/07/2006",
     "socialNumber": "13941244767",
@@ -3152,21 +2785,13 @@
     "currentClient": "Generali",
     "workcity": "Luxembourg",
     "workCoords": {
-      "lat":49.8154033,
-      "long":5.8524553
+      "lat": 49.8154033,
+      "long": 5.8524553
     },
     "workAdress": "Boulevard..",
     "manager": "Christophe",
     "department": "Recrutement",
-    "skills": [
-      "laborum",
-      "laboris",
-      "labore",
-      "est",
-      "incididunt",
-      "occaecat",
-      "nulla"
-    ],
+    "skills": ["laborum", "laboris", "labore", "est", "incididunt", "occaecat", "nulla"],
     "entryDate": "29/12/2000",
     "birthDate": "05/09/2011",
     "socialNumber": "10132143513",
@@ -3220,21 +2845,13 @@
     "currentClient": "Sanofi",
     "workcity": "Paris",
     "workCoords": {
-      "lat":48.8589506,
-      "long":2.2768487
+      "lat": 48.8589506,
+      "long": 2.2768487
     },
     "workAdress": "Boulevard..",
     "manager": "Bruno",
     "department": "Recrutement",
-    "skills": [
-      "et",
-      "ES6",
-      "deserunt",
-      "est",
-      "officia",
-      "labore",
-      "git"
-    ],
+    "skills": ["et", "ES6", "deserunt", "est", "officia", "labore", "git"],
     "entryDate": "17/06/2000",
     "birthDate": "17/02/2000",
     "socialNumber": "16982835261",

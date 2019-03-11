@@ -5,16 +5,18 @@
 ##==##
 
 # Objectifs
+
 <br><br>
 
 ![h-700 float-left](./assets/images/devoxx_app.gif)
+
 <!-- .element: style="margin-left:500px; margin-right:50px;" -->
 
-* App Like
-<br><br>
-* Engament
-<br><br>
-* Performances
+- App Like
+  <br><br>
+- Engament
+  <br><br>
+- Performances
 
 ##==##
 
@@ -33,14 +35,14 @@
 <br>
 
 ```html
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.json" />
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>
 Notes:
 https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android?hl=en
-
 
 ##==##
 
@@ -75,7 +77,6 @@ https://developers.google.com/web/updates/2014/11/Support-for-installable-web-ap
 
 ![center h-600](./assets/images/black_phone.png)
 
-
 Notes:
 
 ##==##
@@ -93,7 +94,7 @@ Notes:
   ...,
   "icons": [
     {
-      "src": 
+      "src":
       "../img/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
@@ -102,12 +103,12 @@ Notes:
   ...
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
 
 ![center h-600](./assets/images/pwa_icon.png)
-
 
 Notes:
 
@@ -125,19 +126,19 @@ Notes:
 {
   "short_name": "Peoples",
   "icons": [
-    { "src": 
+    { "src":
       "../img/icons/icon-192x192.png"}
    ],
   "background_color": "#3E4EB8",
   "theme_color": "#2F3BA2",
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
 
 ![center h-600](./assets/images/pwa_splash.png)
-
 
 Notes:
 
@@ -158,12 +159,12 @@ Notes:
   ...
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
 
 ![center h-600](./assets/images/pwa_first-screen.png)
-
 
 Notes:
 
@@ -184,12 +185,12 @@ Notes:
   ...
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
 
 ![center h-600](./assets/images/pwa_first-screen.png)
-
 
 Notes:
 
@@ -210,12 +211,12 @@ Notes:
   ...
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
 
 ![center h-600](./assets/images/pwa_first-screen-window.png)
-
 
 Notes:
 
@@ -237,12 +238,12 @@ Notes:
   ...
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
 
 ![center h-600](./assets/images/pwa_games.png)
-
 
 Notes:
 
@@ -264,6 +265,7 @@ Notes:
   ...
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
@@ -281,6 +283,7 @@ Notes:
 <br>
 
 https://manifest-validator.appspot.com/
+
 <!-- .element: class="center" -->
 
 <br>
@@ -294,6 +297,7 @@ https://manifest-validator.appspot.com/
 <br>
 
 https://app-manifest.firebaseapp.com/
+
 <!-- .element: class="center" -->
 
 <br>

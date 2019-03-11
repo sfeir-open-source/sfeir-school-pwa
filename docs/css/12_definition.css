@@ -4,31 +4,38 @@
   font-size: 2em;
   left: -1em;
   color: gray;
-  top: 50%; }
+  top: 50%;
+}
 
 .reveal .slides section .target-touch {
   position: absolute;
   font-size: 2em;
   color: gray;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
-.reveal .slides section img[alt*=border-circle] {
+.reveal .slides section img[alt*='border-circle'] {
   border-radius: 300px;
   border-color: #dcdee0;
   border-style: solid;
-  border-width: 25px; }
+  border-width: 25px;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=red] {
-  background: #dd311f; }
+.reveal .slides section img[alt*='border-circle'][alt*='red'] {
+  background: #dd311f;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=green] {
-  background: #249f5a; }
+.reveal .slides section img[alt*='border-circle'][alt*='green'] {
+  background: #249f5a;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=blue] {
-  background: #314ffe; }
+.reveal .slides section img[alt*='border-circle'][alt*='blue'] {
+  background: #314ffe;
+}
 
-.reveal .slides section img[alt*=border-circle][alt*=purple] {
-  background: #773f9b; }
+.reveal .slides section img[alt*='border-circle'][alt*='purple'] {
+  background: #773f9b;
+}
 
 /*# sourceMappingURL=12_definition.css.map */

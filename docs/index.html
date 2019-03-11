@@ -1,133 +1,354 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-	<head>
-		<meta charset="utf-8">
+    <title>Sfeir School - PWA</title>
 
-		<title>Sfeir School - PWA</title>
+    <meta name="description" content="A Theme for open source sfeir schools" />
+    <meta name="author" content="Jean-François Garreau AKA jefBinomed" />
 
-		<meta name="description" content="A Theme for open source sfeir schools">
-		<meta name="author" content="Jean-François Garreau AKA jefBinomed">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-        <!-- ----------------------------------------------------
+    <!-- ----------------------------------------------------
         ---------------- REVEAL STYLES  -------------------------
         ------------------------------------------------------ -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css">
-		<!--<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"
+    />
+    <!--<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">-->
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css">
+    <!-- For syntax highlighting -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+    />
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write(
+        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/' +
+          (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') +
+          '.css" type="text/css" media="print">'
+      );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="reveal/lib/js/html5shiv.js"></script>
-		<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="reveal/lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-       <!-- ----------------------------------------------------
+    <!-- ----------------------------------------------------
 	    ---------------- PREZ STYLES  ---------------------------
 	    ------------------------------------------------------ -->
 
-        <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme">
-		<script type="module" src="./school-theme/js/sfeir-theme.js"></script>
+    <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme" />
+    <script type="module" src="./school-theme/js/sfeir-theme.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="./css/pwa.css" id="theme-custo" />
+  </head>
 
-        <link rel="stylesheet" type="text/css" href="./css/pwa.css" id="theme-custo">
-	</head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides" data-type-show="prez">
+        <section
+          data-markdown="./markdown/00_intro.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/01_speaker.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- Intro -->
+        <section
+          data-markdown="./markdown/10_Intro.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/11_contexte.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/12_definition.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/13_outils.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/14_webapp.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- Fiabilite -->
+        <section
+          data-markdown="./markdown/20_fiabilite.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/21_securite.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/22_service_worker.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/22-1_sw-1.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/22-2_sw-2.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/22-3_sw-3.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/22-4_sw-4.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/23_app_shell.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/23-1_sw-5-1.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/24_offline.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/24-1_sw-5-2.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/24-2_sw-5-3.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/24-3_sw-5-4.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/24-4_sw-5-5.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- Integration -->
+        <section
+          data-markdown="./markdown/30_integration.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/31_installable.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/31-1_manifest-1.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/31-2_install-1.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/32_device_apis.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/32-1_device-1.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/32-2_device-2.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- Engagement -->
+        <section
+          data-markdown="./markdown/40_engagement.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/41_push.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/41-1_push-1.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/42_ux.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/43_performance.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/44_rendering.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- Library -->
+        <section
+          data-markdown="./markdown/50_library.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/50-1_workbox-1.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- Conclusion -->
+        <section
+          data-markdown="./markdown/60_conclusion.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>
 
-	<body>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        width: 1929,
+        height: 1080,
 
-		<div class="reveal">
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides" data-type-show="prez">
-				   <section data-markdown="./markdown/00_intro.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/01_speaker.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <!-- Intro -->
-				   <section data-markdown="./markdown/10_Intro.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/11_contexte.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/12_definition.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/13_outils.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/14_webapp.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <!-- Fiabilite -->
-				   <section data-markdown="./markdown/20_fiabilite.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/21_securite.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/22_service_worker.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/22-1_sw-1.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/22-2_sw-2.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/22-3_sw-3.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/22-4_sw-4.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/23_app_shell.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/23-1_sw-5-1.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/24_offline.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/24-1_sw-5-2.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/24-2_sw-5-3.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/24-3_sw-5-4.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/24-4_sw-5-5.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <!-- Integration -->
-				   <section data-markdown="./markdown/30_integration.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/31_installable.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/31-1_manifest-1.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/31-2_install-1.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/32_device_apis.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/32-1_device-1.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/32-2_device-2.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <!-- Engagement -->
-				   <section data-markdown="./markdown/40_engagement.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/41_push.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/41-1_push-1.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/42_ux.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/43_performance.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/44_rendering.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <!-- Library -->
-				   <section data-markdown="./markdown/50_library.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <section data-markdown="./markdown/50-1_workbox-1.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-				   <!-- Conclusion -->
-				   <section data-markdown="./markdown/60_conclusion.md" data-separator="##==##" data-separator-vertical="##--##" data-separator-notes="^Notes:" ></section>
-			</div>
-
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: false,
-                width: 1929,
-	           height: 1080,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'node_modules/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'node_modules/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
-
-
-	</body>
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/classList.js',
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          },
+          {
+            src: 'node_modules/reveal.js/plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          }
+          // { src: 'node_modules/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'node_modules/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
 </html>

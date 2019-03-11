@@ -4,10 +4,9 @@
 
 ## Exercice
 
-
 <br>
 
-1. Créez votre manifest.json avec comme icônes celles contenues dans le dossier assets/img/icons (url ./img/icons/…) et avec votre application en mode standalone 
+1. Créez votre manifest.json avec comme icônes celles contenues dans le dossier assets/img/icons (url ./img/icons/…) et avec votre application en mode standalone
 2. Placez ce fichier dans un répertoire /manifest-1/manifest/
 3. Liez-le à votre application avec landing.html
 4. Pensez à ajouter le fichier manifest.json aux fichiers dans le cache static
@@ -37,12 +36,12 @@
 ##--##
 
 <br><br>
-* Support hors-ligne(Service worker)
-<br><br>
-* Un manifest correct
-<br><br>
-* Utilisateur engagé...
 
+- Support hors-ligne(Service worker)
+  <br><br>
+- Un manifest correct
+  <br><br>
+- Utilisateur engagé...
 
 ##--##
 
@@ -56,13 +55,13 @@ Notes:
 
 <br><br>
 
-* La manifest doit avoir un `short_name`
-<br><br>
-* Une start_url qui peut être chargeable,
-<br><br>
-* Au moins une icone PNG `144x144`
-<br><br>
-* La déclaration de l’icône doit avoir un type MIME : image/png
+- La manifest doit avoir un `short_name`
+  <br><br>
+- Une start_url qui peut être chargeable,
+  <br><br>
+- Au moins une icone PNG `144x144`
+  <br><br>
+- La déclaration de l’icône doit avoir un type MIME : image/png
 
 ##==##
 
@@ -72,11 +71,12 @@ Notes:
 
 ```html
 <!-- Add to home screen for Safari on iOS -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="MyApp">
-<link rel="apple-touch-icon" href="../img/icons/icon-152x152.png">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-title" content="MyApp" />
+<link rel="apple-touch-icon" href="../img/icons/icon-152x152.png" />
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -92,19 +92,18 @@ Notes:
 Notes:
 https://developers.google.com/web/fundamentals/engage-and-retain/app-install-banners/web-app-install-banners?hl=en
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
 
 # Bannière : L’évènement beforeinstallprompt
 
-
 ```javascript
 window.addEventListener('beforeinstallprompt', function(e) {
   ...
 });
 ```
+
 <!-- .element: class="big-code"-->
 
 <br>
@@ -115,19 +114,18 @@ window.addEventListener('beforeinstallprompt', function(e) {
 
 # Bannière : L’évènement beforeinstallprompt
 
-
 ```javascript
 window.addEventListener('beforeinstallprompt', function(e) {
   e.userChoice.then(function(choiceResult) {
-    if(choiceResult.outcome == 'dismissed') {
+    if (choiceResult.outcome == 'dismissed') {
       console.log('User cancelled home screen install');
-    }
-    else {
+    } else {
       console.log('User added to home screen');
     }
   });
 });
 ```
+
 <!-- .element: class="big-code"-->
 
 <br>
@@ -137,7 +135,6 @@ window.addEventListener('beforeinstallprompt', function(e) {
 <!-- .slide: class="with-code" -->
 
 # Reporter l’installation de la bannière
-
 
 <br>
 
@@ -150,6 +147,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
   return false;
 });
 ```
+
 <!-- .element: class="big-code"-->
 
 <br>
@@ -160,17 +158,16 @@ window.addEventListener('beforeinstallprompt', function(e) {
 
 # Reporter l’installation de la bannière
 
-
 <br>
 
 ```javascript
 btnSave.addEventListener('click', function() {
-  if(deferredPrompt !== undefined) {
+  if (deferredPrompt !== undefined) {
     deferredPrompt.prompt();
   }
 });
-
 ```
+
 <!-- .element: class="big-code"-->
 
 <br>
@@ -181,22 +178,21 @@ btnSave.addEventListener('click', function() {
 
 # Reporter l’installation de la bannière
 
-
 <br>
 
 ```javascript
 btnSave.addEventListener('click', function() {
-  if(deferredPrompt !== undefined) {
+  if (deferredPrompt !== undefined) {
     deferredPrompt.prompt();
-    
+
     deferredPrompt.userChoice.then(function(choiceResult) {
       console.log(choiceResult.outcome);
       deferredPrompt = null;
     });
   }
 });
-
 ```
+
 <!-- .element: class="big-code"-->
 
 <br>
@@ -205,8 +201,7 @@ btnSave.addEventListener('click', function() {
 
 <!-- .slide: class="with-code" -->
 
-# Désactiver la bannière 
-
+# Désactiver la bannière
 
 <br>
 
@@ -217,6 +212,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
   return false;
 });
 ```
+
 <!-- .element: class="big-code"-->
 
 <br>
@@ -230,12 +226,12 @@ window.addEventListener('beforeinstallprompt', function(e) {
 <br>
 ### Chrome [68 on Android](https://developers.google.com/web/updates/2018/06/a2hs-updates) will no longer show the add to home screen banner !
 
-
 <br><br>
+
 ```javascript
 let installPromptEvent;
 
-window.addEventListener('beforeinstallprompt', (event) => {
+window.addEventListener('beforeinstallprompt', event => {
   // Prevent Chrome <= 67 from automatically showing the prompt
   event.preventDefault();
   // Stash the event so it can be triggered later.
@@ -244,4 +240,5 @@ window.addEventListener('beforeinstallprompt', (event) => {
   document.querySelector('#install-button').disabled = false;
 });
 ```
+
 <br>

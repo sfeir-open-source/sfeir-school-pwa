@@ -26,14 +26,7 @@
   "workAdress": "rue...",
   "manager": "Didier",
   "department": "Compta",
-  "skills": [
-    "Java",
-    "AngularJS",
-    "React",
-    "git",
-    "ES6",
-    "JavaScript"
-  ],
+  "skills": ["Java", "AngularJS", "React", "git", "ES6", "JavaScript"],
   "entryDate": "21/10/2014",
   "birthDate": "11/12/2001",
   "socialNumber": "4785882151",

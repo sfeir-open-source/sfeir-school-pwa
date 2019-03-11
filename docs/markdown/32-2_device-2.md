@@ -4,11 +4,9 @@
 
 ## Exercice
 
-
 <br>
 
 Ajouter un bouton ![](./assets/images/fullscreen_icon.png) sur les PeopleCard permettant d’afficher un people en fullscreen.
-
 
 ### Step: device-2
 
@@ -23,8 +21,6 @@ Ajouter un bouton ![](./assets/images/fullscreen_icon.png) sur les PeopleCard pe
 Notes:
 https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API
 
-
-
 ##==##
 
 # Des notifications intégrées
@@ -33,12 +29,10 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ## Permet d'afficher des notifications natives
 
-
 ![center h-600](./assets/images/notifications.png)
 
 Notes:
 The Notifications API lets a web page or app send notifications that are displayed outside the page at the system level; this lets web apps send information to a user even if the application is idle or in the background. This article looks at the basics of using this API in your own apps.
-
 
 ##==##
 
@@ -70,7 +64,6 @@ And it’s relevant - something I should be interested in.
 Notes:
 You’ll have opportunities to monetize the user experience once they’re in your app. [CLICK] Don’t blow it by spamming your users when they’re not. If you spam your users with notifications, they may stop allowing them altogether.
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -80,20 +73,20 @@ You’ll have opportunities to monetize the user experience once they’re in yo
 ```javascript
 function notifyMe() {
   // Let's check if the browser supports notifications
-  if (!("Notification" in window)) {
-    alert("This browser does not support desktop notification");
+  if (!('Notification' in window)) {
+    alert('This browser does not support desktop notification');
   }
   // Let's check whether notification permissions have already been granted
-  else if (Notification.permission === "granted") {
+  else if (Notification.permission === 'granted') {
     // If it's okay let's create a notification
-    var notification = new Notification("Hi there!");
+    var notification = new Notification('Hi there!');
   }
   // Otherwise, we need to ask the user for permission
-  else if (Notification.permission !== "denied") {
-    Notification.requestPermission(function (permission) {
+  else if (Notification.permission !== 'denied') {
+    Notification.requestPermission(function(permission) {
       // If the user accepts, let's create a notification
-      if (permission === "granted") {
-        var notification = new Notification("Hi there!");
+      if (permission === 'granted') {
+        var notification = new Notification('Hi there!');
       }
     });
   }
@@ -108,7 +101,6 @@ Assume this basic HTML:
 <button onclick="notifyMe()">Notify me!</button>
 It's possible to send a notification as follows — here we present a fairly verbose and complete set of code you could use if you wanted to first check whether notifications are supported, then check if permission has been granted for the current origin to send notifications, then request permission if required, before then sending a notification.
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -118,10 +110,9 @@ It's possible to send a notification as follows — here we present a fairly ver
 <br><br>
 
 ```javascript
-setTimeout(
-    notification.close.bind(notification)
-, 4000);
+setTimeout(notification.close.bind(notification), 4000);
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>
@@ -143,7 +134,6 @@ Note: When you receive a "close" event, there is no guarantee that it's the user
 
 # Appeler un numéro depuis un site web ?
 
-
 <br>
 
 ![h-450](./assets/images/call_phone_1.png)
@@ -164,13 +154,13 @@ Appelez SFEIR Nantes
   +33 2 55 59 07 00
 </a>
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>
 
 Notes:
 https://developers.google.com/web/fundamentals/native-hardware/click-to-call/
-
 
 ##==##
 
@@ -194,16 +184,16 @@ Most of the problems that lead to abandonment can be directly traced to purchase
 Any system that improves or solves one or more of those problems is a welcome change. We started solving the problem already with Autofill, but now we'd like to talk about a more comprehensive solution.
 
 Je pense que pour cette partie, on peut adopter un bon rythme avec la répétition :
-1) actuellement: "vous trouvez ça chiant" (comme intro rapide, en passant rapidement dessus)
-2) magie: la solution
-3) oui mais: le support
+
+1. actuellement: "vous trouvez ça chiant" (comme intro rapide, en passant rapidement dessus)
+2. magie: la solution
+3. oui mais: le support
 
 ##==##
 
 # Payment Request API
 
 ![center h-800](./assets/images/payment_request_api.png)
-
 
 ##==##
 
@@ -213,13 +203,11 @@ Je pense que pour cette partie, on peut adopter un bon rythme avec la répétiti
 
 ![center h-700](./assets/images/payment_request_process.png)
 
-
 Notes:
 https://developers.google.com/web/fundamentals/payments/
 Using the Payment Request API, the transaction process is made as seamless as possible for both users and merchants.
 The process begins when the merchant site creates a new PaymentRequest and passes to the browser all the information required to make the purchase: the amount to be charged, what currency they expect payment in, and what payment methods are accepted by the site. The browser determines compatibility between the accepted payment methods for the site and the methods the user has installed on the target device.
 The browser then presents the payments UI to the user, who selects a payment method and authorizes the transaction. A payment method can be as straightforward as a credit card that is already stored by the browser, or as esoteric as third-party application written specifically to deliver payments to the site.
-
 
 ##==##
 
@@ -236,7 +224,6 @@ MAJ 2018-08-30
 
 # Partager un contenu ?
 
-
 ![h-500](./assets/images/url_image.png)
 ![h-400](./assets/images/sup_share.png)
 
@@ -252,15 +239,17 @@ This method, part of the simple Web Share API—written by Matt Giuca on the Chr
 
 ```javascript
 if (navigator.share) {
-  navigator.share({
+  navigator
+    .share({
       title: 'SFEIR School PWA',
       text: 'Check out the SFEIR School PWA — it rocks!',
-      url: 'https://www.sfeir.com/formation/school/',
-  })
+      url: 'https://www.sfeir.com/formation/school/'
+    })
     .then(() => console.log('Successful share'))
-    .catch((error) => console.log('Error sharing', error));
+    .catch(error => console.log('Error sharing', error));
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>

@@ -12,7 +12,6 @@ Ajouter un bouton pour filtrer les profils en fonction de la position de l’uti
 
 💡 Utilisez la méthode getNearestAgency(coord) pour récupérer le nom de l’agence la plus proche de la position
 
-
 ### Step: device-1
 
 ##==##
@@ -37,7 +36,6 @@ IE 11 does not allow scrolling when document.documentElement is set to full scre
 IE 11 does not properly support fullscreen when opening from an iframe.
 Opera 12.1 uses the older specificaton's :fullscreen-ancestor pseudo-class instead of the the ::backdrop pseudo-element.
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -54,6 +52,7 @@ document.mozCancelFullScreen();
 document.msExitFullscreen();
 document.exitFullscreen(); // standard
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>
@@ -61,7 +60,6 @@ document.exitFullscreen(); // standard
 ##==##
 
 # Cross-browser libs
-
 
 <br>
 
@@ -71,7 +69,6 @@ document.exitFullscreen(); // standard
 Notes:
 sceenfull.js -> google developers
 fscreen -> MDN
-
 
 ##==##
 
@@ -88,6 +85,7 @@ fscreen -> MDN
   }, false);
 </script>
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>
@@ -101,23 +99,24 @@ https://developers.google.com/web/fundamentals/native-hardware/fullscreen/
 
 # Et avec les préfixes 🙇
 
-
 ```javascript
 function toggleFullScreen() {
   var doc = window.document;
   var docEl = doc.documentElement;
 
-  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+  var requestFullScreen =
+    docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  var cancelFullScreen =
+    doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
 
-  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+  if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
     requestFullScreen.call(docEl);
-  }
-  else {
+  } else {
     cancelFullScreen.call(doc);
   }
 }
 ```
+
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
@@ -142,6 +141,7 @@ div:fullscreen {
   width: 100% !important;
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##--##
@@ -162,6 +162,7 @@ div:fullscreen {
   display: none;
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 <br>
@@ -193,7 +194,6 @@ document.documentElement.requestFullscreen();
 Notes:
 It is natural to think that you take the body element fullscreen, but if you are on a WebKit or Blink based rendering engine you will see it has an odd effect of shrinking the body width to the smallest possible size that will contain all the content. (Mozilla Gecko is fine.)
 
-
 ##==##
 
 # Laisser le choix !
@@ -206,4 +206,3 @@ Don't intercept the first touch event and call requestFullscreen().
 It is annoying.
 Browsers may decided to prompt the user at some point in the future about allowing the app to take up the fullscreen.
 If you want to launch apps fullscreen think about using the install experiences for each platform.
-

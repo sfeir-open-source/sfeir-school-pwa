@@ -9,6 +9,7 @@
 # ⚠ Ne pas confondre
 
 <br><br>
+
 <p>
     <span>
     Notification API<br>
@@ -59,7 +60,6 @@ MAJ: 2018-08-31
 <span class="center">Envoyer<br><strong>PushSubscription</strong> à<br>votre serveur</span>
 </p>
 
-
 ##==##
 
 <!-- .slide: class="flex-row" -->
@@ -80,7 +80,6 @@ MAJ: 2018-08-31
 <span class="center">Le message<br>arrive sur vos<br>appareils</span>
 </p>
 
-
 ##==##
 
 <!-- .slide: class="flex-row" -->
@@ -99,7 +98,6 @@ MAJ: 2018-08-31
 <span class="center">Capture l'événement<br><strong>push</strong> et montre la<br>notification</span>
 </p>
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -116,6 +114,7 @@ if ('serviceWorker' in navigator) {
         });
     });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -130,6 +129,7 @@ function subscribe() {
     reg.pushManager.subscribe({userVisibleOnly: true})
 
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -149,6 +149,7 @@ function subscribe() {
       });
 
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -159,12 +160,13 @@ function subscribe() {
 
 ```javascript
 reg.pushManager.getSubscription().then(function(sub) {
-    if (sub) {
-        sub.unsubscribe();
-        console.log('Unsubscribe - user has been unsubscribed!');
-      }
-    });
+  if (sub) {
+    sub.unsubscribe();
+    console.log('Unsubscribe - user has been unsubscribed!');
+  }
+});
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -176,6 +178,7 @@ reg.pushManager.getSubscription().then(function(sub) {
 ```javascript
 self.addEventListener('push', function(event) {...}
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -194,6 +197,7 @@ self.addEventListener('push', function(event) {
       })
 }
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -204,9 +208,10 @@ self.addEventListener('push', function(event) {
 
 ```javascript
 fetch('/notification.json').then(function(response) {
-    return response.json();
-})
+  return response.json();
+});
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -216,14 +221,19 @@ fetch('/notification.json').then(function(response) {
 # De vrais données
 
 ```javascript
-fetch('/notification.json').then(function(response) {
+fetch('/notification.json')
+  .then(function(response) {
     return response.json();
-}).then(function(data) {
+  })
+  .then(function(data) {
     self.registration.showNotification(data.title, {
-        body: data.body, icon: data.avatar, tag: data.mail
+      body: data.body,
+      icon: data.avatar,
+      tag: data.mail
     });
-})
+  });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -237,12 +247,10 @@ self.registration.showNotification(data.title, {
   body: data.body,
   icon: data.icons,
   tag: data.tag,
-  actions: [
-    {action: 'open', title: 'Show me more details'},
-    {action: 'cancel', title: 'No thanks'}
-  ]
+  actions: [{ action: 'open', title: 'Show me more details' }, { action: 'cancel', title: 'No thanks' }]
 });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -254,6 +262,7 @@ self.registration.showNotification(data.title, {
 ```javascript
 self.addEventListener('notificationclick', function(event) {...});
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -264,13 +273,14 @@ self.addEventListener('notificationclick', function(event) {...});
 
 ```javascript
 self.addEventListener('notificationclick', function(event) {
-    var url;
-    event.notification.close();
-    if (event.action === 'open') {
-        url = 'http://localhost:8080/#/people/' + event.notification.tag;
-    }
+  var url;
+  event.notification.close();
+  if (event.action === 'open') {
+    url = 'http://localhost:8080/#/people/' + event.notification.tag;
+  }
 });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -286,4 +296,5 @@ self.addEventListener('notificationclick', function(event) {
     clients.openWindow(url);
 });
 ```
+
 <!-- .element: class="big-code" -->

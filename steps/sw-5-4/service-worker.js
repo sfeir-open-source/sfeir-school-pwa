@@ -1,22 +1,22 @@
-console.log("Service worker ok =D");
+console.log('Service worker ok =D');
 
 var cacheAppShellStatic = [
-  "/",
-  "/index.html",
-  "/mdl/material.min.css",
-  "/mdl/material.min.js",
-  "/css/material-icons.css",
-  "/css/md-overwrite.css",
-  "/css/font/MaterialIcons-Regular.woff2",
-  "/img/logo-app.png",
-  "/offline.html"
+  '/',
+  '/index.html',
+  '/mdl/material.min.css',
+  '/mdl/material.min.js',
+  '/css/material-icons.css',
+  '/css/md-overwrite.css',
+  '/css/font/MaterialIcons-Regular.woff2',
+  '/img/logo-app.png',
+  '/offline.html'
 ];
 
-self.addEventListener("install", function(event) {
-  console.log("event install");
+self.addEventListener('install', function(event) {
+  console.log('event install');
   event.waitUntil(
     caches
-      .open("cache-static")
+      .open('cache-static')
       .then(function(cache) {
         return cache.addAll(cacheAppShellStatic);
       })
@@ -26,22 +26,26 @@ self.addEventListener("install", function(event) {
   );
 });
 
-self.addEventListener("activate", function(event) {
-  console.log("event activate");
+self.addEventListener('activate', function(event) {
+  console.log('event activate');
   event.waitUntil(self.clients.claim());
 });
 
-self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request).then(function (response) {
-      return response || fetch(event.request).then(function(responseFetch) {
+    caches.match(event.request).then(function(response) {
+      return (
+        response ||
+        fetch(event.request)
+          .then(function(responseFetch) {
+            // exercice 5-4: add your code here
 
-        // exercice 5-4: add your code here
-
-        return responseFetch;
-      }).catch(function() {
-        return event.respondWith(caches.match(new Request('offline.html')));
-      });
+            return responseFetch;
+          })
+          .catch(function() {
+            return event.respondWith(caches.match(new Request('offline.html')));
+          })
+      );
     })
   );
 });

@@ -19,11 +19,11 @@ https://medium.com/google-developers/instant-loading-web-apps-with-an-applicatio
 <!-- .element: class="center" -->
 
 https://github.com/GoogleChrome/application-shell/
+
 <!-- .element: class="center" -->
 
 <br>
 Notes:
-
 
 ##==##
 
@@ -42,11 +42,11 @@ Notes:
 Demandez vous :
 <br><br><br>
 
-* Qu’est ce qui doit apparaître à l’écran immédiatement ?
-<br><br>
-* Quels sont les composants clés de votre app ?
-<br><br>
-* Quelles sont les ressources dont vous avez besoin ? (images, css, js, etc …)
+- Qu’est ce qui doit apparaître à l’écran immédiatement ?
+  <br><br>
+- Quels sont les composants clés de votre app ?
+  <br><br>
+- Quelles sont les ressources dont vous avez besoin ? (images, css, js, etc …)
 
 ##==##
 
@@ -71,15 +71,17 @@ Demandez vous :
 <br><br>
 
 Ouvrir un cache et ajouter un ensemble de fichiers
+
 <!-- .element: class="center" -->
 
 <br>
 
 ```javascript
-caches.open('cache-name').then(function(cache){
-   cache.addAll(/* Array of files path */);
+caches.open('cache-name').then(function(cache) {
+  cache.addAll(/* Array of files path */);
 });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -91,15 +93,17 @@ caches.open('cache-name').then(function(cache){
 <br><br>
 
 Chercher une requête dans les caches
+
 <!-- .element: class="center" -->
 
 <br>
 
 ```javascript
-caches.match(event.request).then(function(response){
-   //Do stuff
+caches.match(event.request).then(function(response) {
+  //Do stuff
 });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
@@ -111,18 +115,18 @@ caches.match(event.request).then(function(response){
 <br><br>
 
 Exécuter une requête et mettre le résultat dans le cache
+
 <!-- .element: class="center" -->
 
 <br>
 
 ```javascript
-fetch(event.request).then(function(response){
-   return caches.open('dynamic-cache').then(function(cache){
-      cache.put(event.request, response.clone());
-      return response;
-   });
+fetch(event.request).then(function(response) {
+  return caches.open('dynamic-cache').then(function(cache) {
+    cache.put(event.request, response.clone());
+    return response;
+  });
 });
 ```
+
 <!-- .element: class="big-code" -->
-
-
