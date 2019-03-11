@@ -202,12 +202,6 @@ section > h1 {
   width: 500px;
 }
 
-.people-list-all,
-.people-detail,
-.people-random {
-  padding-top: 175px;
-}
-
 .mdl-card label.fullscreen-button {
   position: absolute;
   right: 0;

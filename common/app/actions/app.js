@@ -16,6 +16,9 @@ const loadPage = ([page, ...params]) => dispatch => {
     case 'people':
       import('../components/PeopleListComponent.js');
       break;
+    case 'about':
+      import('../components/AboutComponent.js');
+      break;
     default:
       page = 'home';
       import('../components/HomeComponent.js');

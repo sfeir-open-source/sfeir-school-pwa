@@ -24,6 +24,7 @@ export class PeopleApp extends connect(store)(LitElement) {
 
         .page {
           display: none;
+          padding-top: 175px;
         }
         .page[active] {
           display: block;
@@ -44,6 +45,7 @@ export class PeopleApp extends connect(store)(LitElement) {
       <div>
         <home-component class="page" ?active="${this._page === 'home'}"></home-component>
         <people-list class="page" ?active="${this._page === 'people'}" peopleid="${this._peopleId}"></people-list>
+        <app-about class="page" ?active="${this._page === 'about'}"></app-about>
       </div>
     `;
   }
