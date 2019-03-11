@@ -79,15 +79,6 @@
         <i class="material-icons">vertical_align_bottom</i>
       </button>
     </section>
-    <script>
-      // HACK(keanulee): The Redux package assumes `process` exists - mock it here before
-      // the module is loaded.
-      window.process = {
-        env: {
-          NODE_ENV: 'production'
-        }
-      };
-    </script>
     <noscript>
       Please enable JavaScript to view this website.
     </noscript>
