@@ -1,3 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition-white sfeir-bg-red" -->
 
 # The PRPL Pattern

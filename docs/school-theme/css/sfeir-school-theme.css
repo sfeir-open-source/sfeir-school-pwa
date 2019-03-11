@@ -314,7 +314,7 @@ body {
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 400px;
+  max-height: 1000px;
   word-wrap: normal;
 }
 

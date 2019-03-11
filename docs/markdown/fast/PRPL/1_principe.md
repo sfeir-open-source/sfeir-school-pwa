@@ -1,3 +1,9 @@
+<!-- .slide: class="transition-white sfeir-bg-blue" -->
+
+# Principles
+
+##==##
+
 <!-- .slide: class="flex-row"-->
 
 # P.R.P.L
@@ -22,12 +28,6 @@
 
 ![center h-800](./assets/images/PRPL/app-build-components.png)
 
-##==##
-
-# Minimal Entrypoint
-
-![center h-600](./assets/images/PRPL/prpl_loading-appshell_html-vs-js.png)
-
-Notes:
-left: initial template is in html -> heavy entry point
-right: - in PeopleApp -> light entry point = better first paint and T.T.I.
+<p class="copyright">
+© [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
+</p>
