@@ -15,3 +15,9 @@
 <span class="center">**Pre-cache**<br/> remaining routes</span>
 <span class="center">**Lazy-load**<br/> and create remaining <br/> routes on demand</span>
 </p>
+
+##==##
+
+# App Structure
+
+![center h-800](./assets/images/PRPL/app-build-components.png)
