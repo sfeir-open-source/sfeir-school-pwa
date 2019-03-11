@@ -93,14 +93,14 @@ A Progressive Web App is simply that, a great user experience that feels integra
 
 <br>
 
-![border-circle red w-300](./assets/images/performante_icon.png)
-![border-circle green w-300](./assets/images/integrated_icon.png)
-![border-circle blue w-300](./assets/images/fiable_icon.png)
-![border-circle purple w-300](./assets/images/engaging_icon.png)
+![red w-300](./assets/images/performante_icon.png)
+![green w-300](./assets/images/integrated_icon.png)
+![blue w-300](./assets/images/fiable_icon.png)
+![purple w-300](./assets/images/engaging_icon.png)
 
 <p>
 <span class="center">Performante<br>(Fast)</span>
-<span class="center">Intégrée></span>
+<span class="center">Intégrée</span>
 <span class="center">Fiable<br>(Reliable)</span>
 <span class="center">Engageante</span>
 </p>

@@ -18,22 +18,27 @@
     width: 100%;
   }
 
-  img[alt*='border-circle'] {
-    border-radius: 300px;
-    border-color: $light-grey;
-    border-style: solid;
-    border-width: 25px;
+  .target-touch {
+    position: absolute;
+    font-size: 2em;
+    color: gray;
+    text-align: center;
+    width: 100%;
   }
-  img[alt*='border-circle'][alt*='red'] {
+
+  img {
+    padding: 25px;
+  }
+  img[alt*='red'] {
     background: $red;
   }
-  img[alt*='border-circle'][alt*='green'] {
+  img[alt*='green'] {
     background: $green;
   }
-  img[alt*='border-circle'][alt*='blue'] {
+  img[alt*='blue'] {
     background: $blue;
   }
-  img[alt*='border-circle'][alt*='purple'] {
+  img[alt*='purple'] {
     background: $purple;
   }
 }
