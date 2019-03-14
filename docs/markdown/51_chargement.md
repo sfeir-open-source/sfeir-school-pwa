@@ -226,7 +226,7 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 <!-- .slide: class="full-center" -->
 
-# Chargement des scrtips tiers
+# Chargement des scripts tiers
 
 ![h-600](./assets/images/load_scrip_order.png)
 
