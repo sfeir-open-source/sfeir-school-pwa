@@ -1,9 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-red" -->
-
-# Conclusion
-
-##==##
-
 <!-- .slide: class="flex-row" -->
 
 # Résumons

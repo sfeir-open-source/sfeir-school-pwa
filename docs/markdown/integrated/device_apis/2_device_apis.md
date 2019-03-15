@@ -1,9 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-
-# Device Apis
-
-##==##
-
 # WebAPIs for your Device
 
 <br><br>

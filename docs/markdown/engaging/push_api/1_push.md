@@ -1,9 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-
-# Push API
-
-##==##
-
 <!-- .slide: class="flex-row" -->
 
 # ⚠ Ne pas confondre
