@@ -451,7 +451,7 @@ body {
 }
 
 /*
-* 
+*
 * MIXINS
 **/
 img[alt*='h-50'],
@@ -1319,7 +1319,7 @@ img[alt*='wm-1000'],
   line-height: 2em;
   height: 2em;
   font-size: 1.8em;
-  margin-top: 350px;
+  margin-top: 150px;
   padding-left: 550px;
   margin-bottom: 20px;
 }
@@ -1337,13 +1337,8 @@ img[alt*='wm-1000'],
   top: 300px;
   width: 400px;
   margin-top: 20px;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .reveal .slides section[data-background].speaker-slide img[alt*='company'] {
-  position: absolute;
-  top: 300px;
-  left: 750px;
   max-width: 400px;
   max-height: 200px;
 }
