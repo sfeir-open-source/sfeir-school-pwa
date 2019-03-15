@@ -1,8 +1,6 @@
 <!-- .slide: class="transition-white sfeir-bg-blue" -->
 
-<h1>UX <br>
-(Bonus - sujet avancé)
-</h1>
+# UX
 
 ##==##
 

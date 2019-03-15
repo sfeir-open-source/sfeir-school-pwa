@@ -1,6 +1,6 @@
 <!-- .slide: class="transition-white sfeir-bg-blue" -->
 
-<h1>Rendering<br>(Bonus - sujet avancé)</h1>
+# Rendering
 
 ##==##
 
