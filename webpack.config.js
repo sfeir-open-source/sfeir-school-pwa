@@ -114,7 +114,10 @@ Check the folder name in steps/, read the README and try again.
     devServer: {
       contentBase: [path.join(__dirname, paths.dist), __dirname, path.join(__dirname, paths.step)],
       compress: true,
-      historyApiFallback: true
+      historyApiFallback: true,
+      proxy: {
+        '/api': 'http://localhost:9000/'
+      }
     }
   };
 };
