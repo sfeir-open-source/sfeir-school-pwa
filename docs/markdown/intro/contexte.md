@@ -22,11 +22,6 @@ Elles sont en revanche limite dans leurs interactions avec le téléphone, car l
 
 ![center](./assets/images/alex_russel.png)
 
-- “There is now another way. An **evolution** has taken place in browsers.”
-- “**Just websites** that took all the right vitamins.”
-- “Sites [..] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
-- “Thoughtful application design and construction will give early movers a **major advantage**”
-
 Notes:
 Chrome, Blink, and the Web Platform at Google
 W3C archi group member
@@ -41,3 +36,10 @@ Served over TLS
 Offline support
 Web App Manifest
 Can run without browser chrome
+
+##==##
+
+- “There is now another way. An **evolution** has taken place in browsers.”
+- “**Just websites** that took all the right vitamins.”
+- “Sites [..] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
+- “Thoughtful application design and construction will give early movers a **major advantage**”
