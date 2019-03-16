@@ -2,7 +2,7 @@
 
 # 🔥 F.I.R.E. 🔥
 
-## From PWA<br>to Web Modern's Capabilities
+## From PWA<br>to Web's Modern Capabilities
 
 ##==##
 
