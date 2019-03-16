@@ -4,58 +4,12 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
-
-# Avantages avancés
-
-<br>
-<br>
-
-**Discoverability**
-
-##==##
-
-<!-- .slide: class="flex-row" -->
-
-## Avantages avancés
-
-<br>
-<br>
-
-**Trustworthiness**
-
-##==##
-
-<!-- .slide: class="flex-row" -->
-
-## Avantages avancés
-
-<br>
-<br>
-
-**Easy install**
-
-##==##
-
-<!-- .slide: class="flex-row" -->
-
-## Avantages avancés
-
-<br>
-<br>
-
-**Business insights**
-
-##==##
-
 <!-- .slide: class="two-column-layout" -->
 
-# How To
-
-## A - APPX Manifest
+# A - APPX Manifest
 
 Notes:
-See https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#set-up-and-run-your-universal-windows-app
+Cf https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#set-up-and-run-your-universal-windows-app
 
 ##--##
 
@@ -81,12 +35,10 @@ See https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows
 
 <!-- .slide: class="two-column-layout" -->
 
-# How To
-
-## B - Create your app
+# B - Create your app
 
 Notes:
-See https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name
+Cf https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name
 
 ##--##
 
@@ -112,12 +64,10 @@ See https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-rese
 
 <!-- .slide: class="two-column-layout" -->
 
-# How To
-
-## C - Build & Submit
+# C - Build & Submit
 
 Notes:
-See https://docs.pwabuilder.com/quickstart/2018/02/03/quick-start-pwa-using-cli-tools.html
+Cf https://docs.pwabuilder.com/quickstart/2018/02/03/quick-start-pwa-using-cli-tools.html
 
 ##--##
 
