@@ -65,3 +65,6 @@ typings/
 
 #SfeirSchoolSpecifics
 .tmp/
+
+#Dev
+docs/test.html
