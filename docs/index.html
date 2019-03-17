@@ -380,6 +380,17 @@
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
+        keyboard: {
+          32: function() {
+            var video = document.querySelector('.present video');
+            if (video.paused == true) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          }
+        },
+
         // Optional libraries used to extend on reveal.js
         dependencies: [
           {
