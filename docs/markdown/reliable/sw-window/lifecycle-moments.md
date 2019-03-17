@@ -35,36 +35,92 @@ wb.register();
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code flex-row" -->
 
-<br><br>
+# Explanation
 
 ```javascript
-async register({immediate = false} = {}) {
+const register = async () => {
+  const isUpdate = Boolean(navigator.serviceWorker.controller);
+  const registration = await navigator.serviceWorker.register('sw.js');
   ...
-  // Set this flag to true if any service worker was controlling the page
-  // at registration time.
-  this._isUpdate = Boolean(navigator.serviceWorker.controller);
-  ...
-  this._registration = await this._registerScript();
-  ...
-}
+};
+
+register();
 ```
 
 <!-- .element: class="big-code" -->
 
-Notes:
-https://github.com/GoogleChrome/workbox/pull/1905/files
+SW.controller returns a ServiceWorker object if its state is activated
+
+or null if the request is a force refresh (Shift + refresh)
+
+**or if there is no active worker**
 
 ##==##
 
-# navigator.serviceWorker.controller
+<!-- .slide: class="with-code flex-row" -->
 
-<br><br>
+# Explanation
 
-- returns a ServiceWorker object if its state is activated
-- returns null
-  - if the request is a force refresh (Shift + refresh)
-  - or if there is no active worker
+## filtering
+
+```javascript
+const register = async () => {
+  ...
+  registration.addEventListener('updatefound', () => {
+    onUpdateFound(registration.installing, isUpdate);
+  });
+};
+
+register();
+```
+
+<!-- .element: class="big-code" -->
+
+<br>
+
+If the service worker hasn't changed since the last time it was registered
+
+than the updatefound event will not be fired.
 
 ##==##
+
+# Explanation
+
+## state change
+
+<br>
+
+<!-- .slide: class="with-code flex-row" -->
+
+```javascript
+const onUpdateFound = (installingSW, isUpdate) => {
+  installingSW.addEventListener('statechange', e => {
+    onStateChange(e, isUpdate);
+  });
+};
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+# Explanation
+
+## final handling
+
+<br>
+
+<!-- .slide: class="with-code" -->
+
+```javascript
+const onStateChange = (originalEvent, isUpdate) => {
+  const { state } = originalEvent.target;
+  if (state === 'installed' && !isUpdate) {
+    // First-installed code goes here...
+  }
+};
+```
+
+<!-- .element: class="big-code" -->
