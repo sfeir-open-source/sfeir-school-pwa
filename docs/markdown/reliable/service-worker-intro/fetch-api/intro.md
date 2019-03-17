@@ -1,24 +1,3 @@
-<!-- .slide: class="exercice sfeir-bg-pink" -->
-
-# Rafraichir votre service worker
-
-## Exercice
-
-<br>
-
-1. Lors de l’event “install”, implémentez le skipwaiting() comme dans l’exemple.
-2. Lors de l’event “activate”, implémentez le claim() comme dans l’exemple.
-
-### Step: sw-3
-
-##==##
-
-<!-- .slide: data-background="./assets/images/fetch_bg.png" class="transition-white transition-center" -->
-
-# Fetch API
-
-##==##
-
 # L'API Fetch
 
 ![center](./assets/images/fetch_api.svg)
