@@ -124,6 +124,42 @@
           data-separator-vertical="##--##"
           data-separator-notes="^Notes:"
         ></section>
+        <section
+          data-markdown="../markdown/integrated/store/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/stores.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/windows-store.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/chrome-web-store.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/google-play.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/but-why.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
         <!-- #endregion -->
         <!-- #region Reliable -->
         <section
@@ -168,6 +204,17 @@
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        keyboard: {
+          32: function() {
+            var video = document.querySelector('.present video');
+            if (video.paused == true) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          }
+        },
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
@@ -214,7 +261,6 @@
           // { src: 'node_modules/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
-      Reveal.configure({ slideNumber: 'c/t' });
     </script>
   </body>
 </html>

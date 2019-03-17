@@ -201,13 +201,14 @@
           data-separator-notes="^Notes:"
         ></section>
         <!-- #endregion -->
-        <!-- #region Integrated -->
+        <!-- #region:Integrated -->
         <section
           data-markdown="./markdown/integrated/_TITLE.md"
           data-separator="##==##"
           data-separator-vertical="##--##"
           data-separator-notes="^Notes:"
         ></section>
+        <!-- #region:install -->
         <section
           data-markdown="../markdown/integrated/installable/_TITLE.md"
           data-separator="##==##"
@@ -232,6 +233,8 @@
           data-separator-vertical="##--##"
           data-separator-notes="^Notes:"
         ></section>
+        <!-- #endregion:install -->
+        <!-- #region:API -->
         <section
           data-markdown="../markdown/integrated/device_apis/_TITLE.md"
           data-separator="##==##"
@@ -256,7 +259,46 @@
           data-separator-vertical="##--##"
           data-separator-notes="^Notes:"
         ></section>
-        <!-- #endregion -->
+        <!-- #endregion:API -->
+        <!-- #region:Store -->
+        <section
+          data-markdown="../markdown/integrated/store/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/stores.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/windows-store.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/chrome-web-store.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/google-play.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="../markdown/integrated/store/but-why.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- #endregion:Store -->
+        <!-- #endregion:Integrated -->
         <!-- #region Engaging -->
         <section
           data-markdown="./markdown/engaging/_TITLE.md"
@@ -355,6 +397,17 @@
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        keyboard: {
+          32: function() {
+            var video = document.querySelector('.present video');
+            if (video.paused == true) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          }
+        },
 
         // Optional libraries used to extend on reveal.js
         dependencies: [

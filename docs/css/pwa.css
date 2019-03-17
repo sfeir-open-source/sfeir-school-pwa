@@ -2,6 +2,42 @@
   text-align: center;
 }
 
+.reveal .slides section .copyright {
+  text-align: center;
+  font-size: 0.5em;
+  color: gray;
+  margin-top: 0;
+}
+
+.reveal .slides section .quotation {
+  text-align: justify;
+  padding: 0 1em;
+}
+
+.reveal .slides section .quotation:before {
+  content: '«';
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.reveal .slides section .quotation:after {
+  content: '»';
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.reveal .slides section .quotation-author {
+  text-align: right;
+  font-style: italic;
+  padding-right: 3em;
+  margin-top: 0;
+  font-size: 0.9em;
+}
+
+.reveal .slides section .quotation-author:before {
+  content: '—';
+}
+
 .reveal .slides section .big-text {
   font-size: 3em;
 }
