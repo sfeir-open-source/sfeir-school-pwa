@@ -40,23 +40,23 @@
 
     <script>
       if ('serviceWorker' in navigator) {
-        const isUpdate = Boolean(navigator.serviceWorker.controller);
+        (async () => {
+          const isUpdate = Boolean(navigator.serviceWorker.controller);
 
-        navigator.serviceWorker.register('service-worker.js').then(registration => {
-          registration.addEventListener('updatefound', () => {
-            const installingSW = registration.installing;
-            installingSW.addEventListener('statechange', originalEvent => {
-              const { state } = originalEvent.target;
-              if (state === 'installed') {
-                if (isUpdate) {
-                  console.log('update');
-                } else {
-                  console.log('first install');
-                }
-              }
-            });
+          const registration = await navigator.serviceWorker.register('service-worker.js');
+
+          await new Promise(resolve => registration.addEventListener('updatefound', resolve));
+
+          const installingSW = registration.installing;
+
+          installingSW.addEventListener('statechange', originalEvent => {
+            const { state } = originalEvent.target;
+            if (state === 'installed' && !isUpdate) {
+              console.log('this is a first install');
+            }
+            console.log(state);
           });
-        });
+        })();
       }
     </script>
   </body>
