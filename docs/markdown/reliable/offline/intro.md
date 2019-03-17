@@ -1,9 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-
-# Mode offline
-
-##==##
-
 <!-- .slide: class="flex-row" -->
 
 # Le réseau

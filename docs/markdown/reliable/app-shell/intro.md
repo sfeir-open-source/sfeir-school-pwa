@@ -1,7 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-
-# App Shell
-
 ##==##
 
 # L’app shell
