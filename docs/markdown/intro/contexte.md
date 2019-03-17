@@ -6,9 +6,18 @@
 
 # Les débuts : Juin 2015
 
-[Progressive Web Apps: Escaping Tabs Without Losing Our Soul by Alex Russell](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
+<p class="center">
+[Progressive Web Apps:<br> Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
+</p>
 
-![center](./assets/images/alex_russel.png)
+<br>
+![center w-500](./assets/images/alex_russel.png)
+<br>
+<p class="center">
+[Alex Russell](https://infrequently.org/about-me/), software engineer at Google
+</p>
+
+<br>
 
 Notes:
 Chrome, Blink, and the Web Platform at Google
@@ -27,7 +36,32 @@ Can run without browser chrome
 
 ##==##
 
-- “There is now another way. An **evolution** has taken place in browsers.”
-- “**Just websites** that took all the right vitamins.”
-- “Sites [..] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
-- “Thoughtful application design and construction will give early movers a **major advantage**”
+<!-- .slide: class="quote" -->
+
+<p class="quotation center">
+There is now another way. An **evolution** has taken place in browsers.
+</p>
+
+##==##
+
+<!-- .slide: class="quote" -->
+
+<p class="quotation">
+**Just websites** that took all the right vitamins.
+</p>
+
+##==##
+
+<!-- .slide: class="quote" -->
+
+<p class="quotation">
+Sites [...] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
+</p>
+
+##==##
+
+<!-- .slide: class="quote" -->
+
+<p class="quotation">
+Thoughtful application design and construction will give early movers a **major advantage**.
+</p>
