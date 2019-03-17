@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Sfeir School - PWA</title>
+
+    <meta name="description" content="A Theme for open source sfeir schools" />
+    <meta name="author" content="Jean-François Garreau AKA jefBinomed" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- ----------------------------------------------------
+        ---------------- REVEAL STYLES  -------------------------
+        ------------------------------------------------------ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"
+    />
+    <!--<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">-->
+
+    <!-- For syntax highlighting -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+    />
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write(
+        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/' +
+          (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') +
+          '.css" type="text/css" media="print">'
+      );
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="reveal/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- ----------------------------------------------------
+	    ---------------- PREZ STYLES  ---------------------------
+	    ------------------------------------------------------ -->
+
+    <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme" />
+    <script type="module" src="./school-theme/js/sfeir-theme.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/pwa.css" id="theme-custo" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides" data-type-show="prez">
+        <!-- #region Talk -->
+        <section
+          data-markdown="./markdown/_talks/breizhcamp-2019/MAIN_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/_school/1_speaker_noel.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- #endregion -->
+        <!-- #region Intro -->
+        <section
+          data-markdown="./markdown/intro/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/intro/contexte.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/intro/definition.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/intro/FIRE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/_talks/breizhcamp-2019/FIRE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <section
+          data-markdown="./markdown/intro/perspectives.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- #endregion -->
+        <!-- #region fast -->
+        <section
+          data-markdown="./markdown/fast/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- #endregion -->
+        <!-- #region Integrated -->
+        <section
+          data-markdown="./markdown/integrated/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- #endregion -->
+        <!-- #region Reliable -->
+        <section
+          data-markdown="./markdown/reliable/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- #endregion -->
+        <!-- #region Engaging -->
+        <section
+          data-markdown="./markdown/engaging/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+
+        <!-- #endregion -->
+        <!-- #region Outro -->
+        <section
+          data-markdown="./markdown/outro/_TITLE.md"
+          data-separator="##==##"
+          data-separator-vertical="##--##"
+          data-separator-notes="^Notes:"
+        ></section>
+        <!-- #endregion -->
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        width: 1929,
+        height: 1080,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/classList.js',
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          },
+          {
+            src: 'node_modules/reveal.js/plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
+          }
+          // { src: 'node_modules/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'node_modules/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+      Reveal.configure({ slideNumber: 'c/t' });
+    </script>
+  </body>
+</html>
