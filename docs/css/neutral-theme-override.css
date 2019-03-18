@@ -12,3 +12,8 @@
   top: 300px;
   left: 750px;
 }
+
+.reveal .slides section.with-code pre code,
+.reveal .slides section.with-code-dark pre code {
+  max-height: 900px;
+}

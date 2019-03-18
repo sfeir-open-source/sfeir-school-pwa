@@ -7,7 +7,6 @@ export class PeopleApp extends LitElement {
     this.page = 'home';
     this.peopleId = undefined;
     installRouter(location => {
-      console.log(location);
       const pathRegex = /\/people\/([0-9]+)/;
       if (location.pathname === '/people') {
         this.page = 'people';
@@ -20,7 +19,6 @@ export class PeopleApp extends LitElement {
         this.page = 'home';
       }
       this.requestUpdate();
-      console.log(this.page);
     });
   }
 

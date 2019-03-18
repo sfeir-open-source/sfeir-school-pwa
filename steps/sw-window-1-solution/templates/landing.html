@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="peopleApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020307" />
+    <title>Sfeir People</title>
+
+    <link rel="stylesheet" href="/css/material-icons.css" />
+    <link rel="stylesheet" href="/mdl/material.min.css" />
+    <link rel="stylesheet" href="css/md-overwrite.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <script src="/mdl/material.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">
+            <a href="/home">
+              <img src="/img/logo-app.png" aria-label="People" alt="People" />
+            </a>
+          </span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a href="/people"><i class="material-icons">list</i></a>
+          </nav>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div id="root">
+            <people-app></people-app>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module">
+      import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+
+      if ('serviceWorker' in navigator) {
+        const wb = new Workbox('/service-worker.js');
+
+        wb.addEventListener('installed', event => {
+          if (!event.isUpdate) {
+            console.log('first install');
+          } else {
+            console.log('update');
+          }
+        });
+
+        wb.register();
+      }
+    </script>
+  </body>
+</html>
