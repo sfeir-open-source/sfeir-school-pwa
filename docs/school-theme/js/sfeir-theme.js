@@ -139,7 +139,6 @@ class SfeirTheme {
     if (Reveal) {
       // Need to overrides reveal inlinestyles
       Reveal.addEventListener('slidechanged', event => {
-        console.log(event);
         const currentSlide = event.currentSlide;
         const parentSlide = currentSlide.parentElement;
         if (parentSlide.nodeName === 'SECTION' && parentSlide.classList.contains('two-column-layout')) {
