@@ -8,6 +8,13 @@
 
 ## Noël Macé
 
-### Web Developer Advocate
+### Developer Advocate
 
-### @noel_mace
+### for the Modern Web
+
+## @noel_mace
+
+<!-- .element style="margin-top: 0" -->
+
+<br>
+![sfeir h-100](./assets/images/logo_sfeir_bleu_orange.png)
