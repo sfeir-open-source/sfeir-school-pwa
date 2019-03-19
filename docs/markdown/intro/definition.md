@@ -81,7 +81,7 @@ De nouvelles technos pour un MEILLEUR web, sans oublier les best practices “hi
 
 Offrir progressivement d’avantage à l’utilisateur **si il le souhaite.**
 
-<!-- .element: class="center-big fragment" -->
+<!-- .element: class="center-big" -->
 
 Notes:
 Progressive Web Apps are really a response to changes we've seen on the web, an attitude to building great experiences.
@@ -100,7 +100,7 @@ But... What does this actually mean in practice?
 
 Offrir progressivement la meilleure UX **pour chaque navigateur.**
 
-<!-- .element: class="center-big fragment" -->
+<!-- .element: class="center-big" -->
 
 Notes:
 Votre application s'enrichit grâce aux évolutions du web, mais fonctionne tout de même pleinement sur tous les browsers.
