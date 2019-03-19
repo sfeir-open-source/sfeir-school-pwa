@@ -5,9 +5,6 @@
 
     <title>Sfeir School - PWA</title>
 
-    <meta name="description" content="A Theme for open source sfeir schools" />
-    <meta name="author" content="Jean-François Garreau AKA jefBinomed" />
-
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -19,21 +16,21 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"
+      href="./libs/revealjs/reveal.css"
     />
     <!--<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">-->
 
-    <!-- For syntax highlighting -->
+    <!-- For syntax highlighting - hightlightjs -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css"
+      href="./libs/hightlightjs/tomorrow.css"
     />
 
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <!-- If the query includes 'print-pdf', use the PDF print sheet - from revealjs -->
     <script>
       document.write(
-        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/' +
+        '<link rel="stylesheet" href="./libs/revealjs/print/' +
           (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') +
           '.css" type="text/css" media="print">'
       );
@@ -581,8 +578,8 @@
         <!-- #endregion -->
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>
+    <script src="./libs/revealjs/head.min.js"></script>
+    <script src="./libs/revealjs/reveal.js"></script>
 
     <script src="reveal-config.js"></script>
   </body>

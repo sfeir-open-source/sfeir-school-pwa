@@ -28,32 +28,32 @@ Reveal.initialize({
   // Optional libraries used to extend on reveal.js
   dependencies: [
     {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/classList.js',
+      src: './libs/revealjs/js/classList.js',
       condition: function() {
         return !document.body.classList;
       }
     },
     {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js',
+      src: './libs/revealjs/plugin/markdown/marked.js',
       condition: function() {
         return !!document.querySelector('[data-markdown]');
       }
     },
     {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js',
+      src: './libs/revealjs/plugin/markdown/markdown.js',
       condition: function() {
         return !!document.querySelector('[data-markdown]');
       }
     },
     {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js',
+      src: './libs/revealjs/plugin/highlight/highlight.js',
       async: true,
       callback: function() {
         hljs.initHighlightingOnLoad();
       }
     },
     {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js',
+      src: './libs/revealjs/plugin/zoom-js/zoom.js',
       async: true,
       condition: function() {
         return !!document.body.classList;
