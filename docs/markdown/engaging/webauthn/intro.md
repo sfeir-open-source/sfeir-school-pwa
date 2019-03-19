@@ -1,4 +1,6 @@
-<!-- .slide: data-background="./assets/images/webauthn/good-signup-in_io18.png" class="full-center transition" -->
+<!-- .slide: class="full-center transition" -->
+
+![](./assets/images/webauthn/good-signup-in_io18.png)
 
 ##==##
 
@@ -13,7 +15,7 @@ ajoute de la friction pour l'utilisateur
 
 <!-- .slide: class="full-center"-->
 
-![signup-email h-600](./assets/images/webauthn/signup-email.png)
+![signup-email h-900](./assets/images/webauthn/signup-email.jpg)
 
 ##==##
 

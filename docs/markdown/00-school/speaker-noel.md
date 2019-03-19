@@ -8,9 +8,7 @@
 
 ## Noël Macé
 
-### Developer Advocate
-
-### for the Modern Web
+### Developer Advocate<br>for the Modern Web
 
 ## @noel_mace
 

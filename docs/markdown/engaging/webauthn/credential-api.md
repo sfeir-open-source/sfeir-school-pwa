@@ -1,6 +1,6 @@
 <!-- .slide: data-background="black" class="full-center mariane" -->
 
-<p style="font-size:2em;font-weight:bold">
+<p style="font-size:2em;font-weight:bold;color:white">
 Credential Management API
 </p>
 
@@ -8,9 +8,9 @@ Credential Management API
 
 <!-- .slide: data-background="./assets/images/webauthn/ease.jpg" class="full-center" -->
 
-<p style="color:red;font-size:3em; font-weight:bold; text-align:center">
 Removes Friction from sign-in flow
-</p>
+
+<!-- .element class="shadow-title" -->
 
 Notes:
 Users can be automatically signed back into a site even if their session has expired or they saved credentials on another device.
@@ -19,9 +19,9 @@ Users can be automatically signed back into a site even if their session has exp
 
 <!-- .slide: data-background="./assets/images/webauthn/tap.jpg" class="full-center" -->
 
-<p style="color:red;font-size:3em; font-weight:bold; text-align:center">
-Allows one tap sign in with account chooser 
-</p>
+Allows one tap sign in with account chooser
+
+<!-- .element class="shadow-title" -->
 
 Notes:
 Users can choose an account in a native account chooser.
@@ -30,9 +30,9 @@ Users can choose an account in a native account chooser.
 
 <!-- .slide: data-background="./assets/images/webauthn/store.jpg" class="full-center" -->
 
-<p style="color:red;font-size:3em; font-weight:bold; text-align:center">
 Stores credentials
-</p>
+
+<!-- .element class="shadow-title" -->
 
 Notes:
 Your application can store either a username and password combination or even federated account details. These credentials can be synced across devices by the browser.
@@ -41,9 +41,9 @@ Your application can store either a username and password combination or even fe
 
 <!-- .slide: data-background="./assets/images/webauthn/secure.jpg" class="full-center" -->
 
-<p style="color:red;font-size:3em; font-weight:bold; text-align:center">
 Require a secure context
-</p>
+
+<!-- .element class="shadow-title" -->
 
 Notes:
 Using the Credential Management API requires the page be served from a secure origin.

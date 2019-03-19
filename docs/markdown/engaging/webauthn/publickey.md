@@ -1,8 +1,8 @@
 <!-- .slide: data-background="black" class="full-center mariane" -->
 
-<p style="font-size:2em;font-weight:bold">
 What's new?
-</p>
+
+<!-- .element class="shadow-title" -->
 
 ##==##
 

@@ -1,18 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-
-# Pourquoi ???
-
-##==##
-
-<!-- .slide: data-background="black" class="full-center mariane" -->
-
-<p class="center">
-<video autoplay loop muted playsinline height="1000" src="./assets/images/gifs/banging-head.mp4"></video>
-</p>
-
-##==##
-
 <!-- .slide: data-background="black" class="full-center mariane" -->
 
 <p class="center">
@@ -132,6 +117,8 @@ And App Manifest support by Firefox & Edge is still under development...
 
 # That where people are!
 
+<!-- .element: class="center-big" -->
+
 <p class="center">
 <video autoplay loop muted playsinline height="600" src="./assets/images/gifs/crowd.mp4"></video>
 </p>
@@ -168,4 +155,16 @@ And App Manifest support by Firefox & Edge is still under development...
 
 <p class="center">
 <video autoplay loop muted playsinline height="600" src="./assets/images/gifs/no.mp4"></video>
+</p>
+
+##==##
+
+<!-- .slide: data-background="black"-->
+
+# Well...
+
+<br><br>
+
+<p class="center">
+<video autoplay loop muted playsinline height="600" src="./assets/images/gifs/shrug.mp4"></video>
 </p>

@@ -64,7 +64,11 @@ ACTIVITIES
 
 ## Trusted
 
+<!-- .element: class="center-big" -->
+
 Comes from the same developer.
+
+<!-- .element: class="center-big" -->
 
 ##==##
 
@@ -74,9 +78,13 @@ Comes from the same developer.
 
 <br><br><br>
 
-## come from the web
+## Comes from the web
+
+<!-- .element: class="center-big" -->
 
 Rendered by the user's browser.
+
+<!-- .element: class="center-big" -->
 
 ##==##
 
@@ -115,15 +123,6 @@ https://g.co/TrustedWebActivities
 
 Notes:
 https://twitter.com/Paul_Kinlan/status/1091416402584571904
-
-##==##
-
-<!-- .slide: class="full-center mariane" -->
-
-![center h-500](./assets/images/store/paul-kinlan-about-TWA-2.png)
-
-Notes:
-https://twitter.com/Paul_Kinlan/status/1091417364753723393
 
 ##==##
 
