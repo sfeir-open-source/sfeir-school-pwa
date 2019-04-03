@@ -45,11 +45,17 @@ self.addEventListener('install', function(event) {
 <!-- .element: class="big-code" -->
 
 <br>
+<a target="_blank" href="https://cdn.rawgit.com/jakearchibald/80368b84ac1ae8e229fc90b3fe826301/raw/ad55049bee9b11d47f1f7d19a73bf3306d156f43/index-v3.html" >Demo</a>
+<!-- .element: class="center" -->
 
 Notes:
 forces the waiting service worker to become the active service worker.
 
 The claim() method of the of the Clients interface allows an active Service Worker to set itself as the active worker for a client page when the worker and the page are in the same scope. This triggers an oncontrollerchange event on any client pages within the Service Worker's scope.
+
+**DEMO**: u should see a picture of a cow without having to navigate away. Like clients.claim() it's a race, so you'll only see the cow if the new service worker fetches, installs and activates before the page tries to load the image.
+
+**Caution**: skipWaiting() means that your new service worker is likely controlling pages that were loaded with an older version. This means some of your page's fetches will have been handled by your old service worker, but your new service worker will be handling subsequent fetches. If this might break things, don't use skipWaiting().
 
 ##==##
 
