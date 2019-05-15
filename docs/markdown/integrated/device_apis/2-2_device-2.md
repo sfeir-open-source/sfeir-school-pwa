@@ -216,7 +216,7 @@ The browser then presents the payments UI to the user, who selects a payment met
 ![center h-800](./assets/images/caniuse_payment.png)
 
 Notes:
-MAJ 2018-08-30
+MAJ 2019-05-16
 
 ##==##
 
@@ -263,6 +263,9 @@ This method, part of the simple Web Share API—written by Matt Giuca on the Chr
 # Support 🧐
 
 ![center h-800](./assets/images/caniuse_webshare.png)
+
+Notes:
+Update on 2019-05-16
 
 ##==##
 

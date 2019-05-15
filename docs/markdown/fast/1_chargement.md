@@ -105,6 +105,9 @@ Les fichiers WebP sont 25-34% plus petit que les JPEG.
 
 ![center h-400](./assets/images/caniuse_webp.png)
 
+Notes:
+Update on 2019-05-16
+
 ##==##
 
 <!-- .slide: class="flex-row"  -->
