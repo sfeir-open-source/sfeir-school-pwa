@@ -40,6 +40,16 @@ export class PeopleList extends LitElement {
     });
   }
 
+  keyUpPeople(e) {
+    const query = e.srcElement.value;
+    if (query.length > 2) {
+      this.filterPeopleByName(query);
+    } else {
+      this.filteredPeople = this.peoples;
+    }
+    this.performUpdate();
+  }
+
   filterAccordingGeoloc(e) {
     if (!this.geolocQuerying) {
       // YOUR CODE HERE
@@ -98,48 +108,49 @@ export class PeopleList extends LitElement {
         :host {
           display: block;
         }
+        .mdl-textfield__input {
+          padding-left: 50px;
+        }
+        #location-button {
+          right: -50px;
+        }
       </style>
       <div>
-        ${this.filteredPeople.length < 1
-          ? html`
-              <div class="people-list-all md-padding" layout="row" layout-wrap layout-align="center center">
+        <div class="people-list-all md-padding" layout="row" layout-wrap layout-align="center center">
+          ${!this.peopleid
+            ? html`
+                <form>
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="pleople-search">
+                      <i class="material-icons">search</i>
+                    </label>
+                    <input class="mdl-textfield__input" type="text" id="pleople-search" @keyup="${this.keyUpPeople}" />
+                    <label
+                      id="location-button"
+                      class="mdl-button mdl-js-button mdl-button--icon"
+                      @click="${this.filterAccordingGeoloc}"
+                    >
+                      ${this.geolocQuerying
+                        ? html`
+                            <i class="material-icons">location_on</i>
+                          `
+                        : html`
+                            <i class="material-icons">location_off</i>
+                          `}
+                    </label>
+                  </div>
+                </form>
+              `
+            : html``}
+          ${this.filteredPeople.length < 1
+            ? html`
                 <div>
                   <div>
                     <h1>No sfeirien found</h1>
                   </div>
                 </div>
-              </div>
-            `
-          : html`
-              <div class="people-list-all md-padding" layout="row" layout-wrap layout-align="center center">
-                ${!this.peopleid
-                  ? html`
-                      <form>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                          <label class="mdl-button mdl-js-button mdl-button--icon" for="pleople-search">
-                            <i class="material-icons">search</i>
-                          </label>
-                          <div class="mdl-textfield__expandable-holder">
-                            <input class="mdl-textfield__input" type="text" id="pleople-search" />
-                            <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-                          </div>
-                        </div>
-                        <label
-                          id="location-button"
-                          class="mdl-button mdl-js-button mdl-button--icon"
-                          @click="${this.filterAccordingGeoloc}"
-                        >
-                          ${this.geolocQuerying
-                            ? html`
-                                <i class="material-icons">location_on</i>
-                              `
-                            : html`
-                                <i class="material-icons">location_off</i>
-                              `}
-                        </label>
-                      </form>
-                    `
-                  : html``}
+              `
+            : html`
                 <div class="people-card-list" data-people-cards-wrapper>
                   ${this.filteredPeople.map(
                     people => html`
@@ -147,8 +158,8 @@ export class PeopleList extends LitElement {
                     `
                   )}
                 </div>
-              </div>
-            `}
+              `}
+        </div>
       </div>
     `;
   }
