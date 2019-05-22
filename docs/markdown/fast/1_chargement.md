@@ -107,6 +107,9 @@ Les fichiers WebP sont 25-34% plus petit que les JPEG.
 
 Notes:
 Update on 2019-05-16
+WebAssembly to decode WebP : https://medium.com/@kennethrohde/
+on-the-fly-webp-decoding-using-wasm-and-a-service-worker-33e519d8c21e
+=> Safari aussi ;) version 11
 
 ##==##
 
