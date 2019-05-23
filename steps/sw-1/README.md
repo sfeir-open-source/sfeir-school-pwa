@@ -11,12 +11,17 @@
 Dans le fichier HTML
 
 ```javascript
+// Détection du service worker
+if ('serviceWorker' in navigator) {
+}
+
+// Enregistrement de mon service worker
 navigator.serviceWorker
   .register('service-worker.js')
   .then(function() {
     console.log('Service worker installed');
   })
   .catch(err => {
-    consle.error('Error registering Service Worker', err);
+    console.error('Error registering Service Worker', err);
   });
 ```
