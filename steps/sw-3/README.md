@@ -11,7 +11,7 @@ Dans le fichier Service Worker
 // Attente d'un événement
 event.waitUntil(Promise);
 
-// Demande au service worker de plus attendre
+// Demande au service worker de ne plus attendre
 self.skipWaiting();
 
 // Demande aux services workers présent de prendre la main
