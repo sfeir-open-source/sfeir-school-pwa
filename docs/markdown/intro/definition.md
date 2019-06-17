@@ -11,7 +11,7 @@ But... What does this actually mean in practice?
 
 ##==##
 
-![center](./assets/images/before_target.png)
+![center h-800](./assets/images/before_target.png)
 
 <span class="target-capacities">Capacités</span>
 <span class="target-touch">La portée</span>
@@ -24,7 +24,7 @@ The web is safer, and it’s permission model is more respectful of your privacy
 
 ##==##
 
-![center](./assets/images/after_target.png)
+![center h-800](./assets/images/after_target.png)
 
 <span class="target-capacities">Capacités</span>
 <span class="target-touch">La portée</span>

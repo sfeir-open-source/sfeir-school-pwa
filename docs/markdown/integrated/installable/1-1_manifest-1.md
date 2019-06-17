@@ -21,6 +21,8 @@
 
 ![center h-700](./assets/images/devtools_manifest.png)
 
+**TODO** Changer l'image car "Add to homescreen" n'existe plus
+
 ##==##
 
 <!-- .slide: data-background="./assets/images/installabilite.png" class="transition-white transition-center" -->

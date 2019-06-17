@@ -1,9 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
-
-# Contexte
-
-##==##
-
 # Les débuts : Juin 2015
 
 <p class="center">
@@ -11,10 +5,13 @@
 </p>
 
 <br>
-![center w-500](./assets/images/alex_russel.png)
+<p class="flex-row">
+<img class="center w-500" src="./assets/images/alex_russel.png"></img>
+<img class="center w-500" src="./assets/images/frances_berriman.jpeg"></img>
+</p>
 <br>
 <p class="center">
-[Alex Russell](https://infrequently.org/about-me/), software engineer at Google
+[Alex Russell & Frances Berriman](https://infrequently.org/about-me/), software engineer at Google
 </p>
 
 <br>
