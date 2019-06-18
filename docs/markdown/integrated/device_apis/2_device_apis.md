@@ -70,157 +70,223 @@ Tous sauf IE8, Safari 4 & Opera Mini
 
 ##==##
 
+<!-- .slide: data-background="./assets/images/fullscreen_api.jpg" class="transition-white" -->
+
+# API
+
+##==##
+
+# Support
+
+<br>
+
+![center h-700](./assets/images/caniuse_fullscreen.png)
+
+Notes:
+IE 11 doesn't allow going to fullscreen mode when the event that triggers msRequestFullscreen() is a keydown or pointerdown event (keypress and click do work)
+Safari blocks access to keyboard events in fullscreen mode (as a security measure).
+Safari doesn't support stacking, meaning only one element can be set to full screen. webkitRequestFullScreen() is ignored for other elements and no error event is dispatched.
+IE 11 does not allow scrolling when document.documentElement is set to full screen.
+IE 11 does not properly support fullscreen when opening from an iframe.
+Opera 12.1 uses the older specificaton's :fullscreen-ancestor pseudo-class instead of the the ::backdrop pseudo-element.
+
+##==##
+
+<!-- .slide: class="flex-row" -->
+
+# Appeler un numéro depuis un site web ?
+
+<br>
+
+![h-450](./assets/images/call_phone_1.png)
+![h-450](./assets/images/call_phone_2.png)
+![h-450](./assets/images/call_phone_3.png)
+
+##==##
+
 <!-- .slide: class="with-code" -->
 
-# Vérifier que l’API est supportée
+# Click to call
+
+<br>
+
+```html
+Appelez SFEIR Nantes
+<a href="tel:+33-2-55-59-07-00">
+  +33 2 55 59 07 00
+</a>
+```
+
+<!-- .element: class="big-code" -->
+
+<br>
+
+Notes:
+https://developers.google.com/web/fundamentals/native-hardware/click-to-call/
+
+##==##
+
+# Support 👌
+
+![center h-800](./assets/images/support_call_phone.png)
+
+##==##
+
+# Effectuer un achat en ligne ?
+
+<br><br>
+
+![center h-500](./assets/images/buy_online.png)
+
+Notes:
+Buying goods online is a convenient but often frustrating experience, particularly on mobile devices. Although mobile traffic continues to increase, mobile conversions account for only about a third of all completed purchases. In other words, users abandon mobile purchases twice as often as desktop purchases. Why?
+Why users abandon mobile purchase forms
+Online purchase forms are user-intensive, difficult to use, slow to load and refresh, and require multiple steps to complete. This is because two primary components of online payments—security and convenience—often work at cross-purposes; more of one typically means less of the other.
+Most of the problems that lead to abandonment can be directly traced to purchase forms. Each app or site has its own data entry and validation process, and users often find they must enter the same information at every app's purchase point. Also, application developers struggle to create purchase flows that support multiple unique payment methods; even small differences in payment method requirements can complicate the form completion and submission process.
+Any system that improves or solves one or more of those problems is a welcome change. We started solving the problem already with Autofill, but now we'd like to talk about a more comprehensive solution.
+
+Je pense que pour cette partie, on peut adopter un bon rythme avec la répétition :
+
+1. actuellement: "vous trouvez ça chiant" (comme intro rapide, en passant rapidement dessus)
+2. magie: la solution
+3. oui mais: le support
+
+##==##
+
+# Payment Request API
+
+![center h-800](./assets/images/payment_request_api.png)
+
+##==##
+
+# Payment Request API : process
+
+<br>
+
+![center h-700](./assets/images/payment_request_process.png)
+
+Notes:
+https://developers.google.com/web/fundamentals/payments/
+Using the Payment Request API, the transaction process is made as seamless as possible for both users and merchants.
+The process begins when the merchant site creates a new PaymentRequest and passes to the browser all the information required to make the purchase: the amount to be charged, what currency they expect payment in, and what payment methods are accepted by the site. The browser determines compatibility between the accepted payment methods for the site and the methods the user has installed on the target device.
+The browser then presents the payments UI to the user, who selects a payment method and authorizes the transaction. A payment method can be as straightforward as a credit card that is already stored by the browser, or as esoteric as third-party application written specifically to deliver payments to the site.
+
+##==##
+
+# Support 🚀
+
+![center h-800](./assets/images/caniuse_payment.png)
+
+Notes:
+MAJ 2019-05-16
+
+##==##
+
+<!-- .slide: class="flex-row" -->
+
+# Partager un contenu ?
+
+![h-500](./assets/images/url_image.png)
+![h-400](./assets/images/sup_share.png)
+
+Notes:
+Good news, everybody! In Chrome 61 for Android, we've launched the navigator.share() method, which allows websites to invoke the native sharing capabilities of the host platform.
+This method, part of the simple Web Share API—written by Matt Giuca on the Chrome team—allows you easily trigger the native Android share dialog, passing either a URL or text to share. This is an important API as it gives your end-users user control of how and where the data is shared.
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Share API
 
 ```javascript
-// check for Geolocation support
-if (navigator.geolocation) {
-  console.log('Geolocation is supported!');
-} else {
-  console.log('Geolocation is not supported for this Browser/OS.');
+if (navigator.share) {
+  navigator
+    .share({
+      title: 'SFEIR School PWA',
+      text: 'Check out the SFEIR School PWA — it rocks!',
+      url: 'https://www.sfeir.com/formation/school/'
+    })
+    .then(() => console.log('Successful share'))
+    .catch(error => console.log('Error sharing', error));
 }
 ```
 
 <!-- .element: class="big-code" -->
 
+<br>
+
+Notes:
+Good news, everybody! In Chrome 61 for Android, we've launched the navigator.share() method, which allows websites to invoke the native sharing capabilities of the host platform.
+This method, part of the simple Web Share API—written by Matt Giuca on the Chrome team—allows you easily trigger the native Android share dialog, passing either a URL or text to share. This is an important API as it gives your end-users user control of how and where the data is shared.
+
 ##==##
 
-<!-- .slide: class="with-code" -->
+# Support 🧐
 
-# Accéder à la position de l’utilisateur
+![center h-800](./assets/images/caniuse_webshare.png)
 
-```javascript
-window.onload = function() {
-  var startPos;
-  var geoSuccess = function(position) {
-    startPos = position;
-    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-  };
-  navigator.geolocation.getCurrentPosition(geoSuccess);
-};
-```
+Notes:
+Update on 2019-05-16
 
-<!-- .element: class="big-code" -->
+##==##
+
+<!-- .slide: data-background="./assets/images/more_integration_bg.png" -->
+
+**TODO** à remplacer par l'image what web can do today
 
 <br>
 
-⚠️ permission demandée automatiquement
+Notes:
+à reprendre avec une vrais liste qu'on pourra mettre à jour
 
-<!-- .element: class="center" -->
+<!-- .slide: class="full-center transition" -->
 
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Gestion des erreurs
-
-```javascript
-let startPos;
-const geoSuccess = (position) => {
-  startPos = position;
-  document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-  document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-};
-const geoError = (error) => {
-    console.log('Error occurred. Error code: ' + error.code);
-    // error.code can be:
-    //   0: unknown error
-    //   1: permission denied
-    //   2: position unavailable (error response from location provider)
-    //   3: timed out
-  };
-  navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
-};
-```
+![](./assets/images/webauthn/good-signup-in_io18.png)
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: data-background="white" class="full-center transition" -->
 
-# Observer en continue la position
-
-```javascript
-const watchID = navigator.geolocation.watchPosition(position => {
-  do_something(position.coords.latitude, position.coords.longitude);
-});
-// ...
-navigator.geolocation.clearWatch(watchID);
-```
-
-<!-- .element: class="big-code" -->
+![](./assets/images/webauthn/webauthn-logo.png)
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: data-background="./assets/images/webauthn/bored.jpeg" -->
 
-# Timeout
-
-```javascript
-var startPos;
-var geoOptions = {
-  maximumAge: 5 * 60 * 1000
-};
-
-var geoSuccess = function(position) {
-  startPos = position;
-  document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-  document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-};
-var geoError = function(error) {
-  console.log('Error occurred. Error code: ' + error.code);
-  // error.code can be:
-  //   0: unknown error
-  //   1: permission denied
-  //   2: position unavailable (error response from location provider)
-  //   3: timed out
-};
-
-navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
-```
+# Security is boring!
 
 Notes:
-Unless you set a timeout, your request for the current position might never return.
+ajoute de la friction pour l'utilisateur
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="full-center"-->
 
-# Améliorer la précision
+![signup-email h-900](./assets/images/webauthn/signup-email.jpg)
 
-```javascript
-var startPos;
-var geoOptions = {
-  enableHighAccuracy: true
-};
+##==##
 
-var geoSuccess = function(position) {
-  startPos = position;
-  document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-  document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-};
-var geoError = function(error) {
-  console.log('Error occurred. Error code: ' + error.code);
-  // error.code can be:
-  //   0: unknown error
-  //   1: permission denied
-  //   2: position unavailable (error response from location provider)
-  //   3: timed out
-};
+<!-- .slide: class="full-center"-->
 
-navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
-```
+![password-strength h-600](./assets/images/webauthn/password-strength-meters.png)
+
+##==##
+
+<!-- .slide: data-background="./assets/images/webauthn/one-tap.png" class="full-center transition" -->
 
 Notes:
-If you want to find the nearest store to a user, it's unlikely that you need 1-meter precision. The API is designed to give a coarse location that returns as quickly as possible.
-If you do need a high level of precision, it's possible to override the default setting with the enableHighAccuracy option. Use this sparingly: it's slower to resolve and uses more battery.
+un premier pas vers une meilleur UX
+mais quid de la sécu ?
 
 ##==##
 
-# Emuler la position avec Chrome Dev Tools
+<!-- .slide: data-background="black" class="full-center mariane" -->
 
-<br>
+What's new?
 
-![center h-800](./assets/images/devtools_emulate_position.png)
+<!-- .element class="shadow-title" -->
+
+##==##
+
+<!-- .slide: data-background="./assets/images/webauthn/2fa-new.png" class="full-center" -->

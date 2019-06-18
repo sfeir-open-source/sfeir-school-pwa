@@ -9,9 +9,9 @@ en attendant le contenu<br>
 </p>
 
 <br>
-https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73#.9zdkbt2ww
+[Instant Loading Web Apps with an application shell architecture](https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73#.9zdkbt2ww)
 <!-- .element: class="center" -->
-
+<br>
 https://github.com/GoogleChrome/application-shell/
 
 <!-- .element: class="center" -->

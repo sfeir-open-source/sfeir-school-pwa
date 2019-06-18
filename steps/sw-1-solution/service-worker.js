@@ -1,1 +1,1 @@
-console.log('Service worker ok =D');
+console.log('Service worker ok =D !');

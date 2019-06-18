@@ -1,41 +1,3 @@
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
-
-# In the Service Worker
-
-<!-- .element: style="color:white" -->
-
-```javascript
-const SW_VERSION = '1.0.0';
-
-addEventListener('message', event => {
-  if (event.data.type === 'GET_VERSION') {
-    event.ports[0].postMessage(SW_VERSION);
-  }
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
-
-# In the Window context
-
-<!-- .element: style="color:white" -->
-
-```javascript
-const wb = new Workbox('/sw.js');
-wb.register();
-
-const swVersion = await wb.messageSW({ type: 'GET_VERSION' });
-console.log('Service Worker version:', swVersion);
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
 # Channel Messaging API
 
 <br><br>
@@ -63,70 +25,46 @@ two-way channels (or pipes) with a port at each end
 
 ##==##
 
-# Receive
+<!-- .slide: class="with-code" data-background="#fb8c00" -->
 
-<!-- .slide: class="with-code" -->
+# In the Service Worker
 
-<br><br>
+<!-- .element: style="color:white" -->
 
 ```javascript
-let messageChannel = new MessageChannel();
-messageChannel.port1.onmessage = evt => console.log(evt.data);
+const SW_VERSION = '1.0.0';
+
+addEventListener('message', event => {
+  if (event.data.type === 'GET_VERSION') {
+    event.ports[0].postMessage(SW_VERSION);
+  }
+});
 ```
 
 <!-- .element: class="big-code" -->
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+# In the window context
 
-# Send
+## **TODO**
 
-<br><br>
-
-```javascript
-navigator.serviceWorker.controller.postMessage(message, [messageChannel.port2]);
-```
-
-<!-- .element: class="big-code" -->
+Ajouter un exemple de code pour montrer comment communiquer en vanillaJS entre le index.js & le serviceworker.js
 
 ##==##
 
 <!-- .slide: class="with-code" data-background="#fb8c00" -->
 
-# How it's done
+# In the Window context
 
 <!-- .element: style="color:white" -->
 
-## messageSW.mjs
-
 ```javascript
-const messageSW = (sw, data) => {
-  return new Promise(resolve => {
-    let messageChannel = new MessageChannel();
-    messageChannel.port1.onmessage = evt => resolve(evt.data);
-    sw.postMessage(data, [messageChannel.port2]);
-  });
-};
-```
+const wb = new Workbox('/sw.js');
+wb.register();
 
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
-
-# How it's done
-
-<!-- .element: style="color:white" -->
-
-## Workbox.mjs
-
-```javascript
-async messageSW(data) {
-  const sw = await this.getSW();
-  return messageSW(sw, data);
-}
+const swVersion = await wb.messageSW({ type: 'GET_VERSION' });
+console.log('Service Worker version:', swVersion);
 ```
 
 <!-- .element: class="big-code" -->

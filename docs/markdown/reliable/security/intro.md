@@ -10,7 +10,7 @@
 
 <div class="https flex-row">
     <div class="flex-col">
-        <h2>Indentié</h2>
+        <h2>Identité</h2>
         <hr class="blue">
         <span>A qui vous parlez</span>
     </div>

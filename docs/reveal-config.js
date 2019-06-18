@@ -5,7 +5,7 @@ Reveal.initialize({
   progress: true,
   history: true,
   center: false,
-  width: 1929,
+  width: 1920,
   height: 1080,
 
   theme: Reveal.getQueryHash().theme, // available themes are in /css/theme

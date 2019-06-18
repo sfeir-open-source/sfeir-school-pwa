@@ -23,6 +23,118 @@ Complémentaires
 
 ##==##
 
+<!-- .slide: data-background="#dcdee0" class="transition no-margin" -->
+
+![center h-800](./assets/images/notification_icon.png)
+
+# Notification API
+
+Notes:
+https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API
+
+##==##
+
+# Des notifications intégrées
+
+<br>
+
+## Permet d'afficher des notifications natives
+
+![center h-600](./assets/images/notifications.png)
+
+Notes:
+The Notifications API lets a web page or app send notifications that are displayed outside the page at the system level; this lets web apps send information to a user even if the application is idle or in the background. This article looks at the basics of using this API in your own apps.
+
+##==##
+
+<!-- .slide: class="flex-row" -->
+
+# Qu'est ce qu'une bonne notification ?
+
+<br><br>
+
+![w-600](./assets/images/car_notification.png)
+![w-600](./assets/images/good_notification.svg)
+
+Notes:
+It’s timely, my car has arrived.
+It’s precise, I need to act on it and get into my car.
+And it’s relevant - something I should be interested in.
+
+##==##
+
+<!-- .slide: class="flex-row" -->
+
+# Qu'est ce qu'une bonne notification ?
+
+<br><br>
+
+![w-600](./assets/images/bad_app_notification.png)
+![w-600](./assets/images/bad_notification.svg)
+
+Notes:
+You’ll have opportunities to monetize the user experience once they’re in your app. [CLICK] Don’t blow it by spamming your users when they’re not. If you spam your users with notifications, they may stop allowing them altogether.
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# L’objet Notification
+
+```javascript
+function notifyMe() {
+  // Let's check if the browser supports notifications
+  if (!('Notification' in window)) {
+    alert('This browser does not support desktop notification');
+  }
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === 'granted') {
+    // If it's okay let's create a notification
+    var notification = new Notification('Hi there!');
+  }
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== 'denied') {
+    Notification.requestPermission(function(permission) {
+      // If the user accepts, let's create a notification
+      if (permission === 'granted') {
+        var notification = new Notification('Hi there!');
+      }
+    });
+  }
+}
+```
+
+Notes:
+At last, if the user has denied notifications, there is no need to bother them any more.
+The Notification interface of the Notifications API is used to configure and display desktop notifications to the user. These notifications' appearance and specific functionality vary across platforms but generally they provide a way to asynchronously provide information to the user.
+
+Assume this basic HTML:
+<button onclick="notifyMe()">Notify me!</button>
+It's possible to send a notification as follows — here we present a fairly verbose and complete set of code you could use if you wanted to first check whether notifications are supported, then check if permission has been granted for the current origin to send notifications, then request permission if required, before then sending a notification.
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Fermer une notification
+
+<br><br>
+
+```javascript
+setTimeout(notification.close.bind(notification), 4000);
+```
+
+<!-- .element: class="big-code" -->
+
+<br>
+
+Notes:
+Firefox and Safari close notifications automatically after a few moments (around four seconds). This may also happen at the operating system level. Some browsers don't however, such as Chrome. To make sure that the notifications close in all browsers, you can call the Notification.close function inside a setTimeout() function to close the notification after 4 seconds. Also note the use of bind() to make sure the close() call is associated with the notification.
+
+Note: When you receive a "close" event, there is no guarantee that it's the user who closed the notification. This is in line with the specification, which states: "When a notification is closed, either by the underlying notifications platform or by the user, the close steps for it must be run."
+
+##==##
+
 # Réengageante
 
 ![center h-700](./assets/images/rengaging.png)
@@ -31,10 +143,21 @@ Complémentaires
 
 # Support
 
-![center h-800](./assets/images/caniuse_push.png)
+![center h-800](./assets/images/caniuse_notification.png)
 
 Notes:
-MAJ: 2018-08-31
+MAJ: 2019-06-18
+
+##==##
+
+<!-- .slide: data-background="#dcdee0" class="transition no-margin" -->
+
+![center h-800](./assets/images/cloud_messaging.svg)
+
+# Push API
+
+Notes:
+https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API
 
 ##==##
 
@@ -292,3 +415,12 @@ self.addEventListener('notificationclick', function(event) {
 ```
 
 <!-- .element: class="big-code" -->
+
+##==##
+
+# Support
+
+![center h-800](./assets/images/caniuse_push.png)
+
+Notes:
+MAJ: 2018-08-31

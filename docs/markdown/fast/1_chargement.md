@@ -212,15 +212,25 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="" -->
 
-![h-800](./assets/images/javascript_parse_cost.png)
+![h-800 center](./assets/images/javascript_parse_cost.png)
+
+[The cost of javascript - 2018](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
+
+<!-- .element: class="center" -->
 
 ##==##
 
 <!-- .slide: class="full-center" -->
 
 ![h-800](./assets/images/javascript_parse_cost_phone.png)
+
+##==##
+
+<!-- .slide: class="full-center" -->
+
+![h-800](./assets/images/time_to_interactive.png)
 
 ##==##
 

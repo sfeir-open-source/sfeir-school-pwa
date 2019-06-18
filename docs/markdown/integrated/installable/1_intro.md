@@ -218,6 +218,35 @@ Notes:
 
 <!-- .slide: class="two-column-layout" -->
 
+# Minimal-ui
+
+##--##
+
+<!-- .slide: class="with-code" -->
+
+```javascript
+{
+  ...
+  "display": "minimal-ui",
+  ...
+}
+```
+
+<!-- .element: class="big-code" -->
+
+##--##
+
+**TODO**
+Faire un screen
+
+![center h-600](./assets/images/pwa_first-screen-window.png)
+
+Notes:
+
+##==##
+
+<!-- .slide: class="two-column-layout" -->
+
 # Video Games
 
 ##--##

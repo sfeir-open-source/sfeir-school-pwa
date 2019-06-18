@@ -1,3 +1,14 @@
+## Devtools
+
+# Jouer avec le cycle de vie
+
+**TODO**
+
+Notes:
+Montrer à quoi sert le "update on reload" & "unregister" & "update" & numéro de l'identifiant du service worker
+
+##==##
+
 <!-- .slide: class="with-code" -->
 
 # Event API
