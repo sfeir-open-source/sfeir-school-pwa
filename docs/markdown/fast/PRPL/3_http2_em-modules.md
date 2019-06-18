@@ -54,44 +54,6 @@
 © [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) [Mozilla](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 </p>
 
-##==##
-
-# lazy loading
-
-![center h-800](./assets/images/PRPL/lazy.jpg)
-
-##==##
-
-# pwa-helpers
-
-<br><br>
-
-```javascript
-import { installRouter } from 'pwa-helpers/router';
-
-export const navigate = path => {
-  // Extract the page name from path.
-  const page = path === '/' ? 'home' : path.slice(1);
-
-  switch (page) {
-    case 'home':
-      import('./home-view.js');
-      break;
-    case 'details':
-      import('./details-view.js');
-      break;
-    case 'about':
-      import('./about-view.js');
-      break;
-    default:
-      page = 'home';
-      import('./home-view.js');
-  }
-};
-
-installRouter(location => navigate(decodeURIComponent(location.pathname)));
-```
-
 <!--
 
 # lazy loading w/ Webpack

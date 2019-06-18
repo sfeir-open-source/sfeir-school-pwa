@@ -92,12 +92,6 @@ Opera 12.1 uses the older specificaton's :fullscreen-ancestor pseudo-class inste
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/buzz_light_bg.jpg" class="transition-white" -->
-
-# To device integration and beyond!
-
-##==##
-
 <!-- .slide: class="flex-row" -->
 
 # Appeler un numéro depuis un site web ?
@@ -239,6 +233,8 @@ Update on 2019-05-16
 
 <!-- .slide: data-background="./assets/images/more_integration_bg.png" -->
 
+**TODO** à remplacer par l'image what web can do today
+
 <br>
 
 Notes:
@@ -285,13 +281,6 @@ mais quid de la sécu ?
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/webauthn/mess.jpeg" class="full-center transition" -->
-
-Notes:
-en l'abscence de standard, mettre en place une authentification et d'identité, fédéré ou non, est variable suivant les solutions et offre une mauvaise DX
-
-##==##
-
 <!-- .slide: data-background="black" class="full-center mariane" -->
 
 What's new?
@@ -300,26 +289,4 @@ What's new?
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/webauthn/cryptokey.jpg" class="full-center" -->
-
-##==##
-
-<!-- .slide: class="full-center" -->
-
-![](./assets/images/webauthn/U2F-USB-Token.jpg)
-
-##==##
-
-<!-- .slide: data-background="black" class="full-center mariane" -->
-
-![h-600](./assets/images/webauthn/key-prompt.png)
-
-##==##
-
 <!-- .slide: data-background="./assets/images/webauthn/2fa-new.png" class="full-center" -->
-
-##==##
-
-<!-- .slide: data-background="black" class="full-center mariane" -->
-
-![h-600](./assets/images/webauthn/fingerprint.jpg)

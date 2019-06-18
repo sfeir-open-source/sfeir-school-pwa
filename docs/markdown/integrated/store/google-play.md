@@ -4,28 +4,18 @@
 
 ##==##
 
-<!-- .slide: class="full-center mariane" -->
+<!-- .slide: class="mariane" -->
+
+<br><br>
 
 ![center](./assets/images/store/firtman-twa.png)
 
+[Google Play Store now open for progressive web apps](https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc)
+
+<!-- .element: class="center" -->
+
 Notes:
 https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc
-
-##==##
-
-<!-- .slide: data-background="black" class="full-center mariane" -->
-
-<p class="center">
-<video autoplay loop muted playsinline height="600" src="./assets/images/gifs/surprised-cat.mp4"></video>
-</p>
-
-##==##
-
-<!-- .slide: class="full-center mariane" -->
-
-![center](./assets/images/store/firtman-twa-length.png)
-
-Notes:
 Just to point out that there is much more to it than just simply publishing PWAs on play store.
 
 ##==##
@@ -53,6 +43,14 @@ ACTIVITIES
 <!-- .slide: class="flex-row" -->
 
 ![center](./assets/images/store/custom-tabs.png)
+
+##==##
+
+<!-- .slide: class="flex-row" -->
+
+# Slide Pros / Cons TWA
+
+**TODO**
 
 ##==##
 
@@ -88,46 +86,8 @@ Rendered by the user's browser.
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
-
-Notes:
-source: https://youtu.be/TCgT8dzSiU8
-[Pete Lepage](https://petelepage.com/blog/2010/05/biography/), Developer Advocate on the Web team at Google.
-New ways to integrate **parts** of your web experience **into** you native Android app.
-https://g.co/TrustedWebActivities
-
-##--##
-
-<br>
-
-<p class="center">
-<video autoplay loop muted playsinline height="600" src="./assets/images/gifs/wrap-and-dump.mp4"></video>
-</p>
-
-##--##
-
-<br><br><br>
-
-<p class="quotation">
-**This isn't** designed as a mechanism to **simply wrap** your site **and dump it** in the Play Store.
-</p>
-<p class="quotation-author">
-[Pete Lepage](https://petelepage.com/blog/2010/05/biography/), 31 mai 2018
-</p>
-
-##==##
-
-<!-- .slide: class="full-center mariane" -->
-
-![center h-600](./assets/images/store/paul-kinlan-about-TWA.png)
-
-Notes:
-https://twitter.com/Paul_Kinlan/status/1091416402584571904
-
-##==##
-
 <br><br><br>
 
 <p style="text-align:center;font-size:3em">
-A new great **hack** to put your Progressive Web App on the Google Play Store 😱
+La seule façon **officielle** de délivrer une **PWA** sur le **PlayStore**
 </p>

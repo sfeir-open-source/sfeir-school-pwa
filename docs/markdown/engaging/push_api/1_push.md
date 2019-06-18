@@ -143,10 +143,21 @@ Note: When you receive a "close" event, there is no guarantee that it's the user
 
 # Support
 
-![center h-800](./assets/images/caniuse_push.png)
+![center h-800](./assets/images/caniuse_notification.png)
 
 Notes:
-MAJ: 2018-08-31
+MAJ: 2019-06-18
+
+##==##
+
+<!-- .slide: data-background="#dcdee0" class="transition no-margin" -->
+
+![center h-800](./assets/images/cloud_messaging.svg)
+
+# Push API
+
+Notes:
+https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API
 
 ##==##
 
@@ -404,3 +415,12 @@ self.addEventListener('notificationclick', function(event) {
 ```
 
 <!-- .element: class="big-code" -->
+
+##==##
+
+# Support
+
+![center h-800](./assets/images/caniuse_push.png)
+
+Notes:
+MAJ: 2018-08-31
