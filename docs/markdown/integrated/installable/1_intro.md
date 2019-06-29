@@ -324,3 +324,9 @@ https://app-manifest.firebaseapp.com/
 <!-- .element: class="center" -->
 
 <br>
+
+##==##
+
+# Tester
+
+![center h-800](./assets/images/devtools_manifest.png)
