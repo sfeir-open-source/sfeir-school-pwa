@@ -231,14 +231,14 @@ Update on 2019-05-16
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/more_integration_bg.png" -->
+# What web can do today ?
 
-**TODO** à remplacer par l'image what web can do today
-
-<br>
+![center h-900](./assets/images/whatwebcandotoday.png)
 
 Notes:
 à reprendre avec une vrais liste qu'on pourra mettre à jour
+
+##==##
 
 <!-- .slide: class="full-center transition" -->
 
