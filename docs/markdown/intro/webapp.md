@@ -18,7 +18,7 @@
 
 <!-- .slide: class="flex-row" -->
 
-# Note application
+# Notre application
 
 ![w-200](./assets/images/vanillajs.png)
 <span class="big-text">+</span>

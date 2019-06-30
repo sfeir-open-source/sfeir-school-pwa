@@ -18,7 +18,8 @@
 
 # Safari Devtools
 
-# **TODO**
+![center h-400](./assets/images/safari_devtools_1.png)
+![center h-300](./assets/images/safari_devtools_2.png)
 
 ##==##
 
