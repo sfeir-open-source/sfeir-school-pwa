@@ -2,7 +2,7 @@
 
 # Jouer avec le cycle de vie
 
-**TODO**
+![h-600](./assets/images/lifecycle-console.png)
 
 Notes:
 Montrer à quoi sert le "update on reload" & "unregister" & "update" & numéro de l'identifiant du service worker

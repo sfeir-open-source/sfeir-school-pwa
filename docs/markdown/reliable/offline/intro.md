@@ -6,7 +6,7 @@
 
 ![](./assets/images/wifi_wifi.png)
 ![](./assets/images/wifi_lie-fi.png)
-![](./assets/images/wifi_wifi.png)
+![](./assets/images/wifi_no-wifi.png)
 
 <p>
 <span>Online</span>

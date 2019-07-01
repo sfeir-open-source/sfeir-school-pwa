@@ -8,7 +8,7 @@
 
 - App Like
   <br><br>
-- Engament
+- Engagement
   <br><br>
 - Performances
 
@@ -192,7 +192,7 @@ Notes:
 
 <!-- .slide: class="two-column-layout" -->
 
-# Window
+# Browser
 
 ##--##
 
@@ -201,7 +201,7 @@ Notes:
 ```javascript
 {
   ...
-  "display": "window",
+  "display": "browser",
   ...
 }
 ```
@@ -211,6 +211,32 @@ Notes:
 ##--##
 
 ![center h-600](./assets/images/pwa_first-screen-window.png)
+
+Notes:
+
+##==##
+
+<!-- .slide: class="two-column-layout" -->
+
+# Standalone
+
+##--##
+
+<!-- .slide: class="with-code" -->
+
+```javascript
+{
+  ...
+  "display": "standalone",
+  ...
+}
+```
+
+<!-- .element: class="big-code" -->
+
+##--##
+
+![center h-600](./assets/images/pwa_first-screen-standalone.png)
 
 Notes:
 
@@ -236,10 +262,7 @@ Notes:
 
 ##--##
 
-**TODO**
-Faire un screen
-
-![center h-600](./assets/images/pwa_first-screen-window.png)
+![center h-600](./assets/images/pwa_first-screen.png)
 
 Notes:
 

@@ -2,6 +2,8 @@
 
 ![center](./assets/images/service_worker_explain.svg)
 
+Notes: Un service worker est un proxy programmable côté client entre la webapp et l'exterieur
+
 ##==##
 
 <!-- .slide: data-background="./assets/images/grid_background.svg" -->
@@ -33,7 +35,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 
 # Support
 
-![center](./assets/images/caniuse_serviceworker.png)
+![center h-600](./assets/images/caniuse_serviceworker.png)
 
 <br>
 <h2 class="center"><a href="https://jakearchibald.github.io/isserviceworkerready/" target="_blank">Is Service Worker Ready ?</a></h2>

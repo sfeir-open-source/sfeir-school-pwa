@@ -17,20 +17,9 @@
 <br>
 
 Notes:
-Chrome, Blink, and the Web Platform at Google
-W3C archi group member
-
 Invente le nom PWA, qu’il présente comme un nouveau type d’app, en opposition à l’hybrid / natif.
 
-Une progressive web app utilise les nouvelles technologies web pour délivrer une expérience utilisateur très proche d’une vraie application. Elles évoluent à partir des pages dans des onglets du navigateur à immersifs , des applications de haut niveau , en conservant une faible friction du web à tout moment .
-
-Instant loading
-Clear identity
-Served over TLS
-Offline support
-Web App Manifest
-Can run without browser chrome
-
+exploiter les technolo- gies modernes du Web pour offrir le confort d’une application native aux utilisateurs. Dit autrement, le rôle d’une PWA est de faire oublier à l’utilisateur qu’il est sur une ap- plication web, en lui offrant les mêmes ser- vices et les mêmes performances qu’une application native qu’il aurait téléchargée sur un AppStore classique
 ##==##
 
 <!-- .slide: class="quote" -->

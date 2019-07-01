@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code" -->
 
-# Recap : fonctionnement des promises
+# Recap : Fonctionnement des promises
 
 ### Une promise est utilisée pour réaliser des traitements de façon asynchrone.
 
