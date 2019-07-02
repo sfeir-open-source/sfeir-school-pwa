@@ -14,6 +14,8 @@
 
 <!-- .element: class="center" -->
 
+<br><br>
+<br><br>
 Notes:
 https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc
 Just to point out that there is much more to it than just simply publishing PWAs on play store.

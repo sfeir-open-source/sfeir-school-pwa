@@ -48,6 +48,14 @@
 
 # P.R.P.L
 
+![center h-800](./assets/images/prpl.png)
+
+##==##
+
+<!-- .slide: class="flex-row"-->
+
+# P.R.P.L
+
 <br>
 
 ![border-circle red w-300](./assets/images/PRPL/push.png)

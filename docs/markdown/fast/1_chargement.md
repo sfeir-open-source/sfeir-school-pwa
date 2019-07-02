@@ -144,6 +144,22 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 
 <!-- .slide: class="with-code" -->
 
+# Fallback
+
+```html
+<picture>
+  <source type="image/webp" srcset="image.webp" />
+  <source type="image/jpeg" srcset="image.jpg" />
+  <img src="image.jpg" alt="My Image" />
+</picture>
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
 # Gif is 💀
 
 ![center h-200](./assets/images/gif_size.png)
@@ -251,8 +267,72 @@ https://developers.google.com/web/fundamentals/performance/optimizing-content-ef
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="" -->
 
 # HTTP2
 
-![h-600](./assets/images/http2_demo.gif)
+![h-600 center](./assets/images/http2_demo.gif)
+
+[HTTP2 Golang demo](https://http2.golang.org/gophertiles?latency=0)
+
+<!-- .element: class="center" -->
+
+Notes:
+
+- HTTP/1 chargeait les ressources les unes après les autres
+- HTTP/2 va vous permettre de gagner du temps au niveau des états d’attente car plusieurs ressources pourront être directement déchargées dans le même flux de réponse HTTP.
+  ##==##
+
+<!-- .slide: class="full-center" -->
+
+# HTTP1 Waterfall
+
+![h-800](./assets/images/watefall_http1.jpg)
+
+Notes:
+
+- vert : temps d’attente avant le chargement de la ressource,
+- violet : temps d’attente de chargement de la ressource (TTFB - Time To First Byte)
+- gris : temps de réception de la ressource.
+  ##==##
+
+<!-- .slide: class="full-center" -->
+
+# HTTP2 Waterfall
+
+![h-800](./assets/images/watefall_http2.jpg)
+
+Notes:
+
+- le temps en vert (attendre les ressources) a complètement disparu
+- les ressources sont bien chargées “en même temps”, en utilisant le même flux
+- Moteurs de recherche se basent de plus en plus sur le temps de chargement des pages pour améliorer leur référencement
+- le passage au protocole HTTP/2 est également un gros plus pour le SEO.
+
+##==##
+
+# HTTP n'est pas le futur...
+
+... c'est le présent
+![h-600](./assets/images/caniuse-http2.png)
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# How to ?
+
+Sur nginx, depuis la version 1.9.5.
+
+```javascript
+server {
+    listen 443 ssl http2
+    ...
+}
+```
+
+<!-- .element: class="big-code" -->
+
+<br />
+and Voilà !
+<!-- .element: class="big-text" -->
