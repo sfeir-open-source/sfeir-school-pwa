@@ -6,4 +6,4 @@ self.addEventListener('activate', function(event) {
   console.log('event activate');
 });
 
-// Listen message event and answer back.
+// TODO Listen message event and answer back.
