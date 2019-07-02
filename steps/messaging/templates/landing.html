@@ -14,32 +14,16 @@
   </head>
 
   <body>
-    <!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">
-            <a href="/home">
-              <img src="/img/logo-app.png" aria-label="People" alt="People" />
-            </a>
-          </span>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation">
-            <a href="/people"><i class="material-icons">list</i></a>
-          </nav>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-          <div id="root">
-            <people-app></people-app>
-          </div>
-        </div>
-      </main>
-    </div>
 
-    <!-- TODO: your script for init service worker -->
+  <button onclick="send_hello()">Send hello To SW</button>
+
     <script>
+      function send_hello() {
+        // TODO call send_message_to_sw and display alert with answer
+      }
+
+      // TODO add send_message_to_sw function
+
       if (navigator.serviceWorker) {
         navigator.serviceWorker
           .register('service-worker.js')

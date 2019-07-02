@@ -19,7 +19,7 @@
 Notes:
 Invente le nom PWA, qu’il présente comme un nouveau type d’app, en opposition à l’hybrid / natif.
 
-exploiter les technolo- gies modernes du Web pour offrir le confort d’une application native aux utilisateurs. Dit autrement, le rôle d’une PWA est de faire oublier à l’utilisateur qu’il est sur une ap- plication web, en lui offrant les mêmes ser- vices et les mêmes performances qu’une application native qu’il aurait téléchargée sur un AppStore classique
+exploiter les technologies modernes du Web pour offrir le confort d’une application native aux utilisateurs. Dit autrement, le rôle d’une PWA est de faire oublier à l’utilisateur qu’il est sur une ap- plication web, en lui offrant les mêmes ser- vices et les mêmes performances qu’une application native qu’il aurait téléchargée sur un AppStore classique
 ##==##
 
 <!-- .slide: class="quote" -->

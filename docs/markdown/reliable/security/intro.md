@@ -27,8 +27,8 @@
 </div>
 
 Notes:
-And finally, integrity. The browser and the server, have a guarantee under HTTPS that when they send data from one to the other, the data they send is what the other party receives. So an intermediary on the network can’t modify or tamper with the data that’s being sent. Only the browser and the server can. So these are the three security properties that we get from HTTPS.
 
+Et enfin, l'intégrité. Le navigateur et le serveur ont la garantie, sous HTTPS, que, lorsqu’ils envoient des données de l’un à l’autre, les données qu’ils envoient sont celles que l’autre partie reçoit. Ainsi, un intermédiaire du réseau ne peut ni modifier ni altérer les données envoyées. Seuls le navigateur et le serveur peuvent. Il s’agit donc des trois propriétés de sécurité fournies par HTTPS.
 ##==##
 
 # Solutions

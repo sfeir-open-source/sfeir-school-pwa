@@ -41,7 +41,7 @@ main.js
 
 ```javascript
 function send_message_to_sw(message) {
-  window.postMessage(`Client says ${message}`);
+  navigator.serviceWorker.controller.postMessage('Client says ' + message);
 }
 ```
 
@@ -89,7 +89,7 @@ function send_message_to_sw(message) {
       }
     };
     // Send message to service worker along with port for reply
-    window.postMessage(`Says ${message}`, [msg_chan.port2]);
+    navigator.serviceWorker.controller.postMessage("Say '" + message + "'", [msg_chan.port2]);
   });
 }
 ```
