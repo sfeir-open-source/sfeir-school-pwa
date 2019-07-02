@@ -10,14 +10,6 @@ self.addEventListener('event-name', function(event){
 
 <!-- .element: class="big-code" -->
 
-```javascript
-self.addEventListener('install', function(event){
-  ...
-});
-```
-
-<!-- .element: class="big-code" -->
-
 <br>
 
 ##==##
@@ -28,3 +20,45 @@ self.addEventListener('install', function(event){
 
 Notes:
 install =>
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Service Worker : AddEventListener
+
+```javascript
+self.addEventListener('install', function (event) { ... });
+```
+
+<!-- .element: class="big-code" -->
+
+```javascript
+self.addEventListener('activate', function (event) { ... });
+```
+
+<!-- .element: class="big-code" -->
+
+```javascript
+self.addEventListener('message', function (event) { ... });
+```
+
+<!-- .element: class="big-code" -->
+
+```javascript
+self.addEventListener('fetch', function (event) { ... });
+```
+
+<!-- .element: class="big-code" -->
+
+```javascript
+self.addEventListener('push', function (event) { ... });
+```
+
+<!-- .element: class="big-code" -->
+
+```javascript
+self.addEventListener('sync', function (event) { ... });
+```
+
+<!-- .element: class="big-code" -->

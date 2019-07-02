@@ -23,6 +23,9 @@ Cache-Only / Network-Only / Cache-First / Network-First / Fallback
 Notes:
 Ideal pour tout ce qui est considéré comme static a une version du site.
 
+Ideal for: Anything you'd consider static to that "version" of your site.
+You should have cached these in the install event, so you can depend on them being there.
+
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -48,7 +51,9 @@ self.addEventListener('fetch', event => {
 ![center h-800](./assets/images/cache-strategy-network-only.png)
 
 Notes:
-Pas d'équivalent offline, analytics
+on ne veut pas de cache car l'opération est critique/ne peut pas fonctionner hors ligne.
+
+Si ce n'est qu'une partie de l'application, il est important d'expliquer clairement au niveau de l'interface pourquoi la fonctionnalité n'est pas disponible.
 
 ##==##
 

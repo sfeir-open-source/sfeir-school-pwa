@@ -46,7 +46,10 @@ Demandez vous :
 
 # 2ème étape : Le cache
 
-<br>
+- **Premier chargement** : Mettre les fichiers dans le cache.
+- **Prochain chargements** : Recupérer directement les fichiers du cache :
+  - Si les fichiers ne sont plus à jour, mettre les nouveaux fichiers dans le cache et supprimer les anciens.
+  - **chargement N+1** : utiliser les fichiers mis à jour.
 
 ![center h-500](./assets/images/minifig.png)
 

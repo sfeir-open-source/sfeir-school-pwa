@@ -26,8 +26,9 @@ self.addEventListener('install', function(event) {
 
 <!-- .element: class="big-code" -->
 
-<br>
-
+Notes: Un event est asynchrone, il se termine avant que la Promise ne soit fullfiled
+Se termine avant que l'on ai fini les actions a faire
+Fixé avec waitUntil, qui va attendre la résolution de la dernière promise a l'interieur avant de terminer l'event
 ##==##
 
 # Installation

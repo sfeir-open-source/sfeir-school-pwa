@@ -19,6 +19,7 @@ Notes:
 ![center h-600](./assets/images/sw_updating.gif)
 
 Notes:
+https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
 
 - update triggered if any of:
   - navigation to an in-scope page.

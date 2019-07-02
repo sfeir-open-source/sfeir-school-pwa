@@ -4,6 +4,10 @@
 
 ![center](./assets/images/sw_souscription.png)
 
+⚠️ register renvoi une Promise
+
+<!-- .element: class="center" -->
+
 ##==##
 
 # ⚠️ Scope
