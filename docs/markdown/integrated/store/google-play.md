@@ -54,17 +54,27 @@ Ressemble a une page web avec la barre au dessus
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="two-column-layout" -->
 
-# Slide Pros / Cons TWA
+# Trusted Web Activities
 
-**TODO**
-
-<!-- .slide: class="flex-row" -->
+##--##
+![center h-800](./assets/images/twa-fullscreen.png)
+  
+##--##
+![center h-800](./assets/images/twa-description.png)
 
 Notes:
 Pas simplement un wrapper d'une appli web qu'on envoie sur le store
-Par exmple, installation store, mode avion => Dino / car par de SW installé
+Par exemple, installation store, mode avion => Dino / car par de SW installé
+
+##==##
+
+# Webview vs Custom Tabs vs TWA
+
+<!-- .slide: class="flex-row" -->
+
+![center h-700](./assets/images/advantages-twa.png)
 
 ##==##
 
