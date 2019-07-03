@@ -52,7 +52,7 @@ plugins: [
 <!-- .element: style="color:white" -->
 <br />
 <br />
-Et envore plus de possibilités, configuration, etc...
+Et encore plus de possibilités, configuration, etc...
 <!-- .element: class="center" style="color:white"-->
 <br />
 <br />
