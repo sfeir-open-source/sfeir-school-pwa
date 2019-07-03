@@ -34,6 +34,8 @@ WEB
 ACTIVITIES
 </p>
 
+Notes:
+Un nouvelle façon d'apporter d'apporter une experience web dans une application android native
 ##==##
 
 <!-- .slide: class="flex-row" -->
@@ -46,6 +48,10 @@ ACTIVITIES
 
 ![center](./assets/images/store/custom-tabs.png)
 
+Notes:
+A toutes les possibilité d'une PWA
+Ressemble a une page web avec la barre au dessus
+
 ##==##
 
 <!-- .slide: class="flex-row" -->
@@ -54,9 +60,13 @@ ACTIVITIES
 
 **TODO**
 
-##==##
-
 <!-- .slide: class="flex-row" -->
+
+Notes:
+Pas simplement un wrapper d'une appli web qu'on envoie sur le store
+Par exmple, installation store, mode avion => Dino / car par de SW installé
+
+##==##
 
 # TWA
 
@@ -69,6 +79,9 @@ ACTIVITIES
 Comes from the same developer.
 
 <!-- .element: class="center-big" -->
+
+Notes:
+Il est vérifié que le propriétaire de l'application est le propriétaire du contenu
 
 ##==##
 
@@ -85,6 +98,10 @@ Comes from the same developer.
 Rendered by the user's browser.
 
 <!-- .element: class="center-big" -->
+
+Notes:
+Le browser de l'utilisateur, mis à jour en evergreen plutôt qu'une version pas a jour d'une webview
+Accés aux dernières API
 
 ##==##
 
