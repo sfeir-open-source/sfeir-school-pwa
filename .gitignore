@@ -68,3 +68,7 @@ typings/
 
 #Dev
 docs/test.html
+
+.idea
+/steps/.idea
+.iml
