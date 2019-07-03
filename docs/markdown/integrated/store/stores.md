@@ -85,6 +85,12 @@ Car si on est pas sur le store, nos concurents le sont. Donc on doit suivre le m
 
 ##==##
 
+<!-- .slide: class="transition-white sfeir-bg-blue" -->
+
+# Apple Store
+
+##==##
+
 <!-- .slide: class="flex-row" -->
 
 <br><br>

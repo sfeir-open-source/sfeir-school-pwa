@@ -263,7 +263,11 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 ![h-600](./assets/images/load_scrip_order.png)
 
 Notes:
-https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer
+
+- pour les 2 : navigateur télécharge le script de manière asynchrone tout en continuant de parser le document HTML.
+- async: Lorsque le téléchargement du script est terminé, le parse est bloquée pendant son exécution.
+- defer: Le script ne s'exécute pas tant que le parse n'est pas terminée.
+- https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer
 
 ##==##
 

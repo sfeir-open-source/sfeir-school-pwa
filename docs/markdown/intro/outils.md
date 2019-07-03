@@ -35,18 +35,36 @@
 
 ##--##
 
+<!-- .slide: class="with-code" -->
+
 <br><br><br>
 
-Chrome Devtools:
+Chrome Devtools :
 
-Audits> "Run audits"
+Audits => "Run audits"
 <br><br>
 
 CLI:
 
-npm i -g lighthouse lighthouse <url>
+```shell
+npm i -g lighthouse
+```
+
+<!-- .element: class="big-code" -->
+
+```shell
+lighthouse https://sfeir.com/
+```
+
+<!-- .element: class="big-code" -->
 
 Notes:
 Lighthouse, which you'll learn more about, has tools from the app and from the command line to help check security.
 
 --chrome-flags=”no-sandbox” pour linux
+
+##==##
+
+# Rapport lighthouse
+
+![center h-900](./assets/images/lighthouse-pwa.png)

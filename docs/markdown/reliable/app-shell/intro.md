@@ -17,7 +17,7 @@ https://github.com/GoogleChrome/application-shell/
 <!-- .element: class="center" -->
 
 <br>
-Notes:
+Notes: catégorie "Performance"
 
 ##==##
 

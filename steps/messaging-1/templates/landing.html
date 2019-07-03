@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="peopleApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020307" />
+    <title>Sfeir People</title>
+
+    <link rel="stylesheet" href="/css/material-icons.css" />
+    <link rel="stylesheet" href="/mdl/material.min.css" />
+    <link rel="stylesheet" href="css/md-overwrite.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <script src="/mdl/material.min.js"></script>
+  </head>
+
+  <body>
+
+
+  <button onclick="send_message_to_sw('hello')">Send hello</button>
+
+  <script>
+    function send_message_to_sw(message) {
+      // TODO post message to SW
+    }
+
+    // TODO listen message event and display response in alert
+
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker
+        .register('service-worker.js')
+        .then(function() {
+          console.log('Service worker installed');
+        })
+        .catch(err => {
+          console.error('Error registering Service Worker', err);
+        });
+    }
+  </script>
+  </body>
+</html>

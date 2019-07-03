@@ -6,33 +6,32 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-const preCache = [{ url: '/index.html', revision: '7dc612bd22a1710ad8c318480f474ea5' }];
+const { strategies } = workbox;
 
-workbox.precaching.suppressWarnings();
+const preCache = ['/index.html'];
+
 workbox.precaching.precacheAndRoute(preCache, {});
 
 workbox.routing.registerRoute(
-  // Cache CSS files
-  /.*\.css/,
-  // Use cache but update in the background ASAP
-  workbox.strategies.staleWhileRevalidate({
-    // Use a custom cache name
-    cacheName: 'css-cache'
+  new RegExp('.*.(?:png|jpg|jpeg|svg|gif)'),
+  new workbox.strategies.CacheFirst({
+    cacheName: 'image-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 20,
+        maxAgeSeconds: 7 * 24 * 60 * 60
+      })
+    ]
   })
 );
 
 workbox.routing.registerRoute(
-  // Cache image files
-  /.*\.(?:png|jpg|jpeg|svg|gif)/,
-  // Use the cache if it's available
-  workbox.strategies.cacheFirst({
-    // Use a custom cache name
-    cacheName: 'image-cache',
+  new RegExp('.css'),
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'css-cache',
     plugins: [
       new workbox.expiration.Plugin({
-        // Cache only 20 images
         maxEntries: 20,
-        // Cache for a maximum of a week
         maxAgeSeconds: 7 * 24 * 60 * 60
       })
     ]

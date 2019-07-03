@@ -1,3 +1,3 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition-white" data-background="#fb8c00" -->
 
-# Service Workers<br>& the Window context
+# Workbox

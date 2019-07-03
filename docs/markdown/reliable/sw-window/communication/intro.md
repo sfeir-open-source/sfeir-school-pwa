@@ -51,7 +51,7 @@ function send_message_to_sw(message) {
 
 <!-- .slide: class="with-code" -->
 
-# Message event
+# Réceptionner et répondre
 
 service-worker.js
 
@@ -60,6 +60,7 @@ service-worker.js
 ```javascript
 self.addEventListener('message', function(event) {
   console.log('SW Received Message: ' + event.data);
+  self.clients.matchAll().then(clients => clients.map(client => client.postMessage('Hello All !')));
 });
 ```
 
@@ -69,14 +70,32 @@ self.addEventListener('message', function(event) {
 
 <!-- .slide: class="with-code" -->
 
-# Répondre ?
+# Écouter les messages provenant du SW
 
 main.js
 
 <!-- .element: class="center" -->
 
 ```javascript
-function send_message_to_sw(message) {
+navigator.serviceWorker.addEventListener('message', event => {
+  alert(event.data);
+});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# MessageChannel pour la communication direct
+
+main.js
+
+<!-- .element: class="center" -->
+
+```javascript
+function send_direct_message_to_sw(message) {
   return new Promise((resolve, reject) => {
     // Create a Message Channel
     var msg_chan = new MessageChannel();
@@ -89,7 +108,7 @@ function send_message_to_sw(message) {
       }
     };
     // Send message to service worker along with port for reply
-    navigator.serviceWorker.controller.postMessage("Say '" + message + "'", [msg_chan.port2]);
+    navigator.serviceWorker.controller.postMessage(message, [msg_chan.port2]);
   });
 }
 ```
@@ -100,7 +119,7 @@ function send_message_to_sw(message) {
 
 <!-- .slide: class="with-code" -->
 
-# Et recevoir une réponse...
+# Répondre directement
 
 service-worker.js
 
@@ -109,7 +128,7 @@ service-worker.js
 ```javascript
 self.addEventListener('message', event => {
   console.log('SW Received Message: ' + event.data);
-  event.ports[0].postMessage("SW Says 'Hello back!'");
+  event.ports[0].postMessage('Ok, message received');
 });
 ```
 

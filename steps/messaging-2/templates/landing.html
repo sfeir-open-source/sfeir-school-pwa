@@ -15,28 +15,11 @@
 
   <body>
 
-  <button onclick="send_hello()">Send hello</button>
+  <button onclick="send_direct_message_to_sw('hello').then(message => alert(message))">Send hello</button>
 
     <script>
-      function send_hello() {
-        send_message_to_sw('hello')
-          .then(message => alert(message))
-      }
-
-      function send_message_to_sw(message) {
-        return new Promise((resolve, reject) => {
-          var msg_chan = new MessageChannel();
-
-          msg_chan.port1.onmessage = event => {
-            if (event.data.error) {
-              reject(event.data.error);
-            } else {
-              resolve(event.data);
-            }
-          };
-
-          navigator.serviceWorker.controller.postMessage("Say '"+ message +"'", [msg_chan.port2]);
-        });
+      function send_direct_message_to_sw(message) {
+        // TODO envoyé un message privé
       }
 
       if (navigator.serviceWorker) {

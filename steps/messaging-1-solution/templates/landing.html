@@ -15,14 +15,16 @@
 
   <body>
 
-  <button onclick="send_hello()">Send hello To SW</button>
+  <button onclick="send_message_to_sw('hello')">Send hello</button>
 
     <script>
-      function send_hello() {
-        // TODO call send_message_to_sw and display alert with answer
+      function send_message_to_sw(message) {
+        navigator.serviceWorker.controller.postMessage(message);
       }
 
-      // TODO add send_message_to_sw function
+      navigator.serviceWorker.addEventListener('message', (event) => {
+        alert(event.data);
+      });
 
       if (navigator.serviceWorker) {
         navigator.serviceWorker
