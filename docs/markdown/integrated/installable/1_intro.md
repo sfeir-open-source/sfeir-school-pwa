@@ -100,6 +100,7 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
+Notes:
 ##--##
 
 ![center h-600](./assets/images/pwa_icon.png)

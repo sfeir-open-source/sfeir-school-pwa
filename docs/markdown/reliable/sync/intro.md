@@ -43,6 +43,10 @@ self.addEventListener('sync', function(event) {
 <!-- .element: class="big-code" -->
 
 Notes:
+Et c'est tout.
+doSomeStuff return Promise indique success/fail<br/>
+Si fail, programme un autre essai, delai exponentiel<br/>
+tag = unique sinon ecrase
 
 ##==##
 
