@@ -26,6 +26,12 @@
 
 **"Business insights"**
 
+Notes:
+Découvrabilité<br/>
+Fiabilité<br/>
+Facilité d'installation<br />
+Perspectives d'affaires<br/>
+
 ##==##
 
 <!-- .slide: class="flex-row" -->

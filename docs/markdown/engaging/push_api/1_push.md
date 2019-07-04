@@ -40,7 +40,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ## Permet d'afficher des notifications natives
 
-![center h-600](./assets/images/notifications.png)
+![center h-700](./assets/images/notifications.png)
 
 Notes:
 The Notifications API lets a web page or app send notifications that are displayed outside the page at the system level; this lets web apps send information to a user even if the application is idle or in the background. This article looks at the basics of using this API in your own apps.
