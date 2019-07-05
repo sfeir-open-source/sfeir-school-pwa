@@ -90,6 +90,8 @@ https://developers.google.com/web/fundamentals/engage-and-retain/app-install-ban
 
 # Bannière : L’évènement beforeinstallprompt
 
+main.js
+
 ```javascript
 window.addEventListener('beforeinstallprompt', function(e) {
   ...

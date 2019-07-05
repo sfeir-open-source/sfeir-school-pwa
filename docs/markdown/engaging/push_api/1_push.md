@@ -364,7 +364,12 @@ self.registration.showNotification(data.title, {
   body: data.body,
   icon: data.icons,
   tag: data.tag,
-  actions: [{ action: 'open', title: 'Show me more details' }, { action: 'cancel', title: 'No thanks' }]
+  actions: [
+    { action: 'open', title: 'Show me more details' },
+    { action: 'cancel', title: 'No thanks' },
+    { action: 'toto', title: 'No d' },
+    { action: 'tutu', title: 'No thaggnks' }
+  ]
 });
 ```
 

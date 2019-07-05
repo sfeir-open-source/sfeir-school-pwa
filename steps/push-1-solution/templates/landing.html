@@ -41,7 +41,7 @@
     </div>
 
     <section id="shellToolbar" class="extend-toolbar">
-      <button id="installButton" class="mdl-button mdl-js-button mdl-button--fab mdl-button--primary">
+      <button id="installButton" class="mdl-js-button mdl-button--fab mdl-button--primary">
         <i class="material-icons">vertical_align_bottom</i>
       </button>
     </section>
@@ -79,13 +79,16 @@
       }
 
       const installButton = document.getElementById('installButton');
+      var deferredEvent;
+
       window.addEventListener('beforeinstallprompt', function(e) {
+        console.log('toto')
         e.preventDefault();
         deferredEvent = e;
         //Show button
         installButton.classList.add('show');
       });
-      var deferredEvent;
+
       installButton.addEventListener('click', function onInstall() {
         if (deferredEvent !== undefined) {
           // The user has had a postive interaction with our app and Chrome
