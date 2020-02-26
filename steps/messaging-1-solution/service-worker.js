@@ -7,6 +7,6 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('message', function(event) {
-  console.log('SW Received Message: ' + event.data);
+  console.log('SW Received Message: ', event.data);
   self.clients.matchAll().then(clients => clients.map(client => client.postMessage('Hello back !')));
 });

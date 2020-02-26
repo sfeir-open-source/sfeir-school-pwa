@@ -14,15 +14,14 @@
   </head>
 
   <body>
-
-  <button onclick="send_message_to_sw('hello')">Send hello</button>
+    <button onclick="send_message_to_sw({hello:'world'})">Send hello</button>
 
     <script>
       function send_message_to_sw(message) {
         navigator.serviceWorker.controller.postMessage(message);
       }
 
-      navigator.serviceWorker.addEventListener('message', (event) => {
+      navigator.serviceWorker.addEventListener('message', event => {
         alert(event.data);
       });
 
