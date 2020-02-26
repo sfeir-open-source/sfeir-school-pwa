@@ -44,6 +44,9 @@ A Progressive Web App is simply that, a great user experience that feels integra
 ![w-400](./assets/images/screenshot_integrated_2.png)
 ![w-400](./assets/images/screenshot_integrated_3.png)
 
+Notes:
+Parler du fait que c'est complétement intégrer maintenant et que c'est transparant pour l'utilisateur
+
 ##==##
 
 <!-- .slide: class="flex-row" -->

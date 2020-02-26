@@ -28,6 +28,9 @@ exploiter les technologies modernes du Web pour offrir le confort d’une applic
 There is now another way. An **evolution** has taken place in browsers.
 </p>
 
+Notes:
+Expliquer que ce n'est qu'une évolution et pas un nouveau framework
+
 ##==##
 
 <!-- .slide: class="quote" -->
@@ -35,6 +38,9 @@ There is now another way. An **evolution** has taken place in browsers.
 <p class="quotation">
 **Just websites** that took all the right vitamins.
 </p>
+
+Notes:
+On continue de parler de sites web ! c'est juste qu'ils auront plus de possibilités
 
 ##==##
 
@@ -44,6 +50,9 @@ There is now another way. An **evolution** has taken place in browsers.
 Sites [...] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
 </p>
 
+Notes:
+L'enjeu est de faire évoluer les sites selon le besoin progressivement vers des app
+
 ##==##
 
 <!-- .slide: class="quote" -->
@@ -51,3 +60,6 @@ Sites [...] have to earn [some] right[s] over time as you use them more and more
 <p class="quotation">
 Thoughtful application design and construction will give early movers a **major advantage**.
 </p>
+
+Notes:
+A terme, ça permettra d'avoir un avantage concurentiel si on le prend en compte maintenant car on s'ouvrira un marché nouveau non disponible aux autres
