@@ -28,7 +28,11 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) {
   console.log('event activate');
-  event.waitUntil(caches.delete('cache-dynamic').finally(self.clients.claim()));
+  event.waitUntil(
+    caches.delete('cache-dynamic').finally(
+      self.clients.claim()
+    )
+  );
 });
 
 self.addEventListener('fetch', function(event) {
