@@ -1,8 +1,8 @@
-function schoolSlides(full) {
+function schoolSlides() {
   return ['00-school/00-TITLE.md', '00-school/speaker-jef.md'];
 }
 
-function introSlides(full) {
+function introSlides() {
   return [
     '01-intro/00-TITLE.md',
     '01-intro/01-contexte.md',
@@ -14,7 +14,7 @@ function introSlides(full) {
   ];
 }
 
-function serviceWorkersSlides(full) {
+function serviceWorkersSlides() {
   return [
     '02-serviceworkers/00-TITLE.md',
     /* intro */
@@ -38,7 +38,7 @@ function serviceWorkersSlides(full) {
   ];
 }
 
-function cacheSlides(full) {
+function cacheSlides() {
   return [
     /* App-Shell */
     '03-cache/00-TITLE.md',
@@ -61,7 +61,7 @@ function cacheSlides(full) {
   ];
 }
 
-function advancedServiceWorkersSlides(full) {
+function advancedServiceWorkersSlides() {
   return [
     /* sw-channels */
     '04-advanced-sw/00-TITLE.md',
@@ -75,7 +75,7 @@ function advancedServiceWorkersSlides(full) {
   ];
 }
 
-function installableSlides(full) {
+function installableSlides() {
   return [
     '05-installable/00-TITLE.md',
     /* install */
@@ -90,7 +90,7 @@ function installableSlides(full) {
   ];
 }
 
-function engagingSlides(full) {
+function engagingSlides() {
   return [
     '06-engaging/00-TITLE.md',
     /* ux */
@@ -101,7 +101,7 @@ function engagingSlides(full) {
   ];
 }
 
-function integratedSlides(full) {
+function integratedSlides() {
   return [
     /* API */
     '07-integrated/00-TITLE.md',
@@ -111,7 +111,7 @@ function integratedSlides(full) {
   ];
 }
 
-function performancesSlides(full) {
+function performancesSlides() {
   return [
     '08-performances/00-TITLE.md',
     '08-performances/01-loading.md',
@@ -142,48 +142,25 @@ function bonusSlides() {
   return ['00-school/99-BONUS.md'];
 }
 
-function fullFormation() {
+function formation() {
   return [
-    ...schoolSlides(true),
-    ...introSlides(true),
-    ...serviceWorkersSlides(true),
-    ...cacheSlides(true),
-    ...advancedServiceWorkersSlides(true),
-    ...installableSlides(true),
-    ...engagingSlides(true),
-    ...integratedSlides(true),
-    ...performancesSlides(true),
-    ...librariresSlides(true),
-    ...conclusionSlides(true)
-  ]
-    .map(slidePath => {
-      return {
-        path: slidePath
-      };
-    })
-    .slice();
-}
-
-function oneDayFormation() {
-  return [
-    ...schoolSlides(false),
-    ...introSlides(false),
-    ...serviceWorkersSlides(false),
-    ...cacheSlides(false),
-    ...advancedServiceWorkersSlides(false),
-    ...installableSlides(false),
-    ...engagingSlides(false),
-    ...integratedSlides(false),
-    ...performancesSlides(false),
-    ...librariresSlides(false),
-    ...conclusionSlides(false),
-    ...bonusSlides(false)
+    ...schoolSlides(),
+    ...introSlides(),
+    ...serviceWorkersSlides(),
+    ...cacheSlides(),
+    ...advancedServiceWorkersSlides(),
+    ...installableSlides(),
+    ...engagingSlides(),
+    ...integratedSlides(),
+    ...performancesSlides(),
+    ...librariresSlides(),
+    ...conclusionSlides(),
+    ...bonusSlides()
   ].map(slidePath => {
     return { path: slidePath };
   });
 }
 
 export function usedSlides() {
-  //return oneDayFormation();
-  return fullFormation();
+  return formation();
 }
