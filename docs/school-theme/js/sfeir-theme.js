@@ -1,6 +1,7 @@
 class SfeirTheme {
   constructor() {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(this._pageload.bind(this), 500));
+    Reveal.addEventListener('ready', setTimeout(this._pageload.bind(this), 500));
+    //document.addEventListener('DOMContentLoaded', () => setTimeout(this._pageload.bind(this), 500));
     this.path = '';
   }
 
