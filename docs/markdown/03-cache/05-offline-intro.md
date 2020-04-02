@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition bg-blue" -->
 
 # Mode offline
 

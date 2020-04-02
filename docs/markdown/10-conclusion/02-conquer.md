@@ -1,4 +1,4 @@
-<!-- .slide: data-background="black" class="full-center mariane" -->
+<!-- .slide: data-background="black" class="full-center mariane transition bottom underline" -->
 
 ![full-height](./assets/images/revolution_bg.png)
 

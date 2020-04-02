@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition bg-blue" -->
 
 # Rendre l'application installable
 
@@ -20,9 +20,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/manifest.png" -->
-
-<br><br>
+<!-- .slide: class="transition top" data-background="./assets/images/manifest.png" -->
 
 # Le Manifest
 

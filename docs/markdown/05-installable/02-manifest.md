@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice sfeir-bg-pink" -->
+<!-- .slide: class="exercice" -->
 
 # Créer votre propre manifest
 
@@ -15,7 +15,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/installabilite.png" class="transition-white transition-center" -->
+<!-- .slide: data-background="./assets/images/installabilite.png" class="transition transition" -->
 
 # Installabilité
 

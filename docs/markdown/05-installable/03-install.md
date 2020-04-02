@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice sfeir-bg-pink" -->
+<!-- .slide: class="exercice" -->
 
 # Créer un bouton pour installer l'app
 

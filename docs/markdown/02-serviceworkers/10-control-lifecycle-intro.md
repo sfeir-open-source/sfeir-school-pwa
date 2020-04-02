@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition-center" -->
+<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition" -->
 
 # Contrôler le cycle de vie
 
@@ -6,7 +6,7 @@
 
 ## Devtools
 
-# Jouer avec le cycle de vie
+### Jouer avec le cycle de vie
 
 ![h-600](./assets/images/lifecycle-console.png)
 

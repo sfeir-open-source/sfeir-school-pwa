@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice sfeir-bg-pink" -->
+<!-- .slide: class="exercice" -->
 
 # Implémenter la Push API
 
@@ -17,7 +17,7 @@ Pensez à utiliser event.waitUntil ;) !
 
 ##==##
 
-<!-- .slide: class="exercice sfeir-bg-pink" -->
+<!-- .slide: class="exercice" -->
 
 # Tester la Push API
 
@@ -47,7 +47,7 @@ There are a bunch of different ways to create the application server keys. You c
 
 ##==##
 
-<!-- .slide: class="exercice sfeir-bg-pink" -->
+<!-- .slide: class="exercice" -->
 
 # Tester la Push API
 

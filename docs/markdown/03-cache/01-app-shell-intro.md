@@ -25,7 +25,7 @@ Notes: catégorie "Performance"
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/polaroid.png" class="transition-white transition-center" -->
+<!-- .slide: data-background="./assets/images/polaroid.png" class="transition transition" -->
 
 # Instant loading
 

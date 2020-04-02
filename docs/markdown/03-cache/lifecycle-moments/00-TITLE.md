@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white" data-background="#fb8c00" -->
+<!-- .slide: class="transition" data-background="#fb8c00" -->
 
 # Important Lifecycle Moments
 
@@ -7,7 +7,7 @@ See [the associated documentation](https://developers.google.com/web/tools/workb
 
 ##==##
 
-<!-- .slide: class="transition-white" data-background="#fb8c00"  -->
+<!-- .slide: class="transition" data-background="#fb8c00"  -->
 
 # Presenter les nouveau lifecycle moments ajoutés par workbox
 

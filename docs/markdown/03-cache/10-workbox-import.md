@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white" data-background="#fb8c00" -->
+<!-- .slide: class="transition" data-background="#fb8c00" -->
 
 # Workbox
 

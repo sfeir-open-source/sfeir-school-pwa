@@ -55,7 +55,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/geolocation.png" class="transition-white"-->
+<!-- .slide: data-background="./assets/images/geolocation.png" class="transition"-->
 
 # Geolocation
 
@@ -70,7 +70,7 @@ Tous sauf IE8, Safari 4 & Opera Mini
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/fullscreen_api.jpg" class="transition-white" -->
+<!-- .slide: data-background="./assets/images/fullscreen_api.jpg" class="transition bottom" -->
 
 # API
 
@@ -240,19 +240,19 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="full-center transition" -->
+<!-- .slide: class="full-center" -->
 
 ![](./assets/images/webauthn/good-signup-in_io18.png)
 
 ##==##
 
-<!-- .slide: data-background="white" class="full-center transition" -->
+<!-- .slide: data-background="white" class="full-center" -->
 
 ![](./assets/images/webauthn/webauthn-logo.png)
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/webauthn/bored.jpeg" -->
+<!-- .slide: class="transition left underline" data-background="./assets/images/webauthn/bored.jpeg" -->
 
 # Security is boring!
 

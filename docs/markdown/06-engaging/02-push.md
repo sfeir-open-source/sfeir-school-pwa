@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition bg-blue" -->
 
 # Push API
 
@@ -29,7 +29,7 @@ Complémentaires
 
 ##==##
 
-<!-- .slide: data-background="#dcdee0" class="transition no-margin" -->
+<!-- .slide: data-background="#dcdee0" class="transition" -->
 
 ![center h-800](./assets/images/notification_icon.png)
 

@@ -1,10 +1,10 @@
-<!-- .slide: class="transition-white sfeir-bg-red" -->
+<!-- .slide: class="transition bg-pink" -->
 
 # The PRPL Pattern
 
 ##==##
 
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition bg-blue" -->
 
 # Principles
 
