@@ -62,7 +62,7 @@ Specifics
   width: 100%;
 }
 
-.reveal .slides section img {
+.reveal .slides section img:not([alt='speaker']) {
   padding: 25px;
 }
 

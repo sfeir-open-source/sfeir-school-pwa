@@ -26,6 +26,7 @@ Pensez à utiliser event.waitUntil ;) !
 Utiliser Chrome devtools pour tester le push
 
 <br>
+
 ![center h-500](./assets/images/devtools_test_push.png)
 
 ##==##

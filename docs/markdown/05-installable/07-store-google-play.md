@@ -117,6 +117,6 @@ Accés aux dernières API
 
 <br><br><br>
 
-<p style="text-align:center;font-size:3em">
 La seule façon **officielle** de délivrer une **PWA** sur le **PlayStore**
-</p>
+
+<!-- .element: style="text-align:center;font-size:3em" -->

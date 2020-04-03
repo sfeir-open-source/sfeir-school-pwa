@@ -1,0 +1,68 @@
+/**
+* IMAGE
+*
+*/
+.reveal .slides section img[alt*='center'],
+.reveal .slides section .center,
+.reveal .slides section .center + * {
+  display: block;
+  margin: auto;
+}
+
+.reveal .slides section .center + img {
+  max-width: initial;
+  max-height: initial;
+}
+
+.reveal .slides section img[alt*='full-width'],
+.reveal .slides section .full-width,
+.reveal .slides section .full-width + * {
+  width: 100%;
+  max-width: 100%;
+}
+
+.reveal .slides section .full-height {
+  height: 100%;
+  max-height: 100%;
+}
+
+.reveal .slides section img[alt*='float-left'],
+.reveal .slides section .float-left {
+  float: left;
+  margin-right: 40px;
+}
+
+.reveal .slides section img[alt*='float-right'],
+.reveal .slides section .float-right {
+  float: right;
+  margin-left: 10px;
+}
+
+/**
+* Alignments & Layouts
+*/
+.reveal .slides section.full-center p,
+.reveal .slides section :not(section).full-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .slides section.flex-row p,
+.reveal .slides section :not(section).flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=helper.css.map */

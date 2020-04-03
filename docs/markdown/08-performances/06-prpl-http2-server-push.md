@@ -10,9 +10,9 @@
 
 ![center](./assets/images/PRPL/push01.svg)
 
-<p class="copyright">
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/performance/http2/)
-</p>
+
+<!-- .element: class="copyright" -->
 
 ##==##
 

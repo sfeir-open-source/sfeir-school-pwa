@@ -61,9 +61,9 @@ Perspectives d'affaires<br/>
 ![center h-600](./assets/images/store/install-button.png)
 <br>
 
-<p class="copyright">
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/progressive-web-apps/desktop)
-</p>
+
+<!-- class="copyrigh" -->
 
 ##--##
 

@@ -26,7 +26,7 @@
     width: 100%;
   }
 
-  img {
+  img:not([alt='speaker']) {
     padding: 25px;
   }
   img[alt*='red'] {

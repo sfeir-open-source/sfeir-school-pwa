@@ -1,8 +1,8 @@
 # Les débuts : Juin 2015
 
-<p class="center">
 [Progressive Web Apps:<br> Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
-</p>
+
+<!-- .element: class="center" -->
 
 <br>
 <p class="flex-row">
@@ -10,9 +10,10 @@
 <img class="center w-500" src="./assets/images/frances_berriman.jpeg"></img>
 </p>
 <br>
-<p class="center">
+
 [Alex Russell & Frances Berriman](https://infrequently.org/about-me/), software engineer at Google
-</p>
+
+<!-- .element: class="center" -->
 
 <br>
 
@@ -24,9 +25,9 @@ exploiter les technologies modernes du Web pour offrir le confort d’une applic
 
 <!-- .slide: class="quote" -->
 
-<p class="quotation center">
-There is now another way. An **evolution** has taken place in browsers.
-</p>
+<br><br><br>
+
+> There is now another way. An **evolution** has taken place in browsers.
 
 Notes:
 Expliquer que ce n'est qu'une évolution et pas un nouveau framework
@@ -35,9 +36,9 @@ Expliquer que ce n'est qu'une évolution et pas un nouveau framework
 
 <!-- .slide: class="quote" -->
 
-<p class="quotation">
-**Just websites** that took all the right vitamins.
-</p>
+<br><br><br>
+
+> **Just websites** that took all the right vitamins.
 
 Notes:
 On continue de parler de sites web ! c'est juste qu'ils auront plus de possibilités
@@ -46,9 +47,9 @@ On continue de parler de sites web ! c'est juste qu'ils auront plus de possibili
 
 <!-- .slide: class="quote" -->
 
-<p class="quotation">
-Sites [...] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
-</p>
+<br><br><br>
+
+> Sites [...] have to earn [some] right[s] over time as you use them more and more. They **progressively** become “apps”.
 
 Notes:
 L'enjeu est de faire évoluer les sites selon le besoin progressivement vers des app
@@ -57,9 +58,9 @@ L'enjeu est de faire évoluer les sites selon le besoin progressivement vers des
 
 <!-- .slide: class="quote" -->
 
-<p class="quotation">
-Thoughtful application design and construction will give early movers a **major advantage**.
-</p>
+<br><br><br>
+
+> Thoughtful application design and construction will give early movers a **major advantage**.
 
 Notes:
 A terme, ça permettra d'avoir un avantage concurentiel si on le prend en compte maintenant car on s'ouvrira un marché nouveau non disponible aux autres

@@ -218,6 +218,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
 # ⚠️ Chrome on Android
 
 <br>
+
 ### Chrome [68 on Android](https://developers.google.com/web/updates/2018/06/a2hs-updates) will no longer show the add to home screen banner !
 
 <br><br>

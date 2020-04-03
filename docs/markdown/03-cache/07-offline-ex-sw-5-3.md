@@ -19,6 +19,7 @@
 ## Devtools -> Network
 
 <br>
+
 ![center h-500](./assets/images/devtools_offline.png)
 
 ##==##
