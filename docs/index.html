@@ -13,16 +13,20 @@
     <!-- ----------------------------------------------------
         ---------------- REVEAL STYLES  -------------------------
         ------------------------------------------------------ -->
-    <link rel="stylesheet" type="text/css" href="./libs/revealjs/reveal.css" />
+    <!--
+      <link rel="stylesheet" type="text/css" href="./libs/revealjs/reveal.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="./web_modules/reveal.js/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./web_modules/reveal.js/css/reveal.css" />
     <!--<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">-->
 
     <!-- For syntax highlighting - hightlightjs -->
-    <link rel="stylesheet" type="text/css" href="./libs/hightlightjs/tomorrow.css" />
+    <link rel="stylesheet" type="text/css" href="./web_modules/highlight.js/styles/tomorrow.css" />
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet - from revealjs -->
     <script>
       document.write(
-        '<link rel="stylesheet" href="./libs/revealjs/print/' +
+        '<link rel="stylesheet" href="./web_modules/reveal.js/css/print/' +
           (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') +
           '.css" type="text/css" media="print">'
       );
@@ -36,11 +40,21 @@
 	    ---------------- PREZ STYLES  ---------------------------
 	    ------------------------------------------------------ -->
 
-    <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme" />
-    <script type="module" src="./school-theme/js/sfeir-theme.js"></script>
+    <!--
+
+      <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme" />
+      <script type="module" src="./school-theme/js/sfeir-theme.js"></script>
+    -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./web_modules/sfeir-school-theme/dist/css/sfeir-school-theme.css"
+      id="theme"
+    />
+    <script type="module" src="./web_modules/sfeir-school-theme/dist/js/sfeir-theme.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./css/pwa.css" id="theme-custo" />
-    <script type="module" src="./scripts/reveal-config.js"></script>
+    <script type="module" src="./scripts/dont-touch/reveal-config.js"></script>
   </head>
 
   <body>
@@ -48,8 +62,11 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides" data-type-show="prez"></div>
     </div>
-    <script src="./libs/revealjs/head.min.js"></script>
-    <script src="./libs/revealjs/reveal.js"></script>
+    <!--
+      <script src="./libs/revealjs/head.min.js"></script>
+      <script src="./libs/revealjs/reveal.js"></script>
+    -->
+    <script src="./web_modules/reveal.js/js/reveal.js"></script>
 
     <!--
 

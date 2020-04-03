@@ -6,11 +6,15 @@
 
 ![badge](./assets/images/avocado-rocks.png)
 
-## Noël Macé
+<h2> Noël<span> Macé</span></h2>
 
 ### Developer Advocate<br>for the Modern Web
 
+<!-- .element: class="icon-rule icon-first" -->
+
 ## @noel_mace
+
+<!-- .element: class="icon-twitter icon-second" -->
 
 <!-- .element style="margin-top: 0" -->
 

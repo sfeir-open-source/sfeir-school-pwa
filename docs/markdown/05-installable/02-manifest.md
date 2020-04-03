@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice sfeir-bg-pink" -->
+<!-- .slide: class="exercice" -->
 
 # Créer votre propre manifest
 
@@ -15,7 +15,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/installabilite.png" class="transition-white transition-center" -->
+<!-- .slide: data-background="./assets/images/installabilite.png" class="transition transition" -->
 
 # Installabilité
 
@@ -218,6 +218,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
 # ⚠️ Chrome on Android
 
 <br>
+
 ### Chrome [68 on Android](https://developers.google.com/web/updates/2018/06/a2hs-updates) will no longer show the add to home screen banner !
 
 <br><br>

@@ -1,3 +1,3 @@
-<!-- .slide: data-background="./assets/images/sw-window/communication.jpg" class="transition-white" -->
+<!-- .slide: data-background="./assets/images/sw-window/communication.jpg" class="transition" -->
 
 # Window to service worker communication

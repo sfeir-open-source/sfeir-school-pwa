@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition-center" -->
+<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition" -->
 
 # Contrôler le cycle de vie
 
@@ -6,7 +6,7 @@
 
 ## Devtools
 
-# Jouer avec le cycle de vie
+### Jouer avec le cycle de vie
 
 ![h-600](./assets/images/lifecycle-console.png)
 
@@ -65,6 +65,7 @@ self.addEventListener('install', function(event) {
 <br>
 <a target="_blank" href="https://cdn.rawgit.com/jakearchibald/80368b84ac1ae8e229fc90b3fe826301/raw/ad55049bee9b11d47f1f7d19a73bf3306d156f43/index-v3.html" >Demo</a>
 <!-- .element: class="center" -->
+<br>
 
 Notes:
 forces the waiting service worker to become the active service worker.

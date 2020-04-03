@@ -1,10 +1,10 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition bg-blue" -->
 
 # Installation via un "Store" ?
 
 ##==##
 
-<!-- .slide: class="transition-white sfeir-bg-pink" -->
+<!-- .slide: class="transition bg-pink" -->
 
 # As-t-on besoin d'installer via un store ?
 
@@ -61,9 +61,9 @@ Perspectives d'affaires<br/>
 ![center h-600](./assets/images/store/install-button.png)
 <br>
 
-<p class="copyright">
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/progressive-web-apps/desktop)
-</p>
+
+<!-- class="copyrigh" -->
 
 ##--##
 
@@ -74,7 +74,7 @@ are now supported on all desktop platforms, including Chrome OS, Linux, Mac, and
 
 ##==##
 
-<!-- .slide: class="transition-white sfeir-bg-pink" -->
+<!-- .slide: class="transition bg-pink" -->
 
 # En réalité on en a besoin
 
@@ -97,7 +97,7 @@ Car si on est pas sur le store, nos concurents le sont. Donc on doit suivre le m
 
 ##==##
 
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition bg-blue" -->
 
 # Apple Store
 

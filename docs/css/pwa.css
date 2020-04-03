@@ -2,56 +2,6 @@
   text-align: center;
 }
 
-.reveal .slides section .shadow-title {
-  color: #fff;
-  font-size: 3em;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: #000 1px 0 10px;
-}
-
-.reveal .slides section.quote > p {
-  text-align: center;
-  padding: 2.5em;
-  font-size: 2em;
-}
-
-.reveal .slides section .copyright {
-  text-align: center;
-  font-size: 0.5em;
-  color: gray;
-  margin-top: 0;
-}
-
-.reveal .slides section .quotation {
-  text-align: justify;
-  padding: 0 1em;
-}
-
-.reveal .slides section .quotation:before {
-  content: '«';
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.reveal .slides section .quotation:after {
-  content: '»';
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.reveal .slides section .quotation-author {
-  text-align: right;
-  font-style: italic;
-  padding-right: 3em;
-  margin-top: 0;
-  font-size: 0.9em;
-}
-
-.reveal .slides section .quotation-author:before {
-  content: '—';
-}
-
 .reveal .slides section .big-text {
   font-size: 3em;
 }
@@ -87,57 +37,6 @@
 /**
 Specifics
 */
-.reveal .slides section.exercice {
-  width: calc(100% - 200px);
-  height: calc(100% - 200px);
-  color: white;
-  padding-top: 200px;
-  padding-left: 200px;
-}
-.reveal .slides section.exercice:before {
-  content: '';
-  background: url(../assets/images/exercice_logo.png) no-repeat;
-  position: absolute;
-  background-size: calc(1750px / 10) calc(2500px / 10);
-  left: 0;
-  top: 0;
-  width: calc(1750px / 10);
-  height: calc(2500px / 10);
-}
-.reveal .slides section.exercice h1,
-.reveal .slides section.exercice h2,
-.reveal .slides section.exercice h3 {
-  all: unset;
-  position: absolute;
-  color: white;
-  font-size: 2em;
-}
-.reveal .slides section.exercice h1 {
-  top: 0;
-  left: 0;
-  text-align: center;
-  width: 100%;
-}
-.reveal .slides section.exercice h2 {
-  transform: rotateZ(270deg);
-  font-weight: 800;
-  top: 50%;
-  left: -100px;
-  text-shadow: -4px -4px grey;
-}
-.reveal .slides section.exercice h3 {
-  font-size: 1.5em;
-  text-align: center;
-  bottom: 50px;
-  width: 100%;
-  left: 0;
-}
-.reveal .slides section.exercice ul,
-.reveal .slides section.exercice p {
-  text-align: left;
-  font-size: 1.5em;
-}
-
 .reveal .slides section .target-capacities {
   position: absolute;
   transform: rotateZ(270deg);
@@ -163,7 +62,7 @@ Specifics
   width: 100%;
 }
 
-.reveal .slides section img {
+.reveal .slides section img:not([alt='speaker']) {
   padding: 25px;
 }
 

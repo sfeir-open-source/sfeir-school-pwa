@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white sfeir-bg-pink" -->
+<!-- .slide: class="transition bg-pink" -->
 
 # Chargement
 
@@ -57,7 +57,7 @@ MAJ: 2018-08-31
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition-white " -->
+<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition " -->
 
 # Images
 
@@ -181,7 +181,7 @@ ffmpeg -i input.gif output.mp4
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition-white" -->
+<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition" -->
 
 # Scripts
 

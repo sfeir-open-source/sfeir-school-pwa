@@ -15,7 +15,15 @@
   width: 100%;
 }
 
-.reveal .slides section img {
+.reveal .slides section .target-touch {
+  position: absolute;
+  font-size: 2em;
+  color: gray;
+  text-align: center;
+  width: 100%;
+}
+
+.reveal .slides section img:not([alt='speaker']) {
   padding: 25px;
 }
 

@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white sfeir-bg-blue" -->
+<!-- .slide: class="transition bg-blue" -->
 
 # Entry Point & App Shell
 
@@ -32,6 +32,6 @@ include everything needed for first paint
 
 ![center h-800](./assets/images/app_shell.png)
 
-<p class="copyright">
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/architecture/app-shell)
-</p>
+
+<!-- .element: class="copyright" -->

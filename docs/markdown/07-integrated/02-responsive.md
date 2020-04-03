@@ -1,4 +1,4 @@
-<!-- .slide: class="transition-white sfeir-bg-red" -->
+<!-- .slide: class="transition bg-pink" -->
 
 # Responsive Design
 
@@ -127,6 +127,7 @@ Notes: Si vous souhaitez 2 images sur la largeur, avec une marge, calc permet de
 # ⚠️ Faire attention
 
 <br />
+
 **Évitez de deviner les intentions des utilisateurs en se basant sur la taille du viewport.**
 
 Ne pas amputer la version mobile de certaines fonctionnalités.

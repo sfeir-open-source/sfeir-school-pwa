@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice sfeir-bg-pink" -->
+<!-- .slide: class="exercice" -->
 
 # Chercher dans le cache
 
@@ -19,6 +19,7 @@
 ## Devtools -> Network
 
 <br>
+
 ![center h-500](./assets/images/devtools_offline.png)
 
 ##==##
