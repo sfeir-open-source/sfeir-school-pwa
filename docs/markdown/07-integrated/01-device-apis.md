@@ -231,6 +231,74 @@ Update on 2019-05-16
 
 ##==##
 
+<!-- .slide: class="two-column-layout" -->
+
+# Drag and Drop API
+
+##--##
+
+<br><br>
+
+- attribut <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`draggable=true`</span> sur l'élément html.
+  <br><br>
+- <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`ondragstart`</span> event sur l'élément draggable.
+  <br><br>
+- <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`ondrop`</span> event dans la zone de dépot.
+  <br><br>
+- <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`ondraghover`</span> event sur la zone de dépot.
+  ##--##
+
+![full-width](./assets/images/gifs/drag-drop.gif)
+
+##==##
+
+## Exemple :
+
+<!-- .slide: class="with-code" -->
+
+<br><br>
+
+```html
+<div class="card" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">
+  <div class="box" id="1" draggable="true" ondragstart="dragstart_handler(event)"></div>
+  <p draggable="true" id="2" ondragstart="dragstart_handler(event)">Super text</p>
+</div>
+<div class="card" ondrop="drop_handler(event)" ondragover="dragover_handler(event)"></div>
+```
+
+##==##
+
+## Et la partie javascript ?
+
+<!-- .slide: class="with-code" -->
+
+<br><br>
+
+```javascript
+function dragstart_handler(ev) {
+  ev.dataTransfer.setData('application/my-app', ev.target.id);
+}
+
+function drop_handler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData('application/my-app');
+  ev.target.appendChild(document.getElementById(data));
+}
+
+function dragover_handler(ev) {
+  ev.preventDefault();
+  ev.dataTransfer.dropEffect = 'move'; // copy/move/link (change le cursor)
+}
+```
+
+##==##
+
+# Support 😃
+
+![center h-800](./assets/images/caniuse_drag-drop.png)
+
+##==##
+
 # What web can do today ?
 
 ![center h-900](./assets/images/whatwebcandotoday.png)
