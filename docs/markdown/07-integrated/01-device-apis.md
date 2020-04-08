@@ -299,6 +299,60 @@ function dragover_handler(ev) {
 
 ##==##
 
+<!-- .slide: class="two-column-layout" -->
+
+# Picture-in-Picture
+
+##--##
+<br><br>
+
+- Ne fonctionne qu'avec l'élément <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`<video></video>`</span>.
+  <br>
+- Nécessite l'attribut <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`controls`</span>
+  <br>
+- Auto picture-in-picture bientôt prévu...
+  ##--##
+  <br><br>
+  ![full-width](./assets/images/gifs/pip.gif)
+
+##==##
+
+<!-- .slide: class="two-column-layout" -->
+
+# Comment ça marche ?
+
+##--##
+
+<!-- .slide: class="with-code" -->
+
+<br><br>
+
+```javascript
+const video = document.getElementById('video');
+
+if (!document.pictureInPictureElement) {
+  video.requestPictureInPicture().catch(error => {
+    // Video failed to enter Picture-in-Picture mode.
+  });
+} else {
+  document.exitPictureInPicture().catch(error => {
+    // Video failed to leave Picture-in-Picture mode.
+  });
+}
+```
+
+##--##
+
+![](./assets/images/exemple-pip.png)
+
+##==##
+
+# Support ? 😐
+
+![center h-800](./assets/images/caniuse-pip.png)
+
+##==##
+
 # What web can do today ?
 
 ![center h-900](./assets/images/whatwebcandotoday.png)
