@@ -353,6 +353,58 @@ if (!document.pictureInPictureElement) {
 
 ##==##
 
+<!-- .slide: class="two-column-layout" -->
+
+# Image Capture Api
+
+##--##
+<br><br>
+
+- Vérifier que <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`mediaDevices`</span> et <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`getUserMedia`</span> sont implémentés dans le navigateur.
+  <br>
+- Préciser les flux que l'ont veut récupérer.
+  <br>
+- Modifier le src de la balise <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`<video></video>`</span>.
+  <br>
+- faire jouer le stream.
+  ##--##
+  <br><br>
+  ![center h-500](./assets/images/gifs/gif-picture.gif)
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Exemple :
+
+<br><br>
+
+```html
+<video id="video" autoplay controls></video>
+```
+
+```javascript
+if (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined) {
+  navigator.mediaDevices.getUserMedia({ video: true }).then(mediaStream => {
+    const video = document.querySelector('video');
+    if ('srcObject' in video) {
+      video.srcObject = mediaStream;
+    } else {
+      // Avoid using this in new browsers, as it is going away.
+      video.src = window.URL.createObjectURL(mediaStream);
+    }
+  });
+}
+```
+
+##==##
+
+# Support 🤔
+
+![center h-800](./assets/images/caniuse-mediacapabilities.png)
+
+##==##
+
 # What web can do today ?
 
 ![center h-900](./assets/images/whatwebcandotoday.png)
