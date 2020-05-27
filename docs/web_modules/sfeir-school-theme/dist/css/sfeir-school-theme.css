@@ -523,484 +523,1684 @@ body {
 * 
 * MIXINS
 **/
-img[alt*='h-50'],
-.h-50,
-.h-50 + * {
+.reveal .slides section img[alt*='h-50'],
+.reveal .slides section .h-50,
+.reveal .slides section .h-50 + * {
   height: 50px;
 }
 
-img[alt*='w-50'],
-.w-50,
-.w-50 + * {
+.reveal .slides section img[alt*='w-50'],
+.reveal .slides section .w-50,
+.reveal .slides section .w-50 + * {
   width: 50px;
 }
 
-img[alt*='h-100'],
-.h-100,
-.h-100 + * {
+.reveal .slides section img[alt*='h-100'],
+.reveal .slides section .h-100,
+.reveal .slides section .h-100 + * {
   height: 100px;
 }
 
-img[alt*='w-100'],
-.w-100,
-.w-100 + * {
+.reveal .slides section img[alt*='w-100'],
+.reveal .slides section .w-100,
+.reveal .slides section .w-100 + * {
   width: 100px;
 }
 
-img[alt*='h-150'],
-.h-150,
-.h-150 + * {
+.reveal .slides section img[alt*='h-150'],
+.reveal .slides section .h-150,
+.reveal .slides section .h-150 + * {
   height: 150px;
 }
 
-img[alt*='w-150'],
-.w-150,
-.w-150 + * {
+.reveal .slides section img[alt*='w-150'],
+.reveal .slides section .w-150,
+.reveal .slides section .w-150 + * {
   width: 150px;
 }
 
-img[alt*='h-200'],
-.h-200,
-.h-200 + * {
+.reveal .slides section img[alt*='h-200'],
+.reveal .slides section .h-200,
+.reveal .slides section .h-200 + * {
   height: 200px;
 }
 
-img[alt*='w-200'],
-.w-200,
-.w-200 + * {
+.reveal .slides section img[alt*='w-200'],
+.reveal .slides section .w-200,
+.reveal .slides section .w-200 + * {
   width: 200px;
 }
 
-img[alt*='h-250'],
-.h-250,
-.h-250 + * {
+.reveal .slides section img[alt*='h-250'],
+.reveal .slides section .h-250,
+.reveal .slides section .h-250 + * {
   height: 250px;
 }
 
-img[alt*='w-250'],
-.w-250,
-.w-250 + * {
+.reveal .slides section img[alt*='w-250'],
+.reveal .slides section .w-250,
+.reveal .slides section .w-250 + * {
   width: 250px;
 }
 
-img[alt*='h-300'],
-.h-300,
-.h-300 + * {
+.reveal .slides section img[alt*='h-300'],
+.reveal .slides section .h-300,
+.reveal .slides section .h-300 + * {
   height: 300px;
 }
 
-img[alt*='w-300'],
-.w-300,
-.w-300 + * {
+.reveal .slides section img[alt*='w-300'],
+.reveal .slides section .w-300,
+.reveal .slides section .w-300 + * {
   width: 300px;
 }
 
-img[alt*='h-350'],
-.h-350,
-.h-350 + * {
+.reveal .slides section img[alt*='h-350'],
+.reveal .slides section .h-350,
+.reveal .slides section .h-350 + * {
   height: 350px;
 }
 
-img[alt*='w-350'],
-.w-350,
-.w-350 + * {
+.reveal .slides section img[alt*='w-350'],
+.reveal .slides section .w-350,
+.reveal .slides section .w-350 + * {
   width: 350px;
 }
 
-img[alt*='h-400'],
-.h-400,
-.h-400 + * {
+.reveal .slides section img[alt*='h-400'],
+.reveal .slides section .h-400,
+.reveal .slides section .h-400 + * {
   height: 400px;
 }
 
-img[alt*='w-400'],
-.w-400,
-.w-400 + * {
+.reveal .slides section img[alt*='w-400'],
+.reveal .slides section .w-400,
+.reveal .slides section .w-400 + * {
   width: 400px;
 }
 
-img[alt*='h-450'],
-.h-450,
-.h-450 + * {
+.reveal .slides section img[alt*='h-450'],
+.reveal .slides section .h-450,
+.reveal .slides section .h-450 + * {
   height: 450px;
 }
 
-img[alt*='w-450'],
-.w-450,
-.w-450 + * {
+.reveal .slides section img[alt*='w-450'],
+.reveal .slides section .w-450,
+.reveal .slides section .w-450 + * {
   width: 450px;
 }
 
-img[alt*='h-500'],
-.h-500,
-.h-500 + * {
+.reveal .slides section img[alt*='h-500'],
+.reveal .slides section .h-500,
+.reveal .slides section .h-500 + * {
   height: 500px;
 }
 
-img[alt*='w-500'],
-.w-500,
-.w-500 + * {
+.reveal .slides section img[alt*='w-500'],
+.reveal .slides section .w-500,
+.reveal .slides section .w-500 + * {
   width: 500px;
 }
 
-img[alt*='h-550'],
-.h-550,
-.h-550 + * {
+.reveal .slides section img[alt*='h-550'],
+.reveal .slides section .h-550,
+.reveal .slides section .h-550 + * {
   height: 550px;
 }
 
-img[alt*='w-550'],
-.w-550,
-.w-550 + * {
+.reveal .slides section img[alt*='w-550'],
+.reveal .slides section .w-550,
+.reveal .slides section .w-550 + * {
   width: 550px;
 }
 
-img[alt*='h-600'],
-.h-600,
-.h-600 + * {
+.reveal .slides section img[alt*='h-600'],
+.reveal .slides section .h-600,
+.reveal .slides section .h-600 + * {
   height: 600px;
 }
 
-img[alt*='w-600'],
-.w-600,
-.w-600 + * {
+.reveal .slides section img[alt*='w-600'],
+.reveal .slides section .w-600,
+.reveal .slides section .w-600 + * {
   width: 600px;
 }
 
-img[alt*='h-650'],
-.h-650,
-.h-650 + * {
+.reveal .slides section img[alt*='h-650'],
+.reveal .slides section .h-650,
+.reveal .slides section .h-650 + * {
   height: 650px;
 }
 
-img[alt*='w-650'],
-.w-650,
-.w-650 + * {
+.reveal .slides section img[alt*='w-650'],
+.reveal .slides section .w-650,
+.reveal .slides section .w-650 + * {
   width: 650px;
 }
 
-img[alt*='h-700'],
-.h-700,
-.h-700 + * {
+.reveal .slides section img[alt*='h-700'],
+.reveal .slides section .h-700,
+.reveal .slides section .h-700 + * {
   height: 700px;
 }
 
-img[alt*='w-700'],
-.w-700,
-.w-700 + * {
+.reveal .slides section img[alt*='w-700'],
+.reveal .slides section .w-700,
+.reveal .slides section .w-700 + * {
   width: 700px;
 }
 
-img[alt*='h-750'],
-.h-750,
-.h-750 + * {
+.reveal .slides section img[alt*='h-750'],
+.reveal .slides section .h-750,
+.reveal .slides section .h-750 + * {
   height: 750px;
 }
 
-img[alt*='w-750'],
-.w-750,
-.w-750 + * {
+.reveal .slides section img[alt*='w-750'],
+.reveal .slides section .w-750,
+.reveal .slides section .w-750 + * {
   width: 750px;
 }
 
-img[alt*='h-800'],
-.h-800,
-.h-800 + * {
+.reveal .slides section img[alt*='h-800'],
+.reveal .slides section .h-800,
+.reveal .slides section .h-800 + * {
   height: 800px;
 }
 
-img[alt*='w-800'],
-.w-800,
-.w-800 + * {
+.reveal .slides section img[alt*='w-800'],
+.reveal .slides section .w-800,
+.reveal .slides section .w-800 + * {
   width: 800px;
 }
 
-img[alt*='h-850'],
-.h-850,
-.h-850 + * {
+.reveal .slides section img[alt*='h-850'],
+.reveal .slides section .h-850,
+.reveal .slides section .h-850 + * {
   height: 850px;
 }
 
-img[alt*='w-850'],
-.w-850,
-.w-850 + * {
+.reveal .slides section img[alt*='w-850'],
+.reveal .slides section .w-850,
+.reveal .slides section .w-850 + * {
   width: 850px;
 }
 
-img[alt*='h-900'],
-.h-900,
-.h-900 + * {
+.reveal .slides section img[alt*='h-900'],
+.reveal .slides section .h-900,
+.reveal .slides section .h-900 + * {
   height: 900px;
 }
 
-img[alt*='w-900'],
-.w-900,
-.w-900 + * {
+.reveal .slides section img[alt*='w-900'],
+.reveal .slides section .w-900,
+.reveal .slides section .w-900 + * {
   width: 900px;
 }
 
-img[alt*='h-950'],
-.h-950,
-.h-950 + * {
+.reveal .slides section img[alt*='h-950'],
+.reveal .slides section .h-950,
+.reveal .slides section .h-950 + * {
   height: 950px;
 }
 
-img[alt*='w-950'],
-.w-950,
-.w-950 + * {
+.reveal .slides section img[alt*='w-950'],
+.reveal .slides section .w-950,
+.reveal .slides section .w-950 + * {
   width: 950px;
 }
 
-img[alt*='h-1000'],
-.h-1000,
-.h-1000 + * {
+.reveal .slides section img[alt*='h-1000'],
+.reveal .slides section .h-1000,
+.reveal .slides section .h-1000 + * {
   height: 1000px;
 }
 
-img[alt*='w-1000'],
-.w-1000,
-.w-1000 + * {
+.reveal .slides section img[alt*='w-1000'],
+.reveal .slides section .w-1000,
+.reveal .slides section .w-1000 + * {
   width: 1000px;
 }
 
-img[alt*='hm-50'],
-.hm-50,
-.hm-50 + * {
+.reveal .slides section img[alt*='hm-50'],
+.reveal .slides section .hm-50,
+.reveal .slides section .hm-50 + * {
   max-height: 50px;
 }
 
-img[alt*='wm-50'],
-.wm-50,
-.wm-50 + * {
+.reveal .slides section img[alt*='wm-50'],
+.reveal .slides section .wm-50,
+.reveal .slides section .wm-50 + * {
   max-width: 50px;
 }
 
-img[alt*='hm-100'],
-.hm-100,
-.hm-100 + * {
+.reveal .slides section img[alt*='hm-100'],
+.reveal .slides section .hm-100,
+.reveal .slides section .hm-100 + * {
   max-height: 100px;
 }
 
-img[alt*='wm-100'],
-.wm-100,
-.wm-100 + * {
+.reveal .slides section img[alt*='wm-100'],
+.reveal .slides section .wm-100,
+.reveal .slides section .wm-100 + * {
   max-width: 100px;
 }
 
-img[alt*='hm-150'],
-.hm-150,
-.hm-150 + * {
+.reveal .slides section img[alt*='hm-150'],
+.reveal .slides section .hm-150,
+.reveal .slides section .hm-150 + * {
   max-height: 150px;
 }
 
-img[alt*='wm-150'],
-.wm-150,
-.wm-150 + * {
+.reveal .slides section img[alt*='wm-150'],
+.reveal .slides section .wm-150,
+.reveal .slides section .wm-150 + * {
   max-width: 150px;
 }
 
-img[alt*='hm-200'],
-.hm-200,
-.hm-200 + * {
+.reveal .slides section img[alt*='hm-200'],
+.reveal .slides section .hm-200,
+.reveal .slides section .hm-200 + * {
   max-height: 200px;
 }
 
-img[alt*='wm-200'],
-.wm-200,
-.wm-200 + * {
+.reveal .slides section img[alt*='wm-200'],
+.reveal .slides section .wm-200,
+.reveal .slides section .wm-200 + * {
   max-width: 200px;
 }
 
-img[alt*='hm-250'],
-.hm-250,
-.hm-250 + * {
+.reveal .slides section img[alt*='hm-250'],
+.reveal .slides section .hm-250,
+.reveal .slides section .hm-250 + * {
   max-height: 250px;
 }
 
-img[alt*='wm-250'],
-.wm-250,
-.wm-250 + * {
+.reveal .slides section img[alt*='wm-250'],
+.reveal .slides section .wm-250,
+.reveal .slides section .wm-250 + * {
   max-width: 250px;
 }
 
-img[alt*='hm-300'],
-.hm-300,
-.hm-300 + * {
+.reveal .slides section img[alt*='hm-300'],
+.reveal .slides section .hm-300,
+.reveal .slides section .hm-300 + * {
   max-height: 300px;
 }
 
-img[alt*='wm-300'],
-.wm-300,
-.wm-300 + * {
+.reveal .slides section img[alt*='wm-300'],
+.reveal .slides section .wm-300,
+.reveal .slides section .wm-300 + * {
   max-width: 300px;
 }
 
-img[alt*='hm-350'],
-.hm-350,
-.hm-350 + * {
+.reveal .slides section img[alt*='hm-350'],
+.reveal .slides section .hm-350,
+.reveal .slides section .hm-350 + * {
   max-height: 350px;
 }
 
-img[alt*='wm-350'],
-.wm-350,
-.wm-350 + * {
+.reveal .slides section img[alt*='wm-350'],
+.reveal .slides section .wm-350,
+.reveal .slides section .wm-350 + * {
   max-width: 350px;
 }
 
-img[alt*='hm-400'],
-.hm-400,
-.hm-400 + * {
+.reveal .slides section img[alt*='hm-400'],
+.reveal .slides section .hm-400,
+.reveal .slides section .hm-400 + * {
   max-height: 400px;
 }
 
-img[alt*='wm-400'],
-.wm-400,
-.wm-400 + * {
+.reveal .slides section img[alt*='wm-400'],
+.reveal .slides section .wm-400,
+.reveal .slides section .wm-400 + * {
   max-width: 400px;
 }
 
-img[alt*='hm-450'],
-.hm-450,
-.hm-450 + * {
+.reveal .slides section img[alt*='hm-450'],
+.reveal .slides section .hm-450,
+.reveal .slides section .hm-450 + * {
   max-height: 450px;
 }
 
-img[alt*='wm-450'],
-.wm-450,
-.wm-450 + * {
+.reveal .slides section img[alt*='wm-450'],
+.reveal .slides section .wm-450,
+.reveal .slides section .wm-450 + * {
   max-width: 450px;
 }
 
-img[alt*='hm-500'],
-.hm-500,
-.hm-500 + * {
+.reveal .slides section img[alt*='hm-500'],
+.reveal .slides section .hm-500,
+.reveal .slides section .hm-500 + * {
   max-height: 500px;
 }
 
-img[alt*='wm-500'],
-.wm-500,
-.wm-500 + * {
+.reveal .slides section img[alt*='wm-500'],
+.reveal .slides section .wm-500,
+.reveal .slides section .wm-500 + * {
   max-width: 500px;
 }
 
-img[alt*='hm-550'],
-.hm-550,
-.hm-550 + * {
+.reveal .slides section img[alt*='hm-550'],
+.reveal .slides section .hm-550,
+.reveal .slides section .hm-550 + * {
   max-height: 550px;
 }
 
-img[alt*='wm-550'],
-.wm-550,
-.wm-550 + * {
+.reveal .slides section img[alt*='wm-550'],
+.reveal .slides section .wm-550,
+.reveal .slides section .wm-550 + * {
   max-width: 550px;
 }
 
-img[alt*='hm-600'],
-.hm-600,
-.hm-600 + * {
+.reveal .slides section img[alt*='hm-600'],
+.reveal .slides section .hm-600,
+.reveal .slides section .hm-600 + * {
   max-height: 600px;
 }
 
-img[alt*='wm-600'],
-.wm-600,
-.wm-600 + * {
+.reveal .slides section img[alt*='wm-600'],
+.reveal .slides section .wm-600,
+.reveal .slides section .wm-600 + * {
   max-width: 600px;
 }
 
-img[alt*='hm-650'],
-.hm-650,
-.hm-650 + * {
+.reveal .slides section img[alt*='hm-650'],
+.reveal .slides section .hm-650,
+.reveal .slides section .hm-650 + * {
   max-height: 650px;
 }
 
-img[alt*='wm-650'],
-.wm-650,
-.wm-650 + * {
+.reveal .slides section img[alt*='wm-650'],
+.reveal .slides section .wm-650,
+.reveal .slides section .wm-650 + * {
   max-width: 650px;
 }
 
-img[alt*='hm-700'],
-.hm-700,
-.hm-700 + * {
+.reveal .slides section img[alt*='hm-700'],
+.reveal .slides section .hm-700,
+.reveal .slides section .hm-700 + * {
   max-height: 700px;
 }
 
-img[alt*='wm-700'],
-.wm-700,
-.wm-700 + * {
+.reveal .slides section img[alt*='wm-700'],
+.reveal .slides section .wm-700,
+.reveal .slides section .wm-700 + * {
   max-width: 700px;
 }
 
-img[alt*='hm-750'],
-.hm-750,
-.hm-750 + * {
+.reveal .slides section img[alt*='hm-750'],
+.reveal .slides section .hm-750,
+.reveal .slides section .hm-750 + * {
   max-height: 750px;
 }
 
-img[alt*='wm-750'],
-.wm-750,
-.wm-750 + * {
+.reveal .slides section img[alt*='wm-750'],
+.reveal .slides section .wm-750,
+.reveal .slides section .wm-750 + * {
   max-width: 750px;
 }
 
-img[alt*='hm-800'],
-.hm-800,
-.hm-800 + * {
+.reveal .slides section img[alt*='hm-800'],
+.reveal .slides section .hm-800,
+.reveal .slides section .hm-800 + * {
   max-height: 800px;
 }
 
-img[alt*='wm-800'],
-.wm-800,
-.wm-800 + * {
+.reveal .slides section img[alt*='wm-800'],
+.reveal .slides section .wm-800,
+.reveal .slides section .wm-800 + * {
   max-width: 800px;
 }
 
-img[alt*='hm-850'],
-.hm-850,
-.hm-850 + * {
+.reveal .slides section img[alt*='hm-850'],
+.reveal .slides section .hm-850,
+.reveal .slides section .hm-850 + * {
   max-height: 850px;
 }
 
-img[alt*='wm-850'],
-.wm-850,
-.wm-850 + * {
+.reveal .slides section img[alt*='wm-850'],
+.reveal .slides section .wm-850,
+.reveal .slides section .wm-850 + * {
   max-width: 850px;
 }
 
-img[alt*='hm-900'],
-.hm-900,
-.hm-900 + * {
+.reveal .slides section img[alt*='hm-900'],
+.reveal .slides section .hm-900,
+.reveal .slides section .hm-900 + * {
   max-height: 900px;
 }
 
-img[alt*='wm-900'],
-.wm-900,
-.wm-900 + * {
+.reveal .slides section img[alt*='wm-900'],
+.reveal .slides section .wm-900,
+.reveal .slides section .wm-900 + * {
   max-width: 900px;
 }
 
-img[alt*='hm-950'],
-.hm-950,
-.hm-950 + * {
+.reveal .slides section img[alt*='hm-950'],
+.reveal .slides section .hm-950,
+.reveal .slides section .hm-950 + * {
   max-height: 950px;
 }
 
-img[alt*='wm-950'],
-.wm-950,
-.wm-950 + * {
+.reveal .slides section img[alt*='wm-950'],
+.reveal .slides section .wm-950,
+.reveal .slides section .wm-950 + * {
   max-width: 950px;
 }
 
-img[alt*='hm-1000'],
-.hm-1000,
-.hm-1000 + * {
+.reveal .slides section img[alt*='hm-1000'],
+.reveal .slides section .hm-1000,
+.reveal .slides section .hm-1000 + * {
   max-height: 1000px;
 }
 
-img[alt*='wm-1000'],
-.wm-1000,
-.wm-1000 + * {
+.reveal .slides section img[alt*='wm-1000'],
+.reveal .slides section .wm-1000,
+.reveal .slides section .wm-1000 + * {
   max-width: 1000px;
+}
+
+.reveal .slides section img[alt*='mt-10'],
+.reveal .slides section .mt-10,
+.reveal .slides section .mt-10 + * {
+  margin-top: 10px;
+}
+
+.reveal .slides section img[alt*='mb-10'],
+.reveal .slides section .mb-10,
+.reveal .slides section .mb-10 + * {
+  margin-bottom: 10px;
+}
+
+.reveal .slides section img[alt*='mt-20'],
+.reveal .slides section .mt-20,
+.reveal .slides section .mt-20 + * {
+  margin-top: 20px;
+}
+
+.reveal .slides section img[alt*='mb-20'],
+.reveal .slides section .mb-20,
+.reveal .slides section .mb-20 + * {
+  margin-bottom: 20px;
+}
+
+.reveal .slides section img[alt*='mt-30'],
+.reveal .slides section .mt-30,
+.reveal .slides section .mt-30 + * {
+  margin-top: 30px;
+}
+
+.reveal .slides section img[alt*='mb-30'],
+.reveal .slides section .mb-30,
+.reveal .slides section .mb-30 + * {
+  margin-bottom: 30px;
+}
+
+.reveal .slides section img[alt*='mt-40'],
+.reveal .slides section .mt-40,
+.reveal .slides section .mt-40 + * {
+  margin-top: 40px;
+}
+
+.reveal .slides section img[alt*='mb-40'],
+.reveal .slides section .mb-40,
+.reveal .slides section .mb-40 + * {
+  margin-bottom: 40px;
+}
+
+.reveal .slides section img[alt*='mt-50'],
+.reveal .slides section .mt-50,
+.reveal .slides section .mt-50 + * {
+  margin-top: 50px;
+}
+
+.reveal .slides section img[alt*='mb-50'],
+.reveal .slides section .mb-50,
+.reveal .slides section .mb-50 + * {
+  margin-bottom: 50px;
+}
+
+.reveal .slides section img[alt*='mt-60'],
+.reveal .slides section .mt-60,
+.reveal .slides section .mt-60 + * {
+  margin-top: 60px;
+}
+
+.reveal .slides section img[alt*='mb-60'],
+.reveal .slides section .mb-60,
+.reveal .slides section .mb-60 + * {
+  margin-bottom: 60px;
+}
+
+.reveal .slides section img[alt*='mt-70'],
+.reveal .slides section .mt-70,
+.reveal .slides section .mt-70 + * {
+  margin-top: 70px;
+}
+
+.reveal .slides section img[alt*='mb-70'],
+.reveal .slides section .mb-70,
+.reveal .slides section .mb-70 + * {
+  margin-bottom: 70px;
+}
+
+.reveal .slides section img[alt*='mt-80'],
+.reveal .slides section .mt-80,
+.reveal .slides section .mt-80 + * {
+  margin-top: 80px;
+}
+
+.reveal .slides section img[alt*='mb-80'],
+.reveal .slides section .mb-80,
+.reveal .slides section .mb-80 + * {
+  margin-bottom: 80px;
+}
+
+.reveal .slides section img[alt*='mt-90'],
+.reveal .slides section .mt-90,
+.reveal .slides section .mt-90 + * {
+  margin-top: 90px;
+}
+
+.reveal .slides section img[alt*='mb-90'],
+.reveal .slides section .mb-90,
+.reveal .slides section .mb-90 + * {
+  margin-bottom: 90px;
+}
+
+.reveal .slides section img[alt*='mt-100'],
+.reveal .slides section .mt-100,
+.reveal .slides section .mt-100 + * {
+  margin-top: 100px;
+}
+
+.reveal .slides section img[alt*='mb-100'],
+.reveal .slides section .mb-100,
+.reveal .slides section .mb-100 + * {
+  margin-bottom: 100px;
+}
+
+.reveal .slides section img[alt*='mt-110'],
+.reveal .slides section .mt-110,
+.reveal .slides section .mt-110 + * {
+  margin-top: 110px;
+}
+
+.reveal .slides section img[alt*='mb-110'],
+.reveal .slides section .mb-110,
+.reveal .slides section .mb-110 + * {
+  margin-bottom: 110px;
+}
+
+.reveal .slides section img[alt*='mt-120'],
+.reveal .slides section .mt-120,
+.reveal .slides section .mt-120 + * {
+  margin-top: 120px;
+}
+
+.reveal .slides section img[alt*='mb-120'],
+.reveal .slides section .mb-120,
+.reveal .slides section .mb-120 + * {
+  margin-bottom: 120px;
+}
+
+.reveal .slides section img[alt*='mt-130'],
+.reveal .slides section .mt-130,
+.reveal .slides section .mt-130 + * {
+  margin-top: 130px;
+}
+
+.reveal .slides section img[alt*='mb-130'],
+.reveal .slides section .mb-130,
+.reveal .slides section .mb-130 + * {
+  margin-bottom: 130px;
+}
+
+.reveal .slides section img[alt*='mt-140'],
+.reveal .slides section .mt-140,
+.reveal .slides section .mt-140 + * {
+  margin-top: 140px;
+}
+
+.reveal .slides section img[alt*='mb-140'],
+.reveal .slides section .mb-140,
+.reveal .slides section .mb-140 + * {
+  margin-bottom: 140px;
+}
+
+.reveal .slides section img[alt*='mt-150'],
+.reveal .slides section .mt-150,
+.reveal .slides section .mt-150 + * {
+  margin-top: 150px;
+}
+
+.reveal .slides section img[alt*='mb-150'],
+.reveal .slides section .mb-150,
+.reveal .slides section .mb-150 + * {
+  margin-bottom: 150px;
+}
+
+.reveal .slides section img[alt*='mt-160'],
+.reveal .slides section .mt-160,
+.reveal .slides section .mt-160 + * {
+  margin-top: 160px;
+}
+
+.reveal .slides section img[alt*='mb-160'],
+.reveal .slides section .mb-160,
+.reveal .slides section .mb-160 + * {
+  margin-bottom: 160px;
+}
+
+.reveal .slides section img[alt*='mt-170'],
+.reveal .slides section .mt-170,
+.reveal .slides section .mt-170 + * {
+  margin-top: 170px;
+}
+
+.reveal .slides section img[alt*='mb-170'],
+.reveal .slides section .mb-170,
+.reveal .slides section .mb-170 + * {
+  margin-bottom: 170px;
+}
+
+.reveal .slides section img[alt*='mt-180'],
+.reveal .slides section .mt-180,
+.reveal .slides section .mt-180 + * {
+  margin-top: 180px;
+}
+
+.reveal .slides section img[alt*='mb-180'],
+.reveal .slides section .mb-180,
+.reveal .slides section .mb-180 + * {
+  margin-bottom: 180px;
+}
+
+.reveal .slides section img[alt*='mt-190'],
+.reveal .slides section .mt-190,
+.reveal .slides section .mt-190 + * {
+  margin-top: 190px;
+}
+
+.reveal .slides section img[alt*='mb-190'],
+.reveal .slides section .mb-190,
+.reveal .slides section .mb-190 + * {
+  margin-bottom: 190px;
+}
+
+.reveal .slides section img[alt*='mt-200'],
+.reveal .slides section .mt-200,
+.reveal .slides section .mt-200 + * {
+  margin-top: 200px;
+}
+
+.reveal .slides section img[alt*='mb-200'],
+.reveal .slides section .mb-200,
+.reveal .slides section .mb-200 + * {
+  margin-bottom: 200px;
+}
+
+.reveal .slides section img[alt*='mt-210'],
+.reveal .slides section .mt-210,
+.reveal .slides section .mt-210 + * {
+  margin-top: 210px;
+}
+
+.reveal .slides section img[alt*='mb-210'],
+.reveal .slides section .mb-210,
+.reveal .slides section .mb-210 + * {
+  margin-bottom: 210px;
+}
+
+.reveal .slides section img[alt*='mt-220'],
+.reveal .slides section .mt-220,
+.reveal .slides section .mt-220 + * {
+  margin-top: 220px;
+}
+
+.reveal .slides section img[alt*='mb-220'],
+.reveal .slides section .mb-220,
+.reveal .slides section .mb-220 + * {
+  margin-bottom: 220px;
+}
+
+.reveal .slides section img[alt*='mt-230'],
+.reveal .slides section .mt-230,
+.reveal .slides section .mt-230 + * {
+  margin-top: 230px;
+}
+
+.reveal .slides section img[alt*='mb-230'],
+.reveal .slides section .mb-230,
+.reveal .slides section .mb-230 + * {
+  margin-bottom: 230px;
+}
+
+.reveal .slides section img[alt*='mt-240'],
+.reveal .slides section .mt-240,
+.reveal .slides section .mt-240 + * {
+  margin-top: 240px;
+}
+
+.reveal .slides section img[alt*='mb-240'],
+.reveal .slides section .mb-240,
+.reveal .slides section .mb-240 + * {
+  margin-bottom: 240px;
+}
+
+.reveal .slides section img[alt*='mt-250'],
+.reveal .slides section .mt-250,
+.reveal .slides section .mt-250 + * {
+  margin-top: 250px;
+}
+
+.reveal .slides section img[alt*='mb-250'],
+.reveal .slides section .mb-250,
+.reveal .slides section .mb-250 + * {
+  margin-bottom: 250px;
+}
+
+.reveal .slides section img[alt*='mt-260'],
+.reveal .slides section .mt-260,
+.reveal .slides section .mt-260 + * {
+  margin-top: 260px;
+}
+
+.reveal .slides section img[alt*='mb-260'],
+.reveal .slides section .mb-260,
+.reveal .slides section .mb-260 + * {
+  margin-bottom: 260px;
+}
+
+.reveal .slides section img[alt*='mt-270'],
+.reveal .slides section .mt-270,
+.reveal .slides section .mt-270 + * {
+  margin-top: 270px;
+}
+
+.reveal .slides section img[alt*='mb-270'],
+.reveal .slides section .mb-270,
+.reveal .slides section .mb-270 + * {
+  margin-bottom: 270px;
+}
+
+.reveal .slides section img[alt*='mt-280'],
+.reveal .slides section .mt-280,
+.reveal .slides section .mt-280 + * {
+  margin-top: 280px;
+}
+
+.reveal .slides section img[alt*='mb-280'],
+.reveal .slides section .mb-280,
+.reveal .slides section .mb-280 + * {
+  margin-bottom: 280px;
+}
+
+.reveal .slides section img[alt*='mt-290'],
+.reveal .slides section .mt-290,
+.reveal .slides section .mt-290 + * {
+  margin-top: 290px;
+}
+
+.reveal .slides section img[alt*='mb-290'],
+.reveal .slides section .mb-290,
+.reveal .slides section .mb-290 + * {
+  margin-bottom: 290px;
+}
+
+.reveal .slides section img[alt*='mt-300'],
+.reveal .slides section .mt-300,
+.reveal .slides section .mt-300 + * {
+  margin-top: 300px;
+}
+
+.reveal .slides section img[alt*='mb-300'],
+.reveal .slides section .mb-300,
+.reveal .slides section .mb-300 + * {
+  margin-bottom: 300px;
+}
+
+.reveal .slides section img[alt*='mt-310'],
+.reveal .slides section .mt-310,
+.reveal .slides section .mt-310 + * {
+  margin-top: 310px;
+}
+
+.reveal .slides section img[alt*='mb-310'],
+.reveal .slides section .mb-310,
+.reveal .slides section .mb-310 + * {
+  margin-bottom: 310px;
+}
+
+.reveal .slides section img[alt*='mt-320'],
+.reveal .slides section .mt-320,
+.reveal .slides section .mt-320 + * {
+  margin-top: 320px;
+}
+
+.reveal .slides section img[alt*='mb-320'],
+.reveal .slides section .mb-320,
+.reveal .slides section .mb-320 + * {
+  margin-bottom: 320px;
+}
+
+.reveal .slides section img[alt*='mt-330'],
+.reveal .slides section .mt-330,
+.reveal .slides section .mt-330 + * {
+  margin-top: 330px;
+}
+
+.reveal .slides section img[alt*='mb-330'],
+.reveal .slides section .mb-330,
+.reveal .slides section .mb-330 + * {
+  margin-bottom: 330px;
+}
+
+.reveal .slides section img[alt*='mt-340'],
+.reveal .slides section .mt-340,
+.reveal .slides section .mt-340 + * {
+  margin-top: 340px;
+}
+
+.reveal .slides section img[alt*='mb-340'],
+.reveal .slides section .mb-340,
+.reveal .slides section .mb-340 + * {
+  margin-bottom: 340px;
+}
+
+.reveal .slides section img[alt*='mt-350'],
+.reveal .slides section .mt-350,
+.reveal .slides section .mt-350 + * {
+  margin-top: 350px;
+}
+
+.reveal .slides section img[alt*='mb-350'],
+.reveal .slides section .mb-350,
+.reveal .slides section .mb-350 + * {
+  margin-bottom: 350px;
+}
+
+.reveal .slides section img[alt*='mt-360'],
+.reveal .slides section .mt-360,
+.reveal .slides section .mt-360 + * {
+  margin-top: 360px;
+}
+
+.reveal .slides section img[alt*='mb-360'],
+.reveal .slides section .mb-360,
+.reveal .slides section .mb-360 + * {
+  margin-bottom: 360px;
+}
+
+.reveal .slides section img[alt*='mt-370'],
+.reveal .slides section .mt-370,
+.reveal .slides section .mt-370 + * {
+  margin-top: 370px;
+}
+
+.reveal .slides section img[alt*='mb-370'],
+.reveal .slides section .mb-370,
+.reveal .slides section .mb-370 + * {
+  margin-bottom: 370px;
+}
+
+.reveal .slides section img[alt*='mt-380'],
+.reveal .slides section .mt-380,
+.reveal .slides section .mt-380 + * {
+  margin-top: 380px;
+}
+
+.reveal .slides section img[alt*='mb-380'],
+.reveal .slides section .mb-380,
+.reveal .slides section .mb-380 + * {
+  margin-bottom: 380px;
+}
+
+.reveal .slides section img[alt*='mt-390'],
+.reveal .slides section .mt-390,
+.reveal .slides section .mt-390 + * {
+  margin-top: 390px;
+}
+
+.reveal .slides section img[alt*='mb-390'],
+.reveal .slides section .mb-390,
+.reveal .slides section .mb-390 + * {
+  margin-bottom: 390px;
+}
+
+.reveal .slides section img[alt*='mt-400'],
+.reveal .slides section .mt-400,
+.reveal .slides section .mt-400 + * {
+  margin-top: 400px;
+}
+
+.reveal .slides section img[alt*='mb-400'],
+.reveal .slides section .mb-400,
+.reveal .slides section .mb-400 + * {
+  margin-bottom: 400px;
+}
+
+.reveal .slides section img[alt*='mt-410'],
+.reveal .slides section .mt-410,
+.reveal .slides section .mt-410 + * {
+  margin-top: 410px;
+}
+
+.reveal .slides section img[alt*='mb-410'],
+.reveal .slides section .mb-410,
+.reveal .slides section .mb-410 + * {
+  margin-bottom: 410px;
+}
+
+.reveal .slides section img[alt*='mt-420'],
+.reveal .slides section .mt-420,
+.reveal .slides section .mt-420 + * {
+  margin-top: 420px;
+}
+
+.reveal .slides section img[alt*='mb-420'],
+.reveal .slides section .mb-420,
+.reveal .slides section .mb-420 + * {
+  margin-bottom: 420px;
+}
+
+.reveal .slides section img[alt*='mt-430'],
+.reveal .slides section .mt-430,
+.reveal .slides section .mt-430 + * {
+  margin-top: 430px;
+}
+
+.reveal .slides section img[alt*='mb-430'],
+.reveal .slides section .mb-430,
+.reveal .slides section .mb-430 + * {
+  margin-bottom: 430px;
+}
+
+.reveal .slides section img[alt*='mt-440'],
+.reveal .slides section .mt-440,
+.reveal .slides section .mt-440 + * {
+  margin-top: 440px;
+}
+
+.reveal .slides section img[alt*='mb-440'],
+.reveal .slides section .mb-440,
+.reveal .slides section .mb-440 + * {
+  margin-bottom: 440px;
+}
+
+.reveal .slides section img[alt*='mt-450'],
+.reveal .slides section .mt-450,
+.reveal .slides section .mt-450 + * {
+  margin-top: 450px;
+}
+
+.reveal .slides section img[alt*='mb-450'],
+.reveal .slides section .mb-450,
+.reveal .slides section .mb-450 + * {
+  margin-bottom: 450px;
+}
+
+.reveal .slides section img[alt*='mt-460'],
+.reveal .slides section .mt-460,
+.reveal .slides section .mt-460 + * {
+  margin-top: 460px;
+}
+
+.reveal .slides section img[alt*='mb-460'],
+.reveal .slides section .mb-460,
+.reveal .slides section .mb-460 + * {
+  margin-bottom: 460px;
+}
+
+.reveal .slides section img[alt*='mt-470'],
+.reveal .slides section .mt-470,
+.reveal .slides section .mt-470 + * {
+  margin-top: 470px;
+}
+
+.reveal .slides section img[alt*='mb-470'],
+.reveal .slides section .mb-470,
+.reveal .slides section .mb-470 + * {
+  margin-bottom: 470px;
+}
+
+.reveal .slides section img[alt*='mt-480'],
+.reveal .slides section .mt-480,
+.reveal .slides section .mt-480 + * {
+  margin-top: 480px;
+}
+
+.reveal .slides section img[alt*='mb-480'],
+.reveal .slides section .mb-480,
+.reveal .slides section .mb-480 + * {
+  margin-bottom: 480px;
+}
+
+.reveal .slides section img[alt*='mt-490'],
+.reveal .slides section .mt-490,
+.reveal .slides section .mt-490 + * {
+  margin-top: 490px;
+}
+
+.reveal .slides section img[alt*='mb-490'],
+.reveal .slides section .mb-490,
+.reveal .slides section .mb-490 + * {
+  margin-bottom: 490px;
+}
+
+.reveal .slides section img[alt*='mt-500'],
+.reveal .slides section .mt-500,
+.reveal .slides section .mt-500 + * {
+  margin-top: 500px;
+}
+
+.reveal .slides section img[alt*='mb-500'],
+.reveal .slides section .mb-500,
+.reveal .slides section .mb-500 + * {
+  margin-bottom: 500px;
+}
+
+.reveal .slides section img[alt*='mt-510'],
+.reveal .slides section .mt-510,
+.reveal .slides section .mt-510 + * {
+  margin-top: 510px;
+}
+
+.reveal .slides section img[alt*='mb-510'],
+.reveal .slides section .mb-510,
+.reveal .slides section .mb-510 + * {
+  margin-bottom: 510px;
+}
+
+.reveal .slides section img[alt*='mt-520'],
+.reveal .slides section .mt-520,
+.reveal .slides section .mt-520 + * {
+  margin-top: 520px;
+}
+
+.reveal .slides section img[alt*='mb-520'],
+.reveal .slides section .mb-520,
+.reveal .slides section .mb-520 + * {
+  margin-bottom: 520px;
+}
+
+.reveal .slides section img[alt*='mt-530'],
+.reveal .slides section .mt-530,
+.reveal .slides section .mt-530 + * {
+  margin-top: 530px;
+}
+
+.reveal .slides section img[alt*='mb-530'],
+.reveal .slides section .mb-530,
+.reveal .slides section .mb-530 + * {
+  margin-bottom: 530px;
+}
+
+.reveal .slides section img[alt*='mt-540'],
+.reveal .slides section .mt-540,
+.reveal .slides section .mt-540 + * {
+  margin-top: 540px;
+}
+
+.reveal .slides section img[alt*='mb-540'],
+.reveal .slides section .mb-540,
+.reveal .slides section .mb-540 + * {
+  margin-bottom: 540px;
+}
+
+.reveal .slides section img[alt*='mt-550'],
+.reveal .slides section .mt-550,
+.reveal .slides section .mt-550 + * {
+  margin-top: 550px;
+}
+
+.reveal .slides section img[alt*='mb-550'],
+.reveal .slides section .mb-550,
+.reveal .slides section .mb-550 + * {
+  margin-bottom: 550px;
+}
+
+.reveal .slides section img[alt*='mt-560'],
+.reveal .slides section .mt-560,
+.reveal .slides section .mt-560 + * {
+  margin-top: 560px;
+}
+
+.reveal .slides section img[alt*='mb-560'],
+.reveal .slides section .mb-560,
+.reveal .slides section .mb-560 + * {
+  margin-bottom: 560px;
+}
+
+.reveal .slides section img[alt*='mt-570'],
+.reveal .slides section .mt-570,
+.reveal .slides section .mt-570 + * {
+  margin-top: 570px;
+}
+
+.reveal .slides section img[alt*='mb-570'],
+.reveal .slides section .mb-570,
+.reveal .slides section .mb-570 + * {
+  margin-bottom: 570px;
+}
+
+.reveal .slides section img[alt*='mt-580'],
+.reveal .slides section .mt-580,
+.reveal .slides section .mt-580 + * {
+  margin-top: 580px;
+}
+
+.reveal .slides section img[alt*='mb-580'],
+.reveal .slides section .mb-580,
+.reveal .slides section .mb-580 + * {
+  margin-bottom: 580px;
+}
+
+.reveal .slides section img[alt*='mt-590'],
+.reveal .slides section .mt-590,
+.reveal .slides section .mt-590 + * {
+  margin-top: 590px;
+}
+
+.reveal .slides section img[alt*='mb-590'],
+.reveal .slides section .mb-590,
+.reveal .slides section .mb-590 + * {
+  margin-bottom: 590px;
+}
+
+.reveal .slides section img[alt*='mt-600'],
+.reveal .slides section .mt-600,
+.reveal .slides section .mt-600 + * {
+  margin-top: 600px;
+}
+
+.reveal .slides section img[alt*='mb-600'],
+.reveal .slides section .mb-600,
+.reveal .slides section .mb-600 + * {
+  margin-bottom: 600px;
+}
+
+.reveal .slides section img[alt*='mt-610'],
+.reveal .slides section .mt-610,
+.reveal .slides section .mt-610 + * {
+  margin-top: 610px;
+}
+
+.reveal .slides section img[alt*='mb-610'],
+.reveal .slides section .mb-610,
+.reveal .slides section .mb-610 + * {
+  margin-bottom: 610px;
+}
+
+.reveal .slides section img[alt*='mt-620'],
+.reveal .slides section .mt-620,
+.reveal .slides section .mt-620 + * {
+  margin-top: 620px;
+}
+
+.reveal .slides section img[alt*='mb-620'],
+.reveal .slides section .mb-620,
+.reveal .slides section .mb-620 + * {
+  margin-bottom: 620px;
+}
+
+.reveal .slides section img[alt*='mt-630'],
+.reveal .slides section .mt-630,
+.reveal .slides section .mt-630 + * {
+  margin-top: 630px;
+}
+
+.reveal .slides section img[alt*='mb-630'],
+.reveal .slides section .mb-630,
+.reveal .slides section .mb-630 + * {
+  margin-bottom: 630px;
+}
+
+.reveal .slides section img[alt*='mt-640'],
+.reveal .slides section .mt-640,
+.reveal .slides section .mt-640 + * {
+  margin-top: 640px;
+}
+
+.reveal .slides section img[alt*='mb-640'],
+.reveal .slides section .mb-640,
+.reveal .slides section .mb-640 + * {
+  margin-bottom: 640px;
+}
+
+.reveal .slides section img[alt*='mt-650'],
+.reveal .slides section .mt-650,
+.reveal .slides section .mt-650 + * {
+  margin-top: 650px;
+}
+
+.reveal .slides section img[alt*='mb-650'],
+.reveal .slides section .mb-650,
+.reveal .slides section .mb-650 + * {
+  margin-bottom: 650px;
+}
+
+.reveal .slides section img[alt*='mt-660'],
+.reveal .slides section .mt-660,
+.reveal .slides section .mt-660 + * {
+  margin-top: 660px;
+}
+
+.reveal .slides section img[alt*='mb-660'],
+.reveal .slides section .mb-660,
+.reveal .slides section .mb-660 + * {
+  margin-bottom: 660px;
+}
+
+.reveal .slides section img[alt*='mt-670'],
+.reveal .slides section .mt-670,
+.reveal .slides section .mt-670 + * {
+  margin-top: 670px;
+}
+
+.reveal .slides section img[alt*='mb-670'],
+.reveal .slides section .mb-670,
+.reveal .slides section .mb-670 + * {
+  margin-bottom: 670px;
+}
+
+.reveal .slides section img[alt*='mt-680'],
+.reveal .slides section .mt-680,
+.reveal .slides section .mt-680 + * {
+  margin-top: 680px;
+}
+
+.reveal .slides section img[alt*='mb-680'],
+.reveal .slides section .mb-680,
+.reveal .slides section .mb-680 + * {
+  margin-bottom: 680px;
+}
+
+.reveal .slides section img[alt*='mt-690'],
+.reveal .slides section .mt-690,
+.reveal .slides section .mt-690 + * {
+  margin-top: 690px;
+}
+
+.reveal .slides section img[alt*='mb-690'],
+.reveal .slides section .mb-690,
+.reveal .slides section .mb-690 + * {
+  margin-bottom: 690px;
+}
+
+.reveal .slides section img[alt*='mt-700'],
+.reveal .slides section .mt-700,
+.reveal .slides section .mt-700 + * {
+  margin-top: 700px;
+}
+
+.reveal .slides section img[alt*='mb-700'],
+.reveal .slides section .mb-700,
+.reveal .slides section .mb-700 + * {
+  margin-bottom: 700px;
+}
+
+.reveal .slides section img[alt*='mt-710'],
+.reveal .slides section .mt-710,
+.reveal .slides section .mt-710 + * {
+  margin-top: 710px;
+}
+
+.reveal .slides section img[alt*='mb-710'],
+.reveal .slides section .mb-710,
+.reveal .slides section .mb-710 + * {
+  margin-bottom: 710px;
+}
+
+.reveal .slides section img[alt*='mt-720'],
+.reveal .slides section .mt-720,
+.reveal .slides section .mt-720 + * {
+  margin-top: 720px;
+}
+
+.reveal .slides section img[alt*='mb-720'],
+.reveal .slides section .mb-720,
+.reveal .slides section .mb-720 + * {
+  margin-bottom: 720px;
+}
+
+.reveal .slides section img[alt*='mt-730'],
+.reveal .slides section .mt-730,
+.reveal .slides section .mt-730 + * {
+  margin-top: 730px;
+}
+
+.reveal .slides section img[alt*='mb-730'],
+.reveal .slides section .mb-730,
+.reveal .slides section .mb-730 + * {
+  margin-bottom: 730px;
+}
+
+.reveal .slides section img[alt*='mt-740'],
+.reveal .slides section .mt-740,
+.reveal .slides section .mt-740 + * {
+  margin-top: 740px;
+}
+
+.reveal .slides section img[alt*='mb-740'],
+.reveal .slides section .mb-740,
+.reveal .slides section .mb-740 + * {
+  margin-bottom: 740px;
+}
+
+.reveal .slides section img[alt*='mt-750'],
+.reveal .slides section .mt-750,
+.reveal .slides section .mt-750 + * {
+  margin-top: 750px;
+}
+
+.reveal .slides section img[alt*='mb-750'],
+.reveal .slides section .mb-750,
+.reveal .slides section .mb-750 + * {
+  margin-bottom: 750px;
+}
+
+.reveal .slides section img[alt*='mt-760'],
+.reveal .slides section .mt-760,
+.reveal .slides section .mt-760 + * {
+  margin-top: 760px;
+}
+
+.reveal .slides section img[alt*='mb-760'],
+.reveal .slides section .mb-760,
+.reveal .slides section .mb-760 + * {
+  margin-bottom: 760px;
+}
+
+.reveal .slides section img[alt*='mt-770'],
+.reveal .slides section .mt-770,
+.reveal .slides section .mt-770 + * {
+  margin-top: 770px;
+}
+
+.reveal .slides section img[alt*='mb-770'],
+.reveal .slides section .mb-770,
+.reveal .slides section .mb-770 + * {
+  margin-bottom: 770px;
+}
+
+.reveal .slides section img[alt*='mt-780'],
+.reveal .slides section .mt-780,
+.reveal .slides section .mt-780 + * {
+  margin-top: 780px;
+}
+
+.reveal .slides section img[alt*='mb-780'],
+.reveal .slides section .mb-780,
+.reveal .slides section .mb-780 + * {
+  margin-bottom: 780px;
+}
+
+.reveal .slides section img[alt*='mt-790'],
+.reveal .slides section .mt-790,
+.reveal .slides section .mt-790 + * {
+  margin-top: 790px;
+}
+
+.reveal .slides section img[alt*='mb-790'],
+.reveal .slides section .mb-790,
+.reveal .slides section .mb-790 + * {
+  margin-bottom: 790px;
+}
+
+.reveal .slides section img[alt*='mt-800'],
+.reveal .slides section .mt-800,
+.reveal .slides section .mt-800 + * {
+  margin-top: 800px;
+}
+
+.reveal .slides section img[alt*='mb-800'],
+.reveal .slides section .mb-800,
+.reveal .slides section .mb-800 + * {
+  margin-bottom: 800px;
+}
+
+.reveal .slides section img[alt*='mt-810'],
+.reveal .slides section .mt-810,
+.reveal .slides section .mt-810 + * {
+  margin-top: 810px;
+}
+
+.reveal .slides section img[alt*='mb-810'],
+.reveal .slides section .mb-810,
+.reveal .slides section .mb-810 + * {
+  margin-bottom: 810px;
+}
+
+.reveal .slides section img[alt*='mt-820'],
+.reveal .slides section .mt-820,
+.reveal .slides section .mt-820 + * {
+  margin-top: 820px;
+}
+
+.reveal .slides section img[alt*='mb-820'],
+.reveal .slides section .mb-820,
+.reveal .slides section .mb-820 + * {
+  margin-bottom: 820px;
+}
+
+.reveal .slides section img[alt*='mt-830'],
+.reveal .slides section .mt-830,
+.reveal .slides section .mt-830 + * {
+  margin-top: 830px;
+}
+
+.reveal .slides section img[alt*='mb-830'],
+.reveal .slides section .mb-830,
+.reveal .slides section .mb-830 + * {
+  margin-bottom: 830px;
+}
+
+.reveal .slides section img[alt*='mt-840'],
+.reveal .slides section .mt-840,
+.reveal .slides section .mt-840 + * {
+  margin-top: 840px;
+}
+
+.reveal .slides section img[alt*='mb-840'],
+.reveal .slides section .mb-840,
+.reveal .slides section .mb-840 + * {
+  margin-bottom: 840px;
+}
+
+.reveal .slides section img[alt*='mt-850'],
+.reveal .slides section .mt-850,
+.reveal .slides section .mt-850 + * {
+  margin-top: 850px;
+}
+
+.reveal .slides section img[alt*='mb-850'],
+.reveal .slides section .mb-850,
+.reveal .slides section .mb-850 + * {
+  margin-bottom: 850px;
+}
+
+.reveal .slides section img[alt*='mt-860'],
+.reveal .slides section .mt-860,
+.reveal .slides section .mt-860 + * {
+  margin-top: 860px;
+}
+
+.reveal .slides section img[alt*='mb-860'],
+.reveal .slides section .mb-860,
+.reveal .slides section .mb-860 + * {
+  margin-bottom: 860px;
+}
+
+.reveal .slides section img[alt*='mt-870'],
+.reveal .slides section .mt-870,
+.reveal .slides section .mt-870 + * {
+  margin-top: 870px;
+}
+
+.reveal .slides section img[alt*='mb-870'],
+.reveal .slides section .mb-870,
+.reveal .slides section .mb-870 + * {
+  margin-bottom: 870px;
+}
+
+.reveal .slides section img[alt*='mt-880'],
+.reveal .slides section .mt-880,
+.reveal .slides section .mt-880 + * {
+  margin-top: 880px;
+}
+
+.reveal .slides section img[alt*='mb-880'],
+.reveal .slides section .mb-880,
+.reveal .slides section .mb-880 + * {
+  margin-bottom: 880px;
+}
+
+.reveal .slides section img[alt*='mt-890'],
+.reveal .slides section .mt-890,
+.reveal .slides section .mt-890 + * {
+  margin-top: 890px;
+}
+
+.reveal .slides section img[alt*='mb-890'],
+.reveal .slides section .mb-890,
+.reveal .slides section .mb-890 + * {
+  margin-bottom: 890px;
+}
+
+.reveal .slides section img[alt*='mt-900'],
+.reveal .slides section .mt-900,
+.reveal .slides section .mt-900 + * {
+  margin-top: 900px;
+}
+
+.reveal .slides section img[alt*='mb-900'],
+.reveal .slides section .mb-900,
+.reveal .slides section .mb-900 + * {
+  margin-bottom: 900px;
+}
+
+.reveal .slides section img[alt*='mt-910'],
+.reveal .slides section .mt-910,
+.reveal .slides section .mt-910 + * {
+  margin-top: 910px;
+}
+
+.reveal .slides section img[alt*='mb-910'],
+.reveal .slides section .mb-910,
+.reveal .slides section .mb-910 + * {
+  margin-bottom: 910px;
+}
+
+.reveal .slides section img[alt*='mt-920'],
+.reveal .slides section .mt-920,
+.reveal .slides section .mt-920 + * {
+  margin-top: 920px;
+}
+
+.reveal .slides section img[alt*='mb-920'],
+.reveal .slides section .mb-920,
+.reveal .slides section .mb-920 + * {
+  margin-bottom: 920px;
+}
+
+.reveal .slides section img[alt*='mt-930'],
+.reveal .slides section .mt-930,
+.reveal .slides section .mt-930 + * {
+  margin-top: 930px;
+}
+
+.reveal .slides section img[alt*='mb-930'],
+.reveal .slides section .mb-930,
+.reveal .slides section .mb-930 + * {
+  margin-bottom: 930px;
+}
+
+.reveal .slides section img[alt*='mt-940'],
+.reveal .slides section .mt-940,
+.reveal .slides section .mt-940 + * {
+  margin-top: 940px;
+}
+
+.reveal .slides section img[alt*='mb-940'],
+.reveal .slides section .mb-940,
+.reveal .slides section .mb-940 + * {
+  margin-bottom: 940px;
+}
+
+.reveal .slides section img[alt*='mt-950'],
+.reveal .slides section .mt-950,
+.reveal .slides section .mt-950 + * {
+  margin-top: 950px;
+}
+
+.reveal .slides section img[alt*='mb-950'],
+.reveal .slides section .mb-950,
+.reveal .slides section .mb-950 + * {
+  margin-bottom: 950px;
+}
+
+.reveal .slides section img[alt*='mt-960'],
+.reveal .slides section .mt-960,
+.reveal .slides section .mt-960 + * {
+  margin-top: 960px;
+}
+
+.reveal .slides section img[alt*='mb-960'],
+.reveal .slides section .mb-960,
+.reveal .slides section .mb-960 + * {
+  margin-bottom: 960px;
+}
+
+.reveal .slides section img[alt*='mt-970'],
+.reveal .slides section .mt-970,
+.reveal .slides section .mt-970 + * {
+  margin-top: 970px;
+}
+
+.reveal .slides section img[alt*='mb-970'],
+.reveal .slides section .mb-970,
+.reveal .slides section .mb-970 + * {
+  margin-bottom: 970px;
+}
+
+.reveal .slides section img[alt*='mt-980'],
+.reveal .slides section .mt-980,
+.reveal .slides section .mt-980 + * {
+  margin-top: 980px;
+}
+
+.reveal .slides section img[alt*='mb-980'],
+.reveal .slides section .mb-980,
+.reveal .slides section .mb-980 + * {
+  margin-bottom: 980px;
+}
+
+.reveal .slides section img[alt*='mt-990'],
+.reveal .slides section .mt-990,
+.reveal .slides section .mt-990 + * {
+  margin-top: 990px;
+}
+
+.reveal .slides section img[alt*='mb-990'],
+.reveal .slides section .mb-990,
+.reveal .slides section .mb-990 + * {
+  margin-bottom: 990px;
+}
+
+.reveal .slides section img[alt*='mt-1000'],
+.reveal .slides section .mt-1000,
+.reveal .slides section .mt-1000 + * {
+  margin-top: 1000px;
+}
+
+.reveal .slides section img[alt*='mb-1000'],
+.reveal .slides section .mb-1000,
+.reveal .slides section .mb-1000 + * {
+  margin-bottom: 1000px;
 }
 
 /**
@@ -1078,7 +2278,7 @@ img[alt*='wm-1000'],
 .reveal ul {
   line-height: 1.5em;
   text-align: left;
-  margin: 0 0 0 1em;
+  margin: 0 0 0 0em;
 }
 
 .reveal ul {
@@ -1156,8 +2356,6 @@ img[alt*='wm-1000'],
   color: #434343;
   font-size: 1.5em;
   font-weight: 600;
-  padding-left: 25px;
-  margin-left: 5px;
 }
 .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) h1,
 .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) h2,
@@ -1169,7 +2367,7 @@ img[alt*='wm-1000'],
 .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) h2,
 .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) h3 {
   text-transform: initial;
-  margin-bottom: 50px;
+  margin-bottom: 130px;
 }
 .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) h1 ~ h2,
 .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) h2 ~ h3,
@@ -1181,10 +2379,15 @@ img[alt*='wm-1000'],
 .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) h2 ~ h3,
 .reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) h1 ~ h3 {
   text-transform: initial;
-  margin-top: -10px;
-  padding-left: 30px;
+  margin-top: -90px;
+  margin-bottom: 40px;
   color: #434343;
   font-size: 1em;
+}
+.reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) table,
+.reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) table,
+.reveal .slides section.sfeir-specific-slide.sfeir-bg-axololt:not(.stack):not([class*='transition']) table {
+  width: 100%;
 }
 .reveal .slides section:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) thead,
 .reveal .slides section.sfeir-basic-slide:not(.stack):not([class*='transition']) thead,
@@ -1236,7 +2439,7 @@ img[alt*='wm-1000'],
   position: absolute;
   content: '';
   width: 40%;
-  height: 20px;
+  height: 10px;
   background-color: #dd3355;
   bottom: -30px;
   left: 0;
@@ -1275,11 +2478,13 @@ img[alt*='wm-1000'],
   opacity: 1;
 }
 .reveal .slides section.two-column-layout section:nth-child(2) {
+  margin-top: 50px;
   grid-row-start: 2;
   grid-column-end: 2;
   opacity: 1;
 }
 .reveal .slides section.two-column-layout section:last-child {
+  margin-top: 50px;
   grid-row-start: 2;
   grid-column-start: 2;
   opacity: 1;
@@ -1386,6 +2591,23 @@ img[alt*='wm-1000'],
   background-size: 55px;
 }
 
+/**
+* Custom Properties
+*/
+:root {
+  --code-bg: #3f3f3f;
+  --light-grey: #ddd;
+  --white: white;
+  --medium-grey: #817c7c;
+  --black: #434343;
+  --dark-grey: #2a3244;
+  --dark-grey-alpha: rgba(61, 67, 73, 0.7);
+  --red: #e74c3c;
+  --sfeir-pink: #dd3355;
+  --sfeir-blue: #575eaa;
+  --sfeir-green: #0ab580;
+}
+
 .reveal .slides section[data-background].speaker-slide {
   height: 800px;
   text-transform: inherit;
@@ -1400,14 +2622,15 @@ img[alt*='wm-1000'],
 }
 .reveal .slides section[data-background].speaker-slide h2 {
   position: absolute;
-  right: 200px;
+  right: 0;
   top: calc(400px + 200px + 100px);
   text-transform: inherit;
-  text-align: left;
+  text-align: center;
   color: white;
   font-weight: 800;
   line-height: 1.5em;
   height: 1.5em;
+  width: calc(300px * 2 + 400px);
   font-size: 1.3em;
 }
 .reveal .slides section[data-background].speaker-slide h2 span {
@@ -1447,33 +2670,48 @@ img[alt*='wm-1000'],
 .reveal .slides section[data-background].speaker-slide h3.icon-mail:before {
   content: '\e8c8';
 }
+.reveal .slides section[data-background].speaker-slide h3[class^='icon'] > a {
+  color: white;
+}
 .reveal .slides section[data-background].speaker-slide h3.icon-rule:before {
   content: '\e81d';
 }
-.reveal .slides section[data-background].speaker-slide img[alt*='speaker'] {
+.reveal .slides section[data-background].speaker-slide img[alt*='speaker'],
+.reveal .slides section[data-background].speaker-slide div.speaker {
   position: absolute;
-  right: calc(200px + 100px);
+  right: 300px;
   top: 200px;
   width: 400px;
+  height: 400px;
   margin-top: 20px;
   border-radius: 400px;
   border-style: solid;
   border-width: 10px;
   border-color: #dd3355;
+  background-size: cover;
 }
 .reveal .slides section[data-background].speaker-slide img[alt*='company'] {
   position: absolute;
   top: 850px;
-  left: 550px;
+  left: 350px;
   max-width: 400px;
   max-height: 200px;
 }
 .reveal .slides section[data-background].speaker-slide img[alt*='badge'] {
   position: absolute;
-  top: 750px;
-  right: 500px;
-  max-width: 300px;
-  max-height: 300px;
+  top: 800px;
+  right: 400px;
+  max-width: 250px;
+  max-height: 250px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='first-badge'] {
+  right: 700px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='second-badge'] {
+  right: 400px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='third-badge'] {
+  right: 100px;
 }
 .reveal .slides section[data-background].speaker-slide.blue img[alt*='speaker'] {
   border-color: #575eaa;
@@ -1518,6 +2756,17 @@ img[alt*='wm-1000'],
 .reveal .slides section.sfeir-specific-slide[class*='transition'].green h1 {
   background: linear-gradient(to right, #00bbc5ff, #0ab580ff);
 }
+.reveal .slides section[class*='transition'].bg-blue h1,
+.reveal .slides section[class*='transition'].bg-green h1,
+.reveal .slides section[class*='transition'].bg-pink h1,
+.reveal .slides section.sfeir-basic-slide[class*='transition'].bg-blue h1,
+.reveal .slides section.sfeir-basic-slide[class*='transition'].bg-green h1,
+.reveal .slides section.sfeir-basic-slide[class*='transition'].bg-pink h1,
+.reveal .slides section.sfeir-specific-slide[class*='transition'].bg-blue h1,
+.reveal .slides section.sfeir-specific-slide[class*='transition'].bg-green h1,
+.reveal .slides section.sfeir-specific-slide[class*='transition'].bg-pink h1 {
+  background: none;
+}
 .reveal .slides section[class*='transition'].underline h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].underline h1,
 .reveal .slides section.sfeir-specific-slide[class*='transition'].underline h1 {
@@ -1549,22 +2798,16 @@ img[alt*='wm-1000'],
   background: #575eaa;
 }
 .reveal .slides section[class*='transition'].left h1,
-.reveal .slides section[class*='transition'].right h1,
-.reveal .slides section.sfeir-basic-slide[class*='transition'].left h1,
-.reveal .slides section.sfeir-basic-slide[class*='transition'].right h1,
-.reveal .slides section.sfeir-specific-slide[class*='transition'].left h1,
-.reveal .slides section.sfeir-specific-slide[class*='transition'].right h1 {
-  margin-left: initial;
-}
-.reveal .slides section[class*='transition'].left h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].left h1,
 .reveal .slides section.sfeir-specific-slide[class*='transition'].left h1 {
+  margin-left: initial;
   text-align: left;
 }
 .reveal .slides section[class*='transition'].right h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].right h1,
 .reveal .slides section.sfeir-specific-slide[class*='transition'].right h1 {
-  text-align: left;
+  margin-right: initial;
+  text-align: right;
 }
 .reveal .slides section[class*='transition'].top h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].top h1,
@@ -1607,39 +2850,41 @@ img[alt*='wm-1000'],
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-white:after {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-blue::after {
-  background: rgba(87, 94, 170, 0.7);
+  background: rgba(87, 94, 170, 0.6);
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-green::after {
-  background: rgba(10, 181, 128, 0.7);
+  background: rgba(10, 181, 128, 0.6);
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-pink::after {
-  background: rgba(221, 51, 85, 0.7);
+  background: rgba(221, 51, 85, 0.6);
 }
 
-.with-code-dark {
+.with-code-dark,
+.with-code-bg-dark {
   /*
 
 Darcula color scheme from the JetBrains family of IDEs
 
 */
 }
-.with-code-dark .hljs {
+.with-code-dark .hljs,
+.with-code-bg-dark .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
   background: #2b2b2b;
-}
-.with-code-dark .hljs {
   color: #bababa;
 }
 .with-code-dark .hljs-strong,
-.with-code-dark .hljs-emphasis {
+.with-code-dark .hljs-emphasis,
+.with-code-bg-dark .hljs-strong,
+.with-code-bg-dark .hljs-emphasis {
   color: #a8a8a2;
 }
 .with-code-dark .hljs-bullet,
@@ -1647,14 +2892,23 @@ Darcula color scheme from the JetBrains family of IDEs
 .with-code-dark .hljs-link,
 .with-code-dark .hljs-number,
 .with-code-dark .hljs-regexp,
-.with-code-dark .hljs-literal {
+.with-code-dark .hljs-literal,
+.with-code-bg-dark .hljs-bullet,
+.with-code-bg-dark .hljs-quote,
+.with-code-bg-dark .hljs-link,
+.with-code-bg-dark .hljs-number,
+.with-code-bg-dark .hljs-regexp,
+.with-code-bg-dark .hljs-literal {
   color: #6896ba;
 }
 .with-code-dark .hljs-code,
-.with-code-dark .hljs-selector-class {
+.with-code-dark .hljs-selector-class,
+.with-code-bg-dark .hljs-code,
+.with-code-bg-dark .hljs-selector-class {
   color: #a6e22e;
 }
-.with-code-dark .hljs-emphasis {
+.with-code-dark .hljs-emphasis,
+.with-code-bg-dark .hljs-emphasis {
   font-style: italic;
 }
 .with-code-dark .hljs-keyword,
@@ -1662,13 +2916,21 @@ Darcula color scheme from the JetBrains family of IDEs
 .with-code-dark .hljs-section,
 .with-code-dark .hljs-attribute,
 .with-code-dark .hljs-name,
-.with-code-dark .hljs-variable {
+.with-code-dark .hljs-variable,
+.with-code-bg-dark .hljs-keyword,
+.with-code-bg-dark .hljs-selector-tag,
+.with-code-bg-dark .hljs-section,
+.with-code-bg-dark .hljs-attribute,
+.with-code-bg-dark .hljs-name,
+.with-code-bg-dark .hljs-variable {
   color: #cb7832;
 }
-.with-code-dark .hljs-params {
+.with-code-dark .hljs-params,
+.with-code-bg-dark .hljs-params {
   color: #b9b9b9;
 }
-.with-code-dark .hljs-string {
+.with-code-dark .hljs-string,
+.with-code-bg-dark .hljs-string {
   color: #6a8759;
 }
 .with-code-dark .hljs-subst,
@@ -1681,12 +2943,26 @@ Darcula color scheme from the JetBrains family of IDEs
 .with-code-dark .hljs-selector-pseudo,
 .with-code-dark .hljs-template-tag,
 .with-code-dark .hljs-template-variable,
-.with-code-dark .hljs-addition {
+.with-code-dark .hljs-addition,
+.with-code-bg-dark .hljs-subst,
+.with-code-bg-dark .hljs-type,
+.with-code-bg-dark .hljs-built_in,
+.with-code-bg-dark .hljs-builtin-name,
+.with-code-bg-dark .hljs-symbol,
+.with-code-bg-dark .hljs-selector-id,
+.with-code-bg-dark .hljs-selector-attr,
+.with-code-bg-dark .hljs-selector-pseudo,
+.with-code-bg-dark .hljs-template-tag,
+.with-code-bg-dark .hljs-template-variable,
+.with-code-bg-dark .hljs-addition {
   color: #e0c46c;
 }
 .with-code-dark .hljs-comment,
 .with-code-dark .hljs-deletion,
-.with-code-dark .hljs-meta {
+.with-code-dark .hljs-meta,
+.with-code-bg-dark .hljs-comment,
+.with-code-bg-dark .hljs-deletion,
+.with-code-bg-dark .hljs-meta {
   color: #7f7f7f;
 }
 
@@ -1700,44 +2976,50 @@ Darcula color scheme from the JetBrains family of IDEs
 }
 
 .reveal .slides section.with-code pre,
-.reveal .slides section.with-code-dark pre {
+.reveal .slides section.with-code-dark pre,
+.reveal .slides section.with-code-bg-dark pre {
   display: block;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   text-align: left;
   font-family: monospace;
-  line-height: 1.4em;
+  line-height: 1.7em;
   word-wrap: break-word;
 }
 .reveal .slides section.with-code pre code,
-.reveal .slides section.with-code-dark pre code {
+.reveal .slides section.with-code-dark pre code,
+.reveal .slides section.with-code-bg-dark pre code {
   display: block;
   padding: 10px;
   overflow: auto;
   max-height: 600px;
   word-wrap: normal;
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-family: monospace;
   margin-bottom: 20px;
 }
 .reveal .slides section.with-code pre code span,
-.reveal .slides section.with-code-dark pre code span {
-  line-height: 1.5em;
+.reveal .slides section.with-code-dark pre code span,
+.reveal .slides section.with-code-bg-dark pre code span {
+  line-height: 1.8em;
 }
 
 .reveal .slides section.with-code pre.big-code:not(.literal),
-.reveal .slides section.with-code-dark pre.big-code:not(.literal) {
+.reveal .slides section.with-code-dark pre.big-code:not(.literal),
+.reveal .slides section.with-code-bg-dark pre.big-code:not(.literal) {
   position: relative;
   top: 0;
 }
 .reveal .slides section.with-code pre.big-code:not(.literal) code,
-.reveal .slides section.with-code-dark pre.big-code:not(.literal) code {
+.reveal .slides section.with-code-dark pre.big-code:not(.literal) code,
+.reveal .slides section.with-code-bg-dark pre.big-code:not(.literal) code {
   font-size: 1.5em;
   line-height: 2.1em;
 }
 .reveal .slides section.with-code pre.big-code:not(.literal).alone,
-.reveal .slides section.with-code-dark pre.big-code:not(.literal).alone {
+.reveal .slides section.with-code-dark pre.big-code:not(.literal).alone,
+.reveal .slides section.with-code-bg-dark pre.big-code:not(.literal).alone {
   position: absolute;
   top: 20vh;
 }
@@ -1745,15 +3027,23 @@ Darcula color scheme from the JetBrains family of IDEs
 .reveal .slides section.with-code.consolas pre,
 .reveal .slides section.with-code.consolas pre code,
 .reveal .slides section.with-code-dark.consolas pre,
-.reveal .slides section.with-code-dark.consolas pre code {
+.reveal .slides section.with-code-dark.consolas pre code,
+.reveal .slides section.with-code-bg-dark.consolas pre,
+.reveal .slides section.with-code-bg-dark.consolas pre code {
   font-family: 'Consolas';
 }
 
 .reveal .slides section.with-code.inconsolata pre,
 .reveal .slides section.with-code.inconsolata pre code,
 .reveal .slides section.with-code-dark.inconsolata pre,
-.reveal .slides section.with-code-dark.inconsolata pre code {
+.reveal .slides section.with-code-dark.inconsolata pre code,
+.reveal .slides section.with-code-bg-dark.inconsolata pre,
+.reveal .slides section.with-code-bg-dark.inconsolata pre code {
   font-family: 'Inconsolata';
+}
+
+.reveal .slides section.with-code-bg-dark pre {
+  background-color: #3f3f3f;
 }
 
 .reveal .slides section.sfeir-basic-slide.exercice:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) {

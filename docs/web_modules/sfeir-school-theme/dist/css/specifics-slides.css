@@ -89,6 +89,23 @@
   background-size: 55px;
 }
 
+/**
+* Custom Properties
+*/
+:root {
+  --code-bg: #3f3f3f;
+  --light-grey: #ddd;
+  --white: white;
+  --medium-grey: #817c7c;
+  --black: #434343;
+  --dark-grey: #2a3244;
+  --dark-grey-alpha: rgba(61, 67, 73, 0.7);
+  --red: #e74c3c;
+  --sfeir-pink: #dd3355;
+  --sfeir-blue: #575eaa;
+  --sfeir-green: #0ab580;
+}
+
 .reveal .slides section[data-background].speaker-slide {
   height: 800px;
   text-transform: inherit;
@@ -103,14 +120,15 @@
 }
 .reveal .slides section[data-background].speaker-slide h2 {
   position: absolute;
-  right: 200px;
+  right: 0;
   top: calc(400px + 200px + 100px);
   text-transform: inherit;
-  text-align: left;
+  text-align: center;
   color: white;
   font-weight: 800;
   line-height: 1.5em;
   height: 1.5em;
+  width: calc(300px * 2 + 400px);
   font-size: 1.3em;
 }
 .reveal .slides section[data-background].speaker-slide h2 span {
@@ -150,12 +168,15 @@
 .reveal .slides section[data-background].speaker-slide h3.icon-mail:before {
   content: '\e8c8';
 }
+.reveal .slides section[data-background].speaker-slide h3[class^='icon'] > a {
+  color: white;
+}
 .reveal .slides section[data-background].speaker-slide h3.icon-rule:before {
   content: '\e81d';
 }
 .reveal .slides section[data-background].speaker-slide img[alt*='speaker'] {
   position: absolute;
-  right: calc(200px + 100px);
+  right: 300px;
   top: 200px;
   width: 400px;
   margin-top: 20px;
@@ -167,16 +188,25 @@
 .reveal .slides section[data-background].speaker-slide img[alt*='company'] {
   position: absolute;
   top: 850px;
-  left: 550px;
+  left: 350px;
   max-width: 400px;
   max-height: 200px;
 }
 .reveal .slides section[data-background].speaker-slide img[alt*='badge'] {
   position: absolute;
-  top: 750px;
-  right: 500px;
-  max-width: 300px;
-  max-height: 300px;
+  top: 800px;
+  right: 400px;
+  max-width: 250px;
+  max-height: 250px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='first-badge'] {
+  right: 700px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='second-badge'] {
+  right: 400px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='third-badge'] {
+  right: 100px;
 }
 .reveal .slides section[data-background].speaker-slide.blue img[alt*='speaker'] {
   border-color: #575eaa;
@@ -221,6 +251,17 @@
 .reveal .slides section.sfeir-specific-slide[class*='transition'].green h1 {
   background: linear-gradient(to right, #00bbc5ff, #0ab580ff);
 }
+.reveal .slides section[class*='transition'].bg-blue h1,
+.reveal .slides section[class*='transition'].bg-green h1,
+.reveal .slides section[class*='transition'].bg-pink h1,
+.reveal .slides section.sfeir-basic-slide[class*='transition'].bg-blue h1,
+.reveal .slides section.sfeir-basic-slide[class*='transition'].bg-green h1,
+.reveal .slides section.sfeir-basic-slide[class*='transition'].bg-pink h1,
+.reveal .slides section.sfeir-specific-slide[class*='transition'].bg-blue h1,
+.reveal .slides section.sfeir-specific-slide[class*='transition'].bg-green h1,
+.reveal .slides section.sfeir-specific-slide[class*='transition'].bg-pink h1 {
+  background: none;
+}
 .reveal .slides section[class*='transition'].underline h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].underline h1,
 .reveal .slides section.sfeir-specific-slide[class*='transition'].underline h1 {
@@ -252,22 +293,16 @@
   background: #575eaa;
 }
 .reveal .slides section[class*='transition'].left h1,
-.reveal .slides section[class*='transition'].right h1,
-.reveal .slides section.sfeir-basic-slide[class*='transition'].left h1,
-.reveal .slides section.sfeir-basic-slide[class*='transition'].right h1,
-.reveal .slides section.sfeir-specific-slide[class*='transition'].left h1,
-.reveal .slides section.sfeir-specific-slide[class*='transition'].right h1 {
-  margin-left: initial;
-}
-.reveal .slides section[class*='transition'].left h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].left h1,
 .reveal .slides section.sfeir-specific-slide[class*='transition'].left h1 {
+  margin-left: initial;
   text-align: left;
 }
 .reveal .slides section[class*='transition'].right h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].right h1,
 .reveal .slides section.sfeir-specific-slide[class*='transition'].right h1 {
-  text-align: left;
+  margin-right: initial;
+  text-align: right;
 }
 .reveal .slides section[class*='transition'].top h1,
 .reveal .slides section.sfeir-basic-slide[class*='transition'].top h1,
@@ -278,6 +313,11 @@
 .reveal .slides section.sfeir-basic-slide[class*='transition'].bottom h1,
 .reveal .slides section.sfeir-specific-slide[class*='transition'].bottom h1 {
   margin-top: 800px;
+}
+.reveal .slides section[class*='transition'].bg-white:not(h1),
+.reveal .slides section.sfeir-basic-slide[class*='transition'].bg-white:not(h1),
+.reveal .slides section.sfeir-specific-slide[class*='transition'].bg-white:not(h1) {
+  color: #434343;
 }
 
 .reveal .slides section[class*='transition-left'] h1,
@@ -294,12 +334,6 @@
   margin-right: initial;
 }
 
-.reveal .backgrounds div.slide-background.transition.bg-white,
-.reveal .backgrounds div.slide-background.transition.bg-blue,
-.reveal .backgrounds div.slide-background.transition.bg-green,
-.reveal .backgrounds div.slide-background.transition.bg-pink {
-  position: relative;
-}
 .reveal .backgrounds div.slide-background.transition.bg-white:after,
 .reveal .backgrounds div.slide-background.transition.bg-blue:after,
 .reveal .backgrounds div.slide-background.transition.bg-green:after,
@@ -311,39 +345,41 @@
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-white:after {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-blue::after {
-  background: rgba(87, 94, 170, 0.7);
+  background: rgba(87, 94, 170, 0.6);
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-green::after {
-  background: rgba(10, 181, 128, 0.7);
+  background: rgba(10, 181, 128, 0.6);
 }
 
 .reveal .backgrounds div.slide-background.transition.bg-pink::after {
-  background: rgba(221, 51, 85, 0.7);
+  background: rgba(221, 51, 85, 0.6);
 }
 
-.with-code-dark {
+.with-code-dark,
+.with-code-bg-dark {
   /*
 
 Darcula color scheme from the JetBrains family of IDEs
 
 */
 }
-.with-code-dark .hljs {
+.with-code-dark .hljs,
+.with-code-bg-dark .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
   background: #2b2b2b;
-}
-.with-code-dark .hljs {
   color: #bababa;
 }
 .with-code-dark .hljs-strong,
-.with-code-dark .hljs-emphasis {
+.with-code-dark .hljs-emphasis,
+.with-code-bg-dark .hljs-strong,
+.with-code-bg-dark .hljs-emphasis {
   color: #a8a8a2;
 }
 .with-code-dark .hljs-bullet,
@@ -351,14 +387,23 @@ Darcula color scheme from the JetBrains family of IDEs
 .with-code-dark .hljs-link,
 .with-code-dark .hljs-number,
 .with-code-dark .hljs-regexp,
-.with-code-dark .hljs-literal {
+.with-code-dark .hljs-literal,
+.with-code-bg-dark .hljs-bullet,
+.with-code-bg-dark .hljs-quote,
+.with-code-bg-dark .hljs-link,
+.with-code-bg-dark .hljs-number,
+.with-code-bg-dark .hljs-regexp,
+.with-code-bg-dark .hljs-literal {
   color: #6896ba;
 }
 .with-code-dark .hljs-code,
-.with-code-dark .hljs-selector-class {
+.with-code-dark .hljs-selector-class,
+.with-code-bg-dark .hljs-code,
+.with-code-bg-dark .hljs-selector-class {
   color: #a6e22e;
 }
-.with-code-dark .hljs-emphasis {
+.with-code-dark .hljs-emphasis,
+.with-code-bg-dark .hljs-emphasis {
   font-style: italic;
 }
 .with-code-dark .hljs-keyword,
@@ -366,13 +411,21 @@ Darcula color scheme from the JetBrains family of IDEs
 .with-code-dark .hljs-section,
 .with-code-dark .hljs-attribute,
 .with-code-dark .hljs-name,
-.with-code-dark .hljs-variable {
+.with-code-dark .hljs-variable,
+.with-code-bg-dark .hljs-keyword,
+.with-code-bg-dark .hljs-selector-tag,
+.with-code-bg-dark .hljs-section,
+.with-code-bg-dark .hljs-attribute,
+.with-code-bg-dark .hljs-name,
+.with-code-bg-dark .hljs-variable {
   color: #cb7832;
 }
-.with-code-dark .hljs-params {
+.with-code-dark .hljs-params,
+.with-code-bg-dark .hljs-params {
   color: #b9b9b9;
 }
-.with-code-dark .hljs-string {
+.with-code-dark .hljs-string,
+.with-code-bg-dark .hljs-string {
   color: #6a8759;
 }
 .with-code-dark .hljs-subst,
@@ -385,12 +438,26 @@ Darcula color scheme from the JetBrains family of IDEs
 .with-code-dark .hljs-selector-pseudo,
 .with-code-dark .hljs-template-tag,
 .with-code-dark .hljs-template-variable,
-.with-code-dark .hljs-addition {
+.with-code-dark .hljs-addition,
+.with-code-bg-dark .hljs-subst,
+.with-code-bg-dark .hljs-type,
+.with-code-bg-dark .hljs-built_in,
+.with-code-bg-dark .hljs-builtin-name,
+.with-code-bg-dark .hljs-symbol,
+.with-code-bg-dark .hljs-selector-id,
+.with-code-bg-dark .hljs-selector-attr,
+.with-code-bg-dark .hljs-selector-pseudo,
+.with-code-bg-dark .hljs-template-tag,
+.with-code-bg-dark .hljs-template-variable,
+.with-code-bg-dark .hljs-addition {
   color: #e0c46c;
 }
 .with-code-dark .hljs-comment,
 .with-code-dark .hljs-deletion,
-.with-code-dark .hljs-meta {
+.with-code-dark .hljs-meta,
+.with-code-bg-dark .hljs-comment,
+.with-code-bg-dark .hljs-deletion,
+.with-code-bg-dark .hljs-meta {
   color: #7f7f7f;
 }
 
@@ -398,15 +465,17 @@ Darcula color scheme from the JetBrains family of IDEs
   background-color: #3f3f3f;
 }
 
+.reveal .slides section.with-code-dark:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) h1,
 .reveal .slides section.with-code-dark:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) h2 {
   color: white;
 }
 
 .reveal .slides section.with-code pre,
-.reveal .slides section.with-code-dark pre {
+.reveal .slides section.with-code-dark pre,
+.reveal .slides section.with-code-bg-dark pre {
   display: block;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   text-align: left;
   font-family: monospace;
@@ -414,7 +483,8 @@ Darcula color scheme from the JetBrains family of IDEs
   word-wrap: break-word;
 }
 .reveal .slides section.with-code pre code,
-.reveal .slides section.with-code-dark pre code {
+.reveal .slides section.with-code-dark pre code,
+.reveal .slides section.with-code-bg-dark pre code {
   display: block;
   padding: 10px;
   overflow: auto;
@@ -425,33 +495,50 @@ Darcula color scheme from the JetBrains family of IDEs
   margin-bottom: 20px;
 }
 .reveal .slides section.with-code pre code span,
-.reveal .slides section.with-code-dark pre code span {
+.reveal .slides section.with-code-dark pre code span,
+.reveal .slides section.with-code-bg-dark pre code span {
   line-height: 1.5em;
 }
 
 .reveal .slides section.with-code pre.big-code:not(.literal),
-.reveal .slides section.with-code-dark pre.big-code:not(.literal) {
-  position: absolute;
-  top: 20vh;
+.reveal .slides section.with-code-dark pre.big-code:not(.literal),
+.reveal .slides section.with-code-bg-dark pre.big-code:not(.literal) {
+  position: relative;
+  top: 0;
 }
 .reveal .slides section.with-code pre.big-code:not(.literal) code,
-.reveal .slides section.with-code-dark pre.big-code:not(.literal) code {
+.reveal .slides section.with-code-dark pre.big-code:not(.literal) code,
+.reveal .slides section.with-code-bg-dark pre.big-code:not(.literal) code {
   font-size: 1.5em;
   line-height: 2.1em;
+}
+.reveal .slides section.with-code pre.big-code:not(.literal).alone,
+.reveal .slides section.with-code-dark pre.big-code:not(.literal).alone,
+.reveal .slides section.with-code-bg-dark pre.big-code:not(.literal).alone {
+  position: absolute;
+  top: 20vh;
 }
 
 .reveal .slides section.with-code.consolas pre,
 .reveal .slides section.with-code.consolas pre code,
 .reveal .slides section.with-code-dark.consolas pre,
-.reveal .slides section.with-code-dark.consolas pre code {
+.reveal .slides section.with-code-dark.consolas pre code,
+.reveal .slides section.with-code-bg-dark.consolas pre,
+.reveal .slides section.with-code-bg-dark.consolas pre code {
   font-family: 'Consolas';
 }
 
 .reveal .slides section.with-code.inconsolata pre,
 .reveal .slides section.with-code.inconsolata pre code,
 .reveal .slides section.with-code-dark.inconsolata pre,
-.reveal .slides section.with-code-dark.inconsolata pre code {
+.reveal .slides section.with-code-dark.inconsolata pre code,
+.reveal .slides section.with-code-bg-dark.inconsolata pre,
+.reveal .slides section.with-code-bg-dark.inconsolata pre code {
   font-family: 'Inconsolata';
+}
+
+.reveal .slides section.with-code-bg-dark pre {
+  background-color: #3f3f3f;
 }
 
 .reveal .slides section.sfeir-basic-slide.exercice:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) {
@@ -532,7 +619,7 @@ Darcula color scheme from the JetBrains family of IDEs
 .reveal .slides section.sfeir-basic-slide.exercice:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) ol,
 .reveal .slides section.sfeir-basic-slide.exercice:not(.sfeir-specific-slide):not(.stack):not([class*='transition']) p {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .reveal .slides section.school-presentation .wifi {

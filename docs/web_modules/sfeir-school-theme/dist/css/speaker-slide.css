@@ -1,0 +1,133 @@
+/**
+* Custom Properties
+*/
+:root {
+  --code-bg: #3f3f3f;
+  --light-grey: #ddd;
+  --white: white;
+  --medium-grey: #817c7c;
+  --black: #434343;
+  --dark-grey: #2a3244;
+  --dark-grey-alpha: rgba(61, 67, 73, 0.7);
+  --red: #e74c3c;
+  --sfeir-pink: #dd3355;
+  --sfeir-blue: #575eaa;
+  --sfeir-green: #0ab580;
+}
+
+.reveal .slides section[data-background].speaker-slide {
+  height: 800px;
+  text-transform: inherit;
+}
+.reveal .slides section[data-background].speaker-slide h1 {
+  text-transform: inherit;
+  text-align: left;
+  font-size: 2em;
+  margin-top: 200px;
+  margin-left: 200px;
+  font-weight: 600;
+}
+.reveal .slides section[data-background].speaker-slide h2 {
+  position: absolute;
+  right: 0;
+  top: calc(400px + 200px + 100px);
+  text-transform: inherit;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  line-height: 1.5em;
+  height: 1.5em;
+  width: calc(300px * 2 + 400px);
+  font-size: 1.3em;
+}
+.reveal .slides section[data-background].speaker-slide h2 span {
+  padding-right: 15px;
+  background: linear-gradient(to right, #ee0f50ff, #fa8b88ff);
+}
+.reveal .slides section[data-background].speaker-slide h3 {
+  position: absolute;
+  text-transform: inherit;
+  text-align: left;
+  left: 200px;
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 20px;
+}
+.reveal .slides section[data-background].speaker-slide h3:before {
+  font-family: 'sfeir';
+  content: '\e8c8';
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 50px;
+  height: 50px;
+}
+.reveal .slides section[data-background].speaker-slide h3.icon-first {
+  top: calc(200px + 300px);
+}
+.reveal .slides section[data-background].speaker-slide h3.icon-second {
+  top: calc(200px + 400px);
+}
+.reveal .slides section[data-background].speaker-slide h3.icon-third {
+  top: calc(200px + 500px);
+}
+.reveal .slides section[data-background].speaker-slide h3.icon-twitter:before {
+  content: '\ec98';
+}
+.reveal .slides section[data-background].speaker-slide h3.icon-mail:before {
+  content: '\e8c8';
+}
+.reveal .slides section[data-background].speaker-slide h3[class^='icon'] > a {
+  color: white;
+}
+.reveal .slides section[data-background].speaker-slide h3.icon-rule:before {
+  content: '\e81d';
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='speaker'] {
+  position: absolute;
+  right: 300px;
+  top: 200px;
+  width: 400px;
+  margin-top: 20px;
+  border-radius: 400px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #dd3355;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='company'] {
+  position: absolute;
+  top: 850px;
+  left: 350px;
+  max-width: 400px;
+  max-height: 200px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='badge'] {
+  position: absolute;
+  top: 800px;
+  right: 400px;
+  max-width: 250px;
+  max-height: 250px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='first-badge'] {
+  right: 700px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='second-badge'] {
+  right: 400px;
+}
+.reveal .slides section[data-background].speaker-slide img[alt*='third-badge'] {
+  right: 100px;
+}
+.reveal .slides section[data-background].speaker-slide.blue img[alt*='speaker'] {
+  border-color: #575eaa;
+}
+.reveal .slides section[data-background].speaker-slide.blue h2 span {
+  background: linear-gradient(to right, #00b6e5ff, #575eaaff);
+}
+.reveal .slides section[data-background].speaker-slide.green img[alt*='speaker'] {
+  border-color: #0ab580;
+}
+.reveal .slides section[data-background].speaker-slide.green h2 span {
+  background: linear-gradient(to right, #00bbc5ff, #0ab580ff);
+}
+
+/*# sourceMappingURL=speaker-slide.css.map */
