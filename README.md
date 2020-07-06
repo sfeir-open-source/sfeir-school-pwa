@@ -12,14 +12,14 @@ You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-
 
 # Run project
 
-    # Install dependencies
-    `npm i`
+## Install dependencies
+`npm i`
 
-    # Run application
-    `npm start`
+## Run application
+`npm start`
 
-    # Run step
-    `npm start --step=XXX `
+## Run step
+`npm start --step=XXX`
 
 # Steps
 
