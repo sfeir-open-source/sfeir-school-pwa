@@ -23,12 +23,12 @@ You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-
 
 # Steps
 
-Each exercice has two directories:
+Each exercise has two directories:
 
 - a clean directory to get you started (ex: step-3)
 - a solution directory (ex: step-3-solution)
 
-to go a step run the npm script with `--step=XX` :
+to go to a step run the npm script with `--step=XX` :
 
-- `npm start --step=3` for an exercice
+- `npm start --step=3` for an exercise
 - `npm start --step=3-solution` for the solution
