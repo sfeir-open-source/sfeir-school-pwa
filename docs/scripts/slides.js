@@ -45,7 +45,6 @@ function cacheSlides() {
     '03-cache/00-TITLE.md',
     '03-cache/01-app-shell-intro.md',
     '03-cache/02-app-shell-exercice.md',
-    '03-cache/03-app-shell-mesure-speed.md',
     /* cache-strategies */
     '03-cache/04-cache-strategies-intro.md',
     /* offline */
