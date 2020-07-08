@@ -93,7 +93,7 @@ Notes: Commencer par le plus petit, et en faire celui par défaut
 # Media queries en javascript
 
 ```javascript
-var media = 'screen and (min-width: 780px)';
+const media = 'screen and (min-width: 780px)';
 
 if (window.matchMedia(media).matches) {
   // ajouter quelque chose pour les écrans de minimum 780px

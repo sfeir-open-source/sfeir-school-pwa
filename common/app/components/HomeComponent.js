@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit-element';
-import { PeoplesService } from '../sevices/People.js';
+import { PeoplesService } from '../services/People.js';
 
 export class Home extends LitElement {
   constructor() {

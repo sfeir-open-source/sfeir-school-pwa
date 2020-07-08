@@ -93,7 +93,7 @@ https://developers.google.com/web/fundamentals/engage-and-retain/app-install-ban
 main.js
 
 ```javascript
-window.addEventListener('beforeinstallprompt', function(e) {
+window.addEventListener('beforeinstallprompt', e => {
   ...
 });
 ```
@@ -109,9 +109,9 @@ window.addEventListener('beforeinstallprompt', function(e) {
 # Bannière : L’évènement beforeinstallprompt
 
 ```javascript
-window.addEventListener('beforeinstallprompt', function(e) {
-  e.userChoice.then(function(choiceResult) {
-    if (choiceResult.outcome == 'dismissed') {
+window.addEventListener('beforeinstallprompt', e => {
+  e.userChoice.then(choiceResult => {
+    if (choiceResult.outcome === 'dismissed') {
       console.log('User cancelled home screen install');
     } else {
       console.log('User added to home screen');
@@ -133,9 +133,9 @@ window.addEventListener('beforeinstallprompt', function(e) {
 <br>
 
 ```javascript
-var deferredPrompt;
+let deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', function(e) {
+window.addEventListener('beforeinstallprompt', e => {
   e.preventDefault();
   deferredPrompt = e;
   return false;
@@ -155,7 +155,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
 <br>
 
 ```javascript
-btnSave.addEventListener('click', function() {
+btnSave.addEventListener('click', () => {
   if (deferredPrompt !== undefined) {
     deferredPrompt.prompt();
   }
@@ -175,11 +175,11 @@ btnSave.addEventListener('click', function() {
 <br>
 
 ```javascript
-btnSave.addEventListener('click', function() {
+btnSave.addEventListener('click', () => {
   if (deferredPrompt !== undefined) {
     deferredPrompt.prompt();
 
-    deferredPrompt.userChoice.then(function(choiceResult) {
+    deferredPrompt.userChoice.then(choiceResult => {
       console.log(choiceResult.outcome);
       deferredPrompt = null;
     });
@@ -200,7 +200,7 @@ btnSave.addEventListener('click', function() {
 <br>
 
 ```javascript
-window.addEventListener('beforeinstallprompt', function(e) {
+window.addEventListener('beforeinstallprompt', e => {
   console.log('beforeinstallprompt Event fired');
   e.preventDefault();
   return false;

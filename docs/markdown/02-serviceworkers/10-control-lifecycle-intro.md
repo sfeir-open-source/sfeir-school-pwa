@@ -22,7 +22,7 @@ Montrer à quoi sert le "update on reload" & "unregister" & "update" & numéro d
 ### Elle permet d'étendre la durée de vie de l'évènement
 
 ```javascript
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   event
     .waitUntil
     //Promise
@@ -50,7 +50,7 @@ Fixé avec waitUntil, qui va attendre la résolution de la dernière promise a l
 ### Force le service en attente à devenir le service worker actif
 
 ```javascript
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   // The promise that skipWaiting() returns
   // can be safely ignored.
   self.skipWaiting();
@@ -91,7 +91,7 @@ The claim() method of the of the Clients interface allows an active Service Work
 ### Force l’activation du service worker en attente ⇢ qui devient le worker actif de la page
 
 ```javascript
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());
 });
 ```

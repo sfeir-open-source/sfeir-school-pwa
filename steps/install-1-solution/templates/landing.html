@@ -50,7 +50,7 @@
       if (navigator.serviceWorker) {
         navigator.serviceWorker
           .register('service-worker.js')
-          .then(function() {
+          .then(() => {
             console.log('Service worker installed');
           })
           .catch(err => {
@@ -61,7 +61,7 @@
 
     <script>
       const installButton = document.getElementById('installButton');
-      window.addEventListener('beforeinstallprompt', function(e) {
+      window.addEventListener('beforeinstallprompt', (e) => {
         //e.preventDefault();
         deferredEvent = e;
         //Show button
@@ -69,15 +69,15 @@
       });
       let deferredEvent;
       console.log(installButton);
-      installButton.addEventListener('click', function onInstall() {
+      installButton.addEventListener('click', () => {
         if (deferredEvent !== undefined) {
           // The user has had a postive interaction with our app and Chrome
           // has tried to prompt previously, so let's show the prompt.
           deferredEvent.prompt();
           // Follow what the user has done with the prompt.
-          deferredEvent.userChoice.then(function(choiceResult) {
+          deferredEvent.userChoice.then(choiceResult => {
             console.log(choiceResult.outcome);
-            if (choiceResult.outcome == 'dismissed') {
+            if (choiceResult.outcome === 'dismissed') {
               console.log('User cancelled home screen install');
             } else {
               console.log('User added to home screen');

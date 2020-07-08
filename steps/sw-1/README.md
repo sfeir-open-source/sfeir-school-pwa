@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
 // Enregistrement de mon service worker
 navigator.serviceWorker
   .register('../service-worker.js')
-  .then(function() {
+  .then(() => {
     console.log('Service worker installed');
   })
   .catch(err => {

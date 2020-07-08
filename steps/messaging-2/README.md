@@ -20,7 +20,7 @@ navigator.serviceWorker.controller.postMessage(message, [msg_chan.port2]);
 ## Page web -> Service Worker : Réception
 
 ```javascript
-self.addEventListener('message', function(event) {
+self.addEventListener('message', event => {
   console.log('SW Received Message: ' + event.data);
 });
 ```

@@ -29,7 +29,7 @@ Connexion toujours disponible ?
 main.js
 
 ```javascript
-navigator.serviceWorker.ready.then(function(swRegistration) {
+navigator.serviceWorker.ready.then(swRegistration => {
   return swRegistration.sync.register('myFirstSync');
 });
 ```
@@ -39,8 +39,8 @@ navigator.serviceWorker.ready.then(function(swRegistration) {
 service-worker.js
 
 ```javascript
-self.addEventListener('sync', function(event) {
-  if (event.tag == 'myFirstSync') {
+self.addEventListener('sync', event => {
+  if (event.tag === 'myFirstSync') {
     event.waitUntil(doSomeStuff());
   }
 });
