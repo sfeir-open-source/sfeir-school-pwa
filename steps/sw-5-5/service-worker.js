@@ -1,6 +1,6 @@
 console.log('Service worker ok =D');
 
-var cacheAppShellStatic = [
+const cacheAppShellStatic = [
   '/',
   '/index.html',
   '/mdl/material.min.css',
@@ -12,21 +12,21 @@ var cacheAppShellStatic = [
   '/offline.html'
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   console.log('event install');
   event.waitUntil(
     caches
       .open('cache-static')
-      .then(function(cache) {
+      .then(cache => {
         return cache.addAll(cacheAppShellStatic);
       })
-      .then(function() {
+      .then(() => {
         return self.skipWaiting();
       })
   );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
   console.log('event activate');
   event.waitUntil(
     // exercice 5-5: update this section and add your code here
@@ -34,19 +34,19 @@ self.addEventListener('activate', function(event) {
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(response => {
       return (
         response ||
         fetch(event.request)
-          .then(function(responseFetch) {
-            return caches.open('cache-dynamic').then(function(cache) {
+          .then(responseFetch => {
+            return caches.open('cache-dynamic').then(cache => {
               cache.put(event.request, responseFetch.clone());
               return responseFetch;
             });
           })
-          .catch(function() {
+          .catch(() => {
             return event.respondWith(caches.match(new Request('offline.html')));
           })
       );
