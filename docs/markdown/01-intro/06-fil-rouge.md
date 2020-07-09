@@ -28,13 +28,7 @@ Lighthouse => "Generate report"
 CLI:
 
 ```shell
-npm i -g lighthouse
-```
-
-<!-- .element: class="big-code" -->
-
-```shell
-lighthouse http://localhost:8080/ --view
+npx lighthouse http://localhost:8080/ --view
 ```
 
 <!-- .element: class="big-code" -->
