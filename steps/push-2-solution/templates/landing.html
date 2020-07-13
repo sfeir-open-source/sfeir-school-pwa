@@ -86,7 +86,7 @@
         installButton.classList.add('show');
       });
       let deferredEvent;
-      installButton.addEventListener('click', () => {
+      installButton.addEventListener('click', _=> {
         if (deferredEvent !== undefined) {
           // The user has had a postive interaction with our app and Chrome
           // has tried to prompt previously, so let's show the prompt.
@@ -131,9 +131,7 @@
 
             isSubscribed = true;
           })
-          .catch(err => {
-            console.error('Failed to subscribe the user: ', err);
-          });
+          .catch(err => console.error('Failed to subscribe the user: ', err));
       }
 
       function unsubscribeUser() {
@@ -144,10 +142,8 @@
               return subscription.unsubscribe();
             }
           })
-          .catch(error => {
-            console.error('Error unsubscribing', error);
-          })
-          .then(() => {
+          .catch(error => console.error('Error unsubscribing', error))
+          .then(_=> {
             updateSubscriptionOnServer(null);
 
             console.log('User is unsubscribed.');

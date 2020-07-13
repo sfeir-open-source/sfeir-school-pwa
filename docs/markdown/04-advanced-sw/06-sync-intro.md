@@ -29,9 +29,7 @@ Connexion toujours disponible ?
 main.js
 
 ```javascript
-navigator.serviceWorker.ready.then(swRegistration => {
-  return swRegistration.sync.register('myFirstSync');
-});
+navigator.serviceWorker.ready.then(swRegistration => swRegistration.sync.register('myFirstSync'));
 ```
 
 <!-- .element: class="big-code" -->

@@ -34,37 +34,37 @@ install =>
 # Service Worker : AddEventListener
 
 ```javascript
-self.addEventListener('install', event => { ... });
+self.addEventListener('install', event => ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('activate', event => { ... });
+self.addEventListener('activate', event =>  ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('message', event => { ... });
+self.addEventListener('message', event => ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('fetch', event => { ... });
+self.addEventListener('fetch', event => ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('push', event => { ... });
+self.addEventListener('push', event =>  ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('sync', event => { ... });
+self.addEventListener('sync', event => ... );
 ```
 
 <!-- .element: class="big-code" -->

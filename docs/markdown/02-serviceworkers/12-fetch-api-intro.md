@@ -24,11 +24,7 @@
 
 ```javascript
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    fetch(event.request).then(responseFetch => {
-      return responseFetch;
-    })
-  );
+  event.respondWith(fetch(event.request).then(responseFetch => responseFetch));
 });
 ```
 

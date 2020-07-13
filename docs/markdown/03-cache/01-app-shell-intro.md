@@ -77,9 +77,7 @@ Ouvrir un cache et ajouter un ensemble de fichiers
 <br>
 
 ```javascript
-caches.open('cache-name').then(cache => {
-  cache.addAll(/* Array of files path */);
-});
+caches.open('cache-name').then(cache => cache.addAll(/* Array of files path */));
 ```
 
 <!-- .element: class="big-code" -->
@@ -121,12 +119,12 @@ Exécuter une requête et mettre le résultat dans le cache
 <br>
 
 ```javascript
-fetch(event.request).then(response => {
-  return caches.open('dynamic-cache').then(cache => {
+fetch(event.request).then(response =>
+  caches.open('dynamic-cache').then(cache => {
     cache.put(event.request, response.clone());
     return response;
-  });
-});
+  })
+);
 ```
 
 <!-- .element: class="big-code" -->
