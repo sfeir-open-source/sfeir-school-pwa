@@ -17,12 +17,8 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches
       .open('cache-static')
-      .then(cache => {
-        return cache.addAll(cacheAppShellStatic);
-      })
-      .then(() => {
-        return self.skipWaiting();
-      })
+      .then(cache => cache.addAll(cacheAppShellStatic))
+      .then(_ => self.skipWaiting())
   );
 });
 

@@ -229,13 +229,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ```javascript
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js')
-    .then(reg => {
-      reg.pushManager.getSubscription()
-        .then(sub => {
-          console.log('Subscription Info', sub);
-        });
-    });
+  navigator.serviceWorker
+    .register('/service-worker.js')
+    .then(reg => reg.pushManager.getSubscription())
+    .then(sub => console.log('Subscription Info', sub));
+}
 ```
 
 <!-- .element: class="big-code" -->
@@ -248,8 +246,8 @@ if ('serviceWorker' in navigator) {
 
 ```javascript
 function subscribe() {
-  navigator.serviceWorker.getRegistration().then(reg => {
-    reg.pushManager.subscribe({userVisibleOnly: true})
+  navigator.serviceWorker.getRegistration().then(reg => reg.pushManager.subscribe({userVisibleOnly: true});
+}
 
 ```
 
@@ -263,13 +261,11 @@ function subscribe() {
 
 ```javascript
 function subscribe() {
-  navigator.serviceWorker.getRegistration().then(reg => {
-    reg.pushManager.subscribe({userVisibleOnly: true})
-    .then(sub => {
-        console.log('Update Server with End Point', sub);
-      }).catch(error => {
-        console.log('Unable to subscribe user', error);
-      });
+  navigator.serviceWorker.getRegistration()
+    .then(reg => reg.pushManager.subscribe({userVisibleOnly: true})
+    .then(sub => console.log('Update Server with End Point', sub))
+    .catch(error => console.log('Unable to subscribe user', error));
+}
 
 ```
 
@@ -299,7 +295,7 @@ reg.pushManager.getSubscription().then(sub => {
 # Traiter une notification
 
 ```javascript
-self.addEventListener('push', event => {...}
+self.addEventListener('push', event => {...});
 ```
 
 <!-- .element: class="big-code" -->
@@ -313,12 +309,12 @@ self.addEventListener('push', event => {...}
 ```javascript
 self.addEventListener('push', event => {
     ...
-    self.registration.showNotification('Title', {
+    return self.registration.showNotification('Title', {
         body: 'I\'m the message body',
         icon: 'images/icons.png',
         tag: 'tag'
       })
-}
+})
 ```
 
 <!-- .element: class="big-code" -->
@@ -330,9 +326,7 @@ self.addEventListener('push', event => {
 # De vrais données
 
 ```javascript
-fetch('/notification.json').then(response => {
-  return response.json();
-});
+fetch('/notification.json').then(response => response.json());
 ```
 
 <!-- .element: class="big-code" -->
@@ -345,9 +339,7 @@ fetch('/notification.json').then(response => {
 
 ```javascript
 fetch('/notification.json')
-  .then(response => {
-    return response.json();
-  })
+  .then(response => response.json())
   .then(data => {
     self.registration.showNotification(data.title, {
       body: data.body,

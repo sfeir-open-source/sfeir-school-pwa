@@ -43,12 +43,8 @@
       if (navigator.serviceWorker) {
         navigator.serviceWorker
           .register('service-worker.js')
-          .then(function() {
-            console.log('Service worker installed');
-          })
-          .catch(err => {
-            console.error('Error registering Service Worker', err);
-          });
+          .then(_=> console.log('Service worker installed'))
+          .catch(err => console.error('Error registering Service Worker', err));
       }
     </script>
   </body>

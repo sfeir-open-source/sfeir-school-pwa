@@ -38,9 +38,7 @@ self.addEventListener('message', event => {
 main.js
 
 ```javascript
-navigator.serviceWorker.addEventListener('message', event => {
-  alert(event.data);
-});
+navigator.serviceWorker.addEventListener('message', event => alert(event.data));
 ```
 
 <!-- .element: class="big-code" -->

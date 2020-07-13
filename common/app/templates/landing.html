@@ -54,45 +54,39 @@
       if (navigator.serviceWorker) {
         navigator.serviceWorker
           .register('service-worker.js')
-          .then(function(reg) {
+          .then(reg => {
             console.log('Service worker installed');
-            reg.pushManager.getSubscription().then(function(pushSubscription) {
+            reg.pushManager.getSubscription().then(pushSubscription => {
               if (!pushSubscription) {
-                navigator.serviceWorker.getRegistration().then(function(reg) {
+                navigator.serviceWorker.getRegistration().then(reg => {
                   reg.pushManager
                     .subscribe({ userVisibleOnly: true })
-                    .then(function(sub) {
-                      console.log('Update Server with End Point', sub);
-                    })
-                    .catch(function(error) {
-                      console.log('Unable to subscribe user', error);
-                    });
+                    .then(sub => console.log('Update Server with End Point', sub))
+                    .catch(error => console.log('Unable to subscribe user', error));
                 });
               }
             });
           })
-          .catch(err => {
-            console.error('Error registering Service Worker', err);
-          });
+          .catch(err => console.error('Error registering Service Worker', err));
       }
 
       const installButton = document.getElementById('installButton');
-      window.addEventListener('beforeinstallprompt', function(e) {
+      window.addEventListener('beforeinstallprompt', e => {
         e.preventDefault();
         deferredEvent = e;
         //Show button
         installButton.classList.add('show');
       });
-      var deferredEvent;
-      installButton.addEventListener('click', function onInstall() {
+      let deferredEvent;
+      installButton.addEventListener('click', _=> {
         if (deferredEvent !== undefined) {
           // The user has had a postive interaction with our app and Chrome
           // has tried to prompt previously, so let's show the prompt.
           deferredEvent.prompt();
           // Follow what the user has done with the prompt.
-          deferredEvent.userChoice.then(function(choiceResult) {
+          deferredEvent.userChoice.then(choiceResult => {
             console.log(choiceResult.outcome);
-            if (choiceResult.outcome == 'dismissed') {
+            if (choiceResult.outcome === 'dismissed') {
               console.log('User cancelled home screen install');
             } else {
               console.log('User added to home screen');

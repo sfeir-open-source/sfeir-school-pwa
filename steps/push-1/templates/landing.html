@@ -50,12 +50,8 @@
       if (navigator.serviceWorker) {
         navigator.serviceWorker
           .register('service-worker.js')
-          .then(() => {
-            console.log('Service worker installed');
-          })
-          .catch(err => {
-            console.error('Error registering Service Worker', err);
-          });
+          .then(_=> console.log('Service worker installed'))
+          .catch(err => console.error('Error registering Service Worker', err));
       }
     </script>
 
@@ -68,7 +64,7 @@
         installButton.classList.add('show');
       });
       let deferredEvent;
-      installButton.addEventListener('click', () => {
+      installButton.addEventListener('click', _=> {
         if (deferredEvent !== undefined) {
           // The user has had a postive interaction with our app and Chrome
           // has tried to prompt previously, so let's show the prompt.

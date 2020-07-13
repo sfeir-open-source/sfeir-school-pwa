@@ -48,16 +48,14 @@
           console.log(state);
         };
 
-        const onUpdateFound = (installingSW, isUpdate) => {
-          installingSW.addEventListener('statechange', e => onStateChange(e, isUpdate));
-        };
+        const onUpdateFound = (installingSW, isUpdate) => installingSW.addEventListener('statechange', e => onStateChange(e, isUpdate));
 
         const register = async (swFile) => {
           const isUpdate = Boolean(navigator.serviceWorker.controller);
 
           const registration = await navigator.serviceWorker.register(swFile);
 
-          registration.addEventListener('updatefound', () => onUpdateFound(registration.installing, isUpdate));
+          registration.addEventListener('updatefound', _=> onUpdateFound(registration.installing, isUpdate));
         };
 
         register('service-worker.js');

@@ -17,12 +17,8 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches
       .open('cache-static')
-      .then(cache => {
-        return cache.addAll(cacheAppShellStatic);
-      })
-      .then(() => {
-        return self.skipWaiting();
-      })
+      .then(cache => cache.addAll(cacheAppShellStatic))
+      .then(_ => self.skipWaiting())
   );
 });
 
@@ -36,11 +32,7 @@ self.addEventListener('fetch', event => {
     caches.match(event.request).then(response => {
       return (
         response ||
-        fetch(event.request).catch(error => {
-          return caches.open('cache-static').then(cache => {
-            return cache.match('offline.html');
-          });
-        })
+        fetch(event.request).catch(_ => caches.open('cache-static').then(cache => cache.match('offline.html')))
       );
     })
   );
