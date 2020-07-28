@@ -8,9 +8,8 @@ function introSlides() {
     '01-intro/01-contexte.md',
     '01-intro/02-definition.md',
     '01-intro/03-FIRE.md',
-    '01-intro/04-outils.md',
     '01-intro/05-webapp.md',
-    '01-intro/06-intro-secu.md'
+    '01-intro/06-fil-rouge.md'
   ];
 }
 
@@ -23,18 +22,20 @@ function serviceWorkersSlides() {
     '02-serviceworkers/03-recap-promise.md',
     '02-serviceworkers/04-recap-function.md',
     '02-serviceworkers/05-exercice.md',
-    '02-serviceworkers/06-no-window.md',
+    /* tooling */
+    '02-serviceworkers/06-outils.md',
+    '02-serviceworkers/07-no-window.md',
     /* events */
-    '02-serviceworkers/07-events-intro.md',
+    '02-serviceworkers/08-events-intro.md',
     /* lifecycle */
-    '02-serviceworkers/08-lifecycle-intro.md',
-    '02-serviceworkers/09-lifecycle-exercice.md',
+    '02-serviceworkers/09-lifecycle-intro.md',
+    '02-serviceworkers/10-lifecycle-exercice.md',
     /* control-lifecycle */
-    '02-serviceworkers/10-control-lifecycle-intro.md',
-    '02-serviceworkers/11-control-lifecycle-exercice.md',
+    '02-serviceworkers/11-control-lifecycle-intro.md',
+    '02-serviceworkers/12-control-lifecycle-exercice.md',
     /*  fetch-api */
-    '02-serviceworkers/12-fetch-api-intro.md',
-    '02-serviceworkers/13-fetch-api-exercice.md'
+    '02-serviceworkers/13-fetch-api-intro.md',
+    '02-serviceworkers/14-fetch-api-exercice.md'
   ];
 }
 
