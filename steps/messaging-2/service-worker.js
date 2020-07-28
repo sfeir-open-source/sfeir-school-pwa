@@ -1,12 +1,8 @@
-self.addEventListener('install', function(event) {
-  console.log('event install');
-});
+self.addEventListener('install', _ => console.log('event install'));
 
-self.addEventListener('activate', function(event) {
-  console.log('event activate');
-});
+self.addEventListener('activate', _ => console.log('event activate'));
 
-self.addEventListener('message', function(event) {
+self.addEventListener('message', event => {
   console.log('SW Received Message: ' + event.data);
   // TODO répondre à la page qui a envoyé un message privé
 });

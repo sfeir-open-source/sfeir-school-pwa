@@ -21,7 +21,7 @@ function send_message_to_sw(message) {
 service-worker.js
 
 ```javascript
-self.addEventListener('message', function(event) {
+self.addEventListener('message', event => {
   console.log('SW Received Message: ' + event.data);
   self.clients.matchAll().then(clients => clients.map(client => client.postMessage('Hello All !')));
 });
@@ -38,9 +38,7 @@ self.addEventListener('message', function(event) {
 main.js
 
 ```javascript
-navigator.serviceWorker.addEventListener('message', event => {
-  alert(event.data);
-});
+navigator.serviceWorker.addEventListener('message', event => alert(event.data));
 ```
 
 <!-- .element: class="big-code" -->

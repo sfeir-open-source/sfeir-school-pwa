@@ -31,8 +31,8 @@ swRegistration.pushManager
     userVisibleOnly: true,
     applicationServerKey: applicationServerKey
   })
-  .then(subscription => {})
-  .catch(err => {});
+  .then(subscription => ... )
+  .catch(err => ... );
 
 // Désinscription de l'utilisateur (sur l'objet subscription)
 subscription.unsubscribe();
@@ -42,7 +42,7 @@ Dans le fichier Service Worker
 
 ```javascript
 // Nouvel événement
-self.addEventListener('push', (event) => {})
+self.addEventListener('push', event => ... )
 
 // Affichage d'une notification (return une promise)
 self.registration.showNotification('Title', {
@@ -52,7 +52,7 @@ self.registration.showNotification('Title', {
     })
 
 // Interraction avec une notification (nouvel événement)
-self.addEventListener('notificationclick', (event) => {
+self.addEventListener('notificationclick', event => {
 
 // Fermeture d'une notification depuis le service worker
 event.notification.close();

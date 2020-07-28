@@ -8,7 +8,7 @@ main.js
 function send_direct_message_to_sw(message) {
   return new Promise((resolve, reject) => {
     // Create a Message Channel
-    var msg_chan = new MessageChannel();
+    let msg_chan = new MessageChannel();
     // Handler for recieving message reply from service worker
     msg_chan.port1.onmessage = event => {
       if (event.data.error) {

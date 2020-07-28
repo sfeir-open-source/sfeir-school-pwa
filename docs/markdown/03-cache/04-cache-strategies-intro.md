@@ -97,11 +97,7 @@ service-worker.js
 
 ```javascript
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
-    })
-  );
+  event.respondWith(caches.match(event.request).then(response => response || fetch(event.request)));
 });
 ```
 
@@ -128,11 +124,7 @@ service-worker.js
 
 ```javascript
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    fetch(event.request).catch(() => {
-      return caches.match(event.request);
-    })
-  );
+  event.respondWith(fetch(event.request).catch(_ => caches.match(event.request)));
 });
 ```
 
@@ -155,12 +147,12 @@ service-worker.js
 ```javascript
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.open('dynamic').then(cache => {
-      return fetch(event.request).then(response => {
+    caches.open('dynamic').then(cache =>
+      fetch(event.request).then(response => {
         cache.put(event.request, response.clone());
         return response;
-      });
-    })
+      })
+    )
   );
 });
 ```
@@ -205,7 +197,7 @@ caches
   .then(data => {
     if (!networkDataReceived) updatePage(data);
   })
-  .catch(() => networkUpdate);
+  .catch(_ => networkUpdate);
 ```
 
 <!-- .element: class="big-code" -->
@@ -231,15 +223,15 @@ service-worker.js
 ```javascript
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.open('dynamic').then(cache => {
-      return cache.match(event.request).then(response => {
+    caches.open('dynamic').then(cache =>
+      cache.match(event.request).then(response => {
         const fetchPromise = fetch(event.request).then(networkResponse => {
           cache.put(event.request, networkResponse.clone());
           return networkResponse;
         });
         return response || fetchPromise;
-      });
-    })
+      })
+    )
   );
 });
 ```
@@ -269,7 +261,7 @@ self.addEventListener('fetch', event => {
     caches
       .match(event.request)
       .then(response => response || fetch(event.request))
-      .catch(() => caches.match('offline.html'))
+      .catch(_ => caches.match('offline.html'))
   );
 });
 ```

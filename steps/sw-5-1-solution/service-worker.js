@@ -1,6 +1,6 @@
 console.log('Service worker ok =D');
 
-var cacheAppShellStatic = [
+const cacheAppShellStatic = [
   '/',
   '/index.html',
   '/mdl/material.min.css',
@@ -10,26 +10,22 @@ var cacheAppShellStatic = [
   '/img/logo-app.png'
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   console.log('event install');
   event.waitUntil(
     caches
       .open('cache-static')
-      .then(function(cache) {
-        return cache.addAll(cacheAppShellStatic);
-      })
-      .then(function() {
-        return self.skipWaiting();
-      })
+      .then(cache => cache.addAll(cacheAppShellStatic))
+      .then(_ => self.skipWaiting())
   );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
   console.log('event activate');
   event.waitUntil(self.clients.claim());
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   console.log('fetch:' + url);
 });

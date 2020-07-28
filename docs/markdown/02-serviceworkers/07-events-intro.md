@@ -9,7 +9,7 @@ Notes:
 # Service Worker : AddEventListener
 
 ```javascript
-self.addEventListener('event-name', function(event){
+self.addEventListener('event-name', event => {
   ...
 });
 ```
@@ -34,37 +34,37 @@ install =>
 # Service Worker : AddEventListener
 
 ```javascript
-self.addEventListener('install', function (event) { ... });
+self.addEventListener('install', event => ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('activate', function (event) { ... });
+self.addEventListener('activate', event =>  ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('message', function (event) { ... });
+self.addEventListener('message', event => ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('fetch', function (event) { ... });
+self.addEventListener('fetch', event => ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('push', function (event) { ... });
+self.addEventListener('push', event =>  ... );
 ```
 
 <!-- .element: class="big-code" -->
 
 ```javascript
-self.addEventListener('sync', function (event) { ... });
+self.addEventListener('sync', event => ... );
 ```
 
 <!-- .element: class="big-code" -->

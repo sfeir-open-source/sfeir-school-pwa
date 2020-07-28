@@ -23,12 +23,8 @@
 ### L'API Fetch fournit une interface pour la récupération de ressources
 
 ```javascript
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    fetch(event.request).then(function(responseFetch) {
-      return responseFetch;
-    })
-  );
+self.addEventListener('fetch', event => {
+  event.respondWith(fetch(event.request).then(responseFetch => responseFetch));
 });
 ```
 

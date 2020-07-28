@@ -96,14 +96,14 @@ function notifyMe() {
   // Let's check whether notification permissions have already been granted
   else if (Notification.permission === 'granted') {
     // If it's okay let's create a notification
-    var notification = new Notification('Hi there!');
+    const notification = new Notification('Hi there!');
   }
   // Otherwise, we need to ask the user for permission
   else if (Notification.permission !== 'denied') {
-    Notification.requestPermission(function(permission) {
+    Notification.requestPermission(permission => {
       // If the user accepts, let's create a notification
       if (permission === 'granted') {
-        var notification = new Notification('Hi there!');
+        const notification = new Notification('Hi there!');
       }
     });
   }
@@ -229,13 +229,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ```javascript
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js')
-    .then(function(reg) {
-      reg.pushManager.getSubscription()
-        .then(function(sub) {
-          console.log('Subscription Info', sub);
-        });
-    });
+  navigator.serviceWorker
+    .register('/service-worker.js')
+    .then(reg => reg.pushManager.getSubscription())
+    .then(sub => console.log('Subscription Info', sub));
+}
 ```
 
 <!-- .element: class="big-code" -->
@@ -248,8 +246,8 @@ if ('serviceWorker' in navigator) {
 
 ```javascript
 function subscribe() {
-  navigator.serviceWorker.getRegistration().then(function(reg) {
-    reg.pushManager.subscribe({userVisibleOnly: true})
+  navigator.serviceWorker.getRegistration().then(reg => reg.pushManager.subscribe({userVisibleOnly: true});
+}
 
 ```
 
@@ -263,13 +261,11 @@ function subscribe() {
 
 ```javascript
 function subscribe() {
-  navigator.serviceWorker.getRegistration().then(function(reg) {
-    reg.pushManager.subscribe({userVisibleOnly: true})
-    .then(function(sub) {
-        console.log('Update Server with End Point', sub);
-      }).catch(function(error) {
-        console.log('Unable to subscribe user', error);
-      });
+  navigator.serviceWorker.getRegistration()
+    .then(reg => reg.pushManager.subscribe({userVisibleOnly: true})
+    .then(sub => console.log('Update Server with End Point', sub))
+    .catch(error => console.log('Unable to subscribe user', error));
+}
 
 ```
 
@@ -282,7 +278,7 @@ function subscribe() {
 # Se désabonner
 
 ```javascript
-reg.pushManager.getSubscription().then(function(sub) {
+reg.pushManager.getSubscription().then(sub => {
   if (sub) {
     sub.unsubscribe();
     console.log('Unsubscribe - user has been unsubscribed!');
@@ -299,7 +295,7 @@ reg.pushManager.getSubscription().then(function(sub) {
 # Traiter une notification
 
 ```javascript
-self.addEventListener('push', function(event) {...}
+self.addEventListener('push', event => {...});
 ```
 
 <!-- .element: class="big-code" -->
@@ -311,14 +307,14 @@ self.addEventListener('push', function(event) {...}
 # Traiter une notification
 
 ```javascript
-self.addEventListener('push', function(event) {
+self.addEventListener('push', event => {
     ...
-    self.registration.showNotification('Title', {
+    return self.registration.showNotification('Title', {
         body: 'I\'m the message body',
         icon: 'images/icons.png',
         tag: 'tag'
       })
-}
+})
 ```
 
 <!-- .element: class="big-code" -->
@@ -330,9 +326,7 @@ self.addEventListener('push', function(event) {
 # De vrais données
 
 ```javascript
-fetch('/notification.json').then(function(response) {
-  return response.json();
-});
+fetch('/notification.json').then(response => response.json());
 ```
 
 <!-- .element: class="big-code" -->
@@ -345,10 +339,8 @@ fetch('/notification.json').then(function(response) {
 
 ```javascript
 fetch('/notification.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
+  .then(response => response.json())
+  .then(data => {
     self.registration.showNotification(data.title, {
       body: data.body,
       icon: data.avatar,
@@ -388,7 +380,7 @@ self.registration.showNotification(data.title, {
 # Gérer l'action
 
 ```javascript
-self.addEventListener('notificationclick', function(event) {...});
+self.addEventListener('notificationclick', event => {...});
 ```
 
 <!-- .element: class="big-code" -->
@@ -400,8 +392,8 @@ self.addEventListener('notificationclick', function(event) {...});
 # Gérer l'action
 
 ```javascript
-self.addEventListener('notificationclick', function(event) {
-  var url;
+self.addEventListener('notificationclick', event => {
+  let url;
   event.notification.close();
   if (event.action === 'open') {
     url = 'http://localhost:8080/#/people/' + event.notification.tag;
@@ -418,8 +410,8 @@ self.addEventListener('notificationclick', function(event) {
 # Gérer l'action
 
 ```javascript
-self.addEventListener('notificationclick', function(event) {
-    var url;
+self.addEventListener('notificationclick', event => {
+    let url;
     ...
     clients.openWindow(url);
 });

@@ -50,7 +50,7 @@
       let swRegistration = null;
 
       if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('service-worker.js').then(function(swReg) {
+        navigator.serviceWorker.register('service-worker.js').then(swReg => {
           console.log('Service worker installed');
           swRegistration = swReg;
           initializeUI();
@@ -58,7 +58,7 @@
       }
 
       function initializeUI() {
-        swRegistration.pushManager.getSubscription().then(function(subscription) {
+        swRegistration.pushManager.getSubscription().then(subscription => {
           isSubscribed = !(subscription === null);
 
           updateSubscriptionOnServer(subscription);
@@ -79,22 +79,22 @@
       }
 
       const installButton = document.getElementById('installButton');
-      window.addEventListener('beforeinstallprompt', function(e) {
+      window.addEventListener('beforeinstallprompt', e => {
         e.preventDefault();
         deferredEvent = e;
         //Show button
         installButton.classList.add('show');
       });
-      var deferredEvent;
-      installButton.addEventListener('click', function onInstall() {
+      let deferredEvent;
+      installButton.addEventListener('click', _=> {
         if (deferredEvent !== undefined) {
           // The user has had a postive interaction with our app and Chrome
           // has tried to prompt previously, so let's show the prompt.
           deferredEvent.prompt();
           // Follow what the user has done with the prompt.
-          deferredEvent.userChoice.then(function(choiceResult) {
+          deferredEvent.userChoice.then(choiceResult => {
             console.log(choiceResult.outcome);
-            if (choiceResult.outcome == 'dismissed') {
+            if (choiceResult.outcome === 'dismissed') {
               console.log('User cancelled home screen install');
             } else {
               console.log('User added to home screen');
@@ -124,30 +124,26 @@
             userVisibleOnly: true,
             applicationServerKey: applicationServerKey
           })
-          .then(function(subscription) {
+          .then(subscription => {
             console.log('User is subscribed.');
 
             updateSubscriptionOnServer(subscription);
 
             isSubscribed = true;
           })
-          .catch(function(err) {
-            console.log('Failed to subscribe the user: ', err);
-          });
+          .catch(err => console.error('Failed to subscribe the user: ', err));
       }
 
       function unsubscribeUser() {
         swRegistration.pushManager
           .getSubscription()
-          .then(function(subscription) {
+          .then(subscription => {
             if (subscription) {
               return subscription.unsubscribe();
             }
           })
-          .catch(function(error) {
-            console.log('Error unsubscribing', error);
-          })
-          .then(function() {
+          .catch(error => console.error('Error unsubscribing', error))
+          .then(_=> {
             updateSubscriptionOnServer(null);
 
             console.log('User is unsubscribed.');

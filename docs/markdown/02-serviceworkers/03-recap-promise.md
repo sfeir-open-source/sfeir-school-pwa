@@ -5,18 +5,10 @@
 ### Une promise est utilisée pour réaliser des traitements de façon asynchrone.
 
 ```javascript
-var promise1 = new Promise(function(resolve, reject) {
-  setTimeout(function() {
-    resolve('foo');
-  }, 300);
+let promise1 = new Promise((resolve, reject) => {
+  setTimeout(_ => resolve('foo'), 300);
 });
-promise1
-  .then(function(value) {
-    console.log(value);
-  })
-  .catch(function(e) {
-    console.log(e);
-  });
+promise1.then(value => console.log(value)).catch(e => console.log(e));
 ```
 
 <!-- .element: class="big-code" -->

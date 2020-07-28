@@ -19,7 +19,7 @@ navigator.serviceWorker.controller.postMessage('Client says ' + message);
 ## Page web -> Service Worker : Réception
 
 ```javascript
-self.addEventListener('message', function(event) {
+self.addEventListener('message', event => {
   console.log('SW Received Message: ' + event.data);
 });
 ```

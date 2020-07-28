@@ -1,6 +1,6 @@
 console.log('Service worker ok =D');
 
-var cacheAppShellStatic = [
+const cacheAppShellStatic = [
   '/',
   '/index.html',
   '/mdl/material.min.css',
@@ -12,35 +12,27 @@ var cacheAppShellStatic = [
   '/offline.html'
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   console.log('event install');
   event.waitUntil(
     caches
       .open('cache-static')
-      .then(function(cache) {
-        return cache.addAll(cacheAppShellStatic);
-      })
-      .then(function() {
-        return self.skipWaiting();
-      })
+      .then(cache => cache.addAll(cacheAppShellStatic))
+      .then(_ => self.skipWaiting())
   );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
   console.log('event activate');
   event.waitUntil(self.clients.claim());
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(response => {
       return (
         response ||
-        fetch(event.request).catch(function(error) {
-          return caches.open('cache-static').then(function(cache) {
-            return cache.match('offline.html');
-          });
-        })
+        fetch(event.request).catch(_ => caches.open('cache-static').then(cache => cache.match('offline.html')))
       );
     })
   );

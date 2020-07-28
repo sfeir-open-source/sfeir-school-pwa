@@ -1,6 +1,6 @@
 console.log('Service worker ok =D');
 
-var cacheAppShellStatic = [
+const cacheAppShellStatic = [
   '/',
   '/index.html',
   '/mdl/material.min.css',
@@ -12,44 +12,34 @@ var cacheAppShellStatic = [
   '/offline.html'
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   console.log('event install');
   event.waitUntil(
     caches
       .open('cache-static')
-      .then(function(cache) {
-        return cache.addAll(cacheAppShellStatic);
-      })
-      .then(function() {
-        return self.skipWaiting();
-      })
+      .then(cache => cache.addAll(cacheAppShellStatic))
+      .then(_ => self.skipWaiting())
   );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
   console.log('event activate');
-  event.waitUntil(
-    caches.delete('cache-dynamic').finally(
-      self.clients.claim()
-    )
-  );
+  event.waitUntil(caches.delete('cache-dynamic').finally(self.clients.claim()));
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(response => {
       return (
         response ||
         fetch(event.request)
-          .then(function(responseFetch) {
-            return caches.open('cache-dynamic').then(function(cache) {
+          .then(responseFetch =>
+            caches.open('cache-dynamic').then(cache => {
               cache.put(event.request, responseFetch.clone());
               return responseFetch;
-            });
-          })
-          .catch(function() {
-            return event.respondWith(caches.match(new Request('offline.html')));
-          })
+            })
+          )
+          .catch(_ => event.respondWith(caches.match(new Request('offline.html'))))
       );
     })
   );
