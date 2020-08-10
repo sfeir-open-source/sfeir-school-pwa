@@ -17,7 +17,9 @@ const cacheAppShellStatic = [
   '/css/material-icons.css',
   '/css/md-overwrite.css',
   '/css/font/MaterialIcons-Regular.woff2',
-  '/offline.html'
+  '/offline.html',
+  '/home',
+  '/people'
 ];
 
 self.addEventListener('install', event => {

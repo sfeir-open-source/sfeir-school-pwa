@@ -7,7 +7,9 @@ const cacheAppShellStatic = [
   '/mdl/material.min.js',
   '/css/material-icons.css',
   '/css/font/MaterialIcons-Regular.woff2',
-  '/img/logo-app.png'
+  '/img/logo-app.png',
+  '/home',
+  '/people'
 ];
 
 self.addEventListener('install', event => {
