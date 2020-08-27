@@ -1,6 +1,6 @@
 <!-- .slide: class="transition bg-blue" -->
 
-# Background Sync
+# Syncrhonisation de données
 
 ##==##
 
