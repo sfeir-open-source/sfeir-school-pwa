@@ -38,6 +38,14 @@ export class PeoplesService {
     return this.peopleMap.get(id);
   }
 
+  async updatePeope(people) {
+    return await fetch(`${this.API_URL}/${people.id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(people)
+    });
+  }
+
   getCollab(email) {
     var response = { isManager: false, collab: [] };
     angular.forEach(

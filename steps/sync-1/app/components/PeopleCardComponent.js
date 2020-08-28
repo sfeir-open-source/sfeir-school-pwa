@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, nothing } from 'lit-element';
 import { capitalize, splitEmail } from '../../../../common/utils/helpers.js';
 
 export class PeopleCard extends LitElement {
@@ -7,29 +7,43 @@ export class PeopleCard extends LitElement {
       people: { type: Object },
       skillOn: { type: Boolean },
       describe: { type: Boolean },
+      editable: { type: Boolean },
       edit: { type: Boolean }
     };
   }
 
   constructor(/*{people = {}, skillOn, describe}*/) {
     super();
+    this.editable = false;
     this.edit = false;
     /*this.people = people;
-        this.skillOn = skillOn;
-        this.describe = describe;*/
+    this.skillOn = skillOn;
+    this.describe = describe;*/
   }
 
   toggleEdit() {
     this.edit = !this.edit;
   }
 
-  blurFirstName(e) {
-    this.people.firstname = e.target.value;
+  blurName(e) {
+    console.log('Blur detected');
+    switch (e.target.id) {
+      case 'firstname':
+        this.people.firstname = e.target.value;
+        break;
+      case 'lastname':
+        this.people.lastname = e.target.value;
+        break;
+    }
     this.toggleEdit();
-  }
-  blurLastName(e) {
-    this.people.lastname = e.target.value;
-    this.toggleEdit();
+    const eventModifyPeople = new CustomEvent('update-people', {
+      detail: {
+        people: this.people
+      },
+      bubbles: true,
+      composed: true
+    });
+    this.dispatchEvent(eventModifyPeople);
   }
 
   render() {
@@ -84,7 +98,7 @@ export class PeopleCard extends LitElement {
               `
             : ''}
           <br />
-          <i @click=${this.toggleEdit} class="material-icons">create</i>
+          <i ?hidden=${!this.editable} @click=${this.toggleEdit} class="material-icons">create</i>
         </div>
         <div data-tab-info>${this.describe ? this.tabInfo({ people: this.people }) : ''}</div>
         <div data-card-footer>${this.describe ? this.footer({ people: this.people }) : ''}</div>
@@ -105,10 +119,12 @@ export class PeopleCard extends LitElement {
               ${edit
                 ? html`
                     <input
-                      @blur=${this.blurFirstName}
+                      id="firstname"
+                      @blur=${this.blurName}
                       type="text"
                       value="${capitalize(people.firstname)}"
-                    />&nbsp;<input @blur=${this.blurLastName} type="text" value="${people.lastname.toUpperCase()}" />
+                    />&nbsp;
+                    <input id="lastname" @blur=${this.blurName} type="text" value="${people.lastname.toUpperCase()}" />
                   `
                 : html`
                     <a href="/people/${people.id}">${capitalize(people.firstname)} ${people.lastname.toUpperCase()}</a>
@@ -143,7 +159,7 @@ export class PeopleCard extends LitElement {
                   <img class="thumb" err-src="/img/profile.svg" src="/${people.photo}" alt="image profile" />
                 </div>
               `
-            : ''}
+            : nothing}
         </div>
         ${!describe
           ? html`
@@ -156,7 +172,7 @@ export class PeopleCard extends LitElement {
                 <div></div>
               </div>
             `
-          : ''}
+          : nothing}
       </div>
     `;
   }

@@ -3,7 +3,7 @@ console.log('Service worker ok =D');
 const cacheAppShellStatic = [
   '/',
   'mocks/notification.json',
-  'http://localhost:3000/people',
+  //'http://localhost:3000/people',
   '/index.html',
   '/css/app.css',
   '/img/bg_left.png',
@@ -41,12 +41,9 @@ self.addEventListener('fetch', event => {
 
   if (url.pathname.includes('socket.io') || url.origin.startsWith('chrome-extension')) {
     return false;
+  } else if (url.port === '3000') {
+    return fetch(event.request);
   } else {
-    if (url.pathname.endsWith('jpg')) {
-      event.respondWith(caches.match(new Request(catImage)));
-      return false;
-    }
-
     event.respondWith(
       caches.match(event.request).then(response => {
         return (

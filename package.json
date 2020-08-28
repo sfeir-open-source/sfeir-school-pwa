@@ -35,7 +35,7 @@
     "start": "parallelshell \"npm run start-app $npm_config_step\" \"npm run server\"",
     "start-app": "cross-var webpack-dev-server --step-$npm_config_step",
     "dev": "webpack-dev-server",
-    "server": "json-server --watch assets/mocks/people.json",
+    "server": "json-server assets/mocks/people.json",
     "precommit": "lint-staged",
     "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
   },
