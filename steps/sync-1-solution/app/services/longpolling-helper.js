@@ -61,7 +61,7 @@ function registerBackgroundSync() {
   }
 
   navigator.serviceWorker.ready
-    .then(registration => registration.sync.register(`testSync${Date.now()}`))
+    .then(registration => registration.sync.register(`syncUser`))
     .then(() => console.log('Registered background sync'))
     .catch(err => console.error('Error registering background sync', err));
 }

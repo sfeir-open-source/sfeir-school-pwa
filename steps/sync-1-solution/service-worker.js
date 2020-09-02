@@ -92,22 +92,26 @@ async function getFailedRequest() {
 }
 
 self.addEventListener('sync', async function(event) {
-  console.log('sync event', event);
-  if (event.tag.startsWith('testSync')) {
-    console.log('testSync event recieved');
+  if (event.tag === 'syncUser') {
     event.waitUntil(
       new Promise(async (resolve, reject) => {
-        console.log('get Failed Request');
         const requestArray = await getFailedRequest();
+        let error = undefined;
         if (requestArray) {
           for (let request of requestArray) {
             try {
               await fetch(request.value.url, request.value.options);
               await cleanRequest(request.id);
             } catch (e) {
+              error = e;
               console.error(e);
             }
           }
+        }
+        if (error) {
+          reject(error);
+        } else {
+          resolve();
         }
       })
     );
