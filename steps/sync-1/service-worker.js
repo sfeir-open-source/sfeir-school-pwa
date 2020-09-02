@@ -61,3 +61,8 @@ self.addEventListener('fetch', event => {
     );
   }
 });
+
+self.addEventListener('sync', async function(event) {
+  console.log('sync event', event);
+  event.waitUntil(event.skipWaiting());
+});

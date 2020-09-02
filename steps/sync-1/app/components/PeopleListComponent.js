@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit-element';
-import { PeoplesService } from '../../../../common/app/services/People.js';
+import { PeoplesService } from '../services/People.js';
 
 export class PeopleList extends LitElement {
   static get properties() {
@@ -49,9 +49,12 @@ export class PeopleList extends LitElement {
     this.performUpdate();
   }
 
-  updatePeople(event) {
-    this.peoplesService.updatePeope(event.detail.people);
-    console.log('Update people trigger', event);
+  async updatePeople(event) {
+    try {
+      await this.peoplesService.updatePeope(event.detail.people);
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   render() {
