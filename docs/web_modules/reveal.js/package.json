@@ -1,29 +1,33 @@
 {
-  "_from": "reveal.js@^3.8.0",
+  "_args": [
+    [
+      "reveal.js@3.9.2",
+      "/Users/jean-francoisgarreau/Sfeir/SfeirSchool/sfeir-school-pwa/docs"
+    ]
+  ],
+  "_from": "reveal.js@3.9.2",
   "_id": "reveal.js@3.9.2",
   "_inBundle": false,
   "_integrity": "sha512-Dvv2oA9FrtOHE2DWj5js8pMRfwq++Wmvsn1EyAdYLC80lBjTphns+tPsB652Bnvep9AVviuVS/b4XoVY9rXHLA==",
   "_location": "/reveal.js",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "reveal.js@^3.8.0",
+    "raw": "reveal.js@3.9.2",
     "name": "reveal.js",
     "escapedName": "reveal.js",
-    "rawSpec": "^3.8.0",
+    "rawSpec": "3.9.2",
     "saveSpec": null,
-    "fetchSpec": "^3.8.0"
+    "fetchSpec": "3.9.2"
   },
   "_requiredBy": [
-    "#USER",
     "/",
     "/sfeir-school-theme"
   ],
   "_resolved": "https://registry.npmjs.org/reveal.js/-/reveal.js-3.9.2.tgz",
-  "_shasum": "7f63d3dfec338b6c313dcabdf006e8cf80e0b358",
-  "_spec": "reveal.js@^3.8.0",
-  "_where": "/Users/jean-francoisgarreau/Sfeir/SfeirSchool/sfeir-school-pwa",
+  "_spec": "3.9.2",
+  "_where": "/Users/jean-francoisgarreau/Sfeir/SfeirSchool/sfeir-school-pwa/docs",
   "author": {
     "name": "Hakim El Hattab",
     "email": "hakim.elhattab@gmail.com",
@@ -32,8 +36,6 @@
   "bugs": {
     "url": "https://github.com/hakimel/reveal.js/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "The HTML Presentation Framework",
   "devDependencies": {
     "express": "^4.16.2",
