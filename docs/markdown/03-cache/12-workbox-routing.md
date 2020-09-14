@@ -23,6 +23,49 @@ workbox.routing.registerRoute(
 
 Notes:
 
+- Routing with a string, with a Regex, with a callback function
+
+##==##
+
+# Routing
+
+Plusieurs façon de le faire :
+<br><br><br>
+
+- Requêtes de routes :
+  1. string.
+  2. regular expression.
+  3. callback function.
+     <br><br>
+- Traîtement de la requête
+  1. Stratégie Workbox
+  2. callback function
+
+##==##
+
+<!-- .slide: class="with-code" data-background="#fb8c00" -->
+
+# Routing - Stratégies Workbox
+
+<!-- .element: style="color:white" -->
+
+```javascript
+import { registerRoute } from 'workbox-routing';
+import * as strategies from 'workbox-strategies';
+
+registerRoute(match, new strategies.StaleWhileRevalidate());
+
+registerRoute(match, new strategies.NetworkFirst());
+
+registerRoute(match, new strategies.CacheFirst());
+
+registerRoute(match, new strategies.NetworkOnly());
+
+registerRoute(match, new strategies.CacheOnly());
+```
+
+<!-- .element: class="big-code" -->
+
 ##==##
 
 <!-- .slide: class="with-code" data-background="#fb8c00" -->

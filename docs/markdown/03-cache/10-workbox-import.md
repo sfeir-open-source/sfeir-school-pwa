@@ -34,3 +34,48 @@ workbox.???
 <!-- .element: class="big-code" -->
 
 Notes:
+
+##==##
+
+# Autres utilisations
+
+- Bundler : Webpack, Rollup ou Gulp
+  <br /><br />
+- En ligne de commande
+
+##==##
+
+# CLI
+
+- installation en global
+
+  ```
+  npm install workbox-cli --global
+  ```
+
+  <!-- .element: class="big-code" -->
+
+- lancer le wizard
+  ```
+  workbox wizard
+  ```
+  <!-- .element: class="big-code" -->
+- créer le Manifest
+
+  ```
+  workbox injectManifest
+  ```
+
+    <!-- .element: class="big-code" -->
+
+  ajouter au préalable :
+
+  ```
+  import {precacheAndRoute} from 'workbox-precaching';
+
+  precacheAndRoute(self.__WB_MANIFEST);
+  ```
+
+    <!-- .element: class="big-code" -->
+
+  Notes:
