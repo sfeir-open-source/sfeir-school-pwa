@@ -32,8 +32,10 @@
     "PWA, service worker, vanillajs, materials"
   ],
   "scripts": {
-    "start": "cross-var webpack-dev-server --step-$npm_config_step",
+    "start": "parallelshell \"npm run start-app $npm_config_step\" \"npm run server\"",
+    "start-app": "cross-var webpack-dev-server --step-$npm_config_step",
     "dev": "webpack-dev-server",
+    "server": "json-server --watch assets/mocks/people.json",
     "precommit": "lint-staged",
     "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
   },
@@ -45,6 +47,7 @@
     "@babel/core": "^7.4.3",
     "@webcomponents/webcomponentsjs": "^2.2.7",
     "cross-var": "^1.1.0",
+    "json-server": "^0.16.1",
     "lit-element": "^2.1.0",
     "normalize.css": "8.0.1",
     "pwa-helpers": "^0.9.1"
@@ -63,6 +66,7 @@
     "lighthouse": "^6.1.1",
     "lint-staged": "^8.1.5",
     "lodash": ">=4.17.13",
+    "parallelshell": "3.0.1",
     "prettier": "^1.16.4",
     "style-loader": "~0.23.1",
     "url-loader": "~1.1.2",

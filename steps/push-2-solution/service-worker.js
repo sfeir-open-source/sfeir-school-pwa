@@ -16,7 +16,7 @@ function urlB64ToUint8Array(base64String) {
 const cacheAppShellStatic = [
   '/',
   'mocks/notification.json',
-  'mocks/people.json',
+  'http://localhost:3000/people',
   'manifest/manifest.json',
   '/index.html',
   '/css/app.css',
