@@ -27,6 +27,26 @@ Notes:
 
 ##==##
 
+<!-- .slide: class="with-code" data-background="#fb8c00" -->
+
+# Routing - expiration plugin
+
+<!-- .element: style="color:white" -->
+
+```javascript
+cacheName: 'image-cache',
+plugins: [
+  new workbox.expiration.Plugin({
+    maxEntries: 20,
+    maxAgeSeconds: 7 * 24 * 60 * 60,
+  }),
+],
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
 # Routing
 
 Plusieurs façon de le faire :
@@ -68,23 +88,47 @@ registerRoute(match, new strategies.CacheOnly());
 
 ##==##
 
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
+# Autres méthodes
 
-# Routing - expiration plugin
+- En ligne de commande
 
-<!-- .element: style="color:white" -->
+  - installation en global
 
-```javascript
-cacheName: 'image-cache',
-plugins: [
-  new workbox.expiration.Plugin({
-    maxEntries: 20,
-    maxAgeSeconds: 7 * 24 * 60 * 60,
-  }),
-],
-```
+  ```
+  npm install workbox-cli --global
+  ```
 
-<!-- .element: class="big-code" -->
+    <!-- .element: class="big-code" -->
+
+  - paquet npm
+
+  ```
+  npm install workbox-build --save-dev
+  ```
+
+  ```javascript
+  workbox.generateSW();
+  ```
+
+    <!-- .element: class="big-code" -->
+
+  ```javascript
+  workbox.injectManifest();
+  ```
+
+    <!-- .element: class="big-code" -->
+
+  - ajouter au préalable :
+
+  ```javascript
+  precacheAndRoute(self.__WB_MANIFEST);
+  ```
+
+    <!-- .element: class="big-code" -->
+
+- Bundler : Webpack, Rollup, Gulp...
+
+Notes:
 
 ##==##
 

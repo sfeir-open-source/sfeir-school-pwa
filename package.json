@@ -37,7 +37,8 @@
     "dev": "webpack-dev-server",
     "server": "json-server --watch assets/mocks/people.json",
     "precommit": "lint-staged",
-    "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
+    "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}",
+    "workbox": "node steps/workbox-2/workbox-build.js"
   },
   "bugs": {
     "url": "https://github.com/Sfeir/pwa-200/issues"
@@ -72,6 +73,8 @@
     "url-loader": "~1.1.2",
     "webpack": "^4.32.0",
     "webpack-cli": "~3.3.0",
-    "webpack-dev-server": "^3.4.1"
+    "webpack-dev-server": "^3.4.1",
+    "workbox-build": "^5.1.4",
+    "workbox-cli": "^5.1.4"
   }
 }
