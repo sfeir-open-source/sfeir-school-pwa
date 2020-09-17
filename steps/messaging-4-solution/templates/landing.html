@@ -50,25 +50,24 @@
       const dialog = document.querySelector('#dialog');
 
       if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(registration => {
-            // todo : exercice => écouter l'état du service worker
-            registration.addEventListener('updatefound', _=> {
-              registration.installing.addEventListener('statechange', _=> {
-                if (registration.waiting) {
-                  dialog.showModal();
-                }
-              });
-            });
-          });
+        navigator.serviceWorker.register('service-worker.js');
       }
+
+      const broadcast = new BroadcastChannel('install-channel');
+
+      broadcast.onmessage = (event) => {
+        if(event.data.action === 'DISPLAY_DIALOG') {
+          dialog.showModal();
+        }
+        if (event.data.action === "RELOAD_WINDOW") {
+          window.location.reload();
+        }
+      };
 
       dialog.querySelector('button').addEventListener('click', _=> {
         dialog.close();
-        // todo : exercice => envoyer le message
-        navigator.serviceWorker.controller.postMessage("Hello service worker!")
+        broadcast.postMessage({action: 'SKIP_WAITING'})
       }, {once: true});
-
     </script>
   </body>
 </html>

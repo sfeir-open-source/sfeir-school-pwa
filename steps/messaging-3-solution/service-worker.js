@@ -1,5 +1,4 @@
 let getVersionPort;
-let count = 0;
 
 self.addEventListener('message', event => {
   if (event.data.action === 'INIT_PORT') {

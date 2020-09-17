@@ -50,30 +50,17 @@
       const dialog = document.querySelector('#dialog');
 
       if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('service-worker.js')
-        .then(registration => {
-          registration.addEventListener('updatefound', _=> {
-            registration.installing.addEventListener('statechange', _=> {
-              if (registration.waiting) {
-                dialog.showModal();
-              }
-            });
-          });
-        });
+        navigator.serviceWorker.register('service-worker.js');
       }
 
-      // todo : exercice => écouter les envois de message
-      navigator.serviceWorker.addEventListener('message', event => {
-        if (event.data.action === "RELOAD_WINDOW") {
-          window.location.reload();
-        }
-      });
+      //  créer l'instance de BrodcastChannel
+
+      // écouter les messages émis par le service worker
 
       dialog.querySelector('button').addEventListener('click', _=> {
         dialog.close();
-        navigator.serviceWorker.controller.postMessage({action: 'SKIP_WAITING'})
+        // envoyer un message au service worker
       }, {once: true});
-
     </script>
   </body>
 </html>
