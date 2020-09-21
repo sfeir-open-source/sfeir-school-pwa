@@ -38,7 +38,7 @@
     "server": "json-server --watch assets/mocks/people.json",
     "precommit": "lint-staged",
     "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}",
-    "workbox": "node steps/workbox-2/workbox-build.js"
+    "workbox": "node steps/workbox-2-solution/workbox-exercice.js"
   },
   "bugs": {
     "url": "https://github.com/Sfeir/pwa-200/issues"

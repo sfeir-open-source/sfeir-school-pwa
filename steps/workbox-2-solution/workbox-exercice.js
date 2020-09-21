@@ -5,9 +5,9 @@ const buildSW = () => {
   // This will return a Promise
   return workboxBuild
     .injectManifest({
-      swSrc: 'steps/workbox-2/src/service-worker.js',
-      swDest: 'steps/workbox-2/service-worker.js',
-      globDirectory: 'steps/workbox-2',
+      swSrc: 'steps/workbox-2-solution/src/service-worker.js',
+      swDest: 'steps/workbox-2-solution/service-worker.js',
+      globDirectory: 'steps/workbox-2-solution',
       globPatterns: ['**/*.{js,css,html,png}']
     })
     .then(({ count, size, warnings }) => {
