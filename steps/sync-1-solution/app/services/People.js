@@ -1,3 +1,5 @@
+import { longPolling } from './longpolling-helper.js';
+
 export class PeoplesService {
   constructor() {
     const SERVER = 'http://localhost:3000';
@@ -39,11 +41,16 @@ export class PeoplesService {
   }
 
   async updatePeope(people) {
-    return await fetch(`${this.API_URL}/${people.id}`, {
+    const options = {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(people)
-    });
+    };
+    try {
+      return await fetch(`${this.API_URL}/${people.id}`, options);
+    } catch (e) {
+      longPolling(`${this.API_URL}/${people.id}`, options);
+    }
   }
 
   getCollab(email) {
