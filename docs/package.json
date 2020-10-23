@@ -37,7 +37,7 @@
     "parallelshell": "3.0.1",
     "reveal.js": "3.9.2",
     "snowpack": "^1.6.0",
-    "sfeir-school-theme": "2.1.0"
+    "sfeir-school-theme": "2.1.1"
   },
   "snowpack": {
     "webDependencies": [
