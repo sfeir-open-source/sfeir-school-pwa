@@ -1,6 +1,6 @@
 class SfeirTheme {
   constructor() {
-    Reveal.addEventListener('ready', setTimeout(this._pageload.bind(this), 500));
+    Reveal.addEventListener('ready', () => setTimeout(this._pageload.bind(this), 500));
     this.path = '';
   }
 
@@ -21,6 +21,9 @@ class SfeirTheme {
 
     // ManageListFragements
     this._manageListFragment();
+
+    // Manage Hack to speakers images
+    this._manageSpeakersBorders();
 
     if (Reveal) {
       Reveal.sync();
@@ -182,6 +185,18 @@ class SfeirTheme {
           listItem.classList.add('fragment');
         }
       }
+    }
+  }
+
+  _manageSpeakersBorders() {
+    const imgOfSpeakersToReplaces = [...document.querySelectorAll('.reveal .slides section img[alt*=speaker]')];
+    for (let imgToReplace of imgOfSpeakersToReplaces) {
+      let parentOfImg = imgToReplace.parentElement;
+      const divWithBgElement = document.createElement('DIV');
+      divWithBgElement.classList.add('speaker');
+      divWithBgElement.style['background-image'] = `url(${imgToReplace.src})`;
+      parentOfImg.appendChild(divWithBgElement);
+      parentOfImg.removeChild(imgToReplace);
     }
   }
 }
