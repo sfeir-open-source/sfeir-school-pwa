@@ -34,24 +34,6 @@ You should have cached these in the install event, so you can depend on them bei
 
 ##==##
 
-<!-- .slide: class="with-code" -->
-
-# Cache-only : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  // if a match isn't found in the cache, the response
-  // will look like a connection error
-  event.respondWith(caches.match(event.request));
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
 # Stratégies de cache : Network-only
 
 ![center h-800](./assets/images/cache-strategy-network-only.png)

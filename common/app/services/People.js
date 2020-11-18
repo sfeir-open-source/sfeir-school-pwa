@@ -10,14 +10,19 @@ export class PeoplesService {
 
   async initialize() {
     this.hasRequestPending = true;
-    const response = await fetch(this.API_URL);
-    const data = await response.json();
-    this.hasRequestPending = false;
-    if (this.peoples) {
-      //Replace this.peoples
-      Array.prototype.splice.apply(this.peoples, [0, this.peoples.length].concat(data));
-    } else {
-      this.peoples = data;
+    try {
+      const response = await fetch(this.API_URL);
+      const data = await response.json();
+      this.hasRequestPending = false;
+      if (this.peoples) {
+        //Replace this.peoples
+        Array.prototype.splice.apply(this.peoples, [0, this.peoples.length].concat(data));
+      } else {
+        this.peoples = data;
+      }
+    } catch (e) {
+      console.error(e);
+      this.peoples = [];
     }
   }
 

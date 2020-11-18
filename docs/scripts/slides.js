@@ -40,24 +40,26 @@ function serviceWorkersSlides() {
 }
 
 function cacheSlides() {
+  const directory = '03-cache';
   return [
     /* App-Shell */
-    '03-cache/00-TITLE.md',
-    '03-cache/01-app-shell-intro.md',
-    '03-cache/02-app-shell-exercice.md',
-    /* cache-strategies */
-    '03-cache/04-cache-strategies-intro.md',
+    //`${directory}/00-TITLE.md`,
+    //`${directory}/01-app-shell-intro.md`,
     /* offline */
-    '03-cache/05-offline-intro.md',
-    '03-cache/06-offline-ex-sw-5-2.md',
-    '03-cache/07-offline-ex-sw-5-3.md',
-    '03-cache/08-offline-ex-sw-5-4.md',
-    '03-cache/09-offline-ex-sw-5-5.md',
+    //`${directory}/05-offline-intro.md`,
+    //`${directory}/06-offline-ex-sw-5-2.md`,
+    //`${directory}/07-offline-ex-sw-5-3.md`,
+    //`${directory}/08-offline-ex-sw-5-4.md`,
+    //`${directory}/09-offline-ex-sw-5-5.md`,
     /* sw-window */
-    '03-cache/10-workbox-import.md',
-    '03-cache/11-workbox-precache.md',
-    '03-cache/12-workbox-routing.md',
-    '03-cache/13-workbox-exercice.md'
+    //`${directory}/10-workbox-import.md`,
+    //`${directory}/11-workbox-precache.md`,
+    //`${directory}/12-workbox-routing.md`,
+    //`${directory}/13-workbox-exercice.md`'
+    /* cache-strategies */
+    `${directory}/50-cache-strategies-intro.md`,
+    /* Advanced Cache */
+    `${directory}/51-cache-only.md`
   ];
 }
 
@@ -145,17 +147,17 @@ function bonusSlides() {
 function formation() {
   return [
     ...schoolSlides(),
-    ...introSlides(),
-    ...serviceWorkersSlides(),
-    ...cacheSlides(),
-    ...advancedServiceWorkersSlides(),
-    ...installableSlides(),
-    ...engagingSlides(),
-    ...integratedSlides(),
-    ...performancesSlides(),
-    ...librariresSlides(),
-    ...conclusionSlides(),
-    ...bonusSlides()
+    //...introSlides(),
+    //...serviceWorkersSlides(),
+    ...cacheSlides()
+    //...advancedServiceWorkersSlides(),
+    //...installableSlides(),
+    //...engagingSlides(),
+    //...integratedSlides(),
+    //...performancesSlides(),
+    //...librariresSlides(),
+    //...conclusionSlides(),
+    //...bonusSlides()
   ].map(slidePath => {
     return { path: slidePath };
   });
