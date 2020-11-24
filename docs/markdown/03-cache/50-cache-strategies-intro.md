@@ -249,3 +249,31 @@ self.addEventListener('fetch', event => {
 ```
 
 <!-- .element: class="big-code" -->
+
+##==##
+
+# Comment faire avec Workbox ?
+
+1. Créer son propre service worker
+1. Générer le service worker avec Workbox
+1. Inclure le service worker de workbox dans son service worker
+1. Surcharger les éventuels étapes que l'on souhaite mettre en place
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Comment faire avec Workbox ?
+
+### my-service-worker.js
+
+```javascript
+/*******************************/
+/****IMPORT WORKBOX******/
+importScripts('./service-worker.js')
+
+// Override every event we need
+self.addEventListener('activate', event => event.waitUntil( ...))
+```
+
+<!-- .element: class="big-code" -->
