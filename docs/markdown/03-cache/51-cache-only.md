@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-green" -->
 
 # Cache Only
 
@@ -67,7 +67,7 @@ self.addEventListener('fetch', event => {
 1. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.
 1. Vérifier à l’aide de votre navigateur que tout s’est bien passé.
 
-### Step: cache-only-1
+### Step: cs-cache-only-1
 
 ##==##
 
@@ -93,6 +93,32 @@ precacheAndRoute(cacheAppShellStatic);
 
 ##==##
 
+<!-- .slide: class="with-code" -->
+
+# Cache-only : Avec Workbox (Initialisation et Utilisation) bis
+
+service-worker.js
+
+```javascript
+import { registerRoute } from 'workbox-routing';
+import { CacheFirst } from 'workbox-strategies';
+
+// Cache images with a Cache First strategy
+registerRoute(
+  // Check to see if the request's destination is style for an image
+  ({ request }) => request.destination === 'image',
+  // Use a Cache First caching strategy
+  new CacheFirst({
+    // Put all cached files in a cache named 'images'
+    cacheName: 'images'
+  })
+);
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
 <!-- .slide: class="exercice" -->
 
 # Cache Only avec Workbox
@@ -106,7 +132,7 @@ precacheAndRoute(cacheAppShellStatic);
 1. Vérifier à l’aide de votre navigateur que tout s’est bien passé.
 1. Utiliser Workbox
 
-### Step: cache-only-2
+### Step: cs-cache-only-2
 
 ##==##
 
@@ -131,18 +157,25 @@ precacheAndRoute(cacheAppShellStatic);
 En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
 
 ```json
-{"index": "/index.html",
-  "assetGroups": [{
-      name:'cacheOnly',
-      installMode: 'prefetch',
-      updateMode: 'prefetch',
-      resources: {
-        files: ['**']
-        urls: ['/myApi/**']
-      } } ] }
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "cacheOnly",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["**"]
+      }
+    }
+  ]
+}
 ```
 
 <!-- .element: class="big-code" -->
+
+Notes:
+Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
 
 ##==##
 
