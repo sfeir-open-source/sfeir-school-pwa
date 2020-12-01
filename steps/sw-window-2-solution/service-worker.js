@@ -28,7 +28,7 @@ self.addEventListener('message', event => {
  */
 self.__precacheManifest = [
   {
-    url: 'http://localhost:3000/people',
+    url: 'http://localhost:3000/api/people',
     revision: '1f5234a09f6244f3648025c017130920'
   }
 ].concat(self.__precacheManifest || []);

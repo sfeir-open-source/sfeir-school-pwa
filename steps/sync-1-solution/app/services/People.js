@@ -3,7 +3,7 @@ import { longPolling } from './longpolling-helper.js';
 export class PeoplesService {
   constructor() {
     const SERVER = 'http://localhost:3000';
-    this.API_URL = `${SERVER}/people`;
+    this.API_URL = `${SERVER}/api/people`;
     this.peoples = null;
     this.peopleMap = new Map();
     this.hasRequestPending = false;
