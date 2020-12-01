@@ -136,7 +136,7 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="transition bg-green" -->
+<!-- .slide: class="transition bg-white" -->
 
 # Avec les frameworks
 

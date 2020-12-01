@@ -19,7 +19,7 @@
 - Generic-Fallback
 
 Notes:
-Cache-Only / Network-Only / Cache-First / Network-First / Fallback
+Certaines stratégies ne sont pas à utiliser toutes seules, en général, on va choisir une partie de son app qui suivra une de ces stratégies
 
 ##==##
 
@@ -42,24 +42,6 @@ Notes:
 on ne veut pas de cache car l'opération est critique/ne peut pas fonctionner hors ligne.
 
 Si ce n'est qu'une partie de l'application, il est important d'expliquer clairement au niveau de l'interface pourquoi la fonctionnalité n'est pas disponible.
-
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Network-only : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(fetch(event.request));
-  // or simply don't call event.respondWith, wich
-  // will result in default browser behavior
-});
-```
-
-<!-- .element: class="big-code" -->
 
 ##==##
 
