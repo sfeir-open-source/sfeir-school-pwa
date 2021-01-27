@@ -79,13 +79,9 @@ service-worker.js
 import { registerRoute } from 'workbox-routing';
 import { CacheFirst } from 'workbox-strategies';
 
-// Cache images with a Cache First strategy
 registerRoute(
-  // Check to see if the request's destination is style for an image
   ({ request }) => request.destination === 'image',
-  // Use a Cache First caching strategy
   new CacheFirst({
-    // Put all cached files in a cache named 'images'
     cacheName: 'images'
   })
 );
@@ -121,13 +117,12 @@ On va en général dédié ça à une stratégie bien particulière exemple les 
 
 <!-- .slide: class="with-code" -->
 
-# Avec Angular
+# Avec Angular - pour les assets
 
 En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
 
 ```json
 {
-  "index": "/index.html",
   "assetGroups": [
     {
       "name": "images",
@@ -144,4 +139,34 @@ En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
 <!-- .element: class="big-code" -->
 
 Notes:
-Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
+Concernant les assets, ça n'est pas non plus du cache-first comme dans l'état de l'art !!
+Install Lazy : lazy does not cache any of the resources up front. Instead, the Angular service worker only caches resources for which it receives requests. This is an on-demand caching mode. Resources that are never requested will not be cached. This is useful for things like images at different resolutions, so the service worker only caches the correct assets for the particular screen and orientation.
+
+Update Prefetch: prefetch tells the service worker to download and cache the changed resources immediately.
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Avec Angular - pour les urls type api
+
+En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
+
+```json
+{
+  "dataGroups": [
+    {
+      "name": "api",
+      "urls": "/myAPI/*",
+      "cacheConfig": {
+        "strategy": "performance"
+      }
+    }
+  ]
+}
+```
+
+<!-- .element: class="big-code" -->
+
+Notes:
+performance, the default, optimizes for responses that are as fast as possible. If a resource exists in the cache, the cached version is used, and no network request is made. This allows for some staleness, depending on the maxAge, in exchange for better performance. This is suitable for resources that don't change often; for example, user avatar images.
