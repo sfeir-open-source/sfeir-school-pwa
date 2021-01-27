@@ -64,22 +64,6 @@ Avatars, classement,
 
 ##==##
 
-<!-- .slide: class="with-code" -->
-
-# Network-first : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(fetch(event.request).catch(_ => caches.match(event.request)));
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
 # Stratégies de cache : Cache-Then-Network
 
 ![center h-800](./assets/images/cache-strategy-cache-then-network.png)
