@@ -60,7 +60,8 @@ function cacheSlides() {
     `${directory}/50-cache-strategies-intro.md`,
     /* Advanced Cache */
     `${directory}/51-cache-only.md`,
-    `${directory}/52-network-only.md`
+    `${directory}/52-network-only.md`,
+    `${directory}/53-cache-first.md`
   ];
 }
 

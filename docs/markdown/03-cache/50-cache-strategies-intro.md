@@ -53,22 +53,6 @@ D'abord le cache, et si pas trouvé, network
 
 ##==##
 
-<!-- .slide: class="with-code" -->
-
-# Cache-first : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(caches.match(event.request).then(response => response || fetch(event.request)));
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
 # Stratégies de cache : Network-first
 
 ![center h-800](./assets/images/cache-strategy-network-first.png)
