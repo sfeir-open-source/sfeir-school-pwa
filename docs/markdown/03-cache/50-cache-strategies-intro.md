@@ -68,71 +68,8 @@ Avatars, classement,
 
 ![center h-800](./assets/images/cache-strategy-cache-then-network.png)
 
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Cache-Then-Network : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.open('dynamic').then(cache =>
-      fetch(event.request).then(response => {
-        cache.put(event.request, response.clone());
-        return response;
-      })
-    )
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Cache-Then-Network : example (suite)
-
-main.js
-
-```javascript
-let networkDataReceived = false;
-const networkUpdate = fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    networkDataReceived = true;
-    updatePage(data);
-  });
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Cache-Then-Network : example (suite)
-
-main.js
-
-```javascript
-caches
-  .match('data.json')
-  .then(response => {
-    if (!response) throw Error('No data');
-    return response.json();
-  })
-  .then(data => {
-    if (!networkDataReceived) updatePage(data);
-  })
-  .catch(_ => networkUpdate);
-```
-
-<!-- .element: class="big-code" -->
+Notes:
+Ici, on récupère le cache, et en même temps, on va chercher le network. Quand le résultat du network est là, alors on rafraichit de façon pro-active la page
 
 ##==##
 
