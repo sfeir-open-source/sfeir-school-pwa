@@ -23,14 +23,23 @@ service-worker.js
 
 ```javascript
 self.addEventListener('fetch', event => {
-  event.respondWith(fetch(event.request).catch(_ => caches.match(event.request)));
+  event.respondWith(
+    caches.open('dynamic').then(cache =>
+      fetch(event.request) //
+        .then(response => {
+          cache.put(event.request, response.clone());
+          return response;
+        }) //
+        .catch(_ => caches.match(event.request))
+    )
+  );
 });
 ```
 
 <!-- .element: class="big-code" -->
 
 Notes:
-Attention, ici, il n'y a pas de gestion de fallback !
+On va sur le réseau et en cas d'échec on prend ce qu'il y a en cache
 
 ##==##
 
