@@ -63,7 +63,8 @@ function cacheSlides() {
     `${directory}/52-network-only.md`,
     `${directory}/53-cache-first.md`,
     `${directory}/54-network-first.md`,
-    `${directory}/55-cache-then-network.md`
+    `${directory}/55-cache-then-network.md`,
+    `${directory}/56-stale-while-revalidate.md`
   ];
 }
 
