@@ -83,32 +83,6 @@ Si il existe une version en cache, on l'utilise, puis on telecharge la nouvelle 
 
 ##==##
 
-<!-- .slide: class="with-code" -->
-
-# Stale-While-Revalidate : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.open('dynamic').then(cache =>
-      cache.match(event.request).then(response => {
-        const fetchPromise = fetch(event.request).then(networkResponse => {
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        });
-        return response || fetchPromise;
-      })
-    )
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
 # Stratégies de cache : Greneric-Fallback
 
 ![center h-800](./assets/images/cache-strategy-generic-fallback.png)
