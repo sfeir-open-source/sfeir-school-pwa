@@ -88,28 +88,7 @@ Si il existe une version en cache, on l'utilise, puis on telecharge la nouvelle 
 ![center h-800](./assets/images/cache-strategy-generic-fallback.png)
 
 Notes:
-Si il existe une version en cache, on l'utilise, puis on telecharge la nouvelle version pour la prochaine fois
-
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Greneric-Fallback : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches
-      .match(event.request)
-      .then(response => response || fetch(event.request))
-      .catch(_ => caches.match('offline.html'))
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
+Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveur, sinon, on prend un résultat par défaut
 
 ##==##
 

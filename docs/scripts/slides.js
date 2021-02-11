@@ -64,7 +64,8 @@ function cacheSlides() {
     `${directory}/53-cache-first.md`,
     `${directory}/54-network-first.md`,
     `${directory}/55-cache-then-network.md`,
-    `${directory}/56-stale-while-revalidate.md`
+    `${directory}/56-stale-while-revalidate.md`,
+    `${directory}/57-generic-fallback.md`
   ];
 }
 
