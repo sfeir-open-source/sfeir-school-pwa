@@ -65,7 +65,8 @@ function cacheSlides() {
     `${directory}/54-network-first.md`,
     `${directory}/55-cache-then-network.md`,
     `${directory}/56-stale-while-revalidate.md`,
-    `${directory}/57-generic-fallback.md`
+    `${directory}/57-generic-fallback.md`,
+    `${directory}/58-offline-cookbook.md`
   ];
 }
 
