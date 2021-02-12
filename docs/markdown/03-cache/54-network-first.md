@@ -52,7 +52,7 @@ On va sur le réseau et en cas d'échec on prend ce qu'il y a en cache
 <br>
 
 1. Mettre en place une stratégie network first.
-1. On va utiliser cette stratégie pour tout appel à des images de type "jpg" avec en fallback l'image de chat `'/img/cat.jpg'`
+1. On va utiliser cette stratégie pour tout appel à des images de type "jpg"
 
 ### Step: cs-network-first-1
 

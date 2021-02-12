@@ -12,6 +12,7 @@ const cacheAppShellStatic = [
   '/img/logo-app.png',
   '/img/favicon.ico',
   '/home',
+  'http://localhost:3000/api/people',
   '/people',
   '/bundle.js'
 ];

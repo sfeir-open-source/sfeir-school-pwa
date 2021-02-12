@@ -22,7 +22,7 @@ workbox.setConfig({
 workbox.precaching.precacheAndRoute(cacheAppShellStatic);
 
 const matchImg = ({ url, event }) => {
-  return url.endsWith('Paris');
+  return url.href.endsWith('Paris');
 };
 
 workbox.routing.registerRoute(matchImg, new workbox.strategies.StaleWhileRevalidate());

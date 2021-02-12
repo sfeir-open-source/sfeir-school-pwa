@@ -13,6 +13,7 @@ const cacheAppShellStatic = [
   { url: '/img/favicon.ico', revision: null },
   { url: '/home', revision: null },
   { url: '/people', revision: null },
+  { url: 'http://localhost:3000/api/people', revision: null },
   { url: '/bundle.js', revision: null }
 ];
 workbox.setConfig({

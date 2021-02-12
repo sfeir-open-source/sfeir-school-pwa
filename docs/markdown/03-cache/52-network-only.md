@@ -68,7 +68,7 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 <br>
 
 1. Mettre en place une stratégie network only pour la partie Apis.
-1. Les Appels d'APIs sont commencent tous par '/people'
+1. Les Appels d'APIs sont commencent tous par '/api'
 1. Vérifier à l’aide de votre navigateur que tout s’est bien passé.
 
 ### Step: cs-network-only-1
@@ -100,14 +100,14 @@ registerRoute(
 
 <!-- .slide: class="exercice" -->
 
-# Cache Only avec Workbox
+# Network Only avec Workbox
 
 ## Exercice
 
 <br>
 
-1. Mettre en place une stratégie cache only. Le meilleur cas d'utilisation est l'app-shell.
-1. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.
+1. Mettre en place une stratégie network only pour la partie Apis.
+1. Les Appels d'APIs sont commencent tous par '/api'
 1. Vérifier à l’aide de votre navigateur que tout s’est bien passé.
 1. Utiliser Workbox
 

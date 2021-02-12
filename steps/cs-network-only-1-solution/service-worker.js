@@ -32,7 +32,8 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  if (event.request.url.startsWith('/api')) {
+  console.log(event.request.url, new URL(event.request.url));
+  if (new URL(event.request.url).pathname.startsWith('/api')) {
     event.respondWith(fetch(event.request));
   } else {
     event.respondWith(

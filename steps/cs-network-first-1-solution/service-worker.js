@@ -14,6 +14,7 @@ const cacheAppShellStatic = [
   '/img/favicon.ico',
   '/home',
   '/people',
+  'http://localhost:3000/api/people',
   '/bundle.js'
 ];
 
@@ -43,11 +44,6 @@ self.addEventListener('fetch', event => {
               cache.put(event.request, responseFetch.clone());
               return responseFetch;
             })
-        ) //
-        .catch(_ =>
-          caches
-            .match(event.request) //
-            .then(response => response || caches.match('/img/cat.jpg'))
         )
     );
   } else {

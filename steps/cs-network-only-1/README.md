@@ -1,7 +1,7 @@
-# Cache Only (Appels serveurs)
+# Network Only (Appels serveurs)
 
 1. Mettre en place une stratégie network only pour la partie Apis.
-1. Les Appels d'APIs sont commencent tous par '/people'
+1. Les Appels d'APIs sont commencent tous par '/api'
 1. Vérifier à l’aide de votre navigateur que tout s’est bien passé.
 
 # Tips
