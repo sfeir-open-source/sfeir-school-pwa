@@ -3,7 +3,7 @@ console.log('Service worker ok =D');
 const cacheAppShellStatic = [
   '/',
   'mocks/notification.json',
-  'http://localhost:3000/people',
+  'http://localhost:3000/api/people',
   'manifest/manifest.json',
   '/index.html',
   '/css/app.css',

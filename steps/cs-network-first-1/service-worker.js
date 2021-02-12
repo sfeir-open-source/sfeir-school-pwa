@@ -5,11 +5,16 @@ const cacheAppShellStatic = [
   '/index.html',
   '/mdl/material.min.css',
   '/mdl/material.min.js',
+  '/css/app.css',
   '/css/material-icons.css',
+  '/css/md-overwrite.css',
   '/css/font/MaterialIcons-Regular.woff2',
   '/img/logo-app.png',
+  '/img/favicon.ico',
   '/home',
-  '/people'
+  'http://localhost:3000/api/people',
+  '/people',
+  '/bundle.js'
 ];
 
 self.addEventListener('install', event => {
@@ -28,6 +33,7 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  const url = new URL(event.request.url);
-  console.log('fetch:' + url);
+  event.respondWith(fetch(event.request)); // To comment
+  // TODO
+  //event.respondWith(/* YOUR CODE HERE */);
 });

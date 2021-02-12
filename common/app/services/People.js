@@ -1,7 +1,7 @@
 export class PeoplesService {
   constructor() {
     const SERVER = 'http://localhost:3000';
-    this.API_URL = `${SERVER}/people`;
+    this.API_URL = `${SERVER}/api/people`;
     this.peoples = null;
     this.peopleMap = new Map();
     this.hasRequestPending = false;
@@ -10,14 +10,19 @@ export class PeoplesService {
 
   async initialize() {
     this.hasRequestPending = true;
-    const response = await fetch(this.API_URL);
-    const data = await response.json();
-    this.hasRequestPending = false;
-    if (this.peoples) {
-      //Replace this.peoples
-      Array.prototype.splice.apply(this.peoples, [0, this.peoples.length].concat(data));
-    } else {
-      this.peoples = data;
+    try {
+      const response = await fetch(this.API_URL);
+      const data = await response.json();
+      this.hasRequestPending = false;
+      if (this.peoples) {
+        //Replace this.peoples
+        Array.prototype.splice.apply(this.peoples, [0, this.peoples.length].concat(data));
+      } else {
+        this.peoples = data;
+      }
+    } catch (e) {
+      console.error(e);
+      this.peoples = [];
     }
   }
 

@@ -4,7 +4,7 @@ self.importScripts('https://cdn.jsdelivr.net/npm/idb@4.0.5/build/iife/with-async
 const cacheAppShellStatic = [
   '/',
   'mocks/notification.json',
-  //'http://localhost:3000/people',
+  //'http://localhost:3000/api/people',
   '/index.html',
   '/css/app.css',
   '/img/bg_left.png',

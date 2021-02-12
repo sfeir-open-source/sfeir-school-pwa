@@ -1,7 +1,8 @@
-# Installer l'App-shell
+# Cache Only (ou installation App-Shell)
 
-1. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.
-2. Vérifier à l’aide de votre navigateur que tout s’est bien passé.
+1. Mettre en place une stratégie cache only. Le meilleur cas d'utilisation est l'app-shell.
+2. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.
+3. Vérifier à l’aide de votre navigateur que tout s’est bien passé.
 
 # Tips
 

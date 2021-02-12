@@ -3,138 +3,156 @@ function schoolSlides() {
 }
 
 function introSlides() {
+  const directory = '01-intro';
   return [
-    '01-intro/00-TITLE.md',
-    '01-intro/01-contexte.md',
-    '01-intro/02-definition.md',
-    '01-intro/03-FIRE.md',
-    '01-intro/05-webapp.md',
-    '01-intro/06-fil-rouge.md'
+    `${directory}/00-TITLE.md`,
+    `${directory}/01-contexte.md`,
+    `${directory}/02-definition.md`,
+    `${directory}/03-FIRE.md`,
+    `${directory}/05-webapp.md`,
+    `${directory}/06-fil-rouge.md`
   ];
 }
 
 function serviceWorkersSlides() {
+  const directory = '02-serviceworkers';
   return [
-    '02-serviceworkers/00-TITLE.md',
+    `${directory}/00-TITLE.md`,
     /* intro */
-    '02-serviceworkers/01-intro.md',
-    '02-serviceworkers/02-subscription.md',
-    '02-serviceworkers/03-recap-promise.md',
-    '02-serviceworkers/04-recap-function.md',
-    '02-serviceworkers/05-exercice.md',
+    `${directory}/01-intro.md`,
+    `${directory}/02-subscription.md`,
+    `${directory}/03-recap-promise.md`,
+    `${directory}/04-recap-function.md`,
+    `${directory}/05-exercice.md`,
     /* tooling */
-    '02-serviceworkers/06-outils.md',
-    '02-serviceworkers/07-no-window.md',
+    `${directory}/06-outils.md`,
+    `${directory}/07-no-window.md`,
     /* events */
-    '02-serviceworkers/08-events-intro.md',
+    `${directory}/08-events-intro.md`,
     /* lifecycle */
-    '02-serviceworkers/09-lifecycle-intro.md',
-    '02-serviceworkers/10-lifecycle-exercice.md',
+    `${directory}/09-lifecycle-intro.md`,
+    `${directory}/10-lifecycle-exercice.md`,
     /* control-lifecycle */
-    '02-serviceworkers/11-control-lifecycle-intro.md',
-    '02-serviceworkers/12-control-lifecycle-exercice.md',
+    `${directory}/11-control-lifecycle-intro.md`,
+    `${directory}/12-control-lifecycle-exercice.md`,
     /*  fetch-api */
-    '02-serviceworkers/13-fetch-api-intro.md',
-    '02-serviceworkers/14-fetch-api-exercice.md'
+    `${directory}/13-fetch-api-intro.md`,
+    `${directory}/14-fetch-api-exercice.md`
   ];
 }
 
 function cacheSlides() {
+  const directory = '03-cache';
   return [
     /* App-Shell */
-    '03-cache/00-TITLE.md',
-    '03-cache/01-app-shell-intro.md',
-    '03-cache/02-app-shell-exercice.md',
-    /* cache-strategies */
-    '03-cache/04-cache-strategies-intro.md',
+    `${directory}/00-TITLE.md`,
+    `${directory}/01-app-shell-intro.md`,
     /* offline */
-    '03-cache/05-offline-intro.md',
-    '03-cache/06-offline-ex-sw-5-2.md',
-    '03-cache/07-offline-ex-sw-5-3.md',
-    '03-cache/08-offline-ex-sw-5-4.md',
-    '03-cache/09-offline-ex-sw-5-5.md',
+    `${directory}/05-offline-intro.md`,
+    `${directory}/06-offline-ex-sw-5-2.md`,
+    `${directory}/07-offline-ex-sw-5-3.md`,
+    `${directory}/08-offline-ex-sw-5-4.md`,
+    `${directory}/09-offline-ex-sw-5-5.md`,
     /* sw-window */
-    '03-cache/10-workbox-import.md',
-    '03-cache/11-workbox-precache.md',
-    '03-cache/12-workbox-routing.md',
-    '03-cache/13-workbox-exercice.md'
+    `${directory}/10-workbox-import.md`,
+    `${directory}/11-workbox-precache.md`,
+    `${directory}/12-workbox-routing.md`,
+    `${directory}/13-workbox-exercice.md`,
+    /* cache-strategies */
+    `${directory}/50-cache-strategies-intro.md`,
+    /* Advanced Cache */
+    `${directory}/51-cache-only.md`,
+    `${directory}/52-network-only.md`,
+    `${directory}/53-cache-first.md`,
+    `${directory}/54-network-first.md`,
+    `${directory}/55-cache-then-network.md`,
+    `${directory}/56-stale-while-revalidate.md`,
+    `${directory}/57-generic-fallback.md`,
+    `${directory}/58-offline-cookbook.md`
   ];
 }
 
 function advancedServiceWorkersSlides() {
+  const directory = '04-advanced-sw';
   return [
     /* sw-channels */
-    '04-advanced-sw/00-TITLE.md',
-    '04-advanced-sw/01-sw-channels-intro.md',
-    '04-advanced-sw/02-sw-channels-message-all.md',
-    '04-advanced-sw/03-sw-channels-exercice-all.md',
-    '04-advanced-sw/04-sw-channels-message-one.md',
-    '04-advanced-sw/05-sw-channels-exercice-one.md',
+    `${directory}/00-TITLE.md`,
+    `${directory}/01-sw-channels-intro.md`,
+    `${directory}/02-sw-channels-message-all.md`,
+    `${directory}/03-sw-channels-exercice-all.md`,
+    `${directory}/04-sw-channels-message-one.md`,
+    `${directory}/05-sw-channels-exercice-one.md`,
     /* Sync */
-    '04-advanced-sw/06-sync-intro.md'
+    `${directory}/06-sync-intro.md`
   ];
 }
 
 function installableSlides() {
+  const directory = '05-installable';
   return [
-    '05-installable/00-TITLE.md',
+    `${directory}/00-TITLE.md`,
     /* install */
-    '05-installable/01-intro.md',
-    '05-installable/02-manifest.md',
-    '05-installable/03-install.md',
+    `${directory}/01-intro.md`,
+    `${directory}/02-manifest.md`,
+    `${directory}/03-install.md`,
     /* Store */
-    '05-installable/04-store-stores.md',
-    '05-installable/05-store-windows-store.md',
-    '05-installable/06-store-chrome-web-store.md',
-    '05-installable/07-store-google-play.md'
+    `${directory}/04-store-stores.md`,
+    `${directory}/05-store-windows-store.md`,
+    `${directory}/06-store-chrome-web-store.md`,
+    `${directory}/07-store-google-play.md`
   ];
 }
 
 function engagingSlides() {
+  const directory = '06-engaging';
   return [
-    '06-engaging/00-TITLE.md',
+    `${directory}/00-TITLE.md`,
     /* ux */
-    '06-engaging/01-ux-tmp.md',
+    `${directory}/01-ux-tmp.md`,
     /* push */
-    '06-engaging/02-push.md',
-    '06-engaging/03-push-test.md'
+    `${directory}/02-push.md`,
+    `${directory}/03-push-test.md`
   ];
 }
 
 function integratedSlides() {
+  const directory = '07-integrated';
   return [
     /* API */
-    '07-integrated/00-TITLE.md',
-    '07-integrated/01-device-apis.md',
+    `${directory}/00-TITLE.md`,
+    `${directory}/01-device-apis.md`,
     /* responsive */
-    '07-integrated/02-responsive.md'
+    `${directory}/02-responsive.md`
   ];
 }
 
 function performancesSlides() {
+  const directory = '08-performances';
   return [
-    '08-performances/00-TITLE.md',
-    '08-performances/01-loading.md',
-    '08-performances/02-rendering.md',
+    `${directory}/00-TITLE.md`,
+    `${directory}/01-loading.md`,
+    `${directory}/02-rendering.md`,
     /* PRPL */
-    '08-performances/03-prpl-principe.md',
-    '08-performances/04-prpl-entry-point-shell.md',
-    '08-performances/05-prpl-http2-em-modules.md',
-    '08-performances/06-prpl-http2-server-push.md'
+    `${directory}/03-prpl-principe.md`,
+    `${directory}/04-prpl-entry-point-shell.md`,
+    `${directory}/05-prpl-http2-em-modules.md`,
+    `${directory}/06-prpl-http2-server-push.md`
   ];
 }
 
 function librariresSlides() {
-  return ['09-libraries/00-TITLE.md', '09-libraries/01-libraries.md'];
+  const directory = '09-libraries';
+  return [`${directory}/00-TITLE.md`, `${directory}/01-libraries.md`];
 }
 
 function conclusionSlides() {
+  const directory = '10-conclusion';
   return [
-    '10-conclusion/00-TITLE.md',
-    '10-conclusion/01-pwa-summary.md',
-    '10-conclusion/02-conquer.md',
-    '10-conclusion/03-conclusion.md',
-    '10-conclusion/04-ressources.md'
+    `${directory}/00-TITLE.md`,
+    `${directory}/01-pwa-summary.md`,
+    `${directory}/02-conquer.md`,
+    `${directory}/03-conclusion.md`,
+    `${directory}/04-ressources.md`
   ];
 }
 
