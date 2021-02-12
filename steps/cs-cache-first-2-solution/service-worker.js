@@ -18,11 +18,11 @@ const cacheAppShellStatic = [
 workbox.setConfig({
   debug: true
 });
-
 workbox.precaching.precacheAndRoute(cacheAppShellStatic);
 
 const matchImg = ({ url, event }) => {
-  return url.endsWith('jpg');
+  console.log('MatchImg :', url);
+  return url.href.endsWith('jpg');
 };
 
 workbox.routing.registerRoute(matchImg, new workbox.strategies.CacheFirst());

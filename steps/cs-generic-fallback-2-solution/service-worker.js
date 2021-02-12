@@ -15,7 +15,8 @@ const cacheAppShellStatic = [
   { url: '/img/cat.jpg', revision: null },
   { url: '/home', revision: null },
   { url: '/people', revision: null },
-  { url: '/bundle.js', revision: null }
+  { url: '/bundle.js', revision: null },
+  { url: 'http://localhost:3000/api/people', revision: null }
 ];
 workbox.setConfig({
   debug: true
@@ -24,12 +25,12 @@ workbox.setConfig({
 workbox.precaching.precacheAndRoute(cacheAppShellStatic);
 
 const matchImg = ({ url, event }) => {
-  return url.endsWith('jpg');
+  return url.href.endsWith('jpg');
 };
 
 workbox.routing.registerRoute(
   matchImg,
   new workbox.strategies.NetworkFirst({
-    plugins: [new FallbackOnErrorPlugin('/img/cat.jpg')]
+    plugins: [fallbackOnErrorPlugin]
   })
 );

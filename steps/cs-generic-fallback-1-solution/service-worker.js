@@ -42,9 +42,20 @@ self.addEventListener('fetch', event => {
     );
   } else {
     event.respondWith(
-      caches.match(event.request).then(response => {
-        return response || fetch(event.request);
-      })
+      caches
+        .open('cache-dynamic') //
+        .then(cache =>
+          cache.match(event.request).then(response => {
+            return (
+              response ||
+              fetch(event.request).then(fetchResponse => {
+                const clonedResponse = fetchResponse.clone();
+                cache.put(event.request, clonedResponse);
+                return fetchResponse;
+              })
+            );
+          })
+        )
     );
   }
 });

@@ -32,5 +32,20 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(caches.open('cache-static').then(cache => cache.match(event.request)));
+  if (cacheAppShellStatic.includes(new URL(event.request.url).pathname)) {
+    event.respondWith(
+      caches
+        .open('cache-static') //
+        .then(cache =>
+          cache
+            .match(event.request) //
+            .then(response => {
+              if (!response) {
+                throw new Error('no ressource for ' + event.request.url);
+              }
+              return response;
+            })
+        )
+    );
+  }
 });
