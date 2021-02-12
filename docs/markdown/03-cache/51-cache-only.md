@@ -101,14 +101,14 @@ service-worker.js
 
 ```javascript
 import { registerRoute } from 'workbox-routing';
-import { CacheFirst } from 'workbox-strategies';
+import { CacheOnly } from 'workbox-strategies';
 
-// Cache images with a Cache First strategy
+// Cache images with a Cache Only strategy
 registerRoute(
   // Check to see if the request's destination is style for an image
   ({ request }) => request.destination === 'image',
-  // Use a Cache First caching strategy
-  new CacheFirst({
+  // Use a Cache Only caching strategy
+  new CacheOnly({
     // Put all cached files in a cache named 'images'
     cacheName: 'images'
   })

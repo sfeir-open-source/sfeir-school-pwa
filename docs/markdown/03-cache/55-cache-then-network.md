@@ -32,11 +32,11 @@ self.addEventListener('fetch', event => {
 });
 ```
 
+<!-- .element: class="big-code" -->
+
 Notes:
 C'est quasiment la même chose que du network first !
 On ne renvoie pas directement le résultat du network !! On met en cache le résultat puis on le retourne en vue d'une prochaine mise à jour
-
-<!-- .element: class="big-code" -->
 
 ##==##
 

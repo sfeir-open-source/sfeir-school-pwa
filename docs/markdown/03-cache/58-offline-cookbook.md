@@ -135,7 +135,7 @@ self.addEventListener('activate', function(event) {
 
 # On user interaction
 
-![center h-800](./assets/images/cm-on-user-interaction.png)
+![center h-450](./assets/images/cm-on-user-interaction.png)
 
 Notes:
 Cas un peu plus original, on se sert d'une interaction utilisateur pour directement mettre en cache certaines données -> une sorte de read it later !
