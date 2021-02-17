@@ -92,7 +92,7 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 ##==##
 
-# Comment faire avec Workbox ?
+# Comment faire avec Workbox en cas de besoins spécifiques ?
 
 1. Créer son propre service worker
 1. Générer le service worker avec Workbox
@@ -103,7 +103,7 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 <!-- .slide: class="with-code" -->
 
-# Comment faire avec Workbox ?
+# Comment faire avec Workbox en cas de besoins spécifiques ?
 
 ### my-service-worker.js
 
@@ -114,6 +114,130 @@ importScripts('./service-worker.js')
 
 // Override every event we need
 self.addEventListener('activate', event => event.waitUntil( ...))
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="transition bg-white" -->
+
+# Avec les frameworks
+
+##==##
+
+# Avec les frameworks
+
+<br>
+
+> ⚠️ Dans tous les cas, vos tests PWA ne pourront se faire qu'en mode de production ! Aucun des systèmes prévus par les frameworks n'a pour vocation de fonctionner en mode dev.
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Avec Angular
+
+En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
+
+```json
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "cacheOnly",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["**"]
+      }
+    }
+  ]
+}
+```
+
+<!-- .element: class="big-code" -->
+
+Notes:
+Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Comment faire du spécifique avec Angular ?
+
+Tout comme pour Workbox, on va importer le service worker généré dans notre service worker et référencer notre service worker au sein de l'application
+
+<br><br>
+
+### my-service-worker.js
+
+```javascript
+/****IMPORT ANGULAR WORKER******/
+importScripts('./ngsw-worker.js')
+
+// Override every event we need
+self.addEventListener('activate', event => event.waitUntil( ...))
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Comment faire du spécifique avec Angular ?
+
+### app.module.ts
+
+```javascript
+import { ServiceWorkerModule } from '@angular/service-worker'
+@NgModule({
+  ...
+  imports: [
+    ServiceWorkerModule.register('/my-service-worker.js', {
+      enabled: environment.production,
+    }),
+  ],
+  ...
+})
+export class AppModule {}
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+# Avec React
+
+> Starting with Create React App 4, you can add a src/service-worker.js file to your project to use the built-in support for Workbox's InjectManifest plugin, which will compile your service worker and inject into it a list of URLs to precache.
+
+<br><br>
+**En résumé : Comme avec Workbox**
+
+##==##
+
+# Avec VueJS
+
+<!-- .slide: class="with-code" -->
+
+En utilisant aussi Workbox dans le fichier de config de vue
+
+vue.config.js
+
+```javascript
+module.exports = {
+  // ...other vue-cli plugin options...
+  pwa: {
+    //....
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      swSrc: 'dev/sw.js'
+      // ...other Workbox options...
+    }
+  }
+};
 ```
 
 <!-- .element: class="big-code" -->
