@@ -44,7 +44,8 @@ self.addEventListener('fetch', event => {
               cache.put(event.request, responseFetch.clone());
               return responseFetch;
             })
-        )
+        ) //
+        .catch(_ => caches.match(event.request))
     );
   } else {
     event.respondWith(

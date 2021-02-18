@@ -11,8 +11,8 @@ const fallbackOnErrorPlugin = {
         ignoreSearch: true
       })
     );
-  },
-  fetchDidFail: async ({ originalRequest, request, error, event, state }) => {
+  }
+  /* fetchDidFail: async ({ originalRequest, request, error, event, state }) => {
     console.log('fetchDidFail', originalRequest.url);
     throw new Error(`Invalid response status (${response.status})`);
     // No return expected.
@@ -20,5 +20,5 @@ const fallbackOnErrorPlugin = {
     // request after being passed through plugins with
     // `requestWillFetch` callbacks, and `error` is the exception that caused
     // the underlying `fetch()` to fail.
-  }
+  }*/
 };
