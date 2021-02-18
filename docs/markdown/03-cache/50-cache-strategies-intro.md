@@ -83,7 +83,7 @@ Si il existe une version en cache, on l'utilise, puis on telecharge la nouvelle 
 
 ##==##
 
-# Stratégies de cache : Greneric-Fallback
+# Stratégies de cache : Generic-Fallback
 
 ![center h-800](./assets/images/cache-strategy-generic-fallback.png)
 

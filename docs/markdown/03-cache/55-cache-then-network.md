@@ -136,7 +136,7 @@ On reste en Network first car l'objectif est d'aller sur le serveur, par contre 
 1. A ne mettre en place uniquement que pour cette url !
 1. Mettre en place un timeout dans la chaine d'appel pour avoir le temps d'afficher le résultat du cache
 
-### Step: cs-cache-then-network-1
+### Step: cs-cache-then-network-2
 
 ##==##
 

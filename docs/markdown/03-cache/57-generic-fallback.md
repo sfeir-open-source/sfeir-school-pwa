@@ -4,7 +4,7 @@
 
 ##==##
 
-# Stratégies de cache : Greneric-Fallback
+# Stratégies de cache : Generic-Fallback
 
 ![center h-800](./assets/images/cache-strategy-generic-fallback.png)
 
@@ -15,7 +15,7 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 <!-- .slide: class="with-code" -->
 
-# Greneric-Fallback : example
+# Generic-Fallback : example
 
 service-worker.js
 

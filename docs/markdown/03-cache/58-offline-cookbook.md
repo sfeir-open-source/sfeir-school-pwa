@@ -146,7 +146,7 @@ Cas un peu plus original, on se sert d'une interaction utilisateur pour directem
 
 # On user interaction : example
 
-service-worker.js
+main.js
 
 ```javascript
 document.querySelector('.cache-article').addEventListener('click', function(event) {

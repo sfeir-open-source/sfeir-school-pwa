@@ -104,7 +104,7 @@ Toujours aussi simple à mettre en oeuvre
 
 # Avec Angular - que pour les urls type api
 
-Non applicable pour les ressources (en même, ça n'a pas trop de sens)
+Non applicable pour les ressources (en même temps, ça n'a pas trop de sens)
 
 ```json
 {
