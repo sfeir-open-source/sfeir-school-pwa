@@ -49,3 +49,11 @@ Specifics
 @import '32-2_device-2.scss';
 @import '43_performance.scss';
 @import '60_conclusion.scss';
+
+.reveal .slides section {
+  // Do some stuff
+
+  &.with-code.max-height pre code {
+    max-height: 800px;
+  }
+}

@@ -17,11 +17,14 @@
 - Cache-Then-Network
 - Stale-While-Revalidate
 - Generic-Fallback
+  <!-- .element: class="list-fragment" -->
 
 Notes:
 Certaines stratégies ne sont pas à utiliser toutes seules, en général, on va choisir une partie de son app qui suivra une de ces stratégies
 
 ##==##
+
+<!-- .slide: data-type-show="hide" -->
 
 # Stratégies de cache : Cache-only
 
@@ -34,6 +37,8 @@ You should have cached these in the install event, so you can depend on them bei
 
 ##==##
 
+<!-- .slide: data-type-show="hide" -->
+
 # Stratégies de cache : Network-only
 
 ![center h-800](./assets/images/cache-strategy-network-only.png)
@@ -45,6 +50,8 @@ Si ce n'est qu'une partie de l'application, il est important d'expliquer clairem
 
 ##==##
 
+<!-- .slide: data-type-show="hide" -->
+
 # Stratégies de cache : Cache-first
 
 ![center h-800](./assets/images/cache-strategy-cache-first.png)
@@ -52,6 +59,8 @@ Notes:
 D'abord le cache, et si pas trouvé, network
 
 ##==##
+
+<!-- .slide: data-type-show="hide" -->
 
 # Stratégies de cache : Network-first
 
@@ -64,6 +73,8 @@ Avatars, classement,
 
 ##==##
 
+<!-- .slide: data-type-show="hide" -->
+
 # Stratégies de cache : Cache-Then-Network
 
 ![center h-800](./assets/images/cache-strategy-cache-then-network.png)
@@ -72,6 +83,8 @@ Notes:
 Ici, on récupère le cache, et en même temps, on va chercher le network. Quand le résultat du network est là, alors on rafraichit de façon pro-active la page
 
 ##==##
+
+<!-- .slide: data-type-show="hide" -->
 
 # Stratégies de cache : Stale-While-Revalidate
 
@@ -82,6 +95,8 @@ Proche de la version Cache-Then-Network
 Si il existe une version en cache, on l'utilise, puis on telecharge la nouvelle version pour la prochaine fois
 
 ##==##
+
+<!-- .slide: data-type-show="hide" -->
 
 # Stratégies de cache : Generic-Fallback
 
@@ -98,6 +113,7 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 1. Générer le service worker avec Workbox
 1. Inclure le service worker de workbox dans son service worker
 1. Surcharger les éventuels étapes que l'on souhaite mettre en place
+   <!-- .element: class="list-fragment" -->
 
 ##==##
 
@@ -110,13 +126,32 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 ```javascript
 /*******************************/
 /****IMPORT WORKBOX******/
-importScripts('./service-worker.js')
+importScripts('./service-worker.js');
+
+
+...
+```
+
+<!-- .element: class="big-code"  -->
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Comment faire avec Workbox en cas de besoins spécifiques ?
+
+### my-service-worker.js
+
+```javascript
+/*******************************/
+/****IMPORT WORKBOX******/
+//importScripts('./service-worker.js')
 
 // Override every event we need
 self.addEventListener('activate', event => event.waitUntil( ...))
 ```
 
-<!-- .element: class="big-code" -->
+<!-- .element: class="big-code"  -->
 
 ##==##
 
@@ -134,7 +169,7 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Avec Angular
 
@@ -145,14 +180,37 @@ En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
   "index": "/index.html",
   "assetGroups": [
     {
+      ...
+
+
+    }
+  ]
+}
+```
+
+<!-- .element: class="big-code" -->
+
+Notes:
+Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Avec Angular
+
+En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
+
+```json
+{
+  ...
+  "assetGroups": [{
       "name": "cacheOnly",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
         "files": ["**"]
-      }
-    }
-  ]
+      }}]
 }
 ```
 
@@ -185,15 +243,15 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Comment faire du spécifique avec Angular ?
 
 ### app.module.ts
 
 ```javascript
-import { ServiceWorkerModule } from '@angular/service-worker'
-@NgModule({
+//import { ServiceWorkerModule } from '@angular/service-worker'
+//@NgModule({
   ...
   imports: [
     ServiceWorkerModule.register('/my-service-worker.js', {
@@ -202,7 +260,7 @@ import { ServiceWorkerModule } from '@angular/service-worker'
   ],
   ...
 })
-export class AppModule {}
+//export class AppModule {}
 ```
 
 <!-- .element: class="big-code" -->
@@ -220,7 +278,7 @@ export class AppModule {}
 
 # Avec VueJS
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 En utilisant aussi Workbox dans le fichier de config de vue
 

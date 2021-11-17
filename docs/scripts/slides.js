@@ -45,19 +45,19 @@ function cacheSlides() {
   const directory = '03-cache';
   return [
     /* App-Shell */
-    `${directory}/00-TITLE.md`,
-    `${directory}/01-app-shell-intro.md`,
+    //`${directory}/00-TITLE.md`,
+    //`${directory}/01-app-shell-intro.md`,
     /* offline */
-    `${directory}/05-offline-intro.md`,
-    `${directory}/06-offline-ex-sw-5-2.md`,
-    `${directory}/07-offline-ex-sw-5-3.md`,
-    `${directory}/08-offline-ex-sw-5-4.md`,
-    `${directory}/09-offline-ex-sw-5-5.md`,
+    //`${directory}/05-offline-intro.md`,
+    //`${directory}/06-offline-ex-sw-5-2.md`,
+    //`${directory}/07-offline-ex-sw-5-3.md`,
+    //`${directory}/08-offline-ex-sw-5-4.md`,
+    //`${directory}/09-offline-ex-sw-5-5.md`,
     /* sw-window */
-    `${directory}/10-workbox-import.md`,
-    `${directory}/11-workbox-precache.md`,
-    `${directory}/12-workbox-routing.md`,
-    `${directory}/13-workbox-exercice.md`,
+    //`${directory}/10-workbox-import.md`,
+    //`${directory}/11-workbox-precache.md`,
+    //`${directory}/12-workbox-routing.md`,
+    //`${directory}/13-workbox-exercice.md`,
     /* cache-strategies */
     `${directory}/50-cache-strategies-intro.md`,
     /* Advanced Cache */
@@ -149,10 +149,11 @@ function conclusionSlides() {
   const directory = '10-conclusion';
   return [
     `${directory}/00-TITLE.md`,
-    `${directory}/01-pwa-summary.md`,
-    `${directory}/02-conquer.md`,
-    `${directory}/03-conclusion.md`,
-    `${directory}/04-ressources.md`
+    //`${directory}/01-pwa-summary.md`,
+    //`${directory}/02-conquer.md`,
+    //`${directory}/03-conclusion.md`,
+    //`${directory}/04-ressources.md`,
+    '00-school/speaker-jef-thanks.md'
   ];
 }
 
@@ -163,17 +164,17 @@ function bonusSlides() {
 function formation() {
   return [
     ...schoolSlides(),
-    ...introSlides(),
-    ...serviceWorkersSlides(),
+    //...introSlides(),
+    //...serviceWorkersSlides(),
     ...cacheSlides(),
-    ...advancedServiceWorkersSlides(),
-    ...installableSlides(),
-    ...engagingSlides(),
-    ...integratedSlides(),
-    ...performancesSlides(),
-    ...librariresSlides(),
-    ...conclusionSlides(),
-    ...bonusSlides()
+    //...advancedServiceWorkersSlides(),
+    //...installableSlides(),
+    //...engagingSlides(),
+    //...integratedSlides(),
+    //...performancesSlides(),
+    //...librariresSlides(),
+    ...conclusionSlides()
+    //...bonusSlides()
   ].map(slidePath => {
     return { path: slidePath };
   });

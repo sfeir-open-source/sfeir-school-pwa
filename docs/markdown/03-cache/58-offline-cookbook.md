@@ -31,7 +31,7 @@ Utile pour les données de l'appCache
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="hide" -->
 
 # On Install - as a dependency : example
 
@@ -66,7 +66,7 @@ Utile pour précharger des données sans tout attendre ! Genre mise en cache de 
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="hide" -->
 
 # On Install - not as a dependency : example
 
@@ -103,7 +103,7 @@ Stratégie classique de nétoyage de cache sur activation du service worker
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="hide" -->
 
 # On Activate : example
 
@@ -142,7 +142,7 @@ Cas un peu plus original, on se sert d'une interaction utilisateur pour directem
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="hide" -->
 
 # On user interaction : example
 
@@ -180,7 +180,7 @@ Ce qui est intéressant c'est qu'on met en cache les données sur un push avant 
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="hide" -->
 
 # On push message : example
 
@@ -231,7 +231,7 @@ Dans le cas où les disques sont très lent d'accès (antivirus, ...)
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="hide" -->
 
 # Cache and network race : example
 
@@ -256,7 +256,7 @@ Cas où on va faire du SSR mais côté service worker. On ne solicite plus le se
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="hide" -->
 
 # Service worker-side templating : example
 

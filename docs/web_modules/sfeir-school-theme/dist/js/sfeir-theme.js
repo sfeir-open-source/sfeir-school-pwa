@@ -25,6 +25,9 @@ class SfeirTheme {
     // Manage Hack to speakers images
     this._manageSpeakersBorders();
 
+    // Manage hack to add data lines highlight
+    this._manageCodeDataLines();
+
     if (Reveal) {
       Reveal.sync();
     }
@@ -197,6 +200,14 @@ class SfeirTheme {
       divWithBgElement.style['background-image'] = `url(${imgToReplace.src})`;
       parentOfImg.appendChild(divWithBgElement);
       parentOfImg.removeChild(imgToReplace);
+    }
+  }
+
+  _manageCodeDataLines() {
+    const preWithDataLines = [...document.querySelectorAll('.reveal .slides section pre[data-line-numbers]')];
+    for (let pre of preWithDataLines) {
+      let codeTag = pre.querySelector('code');
+      codeTag.setAttribute('data-line-numbers', pre.getAttribute('data-line-numbers'));
     }
   }
 }

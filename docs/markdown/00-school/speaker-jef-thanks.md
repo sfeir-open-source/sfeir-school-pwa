@@ -1,6 +1,6 @@
 <!-- .slide: class="speaker-slide" -->
 
-# Présentation
+# Merci !
 
 ![speaker](./assets/images/jf.jpg)
 ![badge](./assets/images/gde.png)
