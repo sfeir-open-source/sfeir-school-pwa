@@ -124,7 +124,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache First
 
@@ -189,7 +189,7 @@ On va en général dédié ça à une stratégie bien particulière exemple les 
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache First avec Workbox
 

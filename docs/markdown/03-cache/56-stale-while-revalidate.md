@@ -145,7 +145,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Stale While Revalidate
 
@@ -183,7 +183,7 @@ Toujours aussi simple à mettre en oeuvre
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache Then Network avec Workbox
 

@@ -249,7 +249,7 @@ caches
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache Then Network
 
@@ -290,7 +290,7 @@ On reste en Network first car l'objectif est d'aller sur le serveur, par contre 
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache Then Network avec Workbox
 

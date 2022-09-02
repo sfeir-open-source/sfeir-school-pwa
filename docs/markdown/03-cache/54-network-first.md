@@ -150,7 +150,7 @@ On va sur le réseau et en cas d'échec on prend ce qu'il y a en cache
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Network First
 
@@ -190,7 +190,7 @@ Networkd first sera quand même plus adapté à des urls serveur
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Network First avec Workbox
 

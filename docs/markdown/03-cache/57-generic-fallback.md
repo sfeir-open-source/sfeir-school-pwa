@@ -118,7 +118,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Generic FallBack
 
@@ -316,7 +316,7 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Generic Fallback avec Workbox
 

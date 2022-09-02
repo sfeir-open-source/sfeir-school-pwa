@@ -1,12 +1,5 @@
-<!-- .slide: class="transition blue" -->
 
-# **Explorons les stratégies de caches offertes sur les PWA**
-
-## Codeur en Seine 2021 (18 Nov.)
-
-##==##
-
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" data-type-show="hide" -->
+<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" data-type-show="prez" -->
 
 # **Welcome to Sfeir School**
 
@@ -35,7 +28,7 @@ Credentials
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Déroulement de la formation
 

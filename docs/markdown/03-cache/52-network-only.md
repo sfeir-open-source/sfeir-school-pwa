@@ -57,7 +57,7 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Network Only (Appels serveurs)
 
@@ -119,7 +119,7 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="hide" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Network Only avec Workbox
 

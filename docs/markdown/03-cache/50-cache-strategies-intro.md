@@ -24,7 +24,7 @@ Certaines stratégies ne sont pas à utiliser toutes seules, en général, on va
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de cache : Cache-only
 
@@ -37,7 +37,7 @@ You should have cached these in the install event, so you can depend on them bei
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de cache : Network-only
 
@@ -50,7 +50,7 @@ Si ce n'est qu'une partie de l'application, il est important d'expliquer clairem
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de cache : Cache-first
 
@@ -60,7 +60,7 @@ D'abord le cache, et si pas trouvé, network
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de cache : Network-first
 
@@ -73,7 +73,7 @@ Avatars, classement,
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de cache : Cache-Then-Network
 
@@ -84,7 +84,7 @@ Ici, on récupère le cache, et en même temps, on va chercher le network. Quand
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de cache : Stale-While-Revalidate
 
@@ -96,7 +96,7 @@ Si il existe une version en cache, on l'utilise, puis on telecharge la nouvelle 
 
 ##==##
 
-<!-- .slide: data-type-show="hide" -->
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de cache : Generic-Fallback
 
