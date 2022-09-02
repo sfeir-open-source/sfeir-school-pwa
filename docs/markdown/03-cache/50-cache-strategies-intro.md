@@ -227,7 +227,7 @@ Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
 
 Tout comme pour Workbox, on va importer le service worker généré dans notre service worker et référencer notre service worker au sein de l'application
 
-<br><br>
+<br>
 
 ### my-service-worker.js
 

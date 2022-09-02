@@ -122,7 +122,7 @@ self.addEventListener('fetch', event => {
 
 # Generic FallBack
 
-## Exercice
+## Lab
 
 <br>
 
@@ -320,7 +320,7 @@ registerRoute(
 
 # Generic Fallback avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 

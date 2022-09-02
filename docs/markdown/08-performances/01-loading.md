@@ -4,7 +4,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/compression_bg.jpg" class="transition" -->
+<!-- .slide: data-background="./assets/images/compression_bg.jpg" class="transition mask" -->
 
 # Compression
 
@@ -57,11 +57,10 @@ MAJ: 2018-08-31
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition " -->
+<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition mask" -->
 
 # Images
 
-<!-- .element: class="border-orange" -->
 
 <br>
 
@@ -181,11 +180,10 @@ ffmpeg -i input.gif output.mp4
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition" -->
+<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition mask" -->
 
 # Scripts
 
-<!-- .element: class="border-orange" -->
 
 ##==##
 
@@ -275,7 +273,7 @@ Notes:
 
 # HTTP2
 
-![h-600 center](./assets/images/http2_demo.gif)
+![h-500 center](./assets/images/http2_demo.gif)
 
 [HTTP2 Golang demo](https://http2.golang.org/gophertiles?latency=0)
 

@@ -128,7 +128,7 @@ self.addEventListener('fetch', event => {
 
 # Cache First
 
-## Exercice
+## Lab
 
 <br>
 
@@ -193,7 +193,7 @@ On va en général dédié ça à une stratégie bien particulière exemple les 
 
 # Cache First avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 

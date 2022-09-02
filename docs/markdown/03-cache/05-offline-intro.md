@@ -23,7 +23,6 @@
 
 # Stratégies de cache
 
-<br><br>
 
 ![center h-600](./assets/images/offline_dinosaur.png)
 

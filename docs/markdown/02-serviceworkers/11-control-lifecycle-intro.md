@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition" -->
+<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition mask" -->
 
 # Contrôler le cycle de vie
 

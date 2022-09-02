@@ -55,7 +55,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/geolocation.png" class="transition"-->
+<!-- .slide: data-background="./assets/images/geolocation.png" class="transition mask"-->
 
 # Geolocation
 
@@ -96,11 +96,9 @@ Opera 12.1 uses the older specificaton's :fullscreen-ancestor pseudo-class inste
 
 # Appeler un numéro depuis un site web ?
 
-<br>
-
-![h-450](./assets/images/call_phone_1.png)
-![h-450](./assets/images/call_phone_2.png)
-![h-450](./assets/images/call_phone_3.png)
+![h-400](./assets/images/call_phone_1.png)
+![h-400](./assets/images/call_phone_2.png)
+![h-400](./assets/images/call_phone_3.png)
 
 ##==##
 

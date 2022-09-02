@@ -2,7 +2,7 @@
 
 # Les événements des SW
 
-## Exercice
+## Lab
 
 <br>
 

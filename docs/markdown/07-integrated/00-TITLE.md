@@ -4,6 +4,6 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/buzz_light_bg.jpg" class="transition" -->
+<!-- .slide: data-background="./assets/images/buzz_light_bg.jpg" class="transition mask" -->
 
 # To device integration and beyond!

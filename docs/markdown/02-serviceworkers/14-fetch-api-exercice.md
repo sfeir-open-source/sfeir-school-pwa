@@ -2,7 +2,7 @@
 
 # Fetch API
 
-## Exercice
+## Lab
 
 <br>
 

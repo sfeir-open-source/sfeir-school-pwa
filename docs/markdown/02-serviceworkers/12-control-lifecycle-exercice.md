@@ -2,7 +2,7 @@
 
 # Rafraichir votre service worker
 
-## Exercice
+## Lab
 
 <br>
 

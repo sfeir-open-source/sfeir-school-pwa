@@ -2,7 +2,7 @@
 
 # Cache-cache
 
-## Exercice
+## Lab
 
 <br>
 
@@ -16,6 +16,5 @@
 
 # Delete Cache
 
-<br><br>
 
 ![center h-700](./assets/images/sw_delete_cache.png)

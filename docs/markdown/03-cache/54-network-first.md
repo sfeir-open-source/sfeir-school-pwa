@@ -154,7 +154,7 @@ On va sur le réseau et en cas d'échec on prend ce qu'il y a en cache
 
 # Network First
 
-## Exercice
+## Lab
 
 <br>
 
@@ -194,7 +194,7 @@ Networkd first sera quand même plus adapté à des urls serveur
 
 # Network First avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 

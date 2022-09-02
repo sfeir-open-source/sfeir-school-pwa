@@ -103,9 +103,8 @@ self.addEventListener('fetch', event => {
 
 # Cache Only (ou installation App-Shell)
 
-## Exercice
+## Lab
 
-<br>
 
 1. Mettre en place une stratégie cache only. Le meilleur cas d'utilisation est l'app-shell.
 1. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.
@@ -254,9 +253,8 @@ registerRoute(
 
 # Cache Only avec Workbox
 
-## Exercice
+## Lab
 
-<br>
 
 1. Mettre en place une stratégie cache only. Le meilleur cas d'utilisation est l'app-shell.
 1. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.

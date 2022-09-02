@@ -61,7 +61,7 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 
 # Network Only (Appels serveurs)
 
-## Exercice
+## Lab
 
 <br>
 
@@ -123,7 +123,7 @@ registerRoute(
 
 # Network Only avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 

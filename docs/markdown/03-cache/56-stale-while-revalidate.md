@@ -149,7 +149,7 @@ self.addEventListener('fetch', event => {
 
 # Stale While Revalidate
 
-## Exercice
+## Lab
 
 <br>
 
@@ -187,7 +187,7 @@ Toujours aussi simple à mettre en oeuvre
 
 # Cache Then Network avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 

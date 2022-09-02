@@ -2,7 +2,7 @@
 
 # Chercher dans le cache
 
-## Exercice
+## Lab
 
 <br>
 

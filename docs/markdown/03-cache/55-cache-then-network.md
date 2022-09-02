@@ -253,7 +253,7 @@ caches
 
 # Cache Then Network
 
-## Exercice
+## Lab
 
 <br>
 
@@ -294,7 +294,7 @@ On reste en Network first car l'objectif est d'aller sur le serveur, par contre 
 
 # Cache Then Network avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 

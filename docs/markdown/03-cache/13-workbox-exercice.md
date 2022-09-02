@@ -2,7 +2,7 @@
 
 # Sinon on a workbox
 
-## Exercice
+## Lab
 
 <br>
 
