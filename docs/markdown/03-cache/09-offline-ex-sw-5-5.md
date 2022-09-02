@@ -2,7 +2,7 @@
 
 # Bye bye le cache
 
-## Exercice
+## Lab
 
 <br>
 

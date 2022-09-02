@@ -1,19 +1,34 @@
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" -->
+
+<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" data-type-show="prez" -->
 
 # **Welcome to Sfeir School**
 
 ## **PWA 200**
 
 ##==##
+<!-- .slide: class="bg-blur" -->
 
-<!-- .slide: class="school-presentation" -->
+<br>
 
-<div class="wifi">
-    <span class="key">wifi:</span><span>SSID</span><br>
-    <span class="key">mdp:</span><span>PWD_WIFI</span>
-</div>
+### Wifi available 
+
+<br>
+
+![sfeir-icons](wifi)<!-- .element: style="--icon-size:300px; --icon-color:var(--light-grey);" -->
+
+<br>
+
+Credentials
+<!-- .element: class="center" -->
+<br>
+
+![sfeir-icons big](user)<!-- .element: style="--icon-color:var(--light-grey);" --> SSID
+
+![sfeir-icons big](lock)<!-- .element: style="--icon-color:var(--light-grey);" --> PWD
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Déroulement de la formation
 

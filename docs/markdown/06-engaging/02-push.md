@@ -29,7 +29,7 @@ Complémentaires
 
 ##==##
 
-<!-- .slide: data-background="#dcdee0" class="transition top" -->
+<!-- .slide: data-background="#dcdee0" class="transition top mask" -->
 
 ![center h-800](./assets/images/notification_icon.png)
 
@@ -57,7 +57,6 @@ The Notifications API lets a web page or app send notifications that are display
 
 # Qu'est ce qu'une bonne notification ?
 
-<br><br>
 
 ![w-600](./assets/images/car_notification.png)
 ![w-600](./assets/images/good_notification.svg)
@@ -73,7 +72,6 @@ And it’s relevant - something I should be interested in.
 
 # Qu'est ce qu'une bonne notification ?
 
-<br><br>
 
 ![w-600](./assets/images/bad_app_notification.png)
 ![w-600](./assets/images/bad_notification.svg)

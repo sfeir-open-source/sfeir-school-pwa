@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./assets/images/fetch_bg.png" class="transition transition" -->
+<!-- .slide: data-background="./assets/images/fetch_bg.png" class="transition transition mask" -->
 
 # Fetch API
 

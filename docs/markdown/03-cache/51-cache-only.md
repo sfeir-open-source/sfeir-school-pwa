@@ -15,7 +15,7 @@ You should have cached these in the install event, so you can depend on them bei
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Cache-only : Initialisation
 
@@ -24,13 +24,59 @@ service-worker.js
 ```javascript
 const cacheAppShellStatic = ['/', /*...*/];
 self.addEventListener('install', event =>
-  // We start by caching vitals resources
-  event.waitUntil(
-    caches.open('cache-static')
-      .then(cache => cache.addAll(cacheAppShellStatic))
-      .then(_ => self.skipWaiting())
-  );
+
+
+
+
+
+
 );
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Cache-only : Initialisation
+
+service-worker.js
+
+```javascript
+//const cacheAppShellStatic = ['/', /*...*/];
+//self.addEventListener('install', event =>
+
+event.waitUntil(
+  caches
+    .open('cache-static')
+
+ ...
+);
+//);
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Cache-only : Initialisation
+
+service-worker.js
+
+```javascript
+//const cacheAppShellStatic = ['/', /*...*/];
+//self.addEventListener('install', event =>
+
+event.waitUntil(
+  caches
+    .open('cache-static')
+    .then(cache => cache.addAll(cacheAppShellStatic))
+    .then(_ => self.skipWaiting())
+);
+//);
 ```
 
 <!-- .element: class="big-code" -->
@@ -45,8 +91,6 @@ service-worker.js
 
 ```javascript
 self.addEventListener('fetch', event => {
-  // if a match isn't found in the cache, the response
-  // will look like a connection error
   event.respondWith(caches.match(event.request));
 });
 ```
@@ -55,13 +99,12 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache Only (ou installation App-Shell)
 
-## Exercice
+## Lab
 
-<br>
 
 1. Mettre en place une stratégie cache only. Le meilleur cas d'utilisation est l'app-shell.
 1. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.
@@ -80,11 +123,55 @@ service-worker.js
 ```javascript
 import {precacheAndRoute} from 'workbox-precaching';
 
+
+
+
+
+
+
+...
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Cache-only : Avec Workbox (Initialisation et Utilisation)
+
+service-worker.js
+
+```javascript
+import {precacheAndRoute} from 'workbox-precaching';
+
 const cacheAppShellStatic = [{
   {url: '/index.html', revision: '383676' },
   {url: '/styles/app.0c9a31.css', revision: null},
   {url: '/scripts/app.0d5770.js', revision: null},
   // ... other entries ...];
+
+...
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Cache-only : Avec Workbox (Initialisation et Utilisation)
+
+service-worker.js
+
+```javascript
+/*import { precacheAndRoute } from 'workbox-precaching';
+
+const cacheAppShellStatic = [{
+  {url: '/index.html', revision: '383676' },
+  {url: '/styles/app.0c9a31.css', revision: null},
+  {url: '/scripts/app.0d5770.js', revision: null},
+  // ... other entries ...];*/
 
 precacheAndRoute(cacheAppShellStatic);
 ```
@@ -93,7 +180,7 @@ precacheAndRoute(cacheAppShellStatic);
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Cache-only : Avec Workbox (Initialisation et Utilisation) bis
 
@@ -103,13 +190,56 @@ service-worker.js
 import { registerRoute } from 'workbox-routing';
 import { CacheOnly } from 'workbox-strategies';
 
-// Cache images with a Cache Only strategy
+
+
+
+
+
+
+);
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Cache-only : Avec Workbox (Initialisation et Utilisation) bis
+
+service-worker.js
+
+```javascript
+//import { registerRoute } from 'workbox-routing';
+import { CacheOnly } from 'workbox-strategies';
+
 registerRoute(
-  // Check to see if the request's destination is style for an image
   ({ request }) => request.destination === 'image',
-  // Use a Cache Only caching strategy
+
+
+
+  ...
+);
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Cache-only : Avec Workbox (Initialisation et Utilisation) bis
+
+service-worker.js
+
+```javascript
+//import { registerRoute } from 'workbox-routing';
+import { CacheOnly } from 'workbox-strategies';
+
+registerRoute(
+  //({ request }) => request.destination === 'image',
+
   new CacheOnly({
-    // Put all cached files in a cache named 'images'
     cacheName: 'images'
   })
 );
@@ -119,13 +249,12 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache Only avec Workbox
 
-## Exercice
+## Lab
 
-<br>
 
 1. Mettre en place une stratégie cache only. Le meilleur cas d'utilisation est l'app-shell.
 1. Après avoir identifié les fichiers importants pour notre app-shell, ajoutez les dans le cache lors de l’event “install” de votre service worker.
@@ -142,26 +271,48 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Avec Angular
 
 En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
 
 ```json
-{
+{...
   "index": "/index.html",
   "assetGroups": [
     {
-      "name": "cacheOnly",
+
+
+
+
+
+
+    }]}
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Avec Angular
+
+En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
+
+```json
+{...
+  //"index": "/index.html",
+  "assetGroups": [
+    {
+      //"name": "cacheOnly",
       "installMode": "prefetch",
       "updateMode": "prefetch",
-      "resources": {
-        "files": ["**"]
-      }
-    }
-  ]
-}
+      //"resources": {
+      //  "files": ["**"]
+      //}
+    }]}
 ```
 
 <!-- .element: class="big-code" -->

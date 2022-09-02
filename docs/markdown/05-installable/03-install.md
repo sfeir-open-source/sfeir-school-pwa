@@ -2,7 +2,7 @@
 
 # Créer un bouton pour installer l'app
 
-## Exercice
+## Lab
 
 <br>
 

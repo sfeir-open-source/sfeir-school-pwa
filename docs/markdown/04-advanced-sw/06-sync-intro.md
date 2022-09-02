@@ -159,7 +159,7 @@ Notes: 03/07/2019
 
 # Mettons en place du background Sync
 
-## Exercice
+## Lab
 
 <br>
 
@@ -253,7 +253,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="whith-code" -->
+<!-- .slide: class="with-code" -->
 
 ## Réponse à un pbs event
 
@@ -269,7 +269,6 @@ self.addEventListener('periodicsync', event => {
   // Other logic for different tags as needed.
 });
 ```
-
 <!-- .element: class="big-code" -->
 
 ##==##

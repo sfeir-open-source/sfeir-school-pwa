@@ -1,3 +1,5 @@
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+
 function schoolSlides() {
   return ['00-school/00-TITLE.md', '00-school/speaker-jef.md'];
 }
@@ -152,7 +154,8 @@ function conclusionSlides() {
     `${directory}/01-pwa-summary.md`,
     `${directory}/02-conquer.md`,
     `${directory}/03-conclusion.md`,
-    `${directory}/04-ressources.md`
+    `${directory}/04-ressources.md`,
+    '00-school/speaker-jef-thanks.md'
   ];
 }
 
@@ -179,6 +182,4 @@ function formation() {
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);

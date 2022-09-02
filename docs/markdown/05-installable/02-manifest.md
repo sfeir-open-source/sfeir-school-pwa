@@ -2,7 +2,7 @@
 
 # Créer votre propre manifest
 
-## Exercice
+## Lab
 
 <br>
 
@@ -15,7 +15,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/installabilite.png" class="transition transition" -->
+<!-- .slide: data-background="./assets/images/installabilite.png" class="transition mask" -->
 
 # Installabilité
 

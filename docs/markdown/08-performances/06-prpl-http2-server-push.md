@@ -6,7 +6,6 @@
 
 # HTTP/2 Server Push
 
-<br>
 
 ![center](./assets/images/PRPL/push01.svg)
 

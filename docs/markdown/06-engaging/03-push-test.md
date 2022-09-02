@@ -2,7 +2,7 @@
 
 # Implémenter la Push API
 
-## Exercice
+## Lab
 
 <br>
 
@@ -21,7 +21,7 @@ Pensez à utiliser event.waitUntil ;) !
 
 # Tester la Push API
 
-## Exercice
+## Lab
 
 Utiliser Chrome devtools pour tester le push
 
@@ -52,7 +52,7 @@ There are a bunch of different ways to create the application server keys. You c
 
 # Tester la Push API
 
-## Exercice
+## Lab
 
 <br>
 

@@ -6,12 +6,13 @@
 
 # Objectifs
 
-<br><br>
+
 
 ![h-700 float-left](./assets/images/devoxx_app.gif)
 
 <!-- .element: style="margin-left:500px; margin-right:50px;" -->
 
+<br><br>
 - App Like
   <br><br>
 - Engagement
@@ -20,7 +21,7 @@
 
 ##==##
 
-<!-- .slide: class="transition top" data-background="./assets/images/manifest.png" -->
+<!-- .slide: class="transition top mask" data-background="./assets/images/manifest.png" -->
 
 # Le Manifest
 

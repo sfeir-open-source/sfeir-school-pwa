@@ -15,7 +15,111 @@ La différence avec le cache first, est qu'en cache first, on ne cherche pas à 
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
+
+# Stale-While-Revalidate : example
+
+service-worker.js
+
+```javascript
+self.addEventListener('fetch', event => {
+  event.respondWith(
+
+
+
+
+
+
+
+    ...
+    )
+  );
+});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Stale-While-Revalidate : example
+
+service-worker.js
+
+```javascript
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open('dynamic').then(cache =>
+      cache.match(event.request).then(response => {
+
+
+
+
+        ...
+      })
+    )
+  );
+});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Stale-While-Revalidate : example
+
+service-worker.js
+
+```javascript
+/*self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open('dynamic').then(cache =>
+      cache.match(event.request).then(response => {*/
+        const fetchPromise = fetch(event.request).then(networkResponse => {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });
+        ...
+      })
+    /*)
+  );
+});*/
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Stale-While-Revalidate : example
+
+service-worker.js
+
+```javascript
+//self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open('dynamic').then(cache =>
+      cache.match(event.request).then(response => {
+        /*const fetchPromise = fetch(event.request).then(networkResponse => {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });*/
+        return response || fetchPromise;
+      })
+    )
+  );
+});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
 
 # Stale-While-Revalidate : example
 
@@ -41,11 +145,11 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Stale While Revalidate
 
-## Exercice
+## Lab
 
 <br>
 
@@ -63,11 +167,11 @@ self.addEventListener('fetch', event => {
 service-worker.js
 
 ```javascript
-import { registerRoute } from 'workbox-routing';
+//import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate } from 'workbox-strategies';
 
 registerRoute(
-  ({ request }) => request.destination === 'urlToStaleWhileRevalidate', //
+  ..., //
   new StaleWhileRevalidate()
 );
 ```
@@ -79,11 +183,11 @@ Toujours aussi simple à mettre en oeuvre
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Cache Then Network avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 
@@ -110,8 +214,8 @@ Non applicable pour les ressources (en même temps, ça n'a pas trop de sens)
 {
   "dataGroups": [
     {
-      "name": "api",
-      "urls": "/myAPI/*",
+      //"name": "api",
+      //"urls": "/myAPI/*",
       "cacheConfig": {
         "strategy": "freshness",
         "timeout": 0

@@ -13,7 +13,91 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
+
+# Generic-Fallback : example
+
+service-worker.js
+
+```javascript
+self.addEventListener('fetch', event => {
+  event.respondWith(
+
+
+
+    ...
+  );
+});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Generic-Fallback : example
+
+service-worker.js
+
+```javascript
+/*self.addEventListener('fetch', event => {
+  event.respondWith(*/
+    caches
+      .match(event.request)
+
+      ...
+  );
+//});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Generic-Fallback : example
+
+service-worker.js
+
+```javascript
+/*self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches
+      .match(event.request)*/
+      .then(response => response || fetch(event.request))
+      ...
+  );
+//});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Generic-Fallback : example
+
+service-worker.js
+
+```javascript
+/*self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches
+      .match(event.request)
+      .then(response => response || fetch(event.request))*/
+      .catch(_ => caches.match('offline.html'))
+  );
+});
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
 
 # Generic-Fallback : example
 
@@ -34,11 +118,11 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Generic FallBack
 
-## Exercice
+## Lab
 
 <br>
 
@@ -48,7 +132,38 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
+
+# Generic Fallback : Avec Workbox
+
+fallback-on-error-plugin.js - Création d'un plugin
+
+```javascript
+class FallbackOnErrorPlugin {
+
+
+
+
+
+
+
+
+
+
+
+
+  ...
+}
+```
+
+<!-- .element: class="big-code" -->
+
+Notes:
+On créé un Plugin de fallback qui va gérer notre cas
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
 
 # Generic Fallback : Avec Workbox
 
@@ -60,12 +175,65 @@ class FallbackOnErrorPlugin {
     this.fallbackURL = fallbackURL;
   }
 
+
+
+
+
+
+
+  ...
+}
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Generic Fallback : Avec Workbox
+
+fallback-on-error-plugin.js - Création d'un plugin
+
+```javascript
+class FallbackOnErrorPlugin {
+  /*constructor(fallbackURL) {
+    this.fallbackURL = fallbackURL;
+  }*/
   fetchDidSucceed({ response }) {
-    if (response.ok) {
+    if (response.ok)
       return response;
-    }
     throw new Error(`Error response (${response.status})`);
   }
+
+
+  ...
+}
+```
+
+<!-- .element: class="big-code" -->
+
+Notes:
+On créé un Plugin de fallback qui va gérer notre cas
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Generic Fallback : Avec Workbox
+
+fallback-on-error-plugin.js - Création d'un plugin
+
+```javascript
+class FallbackOnErrorPlugin {
+  /*constructor(fallbackURL) {
+    this.fallbackURL = fallbackURL;
+  }
+  fetchDidSucceed({ response }) {
+    if (response.ok) 
+      return response;
+    throw new Error(`Error response (${response.status})`);
+  }*/
   handlerDidError() {
     return caches.match(this.fallbackURL, { ignoreSearch: true });
   }
@@ -79,14 +247,60 @@ On créé un Plugin de fallback qui va gérer notre cas
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Generic Fallback : Avec Workbox
 
 service-worker.js - Utilisation
 
 ```javascript
-import { registerRoute } from 'workbox-routing';
+//import { registerRoute } from 'workbox-routing';
+import { NetworkOnly } from 'workbox-strategies';
+import { FallbackOnErrorPlugin } from './fallback-on-error-plugin.js';
+
+registerRoute(
+
+
+
+  ...
+);
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Generic Fallback : Avec Workbox
+
+service-worker.js - Utilisation
+
+```javascript
+//import { registerRoute } from 'workbox-routing';
+import { NetworkOnly } from 'workbox-strategies';
+import { FallbackOnErrorPlugin } from './fallback-on-error-plugin.js';
+
+registerRoute(
+  ({ request }) => request.mode === 'navigate',
+  new NetworkFirst({
+    ...
+  })
+);
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Generic Fallback : Avec Workbox
+
+service-worker.js - Utilisation
+
+```javascript
+//import { registerRoute } from 'workbox-routing';
 import { NetworkOnly } from 'workbox-strategies';
 import { FallbackOnErrorPlugin } from './fallback-on-error-plugin.js';
 
@@ -102,11 +316,11 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Generic Fallback avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 

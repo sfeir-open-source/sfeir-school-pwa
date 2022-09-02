@@ -68,7 +68,6 @@ Demandez vous :
 
 # Cache API
 
-<br><br>
 
 Ouvrir un cache et ajouter un ensemble de fichiers
 
@@ -88,7 +87,7 @@ caches.open('cache-name').then(cache => cache.addAll(/* Array of files path */))
 
 # Cache API
 
-<br><br>
+
 
 Chercher une requête dans les caches
 
@@ -110,7 +109,7 @@ caches.match(event.request).then(response => {
 
 # Cache API
 
-<br><br>
+
 
 Exécuter une requête et mettre le résultat dans le cache
 

@@ -47,8 +47,6 @@ self.addEventListener('fetch', event => {
   if (event.request.url.startsWith('/critialAPI')) {
     event.respondWith(fetch(event.request));
   }
-  // or simply don't call event.respondWith, wich
-  // will result in default browser behavior
 });
 ```
 
@@ -59,11 +57,11 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Network Only (Appels serveurs)
 
-## Exercice
+## Lab
 
 <br>
 
@@ -75,7 +73,7 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Network-only : Avec Workbox bis
 
@@ -83,6 +81,29 @@ service-worker.js
 
 ```javascript
 import { registerRoute } from 'workbox-routing';
+import { NetworkOnly } from 'workbox-strategies';
+
+
+
+
+
+
+
+...
+```
+
+<!-- .element: class="big-code" -->
+
+##==##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Network-only : Avec Workbox bis
+
+service-worker.js
+
+```javascript
+//import { registerRoute } from 'workbox-routing';
 import { NetworkOnly } from 'workbox-strategies';
 
 // Let all request going to api passed through network
@@ -98,11 +119,11 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Network Only avec Workbox
 
-## Exercice
+## Lab
 
 <br>
 
@@ -130,6 +151,27 @@ En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
 ```javascript
 // Append ngsw-bypass at the end of the desire request
 this.http.get('api/users?ngsw-bypass');
+
+
+...
+```
+
+<!-- .element: class="big-code" -->
+
+Notes:
+En fait, il faut dire à angular de ne pas prendre en compte l'url
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Avec Angular
+
+En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
+
+```javascript
+// Append ngsw-bypass at the end of the desire request
+//this.http.get('api/users?ngsw-bypass');
 
 // Or set in header
 this.http.get('api/users', { headers: { 'ngsw-bypass': true } });

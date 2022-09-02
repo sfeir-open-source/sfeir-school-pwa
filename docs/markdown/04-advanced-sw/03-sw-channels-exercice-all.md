@@ -2,7 +2,7 @@
 
 # Jouons avec les messages
 
-## Exercice
+## Lab
 
 <br>
 

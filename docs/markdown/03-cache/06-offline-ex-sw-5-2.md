@@ -2,7 +2,7 @@
 
 # Offline.html
 
-## Exercice
+## Lab
 
 <br>
 

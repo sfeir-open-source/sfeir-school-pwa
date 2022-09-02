@@ -14,7 +14,6 @@
 
 # Performance : CSS
 
-<br>
 
 ![center h-700](./assets/images/css_preformance_trigger.png)
 

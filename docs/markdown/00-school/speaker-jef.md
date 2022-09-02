@@ -7,7 +7,7 @@
 
 <h2> Jean-François<span> Garreau</span></h2>
 
-### CTO front
+### Dev Front @SFEIR
 
 <!-- .element: class="icon-rule icon-first" -->
 
