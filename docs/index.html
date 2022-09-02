@@ -1,76 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Sfeir School - PWA</title>
+<head>
+  <meta charset="utf-8" />
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Sfeir School - PWA</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <!-- ----------------------------------------------------
-        ---------------- REVEAL STYLES  -------------------------
-        ------------------------------------------------------ -->
-    <!--
-      <link rel="stylesheet" type="text/css" href="./libs/revealjs/reveal.css" />
-    -->
-    <link rel="stylesheet" type="text/css" href="./web_modules/reveal.js/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./web_modules/reveal.js/css/reveal.css" />
-    <!--<link rel="stylesheet" href="reveal/css/theme/white.css" id="theme">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!-- For syntax highlighting - hightlightjs -->
-    <link rel="stylesheet" type="text/css" href="./web_modules/highlight.js/styles/tomorrow.css" />
-
-    <!-- If the query includes 'print-pdf', use the PDF print sheet - from revealjs -->
-    <script>
-      document.write(
-        '<link rel="stylesheet" href="./web_modules/reveal.js/css/print/' +
-          (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') +
-          '.css" type="text/css" media="print">'
-      );
-    </script>
-
-    <!--[if lt IE 9]>
-      <script src="reveal/lib/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- ----------------------------------------------------
+  <!-- ----------------------------------------------------
 	    ---------------- PREZ STYLES  ---------------------------
 	    ------------------------------------------------------ -->
 
-    <!--
+  <script type="module" src="./scripts/slides.js"></script>
+  <link rel="stylesheet" type="text/css" href="./web_modules/sfeir-school-theme/sfeir-school-theme.css" id="theme" />
+  <link rel="stylesheet" type="text/css" href="./css/slides.css" id="theme-custo" />
+</head>
 
-      <link rel="stylesheet" type="text/css" href="./school-theme/css/sfeir-school-theme.css" id="theme" />
-      <script type="module" src="./school-theme/js/sfeir-theme.js"></script>
-    -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./web_modules/sfeir-school-theme/dist/css/sfeir-school-theme.css"
-      id="theme"
-    />
-    <script type="module" src="./web_modules/sfeir-school-theme/dist/js/sfeir-theme.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./css/pwa.css" id="theme-custo" />
-    <script type="module" src="./scripts/dont-touch/reveal-config.js"></script>
-  </head>
-
-  <body>
-    <div class="reveal">
-      <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides" data-type-show="prez"></div>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides" data-type-show="prez">
     </div>
-    <!--
-      <script src="./libs/revealjs/head.min.js"></script>
-      <script src="./libs/revealjs/reveal.js"></script>
-    -->
-    <script src="./web_modules/reveal.js/js/reveal.js"></script>
+  </div>
+</body>
 
-    <!--
-
-      <script src="reveal-config.js"></script>
-    -->
-  </body>
 </html>

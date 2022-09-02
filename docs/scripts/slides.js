@@ -1,3 +1,5 @@
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+
 function schoolSlides() {
   return ['00-school/00-TITLE.md', '00-school/speaker-jef.md'];
 }
@@ -180,6 +182,4 @@ function formation() {
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);

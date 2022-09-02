@@ -4,14 +4,12 @@
   "description": "Sfeir School PWA with revealJS",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass ./scss/pwa.scss -o ./css/ --source-map=true --watch=\"scss\" --recursive=\"scss\"",
-    "sass-once": "node-sass ./scss/pwa.scss -o ./css/ --source-map=true ",
+    "sass": "sass ./scss/pwa.scss:./css/slides.css --source-map --watch",
+    "sass-once": "sass ./scss/pwa.scss:./css/slides.css --source-map",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown/\"",
+    "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown,scripts/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
-    "copy-highlight": "cpx \"node_modules/highlight.js/styles/**/*\" \"web_modules/highlight.js/styles\" ",
-    "copy-reveal": "cpx \"node_modules/reveal.js/**/*\" \"web_modules/reveal.js\" ",
-    "prepare": "parallelshell \"npm run copy-reveal\"  \"npm run copy-highlight\" \"snowpack\""
+    "prepare": "node ./scripts/dont-touch/prepare-script.js"
   },
   "repository": {
     "type": "git",
@@ -28,21 +26,13 @@
   },
   "homepage": "https://github.com/jefBinomed/SfeirSchoolTheme#readme",
   "dependencies": {
-    "chokidar-cli": "^1.2.2",
-    "cpx": "^1.5.0",
-    "highlight.js": "^10.4.1",
-    "lit-html": "^1.1.2",
-    "live-server": "^1.2.1",
-    "node-sass": "^4.12.0",
-    "parallelshell": "3.0.1",
-    "reveal.js": "3.9.2",
-    "snowpack": "^1.6.0",
-    "sfeir-school-theme": "2.2.0"
+    "sfeir-school-theme": "^3.0.0-rc-1"
   },
-  "snowpack": {
-    "webDependencies": [
-      "sfeir-school-theme/dist/**/*",
-      "lit-html"
-    ]
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "live-server": "^1.2.1",
+    "sass": "^1.51.0",
+    "parallelshell": "3.0.1",
+    "shelljs": "^0.8.5"
   }
 }
