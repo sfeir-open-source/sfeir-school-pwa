@@ -31,12 +31,13 @@ Utile pour les données de l'appCache
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez" -->
 
 # On Install - as a dependency : example
 
 service-worker.js
 
+<!-- prettier-ignore -->
 ```javascript
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -48,8 +49,7 @@ self.addEventListener('install', function(event) {
         '/js/all-min-v4.js'
         // etc.
       ]);
-    })
-  );
+    }));
 });
 ```
 
@@ -66,26 +66,22 @@ Utile pour précharger des données sans tout attendre ! Genre mise en cache de 
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez" -->
 
 # On Install - not as a dependency : example
 
 service-worker.js
 
+<!-- prettier-ignore -->
 ```javascript
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('mygame-core-v1').then(function(cache) {
       cache
-        .addAll
-        // levels 11–20
-        ();
+        .addAll();        // levels 11–20
       return cache
-        .addAll
-        // core assets and levels 1–10
-        ();
-    })
-  );
+        .addAll();        // core assets and levels 1–10
+    }));
 });
 ```
 
@@ -103,29 +99,25 @@ Stratégie classique de nétoyage de cache sur activation du service worker
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez" -->
 
 # On Activate : example
 
 service-worker.js
 
+<!-- prettier-ignore -->
 ```javascript
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
-        cacheNames
-          .filter(function(cacheName) {
-            // Return true if you want to remove this cache,
-            // but remember that caches are shared across
-            // the whole origin
-          })
-          .map(function(cacheName) {
+        cacheNames.filter(function(cacheName) {
+          // Return true if you want to remove this cache,
+          // but remember that caches are shared across the whole origin
+          }).map(function(cacheName) {
             return caches.delete(cacheName);
-          })
-      );
-    })
-  );
+          }));
+    }));
 });
 ```
 
@@ -142,29 +134,25 @@ Cas un peu plus original, on se sert d'une interaction utilisateur pour directem
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez" -->
 
 # On user interaction : example
 
 main.js
 
+<!-- prettier-ignore -->
 ```javascript
 document.querySelector('.cache-article').addEventListener('click', function(event) {
   event.preventDefault();
-
   var id = this.dataset.articleId;
   caches.open('mysite-article-' + id).then(function(cache) {
-    fetch('/get-article-urls?id=' + id)
-      .then(function(response) {
+    fetch('/get-article-urls?id=' + id).then(function(response) {
         // /get-article-urls returns a JSON-encoded array of
         // resource URLs that a given article depends on
         return response.json();
-      })
-      .then(function(urls) {
+      }).then(function(urls) {
         cache.addAll(urls);
-      });
-  });
-});
+      });  });  });
 ```
 
 <!-- .element: class="big-code" -->
@@ -180,33 +168,30 @@ Ce qui est intéressant c'est qu'on met en cache les données sur un push avant 
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez" -->
 
 # On push message : example
 
 service-worker.js
 
+<!-- prettier-ignore -->
 ```javascript
 self.addEventListener('push', function(event) {
   if (event.data.text() == 'new-email') {
     event.waitUntil(
-      caches
-        .open('mysite-dynamic')
+      caches.open('mysite-dynamic')
         .then(function(cache) {
           return fetch('/inbox.json').then(function(response) {
             cache.put('/inbox.json', response.clone());
             return response.json();
           });
-        })
-        .then(function(emails) {
+        }).then(function(emails) {
           registration.showNotification('New email', {
             body: 'From ' + emails[0].from.name,
             tag: 'new-email'
           });
-        })
-    );
-  }
-});
+        }));
+  }});
 
 self.addEventListener('notificationclick', function(event) {
   if (event.notification.tag == 'new-email') {
@@ -256,18 +241,18 @@ Cas où on va faire du SSR mais côté service worker. On ne solicite plus le se
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez" -->
 
 # Service worker-side templating : example
 
 service-worker.js
 
+<!-- prettier-ignore -->
 ```javascript
 importScripts('templating-engine.js');
 
 self.addEventListener('fetch', function(event) {
   var requestURL = new URL(event.request.url);
-
   event.respondWith(
     Promise.all([
       caches.match('/article-template.html').then(function(response) {
