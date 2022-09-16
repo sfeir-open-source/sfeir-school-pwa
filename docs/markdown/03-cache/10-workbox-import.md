@@ -11,7 +11,7 @@
 <!-- .element: style="color:white" -->
 
 ```javascript
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-sw.js');
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
 } else {
