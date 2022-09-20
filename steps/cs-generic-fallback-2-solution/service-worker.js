@@ -1,5 +1,4 @@
 importScripts('http://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-sw.js');
-importScripts('./fallback-on-error-plugin.js');
 
 const cacheAppShellStatic = [
   { url: '/', revision: null },
@@ -31,6 +30,10 @@ const matchImg = ({ url, event }) => {
 workbox.routing.registerRoute(
   matchImg,
   new workbox.strategies.NetworkFirst({
-    plugins: [fallbackOnErrorPlugin]
+    plugins: [
+      new workbox.precaching.PrecacheFallbackPlugin({
+        fallbackURL: '/img/cat.jpg'
+      })
+    ]
   })
 );

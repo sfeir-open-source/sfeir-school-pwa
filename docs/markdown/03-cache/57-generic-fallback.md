@@ -136,127 +136,12 @@ self.addEventListener('fetch', event => {
 
 # Generic Fallback : Avec Workbox
 
-fallback-on-error-plugin.js - Création d'un plugin
-
-```javascript
-class FallbackOnErrorPlugin {
-
-
-
-
-
-
-
-
-
-
-
-
-  ...
-}
-```
-
-<!-- .element: class="big-code" -->
-
-Notes:
-On créé un Plugin de fallback qui va gérer notre cas
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic Fallback : Avec Workbox
-
-fallback-on-error-plugin.js - Création d'un plugin
-
-```javascript
-class FallbackOnErrorPlugin {
-  constructor(fallbackURL) {
-    this.fallbackURL = fallbackURL;
-  }
-
-
-
-
-
-
-
-  ...
-}
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic Fallback : Avec Workbox
-
-fallback-on-error-plugin.js - Création d'un plugin
-
-```javascript
-class FallbackOnErrorPlugin {
-  /*constructor(fallbackURL) {
-    this.fallbackURL = fallbackURL;
-  }*/
-  fetchDidSucceed({ response }) {
-    if (response.ok)
-      return response;
-    throw new Error(`Error response (${response.status})`);
-  }
-
-
-  ...
-}
-```
-
-<!-- .element: class="big-code" -->
-
-Notes:
-On créé un Plugin de fallback qui va gérer notre cas
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic Fallback : Avec Workbox
-
-fallback-on-error-plugin.js - Création d'un plugin
-
-```javascript
-class FallbackOnErrorPlugin {
-  /*constructor(fallbackURL) {
-    this.fallbackURL = fallbackURL;
-  }
-  fetchDidSucceed({ response }) {
-    if (response.ok) 
-      return response;
-    throw new Error(`Error response (${response.status})`);
-  }*/
-  handlerDidError() {
-    return caches.match(this.fallbackURL, { ignoreSearch: true });
-  }
-}
-```
-
-<!-- .element: class="big-code" -->
-
-Notes:
-On créé un Plugin de fallback qui va gérer notre cas
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic Fallback : Avec Workbox
-
 service-worker.js - Utilisation
 
 ```javascript
 //import { registerRoute } from 'workbox-routing';
-import { NetworkOnly } from 'workbox-strategies';
-import { FallbackOnErrorPlugin } from './fallback-on-error-plugin.js';
+import { NetworkFirst } from 'workbox-strategies';
+import {PrecacheFallbackPlugin} from 'workbox-precaching';
 
 registerRoute(
 
@@ -278,8 +163,8 @@ service-worker.js - Utilisation
 
 ```javascript
 //import { registerRoute } from 'workbox-routing';
-import { NetworkOnly } from 'workbox-strategies';
-import { FallbackOnErrorPlugin } from './fallback-on-error-plugin.js';
+import { NetworkFirst } from 'workbox-strategies';
+import {PrecacheFallbackPlugin} from 'workbox-precaching';
 
 registerRoute(
   ({ request }) => request.mode === 'navigate',
@@ -301,13 +186,13 @@ service-worker.js - Utilisation
 
 ```javascript
 //import { registerRoute } from 'workbox-routing';
-import { NetworkOnly } from 'workbox-strategies';
-import { FallbackOnErrorPlugin } from './fallback-on-error-plugin.js';
+import { NetworkFirst } from 'workbox-strategies';
+import { PrecacheFallbackPlugin } from 'workbox-precaching';
 
 registerRoute(
   ({ request }) => request.mode === 'navigate',
   new NetworkFirst({
-    plugins: [new FallbackOnErrorPlugin('/fallback.html')]
+    plugins: [new PrecacheFallbackPlugin('/fallback.html')]
   })
 );
 ```
