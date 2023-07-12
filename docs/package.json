@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/jefBinomed/SfeirSchoolTheme#readme",
   "dependencies": {
-    "sfeir-school-theme": "^3.0.0-rc-1"
+    "sfeir-school-theme": "^3.1.0-rc-1"
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
