@@ -14,6 +14,9 @@ export class PeopleApp extends LitElement {
       } else if (pathRegex.test(location.pathname)) {
         this.page = 'people';
         this.peopleId = pathRegex.exec(location.pathname)[1];
+      } else if (location.pathname === '/login') {
+        this.page = 'login';
+        this.peopleId = undefined;
       } else {
         this.peopleId = undefined;
         this.page = 'home';
@@ -22,27 +25,35 @@ export class PeopleApp extends LitElement {
     });
   }
 
+  displayPage() {
+    switch (this.page) {
+      case 'home':
+        return html`
+          <home-component></home-component>
+        `;
+      case 'people':
+        return html`
+          ${this.peopleId
+            ? html`
+                <people-list peopleid="${this.peopleId}"></people-list>
+              `
+            : html`
+                <people-list></people-list>
+              `}
+        `;
+      case 'login':
+        return html`
+          <login-component></login-component>
+        `;
+      default:
+        return html`
+          <home-component></home-component>
+        `;
+    }
+  }
+
   render() {
-    return html`
-      <style>
-        :host {
-          display: block;
-        }
-      </style>
-      ${this.page === 'home'
-        ? html`
-            <home-component></home-component>
-          `
-        : html`
-            ${this.peopleId
-              ? html`
-                  <people-list peopleid="${this.peopleId}"></people-list>
-                `
-              : html`
-                  <people-list></people-list>
-                `}
-          `}
-    `;
+    return this.displayPage();
   }
 }
 
