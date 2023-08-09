@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { PeoplesService } from '../services/People.js';
+import { set } from 'lodash';
 
 export class Login extends LitElement {
   constructor() {
@@ -11,6 +12,7 @@ export class Login extends LitElement {
     this.signup = false;
     this.errorLogin = undefined;
     this.userLogged = undefined;
+    this.shouldSyncGoogleButton = false;
     this.peoples = [];
   }
 
@@ -33,27 +35,146 @@ export class Login extends LitElement {
           margin-top: 20px;
           display: block;
         }
+
+        .hide {
+          display: none;
+        }
       </style>
     `;
   }
 
+  /**
+   * Lifecyle method trigger data are update
+   * @param {*} changedProperties
+   */
+  updated(changedProperties) {
+    if (this.shouldSyncGoogleButton) {
+      this.shouldSyncGoogleButton = false;
+      google.accounts.id.initialize({
+        client_id: '143609333381-gkotcoiruj7efenonmt0qhlq3u3p103q.apps.googleusercontent.com',
+        callback: this.handleGoogleCredentialResponse.bind(this)
+      });
+      google.accounts.id.renderButton(this.renderRoot.querySelector('#buttonDiv'), {
+        theme: 'outline',
+        size: 'medium',
+        text: this.signup ? 'signup_with' : 'signin_with',
+        locale: 'en'
+      });
+    }
+  }
+
+  /**
+   * Callback of google signin or signup
+   * @param {*} response
+   */
+  handleGoogleCredentialResponse(response) {
+    if (this.signup) {
+      this.peoplesService
+        .googleSignup(response.credential)
+        .then(response => response.json())
+        .then(data => {
+          console.log('Signup', data);
+          if (data.error) {
+            this.errorLogin = data.error;
+            this.requestUpdate();
+            return;
+          }
+          this.errorLogin = undefined;
+          this.loggedIn = true;
+          this.userLogged = data;
+          this.requestUpdate();
+        });
+    } else {
+      this.peoplesService
+        .googleSignin(response.credential)
+        .then(response => response.json())
+        .then(data => {
+          console.log('Signin', data);
+          if (data.error) {
+            this.errorLogin = data.error;
+            this.requestUpdate();
+            return;
+          }
+          this.errorLogin = undefined;
+          this.loggedIn = true;
+          this.userLogged = data;
+          this.requestUpdate();
+        });
+    }
+  }
+
   toggleSignup() {
     this.signup = !this.signup;
+
     this.requestUpdate();
   }
+
+  /**
+   * Callback when user signin or signup with button
+   * @param {*} e
+   * @param {*} action
+   */
+  signinOrSignupUser(e, action) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const email = data.get('email');
+    const username = data.get('username');
+    const password = data.get('password');
+    if (action === 'signup') {
+      this.peoplesService
+        .register(email, username, password)
+        .then(response => response.json())
+        .then(data => {
+          console.log('Signup', data);
+          this.loggedIn = true;
+          this.userLogged = data;
+          this.requestUpdate();
+        });
+    } else {
+      this.peoplesService
+        .signin(username, password)
+        .then(response => response.json())
+        .then(data => {
+          console.log('Signin', data);
+          if (data.error) {
+            this.errorLogin = data.error;
+            this.requestUpdate();
+            return;
+          }
+          this.errorLogin = undefined;
+          this.loggedIn = true;
+          this.userLogged = data;
+          this.requestUpdate();
+        });
+    }
+  }
+  /***
+   * HTML FUNCTIONS
+   */
 
   displayUser() {
     return html`
       <div class="mdl-card mdl-shadow--4dp">
-        <div data-card-title>User profil</div>
+        <div class="mdl-card__title">User profil</div>
         <div class="mdl-card__supporting-text">
           <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+              <label class="" for="email">Federated account : </label>
+              <span>${this.userLogged.federated}</span>
+            </div>
+            <br />
+            <div class="mdl-cell mdl-cell--12-col">
+              <label class="" for="email">Email : </label>
+              <span>${this.userLogged.email}</span>
+            </div>
+            <br />
             <div class="mdl-cell mdl-cell--12-col">
               <label class="" for="username">Username : </label>
               <span>${this.userLogged.username}</span>
             </div>
             <br />
-            <div class="mdl-cell mdl-cell--12-col">
+            <div class="mdl-cell mdl-cell--12-col ${this.userLogged.federated ? 'hide' : ''}">
               <label class="" for="password">Password : </label>
               <span>${this.userLogged.password}</span>
             </div>
@@ -64,102 +185,73 @@ export class Login extends LitElement {
   }
 
   displayUserOrLogin() {
+    if (!this.loggedIn) {
+      this.shouldSyncGoogleButton = true;
+    }
     return html`
-      ${this.loggedIn ? this.displayUser() : this.signup ? this.displaySignup() : this.displayLogin()}
+      ${this.loggedIn
+        ? this.displayUser()
+        : this.signup
+        ? this.displayLoginOrSignup(
+            'signup',
+            'Register',
+            'Please enter the desire login and password',
+            'Signup',
+            'Or signup with Google'
+          )
+        : this.displayLoginOrSignup(
+            'signin',
+            'Signin',
+            'You are currently not logged, please log-in',
+            'Login',
+            'Or use your Google account'
+          )}
     `;
   }
 
-  displaySignup() {
+  displayLoginOrSignup(action, title, textHelper, buttonLabel, googleText) {
     return html`
       <!-- generate login form -->
       <div class="mdl-card mdl-shadow--4dp">
-        <div data-card-title>User login</div>
-        <div class="signup-form">
-          <p>Please enter the desire login and password</p>
-          <form @submit=${this.signupUser}>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" name="username" type="text" id="username" />
-              <label class="mdl-textfield__label" for="username">Username</label>
-            </div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" name="password" type="password" id="password" />
-              <label class="mdl-textfield__label" for="password">Password</label>
-            </div>
+        <div class="mdl-card__title">${title}</div>
+        <div class="login-form mdl-card__supporting-text">
+          <p>${textHelper}</p>
+          <form @submit=${() => this.signinOrSignupUser(e, action)} class="mdl-gird">
+            <input
+              class="mdl-cell mdl-cell--12-col mdl-textfield__input ${action === 'signup' ? '' : 'hide'}"
+              name="email"
+              placeholder="email"
+              type="email"
+              id="email"
+            />
+            <input
+              class="mdl-cell mdl-cell--12-col mdl-textfield__input"
+              name="username"
+              placeholder="username"
+              type="text"
+              id="username"
+            />
+            <input
+              class="mdl-cell mdl-cell--12-col mdl-textfield__input"
+              name="password"
+              placeholder="password"
+              type="password"
+              id="password"
+            />
             <button
               type="submit"
-              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+              class="mdl-cell mdl-cell--12-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent "
             >
-              Signup
+              ${buttonLabel}
             </button>
           </form>
-        </div>
-      </div>
-    `;
-  }
-
-  async signupUser(e) {
-    e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-    const username = data.get('username');
-    const password = data.get('password');
-    console.log('Signup', username, password);
-    this.peoplesService
-      .register(username, password)
-      .then(response => response.json())
-      .then(data => {
-        console.log('Signup', data);
-        this.loggedIn = true;
-        this.userLogged = data;
-        this.requestUpdate();
-      });
-  }
-
-  async signinUser(e) {
-    e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-    const username = data.get('username');
-    const password = data.get('password');
-    this.peoplesService
-      .signin(username, password)
-      .then(response => response.json())
-      .then(data => {
-        console.log('Signin', data);
-        if (data.error) {
-          this.errorLogin = data.error;
-          this.requestUpdate();
-          return;
-        }
-        this.errorLogin = undefined;
-        this.loggedIn = true;
-        this.userLogged = data;
-        this.requestUpdate();
-      });
-  }
-
-  displayLogin() {
-    return html`
-      <!-- generate login form -->
-      <div class="mdl-card mdl-shadow--4dp">
-        <div data-card-title>User login</div>
-        <div class="login-form">
-          <p>You are currently not logged</p>
-          <form @submit=${this.signinUser}>
-            <input class="mdl-textfield__input" name="username" placeholder="username" type="text" id="username" />
-            <input class="mdl-textfield__input" name="password" placeholder="password" type="password" id="password" />
-            <button
-              type="submit"
-              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent "
-            >
-              Login
-            </button>
-          </form>
-          <div class="mdl-card__actions mdl-card--border" style="display:${this.errorLogin ? 'block' : 'none'};">
+          <div class="mdl-card__actions mdl-card--border ${this.errorLogin ? '' : 'hide'}">
             <p style="color:red;">${this.errorLogin}</p>
           </div>
+          <p>${googleText}</p>
+          <div id="buttonDiv"></div>
         </div>
-        <footer class="mdl-card__actions mdl-card--border">
+        <footer class="mdl-card__actions mdl-card--border  ${action === 'signup' ? 'hide' : ''}">
           Not yet register, please <a href="#" @click=${this.toggleSignup}>Signup</a>
         </footer>
       </div>

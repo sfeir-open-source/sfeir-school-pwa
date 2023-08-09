@@ -75,15 +75,16 @@ export class PeoplesService {
 
   /**
    * Register a user
+   * @param {*} email
    * @param {*} username
    * @param {*} password
    * @returns
    */
-  register(username, password) {
+  register(email, username, password) {
     return fetch(`${this.API_AUTH}/signup`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ email, username, password })
     });
   }
 
@@ -98,6 +99,22 @@ export class PeoplesService {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })
+    });
+  }
+
+  googleSignin(token) {
+    return fetch(`${this.API_AUTH}/googleSignin`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token })
+    });
+  }
+
+  googleSignup(token) {
+    return fetch(`${this.API_AUTH}/googleSignup`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token })
     });
   }
 }
