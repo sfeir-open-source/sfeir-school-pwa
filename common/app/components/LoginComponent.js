@@ -1,6 +1,5 @@
 import { LitElement, html } from 'lit-element';
 import { PeoplesService } from '../services/People.js';
-import { set } from 'lodash';
 
 export class Login extends LitElement {
   constructor() {
