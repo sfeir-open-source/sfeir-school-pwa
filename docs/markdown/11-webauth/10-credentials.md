@@ -11,19 +11,19 @@ Api permettant de stocker de stocker et récupérer des informations d'identific
 - Stockage de passwords
 - Stockage d'identitiés fédérées (social logins)
 
-![](./assets/credential-management.gif)
+![](./assets/images/credential-management.gif)
 
 ##==##
 
 # Flot d'enregistrement
 
-![center h-800](./assets/credential-managment-register.svg)
+![center h-800](./assets/images/credential-managment-register.svg)
 
 ##==##
 
 # Flot Auto Sign-In
 
-![center h-800](./assets/credential-managment-auto-sign-in.svg)
+![center h-800](./assets/images/credential-managment-auto-sign-in.svg)
 
 ##==##
 
@@ -111,6 +111,9 @@ navigator.credentials.get({
 - On peut passer les 2 types de credentials en même temps. On récupère en promesse, le type stocké.
 
 - `mediation` permet de forcer l'auto sign-in. Si l'utilisateur n'est pas connecté, une popup s'ouvre pour lui demander de se connecter.
+
+Notes:
+Attention, si il y a plusieurs comptes et qu'on est en mode 'silent', ça ne renvera rien car le navigateur ne sait pas quel compte utiliser.
 
 ##==##
 
