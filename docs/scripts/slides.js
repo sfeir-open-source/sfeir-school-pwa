@@ -159,6 +159,17 @@ function conclusionSlides() {
   ];
 }
 
+function webAuthSlides() {
+  const directory = '11-webauth';
+  return [
+    `${directory}/00-intro.md`,
+    `${directory}/10-credentials.md`,
+    `${directory}/20-web-otp.md`,
+    `${directory}/30-webauthn.md`,
+    `${directory}/40-passkey.md`
+  ];
+}
+
 function bonusSlides() {
   return ['00-school/99-BONUS.md'];
 }
@@ -174,6 +185,7 @@ function formation() {
     ...engagingSlides(),
     ...integratedSlides(),
     ...performancesSlides(),
+    ...webAuthSlides(),
     ...librariresSlides(),
     ...conclusionSlides(),
     ...bonusSlides()
