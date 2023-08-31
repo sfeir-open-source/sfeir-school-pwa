@@ -1,16 +1,18 @@
 import { LitElement, html } from 'lit-element';
 import { PeoplesService } from '../services/People.js';
+import { AuthService } from '../services/AuthService.js';
 
 export class Login extends LitElement {
   constructor() {
     super();
     this.peoplesService = new PeoplesService();
+    this.authService = new AuthService();
     this.loading = true;
     this.query = '';
-    this.loggedIn = false;
+    this.loggedIn = this.authService.isSignedIn();
     this.signup = false;
     this.errorLogin = undefined;
-    this.userLogged = undefined;
+    this.userLogged = this.authService.getSingedInUser();
     this.shouldSyncGoogleButton = false;
     this.peoples = [];
   }
@@ -81,6 +83,7 @@ export class Login extends LitElement {
           this.errorLogin = undefined;
           this.loggedIn = true;
           this.userLogged = data;
+          this.authService.setSignedInUser(data);
           this.requestUpdate();
         });
     } else {
@@ -97,6 +100,7 @@ export class Login extends LitElement {
           this.errorLogin = undefined;
           this.loggedIn = true;
           this.userLogged = data;
+          this.authService.setSignedInUser(data);
           this.requestUpdate();
         });
     }
@@ -128,6 +132,7 @@ export class Login extends LitElement {
           console.log('Signup', data);
           this.loggedIn = true;
           this.userLogged = data;
+          this.authService.setSignedInUser(data);
           this.requestUpdate();
         });
     } else {
@@ -144,6 +149,7 @@ export class Login extends LitElement {
           this.errorLogin = undefined;
           this.loggedIn = true;
           this.userLogged = data;
+          this.authService.setSignedInUser(data);
           this.requestUpdate();
         });
     }
@@ -215,7 +221,7 @@ export class Login extends LitElement {
         <div class="mdl-card__title">${title}</div>
         <div class="login-form mdl-card__supporting-text">
           <p>${textHelper}</p>
-          <form @submit=${() => this.signinOrSignupUser(e, action)} class="mdl-gird">
+          <form @submit=${e => this.signinOrSignupUser(e, action)} class="mdl-gird">
             <input
               class="mdl-cell mdl-cell--12-col mdl-textfield__input ${action === 'signup' ? '' : 'hide'}"
               name="email"
