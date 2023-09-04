@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { PeoplesService } from '../../../../common/app/services/People.js';
-import { AuthService } from '../../services/AuthService.js';
+import { AuthService } from '../services/AuthService.js';
 
 export class Login extends LitElement {
   constructor() {
