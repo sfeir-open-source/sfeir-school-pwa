@@ -36,6 +36,7 @@
     "start-app": "cross-var webpack-dev-server --step-$npm_config_step",
     "dev": "webpack-dev-server",
     "server": "node ./common/server/server.js",
+    "ngrok": "ngrok http --host-header=\"localhost:8080\" 8080 ",
     "server-old": "json-server assets/mocks/people.json --routes assets/mocks/routes.json",
     "precommit": "lint-staged",
     "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
@@ -70,6 +71,7 @@
     "lighthouse": "^6.1.1",
     "lint-staged": "^8.1.5",
     "lodash": ">=4.17.13",
+    "ngrok": "^5.0.0-beta.2",
     "parallelshell": "3.0.1",
     "prettier": "^1.16.4",
     "style-loader": "~0.23.1",

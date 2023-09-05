@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
-import { PeoplesService } from '../../../../common/app/services/People.js';
-import { AuthService } from '../services/AuthService.js';
+import { PeoplesService } from '../services/People.js';
+import { AuthService } from '../../../../common/app/services/AuthService.js';
 
 export class Login extends LitElement {
   constructor() {
@@ -10,7 +10,10 @@ export class Login extends LitElement {
     this.loading = true;
     this.query = '';
     this.signup = false;
+    this.otp = false;
+    this.ac = undefined;
     this.errorLogin = undefined;
+    this.errorOtp = undefined;
     this.shouldSyncGoogleButton = false;
     this.peoples = [];
     this.authService.getSingedInUser().then(user => {
@@ -84,7 +87,9 @@ export class Login extends LitElement {
             return;
           }
           this.errorLogin = undefined;
-          this.loggedIn = true;
+          this.otp = true;
+          this.requestWebOTP();
+          //this.loggedIn = true;
           this.userLogged = data;
           this.authService.setSignedInUser(data);
           this.requestUpdate();
@@ -109,10 +114,47 @@ export class Login extends LitElement {
     }
   }
 
+  requestWebOTP() {
+    this.ac = new AbortController();
+    navigator.credentials
+      .get({
+        otp: { transport: ['sms'] },
+        signal: this.ac.signal
+      })
+      .then(otp => {
+        console.log('otp', otp);
+        this.renderRoot.querySelector('#otp').value = otp.code;
+        this.validateOTPCode(otp.code);
+      })
+      .catch(error => {
+        console.log('error', error);
+      });
+  }
+
   toggleSignup() {
     this.signup = !this.signup;
 
     this.requestUpdate();
+  }
+
+  validateOTP(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const otp = data.get('otp');
+    this.ac.abort();
+    this.validateOTPCode(otp);
+  }
+
+  validateOTPCode(code) {
+    if (code === '12345') {
+      this.otp = false;
+      this.loggedIn = true;
+      this.requestUpdate();
+    } else {
+      this.errorOtp = 'Invalid OTP code';
+      this.requestUpdate();
+    }
   }
 
   /**
@@ -133,7 +175,9 @@ export class Login extends LitElement {
         .then(response => response.json())
         .then(data => {
           console.log('Signup', data);
-          this.loggedIn = true;
+          this.otp = true;
+          this.requestWebOTP();
+          //this.loggedIn = true;
           this.userLogged = data;
           this.authService.setSignedInUser(data);
           this.requestUpdate();
@@ -192,28 +236,65 @@ export class Login extends LitElement {
     `;
   }
 
-  displayUserOrLogin() {
-    if (!this.loggedIn) {
-      this.shouldSyncGoogleButton = true;
-    }
+  displayOTP() {
     return html`
-      ${this.loggedIn
-        ? this.displayUser()
-        : this.signup
-        ? this.displayLoginOrSignup(
+      <!-- generate login form -->
+      <div class="mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__title">OTP Validation</div>
+        <div class="login-form mdl-card__supporting-text">
+          <p>Enter the OTP Code you receive by SMS (5 digits number and should be 12345)</p>
+          <form @submit=${e => this.validateOTP(e)} class="mdl-gird">
+            <input
+              class="mdl-cell mdl-cell--12-col mdl-textfield__input"
+              name="otp"
+              placeholder="OTP Code"
+              type="text"
+              inputmode="numeric"
+              autocomplete="one-time-code"
+              pattern="[0-9]{5}"
+              id="otp"
+            />
+            <button
+              type="submit"
+              class="mdl-cell mdl-cell--12-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent "
+            >
+              Continue
+            </button>
+          </form>
+          <div class="mdl-card__actions mdl-card--border ${this.errorOtp ? '' : 'hide'}">
+            <p style="color:red;">${this.errorOtp}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  displaySignupOrLogin() {
+    return this.signup
+      ? this.otp
+        ? this.displayOTP()
+        : this.displayLoginOrSignup(
             'signup',
             'Register',
             'Please enter the desire login and password',
             'Signup',
             'Or signup with Google'
           )
-        : this.displayLoginOrSignup(
-            'signin',
-            'Signin',
-            'You are currently not logged, please log-in',
-            'Login',
-            'Or use your Google account'
-          )}
+      : this.displayLoginOrSignup(
+          'signin',
+          'Signin',
+          'You are currently not logged, please log-in',
+          'Login',
+          'Or use your Google account'
+        );
+  }
+
+  displayUserOrLogin() {
+    if (!this.loggedIn) {
+      this.shouldSyncGoogleButton = true;
+    }
+    return html`
+      ${this.loggedIn ? this.displayUser() : this.displaySignupOrLogin()}
     `;
   }
 
