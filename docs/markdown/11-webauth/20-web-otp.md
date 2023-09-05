@@ -135,3 +135,19 @@ navigator.credentials.get({
 
 Notes:
 Ne marche que sur Chrome et si vous êtes connectés avec le même compte !
+
+##==##
+
+# WebOTP API
+
+## /!\ aux URLs
+
+- `@localhost` : ne marche que sur le port 80
+- `@domain.com` : ne marche autrement qu'avec le port 80
+- `@domain.com` : peut envoyer un code pour `@sub.domain.com` mais il ne sera pas bien reçu
+
+##==##
+
+# Tableau de compatibilité
+
+![](./assets/images/caniuse_webotp.png)

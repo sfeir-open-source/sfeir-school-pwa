@@ -145,3 +145,9 @@ navigator.credentials.get({...}).then((credential) => {
 });
 
 ```
+
+##==##
+
+# Tableau de compatibilité
+
+![center h-800](./assets/images/caniuse_credential-managment.png)
