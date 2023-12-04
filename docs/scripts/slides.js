@@ -176,19 +176,19 @@ function bonusSlides() {
 
 function formation() {
   return [
-    ...schoolSlides(),
-    ...introSlides(),
-    ...serviceWorkersSlides(),
-    ...cacheSlides(),
-    ...advancedServiceWorkersSlides(),
-    ...installableSlides(),
-    ...engagingSlides(),
-    ...integratedSlides(),
-    ...performancesSlides(),
-    ...webAuthSlides(),
-    ...librariresSlides(),
-    ...conclusionSlides(),
-    ...bonusSlides()
+    //...schoolSlides(),
+    //...introSlides(),
+    //...serviceWorkersSlides(),
+    //...cacheSlides(),
+    //...advancedServiceWorkersSlides(),
+    //...installableSlides(),
+    //...engagingSlides(),
+    //...integratedSlides(),
+    //...performancesSlides(),
+    ...webAuthSlides()
+    //...librariresSlides(),
+    //...conclusionSlides(),
+    //...bonusSlides()
   ].map(slidePath => {
     return { path: slidePath };
   });
