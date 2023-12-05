@@ -1,6 +1,6 @@
 {
-  "name": "@sfeir/school-pwa200",
-  "version": "2.0.0-rc.1",
+  "name": "@sfeir-open-source/sfeir-school-pwa",
+  "version": "3.0.0-rc.1",
   "description": "Exercices and demos for the PWA SFEIR School",
   "contributors": [
     {
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sfeir/pwa-200.git"
+    "url": "git+https://github.com/sfeir-open-source/sfeir-school-pwa.git"
   },
   "keywords": [
     "PWA, service worker, vanillajs, materials"
@@ -42,9 +42,9 @@
     "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
   },
   "bugs": {
-    "url": "https://github.com/Sfeir/pwa-200/issues"
+    "url": "https://github.com/sfeir-open-source/sfeir-school-pwa/issues"
   },
-  "homepage": "https://github.com/Sfeir/pwa-200#readme",
+  "homepage": "https://github.com/sfeir-open-source/sfeir-school-pwa#readme",
   "dependencies": {
     "@babel/core": "^7.4.3",
     "@webcomponents/webcomponentsjs": "^2.2.7",
