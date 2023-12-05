@@ -270,7 +270,7 @@ export class Login extends LitElement {
     return html`
       <link rel="stylesheet" href="/mdl/material.min.css" />
       <link rel="stylesheet" href="/css/app.css" />
-      <link rel="stylesheet" href=/css/md-overwrite.css" /> ${this.componentStyle()}
+      <link rel="stylesheet" href="/css/md-overwrite.css" /> ${this.componentStyle()}
       <div class="login-container">
         ${this.displayUserOrLogin()}
       </div>
