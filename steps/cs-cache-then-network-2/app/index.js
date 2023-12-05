@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import { setupErrorListener } from '../../../common/utils/setupErrorListener';
 import './components/HomeComponent';
 import '../../../common/app/components/PeopleCardComponent';

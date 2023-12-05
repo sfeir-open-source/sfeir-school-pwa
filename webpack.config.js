@@ -77,11 +77,6 @@ Check the folder name in steps/, read the README and try again.
     },
     module: {
       rules: [
-        /*{
-          test: /\.js$/,
-          loader: 'babel-loader'
-          // Babel options are loaded from .babelrc
-        },*/
         {
           test: /\.css$/,
           use: ['style-loader', 'css-loader']
@@ -130,8 +125,6 @@ Check the folder name in steps/, read the README and try again.
       historyApiFallback: true
     }
   };
-
-  console.log('devServerOptions : ', devServerOptions);
 
   return devServerOptions;
 };

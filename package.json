@@ -46,9 +46,7 @@
   },
   "homepage": "https://github.com/sfeir-open-source/sfeir-school-pwa#readme",
   "dependencies": {
-    "@babel/core": "^7.4.3",
     "@webcomponents/webcomponentsjs": "^2.2.7",
-    "cross-var": "^1.1.0",
     "google-auth-library": "^9.0.0",
     "idb": "^5.0.4",
     "jose": "^4.14.4",
@@ -59,10 +57,7 @@
   },
   "private": true,
   "devDependencies": {
-    "babel-core": "~6.26.3",
-    "babel-loader": "~8.0.5",
-    "babel-polyfill": "~6.26.0",
-    "babel-preset-env": "~1.7.0",
+    "cross-var": "^1.1.0",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
     "html-webpack-harddisk-plugin": "^2.0.0",
