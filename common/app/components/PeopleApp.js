@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html } from 'lit';
 import { installRouter } from 'pwa-helpers/router';
 
 export class PeopleApp extends LitElement {

@@ -37,7 +37,6 @@
     "dev": "webpack-dev-server",
     "server": "node ./common/server/server.js",
     "ngrok": "ngrok http --host-header=\"localhost:8080\" 8080 ",
-    "server-old": "json-server assets/mocks/people.json --routes assets/mocks/routes.json",
     "precommit": "lint-staged",
     "prettify": "prettier --write ./**/*.{json,html,css,scss,md,js,ts}"
   },
@@ -51,7 +50,7 @@
     "idb": "^5.0.4",
     "jose": "^4.14.4",
     "json-server": "^0.16.1",
-    "lit-element": "^2.1.0",
+    "lit": "^3.1.0",
     "normalize.css": "8.0.1",
     "pwa-helpers": "^0.9.1"
   },
@@ -65,7 +64,6 @@
     "husky": "^1.3.1",
     "lighthouse": "^6.1.1",
     "lint-staged": "^8.1.5",
-    "lodash": ">=4.17.13",
     "ngrok": "^5.0.0-beta.2",
     "parallelshell": "3.0.1",
     "prettier": "^1.16.4",

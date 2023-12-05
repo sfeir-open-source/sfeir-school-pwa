@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html } from 'lit';
 import { PeoplesService } from '../../../../common/app/services/People.js';
 import { AuthService } from '../services/AuthService.js';
 
