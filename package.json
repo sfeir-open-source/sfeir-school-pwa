@@ -45,6 +45,7 @@
   },
   "homepage": "https://github.com/sfeir-open-source/sfeir-school-pwa#readme",
   "dependencies": {
+    "@simplewebauthn/server": "^8.3.5",
     "@webcomponents/webcomponentsjs": "^2.2.7",
     "google-auth-library": "^9.0.0",
     "idb": "^5.0.4",

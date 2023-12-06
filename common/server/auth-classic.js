@@ -15,9 +15,10 @@ class SignClassic {
   async signup(req, res) {
     console.log('Signup', req.body);
     try {
-      const user = await this.authInstance.signup(req.body.username, req.body.password);
+      const user = await this.authInstance.signup(req.body);
       return res.jsonp(user);
     } catch (e) {
+      console.error(e);
       return res.jsonp({ error: e.message });
     }
   }

@@ -1,12 +1,17 @@
 export class PeoplesService {
   constructor() {
     const SERVER = 'http://localhost:3000';
+    this.SERVER_URL = SERVER;
     this.API_URL = `${SERVER}/api/people`;
     this.API_AUTH = `${SERVER}/auth`;
     this.peoples = null;
     this.peopleMap = new Map();
     this.hasRequestPending = false;
     this.networkPromise = this.initialize();
+  }
+
+  getServerUrl() {
+    return this.SERVER_URL;
   }
 
   async initialize() {
@@ -102,6 +107,11 @@ export class PeoplesService {
     });
   }
 
+  /**
+   * Signin a user with Google
+   * @param {*} token
+   * @returns
+   */
   googleSignin(token) {
     return fetch(`${this.API_AUTH}/googleSignin`, {
       method: 'POST',
@@ -110,6 +120,11 @@ export class PeoplesService {
     });
   }
 
+  /**
+   * Signup a user with Google
+   * @param {*} token
+   * @returns
+   */
   googleSignup(token) {
     return fetch(`${this.API_AUTH}/googleSignup`, {
       method: 'POST',

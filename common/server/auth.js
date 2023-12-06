@@ -21,14 +21,14 @@ module.exports = class Auth {
     this.loggedUsers = users;
   }
 
-  async signup(username, password) {
-    if (username !== '' && password !== '') {
-      let user = this.loggedUsers.find(user => user.username === username);
+  async signup(body) {
+    if (body.username !== '' && body.password !== '') {
+      let user = this.loggedUsers.find(user => user.username === body.username);
       // If user already exists, we update the passwords
       if (user) {
-        user.password = password;
+        user.password = body.password;
       } else {
-        user = req.body;
+        user = body;
         user.federated = false;
         this.loggedUsers.push(user);
       }
