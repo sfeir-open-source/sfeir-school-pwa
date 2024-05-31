@@ -10,8 +10,8 @@ module.exports = function(env = {}, args) {
     env.production = true;
   }
 
-  const stepArg = process.argv.find(arg => arg.startsWith('--step-'));
-  let stepDir = stepArg && stepArg.replace('--step-', '');
+  const stepArg = env.step;
+  let stepDir = stepArg && stepArg.replace('step-', '');
   const STEPS_DIRECTORY = 'steps/';
   stepDir = stepDir === '' || stepDir === 'true' ? DEFAULT_STEP : `${STEPS_DIRECTORY}${stepDir}`;
   const stepGenericName = stepDir
@@ -67,7 +67,7 @@ Check the folder name in steps/, read the README and try again.
 
   console.log(`Will use ${paths.indexjs} as entry point`);
 
-  return {
+  const devServerOptions = {
     mode: 'development',
     entry: paths.indexjs,
     output: {
@@ -78,11 +78,6 @@ Check the folder name in steps/, read the README and try again.
     module: {
       rules: [
         {
-          test: /\.js$/,
-          loader: 'babel-loader'
-          // Babel options are loaded from .babelrc
-        },
-        {
           test: /\.css$/,
           use: ['style-loader', 'css-loader']
         },
@@ -90,7 +85,17 @@ Check the folder name in steps/, read the README and try again.
           test: /\.svg$/,
           loader: 'file-loader'
         },
-        { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
+        {
+          test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 100000
+              }
+            }
+          ]
+        }
       ]
     },
     plugins: [
@@ -110,7 +115,7 @@ Check the folder name in steps/, read the README and try again.
           ]
     ),
     devServer: {
-      contentBase: [
+      static: [
         path.join(__dirname, paths.dist),
         path.join(__dirname, paths.assets),
         path.join(__dirname, paths.commons),
@@ -120,4 +125,6 @@ Check the folder name in steps/, read the README and try again.
       historyApiFallback: true
     }
   };
+
+  return devServerOptions;
 };

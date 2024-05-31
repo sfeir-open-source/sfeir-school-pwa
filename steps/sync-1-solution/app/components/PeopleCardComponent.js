@@ -1,4 +1,4 @@
-import { LitElement, html, nothing } from 'lit-element';
+import { LitElement, html, nothing } from 'lit';
 import { capitalize, splitEmail } from '../../../../common/utils/helpers.js';
 
 export class PeopleCard extends LitElement {

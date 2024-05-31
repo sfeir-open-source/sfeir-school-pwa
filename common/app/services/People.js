@@ -1,11 +1,17 @@
 export class PeoplesService {
   constructor() {
     const SERVER = 'http://localhost:3000';
+    this.SERVER_URL = SERVER;
     this.API_URL = `${SERVER}/api/people`;
+    this.API_AUTH = `${SERVER}/auth`;
     this.peoples = null;
     this.peopleMap = new Map();
     this.hasRequestPending = false;
     this.networkPromise = this.initialize();
+  }
+
+  getServerUrl() {
+    return this.SERVER_URL;
   }
 
   async initialize() {
@@ -64,5 +70,66 @@ export class PeoplesService {
       response
     );
     return response;
+  }
+
+  /**
+   * *******************
+   * AUTHENTICATION API
+   * *******************
+   */
+
+  /**
+   * Register a user
+   * @param {*} email
+   * @param {*} username
+   * @param {*} password
+   * @returns
+   */
+  register(email, username, password) {
+    return fetch(`${this.API_AUTH}/signup`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, username, password })
+    });
+  }
+
+  /**
+   * Signin a user
+   * @param {*} username
+   * @param {*} password
+   * @returns
+   */
+  signin(username, password) {
+    return fetch(`${this.API_AUTH}/signin`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+  }
+
+  /**
+   * Signin a user with Google
+   * @param {*} token
+   * @returns
+   */
+  googleSignin(token) {
+    return fetch(`${this.API_AUTH}/googleSignin`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token })
+    });
+  }
+
+  /**
+   * Signup a user with Google
+   * @param {*} token
+   * @returns
+   */
+  googleSignup(token) {
+    return fetch(`${this.API_AUTH}/googleSignup`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token })
+    });
   }
 }
