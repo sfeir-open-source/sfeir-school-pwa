@@ -57,7 +57,6 @@ The Notifications API lets a web page or app send notifications that are display
 
 # Qu'est ce qu'une bonne notification ?
 
-
 ![w-600](./assets/images/car_notification.png)
 ![w-600](./assets/images/good_notification.svg)
 
@@ -71,7 +70,6 @@ And it’s relevant - something I should be interested in.
 <!-- .slide: class="flex-row" -->
 
 # Qu'est ce qu'une bonne notification ?
-
 
 ![w-600](./assets/images/bad_app_notification.png)
 ![w-600](./assets/images/bad_notification.svg)
@@ -424,4 +422,4 @@ self.addEventListener('notificationclick', event => {
 ![center h-800](./assets/images/caniuse_push.png)
 
 Notes:
-MAJ: 2018-08-31
+MAJ: 2024-06-10

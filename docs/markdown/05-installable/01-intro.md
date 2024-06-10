@@ -6,13 +6,12 @@
 
 # Objectifs
 
-
-
 ![h-700 float-left](./assets/images/devoxx_app.gif)
 
 <!-- .element: style="margin-left:500px; margin-right:50px;" -->
 
 <br><br>
+
 - App Like
   <br><br>
 - Engagement
@@ -325,18 +324,6 @@ Notes:
 ![center h-600](./assets/images/pwa_games_landscape.png)
 
 Notes:
-
-##==##
-
-# Validateur
-
-![center h-700](./assets/images/manifest_validator.png)
-
-<br>
-
-https://manifest-validator.appspot.com/
-
-<!-- .element: class="center" -->
 
 <br>
 

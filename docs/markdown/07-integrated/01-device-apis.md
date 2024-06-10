@@ -225,7 +225,7 @@ This method, part of the simple Web Share API—written by Matt Giuca on the Chr
 ![center h-800](./assets/images/caniuse_webshare.png)
 
 Notes:
-Update on 2019-05-16
+Update on 2024-06-10
 
 ##==##
 
