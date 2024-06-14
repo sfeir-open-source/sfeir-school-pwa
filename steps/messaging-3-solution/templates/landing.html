@@ -48,25 +48,31 @@
 
     <script>
       const dialog = document.querySelector('#dialog');
+      // todo : exercice => créer l'instance de MessageChannel
+      const messageChannel = new MessageChannel();
 
       if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(registration => {
-            registration.addEventListener('updatefound', _=> {
-              registration.installing.addEventListener('statechange', _=> {
-                if (registration.waiting) {
-                  dialog.showModal();
-                }
-              });
-            });
-          });
+        navigator.serviceWorker.register('service-worker.js');
+
+        // todo : exercice => initialiser le port pour le service worker
+        navigator.serviceWorker.controller.postMessage({ action: 'INIT_PORT'}, [messageChannel.port2]);
+
+
+        // todo : exercice => écouter les messages émis par le service worker
+        messageChannel.port1.onmessage = (event) => {
+          if(event.data.action === 'DISPLAY_DIALOG') {
+            dialog.showModal();
+          }
+          if (event.data.action === "RELOAD WINDOW") {
+            window.location.reload();
+          }
+        };
       }
 
       dialog.querySelector('button').addEventListener('click', _=> {
         dialog.close();
-        // envoyer un message au service worker
+        navigator.serviceWorker.controller.postMessage({ action: 'SKIP_WAITING'});
       }, {once: true});
-
     </script>
   </body>
 </html>
