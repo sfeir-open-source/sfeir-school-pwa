@@ -229,6 +229,180 @@ Update on 2024-06-10
 
 ##==##
 
+<!-- .slide: class="two-column-layout" -->
+
+# Drag and Drop API
+
+##--##
+
+<br><br>
+
+- attribut <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`draggable=true`</span> sur l'élément html.
+  <br><br>
+- <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`ondragstart`</span> event sur l'élément draggable.
+  <br><br>
+- <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`ondrop`</span> event dans la zone de dépot.
+  <br><br>
+- <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`ondraghover`</span> event sur la zone de dépot.
+  ##--##
+
+![full-width](./assets/images/gifs/drag-drop.gif)
+
+##==##
+
+## Exemple :
+
+<!-- .slide: class="with-code" -->
+
+<br><br>
+
+```html
+<div class="card" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">
+  <div class="box" id="1" draggable="true" ondragstart="dragstart_handler(event)"></div>
+  <p draggable="true" id="2" ondragstart="dragstart_handler(event)">Super text</p>
+</div>
+<div class="card" ondrop="drop_handler(event)" ondragover="dragover_handler(event)"></div>
+```
+
+##==##
+
+## Et la partie javascript ?
+
+<!-- .slide: class="with-code" -->
+
+<br><br>
+
+```javascript
+function dragstart_handler(ev) {
+  ev.dataTransfer.setData('application/my-app', ev.target.id);
+}
+
+function drop_handler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData('application/my-app');
+  ev.target.appendChild(document.getElementById(data));
+}
+
+function dragover_handler(ev) {
+  ev.preventDefault();
+  ev.dataTransfer.dropEffect = 'move'; // copy/move/link (change le cursor)
+}
+```
+
+##==##
+
+# Support 😃
+
+![center h-800](./assets/images/caniuse_drag-drop.png)
+
+##==##
+
+<!-- .slide: class="two-column-layout" -->
+
+# Picture-in-Picture
+
+##--##
+<br><br>
+
+- Ne fonctionne qu'avec l'élément <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`<video></video>`</span>.
+  <br>
+- Nécessite l'attribut <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`controls`</span>
+  <br>
+- Auto picture-in-picture bientôt prévu...
+  ##--##
+  <br><br>
+  ![full-width](./assets/images/gifs/pip.gif)
+
+##==##
+
+<!-- .slide: class="two-column-layout" -->
+
+# Comment ça marche ?
+
+##--##
+
+<!-- .slide: class="with-code" -->
+
+<br><br>
+
+```javascript
+const video = document.getElementById('video');
+
+if (!document.pictureInPictureElement) {
+  video.requestPictureInPicture().catch(error => {
+    // Video failed to enter Picture-in-Picture mode.
+  });
+} else {
+  document.exitPictureInPicture().catch(error => {
+    // Video failed to leave Picture-in-Picture mode.
+  });
+}
+```
+
+##--##
+
+![](./assets/images/exemple-pip.png)
+
+##==##
+
+# Support ? 😐
+
+![center h-800](./assets/images/caniuse-pip.png)
+
+##==##
+
+<!-- .slide: class="two-column-layout" -->
+
+# Image Capture Api
+
+##--##
+<br><br>
+
+- Vérifier que <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`mediaDevices`</span> et <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`getUserMedia`</span> sont implémentés dans le navigateur.
+  <br>
+- Préciser les flux que l'ont veut récupérer.
+  <br>
+- Modifier le src de la balise <span style="background:grey; color: white; padding: 0 0.5em 0 0.5em;">`<video></video>`</span>.
+  <br>
+- faire jouer le stream.
+  ##--##
+  <br><br>
+  ![center h-500](./assets/images/gifs/gif-picture.gif)
+
+##==##
+
+<!-- .slide: class="with-code" -->
+
+# Exemple :
+
+<br><br>
+
+```html
+<video id="video" autoplay controls></video>
+```
+
+```javascript
+if (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined) {
+  navigator.mediaDevices.getUserMedia({ video: true }).then(mediaStream => {
+    const video = document.querySelector('video');
+    if ('srcObject' in video) {
+      video.srcObject = mediaStream;
+    } else {
+      // Avoid using this in new browsers, as it is going away.
+      video.src = window.URL.createObjectURL(mediaStream);
+    }
+  });
+}
+```
+
+##==##
+
+# Support 🤔
+
+![center h-800](./assets/images/caniuse-mediacapabilities.png)
+
+##==##
+
 # What web can do today ?
 
 ![center h-900](./assets/images/whatwebcandotoday.png)
