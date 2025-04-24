@@ -4,7 +4,7 @@
 
 This repository is an Open Source theme for RevealJS presentations. It respect the graphical theme of [@SFEIR](https://github.com/sfeir) company.
 
-You can preview it here : https://sfeir-school-theme.netlify.com/
+You can preview it here : https://sfeir-school-theme.netlify.app/
 
 - [How to use it](https://github.com/sfeir-open-source/sfeir-school-theme/#how-to-use-it)
 - [Features](https://github.com/sfeir-open-source/sfeir-school-theme/#features)
@@ -23,6 +23,8 @@ You can preview it here : https://sfeir-school-theme.netlify.com/
   - [Helpers](https://github.com/sfeir-open-source/sfeir-school-theme/#helpers)
     - [List with fragments ](https://github.com/sfeir-open-source/sfeir-school-theme/#list-with-fragments)
     - [Feather icons ](https://github.com/sfeir-open-source/sfeir-school-theme/#feather-icons)
+    - [Admonition blocks ](https://github.com/sfeir-open-source/sfeir-school-theme/#admonition-blocks)
+    - [UI to select your slides](https://github.com/sfeir-open-source/sfeir-school-theme/#ui-to-select-your-slides)
   - [Print the slides](https://github.com/sfeir-open-source/sfeir-school-theme/#print-the-slides)
 - [Releases Notes](https://github.com/sfeir-open-source/sfeir-school-theme/wiki/Releases-Notes)
 
@@ -955,6 +957,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec risus leo. Ve
 
 If nothing is set in the markdown, the slide will be available for both versions.
 
+You can also set multiples data-type-show in the same slide (separated by a space) to create kind of specifics configurations for your slides.
+
+```markdown
+<!-- .slide: data-type-show="prez other" -->
+```
+
 ### List with fragments
 
 Sometimes, you will need to use revealJS fragments (animation to reveal an element) on list elements. To do this, you could write directly html content or you can use a meta at the end of the list:
@@ -1025,6 +1033,78 @@ Complete list of icons : https://feathericons.com/
 ```
 
 ![](./docs/images/feather-icons.png)
+
+### Admonition blocks
+
+You can you admonition blocks to highlight some content in your slides. You can use the following classes:
+
+- `abstract`
+- `info`
+- `tip`
+- `note`
+- `success`
+- `question`
+- `warning`
+- `failure`
+- `danger`
+- `important`
+- `bug`
+- `example`
+- `quote`
+
+Simply add the class "admonition" with the tip desired as class to transform the text into admonition. This is target for text!
+
+```md
+Mode tip
+
+<!-- .element: class="admonition tip" -->
+```
+
+will produce
+
+![](./docs/images/admonition-tip.png)
+
+to do this in html :
+
+```html
+<p class="admonition tip">>Mode tip</p>
+```
+
+#### Custom Admonition
+
+You can also specify your own icon if you want using 'custom' as class. To specify the icon to use, you will have to add data attribute on your element `data-admonition-icon` with the icon. We recommand you to use Emojis as icon.
+
+There is a default grey background color but if you want, you can customize it using the custom property `--admonition-bg-color` in the style of the element.
+
+```md
+Mode custom
+
+<!-- .element: class="admonition custom" data-admonition-icon="🐼 Custom" -->
+
+Mode custom and custom color
+
+<!-- .element: class="admonition custom" data-admonition-icon="🕶️ Custombis" style="--admonition-bg-color:#d7be00;" -->
+```
+
+this will produce
+
+![](./docs/images/admonition-custom.png)
+
+Here are all the icons availables and modes :
+
+![](./docs/images/admonition-all.png)
+
+### UI to select and configure your slides
+
+To select the slides to display, you have to give to the initializer a function that will return an array of objects with the path of the slides. So to choose your slide, you normally return 'only' the selected slides.
+
+You can also use the 'Slide selector' UI to select your slides. To do this, hit the key 'c' when you presentation is loaded. You will see a modal with all the slides availables. You can select the slides you want to display and click on the 'Validate selection' button. Only the selected path will be displayed.
+
+The selection is stored in session storage so if you reload the page, the selection will be kept. But if you close the window or tab, the selection will be lost.
+
+This UI will let you also configure the theme (institute / school / conf), the langage (FR / EN) and the type (prez / full / ...).
+
+![](./docs/images/slide-selector.png)
 
 ## Print the slides
 

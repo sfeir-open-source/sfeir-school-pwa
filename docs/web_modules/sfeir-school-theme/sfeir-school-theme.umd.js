@@ -1,13 +1,13 @@
-(function(ze, At) {
+(function(ze, xt) {
   typeof exports == 'object' && typeof module < 'u'
-    ? At(exports)
+    ? xt(exports)
     : typeof define == 'function' && define.amd
-    ? define(['exports'], At)
-    : ((ze = typeof globalThis < 'u' ? globalThis : ze || self), At((ze['sfeir-school-theme'] = {})));
+    ? define(['exports'], xt)
+    : ((ze = typeof globalThis < 'u' ? globalThis : ze || self), xt((ze['sfeir-school-theme'] = {})));
 })(this, function(ze) {
   'use strict';
-  const At = '';
-  var Vi =
+  const xt = '';
+  var Wi =
     typeof globalThis < 'u'
       ? globalThis
       : typeof window < 'u'
@@ -17,23 +17,23 @@
       : typeof self < 'u'
       ? self
       : {};
-  function ji(n) {
-    return n && n.__esModule && Object.prototype.hasOwnProperty.call(n, 'default') ? n.default : n;
+  function Qi(t) {
+    return t && t.__esModule && Object.prototype.hasOwnProperty.call(t, 'default') ? t.default : t;
   }
-  var kn = { exports: {} };
-  (function(n, e) {
+  var Un = { exports: {} };
+  (function(t, e) {
     (function(a, i) {
-      n.exports = i();
-    })(typeof self < 'u' ? self : Vi, function() {
-      return (function(t) {
+      t.exports = i();
+    })(typeof self < 'u' ? self : Wi, function() {
+      return (function(n) {
         var a = {};
         function i(r) {
           if (a[r]) return a[r].exports;
           var s = (a[r] = { i: r, l: !1, exports: {} });
-          return t[r].call(s.exports, s, s.exports, i), (s.l = !0), s.exports;
+          return n[r].call(s.exports, s, s.exports, i), (s.l = !0), s.exports;
         }
         return (
-          (i.m = t),
+          (i.m = n),
           (i.c = a),
           (i.d = function(r, s, o) {
             i.o(r, s) || Object.defineProperty(r, s, { configurable: !1, enumerable: !0, get: o });
@@ -59,8 +59,8 @@
           i((i.s = 0))
         );
       })({
-        './dist/icons.json': function(t) {
-          t.exports = {
+        './dist/icons.json': function(n) {
+          n.exports = {
             activity: '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>',
             airplay:
               '<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>',
@@ -583,7 +583,7 @@
               '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line>'
           };
         },
-        './node_modules/classnames/dedupe.js': function(t, a, i) {
+        './node_modules/classnames/dedupe.js': function(n, a, i) {
           var r, s;
           /*!
   Copyright (c) 2016 Jed Watson.
@@ -605,7 +605,7 @@
               }
               var m = /\s+/;
               function p(h, T) {
-                for (var S = T.split(m), v = S.length, R = 0; R < v; ++R) h[S[R]] = !0;
+                for (var S = T.split(m), v = S.length, C = 0; C < v; ++C) h[S[C]] = !0;
               }
               function g(h, T) {
                 if (!!T) {
@@ -623,41 +623,41 @@
                 for (var h = arguments.length, T = Array(h), S = 0; S < h; S++) T[S] = arguments[S];
                 var v = new l();
                 c(v, T);
-                var R = [];
-                for (var C in v) v[C] && R.push(C);
-                return R.join(' ');
+                var C = [];
+                for (var R in v) v[R] && C.push(R);
+                return C.join(' ');
               }
               return E;
             })();
-            typeof t < 'u' && t.exports
-              ? (t.exports = o)
+            typeof n < 'u' && n.exports
+              ? (n.exports = o)
               : ((r = []),
                 (s = function() {
                   return o;
                 }.apply(a, r)),
-                s !== void 0 && (t.exports = s));
+                s !== void 0 && (n.exports = s));
           })();
         },
-        './node_modules/core-js/es/array/from.js': function(t, a, i) {
+        './node_modules/core-js/es/array/from.js': function(n, a, i) {
           i('./node_modules/core-js/modules/es.string.iterator.js'),
             i('./node_modules/core-js/modules/es.array.from.js');
           var r = i('./node_modules/core-js/internals/path.js');
-          t.exports = r.Array.from;
+          n.exports = r.Array.from;
         },
-        './node_modules/core-js/internals/a-function.js': function(t, a) {
-          t.exports = function(i) {
+        './node_modules/core-js/internals/a-function.js': function(n, a) {
+          n.exports = function(i) {
             if (typeof i != 'function') throw TypeError(String(i) + ' is not a function');
             return i;
           };
         },
-        './node_modules/core-js/internals/an-object.js': function(t, a, i) {
+        './node_modules/core-js/internals/an-object.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/is-object.js');
-          t.exports = function(s) {
+          n.exports = function(s) {
             if (!r(s)) throw TypeError(String(s) + ' is not an object');
             return s;
           };
         },
-        './node_modules/core-js/internals/array-from.js': function(t, a, i) {
+        './node_modules/core-js/internals/array-from.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/bind-context.js'),
             s = i('./node_modules/core-js/internals/to-object.js'),
             o = i('./node_modules/core-js/internals/call-with-safe-iteration-closing.js'),
@@ -665,7 +665,7 @@
             c = i('./node_modules/core-js/internals/to-length.js'),
             _ = i('./node_modules/core-js/internals/create-property.js'),
             d = i('./node_modules/core-js/internals/get-iterator-method.js');
-          t.exports = function(m) {
+          n.exports = function(m) {
             var p = s(m),
               g = typeof this == 'function' ? this : Array,
               E = arguments.length,
@@ -673,22 +673,22 @@
               T = h !== void 0,
               S = 0,
               v = d(p),
-              R,
               C,
+              R,
               I,
               O;
             if ((T && (h = r(h, E > 2 ? arguments[2] : void 0, 2)), v != null && !(g == Array && l(v))))
-              for (O = v.call(p), C = new g(); !(I = O.next()).done; S++)
-                _(C, S, T ? o(O, h, [I.value, S], !0) : I.value);
-            else for (R = c(p.length), C = new g(R); R > S; S++) _(C, S, T ? h(p[S], S) : p[S]);
-            return (C.length = S), C;
+              for (O = v.call(p), R = new g(); !(I = O.next()).done; S++)
+                _(R, S, T ? o(O, h, [I.value, S], !0) : I.value);
+            else for (C = c(p.length), R = new g(C); C > S; S++) _(R, S, T ? h(p[S], S) : p[S]);
+            return (R.length = S), R;
           };
         },
-        './node_modules/core-js/internals/array-includes.js': function(t, a, i) {
+        './node_modules/core-js/internals/array-includes.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/to-indexed-object.js'),
             s = i('./node_modules/core-js/internals/to-length.js'),
             o = i('./node_modules/core-js/internals/to-absolute-index.js');
-          t.exports = function(l) {
+          n.exports = function(l) {
             return function(c, _, d) {
               var u = r(c),
                 m = s(u.length),
@@ -701,9 +701,9 @@
             };
           };
         },
-        './node_modules/core-js/internals/bind-context.js': function(t, a, i) {
+        './node_modules/core-js/internals/bind-context.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/a-function.js');
-          t.exports = function(s, o, l) {
+          n.exports = function(s, o, l) {
             if ((r(s), o === void 0)) return s;
             switch (l) {
               case 0:
@@ -728,9 +728,9 @@
             };
           };
         },
-        './node_modules/core-js/internals/call-with-safe-iteration-closing.js': function(t, a, i) {
+        './node_modules/core-js/internals/call-with-safe-iteration-closing.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/an-object.js');
-          t.exports = function(s, o, l, c) {
+          n.exports = function(s, o, l, c) {
             try {
               return c ? o(r(l)[0], l[1]) : o(l);
             } catch (d) {
@@ -739,7 +739,7 @@
             }
           };
         },
-        './node_modules/core-js/internals/check-correctness-of-iteration.js': function(t, a, i) {
+        './node_modules/core-js/internals/check-correctness-of-iteration.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/well-known-symbol.js'),
             s = r('iterator'),
             o = !1;
@@ -760,7 +760,7 @@
                 throw 2;
               });
           } catch {}
-          t.exports = function(_, d) {
+          n.exports = function(_, d) {
             if (!d && !o) return !1;
             var u = !1;
             try {
@@ -777,13 +777,13 @@
             return u;
           };
         },
-        './node_modules/core-js/internals/classof-raw.js': function(t, a) {
+        './node_modules/core-js/internals/classof-raw.js': function(n, a) {
           var i = {}.toString;
-          t.exports = function(r) {
+          n.exports = function(r) {
             return i.call(r).slice(8, -1);
           };
         },
-        './node_modules/core-js/internals/classof.js': function(t, a, i) {
+        './node_modules/core-js/internals/classof.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/classof-raw.js'),
             s = i('./node_modules/core-js/internals/well-known-symbol.js'),
             o = s('toStringTag'),
@@ -798,7 +798,7 @@
                 return _[d];
               } catch {}
             };
-          t.exports = function(_) {
+          n.exports = function(_) {
             var d, u, m;
             return _ === void 0
               ? 'Undefined'
@@ -813,26 +813,26 @@
               : m;
           };
         },
-        './node_modules/core-js/internals/copy-constructor-properties.js': function(t, a, i) {
+        './node_modules/core-js/internals/copy-constructor-properties.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/has.js'),
             s = i('./node_modules/core-js/internals/own-keys.js'),
             o = i('./node_modules/core-js/internals/object-get-own-property-descriptor.js'),
             l = i('./node_modules/core-js/internals/object-define-property.js');
-          t.exports = function(c, _) {
+          n.exports = function(c, _) {
             for (var d = s(_), u = l.f, m = o.f, p = 0; p < d.length; p++) {
               var g = d[p];
               r(c, g) || u(c, g, m(_, g));
             }
           };
         },
-        './node_modules/core-js/internals/correct-prototype-getter.js': function(t, a, i) {
+        './node_modules/core-js/internals/correct-prototype-getter.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/fails.js');
-          t.exports = !r(function() {
+          n.exports = !r(function() {
             function s() {}
             return (s.prototype.constructor = null), Object.getPrototypeOf(new s()) !== s.prototype;
           });
         },
-        './node_modules/core-js/internals/create-iterator-constructor.js': function(t, a, i) {
+        './node_modules/core-js/internals/create-iterator-constructor.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/iterators-core.js').IteratorPrototype,
             s = i('./node_modules/core-js/internals/object-create.js'),
             o = i('./node_modules/core-js/internals/create-property-descriptor.js'),
@@ -841,26 +841,26 @@
             _ = function() {
               return this;
             };
-          t.exports = function(d, u, m) {
+          n.exports = function(d, u, m) {
             var p = u + ' Iterator';
             return (d.prototype = s(r, { next: o(1, m) })), l(d, p, !1, !0), (c[p] = _), d;
           };
         },
-        './node_modules/core-js/internals/create-property-descriptor.js': function(t, a) {
-          t.exports = function(i, r) {
+        './node_modules/core-js/internals/create-property-descriptor.js': function(n, a) {
+          n.exports = function(i, r) {
             return { enumerable: !(i & 1), configurable: !(i & 2), writable: !(i & 4), value: r };
           };
         },
-        './node_modules/core-js/internals/create-property.js': function(t, a, i) {
+        './node_modules/core-js/internals/create-property.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/to-primitive.js'),
             s = i('./node_modules/core-js/internals/object-define-property.js'),
             o = i('./node_modules/core-js/internals/create-property-descriptor.js');
-          t.exports = function(l, c, _) {
+          n.exports = function(l, c, _) {
             var d = r(c);
             d in l ? s.f(l, d, o(0, _)) : (l[d] = _);
           };
         },
-        './node_modules/core-js/internals/define-iterator.js': function(t, a, i) {
+        './node_modules/core-js/internals/define-iterator.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/export.js'),
             s = i('./node_modules/core-js/internals/create-iterator-constructor.js'),
             o = i('./node_modules/core-js/internals/object-get-prototype-of.js'),
@@ -877,11 +877,11 @@
             T = u('iterator'),
             S = 'keys',
             v = 'values',
-            R = 'entries',
-            C = function() {
+            C = 'entries',
+            R = function() {
               return this;
             };
-          t.exports = function(I, O, A, F, w, j, N) {
+          n.exports = function(I, O, A, F, w, j, N) {
             s(A, O, F);
             var B = function(he) {
                 if (he === w && K) return K;
@@ -895,7 +895,7 @@
                     return function() {
                       return new A(this, he);
                     };
-                  case R:
+                  case C:
                     return function() {
                       return new A(this, he);
                     };
@@ -918,9 +918,9 @@
                 ((ge = o(U.call(new I()))),
                 E !== Object.prototype &&
                   ge.next &&
-                  (!m && o(ge) !== E && (l ? l(ge, E) : typeof ge[T] != 'function' && _(ge, T, C)),
+                  (!m && o(ge) !== E && (l ? l(ge, E) : typeof ge[T] != 'function' && _(ge, T, R)),
                   c(ge, Q, !0, !0),
-                  m && (p[Q] = C))),
+                  m && (p[Q] = R))),
               w == v &&
                 G &&
                 G.name !== v &&
@@ -932,15 +932,15 @@
               (p[O] = K),
               w)
             )
-              if (((se = { values: B(v), keys: j ? K : B(S), entries: B(R) }), N))
+              if (((se = { values: B(v), keys: j ? K : B(S), entries: B(C) }), N))
                 for (X in se) (h || ee || !(X in W)) && d(W, X, se[X]);
               else r({ target: O, proto: !0, forced: h || ee }, se);
             return se;
           };
         },
-        './node_modules/core-js/internals/descriptors.js': function(t, a, i) {
+        './node_modules/core-js/internals/descriptors.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/fails.js');
-          t.exports = !r(function() {
+          n.exports = !r(function() {
             return (
               Object.defineProperty({}, 'a', {
                 get: function() {
@@ -950,17 +950,17 @@
             );
           });
         },
-        './node_modules/core-js/internals/document-create-element.js': function(t, a, i) {
+        './node_modules/core-js/internals/document-create-element.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/is-object.js'),
             o = r.document,
             l = s(o) && s(o.createElement);
-          t.exports = function(c) {
+          n.exports = function(c) {
             return l ? o.createElement(c) : {};
           };
         },
-        './node_modules/core-js/internals/enum-bug-keys.js': function(t, a) {
-          t.exports = [
+        './node_modules/core-js/internals/enum-bug-keys.js': function(n, a) {
+          n.exports = [
             'constructor',
             'hasOwnProperty',
             'isPrototypeOf',
@@ -970,7 +970,7 @@
             'valueOf'
           ];
         },
-        './node_modules/core-js/internals/export.js': function(t, a, i) {
+        './node_modules/core-js/internals/export.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/object-get-own-property-descriptor.js').f,
             o = i('./node_modules/core-js/internals/hide.js'),
@@ -978,7 +978,7 @@
             c = i('./node_modules/core-js/internals/set-global.js'),
             _ = i('./node_modules/core-js/internals/copy-constructor-properties.js'),
             d = i('./node_modules/core-js/internals/is-forced.js');
-          t.exports = function(u, m) {
+          n.exports = function(u, m) {
             var p = u.target,
               g = u.global,
               E = u.stat,
@@ -986,25 +986,25 @@
               T,
               S,
               v,
-              R,
-              C;
+              C,
+              R;
             if ((g ? (T = r) : E ? (T = r[p] || c(p, {})) : (T = (r[p] || {}).prototype), T))
               for (S in m) {
                 if (
-                  ((R = m[S]),
-                  u.noTargetGet ? ((C = s(T, S)), (v = C && C.value)) : (v = T[S]),
+                  ((C = m[S]),
+                  u.noTargetGet ? ((R = s(T, S)), (v = R && R.value)) : (v = T[S]),
                   (h = d(g ? S : p + (E ? '.' : '#') + S, u.forced)),
                   !h && v !== void 0)
                 ) {
-                  if (typeof R == typeof v) continue;
-                  _(R, v);
+                  if (typeof C == typeof v) continue;
+                  _(C, v);
                 }
-                (u.sham || (v && v.sham)) && o(R, 'sham', !0), l(T, S, R, u);
+                (u.sham || (v && v.sham)) && o(C, 'sham', !0), l(T, S, C, u);
               }
           };
         },
-        './node_modules/core-js/internals/fails.js': function(t, a) {
-          t.exports = function(i) {
+        './node_modules/core-js/internals/fails.js': function(n, a) {
+          n.exports = function(i) {
             try {
               return !!i();
             } catch {
@@ -1012,26 +1012,26 @@
             }
           };
         },
-        './node_modules/core-js/internals/function-to-string.js': function(t, a, i) {
+        './node_modules/core-js/internals/function-to-string.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/shared.js');
-          t.exports = r('native-function-to-string', Function.toString);
+          n.exports = r('native-function-to-string', Function.toString);
         },
-        './node_modules/core-js/internals/get-iterator-method.js': function(t, a, i) {
+        './node_modules/core-js/internals/get-iterator-method.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/classof.js'),
             s = i('./node_modules/core-js/internals/iterators.js'),
             o = i('./node_modules/core-js/internals/well-known-symbol.js'),
             l = o('iterator');
-          t.exports = function(c) {
+          n.exports = function(c) {
             if (c != null) return c[l] || c['@@iterator'] || s[r(c)];
           };
         },
-        './node_modules/core-js/internals/global.js': function(t, a, i) {
+        './node_modules/core-js/internals/global.js': function(n, a, i) {
           (function(r) {
             var s = 'object',
               o = function(l) {
                 return l && l.Math == Math && l;
               };
-            t.exports =
+            n.exports =
               o(typeof globalThis == s && globalThis) ||
               o(typeof window == s && window) ||
               o(typeof self == s && self) ||
@@ -1039,20 +1039,20 @@
               Function('return this')();
           }.call(this, i('./node_modules/webpack/buildin/global.js')));
         },
-        './node_modules/core-js/internals/has.js': function(t, a) {
+        './node_modules/core-js/internals/has.js': function(n, a) {
           var i = {}.hasOwnProperty;
-          t.exports = function(r, s) {
+          n.exports = function(r, s) {
             return i.call(r, s);
           };
         },
-        './node_modules/core-js/internals/hidden-keys.js': function(t, a) {
-          t.exports = {};
+        './node_modules/core-js/internals/hidden-keys.js': function(n, a) {
+          n.exports = {};
         },
-        './node_modules/core-js/internals/hide.js': function(t, a, i) {
+        './node_modules/core-js/internals/hide.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/descriptors.js'),
             s = i('./node_modules/core-js/internals/object-define-property.js'),
             o = i('./node_modules/core-js/internals/create-property-descriptor.js');
-          t.exports = r
+          n.exports = r
             ? function(l, c, _) {
                 return s.f(l, c, o(1, _));
               }
@@ -1060,16 +1060,16 @@
                 return (l[c] = _), l;
               };
         },
-        './node_modules/core-js/internals/html.js': function(t, a, i) {
+        './node_modules/core-js/internals/html.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = r.document;
-          t.exports = s && s.documentElement;
+          n.exports = s && s.documentElement;
         },
-        './node_modules/core-js/internals/ie8-dom-define.js': function(t, a, i) {
+        './node_modules/core-js/internals/ie8-dom-define.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/descriptors.js'),
             s = i('./node_modules/core-js/internals/fails.js'),
             o = i('./node_modules/core-js/internals/document-create-element.js');
-          t.exports =
+          n.exports =
             !r &&
             !s(function() {
               return (
@@ -1081,11 +1081,11 @@
               );
             });
         },
-        './node_modules/core-js/internals/indexed-object.js': function(t, a, i) {
+        './node_modules/core-js/internals/indexed-object.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/fails.js'),
             s = i('./node_modules/core-js/internals/classof-raw.js'),
             o = ''.split;
-          t.exports = r(function() {
+          n.exports = r(function() {
             return !Object('z').propertyIsEnumerable(0);
           })
             ? function(l) {
@@ -1093,7 +1093,7 @@
               }
             : Object;
         },
-        './node_modules/core-js/internals/internal-state.js': function(t, a, i) {
+        './node_modules/core-js/internals/internal-state.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/native-weak-map.js'),
             s = i('./node_modules/core-js/internals/global.js'),
             o = i('./node_modules/core-js/internals/is-object.js'),
@@ -1119,9 +1119,9 @@
             var T = new u(),
               S = T.get,
               v = T.has,
-              R = T.set;
+              C = T.set;
             (m = function(I, O) {
-              return R.call(T, I, O), O;
+              return C.call(T, I, O), O;
             }),
               (p = function(I) {
                 return S.call(T, I) || {};
@@ -1130,30 +1130,30 @@
                 return v.call(T, I);
               });
           } else {
-            var C = _('state');
-            (d[C] = !0),
+            var R = _('state');
+            (d[R] = !0),
               (m = function(I, O) {
-                return l(I, C, O), O;
+                return l(I, R, O), O;
               }),
               (p = function(I) {
-                return c(I, C) ? I[C] : {};
+                return c(I, R) ? I[R] : {};
               }),
               (g = function(I) {
-                return c(I, C);
+                return c(I, R);
               });
           }
-          t.exports = { set: m, get: p, has: g, enforce: E, getterFor: h };
+          n.exports = { set: m, get: p, has: g, enforce: E, getterFor: h };
         },
-        './node_modules/core-js/internals/is-array-iterator-method.js': function(t, a, i) {
+        './node_modules/core-js/internals/is-array-iterator-method.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/well-known-symbol.js'),
             s = i('./node_modules/core-js/internals/iterators.js'),
             o = r('iterator'),
             l = Array.prototype;
-          t.exports = function(c) {
+          n.exports = function(c) {
             return c !== void 0 && (s.Array === c || l[o] === c);
           };
         },
-        './node_modules/core-js/internals/is-forced.js': function(t, a, i) {
+        './node_modules/core-js/internals/is-forced.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/fails.js'),
             s = /#|\.prototype\./,
             o = function(u, m) {
@@ -1168,17 +1168,17 @@
             c = (o.data = {}),
             _ = (o.NATIVE = 'N'),
             d = (o.POLYFILL = 'P');
-          t.exports = o;
+          n.exports = o;
         },
-        './node_modules/core-js/internals/is-object.js': function(t, a) {
-          t.exports = function(i) {
+        './node_modules/core-js/internals/is-object.js': function(n, a) {
+          n.exports = function(i) {
             return typeof i == 'object' ? i !== null : typeof i == 'function';
           };
         },
-        './node_modules/core-js/internals/is-pure.js': function(t, a) {
-          t.exports = !1;
+        './node_modules/core-js/internals/is-pure.js': function(n, a) {
+          n.exports = !1;
         },
-        './node_modules/core-js/internals/iterators-core.js': function(t, a, i) {
+        './node_modules/core-js/internals/iterators-core.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/object-get-prototype-of.js'),
             s = i('./node_modules/core-js/internals/hide.js'),
             o = i('./node_modules/core-js/internals/has.js'),
@@ -1195,26 +1195,26 @@
           [].keys && ((g = [].keys()), 'next' in g ? ((p = r(r(g))), p !== Object.prototype && (m = p)) : (d = !0)),
             m == null && (m = {}),
             !c && !o(m, _) && s(m, _, u),
-            (t.exports = { IteratorPrototype: m, BUGGY_SAFARI_ITERATORS: d });
+            (n.exports = { IteratorPrototype: m, BUGGY_SAFARI_ITERATORS: d });
         },
-        './node_modules/core-js/internals/iterators.js': function(t, a) {
-          t.exports = {};
+        './node_modules/core-js/internals/iterators.js': function(n, a) {
+          n.exports = {};
         },
-        './node_modules/core-js/internals/native-symbol.js': function(t, a, i) {
+        './node_modules/core-js/internals/native-symbol.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/fails.js');
-          t.exports =
+          n.exports =
             !!Object.getOwnPropertySymbols &&
             !r(function() {
               return !String(Symbol());
             });
         },
-        './node_modules/core-js/internals/native-weak-map.js': function(t, a, i) {
+        './node_modules/core-js/internals/native-weak-map.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/function-to-string.js'),
             o = r.WeakMap;
-          t.exports = typeof o == 'function' && /native code/.test(s.call(o));
+          n.exports = typeof o == 'function' && /native code/.test(s.call(o));
         },
-        './node_modules/core-js/internals/object-create.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-create.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/an-object.js'),
             s = i('./node_modules/core-js/internals/object-define-properties.js'),
             o = i('./node_modules/core-js/internals/enum-bug-keys.js'),
@@ -1231,24 +1231,24 @@
                 T = '<',
                 S = 'script',
                 v = '>',
-                R = 'java' + S + ':',
-                C;
+                C = 'java' + S + ':',
+                R;
               for (
                 E.style.display = 'none',
                   c.appendChild(E),
-                  E.src = String(R),
-                  C = E.contentWindow.document,
-                  C.open(),
-                  C.write(T + S + v + 'document.F=Object' + T + '/' + S + v),
-                  C.close(),
-                  g = C.F;
+                  E.src = String(C),
+                  R = E.contentWindow.document,
+                  R.open(),
+                  R.write(T + S + v + 'document.F=Object' + T + '/' + S + v),
+                  R.close(),
+                  g = R.F;
                 h--;
 
               )
                 delete g[m][o[h]];
               return g();
             };
-          (t.exports =
+          (n.exports =
             Object.create ||
             function(h, T) {
               var S;
@@ -1259,12 +1259,12 @@
             }),
             (l[u] = !0);
         },
-        './node_modules/core-js/internals/object-define-properties.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-define-properties.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/descriptors.js'),
             s = i('./node_modules/core-js/internals/object-define-property.js'),
             o = i('./node_modules/core-js/internals/an-object.js'),
             l = i('./node_modules/core-js/internals/object-keys.js');
-          t.exports = r
+          n.exports = r
             ? Object.defineProperties
             : function(_, d) {
                 o(_);
@@ -1272,7 +1272,7 @@
                 return _;
               };
         },
-        './node_modules/core-js/internals/object-define-property.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-define-property.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/descriptors.js'),
             s = i('./node_modules/core-js/internals/ie8-dom-define.js'),
             o = i('./node_modules/core-js/internals/an-object.js'),
@@ -1289,7 +1289,7 @@
                 return 'value' in m && (d[u] = m.value), d;
               };
         },
-        './node_modules/core-js/internals/object-get-own-property-descriptor.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-get-own-property-descriptor.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/descriptors.js'),
             s = i('./node_modules/core-js/internals/object-property-is-enumerable.js'),
             o = i('./node_modules/core-js/internals/create-property-descriptor.js'),
@@ -1308,7 +1308,7 @@
                 if (_(p, g)) return o(!s.f.call(p, g), p[g]);
               };
         },
-        './node_modules/core-js/internals/object-get-own-property-names.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-get-own-property-names.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/object-keys-internal.js'),
             s = i('./node_modules/core-js/internals/enum-bug-keys.js'),
             o = s.concat('length', 'prototype');
@@ -1318,17 +1318,17 @@
               return r(c, o);
             };
         },
-        './node_modules/core-js/internals/object-get-own-property-symbols.js': function(t, a) {
+        './node_modules/core-js/internals/object-get-own-property-symbols.js': function(n, a) {
           a.f = Object.getOwnPropertySymbols;
         },
-        './node_modules/core-js/internals/object-get-prototype-of.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-get-prototype-of.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/has.js'),
             s = i('./node_modules/core-js/internals/to-object.js'),
             o = i('./node_modules/core-js/internals/shared-key.js'),
             l = i('./node_modules/core-js/internals/correct-prototype-getter.js'),
             c = o('IE_PROTO'),
             _ = Object.prototype;
-          t.exports = l
+          n.exports = l
             ? Object.getPrototypeOf
             : function(d) {
                 return (
@@ -1343,13 +1343,13 @@
                 );
               };
         },
-        './node_modules/core-js/internals/object-keys-internal.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-keys-internal.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/has.js'),
             s = i('./node_modules/core-js/internals/to-indexed-object.js'),
             o = i('./node_modules/core-js/internals/array-includes.js'),
             l = i('./node_modules/core-js/internals/hidden-keys.js'),
             c = o(!1);
-          t.exports = function(_, d) {
+          n.exports = function(_, d) {
             var u = s(_),
               m = 0,
               p = [],
@@ -1359,16 +1359,16 @@
             return p;
           };
         },
-        './node_modules/core-js/internals/object-keys.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-keys.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/object-keys-internal.js'),
             s = i('./node_modules/core-js/internals/enum-bug-keys.js');
-          t.exports =
+          n.exports =
             Object.keys ||
             function(l) {
               return r(l, s);
             };
         },
-        './node_modules/core-js/internals/object-property-is-enumerable.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-property-is-enumerable.js': function(n, a, i) {
           var r = {}.propertyIsEnumerable,
             s = Object.getOwnPropertyDescriptor,
             o = s && !r.call({ 1: 2 }, 1);
@@ -1379,9 +1379,9 @@
               }
             : r;
         },
-        './node_modules/core-js/internals/object-set-prototype-of.js': function(t, a, i) {
+        './node_modules/core-js/internals/object-set-prototype-of.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/validate-set-prototype-of-arguments.js');
-          t.exports =
+          n.exports =
             Object.setPrototypeOf ||
             ('__proto__' in {}
               ? (function() {
@@ -1399,13 +1399,13 @@
                 })()
               : void 0);
         },
-        './node_modules/core-js/internals/own-keys.js': function(t, a, i) {
+        './node_modules/core-js/internals/own-keys.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/object-get-own-property-names.js'),
             o = i('./node_modules/core-js/internals/object-get-own-property-symbols.js'),
             l = i('./node_modules/core-js/internals/an-object.js'),
             c = r.Reflect;
-          t.exports =
+          n.exports =
             (c && c.ownKeys) ||
             function(d) {
               var u = s.f(l(d)),
@@ -1413,10 +1413,10 @@
               return m ? u.concat(m(d)) : u;
             };
         },
-        './node_modules/core-js/internals/path.js': function(t, a, i) {
-          t.exports = i('./node_modules/core-js/internals/global.js');
+        './node_modules/core-js/internals/path.js': function(n, a, i) {
+          n.exports = i('./node_modules/core-js/internals/global.js');
         },
-        './node_modules/core-js/internals/redefine.js': function(t, a, i) {
+        './node_modules/core-js/internals/redefine.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/shared.js'),
             o = i('./node_modules/core-js/internals/hide.js'),
@@ -1430,10 +1430,10 @@
           s('inspectSource', function(g) {
             return _.call(g);
           }),
-            (t.exports = function(g, E, h, T) {
+            (n.exports = function(g, E, h, T) {
               var S = T ? !!T.unsafe : !1,
                 v = T ? !!T.enumerable : !1,
-                R = T ? !!T.noTargetGet : !1;
+                C = T ? !!T.noTargetGet : !1;
               if (
                 (typeof h == 'function' &&
                   (typeof E == 'string' && !l(h, 'name') && o(h, 'name', E),
@@ -1442,22 +1442,22 @@
               ) {
                 v ? (g[E] = h) : c(E, h);
                 return;
-              } else S ? !R && g[E] && (v = !0) : delete g[E];
+              } else S ? !C && g[E] && (v = !0) : delete g[E];
               v ? (g[E] = h) : o(g, E, h);
             })(Function.prototype, 'toString', function() {
               return (typeof this == 'function' && u(this).source) || _.call(this);
             });
         },
-        './node_modules/core-js/internals/require-object-coercible.js': function(t, a) {
-          t.exports = function(i) {
+        './node_modules/core-js/internals/require-object-coercible.js': function(n, a) {
+          n.exports = function(i) {
             if (i == null) throw TypeError("Can't call method on " + i);
             return i;
           };
         },
-        './node_modules/core-js/internals/set-global.js': function(t, a, i) {
+        './node_modules/core-js/internals/set-global.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/hide.js');
-          t.exports = function(o, l) {
+          n.exports = function(o, l) {
             try {
               s(r, o, l);
             } catch {
@@ -1466,30 +1466,30 @@
             return l;
           };
         },
-        './node_modules/core-js/internals/set-to-string-tag.js': function(t, a, i) {
+        './node_modules/core-js/internals/set-to-string-tag.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/object-define-property.js').f,
             s = i('./node_modules/core-js/internals/has.js'),
             o = i('./node_modules/core-js/internals/well-known-symbol.js'),
             l = o('toStringTag');
-          t.exports = function(c, _, d) {
+          n.exports = function(c, _, d) {
             c && !s((c = d ? c : c.prototype), l) && r(c, l, { configurable: !0, value: _ });
           };
         },
-        './node_modules/core-js/internals/shared-key.js': function(t, a, i) {
+        './node_modules/core-js/internals/shared-key.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/shared.js'),
             s = i('./node_modules/core-js/internals/uid.js'),
             o = r('keys');
-          t.exports = function(l) {
+          n.exports = function(l) {
             return o[l] || (o[l] = s(l));
           };
         },
-        './node_modules/core-js/internals/shared.js': function(t, a, i) {
+        './node_modules/core-js/internals/shared.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/set-global.js'),
             o = i('./node_modules/core-js/internals/is-pure.js'),
             l = '__core-js_shared__',
             c = r[l] || s(l, {});
-          (t.exports = function(_, d) {
+          (n.exports = function(_, d) {
             return c[_] || (c[_] = d !== void 0 ? d : {});
           })('versions', []).push({
             version: '3.1.3',
@@ -1497,10 +1497,10 @@
             copyright: '\xA9 2019 Denis Pushkarev (zloirock.ru)'
           });
         },
-        './node_modules/core-js/internals/string-at.js': function(t, a, i) {
+        './node_modules/core-js/internals/string-at.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/to-integer.js'),
             s = i('./node_modules/core-js/internals/require-object-coercible.js');
-          t.exports = function(o, l, c) {
+          n.exports = function(o, l, c) {
             var _ = String(s(o)),
               d = r(l),
               u = _.length,
@@ -1520,45 +1520,45 @@
                   : ((m - 55296) << 10) + (p - 56320) + 65536);
           };
         },
-        './node_modules/core-js/internals/to-absolute-index.js': function(t, a, i) {
+        './node_modules/core-js/internals/to-absolute-index.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/to-integer.js'),
             s = Math.max,
             o = Math.min;
-          t.exports = function(l, c) {
+          n.exports = function(l, c) {
             var _ = r(l);
             return _ < 0 ? s(_ + c, 0) : o(_, c);
           };
         },
-        './node_modules/core-js/internals/to-indexed-object.js': function(t, a, i) {
+        './node_modules/core-js/internals/to-indexed-object.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/indexed-object.js'),
             s = i('./node_modules/core-js/internals/require-object-coercible.js');
-          t.exports = function(o) {
+          n.exports = function(o) {
             return r(s(o));
           };
         },
-        './node_modules/core-js/internals/to-integer.js': function(t, a) {
+        './node_modules/core-js/internals/to-integer.js': function(n, a) {
           var i = Math.ceil,
             r = Math.floor;
-          t.exports = function(s) {
+          n.exports = function(s) {
             return isNaN((s = +s)) ? 0 : (s > 0 ? r : i)(s);
           };
         },
-        './node_modules/core-js/internals/to-length.js': function(t, a, i) {
+        './node_modules/core-js/internals/to-length.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/to-integer.js'),
             s = Math.min;
-          t.exports = function(o) {
+          n.exports = function(o) {
             return o > 0 ? s(r(o), 9007199254740991) : 0;
           };
         },
-        './node_modules/core-js/internals/to-object.js': function(t, a, i) {
+        './node_modules/core-js/internals/to-object.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/require-object-coercible.js');
-          t.exports = function(s) {
+          n.exports = function(s) {
             return Object(r(s));
           };
         },
-        './node_modules/core-js/internals/to-primitive.js': function(t, a, i) {
+        './node_modules/core-js/internals/to-primitive.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/is-object.js');
-          t.exports = function(s, o) {
+          n.exports = function(s, o) {
             if (!r(s)) return s;
             var l, c;
             if (
@@ -1570,32 +1570,32 @@
             throw TypeError("Can't convert object to primitive value");
           };
         },
-        './node_modules/core-js/internals/uid.js': function(t, a) {
+        './node_modules/core-js/internals/uid.js': function(n, a) {
           var i = 0,
             r = Math.random();
-          t.exports = function(s) {
+          n.exports = function(s) {
             return 'Symbol('.concat(s === void 0 ? '' : s, ')_', (++i + r).toString(36));
           };
         },
-        './node_modules/core-js/internals/validate-set-prototype-of-arguments.js': function(t, a, i) {
+        './node_modules/core-js/internals/validate-set-prototype-of-arguments.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/is-object.js'),
             s = i('./node_modules/core-js/internals/an-object.js');
-          t.exports = function(o, l) {
+          n.exports = function(o, l) {
             if ((s(o), !r(l) && l !== null)) throw TypeError("Can't set " + String(l) + ' as a prototype');
           };
         },
-        './node_modules/core-js/internals/well-known-symbol.js': function(t, a, i) {
+        './node_modules/core-js/internals/well-known-symbol.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/global.js'),
             s = i('./node_modules/core-js/internals/shared.js'),
             o = i('./node_modules/core-js/internals/uid.js'),
             l = i('./node_modules/core-js/internals/native-symbol.js'),
             c = r.Symbol,
             _ = s('wks');
-          t.exports = function(d) {
+          n.exports = function(d) {
             return _[d] || (_[d] = (l && c[d]) || (l ? c : o)('Symbol.' + d));
           };
         },
-        './node_modules/core-js/modules/es.array.from.js': function(t, a, i) {
+        './node_modules/core-js/modules/es.array.from.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/export.js'),
             s = i('./node_modules/core-js/internals/array-from.js'),
             o = i('./node_modules/core-js/internals/check-correctness-of-iteration.js'),
@@ -1604,7 +1604,7 @@
             });
           r({ target: 'Array', stat: !0, forced: l }, { from: s });
         },
-        './node_modules/core-js/modules/es.string.iterator.js': function(t, a, i) {
+        './node_modules/core-js/modules/es.string.iterator.js': function(n, a, i) {
           var r = i('./node_modules/core-js/internals/string-at.js'),
             s = i('./node_modules/core-js/internals/internal-state.js'),
             o = i('./node_modules/core-js/internals/define-iterator.js'),
@@ -1628,7 +1628,7 @@
             }
           );
         },
-        './node_modules/webpack/buildin/global.js': function(t, a) {
+        './node_modules/webpack/buildin/global.js': function(n, a) {
           var i;
           i = (function() {
             return this;
@@ -1638,10 +1638,10 @@
           } catch {
             typeof window == 'object' && (i = window);
           }
-          t.exports = i;
+          n.exports = i;
         },
-        './src/default-attrs.json': function(t) {
-          t.exports = {
+        './src/default-attrs.json': function(n) {
+          n.exports = {
             xmlns: 'http://www.w3.org/2000/svg',
             width: 24,
             height: 24,
@@ -1653,7 +1653,7 @@
             'stroke-linejoin': 'round'
           };
         },
-        './src/icon.js': function(t, a, i) {
+        './src/icon.js': function(n, a, i) {
           Object.defineProperty(a, '__esModule', { value: !0 });
           var r =
               Object.assign ||
@@ -1726,7 +1726,7 @@
           }
           a.default = m;
         },
-        './src/icons.js': function(t, a, i) {
+        './src/icons.js': function(n, a, i) {
           Object.defineProperty(a, '__esModule', { value: !0 });
           var r = i('./src/icon.js'),
             s = d(r),
@@ -1745,7 +1745,7 @@
               return (u[m.name] = m), u;
             }, {});
         },
-        './src/index.js': function(t, a, i) {
+        './src/index.js': function(n, a, i) {
           var r = i('./src/icons.js'),
             s = d(r),
             o = i('./src/to-svg.js'),
@@ -1755,9 +1755,9 @@
           function d(u) {
             return u && u.__esModule ? u : { default: u };
           }
-          t.exports = { icons: s.default, toSvg: l.default, replace: _.default };
+          n.exports = { icons: s.default, toSvg: l.default, replace: _.default };
         },
-        './src/replace.js': function(t, a, i) {
+        './src/replace.js': function(n, a, i) {
           Object.defineProperty(a, '__esModule', { value: !0 });
           var r =
               Object.assign ||
@@ -1800,8 +1800,8 @@
           }
           a.default = d;
         },
-        './src/tags.json': function(t) {
-          t.exports = {
+        './src/tags.json': function(n) {
+          n.exports = {
             activity: ['pulse', 'health', 'action', 'motion'],
             airplay: ['stream', 'cast', 'mirroring'],
             'alert-circle': ['warning', 'alert', 'danger'],
@@ -2041,7 +2041,7 @@
             'zoom-out': ['magnifying glass']
           };
         },
-        './src/to-svg.js': function(t, a, i) {
+        './src/to-svg.js': function(n, a, i) {
           Object.defineProperty(a, '__esModule', { value: !0 });
           var r = i('./src/icons.js'),
             s = o(r);
@@ -2060,127 +2060,127 @@
           }
           a.default = l;
         },
-        0: function(t, a, i) {
-          i('./node_modules/core-js/es/array/from.js'), (t.exports = i('./src/index.js'));
+        0: function(n, a, i) {
+          i('./node_modules/core-js/es/array/from.js'), (n.exports = i('./src/index.js'));
         }
       });
     });
-  })(kn);
-  const qi = ji(kn.exports);
+  })(Un);
+  const Fn = Qi(Un.exports);
   /*!
    * reveal.js 4.5.0
    * https://revealjs.com
    * MIT licensed
    *
    * Copyright (C) 2011-2023 Hakim El Hattab, https://hakim.se
-   */ const Ze = (n, e) => {
-      for (let t in e) n[t] = e[t];
-      return n;
+   */ const Ze = (t, e) => {
+      for (let n in e) t[n] = e[n];
+      return t;
     },
-    Y = (n, e) => Array.from(n.querySelectorAll(e)),
-    nn = (n, e, t) => {
-      t ? n.classList.add(e) : n.classList.remove(e);
+    Y = (t, e) => Array.from(t.querySelectorAll(e)),
+    rn = (t, e, n) => {
+      n ? t.classList.add(e) : t.classList.remove(e);
     },
-    Je = n => {
-      if (typeof n == 'string') {
-        if (n === 'null') return null;
-        if (n === 'true') return !0;
-        if (n === 'false') return !1;
-        if (n.match(/^-?[\d\.]+$/)) return parseFloat(n);
+    Je = t => {
+      if (typeof t == 'string') {
+        if (t === 'null') return null;
+        if (t === 'true') return !0;
+        if (t === 'false') return !1;
+        if (t.match(/^-?[\d\.]+$/)) return parseFloat(t);
       }
-      return n;
+      return t;
     },
-    ke = (n, e) => {
-      n.style.transform = e;
+    ke = (t, e) => {
+      t.style.transform = e;
     },
-    It = (n, e) => {
-      let t = n.matches || n.matchesSelector || n.msMatchesSelector;
-      return !(!t || !t.call(n, e));
+    Dt = (t, e) => {
+      let n = t.matches || t.matchesSelector || t.msMatchesSelector;
+      return !(!n || !n.call(t, e));
     },
-    Ee = (n, e) => {
-      if (typeof n.closest == 'function') return n.closest(e);
-      for (; n; ) {
-        if (It(n, e)) return n;
-        n = n.parentNode;
+    Ee = (t, e) => {
+      if (typeof t.closest == 'function') return t.closest(e);
+      for (; t; ) {
+        if (Dt(t, e)) return t;
+        t = t.parentNode;
       }
       return null;
     },
-    Wi = (n, e, t, a = '') => {
-      let i = n.querySelectorAll('.' + t);
+    Ki = (t, e, n, a = '') => {
+      let i = t.querySelectorAll('.' + n);
       for (let s = 0; s < i.length; s++) {
         let o = i[s];
-        if (o.parentNode === n) return o;
+        if (o.parentNode === t) return o;
       }
       let r = document.createElement(e);
-      return (r.className = t), (r.innerHTML = a), n.appendChild(r), r;
+      return (r.className = n), (r.innerHTML = a), t.appendChild(r), r;
     },
-    an = n => {
+    sn = t => {
       let e = document.createElement('style');
       return (
         (e.type = 'text/css'),
-        n && n.length > 0 && (e.styleSheet ? (e.styleSheet.cssText = n) : e.appendChild(document.createTextNode(n))),
+        t && t.length > 0 && (e.styleSheet ? (e.styleSheet.cssText = t) : e.appendChild(document.createTextNode(t))),
         document.head.appendChild(e),
         e
       );
     },
-    Pn = () => {
-      let n = {};
+    Bn = () => {
+      let t = {};
       location.search.replace(/[A-Z0-9]+?=([\w\.%-]*)/gi, e => {
-        n[e.split('=').shift()] = e.split('=').pop();
+        t[e.split('=').shift()] = e.split('=').pop();
       });
-      for (let e in n) {
-        let t = n[e];
-        n[e] = Je(unescape(t));
+      for (let e in t) {
+        let n = t[e];
+        t[e] = Je(unescape(n));
       }
-      return n.dependencies !== void 0 && delete n.dependencies, n;
+      return t.dependencies !== void 0 && delete t.dependencies, t;
     },
-    Qi = (n, e = 0) => {
-      if (n) {
-        let t,
-          a = n.style.height;
+    Xi = (t, e = 0) => {
+      if (t) {
+        let n,
+          a = t.style.height;
         return (
-          (n.style.height = '0px'),
-          (n.parentNode.style.height = 'auto'),
-          (t = e - n.parentNode.offsetHeight),
-          (n.style.height = a + 'px'),
-          n.parentNode.style.removeProperty('height'),
-          t
+          (t.style.height = '0px'),
+          (t.parentNode.style.height = 'auto'),
+          (n = e - t.parentNode.offsetHeight),
+          (t.style.height = a + 'px'),
+          t.parentNode.style.removeProperty('height'),
+          n
         );
       }
       return e;
     },
-    Ki = { mp4: 'video/mp4', m4a: 'video/mp4', ogv: 'video/ogg', mpeg: 'video/mpeg', webm: 'video/webm' },
-    xt = navigator.userAgent,
-    et = /(iphone|ipod|ipad|android)/gi.test(xt) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  /chrome/i.test(xt) && /edge/i.test(xt);
-  const Un = /android/gi.test(xt);
-  var Fn = {};
-  Object.defineProperty(Fn, '__esModule', { value: !0 });
-  var Bn =
+    Zi = { mp4: 'video/mp4', m4a: 'video/mp4', ogv: 'video/ogg', mpeg: 'video/mpeg', webm: 'video/webm' },
+    wt = navigator.userAgent,
+    et = /(iphone|ipod|ipad|android)/gi.test(wt) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  /chrome/i.test(wt) && /edge/i.test(wt);
+  const Gn = /android/gi.test(wt);
+  var Yn = {};
+  Object.defineProperty(Yn, '__esModule', { value: !0 });
+  var Hn =
       Object.assign ||
-      function(n) {
+      function(t) {
         for (var e = 1; e < arguments.length; e++) {
-          var t = arguments[e];
-          for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (n[a] = t[a]);
+          var n = arguments[e];
+          for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (t[a] = n[a]);
         }
-        return n;
+        return t;
       },
-    Xi = (Fn.default = (function(n) {
-      if (n) {
+    Ji = (Yn.default = (function(t) {
+      if (t) {
         var e = function(N) {
             return [].slice.call(N);
           },
-          t = 0,
+          n = 0,
           a = 1,
           i = 2,
           r = 3,
           s = [],
           o = null,
           l =
-            'requestAnimationFrame' in n
+            'requestAnimationFrame' in t
               ? function() {
-                  n.cancelAnimationFrame(o),
-                    (o = n.requestAnimationFrame(function() {
+                  t.cancelAnimationFrame(o),
+                    (o = t.requestAnimationFrame(function() {
                       return _(
                         s.filter(function(N) {
                           return N.dirty && N.active;
@@ -2212,7 +2212,7 @@
               B.forEach(h);
           },
           d = function(N) {
-            return (N.dirty = t);
+            return (N.dirty = n);
           },
           u = function(N) {
             (N.availableWidth = N.element.parentNode.clientWidth),
@@ -2228,7 +2228,7 @@
             return N.dirty !== i || (N.dirty === i && N.element.parentNode.clientWidth !== N.availableWidth);
           },
           p = function(N) {
-            var B = n.getComputedStyle(N.element, null);
+            var B = t.getComputedStyle(N.element, null);
             (N.currentFontSize = parseFloat(B.getPropertyValue('font-size'))),
               (N.display = B.getPropertyValue('display')),
               (N.whiteSpace = B.getPropertyValue('white-space'));
@@ -2280,12 +2280,12 @@
               N.active || ((N.active = !0), l());
             };
           },
-          R = function(N) {
+          C = function(N) {
             return function() {
               return (N.active = !1);
             };
           },
-          C = function(N) {
+          R = function(N) {
             N.observeMutations &&
               ((N.observer = new MutationObserver(T(N, a))), N.observer.observe(N.element, N.observeMutations));
           },
@@ -2293,11 +2293,11 @@
             minSize: 16,
             maxSize: 512,
             multiLine: !0,
-            observeMutations: 'MutationObserver' in n && { subtree: !0, childList: !0, characterData: !0 }
+            observeMutations: 'MutationObserver' in t && { subtree: !0, childList: !0, characterData: !0 }
           },
           O = null,
           A = function() {
-            n.clearTimeout(O), (O = n.setTimeout(c(i), j.observeWindowDelay));
+            t.clearTimeout(O), (O = t.setTimeout(c(i), j.observeWindowDelay));
           },
           F = ['resize', 'orientationchange'];
         return (
@@ -2305,7 +2305,7 @@
             set: function(N) {
               var B = (N ? 'add' : 'remove') + 'EventListener';
               F.forEach(function(Q) {
-                n[B](Q, A);
+                t[B](Q, A);
               });
             }
           }),
@@ -2316,9 +2316,9 @@
         );
       }
       function w(N, B) {
-        var Q = Bn({}, I, B),
+        var Q = Hn({}, I, B),
           ee = N.map(function(W) {
-            var G = Bn({}, Q, { element: W, active: !0 });
+            var G = Hn({}, Q, { element: W, active: !0 });
             return (
               (function(K) {
                 (K.originalStyle = {
@@ -2326,12 +2326,12 @@
                   display: K.element.style.display,
                   fontSize: K.element.style.fontSize
                 }),
-                  C(K),
+                  R(K),
                   (K.newbie = !0),
                   (K.dirty = !0),
                   s.push(K);
               })(G),
-              { element: W, fit: T(G, r), unfreeze: v(G), freeze: R(G), unsubscribe: S(G) }
+              { element: W, fit: T(G, r), unfreeze: v(G), freeze: C(G), unsubscribe: S(G) }
             );
           });
         return l(), ee;
@@ -2341,15 +2341,15 @@
         return typeof N == 'string' ? w(e(document.querySelectorAll(N)), B) : w([N], B)[0];
       }
     })(typeof window > 'u' ? null : window));
-  class Zi {
+  class er {
     constructor(e) {
       (this.Reveal = e), (this.startEmbeddedIframe = this.startEmbeddedIframe.bind(this));
     }
     shouldPreload(e) {
-      let t = this.Reveal.getConfig().preloadIframes;
-      return typeof t != 'boolean' && (t = e.hasAttribute('data-preload')), t;
+      let n = this.Reveal.getConfig().preloadIframes;
+      return typeof n != 'boolean' && (n = e.hasAttribute('data-preload')), n;
     }
-    load(e, t = {}) {
+    load(e, n = {}) {
       (e.style.display = this.Reveal.getConfig().display),
         Y(e, 'img[data-src], video[data-src], audio[data-src], iframe[data-src]').forEach(i => {
           (i.tagName !== 'IFRAME' || this.shouldPreload(i)) &&
@@ -2406,11 +2406,11 @@
               _ && (d.muted = !0),
               et && ((d.muted = !0), d.setAttribute('playsinline', '')),
               l.split(',').forEach(u => {
-                let m = ((p = '') => Ki[p.split('.').pop()])(u);
+                let m = ((p = '') => Zi[p.split('.').pop()])(u);
                 d.innerHTML += m ? `<source src="${u}" type="${m}">` : `<source src="${u}">`;
               }),
               i.appendChild(d);
-          } else if (r && t.excludeIframes !== !0) {
+          } else if (r && n.excludeIframes !== !0) {
             let d = document.createElement('iframe');
             d.setAttribute('allowfullscreen', ''),
               d.setAttribute('mozallowfullscreen', ''),
@@ -2434,16 +2434,16 @@
       this.layout(e);
     }
     layout(e) {
-      Array.from(e.querySelectorAll('.r-fit-text')).forEach(t => {
-        Xi(t, { minSize: 24, maxSize: 0.8 * this.Reveal.getConfig().height, observeMutations: !1, observeWindow: !1 });
+      Array.from(e.querySelectorAll('.r-fit-text')).forEach(n => {
+        Ji(n, { minSize: 24, maxSize: 0.8 * this.Reveal.getConfig().height, observeMutations: !1, observeWindow: !1 });
       });
     }
     unload(e) {
       e.style.display = 'none';
-      let t = this.Reveal.getSlideBackground(e);
-      t &&
-        ((t.style.display = 'none'),
-        Y(t, 'iframe[src]').forEach(a => {
+      let n = this.Reveal.getSlideBackground(e);
+      n &&
+        ((n.style.display = 'none'),
+        Y(n, 'iframe[src]').forEach(a => {
           a.removeAttribute('src');
         })),
         Y(e, 'video[data-lazy-loaded][src], audio[data-lazy-loaded][src], iframe[data-lazy-loaded][src]').forEach(a => {
@@ -2454,10 +2454,10 @@
         });
     }
     formatEmbeddedContent() {
-      let e = (t, a, i) => {
-        Y(this.Reveal.getSlidesElement(), 'iframe[' + t + '*="' + a + '"]').forEach(r => {
-          let s = r.getAttribute(t);
-          s && s.indexOf(i) === -1 && r.setAttribute(t, s + (/\?/.test(s) ? '&' : '?') + i);
+      let e = (n, a, i) => {
+        Y(this.Reveal.getSlidesElement(), 'iframe[' + n + '*="' + a + '"]').forEach(r => {
+          let s = r.getAttribute(n);
+          s && s.indexOf(i) === -1 && r.setAttribute(n, s + (/\?/.test(s) ? '&' : '?') + i);
         });
       };
       e('src', 'youtube.com/embed/', 'enablejsapi=1'),
@@ -2468,67 +2468,67 @@
     startEmbeddedContent(e) {
       e &&
         !this.Reveal.isSpeakerNotes() &&
-        (Y(e, 'img[src$=".gif"]').forEach(t => {
-          t.setAttribute('src', t.getAttribute('src'));
+        (Y(e, 'img[src$=".gif"]').forEach(n => {
+          n.setAttribute('src', n.getAttribute('src'));
         }),
-        Y(e, 'video, audio').forEach(t => {
-          if (Ee(t, '.fragment') && !Ee(t, '.fragment.visible')) return;
+        Y(e, 'video, audio').forEach(n => {
+          if (Ee(n, '.fragment') && !Ee(n, '.fragment.visible')) return;
           let a = this.Reveal.getConfig().autoPlayMedia;
           if (
-            (typeof a != 'boolean' && (a = t.hasAttribute('data-autoplay') || !!Ee(t, '.slide-background')),
-            a && typeof t.play == 'function')
+            (typeof a != 'boolean' && (a = n.hasAttribute('data-autoplay') || !!Ee(n, '.slide-background')),
+            a && typeof n.play == 'function')
           )
-            if (t.readyState > 1) this.startEmbeddedMedia({ target: t });
+            if (n.readyState > 1) this.startEmbeddedMedia({ target: n });
             else if (et) {
-              let i = t.play();
+              let i = n.play();
               i &&
                 typeof i.catch == 'function' &&
-                t.controls === !1 &&
+                n.controls === !1 &&
                 i.catch(() => {
-                  (t.controls = !0),
-                    t.addEventListener('play', () => {
-                      t.controls = !1;
+                  (n.controls = !0),
+                    n.addEventListener('play', () => {
+                      n.controls = !1;
                     });
                 });
             } else
-              t.removeEventListener('loadeddata', this.startEmbeddedMedia),
-                t.addEventListener('loadeddata', this.startEmbeddedMedia);
+              n.removeEventListener('loadeddata', this.startEmbeddedMedia),
+                n.addEventListener('loadeddata', this.startEmbeddedMedia);
         }),
-        Y(e, 'iframe[src]').forEach(t => {
-          (Ee(t, '.fragment') && !Ee(t, '.fragment.visible')) || this.startEmbeddedIframe({ target: t });
+        Y(e, 'iframe[src]').forEach(n => {
+          (Ee(n, '.fragment') && !Ee(n, '.fragment.visible')) || this.startEmbeddedIframe({ target: n });
         }),
-        Y(e, 'iframe[data-src]').forEach(t => {
-          (Ee(t, '.fragment') && !Ee(t, '.fragment.visible')) ||
-            (t.getAttribute('src') !== t.getAttribute('data-src') &&
-              (t.removeEventListener('load', this.startEmbeddedIframe),
-              t.addEventListener('load', this.startEmbeddedIframe),
-              t.setAttribute('src', t.getAttribute('data-src'))));
+        Y(e, 'iframe[data-src]').forEach(n => {
+          (Ee(n, '.fragment') && !Ee(n, '.fragment.visible')) ||
+            (n.getAttribute('src') !== n.getAttribute('data-src') &&
+              (n.removeEventListener('load', this.startEmbeddedIframe),
+              n.addEventListener('load', this.startEmbeddedIframe),
+              n.setAttribute('src', n.getAttribute('data-src'))));
         }));
     }
     startEmbeddedMedia(e) {
-      let t = !!Ee(e.target, 'html'),
+      let n = !!Ee(e.target, 'html'),
         a = !!Ee(e.target, '.present');
-      t && a && ((e.target.currentTime = 0), e.target.play()),
+      n && a && ((e.target.currentTime = 0), e.target.play()),
         e.target.removeEventListener('loadeddata', this.startEmbeddedMedia);
     }
     startEmbeddedIframe(e) {
-      let t = e.target;
-      if (t && t.contentWindow) {
+      let n = e.target;
+      if (n && n.contentWindow) {
         let a = !!Ee(e.target, 'html'),
           i = !!Ee(e.target, '.present');
         if (a && i) {
           let r = this.Reveal.getConfig().autoPlayMedia;
-          typeof r != 'boolean' && (r = t.hasAttribute('data-autoplay') || !!Ee(t, '.slide-background')),
-            /youtube\.com\/embed\//.test(t.getAttribute('src')) && r
-              ? t.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
-              : /player\.vimeo\.com\//.test(t.getAttribute('src')) && r
-              ? t.contentWindow.postMessage('{"method":"play"}', '*')
-              : t.contentWindow.postMessage('slide:start', '*');
+          typeof r != 'boolean' && (r = n.hasAttribute('data-autoplay') || !!Ee(n, '.slide-background')),
+            /youtube\.com\/embed\//.test(n.getAttribute('src')) && r
+              ? n.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+              : /player\.vimeo\.com\//.test(n.getAttribute('src')) && r
+              ? n.contentWindow.postMessage('{"method":"play"}', '*')
+              : n.contentWindow.postMessage('slide:start', '*');
         }
       }
     }
-    stopEmbeddedContent(e, t = {}) {
-      (t = Ze({ unloadIframes: !0 }, t)),
+    stopEmbeddedContent(e, n = {}) {
+      (n = Ze({ unloadIframes: !0 }, n)),
         e &&
           e.parentNode &&
           (Y(e, 'video, audio').forEach(a => {
@@ -2552,13 +2552,13 @@
               typeof a.contentWindow.postMessage == 'function' &&
               a.contentWindow.postMessage('{"method":"pause"}', '*');
           }),
-          t.unloadIframes === !0 &&
+          n.unloadIframes === !0 &&
             Y(e, 'iframe[data-src]').forEach(a => {
               a.setAttribute('src', 'about:blank'), a.removeAttribute('src');
             }));
     }
   }
-  class Ji {
+  class tr {
     constructor(e) {
       this.Reveal = e;
     }
@@ -2567,7 +2567,7 @@
         (this.element.className = 'slide-number'),
         this.Reveal.getRevealElement().appendChild(this.element);
     }
-    configure(e, t) {
+    configure(e, n) {
       let a = 'none';
       e.slideNumber &&
         !this.Reveal.isPrintingPDF() &&
@@ -2579,39 +2579,39 @@
       this.Reveal.getConfig().slideNumber && this.element && (this.element.innerHTML = this.getSlideNumber());
     }
     getSlideNumber(e = this.Reveal.getCurrentSlide()) {
-      let t,
+      let n,
         a = this.Reveal.getConfig(),
         i = 'h.v';
-      if (typeof a.slideNumber == 'function') t = a.slideNumber(e);
+      if (typeof a.slideNumber == 'function') n = a.slideNumber(e);
       else {
         typeof a.slideNumber == 'string' && (i = a.slideNumber),
           /c/.test(i) || this.Reveal.getHorizontalSlides().length !== 1 || (i = 'c');
         let s = e && e.dataset.visibility === 'uncounted' ? 0 : 1;
-        switch (((t = []), i)) {
+        switch (((n = []), i)) {
           case 'c':
-            t.push(this.Reveal.getSlidePastCount(e) + s);
+            n.push(this.Reveal.getSlidePastCount(e) + s);
             break;
           case 'c/t':
-            t.push(this.Reveal.getSlidePastCount(e) + s, '/', this.Reveal.getTotalSlides());
+            n.push(this.Reveal.getSlidePastCount(e) + s, '/', this.Reveal.getTotalSlides());
             break;
           default:
             let o = this.Reveal.getIndices(e);
-            t.push(o.h + s);
+            n.push(o.h + s);
             let l = i === 'h/v' ? '/' : '.';
-            this.Reveal.isVerticalSlide(e) && t.push(l, o.v + 1);
+            this.Reveal.isVerticalSlide(e) && n.push(l, o.v + 1);
         }
       }
       let r = '#' + this.Reveal.location.getHash(e);
-      return this.formatNumber(t[0], t[1], t[2], r);
+      return this.formatNumber(n[0], n[1], n[2], r);
     }
-    formatNumber(e, t, a, i = '#' + this.Reveal.location.getHash()) {
+    formatNumber(e, n, a, i = '#' + this.Reveal.location.getHash()) {
       return typeof a != 'number' || isNaN(a)
         ? `<a href="${i}">
 					<span class="slide-number-a">${e}</span>
 					</a>`
         : `<a href="${i}">
 					<span class="slide-number-a">${e}</span>
-					<span class="slide-number-delimiter">${t}</span>
+					<span class="slide-number-delimiter">${n}</span>
 					<span class="slide-number-b">${a}</span>
 					</a>`;
     }
@@ -2619,7 +2619,7 @@
       this.element.remove();
     }
   }
-  class er {
+  class nr {
     constructor(e) {
       (this.Reveal = e),
         (this.onInput = this.onInput.bind(this)),
@@ -2653,11 +2653,11 @@
     jump() {
       clearTimeout(this.jumpTimeout), delete this.jumpTimeout;
       const e = this.jumpInput.value.trim('');
-      let t = this.Reveal.location.getIndicesFromHash(e, { oneBasedIndex: !0 });
+      let n = this.Reveal.location.getIndicesFromHash(e, { oneBasedIndex: !0 });
       return (
-        !t && /\S+/i.test(e) && e.length > 1 && (t = this.search(e)),
-        t && e !== ''
-          ? (this.Reveal.slide(t.h, t.v, t.f), !0)
+        !n && /\S+/i.test(e) && e.length > 1 && (n = this.search(e)),
+        n && e !== ''
+          ? (this.Reveal.slide(n.h, n.v, n.f), !0)
           : (this.Reveal.slide(this.indicesOnShow.h, this.indicesOnShow.v, this.indicesOnShow.f), !1)
       );
     }
@@ -2665,8 +2665,8 @@
       clearTimeout(this.jumpTimeout), (this.jumpTimeout = setTimeout(() => this.jump(), e));
     }
     search(e) {
-      const t = new RegExp('\\b' + e.trim() + '\\b', 'i'),
-        a = this.Reveal.getSlides().find(i => t.test(i.innerText));
+      const n = new RegExp('\\b' + e.trim() + '\\b', 'i'),
+        a = this.Reveal.getSlides().find(i => n.test(i.innerText));
       return a ? this.Reveal.getIndices(a) : null;
     }
     cancel() {
@@ -2691,24 +2691,24 @@
       setTimeout(() => this.hide(), 1);
     }
   }
-  const rn = n => {
-    let e = n.match(/^#([0-9a-f]{3})$/i);
+  const on = t => {
+    let e = t.match(/^#([0-9a-f]{3})$/i);
     if (e && e[1])
       return (
         (e = e[1]),
         { r: 17 * parseInt(e.charAt(0), 16), g: 17 * parseInt(e.charAt(1), 16), b: 17 * parseInt(e.charAt(2), 16) }
       );
-    let t = n.match(/^#([0-9a-f]{6})$/i);
-    if (t && t[1])
+    let n = t.match(/^#([0-9a-f]{6})$/i);
+    if (n && n[1])
       return (
-        (t = t[1]), { r: parseInt(t.slice(0, 2), 16), g: parseInt(t.slice(2, 4), 16), b: parseInt(t.slice(4, 6), 16) }
+        (n = n[1]), { r: parseInt(n.slice(0, 2), 16), g: parseInt(n.slice(2, 4), 16), b: parseInt(n.slice(4, 6), 16) }
       );
-    let a = n.match(/^rgb\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$/i);
+    let a = t.match(/^rgb\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$/i);
     if (a) return { r: parseInt(a[1], 10), g: parseInt(a[2], 10), b: parseInt(a[3], 10) };
-    let i = n.match(/^rgba\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\,\s*([\d]+|[\d]*.[\d]+)\s*\)$/i);
+    let i = t.match(/^rgba\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\,\s*([\d]+|[\d]*.[\d]+)\s*\)$/i);
     return i ? { r: parseInt(i[1], 10), g: parseInt(i[2], 10), b: parseInt(i[3], 10), a: parseFloat(i[4]) } : null;
   };
-  class tr {
+  class ar {
     constructor(e) {
       this.Reveal = e;
     }
@@ -2721,9 +2721,9 @@
       (this.element.innerHTML = ''),
         this.element.classList.add('no-transition'),
         this.Reveal.getHorizontalSlides().forEach(e => {
-          let t = this.createBackground(e, this.element);
+          let n = this.createBackground(e, this.element);
           Y(e, 'section').forEach(a => {
-            this.createBackground(a, t), t.classList.add('stack');
+            this.createBackground(a, n), n.classList.add('stack');
           });
         }),
         this.Reveal.getConfig().parallaxBackgroundImage
@@ -2737,14 +2737,14 @@
           : ((this.element.style.backgroundImage = ''),
             this.Reveal.getRevealElement().classList.remove('has-parallax-background'));
     }
-    createBackground(e, t) {
+    createBackground(e, n) {
       let a = document.createElement('div');
       a.className = 'slide-background ' + e.className.replace(/present|past|future/, '');
       let i = document.createElement('div');
       return (
         (i.className = 'slide-background-content'),
         a.appendChild(i),
-        t.appendChild(a),
+        n.appendChild(a),
         (e.slideBackgroundElement = a),
         (e.slideBackgroundContentElement = i),
         this.sync(e),
@@ -2752,7 +2752,7 @@
       );
     }
     sync(e) {
-      const t = e.slideBackgroundElement,
+      const n = e.slideBackgroundElement,
         a = e.slideBackgroundContentElement,
         i = {
           background: e.getAttribute('data-background'),
@@ -2770,11 +2770,11 @@
         r = e.hasAttribute('data-preload');
       e.classList.remove('has-dark-background'),
         e.classList.remove('has-light-background'),
-        t.removeAttribute('data-loaded'),
-        t.removeAttribute('data-background-hash'),
-        t.removeAttribute('data-background-size'),
-        t.removeAttribute('data-background-transition'),
-        (t.style.backgroundColor = ''),
+        n.removeAttribute('data-loaded'),
+        n.removeAttribute('data-background-hash'),
+        n.removeAttribute('data-background-size'),
+        n.removeAttribute('data-background-transition'),
+        (n.style.backgroundColor = ''),
         (a.style.backgroundSize = ''),
         (a.style.backgroundRepeat = ''),
         (a.style.backgroundPosition = ''),
@@ -2785,14 +2785,14 @@
           (/^(http|file|\/\/)/gi.test(i.background) ||
           /\.(svg|png|jpg|jpeg|gif|bmp|webp)([?#\s]|$)/gi.test(i.background)
             ? e.setAttribute('data-background-image', i.background)
-            : (t.style.background = i.background)),
+            : (n.style.background = i.background)),
         (i.background ||
           i.backgroundColor ||
           i.backgroundGradient ||
           i.backgroundImage ||
           i.backgroundVideo ||
           i.backgroundIframe) &&
-          t.setAttribute(
+          n.setAttribute(
             'data-background-hash',
             i.background +
               i.backgroundSize +
@@ -2806,25 +2806,25 @@
               i.backgroundTransition +
               i.backgroundOpacity
           ),
-        i.backgroundSize && t.setAttribute('data-background-size', i.backgroundSize),
-        i.backgroundColor && (t.style.backgroundColor = i.backgroundColor),
-        i.backgroundGradient && (t.style.backgroundImage = i.backgroundGradient),
-        i.backgroundTransition && t.setAttribute('data-background-transition', i.backgroundTransition),
-        r && t.setAttribute('data-preload', ''),
+        i.backgroundSize && n.setAttribute('data-background-size', i.backgroundSize),
+        i.backgroundColor && (n.style.backgroundColor = i.backgroundColor),
+        i.backgroundGradient && (n.style.backgroundImage = i.backgroundGradient),
+        i.backgroundTransition && n.setAttribute('data-background-transition', i.backgroundTransition),
+        r && n.setAttribute('data-preload', ''),
         i.backgroundSize && (a.style.backgroundSize = i.backgroundSize),
         i.backgroundRepeat && (a.style.backgroundRepeat = i.backgroundRepeat),
         i.backgroundPosition && (a.style.backgroundPosition = i.backgroundPosition),
         i.backgroundOpacity && (a.style.opacity = i.backgroundOpacity);
       let s = i.backgroundColor;
-      if (!s || !rn(s)) {
-        let l = window.getComputedStyle(t);
+      if (!s || !on(s)) {
+        let l = window.getComputedStyle(n);
         l && l.backgroundColor && (s = l.backgroundColor);
       }
       if (s) {
-        const l = rn(s);
+        const l = on(s);
         l &&
           l.a !== 0 &&
-          (typeof (o = s) == 'string' && (o = rn(o)),
+          (typeof (o = s) == 'string' && (o = on(o)),
           (o ? (299 * o.r + 587 * o.g + 114 * o.b) / 1e3 : null) < 128
             ? e.classList.add('has-dark-background')
             : e.classList.add('has-light-background'));
@@ -2832,7 +2832,7 @@
       var o;
     }
     update(e = !1) {
-      let t = this.Reveal.getCurrentSlide(),
+      let n = this.Reveal.getCurrentSlide(),
         a = this.Reveal.getIndices(),
         i = null,
         r = this.Reveal.getConfig().rtl ? 'future' : 'past',
@@ -2869,9 +2869,9 @@
         c && c === l && i !== this.previousBackground && this.element.classList.add('no-transition'),
           (this.previousBackground = i);
       }
-      t &&
+      n &&
         ['has-light-background', 'has-dark-background'].forEach(o => {
-          t.classList.contains(o)
+          n.classList.contains(o)
             ? this.Reveal.getRevealElement().classList.add(o)
             : this.Reveal.getRevealElement().classList.remove(o);
         }, this),
@@ -2882,12 +2882,12 @@
     updateParallax() {
       let e = this.Reveal.getIndices();
       if (this.Reveal.getConfig().parallaxBackgroundImage) {
-        let t,
+        let n,
           a,
           i = this.Reveal.getHorizontalSlides(),
           r = this.Reveal.getVerticalSlides(),
           s = this.element.style.backgroundSize.split(' ');
-        s.length === 1 ? (t = a = parseInt(s[0], 10)) : ((t = parseInt(s[0], 10)), (a = parseInt(s[1], 10)));
+        s.length === 1 ? (n = a = parseInt(s[0], 10)) : ((n = parseInt(s[0], 10)), (a = parseInt(s[1], 10)));
         let o,
           l,
           c = this.element.offsetWidth,
@@ -2896,7 +2896,7 @@
           typeof this.Reveal.getConfig().parallaxBackgroundHorizontal == 'number'
             ? this.Reveal.getConfig().parallaxBackgroundHorizontal
             : _ > 1
-            ? (t - c) / (_ - 1)
+            ? (n - c) / (_ - 1)
             : 0),
           (l = o * e.h * -1);
         let d,
@@ -2917,46 +2917,46 @@
   }
   const $e = '.slides section',
     Ve = '.slides>section',
-    Gn = '.slides>section.present>section',
-    nr = /registerPlugin|registerKeyboardShortcut|addKeyBinding|addEventListener|showPreview/,
-    Yn = /fade-(down|up|right|left|out|in-then-out|in-then-semi-out)|semi-fade-out|current-visible|shrink|grow/;
-  let Hn = 0;
-  class ar {
+    zn = '.slides>section.present>section',
+    ir = /registerPlugin|registerKeyboardShortcut|addKeyBinding|addEventListener|showPreview/,
+    $n = /fade-(down|up|right|left|out|in-then-out|in-then-semi-out)|semi-fade-out|current-visible|shrink|grow/;
+  let Vn = 0;
+  class rr {
     constructor(e) {
       this.Reveal = e;
     }
-    run(e, t) {
+    run(e, n) {
       this.reset();
       let a = this.Reveal.getSlides(),
-        i = a.indexOf(t),
+        i = a.indexOf(n),
         r = a.indexOf(e);
       if (
         e.hasAttribute('data-auto-animate') &&
-        t.hasAttribute('data-auto-animate') &&
-        e.getAttribute('data-auto-animate-id') === t.getAttribute('data-auto-animate-id') &&
-        !(i > r ? t : e).hasAttribute('data-auto-animate-restart')
+        n.hasAttribute('data-auto-animate') &&
+        e.getAttribute('data-auto-animate-id') === n.getAttribute('data-auto-animate-id') &&
+        !(i > r ? n : e).hasAttribute('data-auto-animate-restart')
       ) {
-        this.autoAnimateStyleSheet = this.autoAnimateStyleSheet || an();
-        let s = this.getAutoAnimateOptions(t);
+        this.autoAnimateStyleSheet = this.autoAnimateStyleSheet || sn();
+        let s = this.getAutoAnimateOptions(n);
         (e.dataset.autoAnimate = 'pending'),
-          (t.dataset.autoAnimate = 'pending'),
+          (n.dataset.autoAnimate = 'pending'),
           (s.slideDirection = i > r ? 'forward' : 'backward');
         let o = e.style.display === 'none';
         o && (e.style.display = this.Reveal.getConfig().display);
-        let l = this.getAutoAnimatableElements(e, t).map(c =>
-          this.autoAnimateElements(c.from, c.to, c.options || {}, s, Hn++)
+        let l = this.getAutoAnimatableElements(e, n).map(c =>
+          this.autoAnimateElements(c.from, c.to, c.options || {}, s, Vn++)
         );
         if (
           (o && (e.style.display = 'none'),
-          t.dataset.autoAnimateUnmatched !== 'false' && this.Reveal.getConfig().autoAnimateUnmatched === !0)
+          n.dataset.autoAnimateUnmatched !== 'false' && this.Reveal.getConfig().autoAnimateUnmatched === !0)
         ) {
           let c = 0.8 * s.duration,
             _ = 0.2 * s.duration;
-          this.getUnmatchedAutoAnimateElements(t).forEach(d => {
+          this.getUnmatchedAutoAnimateElements(n).forEach(d => {
             let u = this.getAutoAnimateOptions(d, s),
               m = 'unmatched';
             (u.duration === s.duration && u.delay === s.delay) ||
-              ((m = 'unmatched-' + Hn++),
+              ((m = 'unmatched-' + Vn++),
               l.push(
                 `[data-auto-animate="running"] [data-auto-animate-target="${m}"] { transition: opacity ${
                   u.duration
@@ -2971,11 +2971,11 @@
         (this.autoAnimateStyleSheet.innerHTML = l.join('')),
           requestAnimationFrame(() => {
             this.autoAnimateStyleSheet &&
-              (getComputedStyle(this.autoAnimateStyleSheet).fontWeight, (t.dataset.autoAnimate = 'running'));
+              (getComputedStyle(this.autoAnimateStyleSheet).fontWeight, (n.dataset.autoAnimate = 'running'));
           }),
           this.Reveal.dispatchEvent({
             type: 'autoanimate',
-            data: { fromSlide: e, toSlide: t, sheet: this.autoAnimateStyleSheet }
+            data: { fromSlide: e, toSlide: n, sheet: this.autoAnimateStyleSheet }
           });
       }
     }
@@ -2991,20 +2991,20 @@
           (this.autoAnimateStyleSheet.parentNode.removeChild(this.autoAnimateStyleSheet),
           (this.autoAnimateStyleSheet = null));
     }
-    autoAnimateElements(e, t, a, i, r) {
-      (e.dataset.autoAnimateTarget = ''), (t.dataset.autoAnimateTarget = r);
-      let s = this.getAutoAnimateOptions(t, i);
+    autoAnimateElements(e, n, a, i, r) {
+      (e.dataset.autoAnimateTarget = ''), (n.dataset.autoAnimateTarget = r);
+      let s = this.getAutoAnimateOptions(n, i);
       a.delay !== void 0 && (s.delay = a.delay),
         a.duration !== void 0 && (s.duration = a.duration),
         a.easing !== void 0 && (s.easing = a.easing);
       let o = this.getAutoAnimatableProperties('from', e, a),
-        l = this.getAutoAnimatableProperties('to', t, a);
+        l = this.getAutoAnimatableProperties('to', n, a);
       if (
-        (t.classList.contains('fragment') &&
+        (n.classList.contains('fragment') &&
           (delete l.styles.opacity, e.classList.contains('fragment')) &&
-          (e.className.match(Yn) || [''])[0] === (t.className.match(Yn) || [''])[0] &&
+          (e.className.match($n) || [''])[0] === (n.className.match($n) || [''])[0] &&
           i.slideDirection === 'forward' &&
-          t.classList.add('visible', 'disabled'),
+          n.classList.add('visible', 'disabled'),
         a.translate !== !1 || a.scale !== !1)
       ) {
         let d = this.Reveal.getScale(),
@@ -3056,13 +3056,13 @@
         c
       );
     }
-    getAutoAnimateOptions(e, t) {
+    getAutoAnimateOptions(e, n) {
       let a = {
         easing: this.Reveal.getConfig().autoAnimateEasing,
         duration: this.Reveal.getConfig().autoAnimateDuration,
         delay: 0
       };
-      if (((a = Ze(a, t)), e.parentNode)) {
+      if (((a = Ze(a, n)), e.parentNode)) {
         let i = Ee(e.parentNode, '[data-auto-animate-target]');
         i && (a = this.getAutoAnimateOptions(i, a));
       }
@@ -3073,20 +3073,20 @@
         a
       );
     }
-    getAutoAnimatableProperties(e, t, a) {
+    getAutoAnimatableProperties(e, n, a) {
       let i = this.Reveal.getConfig(),
         r = { styles: [] };
       if (a.translate !== !1 || a.scale !== !1) {
         let o;
-        if (typeof a.measure == 'function') o = a.measure(t);
-        else if (i.center) o = t.getBoundingClientRect();
+        if (typeof a.measure == 'function') o = a.measure(n);
+        else if (i.center) o = n.getBoundingClientRect();
         else {
           let l = this.Reveal.getScale();
-          o = { x: t.offsetLeft * l, y: t.offsetTop * l, width: t.offsetWidth * l, height: t.offsetHeight * l };
+          o = { x: n.offsetLeft * l, y: n.offsetTop * l, width: n.offsetWidth * l, height: n.offsetHeight * l };
         }
         (r.x = o.x), (r.y = o.y), (r.width = o.width), (r.height = o.height);
       }
-      const s = getComputedStyle(t);
+      const s = getComputedStyle(n);
       return (
         (a.styles || i.autoAnimateStyles).forEach(o => {
           let l;
@@ -3102,34 +3102,34 @@
         r
       );
     }
-    getAutoAnimatableElements(e, t) {
+    getAutoAnimatableElements(e, n) {
       let a = (typeof this.Reveal.getConfig().autoAnimateMatcher == 'function'
           ? this.Reveal.getConfig().autoAnimateMatcher
           : this.getAutoAnimatePairs
-        ).call(this, e, t),
+        ).call(this, e, n),
         i = [];
       return a.filter((r, s) => {
         if (i.indexOf(r.to) === -1) return i.push(r.to), !0;
       });
     }
-    getAutoAnimatePairs(e, t) {
+    getAutoAnimatePairs(e, n) {
       let a = [];
       const i = 'h1, h2, h3, h4, h5, h6, p, li';
       return (
-        this.findAutoAnimateMatches(a, e, t, '[data-id]', r => r.nodeName + ':::' + r.getAttribute('data-id')),
-        this.findAutoAnimateMatches(a, e, t, i, r => r.nodeName + ':::' + r.innerText),
+        this.findAutoAnimateMatches(a, e, n, '[data-id]', r => r.nodeName + ':::' + r.getAttribute('data-id')),
+        this.findAutoAnimateMatches(a, e, n, i, r => r.nodeName + ':::' + r.innerText),
         this.findAutoAnimateMatches(
           a,
           e,
-          t,
+          n,
           'img, video, iframe',
           r => r.nodeName + ':::' + (r.getAttribute('src') || r.getAttribute('data-src'))
         ),
-        this.findAutoAnimateMatches(a, e, t, 'pre', r => r.nodeName + ':::' + r.innerText),
+        this.findAutoAnimateMatches(a, e, n, 'pre', r => r.nodeName + ':::' + r.innerText),
         a.forEach(r => {
-          It(r.from, i)
+          Dt(r.from, i)
             ? (r.options = { scale: !1 })
-            : It(r.from, 'pre') &&
+            : Dt(r.from, 'pre') &&
               ((r.options = { scale: !1, styles: ['width', 'height'] }),
               this.findAutoAnimateMatches(a, r.from, r.to, '.hljs .hljs-ln-code', s => s.textContent, {
                 scale: !1,
@@ -3149,18 +3149,18 @@
       );
     }
     getLocalBoundingBox(e) {
-      const t = this.Reveal.getScale();
+      const n = this.Reveal.getScale();
       return {
-        x: Math.round(e.offsetLeft * t * 100) / 100,
-        y: Math.round(e.offsetTop * t * 100) / 100,
-        width: Math.round(e.offsetWidth * t * 100) / 100,
-        height: Math.round(e.offsetHeight * t * 100) / 100
+        x: Math.round(e.offsetLeft * n * 100) / 100,
+        y: Math.round(e.offsetTop * n * 100) / 100,
+        width: Math.round(e.offsetWidth * n * 100) / 100,
+        height: Math.round(e.offsetHeight * n * 100) / 100
       };
     }
-    findAutoAnimateMatches(e, t, a, i, r, s) {
+    findAutoAnimateMatches(e, n, a, i, r, s) {
       let o = {},
         l = {};
-      [].slice.call(t.querySelectorAll(i)).forEach((c, _) => {
+      [].slice.call(n.querySelectorAll(i)).forEach((c, _) => {
         const d = r(c);
         typeof d == 'string' && d.length && ((o[d] = o[d] || []), o[d].push(c));
       }),
@@ -3176,22 +3176,22 @@
         });
     }
     getUnmatchedAutoAnimateElements(e) {
-      return [].slice.call(e.children).reduce((t, a) => {
+      return [].slice.call(e.children).reduce((n, a) => {
         const i = a.querySelector('[data-auto-animate-target]');
         return (
-          a.hasAttribute('data-auto-animate-target') || i || t.push(a),
-          a.querySelector('[data-auto-animate-target]') && (t = t.concat(this.getUnmatchedAutoAnimateElements(a))),
-          t
+          a.hasAttribute('data-auto-animate-target') || i || n.push(a),
+          a.querySelector('[data-auto-animate-target]') && (n = n.concat(this.getUnmatchedAutoAnimateElements(a))),
+          n
         );
       }, []);
     }
   }
-  class ir {
+  class sr {
     constructor(e) {
       this.Reveal = e;
     }
-    configure(e, t) {
-      e.fragments === !1 ? this.disable() : t.fragments === !1 && this.enable();
+    configure(e, n) {
+      e.fragments === !1 ? this.disable() : n.fragments === !1 && this.enable();
     }
     disable() {
       Y(this.Reveal.getSlidesElement(), '.fragment').forEach(e => {
@@ -3206,13 +3206,13 @@
     availableRoutes() {
       let e = this.Reveal.getCurrentSlide();
       if (e && this.Reveal.getConfig().fragments) {
-        let t = e.querySelectorAll('.fragment:not(.disabled)'),
+        let n = e.querySelectorAll('.fragment:not(.disabled)'),
           a = e.querySelectorAll('.fragment:not(.disabled):not(.visible)');
-        return { prev: t.length - a.length > 0, next: !!a.length };
+        return { prev: n.length - a.length > 0, next: !!a.length };
       }
       return { prev: !1, next: !1 };
     }
-    sort(e, t = !1) {
+    sort(e, n = !1) {
       e = Array.from(e);
       let a = [],
         i = [],
@@ -3232,28 +3232,28 @@
           }),
             s++;
         }),
-        t === !0 ? a : r
+        n === !0 ? a : r
       );
     }
     sortAll() {
       this.Reveal.getHorizontalSlides().forEach(e => {
-        let t = Y(e, 'section');
-        t.forEach((a, i) => {
+        let n = Y(e, 'section');
+        n.forEach((a, i) => {
           this.sort(a.querySelectorAll('.fragment'));
         }, this),
-          t.length === 0 && this.sort(e.querySelectorAll('.fragment'));
+          n.length === 0 && this.sort(e.querySelectorAll('.fragment'));
       });
     }
-    update(e, t) {
+    update(e, n) {
       let a = { shown: [], hidden: [] },
         i = this.Reveal.getCurrentSlide();
-      if (i && this.Reveal.getConfig().fragments && (t = t || this.sort(i.querySelectorAll('.fragment'))).length) {
+      if (i && this.Reveal.getConfig().fragments && (n = n || this.sort(i.querySelectorAll('.fragment'))).length) {
         let r = 0;
         if (typeof e != 'number') {
           let s = this.sort(i.querySelectorAll('.fragment.visible')).pop();
           s && (e = parseInt(s.getAttribute('data-fragment-index') || 0, 10));
         }
-        Array.from(t).forEach((s, o) => {
+        Array.from(n).forEach((s, o) => {
           if (
             (s.hasAttribute('data-fragment-index') && (o = parseInt(s.getAttribute('data-fragment-index'), 10)),
             (r = Math.max(r, o)),
@@ -3286,7 +3286,7 @@
     sync(e = this.Reveal.getCurrentSlide()) {
       return this.sort(e.querySelectorAll('.fragment'));
     }
-    goto(e, t = 0) {
+    goto(e, n = 0) {
       let a = this.Reveal.getCurrentSlide();
       if (a && this.Reveal.getConfig().fragments) {
         let i = this.sort(a.querySelectorAll('.fragment:not(.disabled)'));
@@ -3295,7 +3295,7 @@
             let s = this.sort(a.querySelectorAll('.fragment:not(.disabled).visible')).pop();
             e = s ? parseInt(s.getAttribute('data-fragment-index') || 0, 10) : -1;
           }
-          e += t;
+          e += n;
           let r = this.update(e, i);
           return (
             r.hidden.length &&
@@ -3321,7 +3321,7 @@
       return this.goto(null, -1);
     }
   }
-  class rr {
+  class or {
     constructor(e) {
       (this.Reveal = e), (this.active = !1), (this.onSlideClicked = this.onSlideClicked.bind(this));
     }
@@ -3335,9 +3335,9 @@
             i.classList.contains('stack') || i.addEventListener('click', this.onSlideClicked, !0);
           });
         const e = 70,
-          t = this.Reveal.getComputedSlideSize();
-        (this.overviewSlideWidth = t.width + e),
-          (this.overviewSlideHeight = t.height + e),
+          n = this.Reveal.getComputedSlideSize();
+        (this.overviewSlideWidth = n.width + e),
+          (this.overviewSlideHeight = n.height + e),
           this.Reveal.getConfig().rtl && (this.overviewSlideWidth = -this.overviewSlideWidth),
           this.Reveal.updateSlidesVisibility(),
           this.layout(),
@@ -3351,18 +3351,18 @@
       }
     }
     layout() {
-      this.Reveal.getHorizontalSlides().forEach((e, t) => {
-        e.setAttribute('data-index-h', t),
-          ke(e, 'translate3d(' + t * this.overviewSlideWidth + 'px, 0, 0)'),
+      this.Reveal.getHorizontalSlides().forEach((e, n) => {
+        e.setAttribute('data-index-h', n),
+          ke(e, 'translate3d(' + n * this.overviewSlideWidth + 'px, 0, 0)'),
           e.classList.contains('stack') &&
             Y(e, 'section').forEach((a, i) => {
-              a.setAttribute('data-index-h', t),
+              a.setAttribute('data-index-h', n),
                 a.setAttribute('data-index-v', i),
                 ke(a, 'translate3d(0, ' + i * this.overviewSlideHeight + 'px, 0)');
             });
       }),
-        Array.from(this.Reveal.getBackgroundsElement().childNodes).forEach((e, t) => {
-          ke(e, 'translate3d(' + t * this.overviewSlideWidth + 'px, 0, 0)'),
+        Array.from(this.Reveal.getBackgroundsElement().childNodes).forEach((e, n) => {
+          ke(e, 'translate3d(' + n * this.overviewSlideWidth + 'px, 0, 0)'),
             Y(e, '.slide-background').forEach((a, i) => {
               ke(a, 'translate3d(0, ' + i * this.overviewSlideHeight + 'px, 0)');
             });
@@ -3370,11 +3370,11 @@
     }
     update() {
       const e = Math.min(window.innerWidth, window.innerHeight),
-        t = Math.max(e / 5, 150) / e,
+        n = Math.max(e / 5, 150) / e,
         a = this.Reveal.getIndices();
       this.Reveal.transformSlides({
         overview: [
-          'scale(' + t + ')',
+          'scale(' + n + ')',
           'translateX(' + -a.h * this.overviewSlideWidth + 'px)',
           'translateY(' + -a.v * this.overviewSlideHeight + 'px)'
         ].join(' ')
@@ -3389,11 +3389,11 @@
             this.Reveal.getRevealElement().classList.remove('overview-deactivating');
           }, 1),
           this.Reveal.getRevealElement().appendChild(this.Reveal.getBackgroundsElement()),
-          Y(this.Reveal.getRevealElement(), $e).forEach(t => {
-            ke(t, ''), t.removeEventListener('click', this.onSlideClicked, !0);
+          Y(this.Reveal.getRevealElement(), $e).forEach(n => {
+            ke(n, ''), n.removeEventListener('click', this.onSlideClicked, !0);
           }),
-          Y(this.Reveal.getBackgroundsElement(), '.slide-background').forEach(t => {
-            ke(t, '');
+          Y(this.Reveal.getBackgroundsElement(), '.slide-background').forEach(n => {
+            ke(n, '');
           }),
           this.Reveal.transformSlides({ overview: '' });
         const e = this.Reveal.getIndices();
@@ -3421,17 +3421,17 @@
     onSlideClicked(e) {
       if (this.isActive()) {
         e.preventDefault();
-        let t = e.target;
-        for (; t && !t.nodeName.match(/section/gi); ) t = t.parentNode;
-        if (t && !t.classList.contains('disabled') && (this.deactivate(), t.nodeName.match(/section/gi))) {
-          let a = parseInt(t.getAttribute('data-index-h'), 10),
-            i = parseInt(t.getAttribute('data-index-v'), 10);
+        let n = e.target;
+        for (; n && !n.nodeName.match(/section/gi); ) n = n.parentNode;
+        if (n && !n.classList.contains('disabled') && (this.deactivate(), n.nodeName.match(/section/gi))) {
+          let a = parseInt(n.getAttribute('data-index-h'), 10),
+            i = parseInt(n.getAttribute('data-index-v'), 10);
           this.Reveal.slide(a, i);
         }
       }
     }
   }
-  class sr {
+  class lr {
     constructor(e) {
       (this.Reveal = e),
         (this.shortcuts = {}),
@@ -3439,7 +3439,7 @@
         (this.onDocumentKeyDown = this.onDocumentKeyDown.bind(this)),
         (this.onDocumentKeyPress = this.onDocumentKeyPress.bind(this));
     }
-    configure(e, t) {
+    configure(e, n) {
       e.navigationMode === 'linear'
         ? ((this.shortcuts['&#8594;  ,  &#8595;  ,  SPACE  ,  N  ,  L  ,  J'] = 'Next slide'),
           (this.shortcuts['&#8592;  ,  &#8593;  ,  P  ,  H  ,  K'] = 'Previous slide'))
@@ -3464,10 +3464,10 @@
       document.removeEventListener('keydown', this.onDocumentKeyDown, !1),
         document.removeEventListener('keypress', this.onDocumentKeyPress, !1);
     }
-    addKeyBinding(e, t) {
+    addKeyBinding(e, n) {
       typeof e == 'object' && e.keyCode
-        ? (this.bindings[e.keyCode] = { callback: t, key: e.key, description: e.description })
-        : (this.bindings[e] = { callback: t, key: null, description: null });
+        ? (this.bindings[e.keyCode] = { callback: n, key: e.key, description: e.description })
+        : (this.bindings[e] = { callback: n, key: null, description: null });
     }
     removeKeyBinding(e) {
       delete this.bindings[e];
@@ -3475,8 +3475,8 @@
     triggerKey(e) {
       this.onDocumentKeyDown({ keyCode: e });
     }
-    registerKeyboardShortcut(e, t) {
-      this.shortcuts[e] = t;
+    registerKeyboardShortcut(e, n) {
+      this.shortcuts[e] = n;
     }
     getShortcuts() {
       return this.shortcuts;
@@ -3488,10 +3488,10 @@
       e.shiftKey && e.charCode === 63 && this.Reveal.toggleHelp();
     }
     onDocumentKeyDown(e) {
-      let t = this.Reveal.getConfig();
+      let n = this.Reveal.getConfig();
       if (
-        (typeof t.keyboardCondition == 'function' && t.keyboardCondition(e) === !1) ||
-        (t.keyboardCondition === 'focused' && !this.Reveal.isFocused())
+        (typeof n.keyboardCondition == 'function' && n.keyboardCondition(e) === !1) ||
+        (n.keyboardCondition === 'focused' && !this.Reveal.isFocused())
       )
         return !0;
       let a = e.keyCode,
@@ -3512,15 +3512,15 @@
       if (r || s || o || l) return;
       let c,
         _ = [66, 86, 190, 191];
-      if (typeof t.keyboard == 'object')
-        for (c in t.keyboard) t.keyboard[c] === 'togglePause' && _.push(parseInt(c, 10));
+      if (typeof n.keyboard == 'object')
+        for (c in n.keyboard) n.keyboard[c] === 'togglePause' && _.push(parseInt(c, 10));
       if (this.Reveal.isPaused() && _.indexOf(a) === -1) return !1;
-      let d = t.navigationMode === 'linear' || !this.Reveal.hasHorizontalSlides() || !this.Reveal.hasVerticalSlides(),
+      let d = n.navigationMode === 'linear' || !this.Reveal.hasHorizontalSlides() || !this.Reveal.hasVerticalSlides(),
         u = !1;
-      if (typeof t.keyboard == 'object') {
-        for (c in t.keyboard)
+      if (typeof n.keyboard == 'object') {
+        for (c in n.keyboard)
           if (parseInt(c, 10) === a) {
-            let m = t.keyboard[c];
+            let m = n.keyboard[c];
             typeof m == 'function'
               ? m.apply(null, [e])
               : typeof m == 'string' && typeof this.Reveal[m] == 'function' && this.Reveal[m].call(),
@@ -3585,11 +3585,11 @@
                 m.mozRequestFullScreen ||
                 m.msRequestFullscreen;
               p && p.apply(m);
-            })(t.embedded ? this.Reveal.getViewportElement() : document.documentElement)
+            })(n.embedded ? this.Reveal.getViewportElement() : document.documentElement)
           : a === 65
-          ? t.autoSlideStoppable && this.Reveal.toggleAutoSlide(i)
+          ? n.autoSlideStoppable && this.Reveal.toggleAutoSlide(i)
           : a === 71
-          ? t.jumpToSlide && this.Reveal.toggleJumpToSlide()
+          ? n.jumpToSlide && this.Reveal.toggleJumpToSlide()
           : (u = !1)),
         u
           ? e.preventDefault && e.preventDefault()
@@ -3599,13 +3599,13 @@
         this.Reveal.cueAutoSlide();
     }
   }
-  class or {
+  class cr {
     constructor(e) {
-      var t, a, i;
+      var n, a, i;
       (i = 1e3),
-        (a = 'MAX_REPLACE_STATE_FREQUENCY') in (t = this)
-          ? Object.defineProperty(t, a, { value: i, enumerable: !0, configurable: !0, writable: !0 })
-          : (t[a] = i),
+        (a = 'MAX_REPLACE_STATE_FREQUENCY') in (n = this)
+          ? Object.defineProperty(n, a, { value: i, enumerable: !0, configurable: !0, writable: !0 })
+          : (n[a] = i),
         (this.Reveal = e),
         (this.writeURLTimeout = 0),
         (this.replaceStateTimestamp = 0),
@@ -3617,13 +3617,13 @@
     unbind() {
       window.removeEventListener('hashchange', this.onWindowHashChange, !1);
     }
-    getIndicesFromHash(e = window.location.hash, t = {}) {
+    getIndicesFromHash(e = window.location.hash, n = {}) {
       let a = e.replace(/^#\/?/, ''),
         i = a.split('/');
       if (/^[0-9]*$/.test(i[0]) || !a.length) {
         const r = this.Reveal.getConfig();
         let s,
-          o = r.hashOneBasedIndex || t.oneBasedIndex ? 1 : 0,
+          o = r.hashOneBasedIndex || n.oneBasedIndex ? 1 : 0,
           l = parseInt(i[0], 10) - o || 0,
           c = parseInt(i[1], 10) - o || 0;
         return r.fragmentInURL && ((s = parseInt(i[2], 10)), isNaN(s) && (s = void 0)), { h: l, v: c, f: s };
@@ -3641,21 +3641,21 @@
     }
     readURL() {
       const e = this.Reveal.getIndices(),
-        t = this.getIndicesFromHash();
-      t
-        ? (t.h === e.h && t.v === e.v && t.f === void 0) || this.Reveal.slide(t.h, t.v, t.f)
+        n = this.getIndicesFromHash();
+      n
+        ? (n.h === e.h && n.v === e.v && n.f === void 0) || this.Reveal.slide(n.h, n.v, n.f)
         : this.Reveal.slide(e.h || 0, e.v || 0);
     }
     writeURL(e) {
-      let t = this.Reveal.getConfig(),
+      let n = this.Reveal.getConfig(),
         a = this.Reveal.getCurrentSlide();
       if ((clearTimeout(this.writeURLTimeout), typeof e == 'number'))
         this.writeURLTimeout = setTimeout(this.writeURL, e);
       else if (a) {
         let i = this.getHash();
-        t.history
+        n.history
           ? (window.location.hash = i)
-          : t.hash &&
+          : n.hash &&
             (i === '/'
               ? this.debouncedReplaceState(window.location.pathname + window.location.search)
               : this.debouncedReplaceState('#' + i));
@@ -3671,26 +3671,26 @@
           : (this.replaceStateTimeout = setTimeout(() => this.replaceState(e), this.MAX_REPLACE_STATE_FREQUENCY));
     }
     getHash(e) {
-      let t = '/',
+      let n = '/',
         a = e || this.Reveal.getCurrentSlide(),
         i = a ? a.getAttribute('id') : null;
       i && (i = encodeURIComponent(i));
       let r = this.Reveal.getIndices(e);
       if ((this.Reveal.getConfig().fragmentInURL || (r.f = void 0), typeof i == 'string' && i.length))
-        (t = '/' + i), r.f >= 0 && (t += '/' + r.f);
+        (n = '/' + i), r.f >= 0 && (n += '/' + r.f);
       else {
         let s = this.Reveal.getConfig().hashOneBasedIndex ? 1 : 0;
-        (r.h > 0 || r.v > 0 || r.f >= 0) && (t += r.h + s),
-          (r.v > 0 || r.f >= 0) && (t += '/' + (r.v + s)),
-          r.f >= 0 && (t += '/' + r.f);
+        (r.h > 0 || r.v > 0 || r.f >= 0) && (n += r.h + s),
+          (r.v > 0 || r.f >= 0) && (n += '/' + (r.v + s)),
+          r.f >= 0 && (n += '/' + r.f);
       }
-      return t;
+      return n;
     }
     onWindowHashChange(e) {
       this.readURL();
     }
   }
-  class lr {
+  class dr {
     constructor(e) {
       (this.Reveal = e),
         (this.onNavigateLeftClicked = this.onNavigateLeftClicked.bind(this)),
@@ -3702,7 +3702,7 @@
     }
     render() {
       const e = this.Reveal.getConfig().rtl,
-        t = this.Reveal.getRevealElement();
+        n = this.Reveal.getRevealElement();
       (this.element = document.createElement('aside')),
         (this.element.className = 'controls'),
         (this.element.innerHTML = `<button class="navigate-left" aria-label="${
@@ -3714,41 +3714,41 @@
 			<button class="navigate-up" aria-label="above slide"><div class="controls-arrow"></div></button>
 			<button class="navigate-down" aria-label="below slide"><div class="controls-arrow"></div></button>`),
         this.Reveal.getRevealElement().appendChild(this.element),
-        (this.controlsLeft = Y(t, '.navigate-left')),
-        (this.controlsRight = Y(t, '.navigate-right')),
-        (this.controlsUp = Y(t, '.navigate-up')),
-        (this.controlsDown = Y(t, '.navigate-down')),
-        (this.controlsPrev = Y(t, '.navigate-prev')),
-        (this.controlsNext = Y(t, '.navigate-next')),
+        (this.controlsLeft = Y(n, '.navigate-left')),
+        (this.controlsRight = Y(n, '.navigate-right')),
+        (this.controlsUp = Y(n, '.navigate-up')),
+        (this.controlsDown = Y(n, '.navigate-down')),
+        (this.controlsPrev = Y(n, '.navigate-prev')),
+        (this.controlsNext = Y(n, '.navigate-next')),
         (this.controlsRightArrow = this.element.querySelector('.navigate-right')),
         (this.controlsLeftArrow = this.element.querySelector('.navigate-left')),
         (this.controlsDownArrow = this.element.querySelector('.navigate-down'));
     }
-    configure(e, t) {
+    configure(e, n) {
       (this.element.style.display = e.controls ? 'block' : 'none'),
         this.element.setAttribute('data-controls-layout', e.controlsLayout),
         this.element.setAttribute('data-controls-back-arrows', e.controlsBackArrows);
     }
     bind() {
       let e = ['touchstart', 'click'];
-      Un && (e = ['touchstart']),
-        e.forEach(t => {
-          this.controlsLeft.forEach(a => a.addEventListener(t, this.onNavigateLeftClicked, !1)),
-            this.controlsRight.forEach(a => a.addEventListener(t, this.onNavigateRightClicked, !1)),
-            this.controlsUp.forEach(a => a.addEventListener(t, this.onNavigateUpClicked, !1)),
-            this.controlsDown.forEach(a => a.addEventListener(t, this.onNavigateDownClicked, !1)),
-            this.controlsPrev.forEach(a => a.addEventListener(t, this.onNavigatePrevClicked, !1)),
-            this.controlsNext.forEach(a => a.addEventListener(t, this.onNavigateNextClicked, !1));
+      Gn && (e = ['touchstart']),
+        e.forEach(n => {
+          this.controlsLeft.forEach(a => a.addEventListener(n, this.onNavigateLeftClicked, !1)),
+            this.controlsRight.forEach(a => a.addEventListener(n, this.onNavigateRightClicked, !1)),
+            this.controlsUp.forEach(a => a.addEventListener(n, this.onNavigateUpClicked, !1)),
+            this.controlsDown.forEach(a => a.addEventListener(n, this.onNavigateDownClicked, !1)),
+            this.controlsPrev.forEach(a => a.addEventListener(n, this.onNavigatePrevClicked, !1)),
+            this.controlsNext.forEach(a => a.addEventListener(n, this.onNavigateNextClicked, !1));
         });
     }
     unbind() {
       ['touchstart', 'click'].forEach(e => {
-        this.controlsLeft.forEach(t => t.removeEventListener(e, this.onNavigateLeftClicked, !1)),
-          this.controlsRight.forEach(t => t.removeEventListener(e, this.onNavigateRightClicked, !1)),
-          this.controlsUp.forEach(t => t.removeEventListener(e, this.onNavigateUpClicked, !1)),
-          this.controlsDown.forEach(t => t.removeEventListener(e, this.onNavigateDownClicked, !1)),
-          this.controlsPrev.forEach(t => t.removeEventListener(e, this.onNavigatePrevClicked, !1)),
-          this.controlsNext.forEach(t => t.removeEventListener(e, this.onNavigateNextClicked, !1));
+        this.controlsLeft.forEach(n => n.removeEventListener(e, this.onNavigateLeftClicked, !1)),
+          this.controlsRight.forEach(n => n.removeEventListener(e, this.onNavigateRightClicked, !1)),
+          this.controlsUp.forEach(n => n.removeEventListener(e, this.onNavigateUpClicked, !1)),
+          this.controlsDown.forEach(n => n.removeEventListener(e, this.onNavigateDownClicked, !1)),
+          this.controlsPrev.forEach(n => n.removeEventListener(e, this.onNavigatePrevClicked, !1)),
+          this.controlsNext.forEach(n => n.removeEventListener(e, this.onNavigateNextClicked, !1));
       });
     }
     update() {
@@ -3787,8 +3787,8 @@
           this.controlsNext.forEach(a => {
             a.classList.add('enabled'), a.removeAttribute('disabled');
           });
-      let t = this.Reveal.getCurrentSlide();
-      if (t) {
+      let n = this.Reveal.getCurrentSlide();
+      if (n) {
         let a = this.Reveal.fragments.availableRoutes();
         a.prev &&
           this.controlsPrev.forEach(i => {
@@ -3798,7 +3798,7 @@
             this.controlsNext.forEach(i => {
               i.classList.add('fragmented', 'enabled'), i.removeAttribute('disabled');
             }),
-          this.Reveal.isVerticalSlide(t)
+          this.Reveal.isVerticalSlide(n)
             ? (a.prev &&
                 this.controlsUp.forEach(i => {
                   i.classList.add('fragmented', 'enabled'), i.removeAttribute('disabled');
@@ -3856,7 +3856,7 @@
       e.preventDefault(), this.Reveal.onUserInput(), this.Reveal.next();
     }
   }
-  class cr {
+  class _r {
     constructor(e) {
       (this.Reveal = e), (this.onProgressClicked = this.onProgressClicked.bind(this));
     }
@@ -3867,7 +3867,7 @@
         (this.bar = document.createElement('span')),
         this.element.appendChild(this.bar);
     }
-    configure(e, t) {
+    configure(e, n) {
       this.element.style.display = e.progress ? 'block' : 'none';
     }
     bind() {
@@ -3891,18 +3891,18 @@
     }
     onProgressClicked(e) {
       this.Reveal.onUserInput(e), e.preventDefault();
-      let t = this.Reveal.getSlides(),
-        a = t.length,
+      let n = this.Reveal.getSlides(),
+        a = n.length,
         i = Math.floor((e.clientX / this.getMaxWidth()) * a);
       this.Reveal.getConfig().rtl && (i = a - i);
-      let r = this.Reveal.getIndices(t[i]);
+      let r = this.Reveal.getIndices(n[i]);
       this.Reveal.slide(r.h, r.v);
     }
     destroy() {
       this.element.remove();
     }
   }
-  class dr {
+  class ur {
     constructor(e) {
       (this.Reveal = e),
         (this.lastMouseWheelStep = 0),
@@ -3911,7 +3911,7 @@
         (this.onDocumentCursorActive = this.onDocumentCursorActive.bind(this)),
         (this.onDocumentMouseScroll = this.onDocumentMouseScroll.bind(this));
     }
-    configure(e, t) {
+    configure(e, n) {
       e.mouseWheel
         ? (document.addEventListener('DOMMouseScroll', this.onDocumentMouseScroll, !1),
           document.addEventListener('mousewheel', this.onDocumentMouseScroll, !1))
@@ -3945,28 +3945,28 @@
     onDocumentMouseScroll(e) {
       if (Date.now() - this.lastMouseWheelStep > 1e3) {
         this.lastMouseWheelStep = Date.now();
-        let t = e.detail || -e.wheelDelta;
-        t > 0 ? this.Reveal.next() : t < 0 && this.Reveal.prev();
+        let n = e.detail || -e.wheelDelta;
+        n > 0 ? this.Reveal.next() : n < 0 && this.Reveal.prev();
       }
     }
   }
-  const zn = (n, e) => {
-    const t = document.createElement('script');
-    (t.type = 'text/javascript'),
-      (t.async = !1),
-      (t.defer = !1),
-      (t.src = n),
+  const jn = (t, e) => {
+    const n = document.createElement('script');
+    (n.type = 'text/javascript'),
+      (n.async = !1),
+      (n.defer = !1),
+      (n.src = t),
       typeof e == 'function' &&
-        ((t.onload = t.onreadystatechange = i => {
-          (i.type === 'load' || /loaded|complete/.test(t.readyState)) &&
-            ((t.onload = t.onreadystatechange = t.onerror = null), e());
+        ((n.onload = n.onreadystatechange = i => {
+          (i.type === 'load' || /loaded|complete/.test(n.readyState)) &&
+            ((n.onload = n.onreadystatechange = n.onerror = null), e());
         }),
-        (t.onerror = i => {
-          (t.onload = t.onreadystatechange = t.onerror = null),
+        (n.onerror = i => {
+          (n.onload = n.onreadystatechange = n.onerror = null),
             e(
               new Error(
                 'Failed loading script: ' +
-                  t.src +
+                  n.src +
                   `
 ` +
                   i
@@ -3974,13 +3974,13 @@
             );
         }));
     const a = document.querySelector('head');
-    a.insertBefore(t, a.lastChild);
+    a.insertBefore(n, a.lastChild);
   };
-  class _r {
+  class pr {
     constructor(e) {
       (this.Reveal = e), (this.state = 'idle'), (this.registeredPlugins = {}), (this.asyncDependencies = []);
     }
-    load(e, t) {
+    load(e, n) {
       return (
         (this.state = 'loading'),
         e.forEach(this.registerPlugin.bind(this)),
@@ -3988,7 +3988,7 @@
           let i = [],
             r = 0;
           if (
-            (t.forEach(s => {
+            (n.forEach(s => {
               (s.condition && !s.condition()) || (s.async ? this.asyncDependencies.push(s) : i.push(s));
             }),
             i.length)
@@ -4001,7 +4001,7 @@
               typeof o.id == 'string'
                 ? (this.registerPlugin(o), s(o))
                 : typeof o.src == 'string'
-                ? zn(o.src, () => s(o))
+                ? jn(o.src, () => s(o))
                 : (console.warn('Unrecognized plugin format', o), s());
             });
           } else this.initPlugins().then(a);
@@ -4010,8 +4010,8 @@
     }
     initPlugins() {
       return new Promise(e => {
-        let t = Object.values(this.registeredPlugins),
-          a = t.length;
+        let n = Object.values(this.registeredPlugins),
+          a = n.length;
         if (a === 0) this.loadAsync().then(e);
         else {
           let i,
@@ -4020,7 +4020,7 @@
             },
             s = 0;
           (i = () => {
-            let o = t[s++];
+            let o = n[s++];
             if (typeof o.init == 'function') {
               let l = o.init(this.Reveal);
               l && typeof l.then == 'function' ? l.then(r) : r();
@@ -4035,7 +4035,7 @@
         (this.state = 'loaded'),
         this.asyncDependencies.length &&
           this.asyncDependencies.forEach(e => {
-            zn(e.src, e.callback);
+            jn(e.src, e.callback);
           }),
         Promise.resolve()
       );
@@ -4044,13 +4044,13 @@
       arguments.length === 2 && typeof arguments[0] == 'string'
         ? ((e = arguments[1]).id = arguments[0])
         : typeof e == 'function' && (e = e());
-      let t = e.id;
-      typeof t != 'string'
+      let n = e.id;
+      typeof n != 'string'
         ? console.warn("Unrecognized plugin format; can't find plugin.id", e)
-        : this.registeredPlugins[t] === void 0
-        ? ((this.registeredPlugins[t] = e),
+        : this.registeredPlugins[n] === void 0
+        ? ((this.registeredPlugins[n] = e),
           this.state === 'loaded' && typeof e.init == 'function' && e.init(this.Reveal))
-        : console.warn('reveal.js: "' + t + '" plugin has already been registered');
+        : console.warn('reveal.js: "' + n + '" plugin has already been registered');
     }
     hasPlugin(e) {
       return !!this.registeredPlugins[e];
@@ -4069,13 +4069,13 @@
         (this.asyncDependencies = []);
     }
   }
-  class ur {
+  class mr {
     constructor(e) {
       this.Reveal = e;
     }
     async setupPDF() {
       const e = this.Reveal.getConfig(),
-        t = Y(this.Reveal.getRevealElement(), $e),
+        n = Y(this.Reveal.getRevealElement(), $e),
         a = e.slideNumber && /all|print/i.test(e.showSlideNumber),
         i = this.Reveal.getComputedSlideSize(window.innerWidth, window.innerHeight),
         r = Math.floor(i.width * (1 + e.margin)),
@@ -4083,8 +4083,8 @@
         o = i.width,
         l = i.height;
       await new Promise(requestAnimationFrame),
-        an('@page{size:' + r + 'px ' + s + 'px; margin: 0px;}'),
-        an(
+        sn('@page{size:' + r + 'px ' + s + 'px; margin: 0px;}'),
+        sn(
           '.reveal section>img, .reveal section>video, .reveal section>iframe{max-width: ' +
             o +
             'px; max-height:' +
@@ -4103,11 +4103,11 @@
       await new Promise(requestAnimationFrame),
         this.Reveal.layoutSlideContents(o, l),
         await new Promise(requestAnimationFrame);
-      const d = t.map(g => g.scrollHeight),
+      const d = n.map(g => g.scrollHeight),
         u = [],
-        m = t[0].parentNode;
+        m = n[0].parentNode;
       let p = 1;
-      t.forEach(function(g, E) {
+      n.forEach(function(g, E) {
         if (g.classList.contains('stack') === !1) {
           let h = (r - o) / 2,
             T = (s - l) / 2;
@@ -4115,44 +4115,44 @@
           let v = Math.max(Math.ceil(S / s), 1);
           (v = Math.min(v, e.pdfMaxPagesPerSlide)),
             ((v === 1 && e.center) || g.classList.contains('center')) && (T = Math.max((s - S) / 2, 0));
-          const R = document.createElement('div');
+          const C = document.createElement('div');
           if (
-            (u.push(R),
-            (R.className = 'pdf-page'),
-            (R.style.height = (s + e.pdfPageHeightOffset) * v + 'px'),
-            _ && (R.style.background = _),
-            R.appendChild(g),
+            (u.push(C),
+            (C.className = 'pdf-page'),
+            (C.style.height = (s + e.pdfPageHeightOffset) * v + 'px'),
+            _ && (C.style.background = _),
+            C.appendChild(g),
             (g.style.left = h + 'px'),
             (g.style.top = T + 'px'),
             (g.style.width = o + 'px'),
             this.Reveal.slideContent.layout(g),
-            g.slideBackgroundElement && R.insertBefore(g.slideBackgroundElement, g),
+            g.slideBackgroundElement && C.insertBefore(g.slideBackgroundElement, g),
             e.showNotes)
           ) {
-            const C = this.Reveal.getSlideNotes(g);
-            if (C) {
+            const R = this.Reveal.getSlideNotes(g);
+            if (R) {
               const O = typeof e.showNotes == 'string' ? e.showNotes : 'inline',
                 A = document.createElement('div');
               A.classList.add('speaker-notes'),
                 A.classList.add('speaker-notes-pdf'),
                 A.setAttribute('data-layout', O),
-                (A.innerHTML = C),
+                (A.innerHTML = R),
                 O === 'separate-page'
                   ? u.push(A)
                   : ((A.style.left = 8 + 'px'),
                     (A.style.bottom = 8 + 'px'),
                     (A.style.width = r - 2 * 8 + 'px'),
-                    R.appendChild(A));
+                    C.appendChild(A));
             }
           }
           if (a) {
-            const C = document.createElement('div');
-            C.classList.add('slide-number'), C.classList.add('slide-number-pdf'), (C.innerHTML = p++), R.appendChild(C);
+            const R = document.createElement('div');
+            R.classList.add('slide-number'), R.classList.add('slide-number-pdf'), (R.innerHTML = p++), C.appendChild(R);
           }
           if (e.pdfSeparateFragments) {
-            const C = this.Reveal.fragments.sort(R.querySelectorAll('.fragment'), !0);
+            const R = this.Reveal.fragments.sort(C.querySelectorAll('.fragment'), !0);
             let I;
-            C.forEach(function(O, A) {
+            R.forEach(function(O, A) {
               I &&
                 I.forEach(function(w) {
                   w.classList.remove('current-fragment');
@@ -4160,21 +4160,21 @@
                 O.forEach(function(w) {
                   w.classList.add('visible', 'current-fragment');
                 }, this);
-              const F = R.cloneNode(!0);
+              const F = C.cloneNode(!0);
               if (a) {
                 const w = A + 1;
                 F.querySelector('.slide-number-pdf').innerHTML += '.' + w;
               }
               u.push(F), (I = O);
             }, this),
-              C.forEach(function(O) {
+              R.forEach(function(O) {
                 O.forEach(function(A) {
                   A.classList.remove('visible', 'current-fragment');
                 });
               });
           } else
-            Y(R, '.fragment:not(.fade-out)').forEach(function(C) {
-              C.classList.add('visible');
+            Y(C, '.fragment:not(.fade-out)').forEach(function(R) {
+              R.classList.add('visible');
             });
         }
       }, this),
@@ -4187,7 +4187,7 @@
       return /print-pdf/gi.test(window.location.search);
     }
   }
-  class pr {
+  class gr {
     constructor(e) {
       (this.Reveal = e),
         (this.touchStartX = 0),
@@ -4228,7 +4228,7 @@
         e.removeEventListener('touchend', this.onTouchEnd, !1);
     }
     isSwipePrevented(e) {
-      if (It(e, 'video, audio')) return !0;
+      if (Dt(e, 'video, audio')) return !0;
       for (; e && typeof e.hasAttribute == 'function'; ) {
         if (e.hasAttribute('data-prevent-swipe')) return !0;
         e = e.parentNode;
@@ -4243,8 +4243,8 @@
     }
     onTouchMove(e) {
       if (this.isSwipePrevented(e.target)) return !0;
-      let t = this.Reveal.getConfig();
-      if (this.touchCaptured) Un && e.preventDefault();
+      let n = this.Reveal.getConfig();
+      if (this.touchCaptured) Gn && e.preventDefault();
       else {
         this.Reveal.onUserInput(e);
         let a = e.touches[0].clientX,
@@ -4255,16 +4255,16 @@
             o = i - this.touchStartY;
           s > 40 && Math.abs(s) > Math.abs(o)
             ? ((this.touchCaptured = !0),
-              t.navigationMode === 'linear' ? (t.rtl ? this.Reveal.next() : this.Reveal.prev()) : this.Reveal.left())
+              n.navigationMode === 'linear' ? (n.rtl ? this.Reveal.next() : this.Reveal.prev()) : this.Reveal.left())
             : s < -40 && Math.abs(s) > Math.abs(o)
             ? ((this.touchCaptured = !0),
-              t.navigationMode === 'linear' ? (t.rtl ? this.Reveal.prev() : this.Reveal.next()) : this.Reveal.right())
+              n.navigationMode === 'linear' ? (n.rtl ? this.Reveal.prev() : this.Reveal.next()) : this.Reveal.right())
             : o > 40 && r.up
-            ? ((this.touchCaptured = !0), t.navigationMode === 'linear' ? this.Reveal.prev() : this.Reveal.up())
+            ? ((this.touchCaptured = !0), n.navigationMode === 'linear' ? this.Reveal.prev() : this.Reveal.up())
             : o < -40 &&
               r.down &&
-              ((this.touchCaptured = !0), t.navigationMode === 'linear' ? this.Reveal.next() : this.Reveal.down()),
-            t.embedded
+              ((this.touchCaptured = !0), n.navigationMode === 'linear' ? this.Reveal.next() : this.Reveal.down()),
+            n.embedded
               ? (this.touchCaptured || this.Reveal.isVerticalSlide()) && e.preventDefault()
               : e.preventDefault();
         }
@@ -4286,15 +4286,15 @@
         ((e.touches = [{ clientX: e.clientX, clientY: e.clientY }]), this.onTouchEnd(e));
     }
   }
-  const sn = 'focus',
-    $n = 'blur';
-  class mr {
+  const ln = 'focus',
+    qn = 'blur';
+  class Er {
     constructor(e) {
       (this.Reveal = e),
         (this.onRevealPointerDown = this.onRevealPointerDown.bind(this)),
         (this.onDocumentPointerDown = this.onDocumentPointerDown.bind(this));
     }
-    configure(e, t) {
+    configure(e, n) {
       e.embedded ? this.blur() : (this.focus(), this.unbind());
     }
     bind() {
@@ -4306,19 +4306,19 @@
         document.removeEventListener('pointerdown', this.onDocumentPointerDown, !1);
     }
     focus() {
-      this.state !== sn &&
+      this.state !== ln &&
         (this.Reveal.getRevealElement().classList.add('focused'),
         document.addEventListener('pointerdown', this.onDocumentPointerDown, !1)),
-        (this.state = sn);
+        (this.state = ln);
     }
     blur() {
-      this.state !== $n &&
+      this.state !== qn &&
         (this.Reveal.getRevealElement().classList.remove('focused'),
         document.removeEventListener('pointerdown', this.onDocumentPointerDown, !1)),
-        (this.state = $n);
+        (this.state = qn);
     }
     isFocused() {
-      return this.state === sn;
+      return this.state === ln;
     }
     destroy() {
       this.Reveal.getRevealElement().classList.remove('focused');
@@ -4327,11 +4327,11 @@
       this.focus();
     }
     onDocumentPointerDown(e) {
-      let t = Ee(e.target, '.reveal');
-      (t && t === this.Reveal.getRevealElement()) || this.blur();
+      let n = Ee(e.target, '.reveal');
+      (n && n === this.Reveal.getRevealElement()) || this.blur();
     }
   }
-  class gr {
+  class Sr {
     constructor(e) {
       this.Reveal = e;
     }
@@ -4342,7 +4342,7 @@
         this.element.setAttribute('tabindex', '0'),
         this.Reveal.getRevealElement().appendChild(this.element);
     }
-    configure(e, t) {
+    configure(e, n) {
       e.showNotes && this.element.setAttribute('data-layout', typeof e.showNotes == 'string' ? e.showNotes : 'inline');
     }
     update() {
@@ -4366,9 +4366,9 @@
     }
     getSlideNotes(e = this.Reveal.getCurrentSlide()) {
       if (e.hasAttribute('data-notes')) return e.getAttribute('data-notes');
-      let t = e.querySelectorAll('aside.notes');
-      return t
-        ? Array.from(t).map(a => a.innerHTML).join(`
+      let n = e.querySelectorAll('aside.notes');
+      return n
+        ? Array.from(n).map(a => a.innerHTML).join(`
 `)
         : null;
     }
@@ -4376,8 +4376,8 @@
       this.element.remove();
     }
   }
-  class Er {
-    constructor(e, t) {
+  class hr {
+    constructor(e, n) {
       (this.diameter = 100),
         (this.diameter2 = this.diameter / 2),
         (this.thickness = 6),
@@ -4385,7 +4385,7 @@
         (this.progress = 0),
         (this.progressOffset = 1),
         (this.container = e),
-        (this.progressCheck = t),
+        (this.progressCheck = n),
         (this.canvas = document.createElement('canvas')),
         (this.canvas.className = 'playback'),
         (this.canvas.width = this.diameter),
@@ -4397,8 +4397,8 @@
         this.render();
     }
     setPlaying(e) {
-      const t = this.playing;
-      (this.playing = e), !t && this.playing ? this.animate() : this.render();
+      const n = this.playing;
+      (this.playing = e), !n && this.playing ? this.animate() : this.render();
     }
     animate() {
       const e = this.progress;
@@ -4409,7 +4409,7 @@
     }
     render() {
       let e = this.playing ? this.progress : 0,
-        t = this.diameter2 - this.thickness,
+        n = this.diameter2 - this.thickness,
         a = this.diameter2,
         i = this.diameter2,
         r = 28;
@@ -4419,17 +4419,17 @@
       this.context.save(),
         this.context.clearRect(0, 0, this.diameter, this.diameter),
         this.context.beginPath(),
-        this.context.arc(a, i, t + 4, 0, 2 * Math.PI, !1),
+        this.context.arc(a, i, n + 4, 0, 2 * Math.PI, !1),
         (this.context.fillStyle = 'rgba( 0, 0, 0, 0.4 )'),
         this.context.fill(),
         this.context.beginPath(),
-        this.context.arc(a, i, t, 0, 2 * Math.PI, !1),
+        this.context.arc(a, i, n, 0, 2 * Math.PI, !1),
         (this.context.lineWidth = this.thickness),
         (this.context.strokeStyle = 'rgba( 255, 255, 255, 0.2 )'),
         this.context.stroke(),
         this.playing &&
           (this.context.beginPath(),
-          this.context.arc(a, i, t, o, s, !1),
+          this.context.arc(a, i, n, o, s, !1),
           (this.context.lineWidth = this.thickness),
           (this.context.strokeStyle = '#fff'),
           this.context.stroke()),
@@ -4445,17 +4445,17 @@
             this.context.fill()),
         this.context.restore();
     }
-    on(e, t) {
-      this.canvas.addEventListener(e, t, !1);
+    on(e, n) {
+      this.canvas.addEventListener(e, n, !1);
     }
-    off(e, t) {
-      this.canvas.removeEventListener(e, t, !1);
+    off(e, n) {
+      this.canvas.removeEventListener(e, n, !1);
     }
     destroy() {
       (this.playing = !1), this.canvas.parentNode && this.container.removeChild(this.canvas);
     }
   }
-  var Sr = {
+  var br = {
     width: 960,
     height: 700,
     margin: 0.04,
@@ -4541,10 +4541,10 @@
     dependencies: [],
     plugins: []
   };
-  const Vn = '4.5.0';
-  function jn(n, e) {
-    arguments.length < 2 && ((e = arguments[0]), (n = document.querySelector('.reveal')));
-    const t = {};
+  const Wn = '4.5.0';
+  function Qn(t, e) {
+    arguments.length < 2 && ((e = arguments[0]), (t = document.querySelector('.reveal')));
+    const n = {};
     let a,
       i,
       r,
@@ -4562,38 +4562,38 @@
       h = 0,
       T = -1,
       S = !1,
-      v = new Zi(t),
-      R = new Ji(t),
-      C = new er(t),
-      I = new ar(t),
-      O = new tr(t),
-      A = new ir(t),
-      F = new rr(t),
-      w = new sr(t),
-      j = new or(t),
-      N = new lr(t),
-      B = new cr(t),
-      Q = new dr(t),
-      ee = new _r(t),
-      W = new ur(t),
-      G = new mr(t),
-      K = new pr(t),
-      U = new gr(t);
+      v = new er(n),
+      C = new tr(n),
+      R = new nr(n),
+      I = new rr(n),
+      O = new ar(n),
+      A = new sr(n),
+      F = new or(n),
+      w = new lr(n),
+      j = new cr(n),
+      N = new dr(n),
+      B = new _r(n),
+      Q = new ur(n),
+      ee = new pr(n),
+      W = new mr(n),
+      G = new Er(n),
+      K = new gr(n),
+      U = new Sr(n);
     function ge(b) {
-      if (!n) throw 'Unable to find presentation root (<div class="reveal">).';
-      if (((p.wrapper = n), (p.slides = n.querySelector('.slides')), !p.slides))
+      if (!t) throw 'Unable to find presentation root (<div class="reveal">).';
+      if (((p.wrapper = t), (p.slides = t.querySelector('.slides')), !p.slides))
         throw 'Unable to find slides container (<div class="slides">).';
       return (
-        (l = { ...Sr, ...l, ...e, ...b, ...Pn() }),
+        (l = { ...br, ...l, ...e, ...b, ...Bn() }),
         se(),
-        window.addEventListener('load', _t, !1),
+        window.addEventListener('load', ut, !1),
         ee.load(l.plugins, l.dependencies).then(X),
-        new Promise(y => t.on('ready', y))
+        new Promise(y => n.on('ready', y))
       );
     }
     function se() {
       l.embedded === !0
-        ? (p.viewport = Ee(n, '.reveal-viewport') || n)
+        ? (p.viewport = Ee(t, '.reveal-viewport') || t)
         : ((p.viewport = document.body), document.documentElement.classList.add('reveal-full-page')),
         p.viewport.classList.add('reveal-viewport');
     }
@@ -4604,7 +4604,7 @@
         J(),
         $(),
         te(),
-        p_(),
+        E_(),
         ne(),
         j.readURL(),
         O.update(!0),
@@ -4631,21 +4631,21 @@
       p.slides.classList.add('no-transition'),
         et ? p.wrapper.classList.add('no-hover') : p.wrapper.classList.remove('no-hover'),
         O.render(),
-        R.render(),
         C.render(),
+        R.render(),
         N.render(),
         B.render(),
         U.render(),
-        (p.pauseOverlay = Wi(
+        (p.pauseOverlay = Ki(
           p.wrapper,
           'div',
           'pause-overlay',
           l.controls ? '<button class="resume-button">Resume presentation</button>' : null
         )),
-        (p.statusElement = yt()),
+        (p.statusElement = Rt()),
         p.wrapper.setAttribute('role', 'application');
     }
-    function yt() {
+    function Rt() {
       let b = p.wrapper.querySelector('.aria-status');
       return (
         b ||
@@ -4662,7 +4662,7 @@
         b
       );
     }
-    function dt(b) {
+    function _t(b) {
       p.statusElement.textContent = b;
     }
     function M(b) {
@@ -4686,14 +4686,14 @@
       }, 1e3);
     }
     function te() {
-      document.addEventListener('fullscreenchange', en), document.addEventListener('webkitfullscreenchange', en);
+      document.addEventListener('fullscreenchange', nn), document.addEventListener('webkitfullscreenchange', nn);
     }
     function J() {
-      l.postMessage && window.addEventListener('message', Fi, !1);
+      l.postMessage && window.addEventListener('message', Yi, !1);
     }
     function ne(b) {
       const y = { ...l };
-      if ((typeof b == 'object' && Ze(l, b), t.isReady() === !1)) return;
+      if ((typeof b == 'object' && Ze(l, b), n.isReady() === !1)) return;
       const D = p.wrapper.querySelectorAll($e).length;
       p.wrapper.classList.remove(y.transition),
         p.wrapper.classList.add(l.transition),
@@ -4701,20 +4701,20 @@
         p.wrapper.setAttribute('data-background-transition', l.backgroundTransition),
         p.viewport.style.setProperty('--slide-width', l.width + 'px'),
         p.viewport.style.setProperty('--slide-height', l.height + 'px'),
-        l.shuffle && An(),
-        nn(p.wrapper, 'embedded', l.embedded),
-        nn(p.wrapper, 'rtl', l.rtl),
-        nn(p.wrapper, 'center', l.center),
-        l.pause === !1 && Nt(),
+        l.shuffle && xn(),
+        rn(p.wrapper, 'embedded', l.embedded),
+        rn(p.wrapper, 'rtl', l.rtl),
+        rn(p.wrapper, 'center', l.center),
+        l.pause === !1 && At(),
         l.previewLinks
-          ? (mi(), Nn('[data-preview-link=false]'))
-          : (Nn(), mi('[data-preview-link]:not([data-preview-link=false])')),
+          ? (Si(), An('[data-preview-link=false]'))
+          : (An(), Si('[data-preview-link]:not([data-preview-link=false])')),
         I.reset(),
         o && (o.destroy(), (o = null)),
         D > 1 &&
           l.autoSlide &&
           l.autoSlideStoppable &&
-          ((o = new Er(p.wrapper, () => Math.min(Math.max((Date.now() - T) / E, 0), 1))), o.on('click', f_), (S = !1)),
+          ((o = new hr(p.wrapper, () => Math.min(Math.max((Date.now() - T) / E, 0), 1))), o.on('click', y_), (S = !1)),
         l.navigationMode !== 'default'
           ? p.wrapper.setAttribute('data-navigation-mode', l.navigationMode)
           : p.wrapper.removeAttribute('data-navigation-mode'),
@@ -4725,21 +4725,21 @@
         B.configure(l, y),
         w.configure(l, y),
         A.configure(l, y),
-        R.configure(l, y),
-        Ci();
+        C.configure(l, y),
+        Ai();
     }
     function de() {
-      window.addEventListener('resize', Yi, !1),
+      window.addEventListener('resize', $i, !1),
         l.touch && K.bind(),
         l.keyboard && w.bind(),
         l.progress && B.bind(),
         l.respondToHashChanges && j.bind(),
         N.bind(),
         G.bind(),
-        p.slides.addEventListener('click', Gi, !1),
-        p.slides.addEventListener('transitionend', Bi, !1),
-        p.pauseOverlay.addEventListener('click', Nt, !1),
-        l.focusBodyOnPageVisibilityChange && document.addEventListener('visibilitychange', Hi, !1);
+        p.slides.addEventListener('click', zi, !1),
+        p.slides.addEventListener('transitionend', Hi, !1),
+        p.pauseOverlay.addEventListener('click', At, !1),
+        l.focusBodyOnPageVisibilityChange && document.addEventListener('visibilitychange', Vi, !1);
     }
     function fe() {
       K.unbind(),
@@ -4748,15 +4748,15 @@
         N.unbind(),
         B.unbind(),
         j.unbind(),
-        window.removeEventListener('resize', Yi, !1),
-        p.slides.removeEventListener('click', Gi, !1),
-        p.slides.removeEventListener('transitionend', Bi, !1),
-        p.pauseOverlay.removeEventListener('click', Nt, !1);
+        window.removeEventListener('resize', $i, !1),
+        p.slides.removeEventListener('click', zi, !1),
+        p.slides.removeEventListener('transitionend', Hi, !1),
+        p.pauseOverlay.removeEventListener('click', At, !1);
     }
-    function Rt() {
+    function Nt() {
       fe(),
-        Kt(),
-        Nn(),
+        Zt(),
+        An(),
         U.destroy(),
         G.destroy(),
         ee.destroy(),
@@ -4764,13 +4764,13 @@
         N.destroy(),
         B.destroy(),
         O.destroy(),
-        R.destroy(),
         C.destroy(),
-        document.removeEventListener('fullscreenchange', en),
-        document.removeEventListener('webkitfullscreenchange', en),
-        document.removeEventListener('visibilitychange', Hi, !1),
-        window.removeEventListener('message', Fi, !1),
-        window.removeEventListener('load', _t, !1),
+        R.destroy(),
+        document.removeEventListener('fullscreenchange', nn),
+        document.removeEventListener('webkitfullscreenchange', nn),
+        document.removeEventListener('visibilitychange', Vi, !1),
+        window.removeEventListener('message', Yi, !1),
+        window.removeEventListener('load', ut, !1),
         p.pauseOverlay && p.pauseOverlay.remove(),
         p.statusElement && p.statusElement.remove(),
         document.documentElement.classList.remove('reveal-full-page'),
@@ -4796,37 +4796,37 @@
         });
     }
     function Ke(b, y, D) {
-      n.addEventListener(b, y, D);
+      t.addEventListener(b, y, D);
     }
-    function ui(b, y, D) {
-      n.removeEventListener(b, y, D);
+    function gi(b, y, D) {
+      t.removeEventListener(b, y, D);
     }
-    function Cn(b) {
+    function On(b) {
       typeof b.layout == 'string' && (m.layout = b.layout),
         typeof b.overview == 'string' && (m.overview = b.overview),
         m.layout ? ke(p.slides, m.layout + ' ' + m.overview) : ke(p.slides, m.overview);
     }
     function ye({ target: b = p.wrapper, type: y, data: D, bubbles: x = !0 }) {
       let L = document.createEvent('HTMLEvents', 1, 2);
-      return L.initEvent(y, x, !0), Ze(L, D), b.dispatchEvent(L), b === p.wrapper && pi(y), L;
+      return L.initEvent(y, x, !0), Ze(L, D), b.dispatchEvent(L), b === p.wrapper && Ei(y), L;
     }
-    function pi(b, y) {
+    function Ei(b, y) {
       if (l.postMessageEvents && window.parent !== window.self) {
-        let D = { namespace: 'reveal', eventName: b, state: Pi() };
+        let D = { namespace: 'reveal', eventName: b, state: Bi() };
         Ze(D, y), window.parent.postMessage(JSON.stringify(D), '*');
       }
     }
-    function mi(b = 'a') {
+    function Si(b = 'a') {
       Array.from(p.wrapper.querySelectorAll(b)).forEach(y => {
-        /^(http|www)/gi.test(y.getAttribute('href')) && y.addEventListener('click', zi, !1);
+        /^(http|www)/gi.test(y.getAttribute('href')) && y.addEventListener('click', ji, !1);
       });
     }
-    function Nn(b = 'a') {
+    function An(b = 'a') {
       Array.from(p.wrapper.querySelectorAll(b)).forEach(y => {
-        /^(http|www)/gi.test(y.getAttribute('href')) && y.removeEventListener('click', zi, !1);
+        /^(http|www)/gi.test(y.getAttribute('href')) && y.removeEventListener('click', ji, !1);
       });
     }
-    function gi(b) {
+    function hi(b) {
       we(),
         (p.overlay = document.createElement('div')),
         p.overlay.classList.add('overlay'),
@@ -4865,10 +4865,10 @@
           !1
         );
     }
-    function l_(b) {
-      typeof b == 'boolean' ? (b ? Ei() : we()) : p.overlay ? we() : Ei();
+    function __(b) {
+      typeof b == 'boolean' ? (b ? bi() : we()) : p.overlay ? we() : bi();
     }
-    function Ei() {
+    function bi() {
       if (l.help) {
         we(),
           (p.overlay = document.createElement('div')),
@@ -4903,13 +4903,13 @@
     function we() {
       return !!p.overlay && (p.overlay.parentNode.removeChild(p.overlay), (p.overlay = null), !0);
     }
-    function _t() {
+    function ut() {
       if (p.wrapper && !W.isPrintingPDF()) {
         if (!l.disableLayout) {
           et && !l.embedded && document.documentElement.style.setProperty('--vh', 0.01 * window.innerHeight + 'px');
-          const b = hi(),
+          const b = Ti(),
             y = u;
-          Si(l.width, l.height),
+          fi(l.width, l.height),
             (p.slides.style.width = b.width + 'px'),
             (p.slides.style.height = b.height + 'px'),
             (u = Math.min(b.presentationWidth / b.width, b.presentationHeight / b.height)),
@@ -4921,13 +4921,13 @@
                 (p.slides.style.top = ''),
                 (p.slides.style.bottom = ''),
                 (p.slides.style.right = ''),
-                Cn({ layout: '' }))
+                On({ layout: '' }))
               : ((p.slides.style.zoom = ''),
                 (p.slides.style.left = '50%'),
                 (p.slides.style.top = '50%'),
                 (p.slides.style.bottom = 'auto'),
                 (p.slides.style.right = 'auto'),
-                Cn({ layout: 'translate(-50%, -50%) scale(' + u + ')' }));
+                On({ layout: 'translate(-50%, -50%) scale(' + u + ')' }));
           const D = Array.from(p.wrapper.querySelectorAll($e));
           for (let x = 0, L = D.length; x < L; x++) {
             const Z = D[x];
@@ -4943,9 +4943,9 @@
         p.viewport.style.setProperty('--slide-scale', u), B.update(), O.updateParallax(), F.isActive() && F.update();
       }
     }
-    function Si(b, y) {
+    function fi(b, y) {
       Y(p.slides, 'section > .stretch, section > .r-stretch').forEach(D => {
-        let x = Qi(D, y);
+        let x = Xi(D, y);
         if (/(img|video)/gi.test(D.nodeName)) {
           const L = D.naturalWidth || D.videoWidth,
             Z = D.naturalHeight || D.videoHeight,
@@ -4954,7 +4954,7 @@
         } else (D.style.width = b + 'px'), (D.style.height = x + 'px');
       });
     }
-    function hi(b, y) {
+    function Ti(b, y) {
       let D = l.width,
         x = l.height;
       l.disableLayout && ((D = p.slides.offsetWidth), (x = p.slides.offsetHeight));
@@ -4976,51 +4976,51 @@
         L
       );
     }
-    function bi(b, y) {
+    function vi(b, y) {
       typeof b == 'object' && typeof b.setAttribute == 'function' && b.setAttribute('data-previous-indexv', y || 0);
     }
-    function fi(b) {
+    function yi(b) {
       if (typeof b == 'object' && typeof b.setAttribute == 'function' && b.classList.contains('stack')) {
         const y = b.hasAttribute('data-start-indexv') ? 'data-start-indexv' : 'data-previous-indexv';
         return parseInt(b.getAttribute(y) || 0, 10);
       }
       return 0;
     }
-    function Ct(b = s) {
+    function Ot(b = s) {
       return b && b.parentNode && !!b.parentNode.nodeName.match(/section/i);
     }
-    function Ti() {
-      return !(!s || !Ct(s)) && !s.nextElementSibling;
+    function Ci() {
+      return !(!s || !Ot(s)) && !s.nextElementSibling;
     }
-    function vi() {
+    function Ri() {
       return a === 0 && i === 0;
     }
-    function On() {
-      return !!s && !s.nextElementSibling && (!Ct(s) || !s.parentNode.nextElementSibling);
+    function In() {
+      return !!s && !s.nextElementSibling && (!Ot(s) || !s.parentNode.nextElementSibling);
     }
-    function yi() {
+    function Ni() {
       if (l.pause) {
         const b = p.wrapper.classList.contains('paused');
-        Kt(), p.wrapper.classList.add('paused'), b === !1 && ye({ type: 'paused' });
+        Zt(), p.wrapper.classList.add('paused'), b === !1 && ye({ type: 'paused' });
       }
     }
-    function Nt() {
+    function At() {
       const b = p.wrapper.classList.contains('paused');
-      p.wrapper.classList.remove('paused'), ut(), b && ye({ type: 'resumed' });
+      p.wrapper.classList.remove('paused'), pt(), b && ye({ type: 'resumed' });
     }
-    function Ri(b) {
-      typeof b == 'boolean' ? (b ? yi() : Nt()) : Ot() ? Nt() : yi();
+    function Oi(b) {
+      typeof b == 'boolean' ? (b ? Ni() : At()) : It() ? At() : Ni();
     }
-    function Ot() {
+    function It() {
       return p.wrapper.classList.contains('paused');
     }
-    function c_(b) {
-      typeof b == 'boolean' ? (b ? C.show() : C.hide()) : C.isVisible() ? C.hide() : C.show();
+    function u_(b) {
+      typeof b == 'boolean' ? (b ? R.show() : R.hide()) : R.isVisible() ? R.hide() : R.show();
     }
-    function d_(b) {
-      typeof b == 'boolean' ? (b ? Zt() : Xt()) : S ? Zt() : Xt();
+    function p_(b) {
+      typeof b == 'boolean' ? (b ? en() : Jt()) : S ? en() : Jt();
     }
-    function __() {
+    function m_() {
       return !(!E || S);
     }
     function Ae(b, y, D, x) {
@@ -5034,14 +5034,14 @@
       r = s;
       const L = p.wrapper.querySelectorAll(Ve);
       if (L.length === 0) return;
-      y !== void 0 || F.isActive() || (y = fi(L[b])),
-        r && r.parentNode && r.parentNode.classList.contains('stack') && bi(r.parentNode, i);
+      y !== void 0 || F.isActive() || (y = yi(L[b])),
+        r && r.parentNode && r.parentNode.classList.contains('stack') && vi(r.parentNode, i);
       const Z = d.concat();
       d.length = 0;
       let _e = a || 0,
-        Re = i || 0;
-      (a = Ni(Ve, b === void 0 ? a : b)), (i = Ni(Gn, y === void 0 ? i : y));
-      let Le = a !== _e || i !== Re;
+        Ce = i || 0;
+      (a = Ii(Ve, b === void 0 ? a : b)), (i = Ii(zn, y === void 0 ? i : y));
+      let Le = a !== _e || i !== Ce;
       Le || (r = null);
       let Xe = L[a];
       s = Xe.querySelectorAll('section')[i] || Xe;
@@ -5053,27 +5053,27 @@
         (r.hasAttribute('data-auto-animate') &&
           s.hasAttribute('data-auto-animate') &&
           r.getAttribute('data-auto-animate-id') === s.getAttribute('data-auto-animate-id') &&
-          !(a > _e || i > Re ? s : r).hasAttribute('data-auto-animate-restart') &&
+          !(a > _e || i > Ce ? s : r).hasAttribute('data-auto-animate-restart') &&
           ((ce = !0), p.slides.classList.add('disable-slide-transitions')),
         (g = 'running')),
-        In(),
-        _t(),
+        Dn(),
+        ut(),
         F.isActive() && F.update(),
         D !== void 0 && A.goto(D),
         r &&
           r !== s &&
           (r.classList.remove('present'),
           r.setAttribute('aria-hidden', 'true'),
-          vi() &&
+          Ri() &&
             setTimeout(() => {
-              g_().forEach(Ie => {
-                bi(Ie, 0);
+              h_().forEach(Ie => {
+                vi(Ie, 0);
               });
             }, 0));
-      e: for (let Ie = 0, T_ = d.length; Ie < T_; Ie++) {
-        for (let tn = 0; tn < Z.length; tn++)
-          if (Z[tn] === d[Ie]) {
-            Z.splice(tn, 1);
+      e: for (let Ie = 0, C_ = d.length; Ie < C_; Ie++) {
+        for (let an = 0; an < Z.length; an++)
+          if (Z[an] === d[Ie]) {
+            Z.splice(an, 1);
             continue e;
           }
         p.viewport.classList.add(d[Ie]), ye({ type: d[Ie] });
@@ -5082,47 +5082,47 @@
       Le && ye({ type: 'slidechanged', data: { indexh: a, indexv: i, previousSlide: r, currentSlide: s, origin: x } }),
         (!Le && r) || (v.stopEmbeddedContent(r), v.startEmbeddedContent(s)),
         requestAnimationFrame(() => {
-          dt(M(s));
+          _t(M(s));
         }),
         B.update(),
         N.update(),
         U.update(),
         O.update(),
         O.updateParallax(),
-        R.update(),
+        C.update(),
         A.update(),
         j.writeURL(),
-        ut(),
+        pt(),
         ce &&
           (setTimeout(() => {
             p.slides.classList.remove('disable-slide-transitions');
           }, 0),
           l.autoAnimate && I.run(r, s));
     }
-    function Ci() {
+    function Ai() {
       fe(),
         de(),
-        _t(),
-        (E = l.autoSlide),
         ut(),
+        (E = l.autoSlide),
+        pt(),
         O.create(),
         j.writeURL(),
         l.sortFragmentsOnSync === !0 && A.sortAll(),
         N.update(),
         B.update(),
-        In(),
+        Dn(),
         U.update(),
         U.updateVisibility(),
         O.update(!0),
-        R.update(),
+        C.update(),
         v.formatEmbeddedContent(),
         l.autoPlayMedia === !1 ? v.stopEmbeddedContent(s, { unloadIframes: !1 }) : v.startEmbeddedContent(s),
         F.isActive() && F.layout();
     }
-    function u_(b = s) {
+    function g_(b = s) {
       O.sync(b), A.sync(b), v.load(b), O.update(), U.update();
     }
-    function p_() {
+    function E_() {
       He().forEach(b => {
         Y(b, 'section').forEach((y, D) => {
           D > 0 &&
@@ -5133,15 +5133,15 @@
         });
       });
     }
-    function An(b = He()) {
+    function xn(b = He()) {
       b.forEach((y, D) => {
         let x = b[Math.floor(Math.random() * b.length)];
         x.parentNode === y.parentNode && y.parentNode.insertBefore(y, x);
         let L = y.querySelectorAll('section');
-        L.length && An(L);
+        L.length && xn(L);
       });
     }
-    function Ni(b, y) {
+    function Ii(b, y) {
       let D = Y(p.wrapper, b),
         x = D.length,
         L = W.isPrintingPDF(),
@@ -5151,7 +5151,7 @@
         l.loop && (y >= x && (Z = !0), (y %= x) < 0 && ((y = x + y), (_e = !0))), (y = Math.max(Math.min(y, x - 1), 0));
         for (let Te = 0; Te < x; Te++) {
           let ce = D[Te],
-            Ie = l.rtl && !Ct(ce);
+            Ie = l.rtl && !Ot(ce);
           ce.classList.remove('past'),
             ce.classList.remove('present'),
             ce.classList.remove('future'),
@@ -5161,33 +5161,33 @@
             L
               ? ce.classList.add('present')
               : Te < y
-              ? (ce.classList.add(Ie ? 'future' : 'past'), l.fragments && Oi(ce))
+              ? (ce.classList.add(Ie ? 'future' : 'past'), l.fragments && xi(ce))
               : Te > y
-              ? (ce.classList.add(Ie ? 'past' : 'future'), l.fragments && Ai(ce))
-              : Te === y && l.fragments && (Z ? Ai(ce) : _e && Oi(ce));
+              ? (ce.classList.add(Ie ? 'past' : 'future'), l.fragments && Di(ce))
+              : Te === y && l.fragments && (Z ? Di(ce) : _e && xi(ce));
         }
-        let Re = D[y],
-          Le = Re.classList.contains('present');
-        Re.classList.add('present'),
-          Re.removeAttribute('hidden'),
-          Re.removeAttribute('aria-hidden'),
-          Le || ye({ target: Re, type: 'visible', bubbles: !1 });
-        let Xe = Re.getAttribute('data-state');
+        let Ce = D[y],
+          Le = Ce.classList.contains('present');
+        Ce.classList.add('present'),
+          Ce.removeAttribute('hidden'),
+          Ce.removeAttribute('aria-hidden'),
+          Le || ye({ target: Ce, type: 'visible', bubbles: !1 });
+        let Xe = Ce.getAttribute('data-state');
         Xe && (d = d.concat(Xe.split(' ')));
       } else y = 0;
       return y;
     }
-    function Oi(b) {
+    function xi(b) {
       Y(b, '.fragment').forEach(y => {
         y.classList.add('visible'), y.classList.remove('current-fragment');
       });
     }
-    function Ai(b) {
+    function Di(b) {
       Y(b, '.fragment.visible').forEach(y => {
         y.classList.remove('visible', 'current-fragment');
       });
     }
-    function In() {
+    function Dn() {
       let b,
         y,
         D = He(),
@@ -5197,28 +5197,28 @@
         et && (L = F.isActive() ? 6 : l.mobileViewDistance), W.isPrintingPDF() && (L = Number.MAX_VALUE);
         for (let Z = 0; Z < x; Z++) {
           let _e = D[Z],
-            Re = Y(_e, 'section'),
-            Le = Re.length;
+            Ce = Y(_e, 'section'),
+            Le = Ce.length;
           if (
             ((b = Math.abs((a || 0) - Z) || 0),
             l.loop && (b = Math.abs(((a || 0) - Z) % (x - L)) || 0),
             b < L ? v.load(_e) : v.unload(_e),
             Le)
           ) {
-            let Xe = fi(_e);
+            let Xe = yi(_e);
             for (let Te = 0; Te < Le; Te++) {
-              let ce = Re[Te];
+              let ce = Ce[Te];
               (y = Math.abs(Z === (a || 0) ? (i || 0) - Te : Te - Xe)), b + y < L ? v.load(ce) : v.unload(ce);
             }
           }
         }
-        Mi() ? p.wrapper.classList.add('has-vertical-slides') : p.wrapper.classList.remove('has-vertical-slides'),
-          wi() ? p.wrapper.classList.add('has-horizontal-slides') : p.wrapper.classList.remove('has-horizontal-slides');
+        Pi() ? p.wrapper.classList.add('has-vertical-slides') : p.wrapper.classList.remove('has-vertical-slides'),
+          ki() ? p.wrapper.classList.add('has-horizontal-slides') : p.wrapper.classList.remove('has-horizontal-slides');
       }
     }
     function Me({ includeFragments: b = !1 } = {}) {
       let y = p.wrapper.querySelectorAll(Ve),
-        D = p.wrapper.querySelectorAll(Gn),
+        D = p.wrapper.querySelectorAll(zn),
         x = { left: a > 0, right: a < y.length - 1, up: i > 0, down: i < D.length - 1 };
       if (
         (l.loop && (y.length > 1 && ((x.left = !0), (x.right = !0)), D.length > 1 && ((x.up = !0), (x.down = !0))),
@@ -5237,7 +5237,7 @@
       }
       return x;
     }
-    function Ii(b = s) {
+    function wi(b = s) {
       let y = He(),
         D = 0;
       e: for (let x = 0; x < y.length; x++) {
@@ -5252,9 +5252,9 @@
       }
       return D;
     }
-    function m_() {
-      let b = Li(),
-        y = Ii();
+    function S_() {
+      let b = Ui(),
+        y = wi();
       if (s) {
         let D = s.querySelectorAll('.fragment');
         if (D.length > 0) {
@@ -5264,12 +5264,12 @@
       }
       return Math.min(y / (b - 1), 1);
     }
-    function xi(b) {
+    function Mi(b) {
       let y,
         D = a,
         x = i;
       if (b) {
-        let L = Ct(b),
+        let L = Ot(b),
           Z = L ? b.parentNode : b,
           _e = He();
         (D = Math.max(_e.indexOf(Z), 0)), (x = void 0), L && (x = Math.max(Y(b.parentNode, 'section').indexOf(b), 0));
@@ -5283,26 +5283,26 @@
       }
       return { h: D, v: x, f: y };
     }
-    function xn() {
+    function wn() {
       return Y(p.wrapper, $e + ':not(.stack):not([data-visibility="uncounted"])');
     }
     function He() {
       return Y(p.wrapper, Ve);
     }
-    function Di() {
+    function Li() {
       return Y(p.wrapper, '.slides>section>section');
     }
-    function g_() {
+    function h_() {
       return Y(p.wrapper, Ve + '.stack');
     }
-    function wi() {
+    function ki() {
       return He().length > 1;
     }
-    function Mi() {
-      return Di().length > 1;
+    function Pi() {
+      return Li().length > 1;
     }
-    function E_() {
-      return xn().map(b => {
+    function b_() {
+      return wn().map(b => {
         let y = {};
         for (let D = 0; D < b.attributes.length; D++) {
           let x = b.attributes[D];
@@ -5311,32 +5311,32 @@
         return y;
       });
     }
-    function Li() {
-      return xn().length;
+    function Ui() {
+      return wn().length;
     }
-    function ki(b, y) {
+    function Fi(b, y) {
       let D = He()[b],
         x = D && D.querySelectorAll('section');
       return x && x.length && typeof y == 'number' ? (x ? x[y] : void 0) : D;
     }
-    function S_(b, y) {
-      let D = typeof b == 'number' ? ki(b, y) : b;
+    function f_(b, y) {
+      let D = typeof b == 'number' ? Fi(b, y) : b;
       if (D) return D.slideBackgroundElement;
     }
-    function Pi() {
-      let b = xi();
-      return { indexh: b.h, indexv: b.v, indexf: b.f, paused: Ot(), overview: F.isActive() };
+    function Bi() {
+      let b = Mi();
+      return { indexh: b.h, indexv: b.v, indexf: b.f, paused: It(), overview: F.isActive() };
     }
-    function h_(b) {
+    function T_(b) {
       if (typeof b == 'object') {
         Ae(Je(b.indexh), Je(b.indexv), Je(b.indexf));
         let y = Je(b.paused),
           D = Je(b.overview);
-        typeof y == 'boolean' && y !== Ot() && Ri(y), typeof D == 'boolean' && D !== F.isActive() && F.toggle(D);
+        typeof y == 'boolean' && y !== It() && Oi(y), typeof D == 'boolean' && D !== F.isActive() && F.toggle(D);
       }
     }
-    function ut() {
-      if ((Kt(), s && l.autoSlide !== !1)) {
+    function pt() {
+      if ((Zt(), s && l.autoSlide !== !1)) {
         let b = s.querySelector('.current-fragment');
         b || (b = s.querySelector('.fragment'));
         let y = b ? b.getAttribute('data-autoslide') : null,
@@ -5358,46 +5358,46 @@
               })),
           !E ||
             S ||
-            Ot() ||
+            It() ||
             F.isActive() ||
-            (On() && !A.availableRoutes().next && l.loop !== !0) ||
+            (In() && !A.availableRoutes().next && l.loop !== !0) ||
             ((h = setTimeout(() => {
-              typeof l.autoSlideMethod == 'function' ? l.autoSlideMethod() : Ln(), ut();
+              typeof l.autoSlideMethod == 'function' ? l.autoSlideMethod() : Pn(), pt();
             }, E)),
             (T = Date.now())),
           o && o.setPlaying(h !== -1);
       }
     }
-    function Kt() {
+    function Zt() {
       clearTimeout(h), (h = -1);
     }
-    function Xt() {
+    function Jt() {
       E && !S && ((S = !0), ye({ type: 'autoslidepaused' }), clearTimeout(h), o && o.setPlaying(!1));
     }
-    function Zt() {
-      E && S && ((S = !1), ye({ type: 'autoslideresumed' }), ut());
+    function en() {
+      E && S && ((S = !1), ye({ type: 'autoslideresumed' }), pt());
     }
-    function Jt({ skipFragments: b = !1 } = {}) {
+    function tn({ skipFragments: b = !1 } = {}) {
       (_.hasNavigatedHorizontally = !0),
         l.rtl
           ? (F.isActive() || b || A.next() === !1) && Me().left && Ae(a + 1, l.navigationMode === 'grid' ? i : void 0)
           : (F.isActive() || b || A.prev() === !1) && Me().left && Ae(a - 1, l.navigationMode === 'grid' ? i : void 0);
     }
-    function Dn({ skipFragments: b = !1 } = {}) {
+    function Mn({ skipFragments: b = !1 } = {}) {
       (_.hasNavigatedHorizontally = !0),
         l.rtl
           ? (F.isActive() || b || A.prev() === !1) && Me().right && Ae(a - 1, l.navigationMode === 'grid' ? i : void 0)
           : (F.isActive() || b || A.next() === !1) && Me().right && Ae(a + 1, l.navigationMode === 'grid' ? i : void 0);
     }
-    function wn({ skipFragments: b = !1 } = {}) {
+    function Ln({ skipFragments: b = !1 } = {}) {
       (F.isActive() || b || A.prev() === !1) && Me().up && Ae(a, i - 1);
     }
-    function Mn({ skipFragments: b = !1 } = {}) {
+    function kn({ skipFragments: b = !1 } = {}) {
       (_.hasNavigatedVertically = !0), (F.isActive() || b || A.next() === !1) && Me().down && Ae(a, i + 1);
     }
-    function Ui({ skipFragments: b = !1 } = {}) {
+    function Gi({ skipFragments: b = !1 } = {}) {
       if (b || A.prev() === !1)
-        if (Me().up) wn({ skipFragments: b });
+        if (Me().up) Ln({ skipFragments: b });
         else {
           let y;
           if (
@@ -5406,113 +5406,113 @@
           ) {
             let D = y.querySelectorAll('section').length - 1 || void 0;
             Ae(a - 1, D);
-          } else Jt({ skipFragments: b });
+          } else tn({ skipFragments: b });
         }
     }
-    function Ln({ skipFragments: b = !1 } = {}) {
+    function Pn({ skipFragments: b = !1 } = {}) {
       if (((_.hasNavigatedHorizontally = !0), (_.hasNavigatedVertically = !0), b || A.next() === !1)) {
         let y = Me();
-        y.down && y.right && l.loop && Ti() && (y.down = !1),
-          y.down ? Mn({ skipFragments: b }) : l.rtl ? Jt({ skipFragments: b }) : Dn({ skipFragments: b });
+        y.down && y.right && l.loop && Ci() && (y.down = !1),
+          y.down ? kn({ skipFragments: b }) : l.rtl ? tn({ skipFragments: b }) : Mn({ skipFragments: b });
       }
     }
-    function b_(b) {
-      l.autoSlideStoppable && Xt();
+    function v_(b) {
+      l.autoSlideStoppable && Jt();
     }
-    function Fi(b) {
+    function Yi(b) {
       let y = b.data;
       if (
         typeof y == 'string' &&
         y.charAt(0) === '{' &&
         y.charAt(y.length - 1) === '}' &&
-        ((y = JSON.parse(y)), y.method && typeof t[y.method] == 'function')
+        ((y = JSON.parse(y)), y.method && typeof n[y.method] == 'function')
       )
-        if (nr.test(y.method) === !1) {
-          const D = t[y.method].apply(t, y.args);
-          pi('callback', { method: y.method, result: D });
+        if (ir.test(y.method) === !1) {
+          const D = n[y.method].apply(n, y.args);
+          Ei('callback', { method: y.method, result: D });
         } else console.warn('reveal.js: "' + y.method + '" is is blacklisted from the postMessage API');
     }
-    function Bi(b) {
+    function Hi(b) {
       g === 'running' &&
         /section/gi.test(b.target.nodeName) &&
         ((g = 'idle'),
         ye({ type: 'slidetransitionend', data: { indexh: a, indexv: i, previousSlide: r, currentSlide: s } }));
     }
-    function Gi(b) {
+    function zi(b) {
       const y = Ee(b.target, 'a[href^="#"]');
       if (y) {
         const D = y.getAttribute('href'),
           x = j.getIndicesFromHash(D);
-        x && (t.slide(x.h, x.v, x.f), b.preventDefault());
+        x && (n.slide(x.h, x.v, x.f), b.preventDefault());
       }
     }
-    function Yi(b) {
-      _t();
+    function $i(b) {
+      ut();
     }
-    function Hi(b) {
+    function Vi(b) {
       document.hidden === !1 &&
         document.activeElement !== document.body &&
         (typeof document.activeElement.blur == 'function' && document.activeElement.blur(), document.body.focus());
     }
-    function en(b) {
+    function nn(b) {
       (document.fullscreenElement || document.webkitFullscreenElement) === p.wrapper &&
         (b.stopImmediatePropagation(),
         setTimeout(() => {
-          t.layout(), t.focus.focus();
+          n.layout(), n.focus.focus();
         }, 1));
     }
-    function zi(b) {
+    function ji(b) {
       if (b.currentTarget && b.currentTarget.hasAttribute('href')) {
         let y = b.currentTarget.getAttribute('href');
-        y && (gi(y), b.preventDefault());
+        y && (hi(y), b.preventDefault());
       }
     }
-    function f_(b) {
-      On() && l.loop === !1 ? (Ae(0, 0), Zt()) : S ? Zt() : Xt();
+    function y_(b) {
+      In() && l.loop === !1 ? (Ae(0, 0), en()) : S ? en() : Jt();
     }
-    const $i = {
-      VERSION: Vn,
+    const qi = {
+      VERSION: Wn,
       initialize: ge,
       configure: ne,
-      destroy: Rt,
-      sync: Ci,
-      syncSlide: u_,
+      destroy: Nt,
+      sync: Ai,
+      syncSlide: g_,
       syncFragments: A.sync.bind(A),
       slide: Ae,
-      left: Jt,
-      right: Dn,
-      up: wn,
-      down: Mn,
-      prev: Ui,
-      next: Ln,
-      navigateLeft: Jt,
-      navigateRight: Dn,
-      navigateUp: wn,
-      navigateDown: Mn,
-      navigatePrev: Ui,
-      navigateNext: Ln,
+      left: tn,
+      right: Mn,
+      up: Ln,
+      down: kn,
+      prev: Gi,
+      next: Pn,
+      navigateLeft: tn,
+      navigateRight: Mn,
+      navigateUp: Ln,
+      navigateDown: kn,
+      navigatePrev: Gi,
+      navigateNext: Pn,
       navigateFragment: A.goto.bind(A),
       prevFragment: A.prev.bind(A),
       nextFragment: A.next.bind(A),
       on: Ke,
-      off: ui,
+      off: gi,
       addEventListener: Ke,
-      removeEventListener: ui,
-      layout: _t,
-      shuffle: An,
+      removeEventListener: gi,
+      layout: ut,
+      shuffle: xn,
       availableRoutes: Me,
       availableFragments: A.availableRoutes.bind(A),
-      toggleHelp: l_,
+      toggleHelp: __,
       toggleOverview: F.toggle.bind(F),
-      togglePause: Ri,
-      toggleAutoSlide: d_,
-      toggleJumpToSlide: c_,
-      isFirstSlide: vi,
-      isLastSlide: On,
-      isLastVerticalSlide: Ti,
-      isVerticalSlide: Ct,
-      isPaused: Ot,
-      isAutoSliding: __,
+      togglePause: Oi,
+      toggleAutoSlide: p_,
+      toggleJumpToSlide: u_,
+      isFirstSlide: Ri,
+      isLastSlide: In,
+      isLastVerticalSlide: Ci,
+      isVerticalSlide: Ot,
+      isPaused: It,
+      isAutoSliding: m_,
       isSpeakerNotes: U.isSpeakerNotesWindow.bind(U),
       isOverview: F.isActive.bind(F),
       isFocused: G.isFocused.bind(G),
@@ -5520,40 +5520,40 @@
       isReady: () => c,
       loadSlide: v.load.bind(v),
       unloadSlide: v.unload.bind(v),
-      showPreview: gi,
+      showPreview: hi,
       hidePreview: we,
       addEventListeners: de,
       removeEventListeners: fe,
       dispatchEvent: ye,
-      getState: Pi,
-      setState: h_,
-      getProgress: m_,
-      getIndices: xi,
-      getSlidesAttributes: E_,
-      getSlidePastCount: Ii,
-      getTotalSlides: Li,
-      getSlide: ki,
+      getState: Bi,
+      setState: T_,
+      getProgress: S_,
+      getIndices: Mi,
+      getSlidesAttributes: b_,
+      getSlidePastCount: wi,
+      getTotalSlides: Ui,
+      getSlide: Fi,
       getPreviousSlide: () => r,
       getCurrentSlide: () => s,
-      getSlideBackground: S_,
+      getSlideBackground: f_,
       getSlideNotes: U.getSlideNotes.bind(U),
-      getSlides: xn,
+      getSlides: wn,
       getHorizontalSlides: He,
-      getVerticalSlides: Di,
-      hasHorizontalSlides: wi,
-      hasVerticalSlides: Mi,
+      getVerticalSlides: Li,
+      hasHorizontalSlides: ki,
+      hasVerticalSlides: Pi,
       hasNavigatedHorizontally: () => _.hasNavigatedHorizontally,
       hasNavigatedVertically: () => _.hasNavigatedVertically,
       addKeyBinding: w.addKeyBinding.bind(w),
       removeKeyBinding: w.removeKeyBinding.bind(w),
       triggerKey: w.triggerKey.bind(w),
       registerKeyboardShortcut: w.registerKeyboardShortcut.bind(w),
-      getComputedSlideSize: hi,
+      getComputedSlideSize: Ti,
       getScale: () => u,
       getConfig: () => l,
-      getQueryHash: Pn,
+      getQueryHash: Bn,
       getSlidePath: j.getHash.bind(j),
-      getRevealElement: () => n,
+      getRevealElement: () => t,
       getSlidesElement: () => p.slides,
       getViewportElement: () => p.viewport,
       getBackgroundsElement: () => O.element,
@@ -5563,9 +5563,9 @@
       getPlugins: ee.getRegisteredPlugins.bind(ee)
     };
     return (
-      Ze(t, {
-        ...$i,
-        announceStatus: dt,
+      Ze(n, {
+        ...qi,
+        announceStatus: _t,
         getStatusText: M,
         print: W,
         focus: G,
@@ -5575,49 +5575,49 @@
         overview: F,
         fragments: A,
         slideContent: v,
-        slideNumber: R,
-        onUserInput: b_,
+        slideNumber: C,
+        onUserInput: v_,
         closeOverlay: we,
-        updateSlidesVisibility: In,
-        layoutSlideContents: Si,
-        transformSlides: Cn,
-        cueAutoSlide: ut,
-        cancelAutoSlide: Kt
+        updateSlidesVisibility: Dn,
+        layoutSlideContents: fi,
+        transformSlides: On,
+        cueAutoSlide: pt,
+        cancelAutoSlide: Zt
       }),
-      $i
+      qi
     );
   }
-  let Se = jn,
-    qn = [];
-  (Se.initialize = n => (
-    Object.assign(Se, new jn(document.querySelector('.reveal'), n)), qn.map(e => e(Se)), Se.initialize()
+  let Se = Qn,
+    Kn = [];
+  (Se.initialize = t => (
+    Object.assign(Se, new Qn(document.querySelector('.reveal'), t)), Kn.map(e => e(Se)), Se.initialize()
   )),
-    ['configure', 'on', 'off', 'addEventListener', 'removeEventListener', 'registerPlugin'].forEach(n => {
-      Se[n] = (...e) => {
-        qn.push(t => t[n].call(null, ...e));
+    ['configure', 'on', 'off', 'addEventListener', 'removeEventListener', 'registerPlugin'].forEach(t => {
+      Se[t] = (...e) => {
+        Kn.push(n => n[t].call(null, ...e));
       };
     }),
     (Se.isReady = () => !1),
-    (Se.VERSION = Vn);
+    (Se.VERSION = Wn);
   /**
    * @license
    * Copyright 2017 Google LLC
    * SPDX-License-Identifier: BSD-3-Clause
-   */ var on;
-  const Dt = window,
-    tt = Dt.trustedTypes,
-    Wn = tt ? tt.createPolicy('lit-html', { createHTML: n => n }) : void 0,
+   */ var cn;
+  const Mt = window,
+    tt = Mt.trustedTypes,
+    Xn = tt ? tt.createPolicy('lit-html', { createHTML: t => t }) : void 0,
     Pe = `lit$${(Math.random() + '').slice(9)}$`,
-    Qn = '?' + Pe,
-    hr = `<${Qn}>`,
+    Zn = '?' + Pe,
+    fr = `<${Zn}>`,
     nt = document,
-    pt = (n = '') => nt.createComment(n),
-    mt = n => n === null || (typeof n != 'object' && typeof n != 'function'),
-    Kn = Array.isArray,
-    br = n => Kn(n) || typeof (n == null ? void 0 : n[Symbol.iterator]) == 'function',
-    gt = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,
-    Xn = /-->/g,
-    Zn = />/g,
+    mt = (t = '') => nt.createComment(t),
+    gt = t => t === null || (typeof t != 'object' && typeof t != 'function'),
+    Jn = Array.isArray,
+    Tr = t => Jn(t) || typeof (t == null ? void 0 : t[Symbol.iterator]) == 'function',
+    Et = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,
+    ea = /-->/g,
+    ta = />/g,
     je = RegExp(
       `>|[ 	
 \f\r](?:([^\\s"'>=/]+)([ 	
@@ -5626,80 +5626,80 @@
 \f\r"'\`<>=]|("|')|))|$)`,
       'g'
     ),
-    Jn = /'/g,
-    ea = /"/g,
-    ta = /^(?:script|style|textarea|title)$/i,
-    fr = n => (e, ...t) => ({ _$litType$: n, strings: e, values: t }),
-    na = fr(1),
-    Et = Symbol.for('lit-noChange'),
+    na = /'/g,
+    aa = /"/g,
+    ia = /^(?:script|style|textarea|title)$/i,
+    vr = t => (e, ...n) => ({ _$litType$: t, strings: e, values: n }),
+    St = vr(1),
+    ht = Symbol.for('lit-noChange'),
     ue = Symbol.for('lit-nothing'),
-    aa = new WeakMap(),
-    Tr = (n, e, t) => {
+    ra = new WeakMap(),
+    sa = (t, e, n) => {
       var a, i;
-      const r = (a = t == null ? void 0 : t.renderBefore) !== null && a !== void 0 ? a : e;
+      const r = (a = n == null ? void 0 : n.renderBefore) !== null && a !== void 0 ? a : e;
       let s = r._$litPart$;
       if (s === void 0) {
-        const o = (i = t == null ? void 0 : t.renderBefore) !== null && i !== void 0 ? i : null;
-        r._$litPart$ = s = new ht(e.insertBefore(pt(), o), o, void 0, t != null ? t : {});
+        const o = (i = n == null ? void 0 : n.renderBefore) !== null && i !== void 0 ? i : null;
+        r._$litPart$ = s = new ft(e.insertBefore(mt(), o), o, void 0, n != null ? n : {});
       }
-      return s._$AI(n), s;
+      return s._$AI(t), s;
     },
     at = nt.createTreeWalker(nt, 129, null, !1),
-    vr = (n, e) => {
-      const t = n.length - 1,
+    yr = (t, e) => {
+      const n = t.length - 1,
         a = [];
       let i,
         r = e === 2 ? '<svg>' : '',
-        s = gt;
-      for (let l = 0; l < t; l++) {
-        const c = n[l];
+        s = Et;
+      for (let l = 0; l < n; l++) {
+        const c = t[l];
         let _,
           d,
           u = -1,
           m = 0;
         for (; m < c.length && ((s.lastIndex = m), (d = s.exec(c)), d !== null); )
           (m = s.lastIndex),
-            s === gt
+            s === Et
               ? d[1] === '!--'
-                ? (s = Xn)
+                ? (s = ea)
                 : d[1] !== void 0
-                ? (s = Zn)
+                ? (s = ta)
                 : d[2] !== void 0
-                ? (ta.test(d[2]) && (i = RegExp('</' + d[2], 'g')), (s = je))
+                ? (ia.test(d[2]) && (i = RegExp('</' + d[2], 'g')), (s = je))
                 : d[3] !== void 0 && (s = je)
               : s === je
               ? d[0] === '>'
-                ? ((s = i != null ? i : gt), (u = -1))
+                ? ((s = i != null ? i : Et), (u = -1))
                 : d[1] === void 0
                 ? (u = -2)
-                : ((u = s.lastIndex - d[2].length), (_ = d[1]), (s = d[3] === void 0 ? je : d[3] === '"' ? ea : Jn))
-              : s === ea || s === Jn
+                : ((u = s.lastIndex - d[2].length), (_ = d[1]), (s = d[3] === void 0 ? je : d[3] === '"' ? aa : na))
+              : s === aa || s === na
               ? (s = je)
-              : s === Xn || s === Zn
-              ? (s = gt)
+              : s === ea || s === ta
+              ? (s = Et)
               : ((s = je), (i = void 0));
-        const p = s === je && n[l + 1].startsWith('/>') ? ' ' : '';
+        const p = s === je && t[l + 1].startsWith('/>') ? ' ' : '';
         r +=
-          s === gt
-            ? c + hr
+          s === Et
+            ? c + fr
             : u >= 0
             ? (a.push(_), c.slice(0, u) + '$lit$' + c.slice(u) + Pe + p)
             : c + Pe + (u === -2 ? (a.push(void 0), l) : p);
       }
-      const o = r + (n[t] || '<?>') + (e === 2 ? '</svg>' : '');
-      if (!Array.isArray(n) || !n.hasOwnProperty('raw')) throw Error('invalid template strings array');
-      return [Wn !== void 0 ? Wn.createHTML(o) : o, a];
+      const o = r + (t[n] || '<?>') + (e === 2 ? '</svg>' : '');
+      if (!Array.isArray(t) || !t.hasOwnProperty('raw')) throw Error('invalid template strings array');
+      return [Xn !== void 0 ? Xn.createHTML(o) : o, a];
     };
-  class St {
-    constructor({ strings: e, _$litType$: t }, a) {
+  class bt {
+    constructor({ strings: e, _$litType$: n }, a) {
       let i;
       this.parts = [];
       let r = 0,
         s = 0;
       const o = e.length - 1,
         l = this.parts,
-        [c, _] = vr(e, t);
-      if (((this.el = St.createElement(c, a)), (at.currentNode = this.el.content), t === 2)) {
+        [c, _] = yr(e, n);
+      if (((this.el = bt.createElement(c, a)), (at.currentNode = this.el.content), n === 2)) {
         const d = this.el.content,
           u = d.firstChild;
         u.remove(), d.append(...u.childNodes);
@@ -5719,23 +5719,23 @@
                     index: r,
                     name: g[2],
                     strings: p,
-                    ctor: g[1] === '.' ? Rr : g[1] === '?' ? Nr : g[1] === '@' ? Or : wt
+                    ctor: g[1] === '.' ? Rr : g[1] === '?' ? Or : g[1] === '@' ? Ar : Lt
                   });
                 } else l.push({ type: 6, index: r });
               }
             for (const u of d) i.removeAttribute(u);
           }
-          if (ta.test(i.tagName)) {
+          if (ia.test(i.tagName)) {
             const d = i.textContent.split(Pe),
               u = d.length - 1;
             if (u > 0) {
               i.textContent = tt ? tt.emptyScript : '';
-              for (let m = 0; m < u; m++) i.append(d[m], pt()), at.nextNode(), l.push({ type: 2, index: ++r });
-              i.append(d[u], pt());
+              for (let m = 0; m < u; m++) i.append(d[m], mt()), at.nextNode(), l.push({ type: 2, index: ++r });
+              i.append(d[u], mt());
             }
           }
         } else if (i.nodeType === 8)
-          if (i.data === Qn) l.push({ type: 2, index: r });
+          if (i.data === Zn) l.push({ type: 2, index: r });
           else {
             let d = -1;
             for (; (d = i.data.indexOf(Pe, d + 1)) !== -1; ) l.push({ type: 7, index: r }), (d += Pe.length - 1);
@@ -5743,28 +5743,28 @@
         r++;
       }
     }
-    static createElement(e, t) {
+    static createElement(e, n) {
       const a = nt.createElement('template');
       return (a.innerHTML = e), a;
     }
   }
-  function it(n, e, t = n, a) {
+  function it(t, e, n = t, a) {
     var i, r, s, o;
-    if (e === Et) return e;
-    let l = a !== void 0 ? ((i = t._$Cl) === null || i === void 0 ? void 0 : i[a]) : t._$Cu;
-    const c = mt(e) ? void 0 : e._$litDirective$;
+    if (e === ht) return e;
+    let l = a !== void 0 ? ((i = n._$Cl) === null || i === void 0 ? void 0 : i[a]) : n._$Cu;
+    const c = gt(e) ? void 0 : e._$litDirective$;
     return (
       (l == null ? void 0 : l.constructor) !== c &&
         ((r = l == null ? void 0 : l._$AO) === null || r === void 0 || r.call(l, !1),
-        c === void 0 ? (l = void 0) : ((l = new c(n)), l._$AT(n, t, a)),
-        a !== void 0 ? (((s = (o = t)._$Cl) !== null && s !== void 0 ? s : (o._$Cl = []))[a] = l) : (t._$Cu = l)),
-      l !== void 0 && (e = it(n, l._$AS(n, e.values), l, a)),
+        c === void 0 ? (l = void 0) : ((l = new c(t)), l._$AT(t, n, a)),
+        a !== void 0 ? (((s = (o = n)._$Cl) !== null && s !== void 0 ? s : (o._$Cl = []))[a] = l) : (n._$Cu = l)),
+      l !== void 0 && (e = it(t, l._$AS(t, e.values), l, a)),
       e
     );
   }
-  class yr {
-    constructor(e, t) {
-      (this.v = []), (this._$AN = void 0), (this._$AD = e), (this._$AM = t);
+  class Cr {
+    constructor(e, n) {
+      (this.v = []), (this._$AN = void 0), (this._$AD = e), (this._$AM = n);
     }
     get parentNode() {
       return this._$AM.parentNode;
@@ -5773,12 +5773,12 @@
       return this._$AM._$AU;
     }
     p(e) {
-      var t;
+      var n;
       const {
           el: { content: a },
           parts: i
         } = this._$AD,
-        r = ((t = e == null ? void 0 : e.creationScope) !== null && t !== void 0 ? t : nt).importNode(a, !0);
+        r = ((n = e == null ? void 0 : e.creationScope) !== null && n !== void 0 ? n : nt).importNode(a, !0);
       at.currentNode = r;
       let s = at.nextNode(),
         o = 0,
@@ -5788,10 +5788,10 @@
         if (o === c.index) {
           let _;
           c.type === 2
-            ? (_ = new ht(s, s.nextSibling, this, e))
+            ? (_ = new ft(s, s.nextSibling, this, e))
             : c.type === 1
             ? (_ = new c.ctor(s, c.name, c.strings, this, e))
-            : c.type === 6 && (_ = new Ar(s, this, e)),
+            : c.type === 6 && (_ = new Ir(s, this, e)),
             this.v.push(_),
             (c = i[++l]);
         }
@@ -5800,31 +5800,31 @@
       return r;
     }
     m(e) {
-      let t = 0;
+      let n = 0;
       for (const a of this.v)
-        a !== void 0 && (a.strings !== void 0 ? (a._$AI(e, a, t), (t += a.strings.length - 2)) : a._$AI(e[t])), t++;
+        a !== void 0 && (a.strings !== void 0 ? (a._$AI(e, a, n), (n += a.strings.length - 2)) : a._$AI(e[n])), n++;
     }
   }
-  class ht {
-    constructor(e, t, a, i) {
+  class ft {
+    constructor(e, n, a, i) {
       var r;
       (this.type = 2),
         (this._$AH = ue),
         (this._$AN = void 0),
         (this._$AA = e),
-        (this._$AB = t),
+        (this._$AB = n),
         (this._$AM = a),
         (this.options = i),
         (this._$C_ = (r = i == null ? void 0 : i.isConnected) === null || r === void 0 || r);
     }
     get _$AU() {
-      var e, t;
-      return (t = (e = this._$AM) === null || e === void 0 ? void 0 : e._$AU) !== null && t !== void 0 ? t : this._$C_;
+      var e, n;
+      return (n = (e = this._$AM) === null || e === void 0 ? void 0 : e._$AU) !== null && n !== void 0 ? n : this._$C_;
     }
     get parentNode() {
       let e = this._$AA.parentNode;
-      const t = this._$AM;
-      return t !== void 0 && e.nodeType === 11 && (e = t.parentNode), e;
+      const n = this._$AM;
+      return n !== void 0 && e.nodeType === 11 && (e = n.parentNode), e;
     }
     get startNode() {
       return this._$AA;
@@ -5832,75 +5832,75 @@
     get endNode() {
       return this._$AB;
     }
-    _$AI(e, t = this) {
-      (e = it(this, e, t)),
-        mt(e)
+    _$AI(e, n = this) {
+      (e = it(this, e, n)),
+        gt(e)
           ? e === ue || e == null || e === ''
             ? (this._$AH !== ue && this._$AR(), (this._$AH = ue))
-            : e !== this._$AH && e !== Et && this.$(e)
+            : e !== this._$AH && e !== ht && this.$(e)
           : e._$litType$ !== void 0
           ? this.T(e)
           : e.nodeType !== void 0
           ? this.k(e)
-          : br(e)
+          : Tr(e)
           ? this.O(e)
           : this.$(e);
     }
-    S(e, t = this._$AB) {
-      return this._$AA.parentNode.insertBefore(e, t);
+    S(e, n = this._$AB) {
+      return this._$AA.parentNode.insertBefore(e, n);
     }
     k(e) {
       this._$AH !== e && (this._$AR(), (this._$AH = this.S(e)));
     }
     $(e) {
-      this._$AH !== ue && mt(this._$AH) ? (this._$AA.nextSibling.data = e) : this.k(nt.createTextNode(e)),
+      this._$AH !== ue && gt(this._$AH) ? (this._$AA.nextSibling.data = e) : this.k(nt.createTextNode(e)),
         (this._$AH = e);
     }
     T(e) {
-      var t;
+      var n;
       const { values: a, _$litType$: i } = e,
-        r = typeof i == 'number' ? this._$AC(e) : (i.el === void 0 && (i.el = St.createElement(i.h, this.options)), i);
-      if (((t = this._$AH) === null || t === void 0 ? void 0 : t._$AD) === r) this._$AH.m(a);
+        r = typeof i == 'number' ? this._$AC(e) : (i.el === void 0 && (i.el = bt.createElement(i.h, this.options)), i);
+      if (((n = this._$AH) === null || n === void 0 ? void 0 : n._$AD) === r) this._$AH.m(a);
       else {
-        const s = new yr(r, this),
+        const s = new Cr(r, this),
           o = s.p(this.options);
         s.m(a), this.k(o), (this._$AH = s);
       }
     }
     _$AC(e) {
-      let t = aa.get(e.strings);
-      return t === void 0 && aa.set(e.strings, (t = new St(e))), t;
+      let n = ra.get(e.strings);
+      return n === void 0 && ra.set(e.strings, (n = new bt(e))), n;
     }
     O(e) {
-      Kn(this._$AH) || ((this._$AH = []), this._$AR());
-      const t = this._$AH;
+      Jn(this._$AH) || ((this._$AH = []), this._$AR());
+      const n = this._$AH;
       let a,
         i = 0;
       for (const r of e)
-        i === t.length ? t.push((a = new ht(this.S(pt()), this.S(pt()), this, this.options))) : (a = t[i]),
+        i === n.length ? n.push((a = new ft(this.S(mt()), this.S(mt()), this, this.options))) : (a = n[i]),
           a._$AI(r),
           i++;
-      i < t.length && (this._$AR(a && a._$AB.nextSibling, i), (t.length = i));
+      i < n.length && (this._$AR(a && a._$AB.nextSibling, i), (n.length = i));
     }
-    _$AR(e = this._$AA.nextSibling, t) {
+    _$AR(e = this._$AA.nextSibling, n) {
       var a;
-      for ((a = this._$AP) === null || a === void 0 || a.call(this, !1, !0, t); e && e !== this._$AB; ) {
+      for ((a = this._$AP) === null || a === void 0 || a.call(this, !1, !0, n); e && e !== this._$AB; ) {
         const i = e.nextSibling;
         e.remove(), (e = i);
       }
     }
     setConnected(e) {
-      var t;
-      this._$AM === void 0 && ((this._$C_ = e), (t = this._$AP) === null || t === void 0 || t.call(this, e));
+      var n;
+      this._$AM === void 0 && ((this._$C_ = e), (n = this._$AP) === null || n === void 0 || n.call(this, e));
     }
   }
-  class wt {
-    constructor(e, t, a, i, r) {
+  class Lt {
+    constructor(e, n, a, i, r) {
       (this.type = 1),
         (this._$AH = ue),
         (this._$AN = void 0),
         (this.element = e),
-        (this.name = t),
+        (this.name = n),
         (this._$AM = i),
         (this.options = r),
         a.length > 2 || a[0] !== '' || a[1] !== ''
@@ -5913,17 +5913,17 @@
     get _$AU() {
       return this._$AM._$AU;
     }
-    _$AI(e, t = this, a, i) {
+    _$AI(e, n = this, a, i) {
       const r = this.strings;
       let s = !1;
-      if (r === void 0) (e = it(this, e, t, 0)), (s = !mt(e) || (e !== this._$AH && e !== Et)), s && (this._$AH = e);
+      if (r === void 0) (e = it(this, e, n, 0)), (s = !gt(e) || (e !== this._$AH && e !== ht)), s && (this._$AH = e);
       else {
         const o = e;
         let l, c;
         for (e = r[0], l = 0; l < r.length - 1; l++)
-          (c = it(this, o[a + l], t, l)),
-            c === Et && (c = this._$AH[l]),
-            s || (s = !mt(c) || c !== this._$AH[l]),
+          (c = it(this, o[a + l], n, l)),
+            c === ht && (c = this._$AH[l]),
+            s || (s = !gt(c) || c !== this._$AH[l]),
             c === ue ? (e = ue) : e !== ue && (e += (c != null ? c : '') + r[l + 1]),
             (this._$AH[l] = c);
       }
@@ -5933,7 +5933,7 @@
       e === ue ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, e != null ? e : '');
     }
   }
-  class Rr extends wt {
+  class Rr extends Lt {
     constructor() {
       super(...arguments), (this.type = 3);
     }
@@ -5941,22 +5941,22 @@
       this.element[this.name] = e === ue ? void 0 : e;
     }
   }
-  const Cr = tt ? tt.emptyScript : '';
-  class Nr extends wt {
+  const Nr = tt ? tt.emptyScript : '';
+  class Or extends Lt {
     constructor() {
       super(...arguments), (this.type = 4);
     }
     P(e) {
-      e && e !== ue ? this.element.setAttribute(this.name, Cr) : this.element.removeAttribute(this.name);
+      e && e !== ue ? this.element.setAttribute(this.name, Nr) : this.element.removeAttribute(this.name);
     }
   }
-  class Or extends wt {
-    constructor(e, t, a, i, r) {
-      super(e, t, a, i, r), (this.type = 5);
+  class Ar extends Lt {
+    constructor(e, n, a, i, r) {
+      super(e, n, a, i, r), (this.type = 5);
     }
-    _$AI(e, t = this) {
+    _$AI(e, n = this) {
       var a;
-      if ((e = (a = it(this, e, t, 0)) !== null && a !== void 0 ? a : ue) === Et) return;
+      if ((e = (a = it(this, e, n, 0)) !== null && a !== void 0 ? a : ue) === ht) return;
       const i = this._$AH,
         r = (e === ue && i !== ue) || e.capture !== i.capture || e.once !== i.once || e.passive !== i.passive,
         s = e !== ue && (i === ue || r);
@@ -5965,10 +5965,10 @@
         (this._$AH = e);
     }
     handleEvent(e) {
-      var t, a;
+      var n, a;
       typeof this._$AH == 'function'
         ? this._$AH.call(
-            (a = (t = this.options) === null || t === void 0 ? void 0 : t.host) !== null && a !== void 0
+            (a = (n = this.options) === null || n === void 0 ? void 0 : n.host) !== null && a !== void 0
               ? a
               : this.element,
             e
@@ -5976,9 +5976,9 @@
         : this._$AH.handleEvent(e);
     }
   }
-  class Ar {
-    constructor(e, t, a) {
-      (this.element = e), (this.type = 6), (this._$AN = void 0), (this._$AM = t), (this.options = a);
+  class Ir {
+    constructor(e, n, a) {
+      (this.element = e), (this.type = 6), (this._$AN = void 0), (this._$AM = n), (this.options = a);
     }
     get _$AU() {
       return this._$AM._$AU;
@@ -5987,30 +5987,30 @@
       it(this, e);
     }
   }
-  const ia = Dt.litHtmlPolyfillSupport;
-  ia == null || ia(St, ht),
-    ((on = Dt.litHtmlVersions) !== null && on !== void 0 ? on : (Dt.litHtmlVersions = [])).push('2.3.1');
-  var ln = { exports: {} };
-  function cn(n) {
+  const oa = Mt.litHtmlPolyfillSupport;
+  oa == null || oa(bt, ft),
+    ((cn = Mt.litHtmlVersions) !== null && cn !== void 0 ? cn : (Mt.litHtmlVersions = [])).push('2.3.1');
+  var dn = { exports: {} };
+  function _n(t) {
     return (
-      n instanceof Map
-        ? (n.clear = n.delete = n.set = function() {
+      t instanceof Map
+        ? (t.clear = t.delete = t.set = function() {
             throw new Error('map is read-only');
           })
-        : n instanceof Set &&
-          (n.add = n.clear = n.delete = function() {
+        : t instanceof Set &&
+          (t.add = t.clear = t.delete = function() {
             throw new Error('set is read-only');
           }),
-      Object.freeze(n),
-      Object.getOwnPropertyNames(n).forEach(function(e) {
-        var t = n[e];
-        typeof t != 'object' || Object.isFrozen(t) || cn(t);
+      Object.freeze(t),
+      Object.getOwnPropertyNames(t).forEach(function(e) {
+        var n = t[e];
+        typeof n != 'object' || Object.isFrozen(n) || _n(n);
       }),
-      n
+      t
     );
   }
-  (ln.exports = cn), (ln.exports.default = cn);
-  class ra {
+  (dn.exports = _n), (dn.exports.default = _n);
+  class la {
     constructor(e) {
       e.data === void 0 && (e.data = {}), (this.data = e.data), (this.isMatchIgnored = !1);
     }
@@ -6018,36 +6018,36 @@
       this.isMatchIgnored = !0;
     }
   }
-  function sa(n) {
-    return n
+  function ca(t) {
+    return t
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#x27;');
   }
-  function Ue(n, ...e) {
-    const t = Object.create(null);
-    for (const a in n) t[a] = n[a];
+  function Ue(t, ...e) {
+    const n = Object.create(null);
+    for (const a in t) n[a] = t[a];
     return (
       e.forEach(function(a) {
-        for (const i in a) t[i] = a[i];
+        for (const i in a) n[i] = a[i];
       }),
-      t
+      n
     );
   }
-  const oa = n => !!n.scope || (n.sublanguage && n.language);
-  class Ir {
-    constructor(e, t) {
-      (this.buffer = ''), (this.classPrefix = t.classPrefix), e.walk(this);
+  const da = t => !!t.scope || (t.sublanguage && t.language);
+  class xr {
+    constructor(e, n) {
+      (this.buffer = ''), (this.classPrefix = n.classPrefix), e.walk(this);
     }
     addText(e) {
-      this.buffer += sa(e);
+      this.buffer += ca(e);
     }
     openNode(e) {
-      if (!oa(e)) return;
-      let t = '';
-      (t = e.sublanguage
+      if (!da(e)) return;
+      let n = '';
+      (n = e.sublanguage
         ? `language-${e.language}`
         : ((a, { prefix: i }) => {
             if (a.includes('.')) {
@@ -6056,10 +6056,10 @@
             }
             return `${i}${a}`;
           })(e.scope, { prefix: this.classPrefix })),
-        this.span(t);
+        this.span(n);
     }
     closeNode(e) {
-      oa(e) && (this.buffer += '</span>');
+      da(e) && (this.buffer += '</span>');
     }
     value() {
       return this.buffer;
@@ -6068,13 +6068,13 @@
       this.buffer += `<span class="${e}">`;
     }
   }
-  const la = (n = {}) => {
+  const _a = (t = {}) => {
     const e = { children: [] };
-    return Object.assign(e, n), e;
+    return Object.assign(e, t), e;
   };
-  class dn {
+  class un {
     constructor() {
-      (this.rootNode = la()), (this.stack = [this.rootNode]);
+      (this.rootNode = _a()), (this.stack = [this.rootNode]);
     }
     get top() {
       return this.stack[this.stack.length - 1];
@@ -6086,8 +6086,8 @@
       this.top.children.push(e);
     }
     openNode(e) {
-      const t = la({ scope: e });
-      this.add(t), this.stack.push(t);
+      const n = _a({ scope: e });
+      this.add(n), this.stack.push(n);
     }
     closeNode() {
       if (this.stack.length > 1) return this.stack.pop();
@@ -6101,110 +6101,110 @@
     walk(e) {
       return this.constructor._walk(e, this.rootNode);
     }
-    static _walk(e, t) {
+    static _walk(e, n) {
       return (
-        typeof t == 'string'
-          ? e.addText(t)
-          : t.children && (e.openNode(t), t.children.forEach(a => this._walk(e, a)), e.closeNode(t)),
+        typeof n == 'string'
+          ? e.addText(n)
+          : n.children && (e.openNode(n), n.children.forEach(a => this._walk(e, a)), e.closeNode(n)),
         e
       );
     }
     static _collapse(e) {
       typeof e != 'string' &&
         e.children &&
-        (e.children.every(t => typeof t == 'string')
+        (e.children.every(n => typeof n == 'string')
           ? (e.children = [e.children.join('')])
-          : e.children.forEach(t => {
-              dn._collapse(t);
+          : e.children.forEach(n => {
+              un._collapse(n);
             }));
     }
   }
-  class xr extends dn {
+  class Dr extends un {
     constructor(e) {
       super(), (this.options = e);
     }
-    addKeyword(e, t) {
-      e !== '' && (this.openNode(t), this.addText(e), this.closeNode());
+    addKeyword(e, n) {
+      e !== '' && (this.openNode(n), this.addText(e), this.closeNode());
     }
     addText(e) {
       e !== '' && this.add(e);
     }
-    addSublanguage(e, t) {
+    addSublanguage(e, n) {
       const a = e.root;
-      (a.sublanguage = !0), (a.language = t), this.add(a);
+      (a.sublanguage = !0), (a.language = n), this.add(a);
     }
     toHTML() {
-      return new Ir(this, this.options).value();
+      return new xr(this, this.options).value();
     }
     finalize() {
       return !0;
     }
   }
-  function bt(n) {
-    return n ? (typeof n == 'string' ? n : n.source) : null;
+  function Tt(t) {
+    return t ? (typeof t == 'string' ? t : t.source) : null;
   }
-  function ca(n) {
-    return qe('(?=', n, ')');
+  function ua(t) {
+    return qe('(?=', t, ')');
   }
-  function Dr(n) {
-    return qe('(?:', n, ')*');
+  function wr(t) {
+    return qe('(?:', t, ')*');
   }
-  function wr(n) {
-    return qe('(?:', n, ')?');
+  function Mr(t) {
+    return qe('(?:', t, ')?');
   }
-  function qe(...n) {
-    return n.map(e => bt(e)).join('');
+  function qe(...t) {
+    return t.map(e => Tt(e)).join('');
   }
-  function _n(...n) {
+  function pn(...t) {
     return (
       '(' +
-      ((function(t) {
-        const a = t[t.length - 1];
-        return typeof a == 'object' && a.constructor === Object ? (t.splice(t.length - 1, 1), a) : {};
-      })(n).capture
+      ((function(n) {
+        const a = n[n.length - 1];
+        return typeof a == 'object' && a.constructor === Object ? (n.splice(n.length - 1, 1), a) : {};
+      })(t).capture
         ? ''
         : '?:') +
-      n.map(t => bt(t)).join('|') +
+      t.map(n => Tt(n)).join('|') +
       ')'
     );
   }
-  function da(n) {
-    return new RegExp(n.toString() + '|').exec('').length - 1;
+  function pa(t) {
+    return new RegExp(t.toString() + '|').exec('').length - 1;
   }
-  const Mr = /\[(?:[^\\\]]|\\.)*\]|\(\??|\\([1-9][0-9]*)|\\./;
-  function un(n, { joinWith: e }) {
-    let t = 0;
-    return n
+  const Lr = /\[(?:[^\\\]]|\\.)*\]|\(\??|\\([1-9][0-9]*)|\\./;
+  function mn(t, { joinWith: e }) {
+    let n = 0;
+    return t
       .map(a => {
-        t += 1;
-        const i = t;
-        let r = bt(a),
+        n += 1;
+        const i = n;
+        let r = Tt(a),
           s = '';
         for (; r.length > 0; ) {
-          const o = Mr.exec(r);
+          const o = Lr.exec(r);
           if (!o) {
             s += r;
             break;
           }
           (s += r.substring(0, o.index)),
             (r = r.substring(o.index + o[0].length)),
-            o[0][0] === '\\' && o[1] ? (s += '\\' + String(Number(o[1]) + i)) : ((s += o[0]), o[0] === '(' && t++);
+            o[0][0] === '\\' && o[1] ? (s += '\\' + String(Number(o[1]) + i)) : ((s += o[0]), o[0] === '(' && n++);
         }
         return s;
       })
       .map(a => `(${a})`)
       .join(e);
   }
-  const _a = '[a-zA-Z]\\w*',
-    pn = '[a-zA-Z_]\\w*',
-    ua = '\\b\\d+(\\.\\d+)?',
-    pa = '(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)',
-    ma = '\\b(0b[01]+)',
-    ft = { begin: '\\\\[\\s\\S]', relevance: 0 },
-    Lr = { scope: 'string', begin: "'", end: "'", illegal: '\\n', contains: [ft] },
-    kr = { scope: 'string', begin: '"', end: '"', illegal: '\\n', contains: [ft] },
-    Mt = function(n, e, t = {}) {
-      const a = Ue({ scope: 'comment', begin: n, end: e, contains: [] }, t);
+  const ma = '[a-zA-Z]\\w*',
+    gn = '[a-zA-Z_]\\w*',
+    ga = '\\b\\d+(\\.\\d+)?',
+    Ea = '(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)',
+    Sa = '\\b(0b[01]+)',
+    vt = { begin: '\\\\[\\s\\S]', relevance: 0 },
+    kr = { scope: 'string', begin: "'", end: "'", illegal: '\\n', contains: [vt] },
+    Pr = { scope: 'string', begin: '"', end: '"', illegal: '\\n', contains: [vt] },
+    kt = function(t, e, n = {}) {
+      const a = Ue({ scope: 'comment', begin: t, end: e, contains: [] }, n);
       a.contains.push({
         scope: 'doctag',
         begin: '[ ]*(?=(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):)',
@@ -6212,7 +6212,7 @@
         excludeBegin: !0,
         relevance: 0
       });
-      const i = _n(
+      const i = pn(
         'I',
         'a',
         'is',
@@ -6230,13 +6230,13 @@
       );
       return a.contains.push({ begin: qe(/[ ]+/, '(', i, /[.]?[:]?([.][ ]|[ ])/, '){3}') }), a;
     },
-    Pr = Mt('//', '$'),
-    Ur = Mt('/\\*', '\\*/'),
-    Fr = Mt('#', '$'),
-    Br = { scope: 'number', begin: ua, relevance: 0 },
-    Gr = { scope: 'number', begin: pa, relevance: 0 },
-    Yr = { scope: 'number', begin: ma, relevance: 0 },
-    Hr = {
+    Ur = kt('//', '$'),
+    Fr = kt('/\\*', '\\*/'),
+    Br = kt('#', '$'),
+    Gr = { scope: 'number', begin: ga, relevance: 0 },
+    Yr = { scope: 'number', begin: Ea, relevance: 0 },
+    Hr = { scope: 'number', begin: Sa, relevance: 0 },
+    zr = {
       begin: /(?=\/[^/\n]*\/)/,
       contains: [
         {
@@ -6244,119 +6244,119 @@
           begin: /\//,
           end: /\/[gimuy]*/,
           illegal: /\n/,
-          contains: [ft, { begin: /\[/, end: /\]/, relevance: 0, contains: [ft] }]
+          contains: [vt, { begin: /\[/, end: /\]/, relevance: 0, contains: [vt] }]
         }
       ]
     },
-    zr = { scope: 'title', begin: _a, relevance: 0 },
-    $r = { scope: 'title', begin: pn, relevance: 0 },
-    Vr = { begin: '\\.\\s*' + pn, relevance: 0 };
-  var Lt = Object.freeze({
+    $r = { scope: 'title', begin: ma, relevance: 0 },
+    Vr = { scope: 'title', begin: gn, relevance: 0 },
+    jr = { begin: '\\.\\s*' + gn, relevance: 0 };
+  var Pt = Object.freeze({
     __proto__: null,
     MATCH_NOTHING_RE: /\b\B/,
-    IDENT_RE: _a,
-    UNDERSCORE_IDENT_RE: pn,
-    NUMBER_RE: ua,
-    C_NUMBER_RE: pa,
-    BINARY_NUMBER_RE: ma,
+    IDENT_RE: ma,
+    UNDERSCORE_IDENT_RE: gn,
+    NUMBER_RE: ga,
+    C_NUMBER_RE: Ea,
+    BINARY_NUMBER_RE: Sa,
     RE_STARTERS_RE:
       '!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|>>|>|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~',
-    SHEBANG: (n = {}) => {
+    SHEBANG: (t = {}) => {
       const e = /^#![ ]*\//;
       return (
-        n.binary && (n.begin = qe(e, /.*\b/, n.binary, /\b.*/)),
+        t.binary && (t.begin = qe(e, /.*\b/, t.binary, /\b.*/)),
         Ue(
           {
             scope: 'meta',
             begin: e,
             end: /$/,
             relevance: 0,
-            'on:begin': (t, a) => {
-              t.index !== 0 && a.ignoreMatch();
+            'on:begin': (n, a) => {
+              n.index !== 0 && a.ignoreMatch();
             }
           },
-          n
+          t
         )
       );
     },
-    BACKSLASH_ESCAPE: ft,
-    APOS_STRING_MODE: Lr,
-    QUOTE_STRING_MODE: kr,
+    BACKSLASH_ESCAPE: vt,
+    APOS_STRING_MODE: kr,
+    QUOTE_STRING_MODE: Pr,
     PHRASAL_WORDS_MODE: {
       begin: /\b(a|an|the|are|I'm|isn't|don't|doesn't|won't|but|just|should|pretty|simply|enough|gonna|going|wtf|so|such|will|you|your|they|like|more)\b/
     },
-    COMMENT: Mt,
-    C_LINE_COMMENT_MODE: Pr,
-    C_BLOCK_COMMENT_MODE: Ur,
-    HASH_COMMENT_MODE: Fr,
-    NUMBER_MODE: Br,
-    C_NUMBER_MODE: Gr,
-    BINARY_NUMBER_MODE: Yr,
-    REGEXP_MODE: Hr,
-    TITLE_MODE: zr,
-    UNDERSCORE_TITLE_MODE: $r,
-    METHOD_GUARD: Vr,
-    END_SAME_AS_BEGIN: function(n) {
-      return Object.assign(n, {
-        'on:begin': (e, t) => {
-          t.data._beginMatch = e[1];
+    COMMENT: kt,
+    C_LINE_COMMENT_MODE: Ur,
+    C_BLOCK_COMMENT_MODE: Fr,
+    HASH_COMMENT_MODE: Br,
+    NUMBER_MODE: Gr,
+    C_NUMBER_MODE: Yr,
+    BINARY_NUMBER_MODE: Hr,
+    REGEXP_MODE: zr,
+    TITLE_MODE: $r,
+    UNDERSCORE_TITLE_MODE: Vr,
+    METHOD_GUARD: jr,
+    END_SAME_AS_BEGIN: function(t) {
+      return Object.assign(t, {
+        'on:begin': (e, n) => {
+          n.data._beginMatch = e[1];
         },
-        'on:end': (e, t) => {
-          t.data._beginMatch !== e[1] && t.ignoreMatch();
+        'on:end': (e, n) => {
+          n.data._beginMatch !== e[1] && n.ignoreMatch();
         }
       });
     }
   });
-  function jr(n, e) {
-    n.input[n.index - 1] === '.' && e.ignoreMatch();
+  function qr(t, e) {
+    t.input[t.index - 1] === '.' && e.ignoreMatch();
   }
-  function qr(n, e) {
-    n.className !== void 0 && ((n.scope = n.className), delete n.className);
+  function Wr(t, e) {
+    t.className !== void 0 && ((t.scope = t.className), delete t.className);
   }
-  function Wr(n, e) {
+  function Qr(t, e) {
     e &&
-      n.beginKeywords &&
-      ((n.begin = '\\b(' + n.beginKeywords.split(' ').join('|') + ')(?!\\.)(?=\\b|\\s)'),
-      (n.__beforeBegin = jr),
-      (n.keywords = n.keywords || n.beginKeywords),
-      delete n.beginKeywords,
-      n.relevance === void 0 && (n.relevance = 0));
+      t.beginKeywords &&
+      ((t.begin = '\\b(' + t.beginKeywords.split(' ').join('|') + ')(?!\\.)(?=\\b|\\s)'),
+      (t.__beforeBegin = qr),
+      (t.keywords = t.keywords || t.beginKeywords),
+      delete t.beginKeywords,
+      t.relevance === void 0 && (t.relevance = 0));
   }
-  function Qr(n, e) {
-    Array.isArray(n.illegal) && (n.illegal = _n(...n.illegal));
+  function Kr(t, e) {
+    Array.isArray(t.illegal) && (t.illegal = pn(...t.illegal));
   }
-  function Kr(n, e) {
-    if (n.match) {
-      if (n.begin || n.end) throw new Error('begin & end are not supported with match');
-      (n.begin = n.match), delete n.match;
+  function Xr(t, e) {
+    if (t.match) {
+      if (t.begin || t.end) throw new Error('begin & end are not supported with match');
+      (t.begin = t.match), delete t.match;
     }
   }
-  function Xr(n, e) {
-    n.relevance === void 0 && (n.relevance = 1);
+  function Zr(t, e) {
+    t.relevance === void 0 && (t.relevance = 1);
   }
-  const Zr = (n, e) => {
-      if (!n.beforeMatch) return;
-      if (n.starts) throw new Error('beforeMatch cannot be used with starts');
-      const t = Object.assign({}, n);
-      Object.keys(n).forEach(a => {
-        delete n[a];
+  const Jr = (t, e) => {
+      if (!t.beforeMatch) return;
+      if (t.starts) throw new Error('beforeMatch cannot be used with starts');
+      const n = Object.assign({}, t);
+      Object.keys(t).forEach(a => {
+        delete t[a];
       }),
-        (n.keywords = t.keywords),
-        (n.begin = qe(t.beforeMatch, ca(t.begin))),
-        (n.starts = { relevance: 0, contains: [Object.assign(t, { endsParent: !0 })] }),
-        (n.relevance = 0),
-        delete t.beforeMatch;
+        (t.keywords = n.keywords),
+        (t.begin = qe(n.beforeMatch, ua(n.begin))),
+        (t.starts = { relevance: 0, contains: [Object.assign(n, { endsParent: !0 })] }),
+        (t.relevance = 0),
+        delete n.beforeMatch;
     },
-    Jr = ['of', 'and', 'for', 'in', 'not', 'or', 'if', 'then', 'parent', 'list', 'value'];
-  function ga(n, e, t = 'keyword') {
+    es = ['of', 'and', 'for', 'in', 'not', 'or', 'if', 'then', 'parent', 'list', 'value'];
+  function ha(t, e, n = 'keyword') {
     const a = Object.create(null);
     return (
-      typeof n == 'string'
-        ? i(t, n.split(' '))
-        : Array.isArray(n)
-        ? i(t, n)
-        : Object.keys(n).forEach(function(r) {
-            Object.assign(a, ga(n[r], e, r));
+      typeof t == 'string'
+        ? i(n, t.split(' '))
+        : Array.isArray(t)
+        ? i(n, t)
+        : Object.keys(t).forEach(function(r) {
+            Object.assign(a, ha(t[r], e, r));
           }),
       a
     );
@@ -6364,66 +6364,66 @@
       e && (s = s.map(o => o.toLowerCase())),
         s.forEach(function(o) {
           const l = o.split('|');
-          a[l[0]] = [r, es(l[0], l[1])];
+          a[l[0]] = [r, ts(l[0], l[1])];
         });
     }
   }
-  function es(n, e) {
+  function ts(t, e) {
     return e
       ? Number(e)
-      : (function(t) {
-          return Jr.includes(t.toLowerCase());
-        })(n)
+      : (function(n) {
+          return es.includes(n.toLowerCase());
+        })(t)
       ? 0
       : 1;
   }
-  const Ea = {},
-    We = n => {
-      console.error(n);
+  const ba = {},
+    We = t => {
+      console.error(t);
     },
-    Sa = (n, ...e) => {
-      console.log(`WARN: ${n}`, ...e);
+    fa = (t, ...e) => {
+      console.log(`WARN: ${t}`, ...e);
     },
-    rt = (n, e) => {
-      Ea[`${n}/${e}`] || (console.log(`Deprecated as of ${n}. ${e}`), (Ea[`${n}/${e}`] = !0));
+    rt = (t, e) => {
+      ba[`${t}/${e}`] || (console.log(`Deprecated as of ${t}. ${e}`), (ba[`${t}/${e}`] = !0));
     },
-    kt = new Error();
-  function ha(n, e, { key: t }) {
+    Ut = new Error();
+  function Ta(t, e, { key: n }) {
     let a = 0;
-    const i = n[t],
+    const i = t[n],
       r = {},
       s = {};
-    for (let o = 1; o <= e.length; o++) (s[o + a] = i[o]), (r[o + a] = !0), (a += da(e[o - 1]));
-    (n[t] = s), (n[t]._emit = r), (n[t]._multi = !0);
+    for (let o = 1; o <= e.length; o++) (s[o + a] = i[o]), (r[o + a] = !0), (a += pa(e[o - 1]));
+    (t[n] = s), (t[n]._emit = r), (t[n]._multi = !0);
   }
-  function ts(n) {
+  function ns(t) {
     (function(e) {
       e.scope && typeof e.scope == 'object' && e.scope !== null && ((e.beginScope = e.scope), delete e.scope);
-    })(n),
-      typeof n.beginScope == 'string' && (n.beginScope = { _wrap: n.beginScope }),
-      typeof n.endScope == 'string' && (n.endScope = { _wrap: n.endScope }),
+    })(t),
+      typeof t.beginScope == 'string' && (t.beginScope = { _wrap: t.beginScope }),
+      typeof t.endScope == 'string' && (t.endScope = { _wrap: t.endScope }),
       (function(e) {
         if (Array.isArray(e.begin)) {
           if (e.skip || e.excludeBegin || e.returnBegin)
-            throw (We('skip, excludeBegin, returnBegin not compatible with beginScope: {}'), kt);
-          if (typeof e.beginScope != 'object' || e.beginScope === null) throw (We('beginScope must be object'), kt);
-          ha(e, e.begin, { key: 'beginScope' }), (e.begin = un(e.begin, { joinWith: '' }));
+            throw (We('skip, excludeBegin, returnBegin not compatible with beginScope: {}'), Ut);
+          if (typeof e.beginScope != 'object' || e.beginScope === null) throw (We('beginScope must be object'), Ut);
+          Ta(e, e.begin, { key: 'beginScope' }), (e.begin = mn(e.begin, { joinWith: '' }));
         }
-      })(n),
+      })(t),
       (function(e) {
         if (Array.isArray(e.end)) {
           if (e.skip || e.excludeEnd || e.returnEnd)
-            throw (We('skip, excludeEnd, returnEnd not compatible with endScope: {}'), kt);
-          if (typeof e.endScope != 'object' || e.endScope === null) throw (We('endScope must be object'), kt);
-          ha(e, e.end, { key: 'endScope' }), (e.end = un(e.end, { joinWith: '' }));
+            throw (We('skip, excludeEnd, returnEnd not compatible with endScope: {}'), Ut);
+          if (typeof e.endScope != 'object' || e.endScope === null) throw (We('endScope must be object'), Ut);
+          Ta(e, e.end, { key: 'endScope' }), (e.end = mn(e.end, { joinWith: '' }));
         }
-      })(n);
+      })(t);
   }
-  function ns(n) {
+  function as(t) {
     function e(i, r) {
-      return new RegExp(bt(i), 'm' + (n.case_insensitive ? 'i' : '') + (n.unicodeRegex ? 'u' : '') + (r ? 'g' : ''));
+      return new RegExp(Tt(i), 'm' + (t.case_insensitive ? 'i' : '') + (t.unicodeRegex ? 'u' : '') + (r ? 'g' : ''));
     }
-    class t {
+    class n {
       constructor() {
         (this.matchIndexes = {}), (this.regexes = []), (this.matchAt = 1), (this.position = 0);
       }
@@ -6431,12 +6431,12 @@
         (s.position = this.position++),
           (this.matchIndexes[this.matchAt] = s),
           this.regexes.push([s, r]),
-          (this.matchAt += da(r) + 1);
+          (this.matchAt += pa(r) + 1);
       }
       compile() {
         this.regexes.length === 0 && (this.exec = () => null);
         const r = this.regexes.map(s => s[1]);
-        (this.matcherRe = e(un(r, { joinWith: '|' }), !0)), (this.lastIndex = 0);
+        (this.matcherRe = e(mn(r, { joinWith: '|' }), !0)), (this.lastIndex = 0);
       }
       exec(r) {
         this.matcherRe.lastIndex = this.lastIndex;
@@ -6453,7 +6453,7 @@
       }
       getMatcher(r) {
         if (this.multiRegexes[r]) return this.multiRegexes[r];
-        const s = new t();
+        const s = new n();
         return this.rules.slice(r).forEach(([o, l]) => s.addRule(o, l)), s.compile(), (this.multiRegexes[r] = s), s;
       }
       resumingScanAtSamePosition() {
@@ -6476,17 +6476,17 @@
         return o && ((this.regexIndex += o.position + 1), this.regexIndex === this.count && this.considerAll()), o;
       }
     }
-    if ((n.compilerExtensions || (n.compilerExtensions = []), n.contains && n.contains.includes('self')))
+    if ((t.compilerExtensions || (t.compilerExtensions = []), t.contains && t.contains.includes('self')))
       throw new Error('ERR: contains `self` is not supported at the top-level of a language.  See documentation.');
     return (
-      (n.classNameAliases = Ue(n.classNameAliases || {})),
+      (t.classNameAliases = Ue(t.classNameAliases || {})),
       (function i(r, s) {
         const o = r;
         if (r.isCompiled) return o;
-        [qr, Kr, ts, Zr].forEach(c => c(r, s)),
-          n.compilerExtensions.forEach(c => c(r, s)),
+        [Wr, Xr, ns, Jr].forEach(c => c(r, s)),
+          t.compilerExtensions.forEach(c => c(r, s)),
           (r.__beforeBegin = null),
-          [Wr, Qr, Xr].forEach(c => c(r, s)),
+          [Qr, Kr, Zr].forEach(c => c(r, s)),
           (r.isCompiled = !0);
         let l = null;
         return (
@@ -6494,14 +6494,14 @@
             r.keywords.$pattern &&
             ((r.keywords = Object.assign({}, r.keywords)), (l = r.keywords.$pattern), delete r.keywords.$pattern),
           (l = l || /\w+/),
-          r.keywords && (r.keywords = ga(r.keywords, n.case_insensitive)),
+          r.keywords && (r.keywords = ha(r.keywords, t.case_insensitive)),
           (o.keywordPatternRe = e(l, !0)),
           s &&
             (r.begin || (r.begin = /\B|\b/),
             (o.beginRe = e(o.begin)),
             r.end || r.endsWithParent || (r.end = /\B|\b/),
             r.end && (o.endRe = e(o.end)),
-            (o.terminatorEnd = bt(o.end) || ''),
+            (o.terminatorEnd = Tt(o.end) || ''),
             r.endsWithParent && s.terminatorEnd && (o.terminatorEnd += (r.end ? '|' : '') + s.terminatorEnd)),
           r.illegal && (o.illegalRe = e(r.illegal)),
           r.contains || (r.contains = []),
@@ -6516,7 +6516,7 @@
                     })),
                   _.cachedVariants
                     ? _.cachedVariants
-                    : ba(_)
+                    : va(_)
                     ? Ue(_, { starts: _.starts ? Ue(_.starts) : null })
                     : Object.isFrozen(_)
                     ? Ue(_)
@@ -6540,23 +6540,23 @@
           })(o)),
           o
         );
-      })(n)
+      })(t)
     );
   }
-  function ba(n) {
-    return !!n && (n.endsWithParent || ba(n.starts));
+  function va(t) {
+    return !!t && (t.endsWithParent || va(t.starts));
   }
-  class as extends Error {
-    constructor(e, t) {
-      super(e), (this.name = 'HTMLInjectionError'), (this.html = t);
+  class is extends Error {
+    constructor(e, n) {
+      super(e), (this.name = 'HTMLInjectionError'), (this.html = n);
     }
   }
-  const mn = sa,
-    fa = Ue,
-    Ta = Symbol('nomatch');
-  var Tt = (function(n) {
+  const En = ca,
+    ya = Ue,
+    Ca = Symbol('nomatch');
+  var yt = (function(t) {
       const e = Object.create(null),
-        t = Object.create(null),
+        n = Object.create(null),
         a = [];
       let i = !0;
       const r = "Could not find the language '{}', did you forget to load/include a language module?",
@@ -6569,16 +6569,16 @@
         classPrefix: 'hljs-',
         cssSelector: 'pre code',
         languages: null,
-        __emitter: xr
+        __emitter: Dr
       };
       function l(S) {
         return o.noHighlightRe.test(S);
       }
-      function c(S, v, R) {
-        let C = '',
+      function c(S, v, C) {
+        let R = '',
           I = '';
         typeof v == 'object'
-          ? ((C = S), (R = v.ignoreIllegals), (I = v.language))
+          ? ((R = S), (C = v.ignoreIllegals), (I = v.language))
           : (rt('10.7.0', 'highlight(lang, code, ...args) has been deprecated.'),
             rt(
               '10.7.0',
@@ -6586,14 +6586,14 @@
 https://github.com/highlightjs/highlight.js/issues/2277`
             ),
             (I = S),
-            (C = v)),
-          R === void 0 && (R = !0);
-        const O = { code: C, language: I };
+            (R = v)),
+          C === void 0 && (C = !0);
+        const O = { code: R, language: I };
         T('before:highlight', O);
-        const A = O.result ? O.result : _(O.language, O.code, R);
+        const A = O.result ? O.result : _(O.language, O.code, C);
         return (A.code = O.code), T('after:highlight', A), A;
       }
-      function _(S, v, R, C) {
+      function _(S, v, C, R) {
         const I = Object.create(null);
         function O() {
           if (!U.keywords) return void se.addText(X);
@@ -6606,8 +6606,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             const ne = W.case_insensitive ? $[0].toLowerCase() : $[0],
               de = ((J = ne), U.keywords[J]);
             if (de) {
-              const [fe, Rt] = de;
-              if ((se.addText(te), (te = ''), (I[ne] = (I[ne] || 0) + 1), I[ne] <= 7 && (he += Rt), fe.startsWith('_')))
+              const [fe, Nt] = de;
+              if ((se.addText(te), (te = ''), (I[ne] = (I[ne] || 0) + 1), I[ne] <= 7 && (he += Nt), fe.startsWith('_')))
                 te += $[0];
               else {
                 const Ke = W.classNameAliases[fe] || fe;
@@ -6664,7 +6664,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           })(M.endRe, te);
           if (J) {
             if (M['on:end']) {
-              const ne = new ra(M);
+              const ne = new la(M);
               M['on:end']($, ne), ne.isMatchIgnored && (J = !1);
             }
             if (J) {
@@ -6675,13 +6675,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           if (M.endsWithParent) return j(M.parent, $, te);
         }
         function N(M) {
-          return U.matcher.regexIndex === 0 ? ((X += M[0]), 1) : ((dt = !0), 0);
+          return U.matcher.regexIndex === 0 ? ((X += M[0]), 1) : ((_t = !0), 0);
         }
         function B(M) {
           const $ = M[0],
             te = v.substring(M.index),
             J = j(U, M, te);
-          if (!J) return Ta;
+          if (!J) return Ca;
           const ne = U;
           U.endScope && U.endScope._wrap
             ? (A(), se.addKeyword($, U.endScope._wrap))
@@ -6709,9 +6709,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             return (function(J) {
               const ne = J[0],
                 de = J.rule,
-                fe = new ra(de),
-                Rt = [de.__beforeBegin, de['on:begin']];
-              for (const Ke of Rt) if (Ke && (Ke(J, fe), fe.isMatchIgnored)) return N(ne);
+                fe = new la(de),
+                Nt = [de.__beforeBegin, de['on:begin']];
+              for (const Ke of Nt) if (Ke && (Ke(J, fe), fe.isMatchIgnored)) return N(ne);
               return (
                 de.skip
                   ? (X += ne)
@@ -6720,24 +6720,24 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 de.returnBegin ? 0 : ne.length
               );
             })($);
-          if ($.type === 'illegal' && !R) {
+          if ($.type === 'illegal' && !C) {
             const J = new Error('Illegal lexeme "' + te + '" for mode "' + (U.scope || '<unnamed>') + '"');
             throw ((J.mode = U), J);
           }
           if ($.type === 'end') {
             const J = B($);
-            if (J !== Ta) return J;
+            if (J !== Ca) return J;
           }
           if ($.type === 'illegal' && te === '') return 1;
-          if (yt > 1e5 && yt > 3 * $.index)
+          if (Rt > 1e5 && Rt > 3 * $.index)
             throw new Error('potential infinite loop, way more iterations than matches');
           return (X += te), te.length;
         }
         const W = g(S);
         if (!W) throw (We(r.replace('{}', S)), new Error('Unknown language: "' + S + '"'));
-        const G = ns(W);
+        const G = as(W);
         let K = '',
-          U = C || G;
+          U = R || G;
         const ge = {},
           se = new o.__emitter(o);
         (function() {
@@ -6748,11 +6748,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         let X = '',
           he = 0,
           ve = 0,
-          yt = 0,
-          dt = !1;
+          Rt = 0,
+          _t = !1;
         try {
           for (U.matcher.considerAll(); ; ) {
-            yt++, dt ? (dt = !1) : U.matcher.considerAll(), (U.matcher.lastIndex = ve);
+            Rt++, _t ? (_t = !1) : U.matcher.considerAll(), (U.matcher.lastIndex = ve);
             const M = U.matcher.exec(v);
             if (!M) break;
             const $ = ee(v.substring(ve, M.index), M);
@@ -6769,7 +6769,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           if (M.message && M.message.includes('Illegal'))
             return {
               language: S,
-              value: mn(v),
+              value: En(v),
               illegal: !0,
               relevance: 0,
               _illegalBy: {
@@ -6781,22 +6781,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               },
               _emitter: se
             };
-          if (i) return { language: S, value: mn(v), illegal: !1, relevance: 0, errorRaised: M, _emitter: se, _top: U };
+          if (i) return { language: S, value: En(v), illegal: !1, relevance: 0, errorRaised: M, _emitter: se, _top: U };
           throw M;
         }
       }
       function d(S, v) {
         v = v || o.languages || Object.keys(e);
-        const R = (function(w) {
-            const j = { value: mn(w), illegal: !1, relevance: 0, _top: s, _emitter: new o.__emitter(o) };
+        const C = (function(w) {
+            const j = { value: En(w), illegal: !1, relevance: 0, _top: s, _emitter: new o.__emitter(o) };
             return j._emitter.addText(w), j;
           })(S),
-          C = v
+          R = v
             .filter(g)
             .filter(h)
             .map(w => _(w, S, !1));
-        C.unshift(R);
-        const I = C.sort((w, j) => {
+        R.unshift(C);
+        const I = R.sort((w, j) => {
             if (w.relevance !== j.relevance) return j.relevance - w.relevance;
             if (w.language && j.language) {
               if (g(w.language).supersetOf === j.language) return 1;
@@ -6810,22 +6810,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       }
       function u(S) {
         let v = null;
-        const R = (function(O) {
+        const C = (function(O) {
           let A = O.className + ' ';
           A += O.parentNode ? O.parentNode.className : '';
           const F = o.languageDetectRe.exec(A);
           if (F) {
             const w = g(F[1]);
             return (
-              w || (Sa(r.replace('{}', F[1])), Sa('Falling back to no-highlight mode for this block.', O)),
+              w || (fa(r.replace('{}', F[1])), fa('Falling back to no-highlight mode for this block.', O)),
               w ? F[1] : 'no-highlight'
             );
           }
           return A.split(/\s+/).find(w => l(w) || g(w));
         })(S);
-        if (l(R)) return;
+        if (l(C)) return;
         if (
-          (T('before:highlightElement', { el: S, language: R }),
+          (T('before:highlightElement', { el: S, language: C }),
           S.children.length > 0 &&
             (o.ignoreUnescapedHTML ||
               (console.warn(
@@ -6836,18 +6836,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               console.warn(S)),
             o.throwUnescapedHTML))
         )
-          throw new as('One of your code blocks includes unescaped HTML.', S.innerHTML);
+          throw new is('One of your code blocks includes unescaped HTML.', S.innerHTML);
         v = S;
-        const C = v.textContent,
-          I = R ? c(C, { language: R, ignoreIllegals: !0 }) : d(C);
+        const R = v.textContent,
+          I = C ? c(R, { language: C, ignoreIllegals: !0 }) : d(R);
         (S.innerHTML = I.value),
           (function(O, A, F) {
-            const w = (A && t[A]) || F;
+            const w = (A && n[A]) || F;
             O.classList.add('hljs'), O.classList.add(`language-${w}`);
-          })(S, R, I.language),
+          })(S, C, I.language),
           (S.result = { language: I.language, re: I.relevance, relevance: I.relevance }),
           I.secondBest && (S.secondBest = { language: I.secondBest.language, relevance: I.secondBest.relevance }),
-          T('after:highlightElement', { el: S, result: I, text: C });
+          T('after:highlightElement', { el: S, result: I, text: R });
       }
       let m = !1;
       function p() {
@@ -6855,12 +6855,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         document.querySelectorAll(o.cssSelector).forEach(u);
       }
       function g(S) {
-        return (S = (S || '').toLowerCase()), e[S] || e[t[S]];
+        return (S = (S || '').toLowerCase()), e[S] || e[n[S]];
       }
       function E(S, { languageName: v }) {
         typeof S == 'string' && (S = [S]),
-          S.forEach(R => {
-            t[R.toLowerCase()] = v;
+          S.forEach(C => {
+            n[C.toLowerCase()] = v;
           });
       }
       function h(S) {
@@ -6868,9 +6868,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         return v && !v.disableAutodetect;
       }
       function T(S, v) {
-        const R = S;
-        a.forEach(function(C) {
-          C[R] && C[R](v);
+        const C = S;
+        a.forEach(function(R) {
+          R[C] && R[C](v);
         });
       }
       typeof window < 'u' &&
@@ -6882,7 +6882,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           !1
         ),
-        Object.assign(n, {
+        Object.assign(t, {
           highlight: c,
           highlightAuto: d,
           highlightAll: p,
@@ -6895,7 +6895,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             );
           },
           configure: function(S) {
-            o = fa(o, S);
+            o = ya(o, S);
           },
           initHighlighting: () => {
             p(), rt('10.6.0', 'initHighlighting() deprecated.  Use highlightAll() now.');
@@ -6904,21 +6904,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             p(), rt('10.6.0', 'initHighlightingOnLoad() deprecated.  Use highlightAll() now.');
           },
           registerLanguage: function(S, v) {
-            let R = null;
+            let C = null;
             try {
-              R = v(n);
-            } catch (C) {
-              if ((We("Language definition for '{}' could not be registered.".replace('{}', S)), !i)) throw C;
-              We(C), (R = s);
+              C = v(t);
+            } catch (R) {
+              if ((We("Language definition for '{}' could not be registered.".replace('{}', S)), !i)) throw R;
+              We(R), (C = s);
             }
-            R.name || (R.name = S),
-              (e[S] = R),
-              (R.rawDefinition = v.bind(null, n)),
-              R.aliases && E(R.aliases, { languageName: S });
+            C.name || (C.name = S),
+              (e[S] = C),
+              (C.rawDefinition = v.bind(null, t)),
+              C.aliases && E(C.aliases, { languageName: S });
           },
           unregisterLanguage: function(S) {
             delete e[S];
-            for (const v of Object.keys(t)) t[v] === S && delete t[v];
+            for (const v of Object.keys(n)) n[v] === S && delete n[v];
           },
           listLanguages: function() {
             return Object.keys(e);
@@ -6926,43 +6926,43 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           getLanguage: g,
           registerAliases: E,
           autoDetection: h,
-          inherit: fa,
+          inherit: ya,
           addPlugin: function(S) {
             (function(v) {
               v['before:highlightBlock'] &&
                 !v['before:highlightElement'] &&
-                (v['before:highlightElement'] = R => {
-                  v['before:highlightBlock'](Object.assign({ block: R.el }, R));
+                (v['before:highlightElement'] = C => {
+                  v['before:highlightBlock'](Object.assign({ block: C.el }, C));
                 }),
                 v['after:highlightBlock'] &&
                   !v['after:highlightElement'] &&
-                  (v['after:highlightElement'] = R => {
-                    v['after:highlightBlock'](Object.assign({ block: R.el }, R));
+                  (v['after:highlightElement'] = C => {
+                    v['after:highlightBlock'](Object.assign({ block: C.el }, C));
                   });
             })(S),
               a.push(S);
           }
         }),
-        (n.debugMode = function() {
+        (t.debugMode = function() {
           i = !1;
         }),
-        (n.safeMode = function() {
+        (t.safeMode = function() {
           i = !0;
         }),
-        (n.versionString = '11.7.0'),
-        (n.regex = { concat: qe, lookahead: ca, either: _n, optional: wr, anyNumberOfTimes: Dr });
-      for (const S in Lt) typeof Lt[S] == 'object' && ln.exports(Lt[S]);
-      return Object.assign(n, Lt), n;
+        (t.versionString = '11.7.0'),
+        (t.regex = { concat: qe, lookahead: ua, either: pn, optional: Mr, anyNumberOfTimes: wr });
+      for (const S in Pt) typeof Pt[S] == 'object' && dn.exports(Pt[S]);
+      return Object.assign(t, Pt), t;
     })({}),
-    is = Tt;
-  (Tt.HighlightJS = Tt), (Tt.default = Tt);
-  var rs = function(n) {
+    rs = yt;
+  (yt.HighlightJS = yt), (yt.default = yt);
+  var ss = function(t) {
       const e = '[A-Za-z\u0410-\u042F\u0430-\u044F\u0451\u0401_][A-Za-z\u0410-\u042F\u0430-\u044F\u0451\u0401_0-9]+',
-        t =
+        n =
           '\u0434\u0430\u043B\u0435\u0435 \u0432\u043E\u0437\u0432\u0440\u0430\u0442 \u0432\u044B\u0437\u0432\u0430\u0442\u044C\u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0434\u043B\u044F \u0435\u0441\u043B\u0438 \u0438 \u0438\u0437 \u0438\u043B\u0438 \u0438\u043D\u0430\u0447\u0435 \u0438\u043D\u0430\u0447\u0435\u0435\u0441\u043B\u0438 \u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u043A\u043E\u043D\u0435\u0446\u0435\u0441\u043B\u0438 \u043A\u043E\u043D\u0435\u0446\u043F\u043E\u043F\u044B\u0442\u043A\u0438 \u043A\u043E\u043D\u0435\u0446\u0446\u0438\u043A\u043B\u0430 \u043D\u0435 \u043D\u043E\u0432\u044B\u0439 \u043F\u0435\u0440\u0435\u0439\u0442\u0438 \u043F\u0435\u0440\u0435\u043C \u043F\u043E \u043F\u043E\u043A\u0430 \u043F\u043E\u043F\u044B\u0442\u043A\u0430 \u043F\u0440\u0435\u0440\u0432\u0430\u0442\u044C \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C \u0442\u043E\u0433\u0434\u0430 \u0446\u0438\u043A\u043B \u044D\u043A\u0441\u043F\u043E\u0440\u0442 ',
         a =
           'null \u0438\u0441\u0442\u0438\u043D\u0430 \u043B\u043E\u0436\u044C \u043D\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043E',
-        i = n.inherit(n.NUMBER_MODE),
+        i = t.inherit(t.NUMBER_MODE),
         r = { className: 'string', begin: '"|\\|', end: '"|$', contains: [{ begin: '""' }] },
         s = {
           begin: "'",
@@ -6971,13 +6971,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           excludeEnd: !0,
           contains: [{ className: 'number', begin: '\\d{4}([\\.\\\\/:-]?\\d{2}){0,5}' }]
         },
-        o = n.inherit(n.C_LINE_COMMENT_MODE);
+        o = t.inherit(t.C_LINE_COMMENT_MODE);
       return {
         name: '1C:Enterprise',
         case_insensitive: !0,
         keywords: {
           $pattern: e,
-          keyword: t,
+          keyword: n,
           built_in:
             '\u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0440\u0430\u043D\u0438\u0446 \u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0440\u043E\u043A \u0441\u0438\u043C\u0432\u043E\u043B\u0442\u0430\u0431\u0443\u043B\u044F\u0446\u0438\u0438 ansitooem oemtoansi \u0432\u0432\u0435\u0441\u0442\u0438\u0432\u0438\u0434\u0441\u0443\u0431\u043A\u043E\u043D\u0442\u043E \u0432\u0432\u0435\u0441\u0442\u0438\u043F\u0435\u0440\u0435\u0447\u0438\u0441\u043B\u0435\u043D\u0438\u0435 \u0432\u0432\u0435\u0441\u0442\u0438\u043F\u0435\u0440\u0438\u043E\u0434 \u0432\u0432\u0435\u0441\u0442\u0438\u043F\u043B\u0430\u043D\u0441\u0447\u0435\u0442\u043E\u0432 \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0439\u043F\u043B\u0430\u043D\u0441\u0447\u0435\u0442\u043E\u0432 \u0434\u0430\u0442\u0430\u0433\u043E\u0434 \u0434\u0430\u0442\u0430\u043C\u0435\u0441\u044F\u0446 \u0434\u0430\u0442\u0430\u0447\u0438\u0441\u043B\u043E \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0432\u0441\u0442\u0440\u043E\u043A\u0443 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0438\u0437\u0441\u0442\u0440\u043E\u043A\u0438 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0438\u0431 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043A\u043E\u0434\u0441\u0438\u043C\u0432 \u043A\u043E\u043D\u0433\u043E\u0434\u0430 \u043A\u043E\u043D\u0435\u0446\u043F\u0435\u0440\u0438\u043E\u0434\u0430\u0431\u0438 \u043A\u043E\u043D\u0435\u0446\u0440\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u043D\u043D\u043E\u0433\u043E\u043F\u0435\u0440\u0438\u043E\u0434\u0430\u0431\u0438 \u043A\u043E\u043D\u0435\u0446\u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u043E\u0433\u043E\u0438\u043D\u0442\u0435\u0440\u0432\u0430\u043B\u0430 \u043A\u043E\u043D\u043A\u0432\u0430\u0440\u0442\u0430\u043B\u0430 \u043A\u043E\u043D\u043C\u0435\u0441\u044F\u0446\u0430 \u043A\u043E\u043D\u043D\u0435\u0434\u0435\u043B\u0438 \u043B\u043E\u0433 \u043B\u043E\u043310 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435\u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u0441\u0443\u0431\u043A\u043E\u043D\u0442\u043E \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u043D\u0430\u0431\u043E\u0440\u0430\u043F\u0440\u0430\u0432 \u043D\u0430\u0437\u043D\u0430\u0447\u0438\u0442\u044C\u0432\u0438\u0434 \u043D\u0430\u0437\u043D\u0430\u0447\u0438\u0442\u044C\u0441\u0447\u0435\u0442 \u043D\u0430\u0439\u0442\u0438\u0441\u0441\u044B\u043B\u043A\u0438 \u043D\u0430\u0447\u0430\u043B\u043E\u043F\u0435\u0440\u0438\u043E\u0434\u0430\u0431\u0438 \u043D\u0430\u0447\u0430\u043B\u043E\u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u043E\u0433\u043E\u0438\u043D\u0442\u0435\u0440\u0432\u0430\u043B\u0430 \u043D\u0430\u0447\u0433\u043E\u0434\u0430 \u043D\u0430\u0447\u043A\u0432\u0430\u0440\u0442\u0430\u043B\u0430 \u043D\u0430\u0447\u043C\u0435\u0441\u044F\u0446\u0430 \u043D\u0430\u0447\u043D\u0435\u0434\u0435\u043B\u0438 \u043D\u043E\u043C\u0435\u0440\u0434\u043D\u044F\u0433\u043E\u0434\u0430 \u043D\u043E\u043C\u0435\u0440\u0434\u043D\u044F\u043D\u0435\u0434\u0435\u043B\u0438 \u043D\u043E\u043C\u0435\u0440\u043D\u0435\u0434\u0435\u043B\u0438\u0433\u043E\u0434\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0430\u043E\u0436\u0438\u0434\u0430\u043D\u0438\u044F \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0436\u0443\u0440\u043D\u0430\u043B\u0440\u0430\u0441\u0447\u0435\u0442\u043E\u0432 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u043F\u043B\u0430\u043D\u0441\u0447\u0435\u0442\u043E\u0432 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u044F\u0437\u044B\u043A \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u044C\u043E\u043A\u043D\u043E\u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0439 \u043F\u0435\u0440\u0438\u043E\u0434\u0441\u0442\u0440 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0432\u0440\u0435\u043C\u044F\u0442\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0434\u0430\u0442\u0443\u0442\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0442\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F\u043E\u0442\u0431\u043E\u0440\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043F\u043E\u0437\u0438\u0446\u0438\u044E\u0442\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043F\u0443\u0441\u0442\u043E\u0435\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0442\u0430 \u043F\u0440\u0435\u0444\u0438\u043A\u0441\u0430\u0432\u0442\u043E\u043D\u0443\u043C\u0435\u0440\u0430\u0446\u0438\u0438 \u043F\u0440\u043E\u043F\u0438\u0441\u044C \u043F\u0443\u0441\u0442\u043E\u0435\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u0440\u0430\u0437\u043C \u0440\u0430\u0437\u043E\u0431\u0440\u0430\u0442\u044C\u043F\u043E\u0437\u0438\u0446\u0438\u044E\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430 \u0440\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044C\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u044B\u043D\u0430 \u0440\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044C\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u044B\u043F\u043E \u0441\u0438\u043C\u0432 \u0441\u043E\u0437\u0434\u0430\u0442\u044C\u043E\u0431\u044A\u0435\u043A\u0442 \u0441\u0442\u0430\u0442\u0443\u0441\u0432\u043E\u0437\u0432\u0440\u0430\u0442\u0430 \u0441\u0442\u0440\u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u0441\u0442\u0440\u043E\u043A \u0441\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u043F\u043E\u0437\u0438\u0446\u0438\u044E\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430 \u0441\u0447\u0435\u0442\u043F\u043E\u043A\u043E\u0434\u0443 \u0442\u0435\u043A\u0443\u0449\u0435\u0435\u0432\u0440\u0435\u043C\u044F \u0442\u0438\u043F\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F \u0442\u0438\u043F\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F\u0441\u0442\u0440 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0442\u0430\u043D\u0430 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0442\u0430\u043F\u043E \u0444\u0438\u043A\u0441\u0448\u0430\u0431\u043B\u043E\u043D \u0448\u0430\u0431\u043B\u043E\u043D acos asin atan base64\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 base64\u0441\u0442\u0440\u043E\u043A\u0430 cos exp log log10 pow sin sqrt tan xml\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 xml\u0441\u0442\u0440\u043E\u043A\u0430 xml\u0442\u0438\u043F xml\u0442\u0438\u043F\u0437\u043D\u0447 \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0435\u043E\u043A\u043D\u043E \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C\u0440\u0430\u0437\u0434\u0435\u043B\u0435\u043D\u0438\u044F\u0434\u0430\u043D\u043D\u044B\u0445 \u0431\u0443\u043B\u0435\u0432\u043E \u0432\u0432\u0435\u0441\u0442\u0438\u0434\u0430\u0442\u0443 \u0432\u0432\u0435\u0441\u0442\u0438\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u0432\u0432\u0435\u0441\u0442\u0438\u0441\u0442\u0440\u043E\u043A\u0443 \u0432\u0432\u0435\u0441\u0442\u0438\u0447\u0438\u0441\u043B\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C\u0447\u0442\u0435\u043D\u0438\u044Fxml \u0432\u043E\u043F\u0440\u043E\u0441 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u0432\u0440\u0435\u0433 \u0432\u044B\u0433\u0440\u0443\u0437\u0438\u0442\u044C\u0436\u0443\u0440\u043D\u0430\u043B\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443\u043E\u043F\u043E\u0432\u0435\u0449\u0435\u043D\u0438\u044F \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C\u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443\u043F\u0440\u0430\u0432\u0434\u043E\u0441\u0442\u0443\u043F\u0430 \u0432\u044B\u0447\u0438\u0441\u043B\u0438\u0442\u044C \u0433\u043E\u0434 \u0434\u0430\u043D\u043D\u044B\u0435\u0444\u043E\u0440\u043C\u044B\u0432\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u0434\u0430\u0442\u0430 \u0434\u0435\u043D\u044C \u0434\u0435\u043D\u044C\u0433\u043E\u0434\u0430 \u0434\u0435\u043D\u044C\u043D\u0435\u0434\u0435\u043B\u0438 \u0434\u043E\u0431\u0430\u0432\u0438\u0442\u044C\u043C\u0435\u0441\u044F\u0446 \u0437\u0430\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0434\u0430\u043D\u043D\u044B\u0435\u0434\u043B\u044F\u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0437\u0430\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0440\u0430\u0431\u043E\u0442\u0443\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044C\u0440\u0430\u0431\u043E\u0442\u0443\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C\u0432\u043D\u0435\u0448\u043D\u044E\u044E\u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u0443 \u0437\u0430\u043A\u0440\u044B\u0442\u044C\u0441\u043F\u0440\u0430\u0432\u043A\u0443 \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044Cjson \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044Cxml \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0434\u0430\u0442\u0443json \u0437\u0430\u043F\u0438\u0441\u044C\u0436\u0443\u0440\u043D\u0430\u043B\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u0437\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u044C\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F\u0441\u0432\u043E\u0439\u0441\u0442\u0432 \u0437\u0430\u043F\u0440\u043E\u0441\u0438\u0442\u044C\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C\u0441\u0438\u0441\u0442\u0435\u043C\u0443 \u0437\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0442\u0440\u0430\u043D\u0437\u0430\u043A\u0446\u0438\u044E \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0432\u0434\u0430\u043D\u043D\u044B\u0435\u0444\u043E\u0440\u043C\u044B \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0432\u0441\u0442\u0440\u043E\u043A\u0443\u0432\u043D\u0443\u0442\u0440 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0432\u0444\u0430\u0439\u043B \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u043E \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0438\u0437\u0441\u0442\u0440\u043E\u043A\u0438\u0432\u043D\u0443\u0442\u0440 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435\u0438\u0437\u0444\u0430\u0439\u043B\u0430 \u0438\u0437xml\u0442\u0438\u043F\u0430 \u0438\u043C\u043F\u043E\u0440\u0442\u043C\u043E\u0434\u0435\u043B\u0438xdto \u0438\u043C\u044F\u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u0430 \u0438\u043C\u044F\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u0438\u043D\u0438\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u043F\u0440\u0435\u0434\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435\u0434\u0430\u043D\u043D\u044B\u0435 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F\u043E\u0431\u043E\u0448\u0438\u0431\u043A\u0435 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438\u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0433\u043E\u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0445\u0444\u0430\u0439\u043B\u043E\u0432 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B \u043A\u043E\u0434\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u0442\u0440\u043E\u043A\u0443 \u043A\u043E\u0434\u043B\u043E\u043A\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043A\u043E\u0434\u0441\u0438\u043C\u0432\u043E\u043B\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0430\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043A\u043E\u043D\u0435\u0446\u0433\u043E\u0434\u0430 \u043A\u043E\u043D\u0435\u0446\u0434\u043D\u044F \u043A\u043E\u043D\u0435\u0446\u043A\u0432\u0430\u0440\u0442\u0430\u043B\u0430 \u043A\u043E\u043D\u0435\u0446\u043C\u0435\u0441\u044F\u0446\u0430 \u043A\u043E\u043D\u0435\u0446\u043C\u0438\u043D\u0443\u0442\u044B \u043A\u043E\u043D\u0435\u0446\u043D\u0435\u0434\u0435\u043B\u0438 \u043A\u043E\u043D\u0435\u0446\u0447\u0430\u0441\u0430 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u044F\u0431\u0430\u0437\u044B\u0434\u0430\u043D\u043D\u044B\u0445\u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0430\u0434\u0438\u043D\u0430\u043C\u0438\u0447\u0435\u0441\u043A\u0438 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u044F\u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0430 \u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0434\u0430\u043D\u043D\u044B\u0435\u0444\u043E\u0440\u043C\u044B \u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0444\u0430\u0439\u043B \u043A\u0440\u0430\u0442\u043A\u043E\u0435\u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043E\u0448\u0438\u0431\u043A\u0438 \u043B\u0435\u0432 \u043C\u0430\u043A\u0441 \u043C\u0435\u0441\u0442\u043D\u043E\u0435\u0432\u0440\u0435\u043C\u044F \u043C\u0435\u0441\u044F\u0446 \u043C\u0438\u043D \u043C\u0438\u043D\u0443\u0442\u0430 \u043C\u043E\u043D\u043E\u043F\u043E\u043B\u044C\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C \u043D\u0430\u0439\u0442\u0438 \u043D\u0430\u0439\u0442\u0438\u043D\u0435\u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u044B\u0435\u0441\u0438\u043C\u0432\u043E\u043B\u044Bxml \u043D\u0430\u0439\u0442\u0438\u043E\u043A\u043D\u043E\u043F\u043E\u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0441\u0441\u044B\u043B\u043A\u0435 \u043D\u0430\u0439\u0442\u0438\u043F\u043E\u043C\u0435\u0447\u0435\u043D\u043D\u044B\u0435\u043D\u0430\u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u043D\u0430\u0439\u0442\u0438\u043F\u043E\u0441\u0441\u044B\u043B\u043A\u0430\u043C \u043D\u0430\u0439\u0442\u0438\u0444\u0430\u0439\u043B\u044B \u043D\u0430\u0447\u0430\u043B\u043E\u0433\u043E\u0434\u0430 \u043D\u0430\u0447\u0430\u043B\u043E\u0434\u043D\u044F \u043D\u0430\u0447\u0430\u043B\u043E\u043A\u0432\u0430\u0440\u0442\u0430\u043B\u0430 \u043D\u0430\u0447\u0430\u043B\u043E\u043C\u0435\u0441\u044F\u0446\u0430 \u043D\u0430\u0447\u0430\u043B\u043E\u043C\u0438\u043D\u0443\u0442\u044B \u043D\u0430\u0447\u0430\u043B\u043E\u043D\u0435\u0434\u0435\u043B\u0438 \u043D\u0430\u0447\u0430\u043B\u043E\u0447\u0430\u0441\u0430 \u043D\u0430\u0447\u0430\u0442\u044C\u0437\u0430\u043F\u0440\u043E\u0441\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043D\u0430\u0447\u0430\u0442\u044C\u0437\u0430\u043F\u0443\u0441\u043A\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430\u0447\u0430\u0442\u044C\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\u0444\u0430\u0439\u043B\u0430 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435\u0444\u0430\u0439\u043B\u0430 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435\u0432\u043D\u0435\u0448\u043D\u0435\u0439\u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u043A\u0440\u0438\u043F\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0435\u0439 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u0444\u0430\u0439\u043B\u0430\u043C\u0438 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u0438\u0441\u043A\u0444\u0430\u0439\u043B\u043E\u0432 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0430\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0445\u0444\u0430\u0439\u043B\u043E\u0432 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0430\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u0440\u0430\u0431\u043E\u0447\u0435\u0433\u043E\u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0430\u0434\u0430\u043D\u043D\u044B\u0445\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u0444\u0430\u0439\u043B\u043E\u0432 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0435\u0444\u0430\u0439\u043B\u0430 \u043D\u0430\u0447\u0430\u0442\u044C\u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0435\u0444\u0430\u0439\u043B\u043E\u0432 \u043D\u0430\u0447\u0430\u0442\u044C\u0441\u043E\u0437\u0434\u0430\u043D\u0438\u0435\u0434\u0432\u043E\u0438\u0447\u043D\u044B\u0445\u0434\u0430\u043D\u043D\u044B\u0445\u0438\u0437\u0444\u0430\u0439\u043B\u0430 \u043D\u0430\u0447\u0430\u0442\u044C\u0441\u043E\u0437\u0434\u0430\u043D\u0438\u0435\u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0430 \u043D\u0430\u0447\u0430\u0442\u044C\u0442\u0440\u0430\u043D\u0437\u0430\u043A\u0446\u0438\u044E \u043D\u0430\u0447\u0430\u0442\u044C\u0443\u0434\u0430\u043B\u0435\u043D\u0438\u0435\u0444\u0430\u0439\u043B\u043E\u0432 \u043D\u0430\u0447\u0430\u0442\u044C\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0443\u0432\u043D\u0435\u0448\u043D\u0435\u0439\u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u044B \u043D\u0430\u0447\u0430\u0442\u044C\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0443\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u043A\u0440\u0438\u043F\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0435\u0439 \u043D\u0430\u0447\u0430\u0442\u044C\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0443\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u0444\u0430\u0439\u043B\u0430\u043C\u0438 \u043D\u0435\u0434\u0435\u043B\u044F\u0433\u043E\u0434\u0430 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0441\u0442\u044C\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F \u043D\u043E\u043C\u0435\u0440\u0441\u0435\u0430\u043D\u0441\u0430\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043D\u043E\u043C\u0435\u0440\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043D\u0440\u0435\u0433 \u043D\u0441\u0442\u0440 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u043D\u0443\u043C\u0435\u0440\u0430\u0446\u0438\u044E\u043E\u0431\u044A\u0435\u043A\u0442\u043E\u0432 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0435\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0430\u043F\u0440\u0435\u0440\u044B\u0432\u0430\u043D\u0438\u044F\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043E\u0431\u044A\u0435\u0434\u0438\u043D\u0438\u0442\u044C\u0444\u0430\u0439\u043B\u044B \u043E\u043A\u0440 \u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435\u043E\u0448\u0438\u0431\u043A\u0438 \u043E\u043F\u043E\u0432\u0435\u0441\u0442\u0438\u0442\u044C \u043E\u043F\u043E\u0432\u0435\u0441\u0442\u0438\u0442\u044C\u043E\u0431\u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0437\u0430\u043F\u0440\u043E\u0441\u0430\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A\u043A\u043B\u0438\u0435\u043D\u0442\u0430\u043B\u0438\u0446\u0435\u043D\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u0436\u0438\u0434\u0430\u043D\u0438\u044F \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u043F\u043E\u0432\u0435\u0449\u0435\u043D\u0438\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0438\u043D\u0434\u0435\u043A\u0441\u0441\u043F\u0440\u0430\u0432\u043A\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0441\u043E\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u0435\u0441\u043F\u0440\u0430\u0432\u043A\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0441\u043F\u0440\u0430\u0432\u043A\u0443 \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0444\u043E\u0440\u043C\u0443 \u043E\u0442\u043A\u0440\u044B\u0442\u044C\u0444\u043E\u0440\u043C\u0443\u043C\u043E\u0434\u0430\u043B\u044C\u043D\u043E \u043E\u0442\u043C\u0435\u043D\u0438\u0442\u044C\u0442\u0440\u0430\u043D\u0437\u0430\u043A\u0446\u0438\u044E \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u044C\u0436\u0443\u0440\u043D\u0430\u043B\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u044C\u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u044C\u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B\u0434\u043E\u0441\u0442\u0443\u043F\u0430 \u043F\u0435\u0440\u0435\u0439\u0442\u0438\u043F\u043E\u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0441\u0441\u044B\u043B\u043A\u0435 \u043F\u0435\u0440\u0435\u043C\u0435\u0441\u0442\u0438\u0442\u044C\u0444\u0430\u0439\u043B \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u0432\u043D\u0435\u0448\u043D\u044E\u044E\u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u0443 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0437\u0430\u043F\u0440\u043E\u0441\u0430\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A\u043A\u043B\u0438\u0435\u043D\u0442\u0430\u043B\u0438\u0446\u0435\u043D\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u0436\u0438\u0434\u0430\u043D\u0438\u044F \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u043F\u043E\u0432\u0435\u0449\u0435\u043D\u0438\u044F \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u043A\u0440\u0438\u043F\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0435\u0439 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u044C\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u0444\u0430\u0439\u043B\u0430\u043C\u0438 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u043E\u0435\u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043E\u0448\u0438\u0431\u043A\u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0432\u0432\u043E\u0434\u0434\u0430\u0442\u044B \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0432\u0432\u043E\u0434\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0432\u0432\u043E\u0434\u0441\u0442\u0440\u043E\u043A\u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0432\u0432\u043E\u0434\u0447\u0438\u0441\u043B\u0430 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0432\u043E\u043F\u0440\u043E\u0441 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E\u043E\u0431\u043E\u0448\u0438\u0431\u043A\u0435 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u043D\u0430\u043A\u0430\u0440\u0442\u0435 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u043E\u043F\u043E\u0432\u0435\u0449\u0435\u043D\u0438\u0435\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u043F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0435\u043D\u0438\u0435 \u043F\u043E\u043B\u043D\u043E\u0435\u0438\u043C\u044F\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044Ccom\u043E\u0431\u044A\u0435\u043A\u0442 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044Cxml\u0442\u0438\u043F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0430\u0434\u0440\u0435\u0441\u043F\u043E\u043C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u044E \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0443\u0441\u0435\u0430\u043D\u0441\u043E\u0432 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0432\u0440\u0435\u043C\u044F\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F\u0441\u043F\u044F\u0449\u0435\u0433\u043E\u0441\u0435\u0430\u043D\u0441\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0432\u0440\u0435\u043C\u044F\u0437\u0430\u0441\u044B\u043F\u0430\u043D\u0438\u044F\u043F\u0430\u0441\u0441\u0438\u0432\u043D\u043E\u0433\u043E\u0441\u0435\u0430\u043D\u0441\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0432\u0440\u0435\u043C\u044F\u043E\u0436\u0438\u0434\u0430\u043D\u0438\u044F\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0438\u0434\u0430\u043D\u043D\u044B\u0445 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0434\u0430\u043D\u043D\u044B\u0435\u0432\u044B\u0431\u043E\u0440\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043A\u043B\u0438\u0435\u043D\u0442\u0430\u043B\u0438\u0446\u0435\u043D\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u044B\u0435\u043A\u043E\u0434\u044B\u043B\u043E\u043A\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u044B\u0435\u0447\u0430\u0441\u043E\u0432\u044B\u0435\u043F\u043E\u044F\u0441\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A\u043A\u043B\u0438\u0435\u043D\u0442\u0441\u043A\u043E\u0433\u043E\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F\u043E\u0442\u0431\u043E\u0440\u0430\u0436\u0443\u0440\u043D\u0430\u043B\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0438\u0437\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0433\u043E\u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0438\u043C\u044F\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0433\u043E\u0444\u0430\u0439\u043B\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0438\u043C\u044F\u043A\u043B\u0438\u0435\u043D\u0442\u0430\u043B\u0438\u0446\u0435\u043D\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E\u044D\u043A\u0440\u0430\u043D\u043E\u0432\u043A\u043B\u0438\u0435\u043D\u0442\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u0436\u0443\u0440\u043D\u0430\u043B\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u0441\u043E\u0431\u044B\u0442\u0438\u044F\u0436\u0443\u0440\u043D\u0430\u043B\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043A\u0440\u0430\u0442\u043A\u0438\u0439\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043C\u0430\u043A\u0435\u0442\u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043C\u0430\u0441\u043A\u0443\u0432\u0441\u0435\u0444\u0430\u0439\u043B\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043C\u0430\u0441\u043A\u0443\u0432\u0441\u0435\u0444\u0430\u0439\u043B\u044B\u043A\u043B\u0438\u0435\u043D\u0442\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043C\u0430\u0441\u043A\u0443\u0432\u0441\u0435\u0444\u0430\u0439\u043B\u044B\u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435\u043F\u043E\u0430\u0434\u0440\u0435\u0441\u0443 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u0443\u044E\u0434\u043B\u0438\u043D\u0443\u043F\u0430\u0440\u043E\u043B\u0435\u0439\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u0443\u044E\u0441\u0441\u044B\u043B\u043A\u0443 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u0443\u044E\u0441\u0441\u044B\u043B\u043A\u0443\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435\u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438\u0431\u0430\u0437\u044B\u0434\u0430\u043D\u043D\u044B\u0445 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435\u043F\u0440\u0435\u0434\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0445\u0434\u0430\u043D\u043D\u044B\u0445\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043E\u0431\u0449\u0438\u0439\u043C\u0430\u043A\u0435\u0442 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043E\u0431\u0449\u0443\u044E\u0444\u043E\u0440\u043C\u0443 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043E\u043A\u043D\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0443\u044E\u043E\u0442\u043C\u0435\u0442\u043A\u0443\u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435\u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0433\u043E\u0440\u0435\u0436\u0438\u043C\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B\u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445\u043E\u043F\u0446\u0438\u0439\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043F\u043E\u043B\u043D\u043E\u0435\u0438\u043C\u044F\u043F\u0440\u0435\u0434\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u043E\u0433\u043E\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445\u0441\u0441\u044B\u043B\u043E\u043A \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443\u0441\u043B\u043E\u0436\u043D\u043E\u0441\u0442\u0438\u043F\u0430\u0440\u043E\u043B\u0435\u0439\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0442\u0435\u043B\u044C\u043F\u0443\u0442\u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0442\u0435\u043B\u044C\u043F\u0443\u0442\u0438\u043A\u043B\u0438\u0435\u043D\u0442\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0442\u0435\u043B\u044C\u043F\u0443\u0442\u0438\u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u0435\u0430\u043D\u0441\u044B\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C\u043A\u043B\u0438\u0435\u043D\u0442\u0441\u043A\u043E\u0433\u043E\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044E \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0435\u043E\u0431\u044A\u0435\u043A\u0442\u0430\u0438\u0444\u043E\u0440\u043C\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u043E\u0441\u0442\u0430\u0432\u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u043E\u0433\u043E\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430odata \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0443\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F\u0431\u0430\u0437\u044B\u0434\u0430\u043D\u043D\u044B\u0445 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0442\u0435\u043A\u0443\u0449\u0438\u0439\u0441\u0435\u0430\u043D\u0441\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0444\u0430\u0439\u043B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0444\u0430\u0439\u043B\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0444\u043E\u0440\u043C\u0443 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0443\u044E\u043E\u043F\u0446\u0438\u044E \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0443\u044E\u043E\u043F\u0446\u0438\u044E\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0447\u0430\u0441\u043E\u0432\u043E\u0439\u043F\u043E\u044F\u0441\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438\u043E\u0441 \u043F\u043E\u043C\u0435\u0441\u0442\u0438\u0442\u044C\u0432\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0435\u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435 \u043F\u043E\u043C\u0435\u0441\u0442\u0438\u0442\u044C\u0444\u0430\u0439\u043B \u043F\u043E\u043C\u0435\u0441\u0442\u0438\u0442\u044C\u0444\u0430\u0439\u043B\u044B \u043F\u0440\u0430\u0432 \u043F\u0440\u0430\u0432\u043E\u0434\u043E\u0441\u0442\u0443\u043F\u0430 \u043F\u0440\u0435\u0434\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u043E\u0435\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043A\u043E\u0434\u0430\u043B\u043E\u043A\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043F\u0435\u0440\u0438\u043E\u0434\u0430 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043F\u0440\u0430\u0432\u0430 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u0441\u043E\u0431\u044B\u0442\u0438\u044F\u0436\u0443\u0440\u043D\u0430\u043B\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435\u0447\u0430\u0441\u043E\u0432\u043E\u0433\u043E\u043F\u043E\u044F\u0441\u0430 \u043F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0435\u043D\u0438\u0435 \u043F\u0440\u0435\u043A\u0440\u0430\u0442\u0438\u0442\u044C\u0440\u0430\u0431\u043E\u0442\u0443\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043F\u0440\u0438\u0432\u0438\u043B\u0435\u0433\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C\u0432\u044B\u0437\u043E\u0432 \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0442\u044Cjson \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0442\u044Cxml \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0442\u044C\u0434\u0430\u0442\u0443json \u043F\u0443\u0441\u0442\u0430\u044F\u0441\u0442\u0440\u043E\u043A\u0430 \u0440\u0430\u0431\u043E\u0447\u0438\u0439\u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0434\u0430\u043D\u043D\u044B\u0445\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u0440\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0434\u0430\u043D\u043D\u044B\u0435\u0434\u043B\u044F\u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0442\u044C\u0444\u0430\u0439\u043B \u0440\u0430\u0437\u043E\u0440\u0432\u0430\u0442\u044C\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435\u0441\u0432\u043D\u0435\u0448\u043D\u0438\u043C\u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u043E\u043C\u0434\u0430\u043D\u043D\u044B\u0445 \u0440\u0430\u0441\u043A\u043E\u0434\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u0442\u0440\u043E\u043A\u0443 \u0440\u043E\u043B\u044C\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0430 \u0441\u0435\u043A\u0443\u043D\u0434\u0430 \u0441\u0438\u0433\u043D\u0430\u043B \u0441\u0438\u043C\u0432\u043E\u043B \u0441\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0436\u0443\u0440\u043D\u0430\u043B\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u0441\u043C\u0435\u0449\u0435\u043D\u0438\u0435\u043B\u0435\u0442\u043D\u0435\u0433\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0441\u043C\u0435\u0449\u0435\u043D\u0438\u0435\u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u043E\u0433\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C\u0431\u0443\u0444\u0435\u0440\u044B\u0434\u0432\u043E\u0438\u0447\u043D\u044B\u0445\u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u0437\u0434\u0430\u0442\u044C\u043A\u0430\u0442\u0430\u043B\u043E\u0433 \u0441\u043E\u0437\u0434\u0430\u0442\u044C\u0444\u0430\u0431\u0440\u0438\u043A\u0443xdto \u0441\u043E\u043A\u0440\u043B \u0441\u043E\u043A\u0440\u043B\u043F \u0441\u043E\u043A\u0440\u043F \u0441\u043E\u043E\u0431\u0449\u0438\u0442\u044C \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C\u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u0441\u0440\u0435\u0434 \u0441\u0442\u0440\u0434\u043B\u0438\u043D\u0430 \u0441\u0442\u0440\u0437\u0430\u043A\u0430\u043D\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F\u043D\u0430 \u0441\u0442\u0440\u0437\u0430\u043C\u0435\u043D\u0438\u0442\u044C \u0441\u0442\u0440\u043D\u0430\u0439\u0442\u0438 \u0441\u0442\u0440\u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F\u0441 \u0441\u0442\u0440\u043E\u043A\u0430 \u0441\u0442\u0440\u043E\u043A\u0430\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u0441\u0442\u0440\u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0441\u0442\u0440\u043E\u043A\u0443 \u0441\u0442\u0440\u0440\u0430\u0437\u0434\u0435\u043B\u0438\u0442\u044C \u0441\u0442\u0440\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C \u0441\u0442\u0440\u0441\u0440\u0430\u0432\u043D\u0438\u0442\u044C \u0441\u0442\u0440\u0447\u0438\u0441\u043B\u043E\u0432\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u0439 \u0441\u0442\u0440\u0447\u0438\u0441\u043B\u043E\u0441\u0442\u0440\u043E\u043A \u0441\u0442\u0440\u0448\u0430\u0431\u043B\u043E\u043D \u0442\u0435\u043A\u0443\u0449\u0430\u044F\u0434\u0430\u0442\u0430 \u0442\u0435\u043A\u0443\u0449\u0430\u044F\u0434\u0430\u0442\u0430\u0441\u0435\u0430\u043D\u0441\u0430 \u0442\u0435\u043A\u0443\u0449\u0430\u044F\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u0430\u044F\u0434\u0430\u0442\u0430 \u0442\u0435\u043A\u0443\u0449\u0430\u044F\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u0430\u044F\u0434\u0430\u0442\u0430\u0432\u043C\u0438\u043B\u043B\u0438\u0441\u0435\u043A\u0443\u043D\u0434\u0430\u0445 \u0442\u0435\u043A\u0443\u0449\u0438\u0439\u0432\u0430\u0440\u0438\u0430\u043D\u0442\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430\u043A\u043B\u0438\u0435\u043D\u0442\u0441\u043A\u043E\u0433\u043E\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0442\u0435\u043A\u0443\u0449\u0438\u0439\u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0433\u043E\u0448\u0440\u0438\u0444\u0442\u0430\u043A\u043B\u0438\u0435\u043D\u0442\u0441\u043A\u043E\u0433\u043E\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0442\u0435\u043A\u0443\u0449\u0438\u0439\u043A\u043E\u0434\u043B\u043E\u043A\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438 \u0442\u0435\u043A\u0443\u0449\u0438\u0439\u0440\u0435\u0436\u0438\u043C\u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0442\u0435\u043A\u0443\u0449\u0438\u0439\u044F\u0437\u044B\u043A \u0442\u0435\u043A\u0443\u0449\u0438\u0439\u044F\u0437\u044B\u043A\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0442\u0438\u043F \u0442\u0438\u043F\u0437\u043D\u0447 \u0442\u0440\u0430\u043D\u0437\u0430\u043A\u0446\u0438\u044F\u0430\u043A\u0442\u0438\u0432\u043D\u0430 \u0442\u0440\u0435\u0433 \u0443\u0434\u0430\u043B\u0438\u0442\u044C\u0434\u0430\u043D\u043D\u044B\u0435\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u0443\u0434\u0430\u043B\u0438\u0442\u044C\u0438\u0437\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0433\u043E\u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0430 \u0443\u0434\u0430\u043B\u0438\u0442\u044C\u043E\u0431\u044A\u0435\u043A\u0442\u044B \u0443\u0434\u0430\u043B\u0438\u0442\u044C\u0444\u0430\u0439\u043B\u044B \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u043E\u0435\u0432\u0440\u0435\u043C\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C\u0440\u0430\u0437\u0434\u0435\u043B\u0435\u043D\u0438\u044F\u0434\u0430\u043D\u043D\u044B\u0445 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0443\u0441\u0435\u0430\u043D\u0441\u043E\u0432 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0432\u043D\u0435\u0448\u043D\u044E\u044E\u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u0443 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0432\u0440\u0435\u043C\u044F\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F\u0441\u043F\u044F\u0449\u0435\u0433\u043E\u0441\u0435\u0430\u043D\u0441\u0430 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0432\u0440\u0435\u043C\u044F\u0437\u0430\u0441\u044B\u043F\u0430\u043D\u0438\u044F\u043F\u0430\u0441\u0441\u0438\u0432\u043D\u043E\u0433\u043E\u0441\u0435\u0430\u043D\u0441\u0430 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0432\u0440\u0435\u043C\u044F\u043E\u0436\u0438\u0434\u0430\u043D\u0438\u044F\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0438\u0434\u0430\u043D\u043D\u044B\u0445 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A\u043A\u043B\u0438\u0435\u043D\u0442\u0441\u043A\u043E\u0433\u043E\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u0436\u0443\u0440\u043D\u0430\u043B\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u0441\u043E\u0431\u044B\u0442\u0438\u044F\u0436\u0443\u0440\u043D\u0430\u043B\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043A\u0440\u0430\u0442\u043A\u0438\u0439\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u0443\u044E\u0434\u043B\u0438\u043D\u0443\u043F\u0430\u0440\u043E\u043B\u0435\u0439\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043C\u043E\u043D\u043E\u043F\u043E\u043B\u044C\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438\u043A\u043B\u0438\u0435\u043D\u0442\u0430\u043B\u0438\u0446\u0435\u043D\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435\u043F\u0440\u0435\u0434\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0445\u0434\u0430\u043D\u043D\u044B\u0445\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435\u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0433\u043E\u0440\u0435\u0436\u0438\u043C\u0430 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B\u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445\u043E\u043F\u0446\u0438\u0439\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043F\u0440\u0438\u0432\u0438\u043B\u0435\u0433\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439\u0440\u0435\u0436\u0438\u043C \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443\u0441\u043B\u043E\u0436\u043D\u043E\u0441\u0442\u0438\u043F\u0430\u0440\u043E\u043B\u0435\u0439\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u043A\u0440\u0438\u043F\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0435\u0439 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435\u0440\u0430\u0431\u043E\u0442\u044B\u0441\u0444\u0430\u0439\u043B\u0430\u043C\u0438 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435\u0441\u0432\u043D\u0435\u0448\u043D\u0438\u043C\u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u043E\u043C\u0434\u0430\u043D\u043D\u044B\u0445 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0435\u043E\u0431\u044A\u0435\u043A\u0442\u0430\u0438\u0444\u043E\u0440\u043C\u044B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0441\u043E\u0441\u0442\u0430\u0432\u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u043E\u0433\u043E\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430odata \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0447\u0430\u0441\u043E\u0432\u043E\u0439\u043F\u043E\u044F\u0441\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0447\u0430\u0441\u043E\u0432\u043E\u0439\u043F\u043E\u044F\u0441\u0441\u0435\u0430\u043D\u0441\u0430 \u0444\u043E\u0440\u043C\u0430\u0442 \u0446\u0435\u043B \u0447\u0430\u0441 \u0447\u0430\u0441\u043E\u0432\u043E\u0439\u043F\u043E\u044F\u0441 \u0447\u0430\u0441\u043E\u0432\u043E\u0439\u043F\u043E\u044F\u0441\u0441\u0435\u0430\u043D\u0441\u0430 \u0447\u0438\u0441\u043B\u043E \u0447\u0438\u0441\u043B\u043E\u043F\u0440\u043E\u043F\u0438\u0441\u044C\u044E \u044D\u0442\u043E\u0430\u0434\u0440\u0435\u0441\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0433\u043E\u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0430 ws\u0441\u0441\u044B\u043B\u043A\u0438 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430\u043A\u0430\u0440\u0442\u0438\u043D\u043E\u043A \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430\u043C\u0430\u043A\u0435\u0442\u043E\u0432\u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F\u043A\u043E\u043C\u043F\u043E\u043D\u043E\u0432\u043A\u0438\u0434\u0430\u043D\u043D\u044B\u0445 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430\u0441\u0442\u0438\u043B\u0435\u0439 \u0431\u0438\u0437\u043D\u0435\u0441\u043F\u0440\u043E\u0446\u0435\u0441\u0441\u044B \u0432\u043D\u0435\u0448\u043D\u0438\u0435\u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0438\u0434\u0430\u043D\u043D\u044B\u0445 \u0432\u043D\u0435\u0448\u043D\u0438\u0435\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u0432\u043D\u0435\u0448\u043D\u0438\u0435\u043E\u0442\u0447\u0435\u0442\u044B \u0432\u0441\u0442\u0440\u043E\u0435\u043D\u043D\u044B\u0435\u043F\u043E\u043A\u0443\u043F\u043A\u0438 \u0433\u043B\u0430\u0432\u043D\u044B\u0439\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0433\u043B\u0430\u0432\u043D\u044B\u0439\u0441\u0442\u0438\u043B\u044C \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u043C\u044B\u0435\u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F \u0436\u0443\u0440\u043D\u0430\u043B\u044B\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432 \u0437\u0430\u0434\u0430\u0447\u0438 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F\u043E\u0431\u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u0440\u0430\u0431\u043E\u0447\u0435\u0439\u0434\u0430\u0442\u044B \u0438\u0441\u0442\u043E\u0440\u0438\u044F\u0440\u0430\u0431\u043E\u0442\u044B\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F \u043A\u043E\u043D\u0441\u0442\u0430\u043D\u0442\u044B \u043A\u0440\u0438\u0442\u0435\u0440\u0438\u0438\u043E\u0442\u0431\u043E\u0440\u0430 \u043C\u0435\u0442\u0430\u0434\u0430\u043D\u043D\u044B\u0435 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435\u0440\u0435\u043A\u043B\u0430\u043C\u044B \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0430\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u043C\u044B\u0445\u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u0439 \u043E\u0442\u0447\u0435\u0442\u044B \u043F\u0430\u043D\u0435\u043B\u044C\u0437\u0430\u0434\u0430\u0447\u043E\u0441 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B\u0441\u0435\u0430\u043D\u0441\u0430 \u043F\u0435\u0440\u0435\u0447\u0438\u0441\u043B\u0435\u043D\u0438\u044F \u043F\u043B\u0430\u043D\u044B\u0432\u0438\u0434\u043E\u0432\u0440\u0430\u0441\u0447\u0435\u0442\u0430 \u043F\u043B\u0430\u043D\u044B\u0432\u0438\u0434\u043E\u0432\u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A \u043F\u043B\u0430\u043D\u044B\u043E\u0431\u043C\u0435\u043D\u0430 \u043F\u043B\u0430\u043D\u044B\u0441\u0447\u0435\u0442\u043E\u0432 \u043F\u043E\u043B\u043D\u043E\u0442\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439\u043F\u043E\u0438\u0441\u043A \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0439\u0431\u0430\u0437\u044B \u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0430\u0432\u0441\u0442\u0440\u043E\u0435\u043D\u043D\u044B\u0445\u043F\u043E\u043A\u0443\u043F\u043E\u043A \u0440\u0430\u0431\u043E\u0447\u0430\u044F\u0434\u0430\u0442\u0430 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F\u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u044B\u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440\u0438\u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u044B\u043D\u0430\u043A\u043E\u043F\u043B\u0435\u043D\u0438\u044F \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u044B\u0440\u0430\u0441\u0447\u0435\u0442\u0430 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u044B\u0441\u0432\u0435\u0434\u0435\u043D\u0438\u0439 \u0440\u0435\u0433\u043B\u0430\u043C\u0435\u043D\u0442\u043D\u044B\u0435\u0437\u0430\u0434\u0430\u043D\u0438\u044F \u0441\u0435\u0440\u0438\u0430\u043B\u0438\u0437\u0430\u0442\u043E\u0440xdto \u0441\u043F\u0440\u0430\u0432\u043E\u0447\u043D\u0438\u043A\u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u0433\u0435\u043E\u043F\u043E\u0437\u0438\u0446\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043A\u0440\u0438\u043F\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0438 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043C\u0443\u043B\u044C\u0442\u0438\u043C\u0435\u0434\u0438\u0430 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\u0440\u0435\u043A\u043B\u0430\u043C\u044B \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u043F\u043E\u0447\u0442\u044B \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430\u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0438\u0438 \u0444\u0430\u0431\u0440\u0438\u043A\u0430xdto \u0444\u0430\u0439\u043B\u043E\u0432\u044B\u0435\u043F\u043E\u0442\u043E\u043A\u0438 \u0444\u043E\u043D\u043E\u0432\u044B\u0435\u0437\u0430\u0434\u0430\u043D\u0438\u044F \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0430\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435\u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u0432\u043E\u0442\u0447\u0435\u0442\u043E\u0432 \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A\u0434\u0430\u043D\u043D\u044B\u0445\u0444\u043E\u0440\u043C \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435\u043E\u0431\u0449\u0438\u0445\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0445\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A\u0434\u0438\u043D\u0430\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445\u0441\u043F\u0438\u0441\u043A\u043E\u0432 \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0445\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A\u043E\u0442\u0447\u0435\u0442\u043E\u0432 \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435\u0441\u0438\u0441\u0442\u0435\u043C\u043D\u044B\u0445\u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A ',
           class:
@@ -6994,7 +6994,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             keywords: {
               $pattern: e,
               keyword:
-                t +
+                n +
                 '\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C\u0438\u0437\u0444\u0430\u0439\u043B\u0430 \u0432\u0435\u0431\u043A\u043B\u0438\u0435\u043D\u0442 \u0432\u043C\u0435\u0441\u0442\u043E \u0432\u043D\u0435\u0448\u043D\u0435\u0435\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435 \u043A\u043B\u0438\u0435\u043D\u0442 \u043A\u043E\u043D\u0435\u0446\u043E\u0431\u043B\u0430\u0441\u0442\u0438 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0435\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435\u043A\u043B\u0438\u0435\u043D\u0442 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0435\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435\u0441\u0435\u0440\u0432\u0435\u0440 \u043D\u0430\u043A\u043B\u0438\u0435\u043D\u0442\u0435 \u043D\u0430\u043A\u043B\u0438\u0435\u043D\u0442\u0435\u043D\u0430\u0441\u0435\u0440\u0432\u0435\u0440\u0435 \u043D\u0430\u043A\u043B\u0438\u0435\u043D\u0442\u0435\u043D\u0430\u0441\u0435\u0440\u0432\u0435\u0440\u0435\u0431\u0435\u0437\u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u0430 \u043D\u0430\u0441\u0435\u0440\u0432\u0435\u0440\u0435 \u043D\u0430\u0441\u0435\u0440\u0432\u0435\u0440\u0435\u0431\u0435\u0437\u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u0430 \u043E\u0431\u043B\u0430\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u0434 \u043F\u043E\u0441\u043B\u0435 \u0441\u0435\u0440\u0432\u0435\u0440 \u0442\u043E\u043B\u0441\u0442\u044B\u0439\u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0431\u044B\u0447\u043D\u043E\u0435\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0442\u043E\u043B\u0441\u0442\u044B\u0439\u043A\u043B\u0438\u0435\u043D\u0442\u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u043C\u043E\u0435\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0442\u043E\u043D\u043A\u0438\u0439\u043A\u043B\u0438\u0435\u043D\u0442 '
             },
             contains: [o]
@@ -7034,7 +7034,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   o
                 ]
               },
-              n.inherit(n.TITLE_MODE, { begin: e })
+              t.inherit(t.TITLE_MODE, { begin: e })
             ]
           },
           o,
@@ -7045,9 +7045,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    ss = function(n) {
-      const e = n.regex,
-        t = n.COMMENT(/;/, /$/);
+    os = function(t) {
+      const e = t.regex,
+        n = t.COMMENT(/;/, /$/);
       return {
         name: 'Augmented Backus-Naur Form',
         illegal: /[!@#$^&',?+~`|:]/,
@@ -7072,19 +7072,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         contains: [
           { scope: 'operator', match: /=\/?/ },
           { scope: 'attribute', match: e.concat(/^[a-zA-Z][a-zA-Z0-9-]*/, /(?=\s*=)/) },
-          t,
+          n,
           { scope: 'symbol', match: /%b[0-1]+(-[0-1]+|(\.[0-1]+)+)?/ },
           { scope: 'symbol', match: /%d[0-9]+(-[0-9]+|(\.[0-9]+)+)?/ },
           { scope: 'symbol', match: /%x[0-9A-F]+(-[0-9A-F]+|(\.[0-9A-F]+)+)?/ },
           { scope: 'symbol', match: /%[si](?=".*")/ },
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE
         ]
       };
     },
-    os = function(n) {
-      const e = n.regex,
-        t = ['GET', 'POST', 'HEAD', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'PATCH', 'TRACE'];
+    ls = function(t) {
+      const e = t.regex,
+        n = ['GET', 'POST', 'HEAD', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'PATCH', 'TRACE'];
       return {
         name: 'Apache Access Log',
         contains: [
@@ -7092,9 +7092,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'number', begin: /\b\d+\b/, relevance: 0 },
           {
             className: 'string',
-            begin: e.concat(/"/, e.either(...t)),
+            begin: e.concat(/"/, e.either(...n)),
             end: /"/,
-            keywords: t,
+            keywords: n,
             illegal: /\n/,
             relevance: 5,
             contains: [{ begin: /HTTP\/[12]\.\d'/, relevance: 5 }]
@@ -7106,11 +7106,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    ls = function(n) {
-      const e = n.regex,
-        t = /[a-zA-Z_$][a-zA-Z0-9_$]*/,
-        a = e.concat(t, e.concat('(\\.', t, ')*')),
-        i = { className: 'rest_arg', begin: /[.]{3}/, end: t, relevance: 10 };
+    cs = function(t) {
+      const e = t.regex,
+        n = /[a-zA-Z_$][a-zA-Z0-9_$]*/,
+        a = e.concat(n, e.concat('(\\.', n, ')*')),
+        i = { className: 'rest_arg', begin: /[.]{3}/, end: n, relevance: 10 };
       return {
         name: 'ActionScript',
         aliases: ['as'],
@@ -7170,14 +7170,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: ['true', 'false', 'null', 'undefined']
         },
         contains: [
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.C_NUMBER_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.C_NUMBER_MODE,
           { match: [/\bpackage/, /\s+/, a], className: { 1: 'keyword', 3: 'title.class' } },
           {
-            match: [/\b(?:class|interface|extends|implements)/, /\s+/, t],
+            match: [/\b(?:class|interface|extends|implements)/, /\s+/, n],
             className: { 1: 'keyword', 3: 'title.class' }
           },
           { className: 'meta', beginKeywords: 'import include', end: /;/, keywords: { keyword: 'import include' } },
@@ -7187,28 +7187,28 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             excludeEnd: !0,
             illegal: /\S/,
             contains: [
-              n.inherit(n.TITLE_MODE, { className: 'title.function' }),
+              t.inherit(t.TITLE_MODE, { className: 'title.function' }),
               {
                 className: 'params',
                 begin: /\(/,
                 end: /\)/,
-                contains: [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, n.C_LINE_COMMENT_MODE, n.C_BLOCK_COMMENT_MODE, i]
+                contains: [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, t.C_LINE_COMMENT_MODE, t.C_BLOCK_COMMENT_MODE, i]
               },
               { begin: e.concat(/:\s*/, /([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)/) }
             ]
           },
-          n.METHOD_GUARD
+          t.METHOD_GUARD
         ],
         illegal: /#/
       };
     },
-    cs = function(n) {
+    ds = function(t) {
       const e = '\\d(_|\\d)*',
-        t = '[eE][-+]?' + e,
-        a = '\\b(' + (e + '#\\w+(\\.\\w+)?#(' + t + ')?') + '|' + (e + '(\\.' + e + ')?(' + t + ')?') + ')',
+        n = '[eE][-+]?' + e,
+        a = '\\b(' + (e + '#\\w+(\\.\\w+)?#(' + n + ')?') + '|' + (e + '(\\.' + e + ')?(' + n + ')?') + ')',
         i = '[A-Za-z](_?[A-Za-z0-9.])*',
         r = `[]\\{\\}%#'"`,
-        s = n.COMMENT('--', '$'),
+        s = t.COMMENT('--', '$'),
         o = {
           begin: '\\s+:\\s+',
           end: '\\s*(:=|;|\\)|=>|$)',
@@ -7356,17 +7356,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    ds = function(n) {
+    _s = function(t) {
       const e = {
           className: 'built_in',
           begin:
             '\\b(void|bool|int8|int16|int32|int64|int|uint8|uint16|uint32|uint64|uint|string|ref|array|double|float|auto|dictionary)'
         },
-        t = { className: 'symbol', begin: '[a-zA-Z0-9_]+@' },
-        a = { className: 'keyword', begin: '<', end: '>', contains: [e, t] };
+        n = { className: 'symbol', begin: '[a-zA-Z0-9_]+@' },
+        a = { className: 'keyword', begin: '<', end: '>', contains: [e, n] };
       return (
         (e.contains = [a]),
-        (t.contains = [a]),
+        (n.contains = [a]),
         {
           name: 'AngelScript',
           aliases: ['asc'],
@@ -7420,11 +7420,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ],
           illegal: '(^using\\s+[A-Za-z0-9_\\.]+;$|\\bfunction\\s*[^\\(])',
           contains: [
-            { className: 'string', begin: "'", end: "'", illegal: '\\n', contains: [n.BACKSLASH_ESCAPE], relevance: 0 },
+            { className: 'string', begin: "'", end: "'", illegal: '\\n', contains: [t.BACKSLASH_ESCAPE], relevance: 0 },
             { className: 'string', begin: '"""', end: '"""' },
-            { className: 'string', begin: '"', end: '"', illegal: '\\n', contains: [n.BACKSLASH_ESCAPE], relevance: 0 },
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE,
+            { className: 'string', begin: '"', end: '"', illegal: '\\n', contains: [t.BACKSLASH_ESCAPE], relevance: 0 },
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE,
             { className: 'string', begin: '^\\s*\\[', end: '\\]' },
             {
               beginKeywords: 'interface namespace',
@@ -7445,7 +7445,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               ]
             },
             e,
-            t,
+            n,
             { className: 'literal', begin: '\\b(null|true|false)' },
             {
               className: 'number',
@@ -7456,19 +7456,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    _s = function(n) {
+    us = function(t) {
       const e = { className: 'number', begin: /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(:\d{1,5})?/ };
       return {
         name: 'Apache config',
         aliases: ['apacheconf'],
         case_insensitive: !0,
         contains: [
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           {
             className: 'section',
             begin: /<\/?/,
             end: />/,
-            contains: [e, { className: 'number', begin: /:\d{1,5}/ }, n.inherit(n.QUOTE_STRING_MODE, { relevance: 0 })]
+            contains: [e, { className: 'number', begin: /:\d{1,5}/ }, t.inherit(t.QUOTE_STRING_MODE, { relevance: 0 })]
           },
           {
             className: 'attribute',
@@ -7508,7 +7508,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 },
                 e,
                 { className: 'number', begin: /\b\d+/ },
-                n.QUOTE_STRING_MODE
+                t.QUOTE_STRING_MODE
               ]
             }
           }
@@ -7516,12 +7516,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: /\S/
       };
     },
-    us = function(n) {
-      const e = n.regex,
-        t = n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
-        a = { className: 'params', begin: /\(/, end: /\)/, contains: ['self', n.C_NUMBER_MODE, t] },
-        i = n.COMMENT(/--/, /$/),
-        r = [i, n.COMMENT(/\(\*/, /\*\)/, { contains: ['self', i] }), n.HASH_COMMENT_MODE];
+    ps = function(t) {
+      const e = t.regex,
+        n = t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
+        a = { className: 'params', begin: /\(/, end: /\)/, contains: ['self', t.C_NUMBER_MODE, n] },
+        i = t.COMMENT(/--/, /$/),
+        r = [i, t.COMMENT(/\(\*/, /\*\)/, { contains: ['self', i] }), t.HASH_COMMENT_MODE];
       return {
         name: 'AppleScript',
         aliases: ['osascript'],
@@ -7533,8 +7533,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'alias application boolean class constant date file integer list number real record string text activate beep count delay launch log offset read round run say summarize write character characters contents day frontmost id item length month name|0 paragraph paragraphs rest reverse running time version weekday word words year'
         },
         contains: [
-          t,
-          n.C_NUMBER_MODE,
+          n,
+          t.C_NUMBER_MODE,
           {
             className: 'built_in',
             begin: e.concat(
@@ -7591,15 +7591,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               /\b/
             )
           },
-          { beginKeywords: 'on', illegal: /[${=;\n]/, contains: [n.UNDERSCORE_TITLE_MODE, a] },
+          { beginKeywords: 'on', illegal: /[${=;\n]/, contains: [t.UNDERSCORE_TITLE_MODE, a] },
           ...r
         ],
         illegal: /\/\/|->|=>|\[\[/
       };
     },
-    ps = function(n) {
+    ms = function(t) {
       const e = '[A-Za-z_][0-9A-Za-z_]*',
-        t = {
+        n = {
           keyword: ['if', 'for', 'while', 'var', 'new', 'function', 'do', 'return', 'void', 'else', 'break'],
           literal: [
             'BackSlash',
@@ -7808,23 +7808,23 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         a = {
           className: 'number',
-          variants: [{ begin: '\\b(0[bB][01]+)' }, { begin: '\\b(0[oO][0-7]+)' }, { begin: n.C_NUMBER_RE }],
+          variants: [{ begin: '\\b(0[bB][01]+)' }, { begin: '\\b(0[oO][0-7]+)' }, { begin: t.C_NUMBER_RE }],
           relevance: 0
         },
-        i = { className: 'subst', begin: '\\$\\{', end: '\\}', keywords: t, contains: [] },
-        r = { className: 'string', begin: '`', end: '`', contains: [n.BACKSLASH_ESCAPE, i] };
-      i.contains = [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, r, a, n.REGEXP_MODE];
-      const s = i.contains.concat([n.C_BLOCK_COMMENT_MODE, n.C_LINE_COMMENT_MODE]);
+        i = { className: 'subst', begin: '\\$\\{', end: '\\}', keywords: n, contains: [] },
+        r = { className: 'string', begin: '`', end: '`', contains: [t.BACKSLASH_ESCAPE, i] };
+      i.contains = [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, r, a, t.REGEXP_MODE];
+      const s = i.contains.concat([t.C_BLOCK_COMMENT_MODE, t.C_LINE_COMMENT_MODE]);
       return {
         name: 'ArcGIS Arcade',
         case_insensitive: !0,
-        keywords: t,
+        keywords: n,
         contains: [
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           r,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           {
             className: 'symbol',
             begin:
@@ -7844,12 +7844,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ]
           },
           {
-            begin: '(' + n.RE_STARTERS_RE + '|\\b(return)\\b)\\s*',
+            begin: '(' + t.RE_STARTERS_RE + '|\\b(return)\\b)\\s*',
             keywords: 'return',
             contains: [
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE,
-              n.REGEXP_MODE,
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE,
+              t.REGEXP_MODE,
               {
                 className: 'function',
                 begin: '(\\(.*?\\)|' + e + ')\\s*=>',
@@ -7861,7 +7861,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                     variants: [
                       { begin: e },
                       { begin: /\(\s*\)/ },
-                      { begin: /\(/, end: /\)/, excludeBegin: !0, excludeEnd: !0, keywords: t, contains: s }
+                      { begin: /\(/, end: /\)/, excludeBegin: !0, excludeEnd: !0, keywords: n, contains: s }
                     ]
                   }
                 ]
@@ -7874,7 +7874,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: /\{/,
             excludeEnd: !0,
             contains: [
-              n.inherit(n.TITLE_MODE, { className: 'title.function', begin: e }),
+              t.inherit(t.TITLE_MODE, { className: 'title.function', begin: e }),
               { className: 'params', begin: /\(/, end: /\)/, excludeBegin: !0, excludeEnd: !0, contains: s }
             ],
             illegal: /\[|%/
@@ -7884,7 +7884,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: /#(?!!)/
       };
     },
-    ms = function(n) {
+    gs = function(t) {
       const e = {
           type: ['boolean', 'byte', 'word', 'String'],
           built_in: [
@@ -8246,7 +8246,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'LOW'
           ]
         },
-        t = (function(i) {
+        n = (function(i) {
           const r = i.regex,
             s = i.COMMENT('//', '$', { contains: [{ begin: /\\\n/ }] }),
             o = 'decltype\\(auto\\)',
@@ -8651,26 +8651,26 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               }
             ])
           };
-        })(n),
-        a = t.keywords;
+        })(t),
+        a = n.keywords;
       return (
         (a.type = [...a.type, ...e.type]),
         (a.literal = [...a.literal, ...e.literal]),
         (a.built_in = [...a.built_in, ...e.built_in]),
         (a._hints = e._hints),
-        (t.name = 'Arduino'),
-        (t.aliases = ['ino']),
-        (t.supersetOf = 'cpp'),
-        t
+        (n.name = 'Arduino'),
+        (n.aliases = ['ino']),
+        (n.supersetOf = 'cpp'),
+        n
       );
     },
-    gs = function(n) {
+    Es = function(t) {
       const e = {
         variants: [
-          n.COMMENT('^[ \\t]*(?=#)', '$', { relevance: 0, excludeBegin: !0 }),
-          n.COMMENT('[;@]', '$', { relevance: 0 }),
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE
+          t.COMMENT('^[ \\t]*(?=#)', '$', { relevance: 0, excludeBegin: !0 }),
+          t.COMMENT('[;@]', '$', { relevance: 0 }),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE
         ]
       };
       return {
@@ -8678,7 +8678,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0,
         aliases: ['arm'],
         keywords: {
-          $pattern: '\\.?' + n.IDENT_RE,
+          $pattern: '\\.?' + t.IDENT_RE,
           meta:
             '.2byte .4byte .align .ascii .asciz .balign .byte .code .data .else .end .endif .endm .endr .equ .err .exitm .extern .global .hword .if .ifdef .ifndef .include .irp .long .macro .rept .req .section .set .skip .space .text .word .arm .thumb .code16 .code32 .force_thumb .thumb_func .ltorg ALIAS ALIGN ARM AREA ASSERT ATTR CN CODE CODE16 CODE32 COMMON CP DATA DCB DCD DCDU DCDO DCFD DCFDU DCI DCQ DCQU DCW DCWU DN ELIF ELSE END ENDFUNC ENDIF ENDP ENTRY EQU EXPORT EXPORTAS EXTERN FIELD FILL FUNCTION GBLA GBLL GBLS GET GLOBAL IF IMPORT INCBIN INCLUDE INFO KEEP LCLA LCLL LCLS LTORG MACRO MAP MEND MEXIT NOFP OPT PRESERVE8 PROC QN READONLY RELOC REQUIRE REQUIRE8 RLIST FN ROUT SETA SETL SETS SN SPACE SUBT THUMB THUMBX TTL WHILE WEND ',
           built_in:
@@ -8691,7 +8691,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               '\\b(adc|(qd?|sh?|u[qh]?)?add(8|16)?|usada?8|(q|sh?|u[qh]?)?(as|sa)x|and|adrl?|sbc|rs[bc]|asr|b[lx]?|blx|bxj|cbn?z|tb[bh]|bic|bfc|bfi|[su]bfx|bkpt|cdp2?|clz|clrex|cmp|cmn|cpsi[ed]|cps|setend|dbg|dmb|dsb|eor|isb|it[te]{0,3}|lsl|lsr|ror|rrx|ldm(([id][ab])|f[ds])?|ldr((s|ex)?[bhd])?|movt?|mvn|mra|mar|mul|[us]mull|smul[bwt][bt]|smu[as]d|smmul|smmla|mla|umlaal|smlal?([wbt][bt]|d)|mls|smlsl?[ds]|smc|svc|sev|mia([bt]{2}|ph)?|mrr?c2?|mcrr2?|mrs|msr|orr|orn|pkh(tb|bt)|rbit|rev(16|sh)?|sel|[su]sat(16)?|nop|pop|push|rfe([id][ab])?|stm([id][ab])?|str(ex)?[bhd]?|(qd?)?sub|(sh?|q|u[qh]?)?sub(8|16)|[su]xt(a?h|a?b(16)?)|srs([id][ab])?|swpb?|swi|smi|tst|teq|wfe|wfi|yield)(eq|ne|cs|cc|mi|pl|vs|vc|hi|ls|ge|lt|gt|le|al|hs|lo)?[sptrx]?(?=\\s)'
           },
           e,
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'string', begin: "'", end: "[^\\\\]'", relevance: 0 },
           { className: 'title', begin: '\\|', end: '\\|', illegal: '\\n', relevance: 0 },
           {
@@ -8716,14 +8716,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Es = function(n) {
-      const e = n.regex,
-        t = e.concat(/[\p{L}_]/u, e.optional(/[\p{L}0-9_.-]*:/u), /[\p{L}0-9_.-]*/u),
+    Ss = function(t) {
+      const e = t.regex,
+        n = e.concat(/[\p{L}_]/u, e.optional(/[\p{L}0-9_.-]*:/u), /[\p{L}0-9_.-]*/u),
         a = { className: 'symbol', begin: /&[a-z]+;|&#[0-9]+;|&#x[a-f0-9]+;/ },
         i = { begin: /\s/, contains: [{ className: 'keyword', begin: /#?[a-z_][a-z1-9_-]+/, illegal: /\n/ }] },
-        r = n.inherit(i, { begin: /\(/, end: /\)/ }),
-        s = n.inherit(n.APOS_STRING_MODE, { className: 'string' }),
-        o = n.inherit(n.QUOTE_STRING_MODE, { className: 'string' }),
+        r = t.inherit(i, { begin: /\(/, end: /\)/ }),
+        s = t.inherit(t.APOS_STRING_MODE, { className: 'string' }),
+        o = t.inherit(t.QUOTE_STRING_MODE, { className: 'string' }),
         l = {
           endsWithParent: !0,
           illegal: /</,
@@ -8770,7 +8770,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               }
             ]
           },
-          n.COMMENT(/<!--/, /-->/, { relevance: 10 }),
+          t.COMMENT(/<!--/, /-->/, { relevance: 10 }),
           { begin: /<!\[CDATA\[/, end: /\]\]>/, relevance: 10 },
           a,
           {
@@ -8797,21 +8797,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'tag', begin: /<>|<\/>/ },
           {
             className: 'tag',
-            begin: e.concat(/</, e.lookahead(e.concat(t, e.either(/\/>/, />/, /\s/)))),
+            begin: e.concat(/</, e.lookahead(e.concat(n, e.either(/\/>/, />/, /\s/)))),
             end: /\/?>/,
-            contains: [{ className: 'name', begin: t, relevance: 0, starts: l }]
+            contains: [{ className: 'name', begin: n, relevance: 0, starts: l }]
           },
           {
             className: 'tag',
-            begin: e.concat(/<\//, e.lookahead(e.concat(t, />/))),
-            contains: [{ className: 'name', begin: t, relevance: 0 }, { begin: />/, relevance: 0, endsParent: !0 }]
+            begin: e.concat(/<\//, e.lookahead(e.concat(n, />/))),
+            contains: [{ className: 'name', begin: n, relevance: 0 }, { begin: />/, relevance: 0, endsParent: !0 }]
           }
         ]
       };
     },
-    Ss = function(n) {
-      const e = n.regex,
-        t = [
+    hs = function(t) {
+      const e = t.regex,
+        n = [
           { className: 'strong', begin: /\*{2}([^\n]+?)\*{2}/ },
           {
             className: 'strong',
@@ -8842,8 +8842,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         name: 'AsciiDoc',
         aliases: ['adoc'],
         contains: [
-          n.COMMENT('^/{4,}\\n', '\\n/{4,}$', { relevance: 10 }),
-          n.COMMENT('^//', '$', { relevance: 0 }),
+          t.COMMENT('^/{4,}\\n', '\\n/{4,}$', { relevance: 10 }),
+          t.COMMENT('^//', '$', { relevance: 0 }),
           { className: 'title', begin: '^\\.\\w.*$' },
           { begin: '^[=\\*]{4,}\\n', end: '\\n^[=\\*]{4,}$', relevance: 10 },
           {
@@ -8868,7 +8868,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { begin: /\\\\_{2}[^\n]*_{2}/ },
           { begin: /\\\\`{2}[^\n]*`{2}/ },
           { begin: /[:;}][*_`](?![*_`])/ },
-          ...t,
+          ...n,
           ...a,
           { className: 'string', variants: [{ begin: "``.+?''" }, { begin: "`.+?'" }] },
           { className: 'code', begin: /`{2}/, end: /(\n{2}|`{2})/ },
@@ -8888,9 +8888,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    hs = function(n) {
-      const e = n.regex,
-        t = [
+    bs = function(t) {
+      const e = t.regex,
+        n = [
           'false',
           'synchronized',
           'int',
@@ -8969,17 +8969,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         a = ['get', 'set', 'args', 'call'];
       return {
         name: 'AspectJ',
-        keywords: t,
+        keywords: n,
         illegal: /<\/|#/,
         contains: [
-          n.COMMENT(/\/\*\*/, /\*\//, {
+          t.COMMENT(/\/\*\*/, /\*\//, {
             relevance: 0,
             contains: [{ begin: /\w+@/, relevance: 0 }, { className: 'doctag', begin: /@[A-Za-z]+/ }]
           }),
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           {
             className: 'class',
             beginKeywords: 'aspect',
@@ -8990,8 +8990,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               {
                 beginKeywords: 'extends implements pertypewithin perthis pertarget percflowbelow percflow issingleton'
               },
-              n.UNDERSCORE_TITLE_MODE,
-              { begin: /\([^\)]*/, end: /[)]+/, keywords: t.concat(a), excludeEnd: !1 }
+              t.UNDERSCORE_TITLE_MODE,
+              { begin: /\([^\)]*/, end: /[)]+/, keywords: n.concat(a), excludeEnd: !1 }
             ]
           },
           {
@@ -9002,7 +9002,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0,
             keywords: 'class interface',
             illegal: /[:"\[\]]/,
-            contains: [{ beginKeywords: 'extends implements' }, n.UNDERSCORE_TITLE_MODE]
+            contains: [{ beginKeywords: 'extends implements' }, t.UNDERSCORE_TITLE_MODE]
           },
           {
             beginKeywords: 'pointcut after before around throwing returning',
@@ -9010,7 +9010,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             excludeEnd: !1,
             illegal: /["\[\]]/,
             contains: [
-              { begin: e.concat(n.UNDERSCORE_IDENT_RE, /\s*\(/), returnBegin: !0, contains: [n.UNDERSCORE_TITLE_MODE] }
+              { begin: e.concat(t.UNDERSCORE_IDENT_RE, /\s*\(/), returnBegin: !0, contains: [t.UNDERSCORE_TITLE_MODE] }
             ]
           },
           {
@@ -9019,11 +9019,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: /[{;]/,
             relevance: 0,
             excludeEnd: !1,
-            keywords: t,
+            keywords: n,
             illegal: /["\[\]]/,
             contains: [
-              { begin: e.concat(n.UNDERSCORE_IDENT_RE, /\s*\(/), keywords: t.concat(a), relevance: 0 },
-              n.QUOTE_STRING_MODE
+              { begin: e.concat(t.UNDERSCORE_IDENT_RE, /\s*\(/), keywords: n.concat(a), relevance: 0 },
+              t.QUOTE_STRING_MODE
             ]
           },
           { beginKeywords: 'new throw', relevance: 0 },
@@ -9032,33 +9032,33 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             begin: /\w+ +\w+(\.\w+)?\s*\([^\)]*\)\s*((throws)[\w\s,]+)?[\{;]/,
             returnBegin: !0,
             end: /[{;=]/,
-            keywords: t,
+            keywords: n,
             excludeEnd: !0,
             contains: [
               {
-                begin: e.concat(n.UNDERSCORE_IDENT_RE, /\s*\(/),
+                begin: e.concat(t.UNDERSCORE_IDENT_RE, /\s*\(/),
                 returnBegin: !0,
                 relevance: 0,
-                contains: [n.UNDERSCORE_TITLE_MODE]
+                contains: [t.UNDERSCORE_TITLE_MODE]
               },
               {
                 className: 'params',
                 begin: /\(/,
                 end: /\)/,
                 relevance: 0,
-                keywords: t,
-                contains: [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, n.C_NUMBER_MODE, n.C_BLOCK_COMMENT_MODE]
+                keywords: n,
+                contains: [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, t.C_NUMBER_MODE, t.C_BLOCK_COMMENT_MODE]
               },
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE
             ]
           },
-          n.C_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: /@[A-Za-z]+/ }
         ]
       };
     },
-    bs = function(n) {
+    fs = function(t) {
       const e = { begin: '`[\\s\\S]' };
       return {
         name: 'AutoHotkey',
@@ -9072,10 +9072,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           e,
-          n.inherit(n.QUOTE_STRING_MODE, { contains: [e] }),
-          n.COMMENT(';', '$', { relevance: 0 }),
-          n.C_BLOCK_COMMENT_MODE,
-          { className: 'number', begin: n.NUMBER_RE, relevance: 0 },
+          t.inherit(t.QUOTE_STRING_MODE, { contains: [e] }),
+          t.COMMENT(';', '$', { relevance: 0 }),
+          t.C_BLOCK_COMMENT_MODE,
+          { className: 'number', begin: t.NUMBER_RE, relevance: 0 },
           { className: 'variable', begin: '%[a-zA-Z0-9#_$@]+%' },
           { className: 'built_in', begin: '^\\s*\\w+\\s*(,|%)' },
           {
@@ -9088,15 +9088,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    fs = function(n) {
+    Ts = function(t) {
       const e = {
           variants: [
-            n.COMMENT(';', '$', { relevance: 0 }),
-            n.COMMENT('#cs', '#ce'),
-            n.COMMENT('#comments-start', '#comments-end')
+            t.COMMENT(';', '$', { relevance: 0 }),
+            t.COMMENT('#cs', '#ce'),
+            t.COMMENT('#comments-start', '#comments-end')
           ]
         },
-        t = { begin: '\\$[A-z0-9_]+' },
+        n = { begin: '\\$[A-z0-9_]+' },
         a = {
           className: 'string',
           variants: [
@@ -9104,7 +9104,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { begin: /'/, end: /'/, contains: [{ begin: /''/, relevance: 0 }] }
           ]
         },
-        i = { variants: [n.BINARY_NUMBER_MODE, n.C_NUMBER_MODE] };
+        i = { variants: [t.BINARY_NUMBER_MODE, t.C_NUMBER_MODE] };
       return {
         name: 'AutoIt',
         case_insensitive: !0,
@@ -9118,7 +9118,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           e,
-          t,
+          n,
           a,
           i,
           {
@@ -9171,19 +9171,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: '$',
             illegal: '\\$|\\[|%',
             contains: [
-              n.inherit(n.UNDERSCORE_TITLE_MODE, { className: 'title.function' }),
-              { className: 'params', begin: '\\(', end: '\\)', contains: [t, a, i] }
+              t.inherit(t.UNDERSCORE_TITLE_MODE, { className: 'title.function' }),
+              { className: 'params', begin: '\\(', end: '\\)', contains: [n, a, i] }
             ]
           }
         ]
       };
     },
-    Ts = function(n) {
+    vs = function(t) {
       return {
         name: 'AVR Assembly',
         case_insensitive: !0,
         keywords: {
-          $pattern: '\\.?' + n.IDENT_RE,
+          $pattern: '\\.?' + t.IDENT_RE,
           keyword:
             'adc add adiw and andi asr bclr bld brbc brbs brcc brcs break breq brge brhc brhs brid brie brlo brlt brmi brne brpl brsh brtc brts brvc brvs bset bst call cbi cbr clc clh cli cln clr cls clt clv clz com cp cpc cpi cpse dec eicall eijmp elpm eor fmul fmuls fmulsu icall ijmp in inc jmp ld ldd ldi lds lpm lsl lsr mov movw mul muls mulsu neg nop or ori out pop push rcall ret reti rjmp rol ror sbc sbr sbrc sbrs sec seh sbi sbci sbic sbis sbiw sei sen ser ses set sev sez sleep spm st std sts sub subi swap tst wdr',
           built_in:
@@ -9192,12 +9192,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             '.byte .cseg .db .def .device .dseg .dw .endmacro .equ .eseg .exit .include .list .listmac .macro .nolist .org .set'
         },
         contains: [
-          n.C_BLOCK_COMMENT_MODE,
-          n.COMMENT(';', '$', { relevance: 0 }),
-          n.C_NUMBER_MODE,
-          n.BINARY_NUMBER_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.COMMENT(';', '$', { relevance: 0 }),
+          t.C_NUMBER_MODE,
+          t.BINARY_NUMBER_MODE,
           { className: 'number', begin: '\\b(\\$[a-zA-Z0-9]+|0o[0-7]+)' },
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'string', begin: "'", end: "[^\\\\]'", illegal: "[^\\\\][^']" },
           { className: 'symbol', begin: '^[A-Za-z0-9_.$]+:' },
           { className: 'meta', begin: '#', end: '$' },
@@ -9205,7 +9205,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    vs = function(n) {
+    ys = function(t) {
       return {
         name: 'Awk',
         keywords: {
@@ -9215,7 +9215,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'variable', variants: [{ begin: /\$[\w\d#@][\w\d_]*/ }, { begin: /\$\{(.*?)\}/ }] },
           {
             className: 'string',
-            contains: [n.BACKSLASH_ESCAPE],
+            contains: [t.BACKSLASH_ESCAPE],
             variants: [
               { begin: /(u|b)?r?'''/, end: /'''/, relevance: 10 },
               { begin: /(u|b)?r?"""/, end: /"""/, relevance: 10 },
@@ -9223,19 +9223,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               { begin: /(u|r|ur)"/, end: /"/, relevance: 10 },
               { begin: /(b|br)'/, end: /'/ },
               { begin: /(b|br)"/, end: /"/ },
-              n.APOS_STRING_MODE,
-              n.QUOTE_STRING_MODE
+              t.APOS_STRING_MODE,
+              t.QUOTE_STRING_MODE
             ]
           },
-          n.REGEXP_MODE,
-          n.HASH_COMMENT_MODE,
-          n.NUMBER_MODE
+          t.REGEXP_MODE,
+          t.HASH_COMMENT_MODE,
+          t.NUMBER_MODE
         ]
       };
     },
-    ys = function(n) {
-      const e = n.UNDERSCORE_IDENT_RE,
-        t = {
+    Cs = function(t) {
+      const e = t.UNDERSCORE_IDENT_RE,
+        n = {
           keyword: [
             'abstract',
             'as',
@@ -9365,44 +9365,44 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { match: [/class\s+/, e] }
           ],
           scope: { 2: 'title.class', 4: 'title.class.inherited' },
-          keywords: t
+          keywords: n
         };
       return {
         name: 'X++',
         aliases: ['x++'],
-        keywords: t,
+        keywords: n,
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: '#', end: '$' },
           a
         ]
       };
     },
-    Rs = function(n) {
-      const e = n.regex,
-        t = {},
-        a = { begin: /\$\{/, end: /\}/, contains: ['self', { begin: /:-/, contains: [t] }] };
-      Object.assign(t, {
+    Rs = function(t) {
+      const e = t.regex,
+        n = {},
+        a = { begin: /\$\{/, end: /\}/, contains: ['self', { begin: /:-/, contains: [n] }] };
+      Object.assign(n, {
         className: 'variable',
         variants: [{ begin: e.concat(/\$[\w\d#@][\w\d_]*/, '(?![\\w\\d])(?![$])') }, a]
       });
-      const i = { className: 'subst', begin: /\$\(/, end: /\)/, contains: [n.BACKSLASH_ESCAPE] },
+      const i = { className: 'subst', begin: /\$\(/, end: /\)/, contains: [t.BACKSLASH_ESCAPE] },
         r = {
           begin: /<<-?\s*(?=\w+)/,
-          starts: { contains: [n.END_SAME_AS_BEGIN({ begin: /(\w+)/, end: /(\w+)/, className: 'string' })] }
+          starts: { contains: [t.END_SAME_AS_BEGIN({ begin: /(\w+)/, end: /(\w+)/, className: 'string' })] }
         },
-        s = { className: 'string', begin: /"/, end: /"/, contains: [n.BACKSLASH_ESCAPE, t, i] };
+        s = { className: 'string', begin: /"/, end: /"/, contains: [t.BACKSLASH_ESCAPE, n, i] };
       i.contains.push(s);
       const o = {
           begin: /\$?\(\(/,
           end: /\)\)/,
-          contains: [{ begin: /\d+#[0-9a-f]+/, className: 'number' }, n.NUMBER_MODE, t]
+          contains: [{ begin: /\d+#[0-9a-f]+/, className: 'number' }, t.NUMBER_MODE, n]
         },
-        l = n.SHEBANG({
+        l = t.SHEBANG({
           binary: `(${['fish', 'bash', 'zsh', 'sh', 'csh', 'ksh', 'tcsh', 'dash', 'scsh'].join('|')})`,
           relevance: 10
         }),
@@ -9410,7 +9410,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           className: 'function',
           begin: /\w[\w\d_]*\s*\(\s*\)\s*\{/,
           returnBegin: !0,
-          contains: [n.inherit(n.TITLE_MODE, { begin: /\w[\w\d_]*/ })],
+          contains: [t.inherit(t.TITLE_MODE, { begin: /\w[\w\d_]*/ })],
           relevance: 0
         };
       return {
@@ -9635,20 +9635,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           l,
-          n.SHEBANG(),
+          t.SHEBANG(),
           c,
           o,
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           r,
           { match: /(\/[a-z._-]+)+/ },
           s,
           { className: '', begin: /\\"/ },
           { className: 'string', begin: /'/, end: /'/ },
-          t
+          n
         ]
       };
     },
-    Cs = function(n) {
+    Ns = function(t) {
       return {
         name: 'BASIC',
         case_insensitive: !0,
@@ -9836,9 +9836,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.QUOTE_STRING_MODE,
-          n.COMMENT('REM', '$', { relevance: 10 }),
-          n.COMMENT("'", '$', { relevance: 0 }),
+          t.QUOTE_STRING_MODE,
+          t.COMMENT('REM', '$', { relevance: 10 }),
+          t.COMMENT("'", '$', { relevance: 0 }),
           { className: 'symbol', begin: '^[0-9]+ ', relevance: 10 },
           { className: 'number', begin: '\\b\\d+(\\.\\d+)?([edED]\\d+)?[#!]?', relevance: 0 },
           { className: 'number', begin: '(&[hH][0-9a-fA-F]{1,4})' },
@@ -9846,7 +9846,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Ns = function(n) {
+    Os = function(t) {
       return {
         name: 'Backus\u2013Naur Form',
         contains: [
@@ -9856,22 +9856,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: /$/,
             contains: [
               { begin: /</, end: />/ },
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE,
-              n.APOS_STRING_MODE,
-              n.QUOTE_STRING_MODE
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE,
+              t.APOS_STRING_MODE,
+              t.QUOTE_STRING_MODE
             ]
           }
         ]
       };
     },
-    Os = function(n) {
+    As = function(t) {
       const e = { className: 'literal', begin: /[+-]+/, relevance: 0 };
       return {
         name: 'Brainfuck',
         aliases: ['bf'],
         contains: [
-          n.COMMENT(/[^\[\]\.,\+\-<> \r\n]/, /[\[\]\.,\+\-<> \r\n]/, {
+          t.COMMENT(/[^\[\]\.,\+\-<> \r\n]/, /[\[\]\.,\+\-<> \r\n]/, {
             contains: [{ match: /[ ]+[^\[\]\.,\+\-<> \r\n]/, relevance: 0 }],
             returnEnd: !0,
             relevance: 0
@@ -9883,9 +9883,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    As = function(n) {
-      const e = n.regex,
-        t = n.COMMENT('//', '$', { contains: [{ begin: /\\\n/ }] }),
+    Is = function(t) {
+      const e = t.regex,
+        n = t.COMMENT('//', '$', { contains: [{ begin: /\\\n/ }] }),
         a = 'decltype\\(auto\\)',
         i = '[a-zA-Z_]\\w*::',
         r = '(' + a + '|' + e.optional(i) + '[a-zA-Z_]\\w*' + e.optional('<[^<>]+>') + ')',
@@ -9893,9 +9893,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         o = {
           className: 'string',
           variants: [
-            { begin: '(u8?|U|L)?"', end: '"', illegal: '\\n', contains: [n.BACKSLASH_ESCAPE] },
+            { begin: '(u8?|U|L)?"', end: '"', illegal: '\\n', contains: [t.BACKSLASH_ESCAPE] },
             { begin: "(u8?|U|L)?'(\\\\(x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4,8}|[0-7]{3}|\\S)|.)", end: "'", illegal: '.' },
-            n.END_SAME_AS_BEGIN({ begin: /(?:u8?|U|L)?R"([^()\\ ]{0,16})\(/, end: /\)([^()\\ ]{0,16})"/ })
+            t.END_SAME_AS_BEGIN({ begin: /(?:u8?|U|L)?R"([^()\\ ]{0,16})\(/, end: /\)([^()\\ ]{0,16})"/ })
           ]
         },
         l = {
@@ -9916,14 +9916,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           contains: [
             { begin: /\\\n/, relevance: 0 },
-            n.inherit(o, { className: 'string' }),
+            t.inherit(o, { className: 'string' }),
             { className: 'string', begin: /<.*?>/ },
-            t,
-            n.C_BLOCK_COMMENT_MODE
+            n,
+            t.C_BLOCK_COMMENT_MODE
           ]
         },
-        _ = { className: 'title', begin: e.optional(i) + n.IDENT_RE, relevance: 0 },
-        d = e.optional(i) + n.IDENT_RE + '\\s*\\(',
+        _ = { className: 'title', begin: e.optional(i) + t.IDENT_RE, relevance: 0 },
+        d = e.optional(i) + t.IDENT_RE + '\\s*\\(',
         u = {
           keyword: [
             'asm',
@@ -9991,7 +9991,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           built_in:
             'std string wstring cin cout cerr clog stdin stdout stderr stringstream istringstream ostringstream auto_ptr deque list queue stack vector map set pair bitset multiset multimap unordered_set unordered_map unordered_multiset unordered_multimap priority_queue make_pair array shared_ptr abort terminate abs acos asin atan2 atan calloc ceil cosh cos exit exp fabs floor fmod fprintf fputs free frexp fscanf future isalnum isalpha iscntrl isdigit isgraph islower isprint ispunct isspace isupper isxdigit tolower toupper labs ldexp log10 log malloc realloc memchr memcmp memcpy memset modf pow printf putchar puts scanf sinh sin snprintf sprintf sqrt sscanf strcat strchr strcmp strcpy strcspn strlen strncat strncmp strncpy strpbrk strrchr strspn strstr tanh tan vfprintf vprintf vsprintf endl initializer_list unique_ptr'
         },
-        m = [c, s, t, n.C_BLOCK_COMMENT_MODE, l, o],
+        m = [c, s, n, t.C_BLOCK_COMMENT_MODE, l, o],
         p = {
           variants: [
             { begin: /=/, end: /;/ },
@@ -10011,7 +10011,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           illegal: /[^\w\s\*&:<>.]/,
           contains: [
             { begin: a, keywords: u, relevance: 0 },
-            { begin: d, returnBegin: !0, contains: [n.inherit(_, { className: 'title.function' })], relevance: 0 },
+            { begin: d, returnBegin: !0, contains: [t.inherit(_, { className: 'title.function' })], relevance: 0 },
             { relevance: 0, match: /,/ },
             {
               className: 'params',
@@ -10020,8 +10020,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               keywords: u,
               relevance: 0,
               contains: [
-                t,
-                n.C_BLOCK_COMMENT_MODE,
+                n,
+                t.C_BLOCK_COMMENT_MODE,
                 o,
                 l,
                 s,
@@ -10030,13 +10030,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   end: /\)/,
                   keywords: u,
                   relevance: 0,
-                  contains: ['self', t, n.C_BLOCK_COMMENT_MODE, o, l, s]
+                  contains: ['self', n, t.C_BLOCK_COMMENT_MODE, o, l, s]
                 }
               ]
             },
             s,
-            t,
-            n.C_BLOCK_COMMENT_MODE,
+            n,
+            t.C_BLOCK_COMMENT_MODE,
             c
           ]
         };
@@ -10048,20 +10048,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: '</',
         contains: [].concat(p, g, m, [
           c,
-          { begin: n.IDENT_RE + '::', keywords: u },
+          { begin: t.IDENT_RE + '::', keywords: u },
           {
             className: 'class',
             beginKeywords: 'enum class struct union',
             end: /[{;:<>=]/,
-            contains: [{ beginKeywords: 'final class struct' }, n.TITLE_MODE]
+            contains: [{ beginKeywords: 'final class struct' }, t.TITLE_MODE]
           }
         ]),
         exports: { preprocessor: c, strings: o, keywords: u }
       };
     },
-    Is = function(n) {
-      const e = n.regex,
-        t = [
+    xs = function(t) {
+      const e = t.regex,
+        n = [
           'div',
           'mod',
           'in',
@@ -10090,9 +10090,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'var'
         ],
         a = [
-          n.C_LINE_COMMENT_MODE,
-          n.COMMENT(/\{/, /\}/, { relevance: 0 }),
-          n.COMMENT(/\(\*/, /\*\)/, { relevance: 10 })
+          t.C_LINE_COMMENT_MODE,
+          t.COMMENT(/\{/, /\}/, { relevance: 0 }),
+          t.COMMENT(/\(\*/, /\*\)/, { relevance: 10 })
         ],
         i = { className: 'string', begin: /'/, end: /'/, contains: [{ begin: /''/ }] },
         r = { className: 'string', begin: /(#\d+)+/ },
@@ -10100,7 +10100,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           match: [/procedure/, /\s+/, /[a-zA-Z_][\w@]*/, /\s*/],
           scope: { 1: 'keyword', 3: 'title.function' },
           contains: [
-            { className: 'params', begin: /\(/, end: /\)/, keywords: t, contains: [i, r, n.NUMBER_MODE] },
+            { className: 'params', begin: /\(/, end: /\)/, keywords: n, contains: [i, r, t.NUMBER_MODE] },
             ...a
           ]
         },
@@ -10121,7 +10121,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       return {
         name: 'C/AL',
         case_insensitive: !0,
-        keywords: { keyword: t, literal: 'false true' },
+        keywords: { keyword: n, literal: 'false true' },
         illegal: /\/\*/,
         contains: [
           { match: /[\w]+(?=\=)/, scope: 'attribute', relevance: 0 },
@@ -10129,17 +10129,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           r,
           { className: 'number', begin: '\\b\\d+(\\.\\d+)?(DT|D|T)', relevance: 0 },
           { className: 'string', begin: '"', end: '"' },
-          n.NUMBER_MODE,
+          t.NUMBER_MODE,
           o,
           s
         ]
       };
     },
-    xs = function(n) {
+    Ds = function(t) {
       const e = {
         variants: [
-          { match: [/(struct|enum|interface)/, /\s+/, n.IDENT_RE] },
-          { match: [/extends/, /\s*\(/, n.IDENT_RE, /\s*\)/] }
+          { match: [/(struct|enum|interface)/, /\s+/, t.IDENT_RE] },
+          { match: [/extends/, /\s*\(/, t.IDENT_RE, /\s*\)/] }
         ],
         scope: { 1: 'keyword', 3: 'title.class' }
       };
@@ -10189,16 +10189,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: ['true', 'false']
         },
         contains: [
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE,
-          n.HASH_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE,
+          t.HASH_COMMENT_MODE,
           { className: 'meta', begin: /@0x[\w\d]{16};/, illegal: /\n/ },
           { className: 'symbol', begin: /@\d+\b/ },
           e
         ]
       };
     },
-    Ds = function(n) {
+    ws = function(t) {
       const e = [
           'assembly',
           'module',
@@ -10244,7 +10244,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'exists',
           'nonempty'
         ],
-        t = {
+        n = {
           className: 'subst',
           excludeBegin: !0,
           excludeEnd: !0,
@@ -10255,7 +10255,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         a = [
           { className: 'string', begin: '"""', end: '"""', relevance: 10 },
-          { className: 'string', begin: '"', end: '"', contains: [t] },
+          { className: 'string', begin: '"', end: '"', contains: [n] },
           { className: 'string', begin: "'", end: "'" },
           {
             className: 'number',
@@ -10264,7 +10264,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           }
         ];
       return (
-        (t.contains = a),
+        (n.contains = a),
         {
           name: 'Ceylon',
           keywords: {
@@ -10288,14 +10288,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           illegal: '\\$[^01]|#[^0-9a-fA-F]',
           contains: [
-            n.C_LINE_COMMENT_MODE,
-            n.COMMENT('/\\*', '\\*/', { contains: ['self'] }),
+            t.C_LINE_COMMENT_MODE,
+            t.COMMENT('/\\*', '\\*/', { contains: ['self'] }),
             { className: 'meta', begin: '@[a-z]\\w*(?::"[^"]*")?' }
           ].concat(a)
         }
       );
     },
-    ws = function(n) {
+    Ms = function(t) {
       return {
         name: 'Clean',
         aliases: ['icl', 'dcl'],
@@ -10336,26 +10336,26 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: 'True False'
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE,
           { begin: '->|<-[|:]?|#!?|>>=|\\{\\||\\|\\}|:==|=:|<>' }
         ]
       };
     },
-    Ms = function(n) {
+    Ls = function(t) {
       const e = "a-zA-Z_\\-!.?+*=<>&'",
-        t = '[#]?[' + e + '][' + e + '0-9/;:$#]*',
+        n = '[#]?[' + e + '][' + e + '0-9/;:$#]*',
         a = 'def defonce defprotocol defstruct defmulti defmethod defn- defn defmacro deftype defrecord',
         i = {
-          $pattern: t,
+          $pattern: n,
           built_in:
             a +
             ' cond apply if-not if-let if not not= =|0 <|0 >|0 <=|0 >=|0 ==|0 +|0 /|0 *|0 -|0 rem quot neg? pos? delay? symbol? keyword? true? false? integer? empty? coll? list? set? ifn? fn? associative? sequential? sorted? counted? reversible? number? decimal? class? distinct? isa? float? rational? reduced? ratio? odd? even? char? seq? vector? string? map? nil? contains? zero? instance? not-every? not-any? libspec? -> ->> .. . inc compare do dotimes mapcat take remove take-while drop letfn drop-last take-last drop-while while intern condp case reduced cycle split-at split-with repeat replicate iterate range merge zipmap declare line-seq sort comparator sort-by dorun doall nthnext nthrest partition eval doseq await await-for let agent atom send send-off release-pending-sends add-watch mapv filterv remove-watch agent-error restart-agent set-error-handler error-handler set-error-mode! error-mode shutdown-agents quote var fn loop recur throw try monitor-enter monitor-exit macroexpand macroexpand-1 for dosync and or when when-not when-let comp juxt partial sequence memoize constantly complement identity assert peek pop doto proxy first rest cons cast coll last butlast sigs reify second ffirst fnext nfirst nnext meta with-meta ns in-ns create-ns import refer keys select-keys vals key val rseq name namespace promise into transient persistent! conj! assoc! dissoc! pop! disj! use class type num float double short byte boolean bigint biginteger bigdec print-method print-dup throw-if printf format load compile get-in update-in pr pr-on newline flush read slurp read-line subvec with-open memfn time re-find re-groups rand-int rand mod locking assert-valid-fdecl alias resolve ref deref refset swap! reset! set-validator! compare-and-set! alter-meta! reset-meta! commute get-validator alter ref-set ref-history-count ref-min-history ref-max-history ensure sync io! new next conj set! to-array future future-call into-array aset gen-class reduce map filter find empty hash-map hash-set sorted-map sorted-map-by sorted-set sorted-set-by vec vector seq flatten reverse assoc dissoc list disj get union difference intersection extend extend-type extend-protocol int nth delay count concat chunk chunk-buffer chunk-append chunk-first chunk-rest max min dec unchecked-inc-int unchecked-inc unchecked-dec-inc unchecked-dec unchecked-negate unchecked-add-int unchecked-add unchecked-subtract-int unchecked-subtract chunk-next chunk-cons chunked-seq? prn vary-meta lazy-seq spread list* str find-keyword keyword symbol gensym force rationalize'
         },
-        r = { begin: t, relevance: 0 },
+        r = { begin: n, relevance: 0 },
         s = {
           scope: 'number',
           relevance: 0,
@@ -10377,22 +10377,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { match: /\\\S/, relevance: 0 }
           ]
         },
-        l = { scope: 'regex', begin: /#"/, end: /"/, contains: [n.BACKSLASH_ESCAPE] },
-        c = n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
+        l = { scope: 'regex', begin: /#"/, end: /"/, contains: [t.BACKSLASH_ESCAPE] },
+        c = t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
         _ = { scope: 'punctuation', match: /,/, relevance: 0 },
-        d = n.COMMENT(';', '$', { relevance: 0 }),
+        d = t.COMMENT(';', '$', { relevance: 0 }),
         u = { className: 'literal', begin: /\b(true|false|nil)\b/ },
-        m = { begin: '\\[|(#::?' + t + ')?\\{', end: '[\\]\\}]', relevance: 0 },
-        p = { className: 'symbol', begin: '[:]{1,2}' + t },
+        m = { begin: '\\[|(#::?' + n + ')?\\{', end: '[\\]\\}]', relevance: 0 },
+        p = { className: 'symbol', begin: '[:]{1,2}' + n },
         g = { begin: '\\(', end: '\\)' },
         E = { endsWithParent: !0, relevance: 0 },
-        h = { keywords: i, className: 'name', begin: t, relevance: 0, starts: E },
+        h = { keywords: i, className: 'name', begin: n, relevance: 0, starts: E },
         T = [_, g, o, l, c, d, p, m, s, u, r],
         S = {
           beginKeywords: a,
-          keywords: { $pattern: t, keyword: a },
+          keywords: { $pattern: n, keyword: a },
           end: '(\\[|#|\\d|"|:|\\{|\\)|\\(|$)',
-          contains: [{ className: 'title', begin: t, relevance: 0, excludeEnd: !0, endsParent: !0 }].concat(T)
+          contains: [{ className: 'title', begin: n, relevance: 0, excludeEnd: !0, endsParent: !0 }].concat(T)
         };
       return (
         (g.contains = [S, h, E]),
@@ -10401,7 +10401,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         { name: 'Clojure', aliases: ['clj', 'edn'], illegal: /\S/, contains: [_, g, o, l, c, d, p, m, s, u] }
       );
     },
-    Ls = function(n) {
+    ks = function(t) {
       return {
         name: 'Clojure REPL',
         contains: [
@@ -10409,7 +10409,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    ks = function(n) {
+    Ps = function(t) {
       return {
         name: 'CMake',
         aliases: ['cmake.in'],
@@ -10420,14 +10420,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           { className: 'variable', begin: /\$\{/, end: /\}/ },
-          n.COMMENT(/#\[\[/, /]]/),
-          n.HASH_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE
+          t.COMMENT(/#\[\[/, /]]/),
+          t.HASH_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE
         ]
       };
     };
-  const Ps = [
+  const Us = [
       'as',
       'in',
       'of',
@@ -10467,8 +10467,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'export',
       'extends'
     ],
-    Us = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
-    Fs = [].concat(
+    Fs = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
+    Bs = [].concat(
       [
         'setInterval',
         'setTimeout',
@@ -10531,33 +10531,33 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       ],
       ['Error', 'EvalError', 'InternalError', 'RangeError', 'ReferenceError', 'SyntaxError', 'TypeError', 'URIError']
     );
-  var Bs = function(n) {
+  var Gs = function(t) {
       const e = {
-        keyword: Ps.concat(['then', 'unless', 'until', 'loop', 'by', 'when', 'and', 'or', 'is', 'isnt', 'not']).filter(
-          ((t = ['var', 'const', 'let', 'function', 'static']), _ => !t.includes(_))
+        keyword: Us.concat(['then', 'unless', 'until', 'loop', 'by', 'when', 'and', 'or', 'is', 'isnt', 'not']).filter(
+          ((n = ['var', 'const', 'let', 'function', 'static']), _ => !n.includes(_))
         ),
-        literal: Us.concat(['yes', 'no', 'on', 'off']),
-        built_in: Fs.concat(['npm', 'print'])
+        literal: Fs.concat(['yes', 'no', 'on', 'off']),
+        built_in: Bs.concat(['npm', 'print'])
       };
-      var t;
+      var n;
       const a = '[A-Za-z$_][0-9A-Za-z$_]*',
         i = { className: 'subst', begin: /#\{/, end: /\}/, keywords: e },
         r = [
-          n.BINARY_NUMBER_MODE,
-          n.inherit(n.C_NUMBER_MODE, { starts: { end: '(\\s*/)?', relevance: 0 } }),
+          t.BINARY_NUMBER_MODE,
+          t.inherit(t.C_NUMBER_MODE, { starts: { end: '(\\s*/)?', relevance: 0 } }),
           {
             className: 'string',
             variants: [
-              { begin: /'''/, end: /'''/, contains: [n.BACKSLASH_ESCAPE] },
-              { begin: /'/, end: /'/, contains: [n.BACKSLASH_ESCAPE] },
-              { begin: /"""/, end: /"""/, contains: [n.BACKSLASH_ESCAPE, i] },
-              { begin: /"/, end: /"/, contains: [n.BACKSLASH_ESCAPE, i] }
+              { begin: /'''/, end: /'''/, contains: [t.BACKSLASH_ESCAPE] },
+              { begin: /'/, end: /'/, contains: [t.BACKSLASH_ESCAPE] },
+              { begin: /"""/, end: /"""/, contains: [t.BACKSLASH_ESCAPE, i] },
+              { begin: /"/, end: /"/, contains: [t.BACKSLASH_ESCAPE, i] }
             ]
           },
           {
             className: 'regexp',
             variants: [
-              { begin: '///', end: '///', contains: [i, n.HASH_COMMENT_MODE] },
+              { begin: '///', end: '///', contains: [i, t.HASH_COMMENT_MODE] },
               { begin: '//[gim]{0,3}(?=\\W)', relevance: 0 },
               { begin: /\/(?![ *]).*?(?![\\]).\/[gim]{0,3}(?=\W)/ }
             ]
@@ -10571,7 +10571,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           }
         ];
       i.contains = r;
-      const s = n.inherit(n.TITLE_MODE, { begin: a }),
+      const s = t.inherit(t.TITLE_MODE, { begin: a }),
         o = '(\\(.*\\)\\s*)?\\B[-=]>',
         l = {
           className: 'params',
@@ -10591,8 +10591,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: /\/\*/,
         contains: [
           ...r,
-          n.COMMENT('###', '###'),
-          n.HASH_COMMENT_MODE,
+          t.COMMENT('###', '###'),
+          t.HASH_COMMENT_MODE,
           {
             className: 'function',
             begin: '^\\s*' + a + '\\s*=\\s*' + o,
@@ -10610,7 +10610,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Gs = function(n) {
+    Ys = function(t) {
       return {
         name: 'Coq',
         keywords: {
@@ -11029,15 +11029,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.QUOTE_STRING_MODE,
-          n.COMMENT('\\(\\*', '\\*\\)'),
-          n.C_NUMBER_MODE,
+          t.QUOTE_STRING_MODE,
+          t.COMMENT('\\(\\*', '\\*\\)'),
+          t.C_NUMBER_MODE,
           { className: 'type', excludeBegin: !0, begin: '\\|\\s*', end: '\\w+' },
           { begin: /[-=]>/ }
         ]
       };
     },
-    Ys = function(n) {
+    Hs = function(t) {
       return {
         name: 'Cach\xE9 Object Script',
         case_insensitive: !0,
@@ -11047,8 +11047,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         contains: [
           { className: 'number', begin: '\\b(\\d+(\\.\\d*)?|\\.\\d+)', relevance: 0 },
           { className: 'string', variants: [{ begin: '"', end: '"', contains: [{ begin: '""', relevance: 0 }] }] },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           { className: 'comment', begin: /;/, end: '$', relevance: 0 },
           { className: 'built_in', begin: /(?:\$\$?|\.\.)\^?[a-zA-Z]+/ },
           { className: 'built_in', begin: /\$\$\$[a-zA-Z]+/ },
@@ -11061,9 +11061,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Hs = function(n) {
-      const e = n.regex,
-        t = n.COMMENT('//', '$', { contains: [{ begin: /\\\n/ }] }),
+    zs = function(t) {
+      const e = t.regex,
+        n = t.COMMENT('//', '$', { contains: [{ begin: /\\\n/ }] }),
         a = 'decltype\\(auto\\)',
         i = '[a-zA-Z_]\\w*::',
         r = '(?!struct)(' + a + '|' + e.optional(i) + '[a-zA-Z_]\\w*' + e.optional('<[^<>]+>') + ')',
@@ -11071,9 +11071,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         o = {
           className: 'string',
           variants: [
-            { begin: '(u8?|U|L)?"', end: '"', illegal: '\\n', contains: [n.BACKSLASH_ESCAPE] },
+            { begin: '(u8?|U|L)?"', end: '"', illegal: '\\n', contains: [t.BACKSLASH_ESCAPE] },
             { begin: "(u8?|U|L)?'(\\\\(x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4,8}|[0-7]{3}|\\S)|.)", end: "'", illegal: '.' },
-            n.END_SAME_AS_BEGIN({ begin: /(?:u8?|U|L)?R"([^()\\ ]{0,16})\(/, end: /\)([^()\\ ]{0,16})"/ })
+            t.END_SAME_AS_BEGIN({ begin: /(?:u8?|U|L)?R"([^()\\ ]{0,16})\(/, end: /\)([^()\\ ]{0,16})"/ })
           ]
         },
         l = {
@@ -11094,14 +11094,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           contains: [
             { begin: /\\\n/, relevance: 0 },
-            n.inherit(o, { className: 'string' }),
+            t.inherit(o, { className: 'string' }),
             { className: 'string', begin: /<.*?>/ },
-            t,
-            n.C_BLOCK_COMMENT_MODE
+            n,
+            t.C_BLOCK_COMMENT_MODE
           ]
         },
-        _ = { className: 'title', begin: e.optional(i) + n.IDENT_RE, relevance: 0 },
-        d = e.optional(i) + n.IDENT_RE + '\\s*\\(',
+        _ = { className: 'title', begin: e.optional(i) + t.IDENT_RE, relevance: 0 },
+        d = e.optional(i) + t.IDENT_RE + '\\s*\\(',
         u = {
           type: [
             'bool',
@@ -11384,11 +11384,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             /(?!for)/,
             /(?!switch)/,
             /(?!while)/,
-            n.IDENT_RE,
+            t.IDENT_RE,
             e.lookahead(/(<[^<>]+>|)\s*\(/)
           )
         },
-        p = [m, c, s, t, n.C_BLOCK_COMMENT_MODE, l, o],
+        p = [m, c, s, n, t.C_BLOCK_COMMENT_MODE, l, o],
         g = {
           variants: [
             { begin: /=/, end: /;/ },
@@ -11420,8 +11420,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               keywords: u,
               relevance: 0,
               contains: [
-                t,
-                n.C_BLOCK_COMMENT_MODE,
+                n,
+                t.C_BLOCK_COMMENT_MODE,
                 o,
                 l,
                 s,
@@ -11430,13 +11430,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   end: /\)/,
                   keywords: u,
                   relevance: 0,
-                  contains: ['self', t, n.C_BLOCK_COMMENT_MODE, o, l, s]
+                  contains: ['self', n, t.C_BLOCK_COMMENT_MODE, o, l, s]
                 }
               ]
             },
             s,
-            t,
-            n.C_BLOCK_COMMENT_MODE,
+            n,
+            t.C_BLOCK_COMMENT_MODE,
             c
           ]
         };
@@ -11455,7 +11455,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             keywords: u,
             contains: ['self', s]
           },
-          { begin: n.IDENT_RE + '::', keywords: u },
+          { begin: t.IDENT_RE + '::', keywords: u },
           {
             match: [/\b(?:enum(?:\s+(?:class|struct))?|class|struct|union)/, /\s+/, /\w+/],
             className: { 1: 'keyword', 3: 'title.class' }
@@ -11463,7 +11463,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ])
       };
     },
-    zs = function(n) {
+    $s = function(t) {
       const e =
         'group clone ms master location colocation order fencing_topology rsc_ticket acl_target acl_group user role tag xml';
       return {
@@ -11476,7 +11476,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: 'Master Started Slave Stopped start promote demote stop monitor true false'
         },
         contains: [
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           {
             beginKeywords: 'node',
             starts: { end: '\\s*([\\w_-]+:)?', starts: { className: 'title', end: '\\s*[\\$\\w_][\\w_-]*' } }
@@ -11494,7 +11494,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             beginKeywords: 'property rsc_defaults op_defaults',
             starts: { className: 'title', end: '\\s*([\\w_-]+:)?' }
           },
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'meta', begin: '(ocf|systemd|service|lsb):[\\w_:-]+', relevance: 0 },
           { className: 'number', begin: '\\b\\d+(\\.\\d+)?(ms|s|h|m)?', relevance: 0 },
           { className: 'literal', begin: '[-]?(infinity|inf)', relevance: 0 },
@@ -11503,9 +11503,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    $s = function(n) {
+    Vs = function(t) {
       const e = '(_?[ui](8|16|32|64|128))?',
-        t =
+        n =
           '[a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|[=!]~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~|]|//|//=|&[-+*]=?|&\\*\\*|\\[\\][=?]?',
         a = '[A-Za-z_]\\w*(::\\w+)*(\\?|!)?',
         i = {
@@ -11527,7 +11527,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       }
       const c = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE, r],
+          contains: [t.BACKSLASH_ESCAPE, r],
           variants: [
             { begin: /'/, end: /'/ },
             { begin: /"/, end: /"/ },
@@ -11554,12 +11554,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           relevance: 0
         },
         d = {
-          begin: '(?!%\\})(' + n.RE_STARTERS_RE + '|\\n|\\b(case|if|select|unless|until|when|while)\\b)\\s*',
+          begin: '(?!%\\})(' + t.RE_STARTERS_RE + '|\\n|\\b(case|if|select|unless|until|when|while)\\b)\\s*',
           keywords: 'case if select unless until when while',
           contains: [
             {
               className: 'regexp',
-              contains: [n.BACKSLASH_ESCAPE, r],
+              contains: [t.BACKSLASH_ESCAPE, r],
               variants: [{ begin: '//[a-z]*', relevance: 0 }, { begin: '/(?!\\/)', end: '/[a-z]*' }]
             }
           ],
@@ -11571,7 +11571,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           _,
           {
             className: 'regexp',
-            contains: [n.BACKSLASH_ESCAPE, r],
+            contains: [t.BACKSLASH_ESCAPE, r],
             variants: [
               { begin: '%r\\(', end: '\\)', contains: l('\\(', '\\)') },
               { begin: '%r\\[', end: '\\]', contains: l('\\[', '\\]') },
@@ -11586,46 +11586,46 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             className: 'meta',
             begin: '@\\[',
             end: '\\]',
-            contains: [n.inherit(n.QUOTE_STRING_MODE, { className: 'string' })]
+            contains: [t.inherit(t.QUOTE_STRING_MODE, { className: 'string' })]
           },
           s,
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           {
             className: 'class',
             beginKeywords: 'class module struct',
             end: '$|;',
             illegal: /=/,
-            contains: [n.HASH_COMMENT_MODE, n.inherit(n.TITLE_MODE, { begin: a }), { begin: '<' }]
+            contains: [t.HASH_COMMENT_MODE, t.inherit(t.TITLE_MODE, { begin: a }), { begin: '<' }]
           },
           {
             className: 'class',
             beginKeywords: 'lib enum union',
             end: '$|;',
             illegal: /=/,
-            contains: [n.HASH_COMMENT_MODE, n.inherit(n.TITLE_MODE, { begin: a })]
+            contains: [t.HASH_COMMENT_MODE, t.inherit(t.TITLE_MODE, { begin: a })]
           },
           {
             beginKeywords: 'annotation',
             end: '$|;',
             illegal: /=/,
-            contains: [n.HASH_COMMENT_MODE, n.inherit(n.TITLE_MODE, { begin: a })],
+            contains: [t.HASH_COMMENT_MODE, t.inherit(t.TITLE_MODE, { begin: a })],
             relevance: 2
           },
           {
             className: 'function',
             beginKeywords: 'def',
             end: /\B\b/,
-            contains: [n.inherit(n.TITLE_MODE, { begin: t, endsParent: !0 })]
+            contains: [t.inherit(t.TITLE_MODE, { begin: n, endsParent: !0 })]
           },
           {
             className: 'function',
             beginKeywords: 'fun macro',
             end: /\B\b/,
-            contains: [n.inherit(n.TITLE_MODE, { begin: t, endsParent: !0 })],
+            contains: [t.inherit(t.TITLE_MODE, { begin: n, endsParent: !0 })],
             relevance: 2
           },
-          { className: 'symbol', begin: n.UNDERSCORE_IDENT_RE + '(!|\\?)?:', relevance: 0 },
-          { className: 'symbol', begin: ':', contains: [c, { begin: t }], relevance: 0 },
+          { className: 'symbol', begin: t.UNDERSCORE_IDENT_RE + '(!|\\?)?:', relevance: 0 },
+          { className: 'symbol', begin: ':', contains: [c, { begin: n }], relevance: 0 },
           {
             className: 'number',
             variants: [
@@ -11642,7 +11642,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         (r.contains = u), (o.contains = u.slice(1)), { name: 'Crystal', aliases: ['cr'], keywords: i, contains: u }
       );
     },
-    Vs = function(n) {
+    js = function(t) {
       const e = {
           keyword: [
             'abstract',
@@ -11762,7 +11762,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ],
           literal: ['default', 'false', 'null', 'true']
         },
-        t = n.inherit(n.TITLE_MODE, { begin: '[a-zA-Z](\\.?\\w)*' }),
+        n = t.inherit(t.TITLE_MODE, { begin: '[a-zA-Z](\\.?\\w)*' }),
         a = {
           className: 'number',
           variants: [
@@ -11773,15 +11773,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           relevance: 0
         },
         i = { className: 'string', begin: '@"', end: '"', contains: [{ begin: '""' }] },
-        r = n.inherit(i, { illegal: /\n/ }),
+        r = t.inherit(i, { illegal: /\n/ }),
         s = { className: 'subst', begin: /\{/, end: /\}/, keywords: e },
-        o = n.inherit(s, { illegal: /\n/ }),
+        o = t.inherit(s, { illegal: /\n/ }),
         l = {
           className: 'string',
           begin: /\$"/,
           end: '"',
           illegal: /\n/,
-          contains: [{ begin: /\{\{/ }, { begin: /\}\}/ }, n.BACKSLASH_ESCAPE, o]
+          contains: [{ begin: /\{\{/ }, { begin: /\}\}/ }, t.BACKSLASH_ESCAPE, o]
         },
         c = {
           className: 'string',
@@ -11789,28 +11789,28 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           end: '"',
           contains: [{ begin: /\{\{/ }, { begin: /\}\}/ }, { begin: '""' }, s]
         },
-        _ = n.inherit(c, { illegal: /\n/, contains: [{ begin: /\{\{/ }, { begin: /\}\}/ }, { begin: '""' }, o] });
-      (s.contains = [c, l, i, n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, a, n.C_BLOCK_COMMENT_MODE]),
+        _ = t.inherit(c, { illegal: /\n/, contains: [{ begin: /\{\{/ }, { begin: /\}\}/ }, { begin: '""' }, o] });
+      (s.contains = [c, l, i, t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, a, t.C_BLOCK_COMMENT_MODE]),
         (o.contains = [
           _,
           l,
           r,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           a,
-          n.inherit(n.C_BLOCK_COMMENT_MODE, { illegal: /\n/ })
+          t.inherit(t.C_BLOCK_COMMENT_MODE, { illegal: /\n/ })
         ]);
-      const d = { variants: [c, l, i, n.APOS_STRING_MODE, n.QUOTE_STRING_MODE] },
-        u = { begin: '<', end: '>', contains: [{ beginKeywords: 'in out' }, t] },
-        m = n.IDENT_RE + '(<' + n.IDENT_RE + '(\\s*,\\s*' + n.IDENT_RE + ')*>)?(\\[\\])?',
-        p = { begin: '@' + n.IDENT_RE, relevance: 0 };
+      const d = { variants: [c, l, i, t.APOS_STRING_MODE, t.QUOTE_STRING_MODE] },
+        u = { begin: '<', end: '>', contains: [{ beginKeywords: 'in out' }, n] },
+        m = t.IDENT_RE + '(<' + t.IDENT_RE + '(\\s*,\\s*' + t.IDENT_RE + ')*>)?(\\[\\])?',
+        p = { begin: '@' + t.IDENT_RE, relevance: 0 };
       return {
         name: 'C#',
         aliases: ['cs', 'c#'],
         keywords: e,
         illegal: /::/,
         contains: [
-          n.COMMENT('///', '$', {
+          t.COMMENT('///', '$', {
             returnBegin: !0,
             contains: [
               {
@@ -11819,8 +11819,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               }
             ]
           }),
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           {
             className: 'meta',
             begin: '#',
@@ -11834,21 +11834,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0,
             end: /[{;=]/,
             illegal: /[^\s:,]/,
-            contains: [{ beginKeywords: 'where class' }, t, u, n.C_LINE_COMMENT_MODE, n.C_BLOCK_COMMENT_MODE]
+            contains: [{ beginKeywords: 'where class' }, n, u, t.C_LINE_COMMENT_MODE, t.C_BLOCK_COMMENT_MODE]
           },
           {
             beginKeywords: 'namespace',
             relevance: 0,
             end: /[{;=]/,
             illegal: /[^\s:]/,
-            contains: [t, n.C_LINE_COMMENT_MODE, n.C_BLOCK_COMMENT_MODE]
+            contains: [n, t.C_LINE_COMMENT_MODE, t.C_BLOCK_COMMENT_MODE]
           },
           {
             beginKeywords: 'record',
             relevance: 0,
             end: /[{;=]/,
             illegal: /[^\s:]/,
-            contains: [t, u, n.C_LINE_COMMENT_MODE, n.C_BLOCK_COMMENT_MODE]
+            contains: [n, u, t.C_LINE_COMMENT_MODE, t.C_BLOCK_COMMENT_MODE]
           },
           {
             className: 'meta',
@@ -11861,7 +11861,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { beginKeywords: 'new return throw await else', relevance: 0 },
           {
             className: 'function',
-            begin: '(' + m + '\\s+)+' + n.IDENT_RE + '\\s*(<[^=]+>\\s*)?\\(',
+            begin: '(' + m + '\\s+)+' + t.IDENT_RE + '\\s*(<[^=]+>\\s*)?\\(',
             returnBegin: !0,
             end: /\s*[{;=]/,
             excludeEnd: !0,
@@ -11888,9 +11888,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 relevance: 0
               },
               {
-                begin: n.IDENT_RE + '\\s*(<[^=]+>\\s*)?\\(',
+                begin: t.IDENT_RE + '\\s*(<[^=]+>\\s*)?\\(',
                 returnBegin: !0,
-                contains: [n.TITLE_MODE, u],
+                contains: [t.TITLE_MODE, u],
                 relevance: 0
               },
               { match: /\(\)/ },
@@ -11902,17 +11902,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 excludeEnd: !0,
                 keywords: e,
                 relevance: 0,
-                contains: [d, a, n.C_BLOCK_COMMENT_MODE]
+                contains: [d, a, t.C_BLOCK_COMMENT_MODE]
               },
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE
             ]
           },
           p
         ]
       };
     },
-    js = function(n) {
+    qs = function(t) {
       return {
         name: 'CSP',
         case_insensitive: !1,
@@ -11947,7 +11947,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     };
-  const qs = [
+  const Ws = [
       'a',
       'abbr',
       'address',
@@ -12021,7 +12021,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'var',
       'video'
     ],
-    Ws = [
+    Qs = [
       'any-hover',
       'any-pointer',
       'aspect-ratio',
@@ -12056,7 +12056,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'min-height',
       'max-height'
     ],
-    Qs = [
+    Ks = [
       'active',
       'any-link',
       'blank',
@@ -12117,7 +12117,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'visited',
       'where'
     ],
-    Ks = [
+    Xs = [
       'after',
       'backdrop',
       'before',
@@ -12133,7 +12133,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'slotted',
       'spelling-error'
     ],
-    Xs = [
+    Zs = [
       'align-content',
       'align-items',
       'align-self',
@@ -12493,9 +12493,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'writing-mode',
       'z-index'
     ].reverse();
-  var Zs = function(n) {
-      const e = n.regex,
-        t = (i => ({
+  var Js = function(t) {
+      const e = t.regex,
+        n = (i => ({
           IMPORTANT: { scope: 'meta', begin: '!important' },
           BLOCK_COMMENT: i.C_BLOCK_COMMENT_MODE,
           HEXCOLOR: { scope: 'number', begin: /#(([0-9a-fA-F]{3,4})|(([0-9a-fA-F]{2}){3,4}))\b/ },
@@ -12515,8 +12515,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0
           },
           CSS_VARIABLE: { className: 'attr', begin: /--[A-Za-z][A-Za-z0-9_-]*/ }
-        }))(n),
-        a = [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE];
+        }))(t),
+        a = [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE];
       return {
         name: 'CSS',
         case_insensitive: !0,
@@ -12524,26 +12524,26 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         keywords: { keyframePosition: 'from to' },
         classNameAliases: { keyframePosition: 'selector-tag' },
         contains: [
-          t.BLOCK_COMMENT,
+          n.BLOCK_COMMENT,
           { begin: /-(webkit|moz|ms|o)-(?=[a-z])/ },
-          t.CSS_NUMBER_MODE,
+          n.CSS_NUMBER_MODE,
           { className: 'selector-id', begin: /#[A-Za-z0-9_-]+/, relevance: 0 },
           { className: 'selector-class', begin: '\\.[a-zA-Z-][a-zA-Z0-9_-]*', relevance: 0 },
-          t.ATTRIBUTE_SELECTOR_MODE,
+          n.ATTRIBUTE_SELECTOR_MODE,
           {
             className: 'selector-pseudo',
-            variants: [{ begin: ':(' + Qs.join('|') + ')' }, { begin: ':(:)?(' + Ks.join('|') + ')' }]
+            variants: [{ begin: ':(' + Ks.join('|') + ')' }, { begin: ':(:)?(' + Xs.join('|') + ')' }]
           },
-          t.CSS_VARIABLE,
-          { className: 'attribute', begin: '\\b(' + Xs.join('|') + ')\\b' },
+          n.CSS_VARIABLE,
+          { className: 'attribute', begin: '\\b(' + Zs.join('|') + ')\\b' },
           {
             begin: /:/,
             end: /[;}{]/,
             contains: [
-              t.BLOCK_COMMENT,
-              t.HEXCOLOR,
-              t.IMPORTANT,
-              t.CSS_NUMBER_MODE,
+              n.BLOCK_COMMENT,
+              n.HEXCOLOR,
+              n.IMPORTANT,
+              n.CSS_NUMBER_MODE,
               ...a,
               {
                 begin: /(url|data-uri)\(/,
@@ -12552,7 +12552,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 keywords: { built_in: 'url data-uri' },
                 contains: [...a, { className: 'string', begin: /[^)]/, endsWithParent: !0, excludeEnd: !0 }]
               },
-              t.FUNCTION_DISPATCH
+              n.FUNCTION_DISPATCH
             ]
           },
           {
@@ -12567,29 +12567,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 endsWithParent: !0,
                 excludeEnd: !0,
                 relevance: 0,
-                keywords: { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: Ws.join(' ') },
-                contains: [{ begin: /[a-z-]+(?=:)/, className: 'attribute' }, ...a, t.CSS_NUMBER_MODE]
+                keywords: { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: Qs.join(' ') },
+                contains: [{ begin: /[a-z-]+(?=:)/, className: 'attribute' }, ...a, n.CSS_NUMBER_MODE]
               }
             ]
           },
-          { className: 'selector-tag', begin: '\\b(' + qs.join('|') + ')\\b' }
+          { className: 'selector-tag', begin: '\\b(' + Ws.join('|') + ')\\b' }
         ]
       };
     },
-    Js = function(n) {
+    eo = function(t) {
       const e = {
-          $pattern: n.UNDERSCORE_IDENT_RE,
+          $pattern: t.UNDERSCORE_IDENT_RE,
           keyword:
             'abstract alias align asm assert auto body break byte case cast catch class const continue debug default delete deprecated do else enum export extern final finally for foreach foreach_reverse|10 goto if immutable import in inout int interface invariant is lazy macro mixin module new nothrow out override package pragma private protected public pure ref return scope shared static struct super switch synchronized template this throw try typedef typeid typeof union unittest version void volatile while with __FILE__ __LINE__ __gshared|10 __thread __traits __DATE__ __EOF__ __TIME__ __TIMESTAMP__ __VENDOR__ __VERSION__',
           built_in:
             'bool cdouble cent cfloat char creal dchar delegate double dstring float function idouble ifloat ireal long real short string ubyte ucent uint ulong ushort wchar wstring',
           literal: 'false null true'
         },
-        t = '(0|[1-9][\\d_]*)',
+        n = '(0|[1-9][\\d_]*)',
         a = '(0|[1-9][\\d_]*|\\d[\\d_]*|[\\d_]+?\\d)',
         i = '([\\da-fA-F][\\da-fA-F_]*|_[\\da-fA-F][\\da-fA-F_]*)',
         r = '([eE][+-]?' + a + ')',
-        s = '(' + t + '|0[bB][01_]+|' + ('0[xX]' + i) + ')',
+        s = '(' + n + '|0[bB][01_]+|' + ('0[xX]' + i) + ')',
         o = `\\\\(['"\\?\\\\abfnrtv]|u[\\dA-Fa-f]{4}|[0-7]{1,3}|x[\\dA-Fa-f]{2}|U[\\dA-Fa-f]{8})|&[a-zA-Z\\d]{2,};`,
         l = { className: 'number', begin: '\\b' + s + '(L|u|U|Lu|LU|uL|UL)?', relevance: 0 },
         c = {
@@ -12599,7 +12599,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ('(' +
               ('(0[xX](' + i + '\\.' + i + '|\\.?' + i + ')[pP][+-]?' + a + ')') +
               '|' +
-              ('(' + a + '(\\.\\d*|' + r + ')|\\d+\\.' + a + '|\\.' + t + r + '?)') +
+              ('(' + a + '(\\.\\d*|' + r + ')|\\d+\\.' + a + '|\\.' + n + r + '?)') +
               ')') +
             '([fF]|L|i|[fF]i|Li)?|' +
             s +
@@ -12608,13 +12608,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         _ = { className: 'string', begin: "'(" + o + '|.)', end: "'", illegal: '.' },
         d = { className: 'string', begin: '"', contains: [{ begin: o, relevance: 0 }], end: '"[cwd]?' },
-        u = n.COMMENT('\\/\\+', '\\+\\/', { contains: ['self'], relevance: 10 });
+        u = t.COMMENT('\\/\\+', '\\+\\/', { contains: ['self'], relevance: 10 });
       return {
         name: 'D',
         keywords: e,
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           u,
           { className: 'string', begin: 'x"[\\da-fA-F\\s\\n\\r]*"[cwd]?', relevance: 10 },
           d,
@@ -12630,13 +12630,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    eo = function(n) {
+    to = function(t) {
       const e = { begin: /<\/?[A-Za-z_]/, end: '>', subLanguage: 'xml', relevance: 0 },
-        t = {
+        n = {
           variants: [
             { begin: /\[.+?\]\[.*?\]/, relevance: 0 },
             { begin: /\[.+?\]\(((data|javascript|mailto):|(?:http|ftp)s?:\/\/).*?\)/, relevance: 2 },
-            { begin: n.regex.concat(/\[.+?\]\(/, /[A-Za-z][A-Za-z0-9+.-]*/, /:\/\/.*?\)/), relevance: 2 },
+            { begin: t.regex.concat(/\[.+?\]\(/, /[A-Za-z][A-Za-z0-9+.-]*/, /:\/\/.*?\)/), relevance: 2 },
             { begin: /\[.+?\]\([./?&#].*?\)/, relevance: 1 },
             { begin: /\[.*?\]\(.*?\)/, relevance: 0 }
           ],
@@ -12658,10 +12658,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           contains: [],
           variants: [{ begin: /\*(?![*\s])/, end: /\*/ }, { begin: /_(?![_\s])/, end: /_/, relevance: 0 }]
         },
-        r = n.inherit(a, { contains: [] }),
-        s = n.inherit(i, { contains: [] });
+        r = t.inherit(a, { contains: [] }),
+        s = t.inherit(i, { contains: [] });
       a.contains.push(s), i.contains.push(r);
-      let o = [e, t];
+      let o = [e, n];
       return (
         [a, i, r, s].forEach(l => {
           l.contains = l.contains.concat(o);
@@ -12698,7 +12698,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               ]
             },
             { begin: '^[-\\*]{3,}', end: '$' },
-            t,
+            n,
             {
               begin: /^\[[^\n]+\]:/,
               returnBegin: !0,
@@ -12711,9 +12711,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    to = function(n) {
+    no = function(t) {
       const e = { className: 'subst', variants: [{ begin: '\\$[A-Za-z0-9_]+' }] },
-        t = {
+        n = {
           className: 'subst',
           variants: [{ begin: /\$\{/, end: /\}/ }],
           keywords: 'true false null this is new super'
@@ -12725,13 +12725,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { begin: 'r"""', end: '"""' },
             { begin: "r'", end: "'", illegal: '\\n' },
             { begin: 'r"', end: '"', illegal: '\\n' },
-            { begin: "'''", end: "'''", contains: [n.BACKSLASH_ESCAPE, e, t] },
-            { begin: '"""', end: '"""', contains: [n.BACKSLASH_ESCAPE, e, t] },
-            { begin: "'", end: "'", illegal: '\\n', contains: [n.BACKSLASH_ESCAPE, e, t] },
-            { begin: '"', end: '"', illegal: '\\n', contains: [n.BACKSLASH_ESCAPE, e, t] }
+            { begin: "'''", end: "'''", contains: [t.BACKSLASH_ESCAPE, e, n] },
+            { begin: '"""', end: '"""', contains: [t.BACKSLASH_ESCAPE, e, n] },
+            { begin: "'", end: "'", illegal: '\\n', contains: [t.BACKSLASH_ESCAPE, e, n] },
+            { begin: '"', end: '"', illegal: '\\n', contains: [t.BACKSLASH_ESCAPE, e, n] }
           ]
         };
-      t.contains = [n.C_NUMBER_MODE, a];
+      n.contains = [t.C_NUMBER_MODE, a];
       const i = [
           'Comparable',
           'DateTime',
@@ -12836,24 +12836,24 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           a,
-          n.COMMENT(/\/\*\*(?!\/)/, /\*\//, { subLanguage: 'markdown', relevance: 0 }),
-          n.COMMENT(/\/{3,} ?/, /$/, { contains: [{ subLanguage: 'markdown', begin: '.', end: '$', relevance: 0 }] }),
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.COMMENT(/\/\*\*(?!\/)/, /\*\//, { subLanguage: 'markdown', relevance: 0 }),
+          t.COMMENT(/\/{3,} ?/, /$/, { contains: [{ subLanguage: 'markdown', begin: '.', end: '$', relevance: 0 }] }),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           {
             className: 'class',
             beginKeywords: 'class interface',
             end: /\{/,
             excludeEnd: !0,
-            contains: [{ beginKeywords: 'extends implements' }, n.UNDERSCORE_TITLE_MODE]
+            contains: [{ beginKeywords: 'extends implements' }, t.UNDERSCORE_TITLE_MODE]
           },
-          n.C_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: '@[A-Za-z]+' },
           { begin: '=>' }
         ]
       };
     },
-    no = function(n) {
+    ao = function(t) {
       const e = [
           'exports',
           'register',
@@ -12983,25 +12983,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'unaligned',
           'varargs'
         ],
-        t = [
-          n.C_LINE_COMMENT_MODE,
-          n.COMMENT(/\{/, /\}/, { relevance: 0 }),
-          n.COMMENT(/\(\*/, /\*\)/, { relevance: 10 })
+        n = [
+          t.C_LINE_COMMENT_MODE,
+          t.COMMENT(/\{/, /\}/, { relevance: 0 }),
+          t.COMMENT(/\(\*/, /\*\)/, { relevance: 10 })
         ],
         a = { className: 'meta', variants: [{ begin: /\{\$/, end: /\}/ }, { begin: /\(\*\$/, end: /\*\)/ }] },
         i = { className: 'string', begin: /'/, end: /'/, contains: [{ begin: /''/ }] },
         r = { className: 'string', begin: /(#\d+)+/ },
-        s = { begin: n.IDENT_RE + '\\s*=\\s*class\\s*\\(', returnBegin: !0, contains: [n.TITLE_MODE] },
+        s = { begin: t.IDENT_RE + '\\s*=\\s*class\\s*\\(', returnBegin: !0, contains: [t.TITLE_MODE] },
         o = {
           className: 'function',
           beginKeywords: 'function constructor destructor procedure',
           end: /[:;]/,
           keywords: 'function constructor|10 destructor|10 procedure|10',
           contains: [
-            n.TITLE_MODE,
-            { className: 'params', begin: /\(/, end: /\)/, keywords: e, contains: [i, r, a].concat(t) },
+            t.TITLE_MODE,
+            { className: 'params', begin: /\(/, end: /\)/, keywords: e, contains: [i, r, a].concat(n) },
             a
-          ].concat(t)
+          ].concat(n)
         };
       return {
         name: 'Delphi',
@@ -13012,7 +13012,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         contains: [
           i,
           r,
-          n.NUMBER_MODE,
+          t.NUMBER_MODE,
           {
             className: 'number',
             relevance: 0,
@@ -13021,11 +13021,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           s,
           o,
           a
-        ].concat(t)
+        ].concat(n)
       };
     },
-    ao = function(n) {
-      const e = n.regex;
+    io = function(t) {
+      const e = t.regex;
       return {
         name: 'Diff',
         aliases: ['patch'],
@@ -13048,14 +13048,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    io = function(n) {
+    ro = function(t) {
       const e = {
         begin: /\|[A-Za-z]+:?/,
         keywords: {
           name:
             'truncatewords removetags linebreaksbr yesno get_digit timesince random striptags filesizeformat escape linebreaks length_is ljust rjust cut urlize fix_ampersands title floatformat capfirst pprint divisibleby add make_list unordered_list urlencode timeuntil urlizetrunc wordcount stringformat linenumbers slice date dictsort dictsortreversed default_if_none pluralize lower join center default truncatewords_html upper length phone2numeric wordwrap time addslashes slugify first escapejs force_escape iriencode last safe safeseq truncatechars localize unlocalize localtime utc timezone'
         },
-        contains: [n.QUOTE_STRING_MODE, n.APOS_STRING_MODE]
+        contains: [t.QUOTE_STRING_MODE, t.APOS_STRING_MODE]
       };
       return {
         name: 'Django',
@@ -13063,8 +13063,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0,
         subLanguage: 'xml',
         contains: [
-          n.COMMENT(/\{%\s*comment\s*%\}/, /\{%\s*endcomment\s*%\}/),
-          n.COMMENT(/\{#/, /#\}/),
+          t.COMMENT(/\{%\s*comment\s*%\}/, /\{%\s*endcomment\s*%\}/),
+          t.COMMENT(/\{#/, /#\}/),
           {
             className: 'template-tag',
             begin: /\{%/,
@@ -13085,7 +13085,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    ro = function(n) {
+    so = function(t) {
       return {
         name: 'DNS Zone',
         aliases: ['bind', 'zone'],
@@ -13130,7 +13130,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'TXT'
         ],
         contains: [
-          n.COMMENT(';', '$', { relevance: 0 }),
+          t.COMMENT(';', '$', { relevance: 0 }),
           { className: 'meta', begin: /^\$(TTL|GENERATE|INCLUDE|ORIGIN)\b/ },
           {
             className: 'number',
@@ -13141,21 +13141,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             className: 'number',
             begin: '((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]).){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\b'
           },
-          n.inherit(n.NUMBER_MODE, { begin: /\b\d+[dhwm]?/ })
+          t.inherit(t.NUMBER_MODE, { begin: /\b\d+[dhwm]?/ })
         ]
       };
     },
-    so = function(n) {
+    oo = function(t) {
       return {
         name: 'Dockerfile',
         aliases: ['docker'],
         case_insensitive: !0,
         keywords: ['from', 'maintainer', 'expose', 'env', 'arg', 'user', 'onbuild', 'stopsignal'],
         contains: [
-          n.HASH_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE,
+          t.HASH_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE,
           {
             beginKeywords: 'run cmd entrypoint volume add copy workdir label healthcheck shell',
             starts: { end: /[^\\]$/, subLanguage: 'bash' }
@@ -13164,8 +13164,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: '</'
       };
     },
-    oo = function(n) {
-      const e = n.COMMENT(/^\s*@?rem\b/, /$/, { relevance: 10 });
+    lo = function(t) {
+      const e = t.COMMENT(/^\s*@?rem\b/, /$/, { relevance: 10 });
       return {
         name: 'Batch file (DOS)',
         aliases: ['bat', 'cmd'],
@@ -13289,14 +13289,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             className: 'function',
             begin: '^\\s*[A-Za-z._?][A-Za-z0-9_$#@~.?]*(:|\\s+label)',
             end: 'goto:eof',
-            contains: [n.inherit(n.TITLE_MODE, { begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*' }), e]
+            contains: [t.inherit(t.TITLE_MODE, { begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*' }), e]
           },
           { className: 'number', begin: '\\b\\d+', relevance: 0 },
           e
         ]
       };
     },
-    lo = function(n) {
+    co = function(t) {
       return {
         keywords: 'dsconfig',
         contains: [
@@ -13314,22 +13314,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'string', begin: /'/, end: /'/ },
           { className: 'string', begin: /[\w\-?]+:\w+/, end: /\W/, relevance: 0 },
           { className: 'string', begin: /\w+(\-\w+)*/, end: /(?=\W)/, relevance: 0 },
-          n.HASH_COMMENT_MODE
+          t.HASH_COMMENT_MODE
         ]
       };
     },
-    co = function(n) {
+    _o = function(t) {
       const e = {
           className: 'string',
           variants: [
-            n.inherit(n.QUOTE_STRING_MODE, { begin: '((u8?|U)|L)?"' }),
-            { begin: '(u8?|U)?R"', end: '"', contains: [n.BACKSLASH_ESCAPE] },
+            t.inherit(t.QUOTE_STRING_MODE, { begin: '((u8?|U)|L)?"' }),
+            { begin: '(u8?|U)?R"', end: '"', contains: [t.BACKSLASH_ESCAPE] },
             { begin: "'\\\\?.", end: "'", illegal: '.' }
           ]
         },
-        t = {
+        n = {
           className: 'number',
-          variants: [{ begin: '\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)' }, { begin: n.C_NUMBER_RE }],
+          variants: [{ begin: '\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)' }, { begin: t.C_NUMBER_RE }],
           relevance: 0
         },
         a = {
@@ -13344,13 +13344,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               end: '$',
               keywords: { keyword: 'include' },
               contains: [
-                n.inherit(e, { className: 'string' }),
+                t.inherit(e, { className: 'string' }),
                 { className: 'string', begin: '<', end: '>', illegal: '\\n' }
               ]
             },
             e,
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE
           ]
         },
         i = { className: 'variable', begin: /&[a-z\d_]*\b/ };
@@ -13364,18 +13364,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'title.class', begin: /[a-zA-Z_][a-zA-Z\d_@-]*(?=\s\{)/, relevance: 0.2 },
           { relevance: 0, match: [/[a-z][a-z-,]+/, /\s*/, /=/], scope: { 1: 'attr', 3: 'operator' } },
           { match: /[a-z][a-z-,]+(?=;)/, relevance: 0, scope: 'attr' },
-          { className: 'params', relevance: 0, begin: '<', end: '>', contains: [t, i] },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          t,
+          { className: 'params', relevance: 0, begin: '<', end: '>', contains: [n, i] },
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          n,
           e,
           a,
           { scope: 'punctuation', relevance: 0, match: /\};|[;{}]/ },
-          { begin: n.IDENT_RE + '::', keywords: '' }
+          { begin: t.IDENT_RE + '::', keywords: '' }
         ]
       };
     },
-    _o = function(n) {
+    uo = function(t) {
       return {
         name: 'Dust',
         aliases: ['dst'],
@@ -13391,7 +13391,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               {
                 className: 'name',
                 begin: /[a-zA-Z\.-]+/,
-                starts: { endsWithParent: !0, relevance: 0, contains: [n.QUOTE_STRING_MODE] }
+                starts: { endsWithParent: !0, relevance: 0, contains: [t.QUOTE_STRING_MODE] }
               }
             ]
           },
@@ -13405,8 +13405,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    uo = function(n) {
-      const e = n.COMMENT(/\(\*/, /\*\)/);
+    po = function(t) {
+      const e = t.COMMENT(/\(\*/, /\*\)/);
       return {
         name: 'Extended Backus-Naur Form',
         illegal: /\S/,
@@ -13419,17 +13419,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             contains: [
               e,
               { className: 'meta', begin: /\?.*\?/ },
-              { className: 'string', variants: [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, { begin: '`', end: '`' }] }
+              { className: 'string', variants: [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, { begin: '`', end: '`' }] }
             ]
           }
         ]
       };
     },
-    po = function(n) {
-      const e = n.regex,
-        t = '[a-zA-Z_][a-zA-Z0-9_.]*(!|\\?)?',
+    mo = function(t) {
+      const e = t.regex,
+        n = '[a-zA-Z_][a-zA-Z0-9_.]*(!|\\?)?',
         a = {
-          $pattern: t,
+          $pattern: n,
           keyword: [
             'after',
             'alias',
@@ -13482,29 +13482,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         c = {
           className: 'string',
           begin: '~[a-z](?=' + s + ')',
-          contains: o.map(E => n.inherit(E, { contains: [l(E.end), r, i] }))
+          contains: o.map(E => t.inherit(E, { contains: [l(E.end), r, i] }))
         },
         _ = {
           className: 'string',
           begin: '~[A-Z](?=' + s + ')',
-          contains: o.map(E => n.inherit(E, { contains: [l(E.end)] }))
+          contains: o.map(E => t.inherit(E, { contains: [l(E.end)] }))
         },
         d = {
           className: 'regex',
           variants: [
             {
               begin: '~r(?=' + s + ')',
-              contains: o.map(E => n.inherit(E, { end: e.concat(E.end, /[uismxfU]{0,7}/), contains: [l(E.end), r, i] }))
+              contains: o.map(E => t.inherit(E, { end: e.concat(E.end, /[uismxfU]{0,7}/), contains: [l(E.end), r, i] }))
             },
             {
               begin: '~R(?=' + s + ')',
-              contains: o.map(E => n.inherit(E, { end: e.concat(E.end, /[uismxfU]{0,7}/), contains: [l(E.end)] }))
+              contains: o.map(E => t.inherit(E, { end: e.concat(E.end, /[uismxfU]{0,7}/), contains: [l(E.end)] }))
             }
           ]
         },
         u = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE, i],
+          contains: [t.BACKSLASH_ESCAPE, i],
           variants: [
             { begin: /"""/, end: /"""/ },
             { begin: /'''/, end: /'''/ },
@@ -13520,9 +13520,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           className: 'function',
           beginKeywords: 'def defp defmacro defmacrop',
           end: /\B\b/,
-          contains: [n.inherit(n.TITLE_MODE, { begin: t, endsParent: !0 })]
+          contains: [t.inherit(t.TITLE_MODE, { begin: n, endsParent: !0 })]
         },
-        p = n.inherit(m, {
+        p = t.inherit(m, {
           className: 'class',
           beginKeywords: 'defimpl defmodule defprotocol defrecord',
           end: /\bdo\b|$|;/
@@ -13532,7 +13532,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           d,
           _,
           c,
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           p,
           m,
           { begin: '::' },
@@ -13545,7 +13545,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ],
             relevance: 0
           },
-          { className: 'symbol', begin: t + ':(?!:)', relevance: 0 },
+          { className: 'symbol', begin: n + ':(?!:)', relevance: 0 },
           { className: 'title.class', begin: /(\b[A-Z][a-zA-Z0-9_]+)/, relevance: 0 },
           {
             className: 'number',
@@ -13557,9 +13557,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ];
       return (i.contains = g), { name: 'Elixir', aliases: ['ex', 'exs'], keywords: a, contains: g };
     },
-    mo = function(n) {
-      const e = { variants: [n.COMMENT('--', '$'), n.COMMENT(/\{-/, /-\}/, { contains: ['self'] })] },
-        t = { className: 'type', begin: "\\b[A-Z][\\w']*", relevance: 0 },
+    go = function(t) {
+      const e = { variants: [t.COMMENT('--', '$'), t.COMMENT(/\{-/, /-\}/, { contains: ['self'] })] },
+        n = { className: 'type', begin: "\\b[A-Z][\\w']*", relevance: 0 },
         a = {
           begin: '\\(',
           end: '\\)',
@@ -13604,24 +13604,24 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             begin: 'type',
             end: '$',
             keywords: 'type alias',
-            contains: [t, a, { begin: /\{/, end: /\}/, contains: a.contains }, e]
+            contains: [n, a, { begin: /\{/, end: /\}/, contains: a.contains }, e]
           },
-          { beginKeywords: 'infix infixl infixr', end: '$', contains: [n.C_NUMBER_MODE, e] },
+          { beginKeywords: 'infix infixl infixr', end: '$', contains: [t.C_NUMBER_MODE, e] },
           { begin: 'port', end: '$', keywords: 'port', contains: [e] },
           { className: 'string', begin: "'\\\\?.", end: "'", illegal: '.' },
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE,
-          t,
-          n.inherit(n.TITLE_MODE, { begin: "^[_a-z][\\w']*" }),
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE,
+          n,
+          t.inherit(t.TITLE_MODE, { begin: "^[_a-z][\\w']*" }),
           e,
           { begin: '->|<-' }
         ],
         illegal: /;/
       };
     },
-    go = function(n) {
-      const e = n.regex,
-        t = '([a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?)',
+    Eo = function(t) {
+      const e = t.regex,
+        n = '([a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?)',
         a = e.either(/\b([A-Z]+[a-z0-9]+)+/, /\b([A-Z]+[a-z0-9]+)+[A-Z]+/),
         i = e.concat(a, /(::\w+)*/),
         r = {
@@ -13685,14 +13685,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         s = { className: 'doctag', begin: '@[A-Za-z]+' },
         o = { begin: '#<', end: '>' },
         l = [
-          n.COMMENT('#', '$', { contains: [s] }),
-          n.COMMENT('^=begin', '^=end', { contains: [s], relevance: 10 }),
-          n.COMMENT('^__END__', n.MATCH_NOTHING_RE)
+          t.COMMENT('#', '$', { contains: [s] }),
+          t.COMMENT('^=begin', '^=end', { contains: [s], relevance: 10 }),
+          t.COMMENT('^__END__', t.MATCH_NOTHING_RE)
         ],
         c = { className: 'subst', begin: /#\{/, end: /\}/, keywords: r },
         _ = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE, c],
+          contains: [t.BACKSLASH_ESCAPE, c],
           variants: [
             { begin: /'/, end: /'/ },
             { begin: /"/, end: /"/ },
@@ -13713,7 +13713,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { begin: /\B\?\\?\S/ },
             {
               begin: e.concat(/<<[-~]?'?/, e.lookahead(/(\w+)(?=\W)[^\n]*\n(?:[^\n]*\n)*?\s*\1\b/)),
-              contains: [n.END_SAME_AS_BEGIN({ begin: /(\w+)/, end: /(\w+)/, contains: [n.BACKSLASH_ESCAPE, c] })]
+              contains: [t.END_SAME_AS_BEGIN({ begin: /(\w+)/, end: /(\w+)/, contains: [t.BACKSLASH_ESCAPE, c] })]
             }
           ]
         },
@@ -13747,20 +13747,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { relevance: 0, match: [i, /\.new[. (]/], scope: { 1: 'title.class' } },
           { relevance: 0, match: /\b[A-Z][A-Z_0-9]+\b/, className: 'variable.constant' },
           { relevance: 0, match: a, scope: 'title.class' },
-          { match: [/def/, /\s+/, t], scope: { 1: 'keyword', 3: 'title.function' }, contains: [m] },
-          { begin: n.IDENT_RE + '::' },
-          { className: 'symbol', begin: n.UNDERSCORE_IDENT_RE + '(!|\\?)?:', relevance: 0 },
-          { className: 'symbol', begin: ':(?!\\s)', contains: [_, { begin: t }], relevance: 0 },
+          { match: [/def/, /\s+/, n], scope: { 1: 'keyword', 3: 'title.function' }, contains: [m] },
+          { begin: t.IDENT_RE + '::' },
+          { className: 'symbol', begin: t.UNDERSCORE_IDENT_RE + '(!|\\?)?:', relevance: 0 },
+          { className: 'symbol', begin: ':(?!\\s)', contains: [_, { begin: n }], relevance: 0 },
           u,
           { className: 'variable', begin: "(\\$\\W)|((\\$|@@?)(\\w+))(?=[^@$?])(?![A-Za-z])(?![@$?'])" },
           { className: 'params', begin: /\|/, end: /\|/, excludeBegin: !0, excludeEnd: !0, relevance: 0, keywords: r },
           {
-            begin: '(' + n.RE_STARTERS_RE + '|unless)\\s*',
+            begin: '(' + t.RE_STARTERS_RE + '|unless)\\s*',
             keywords: 'unless',
             contains: [
               {
                 className: 'regexp',
-                contains: [n.BACKSLASH_ESCAPE, c],
+                contains: [t.BACKSLASH_ESCAPE, c],
                 illegal: /\n/,
                 variants: [
                   { begin: '/', end: '/[a-z]*' },
@@ -13790,25 +13790,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           aliases: ['rb', 'gemspec', 'podspec', 'thor', 'irb'],
           keywords: r,
           illegal: /\/\*/,
-          contains: [n.SHEBANG({ binary: 'ruby' })]
+          contains: [t.SHEBANG({ binary: 'ruby' })]
             .concat(g)
             .concat(l)
             .concat(p)
         }
       );
     },
-    Eo = function(n) {
+    So = function(t) {
       return {
         name: 'ERB',
         subLanguage: 'xml',
         contains: [
-          n.COMMENT('<%#', '%>'),
+          t.COMMENT('<%#', '%>'),
           { begin: '<%[%=-]?', end: '[%-]?%>', subLanguage: 'ruby', excludeBegin: !0, excludeEnd: !0 }
         ]
       };
     },
-    So = function(n) {
-      const e = n.regex;
+    ho = function(t) {
+      const e = t.regex;
       return {
         name: 'Erlang REPL',
         keywords: {
@@ -13818,14 +13818,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           { className: 'meta.prompt', begin: '^[0-9]+> ', relevance: 10 },
-          n.COMMENT('%', '$'),
+          t.COMMENT('%', '$'),
           {
             className: 'number',
             begin: '\\b(\\d+(_\\d+)*#[a-fA-F0-9]+(_[a-fA-F0-9]+)*|\\d+(_\\d+)*(\\.\\d+(_\\d+)*)?([eE][-+]?\\d+)?)',
             relevance: 0
           },
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           { begin: e.concat(/\?(::)?/, /([A-Z]\w*)/, /((::)[A-Z]\w*)*/) },
           { begin: '->' },
           { begin: 'ok' },
@@ -13835,15 +13835,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    ho = function(n) {
+    bo = function(t) {
       const e = "[a-z'][a-zA-Z0-9_']*",
-        t = '(' + e + ':' + e + '|' + e + ')',
+        n = '(' + e + ':' + e + '|' + e + ')',
         a = {
           keyword:
             'after and andalso|10 band begin bnot bor bsl bzr bxor case catch cond div end fun if let not of orelse|10 query receive rem try when xor',
           literal: 'false true'
         },
-        i = n.COMMENT('%', '$'),
+        i = t.COMMENT('%', '$'),
         r = {
           className: 'number',
           begin: '\\b(\\d+(_\\d+)*#[a-fA-F0-9]+(_[a-fA-F0-9]+)*|\\d+(_\\d+)*(\\.\\d+(_\\d+)*)?([eE][-+]?\\d+)?)',
@@ -13851,12 +13851,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         s = { begin: 'fun\\s+' + e + '/\\d+' },
         o = {
-          begin: t + '\\(',
+          begin: n + '\\(',
           end: '\\)',
           returnBegin: !0,
           relevance: 0,
           contains: [
-            { begin: t, relevance: 0 },
+            { begin: n, relevance: 0 },
             { begin: '\\(', end: '\\)', endsWithParent: !0, returnEnd: !0, relevance: 0 }
           ]
         },
@@ -13864,14 +13864,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         c = { begin: '\\b_([A-Z][A-Za-z0-9_]*)?', relevance: 0 },
         _ = { begin: '[A-Z][a-zA-Z0-9_]*', relevance: 0 },
         d = {
-          begin: '#' + n.UNDERSCORE_IDENT_RE,
+          begin: '#' + t.UNDERSCORE_IDENT_RE,
           relevance: 0,
           returnBegin: !0,
-          contains: [{ begin: '#' + n.UNDERSCORE_IDENT_RE, relevance: 0 }, { begin: /\{/, end: /\}/, relevance: 0 }]
+          contains: [{ begin: '#' + t.UNDERSCORE_IDENT_RE, relevance: 0 }, { begin: /\{/, end: /\}/, relevance: 0 }]
         },
         u = { beginKeywords: 'fun receive if try case', end: 'end', keywords: a };
-      u.contains = [i, s, n.inherit(n.APOS_STRING_MODE, { className: '' }), u, o, n.QUOTE_STRING_MODE, r, l, c, _, d];
-      const m = [i, s, u, o, n.QUOTE_STRING_MODE, r, l, c, _, d];
+      u.contains = [i, s, t.inherit(t.APOS_STRING_MODE, { className: '' }), u, o, t.QUOTE_STRING_MODE, r, l, c, _, d];
+      const m = [i, s, u, o, t.QUOTE_STRING_MODE, r, l, c, _, d];
       (o.contains[1].contains = m), (l.contains = m), (d.contains[1].contains = m);
       const p = { className: 'params', begin: '\\(', end: '\\)', contains: m };
       return {
@@ -13886,7 +13886,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: '->',
             returnBegin: !0,
             illegal: '\\(|#|//|/\\*|\\\\|:|;',
-            contains: [p, n.inherit(n.TITLE_MODE, { begin: e })],
+            contains: [p, t.inherit(t.TITLE_MODE, { begin: e })],
             starts: { end: ';|\\.', keywords: a, contains: m }
           },
           i,
@@ -13897,7 +13897,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             excludeEnd: !0,
             returnBegin: !0,
             keywords: {
-              $pattern: '-' + n.IDENT_RE,
+              $pattern: '-' + t.IDENT_RE,
               keyword: [
                 '-module',
                 '-record',
@@ -13927,7 +13927,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             contains: [p]
           },
           r,
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           d,
           c,
           _,
@@ -13936,7 +13936,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    bo = function(n) {
+    fo = function(t) {
       return {
         name: 'Excel formulae',
         aliases: ['xlsx', 'xls'],
@@ -14428,14 +14428,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { begin: /^=/, end: /[^=]/, returnEnd: !0, illegal: /=/, relevance: 10 },
           { className: 'symbol', begin: /\b[A-Z]{1,2}\d+\b/, end: /[^\d]/, excludeEnd: !0, relevance: 0 },
           { className: 'symbol', begin: /[A-Z]{0,2}\d*:[A-Z]{0,2}\d*/, relevance: 0 },
-          n.BACKSLASH_ESCAPE,
-          n.QUOTE_STRING_MODE,
-          { className: 'number', begin: n.NUMBER_RE + '(%)?', relevance: 0 },
-          n.COMMENT(/\bN\(/, /\)/, { excludeBegin: !0, excludeEnd: !0, illegal: /\n/ })
+          t.BACKSLASH_ESCAPE,
+          t.QUOTE_STRING_MODE,
+          { className: 'number', begin: t.NUMBER_RE + '(%)?', relevance: 0 },
+          t.COMMENT(/\bN\(/, /\)/, { excludeBegin: !0, excludeEnd: !0, illegal: /\n/ })
         ]
       };
     },
-    fo = function(n) {
+    To = function(t) {
       return {
         name: 'FIX',
         contains: [
@@ -14460,7 +14460,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0
       };
     },
-    To = function(n) {
+    vo = function(t) {
       const e = {
         className: 'function',
         beginKeywords: 'def',
@@ -14501,22 +14501,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: ['true', 'false']
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           { className: 'string', begin: /'(.|\\[xXuU][a-zA-Z0-9]+)'/ },
           { className: 'string', variants: [{ begin: '"', end: '"' }] },
           e,
-          n.C_NUMBER_MODE
+          t.C_NUMBER_MODE
         ]
       };
     },
-    vo = function(n) {
-      const e = n.regex,
-        t = {
+    yo = function(t) {
+      const e = t.regex,
+        n = {
           variants: [
-            n.COMMENT('!', '$', { relevance: 0 }),
-            n.COMMENT('^C[ ]', '$', { relevance: 0 }),
-            n.COMMENT('^C$', '$', { relevance: 0 })
+            t.COMMENT('!', '$', { relevance: 0 }),
+            t.COMMENT('^C[ ]', '$', { relevance: 0 }),
+            t.COMMENT('^C$', '$', { relevance: 0 })
           ]
         },
         a = /(_[a-z_\d]+)?/,
@@ -14534,7 +14534,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           className: 'function',
           beginKeywords: 'subroutine function program',
           illegal: '[${=\\n]',
-          contains: [n.UNDERSCORE_TITLE_MODE, { className: 'params', begin: '\\(', end: '\\)' }]
+          contains: [t.UNDERSCORE_TITLE_MODE, { className: 'params', begin: '\\(', end: '\\)' }]
         };
       return {
         name: 'Fortran',
@@ -15030,42 +15030,42 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: /\/\*/,
         contains: [
-          { className: 'string', relevance: 0, variants: [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE] },
+          { className: 'string', relevance: 0, variants: [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE] },
           s,
           { begin: /^C\s*=(?!=)/, relevance: 0 },
-          t,
+          n,
           r
         ]
       };
     };
-  function yo(n) {
-    return new RegExp(n.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'), 'm');
+  function Co(t) {
+    return new RegExp(t.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'), 'm');
   }
-  function va(n) {
-    return n ? (typeof n == 'string' ? n : n.source) : null;
+  function Ra(t) {
+    return t ? (typeof t == 'string' ? t : t.source) : null;
   }
-  function vt(n) {
-    return Ce('(?=', n, ')');
+  function Ct(t) {
+    return Re('(?=', t, ')');
   }
-  function Ce(...n) {
-    return n.map(e => va(e)).join('');
+  function Re(...t) {
+    return t.map(e => Ra(e)).join('');
   }
-  function Qe(...n) {
+  function Qe(...t) {
     return (
       '(' +
-      ((function(t) {
-        const a = t[t.length - 1];
-        return typeof a == 'object' && a.constructor === Object ? (t.splice(t.length - 1, 1), a) : {};
-      })(n).capture
+      ((function(n) {
+        const a = n[n.length - 1];
+        return typeof a == 'object' && a.constructor === Object ? (n.splice(n.length - 1, 1), a) : {};
+      })(t).capture
         ? ''
         : '?:') +
-      n.map(t => va(t)).join('|') +
+      t.map(n => Ra(n)).join('|') +
       ')'
     );
   }
-  var Ro = function(n) {
+  var Ro = function(t) {
       const e = { scope: 'keyword', match: /\b(yield|return|let|do|match|use)!/ },
-        t = [
+        n = [
           'bool',
           'byte',
           'sbyte',
@@ -15206,33 +15206,33 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ],
           'variable.constant': ['__LINE__', '__SOURCE_DIRECTORY__', '__SOURCE_FILE__']
         },
-        i = { variants: [n.COMMENT(/\(\*(?!\))/, /\*\)/, { contains: ['self'] }), n.C_LINE_COMMENT_MODE] },
+        i = { variants: [t.COMMENT(/\(\*(?!\))/, /\*\)/, { contains: ['self'] }), t.C_LINE_COMMENT_MODE] },
         r = { scope: 'variable', begin: /``/, end: /``/ },
         s = /\B('|\^)/,
         o = {
           scope: 'symbol',
-          variants: [{ match: Ce(s, /``.*?``/) }, { match: Ce(s, n.UNDERSCORE_IDENT_RE) }],
+          variants: [{ match: Re(s, /``.*?``/) }, { match: Re(s, t.UNDERSCORE_IDENT_RE) }],
           relevance: 0
         },
         l = function({ includeEqual: F }) {
           let w;
           w = F ? '!%&*+-/<=>@^|~?' : '!%&*+-/<>@^|~?';
-          const j = Ce('[', ...Array.from(w).map(yo), ']'),
+          const j = Re('[', ...Array.from(w).map(Co), ']'),
             N = Qe(j, /\./),
-            B = Ce(N, vt(N)),
-            Q = Qe(Ce(B, N, '*'), Ce(j, '+'));
+            B = Re(N, Ct(N)),
+            Q = Qe(Re(B, N, '*'), Re(j, '+'));
           return { scope: 'operator', match: Qe(Q, /:\?>/, /:\?/, /:>/, /:=/, /::?/, /\$/), relevance: 0 };
         },
         c = l({ includeEqual: !0 }),
         _ = l({ includeEqual: !1 }),
         d = function(F, w) {
           return {
-            begin: Ce(F, vt(Ce(/\s*/, Qe(/\w/, /'/, /\^/, /#/, /``/, /\(/, /{\|/)))),
+            begin: Re(F, Ct(Re(/\s*/, Qe(/\w/, /'/, /\^/, /#/, /``/, /\(/, /{\|/)))),
             beginScope: w,
-            end: vt(Qe(/\n/, /=/)),
+            end: Ct(Qe(/\n/, /=/)),
             relevance: 0,
-            keywords: n.inherit(a, { type: t }),
-            contains: [i, o, n.inherit(r, { scope: null }), _]
+            keywords: t.inherit(a, { type: n }),
+            contains: [i, o, t.inherit(r, { scope: null }), _]
           };
         },
         u = d(/:/, 'operator'),
@@ -15240,53 +15240,53 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         p = {
           begin: [/(^|\s+)/, /type/, /\s+/, /[a-zA-Z_](\w|')*/],
           beginScope: { 2: 'keyword', 4: 'title.class' },
-          end: vt(/\(|=|$/),
+          end: Ct(/\(|=|$/),
           keywords: a,
-          contains: [i, n.inherit(r, { scope: null }), o, { scope: 'operator', match: /<|>/ }, u]
+          contains: [i, t.inherit(r, { scope: null }), o, { scope: 'operator', match: /<|>/ }, u]
         },
         g = { scope: 'computation-expression', match: /\b[_a-z]\w*(?=\s*\{)/ },
         E = {
           begin: [
             /^\s*/,
-            Ce(
+            Re(
               /#/,
               Qe('if', 'else', 'endif', 'line', 'nowarn', 'light', 'r', 'i', 'I', 'load', 'time', 'help', 'quit')
             ),
             /\b/
           ],
           beginScope: { 2: 'meta' },
-          end: vt(/\s|$/)
+          end: Ct(/\s|$/)
         },
-        h = { variants: [n.BINARY_NUMBER_MODE, n.C_NUMBER_MODE] },
-        T = { scope: 'string', begin: /"/, end: /"/, contains: [n.BACKSLASH_ESCAPE] },
-        S = { scope: 'string', begin: /@"/, end: /"/, contains: [{ match: /""/ }, n.BACKSLASH_ESCAPE] },
+        h = { variants: [t.BINARY_NUMBER_MODE, t.C_NUMBER_MODE] },
+        T = { scope: 'string', begin: /"/, end: /"/, contains: [t.BACKSLASH_ESCAPE] },
+        S = { scope: 'string', begin: /@"/, end: /"/, contains: [{ match: /""/ }, t.BACKSLASH_ESCAPE] },
         v = { scope: 'string', begin: /"""/, end: /"""/, relevance: 2 },
-        R = { scope: 'subst', begin: /\{/, end: /\}/, keywords: a },
-        C = {
+        C = { scope: 'subst', begin: /\{/, end: /\}/, keywords: a },
+        R = {
           scope: 'string',
           begin: /\$"/,
           end: /"/,
-          contains: [{ match: /\{\{/ }, { match: /\}\}/ }, n.BACKSLASH_ESCAPE, R]
+          contains: [{ match: /\{\{/ }, { match: /\}\}/ }, t.BACKSLASH_ESCAPE, C]
         },
         I = {
           scope: 'string',
           begin: /(\$@|@\$)"/,
           end: /"/,
-          contains: [{ match: /\{\{/ }, { match: /\}\}/ }, { match: /""/ }, n.BACKSLASH_ESCAPE, R]
+          contains: [{ match: /\{\{/ }, { match: /\}\}/ }, { match: /""/ }, t.BACKSLASH_ESCAPE, C]
         },
         O = {
           scope: 'string',
           begin: /\$"""/,
           end: /"""/,
-          contains: [{ match: /\{\{/ }, { match: /\}\}/ }, R],
+          contains: [{ match: /\{\{/ }, { match: /\}\}/ }, C],
           relevance: 2
         },
         A = {
           scope: 'string',
-          match: Ce(/'/, Qe(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
+          match: Re(/'/, Qe(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
         };
       return (
-        (R.contains = [I, C, S, T, A, e, i, r, u, g, E, h, o, c]),
+        (C.contains = [I, R, S, T, A, e, i, r, u, g, E, h, o, c]),
         {
           name: 'F#',
           aliases: ['fs', 'f#'],
@@ -15295,7 +15295,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           classNameAliases: { 'computation-expression': 'keyword' },
           contains: [
             e,
-            { variants: [O, I, C, v, S, T, A] },
+            { variants: [O, I, R, v, S, T, A] },
             i,
             r,
             p,
@@ -15311,9 +15311,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    Co = function(n) {
-      const e = n.regex,
-        t = {
+    No = function(t) {
+      const e = t.regex,
+        n = {
           keyword:
             'abort acronym acronyms alias all and assign binary card diag display else eq file files for free ge gt if integer le loop lt maximizing minimizing model models ne negative no not option options or ord positive prod put putpage puttl repeat sameas semicont semiint smax smin solve sos1 sos2 sum system table then until using while xor yes',
           literal: 'eps inf na',
@@ -15325,19 +15325,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           className: 'comment',
           variants: [{ begin: "'", end: "'" }, { begin: '"', end: '"' }],
           illegal: '\\n',
-          contains: [n.BACKSLASH_ESCAPE]
+          contains: [t.BACKSLASH_ESCAPE]
         },
         r = {
           begin: '/',
           end: '/',
-          keywords: t,
+          keywords: n,
           contains: [
             i,
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE,
-            n.QUOTE_STRING_MODE,
-            n.APOS_STRING_MODE,
-            n.C_NUMBER_MODE
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE,
+            t.QUOTE_STRING_MODE,
+            t.APOS_STRING_MODE,
+            t.C_NUMBER_MODE
           ]
         },
         s = /[a-z0-9&#*=?@\\><:,()$[\]_.{}!+%^-]+/,
@@ -15356,9 +15356,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         name: 'GAMS',
         aliases: ['gms'],
         case_insensitive: !0,
-        keywords: t,
+        keywords: n,
         contains: [
-          n.COMMENT(/^\$ontext/, /^\$offtext/),
+          t.COMMENT(/^\$ontext/, /^\$offtext/),
           {
             className: 'meta',
             begin: '^\\$[a-z0-9]+',
@@ -15366,20 +15366,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             returnBegin: !0,
             contains: [{ className: 'keyword', begin: '^\\$[a-z0-9]+' }]
           },
-          n.COMMENT('^\\*', '$'),
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
-          n.APOS_STRING_MODE,
+          t.COMMENT('^\\*', '$'),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
           {
             beginKeywords: 'set sets parameter parameters variable variables scalar scalars equation equations',
             end: ';',
             contains: [
-              n.COMMENT('^\\*', '$'),
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE,
-              n.QUOTE_STRING_MODE,
-              n.APOS_STRING_MODE,
+              t.COMMENT('^\\*', '$'),
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE,
+              t.QUOTE_STRING_MODE,
+              t.APOS_STRING_MODE,
               r,
               o
             ]
@@ -15390,12 +15390,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             returnBegin: !0,
             contains: [
               { beginKeywords: 'table', end: '$', contains: [o] },
-              n.COMMENT('^\\*', '$'),
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE,
-              n.QUOTE_STRING_MODE,
-              n.APOS_STRING_MODE,
-              n.C_NUMBER_MODE
+              t.COMMENT('^\\*', '$'),
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE,
+              t.QUOTE_STRING_MODE,
+              t.APOS_STRING_MODE,
+              t.C_NUMBER_MODE
             ]
           },
           {
@@ -15408,12 +15408,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               a
             ]
           },
-          n.C_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           a
         ]
       };
     },
-    No = function(n) {
+    Oo = function(t) {
       const e = {
           keyword:
             'bool break call callexe checkinterrupt clear clearg closeall cls comlog compile continue create debug declare delete disable dlibrary dllcall do dos ed edit else elseif enable end endfor endif endp endo errorlog errorlogat expr external fn for format goto gosub graph if keyword let lib library line load loadarray loadexe loadf loadk loadm loadp loads loadx local locate loopnextindex lprint lpwidth lshow matrix msym ndpclex new open output outwidth plot plotsym pop prcsn print printdos proc push retp return rndcon rndmod rndmult rndseed run save saveall screen scroll setarray show sparse stop string struct system trace trap threadfor threadendfor threadbegin threadjoin threadstat threadend until use while winprint ne ge le gt lt and xor or not eq eqv',
@@ -15422,7 +15422,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal:
             'DB_AFTER_LAST_ROW DB_ALL_TABLES DB_BATCH_OPERATIONS DB_BEFORE_FIRST_ROW DB_BLOB DB_EVENT_NOTIFICATIONS DB_FINISH_QUERY DB_HIGH_PRECISION DB_LAST_INSERT_ID DB_LOW_PRECISION_DOUBLE DB_LOW_PRECISION_INT32 DB_LOW_PRECISION_INT64 DB_LOW_PRECISION_NUMBERS DB_MULTIPLE_RESULT_SETS DB_NAMED_PLACEHOLDERS DB_POSITIONAL_PLACEHOLDERS DB_PREPARED_QUERIES DB_QUERY_SIZE DB_SIMPLE_LOCKING DB_SYSTEM_TABLES DB_TABLES DB_TRANSACTIONS DB_UNICODE DB_VIEWS __STDIN __STDOUT __STDERR __FILE_DIR'
         },
-        t = n.COMMENT('@', '@'),
+        n = t.COMMENT('@', '@'),
         a = {
           className: 'meta',
           begin: '#',
@@ -15439,16 +15439,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               keywords: { keyword: 'include' },
               contains: [{ className: 'string', begin: '"', end: '"', illegal: '\\n' }]
             },
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE,
-            t
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE,
+            n
           ]
         },
         i = {
           begin: /\bstruct\s+/,
           end: /\s/,
           keywords: 'struct',
-          contains: [{ className: 'type', begin: n.UNDERSCORE_IDENT_RE, relevance: 0 }]
+          contains: [{ className: 'type', begin: t.UNDERSCORE_IDENT_RE, relevance: 0 }]
         },
         r = [
           {
@@ -15459,34 +15459,34 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             excludeEnd: !0,
             endsWithParent: !0,
             relevance: 0,
-            contains: [{ className: 'literal', begin: /\.\.\./ }, n.C_NUMBER_MODE, n.C_BLOCK_COMMENT_MODE, t, i]
+            contains: [{ className: 'literal', begin: /\.\.\./ }, t.C_NUMBER_MODE, t.C_BLOCK_COMMENT_MODE, n, i]
           }
         ],
-        s = { className: 'title', begin: n.UNDERSCORE_IDENT_RE, relevance: 0 },
+        s = { className: 'title', begin: t.UNDERSCORE_IDENT_RE, relevance: 0 },
         o = function(u, m, p) {
-          const g = n.inherit(
+          const g = t.inherit(
             { className: 'function', beginKeywords: u, end: m, excludeEnd: !0, contains: [].concat(r) },
             p || {}
           );
           return (
             g.contains.push(s),
-            g.contains.push(n.C_NUMBER_MODE),
-            g.contains.push(n.C_BLOCK_COMMENT_MODE),
-            g.contains.push(t),
+            g.contains.push(t.C_NUMBER_MODE),
+            g.contains.push(t.C_BLOCK_COMMENT_MODE),
+            g.contains.push(n),
             g
           );
         },
         l = { className: 'built_in', begin: '\\b(' + e.built_in.split(' ').join('|') + ')\\b' },
-        c = { className: 'string', begin: '"', end: '"', contains: [n.BACKSLASH_ESCAPE], relevance: 0 },
+        c = { className: 'string', begin: '"', end: '"', contains: [t.BACKSLASH_ESCAPE], relevance: 0 },
         _ = {
-          begin: n.UNDERSCORE_IDENT_RE + '\\s*\\(',
+          begin: t.UNDERSCORE_IDENT_RE + '\\s*\\(',
           returnBegin: !0,
           keywords: e,
           relevance: 0,
           contains: [
             { beginKeywords: e.keyword },
             l,
-            { className: 'built_in', begin: n.UNDERSCORE_IDENT_RE, relevance: 0 }
+            { className: 'built_in', begin: t.UNDERSCORE_IDENT_RE, relevance: 0 }
           ]
         },
         d = {
@@ -15494,7 +15494,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           end: /\)/,
           relevance: 0,
           keywords: { built_in: e.built_in, literal: e.literal },
-          contains: [n.C_NUMBER_MODE, n.C_BLOCK_COMMENT_MODE, t, l, _, c, 'self']
+          contains: [t.C_NUMBER_MODE, t.C_BLOCK_COMMENT_MODE, n, l, _, c, 'self']
         };
       return (
         _.contains.push(d),
@@ -15505,20 +15505,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           keywords: e,
           illegal: /(\{[%#]|[%#]\}| <- )/,
           contains: [
-            n.C_NUMBER_MODE,
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE,
-            t,
+            t.C_NUMBER_MODE,
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE,
+            n,
             c,
             a,
             { className: 'keyword', begin: /\bexternal (matrix|string|array|sparse matrix|struct|proc|keyword|fn)/ },
             o('proc keyword', ';'),
             o('fn', '='),
-            { beginKeywords: 'for threadfor', end: /;/, relevance: 0, contains: [n.C_BLOCK_COMMENT_MODE, t, d] },
+            { beginKeywords: 'for threadfor', end: /;/, relevance: 0, contains: [t.C_BLOCK_COMMENT_MODE, n, d] },
             {
               variants: [
-                { begin: n.UNDERSCORE_IDENT_RE + '\\.' + n.UNDERSCORE_IDENT_RE },
-                { begin: n.UNDERSCORE_IDENT_RE + '\\s*=' }
+                { begin: t.UNDERSCORE_IDENT_RE + '\\.' + t.UNDERSCORE_IDENT_RE },
+                { begin: t.UNDERSCORE_IDENT_RE + '\\s*=' }
               ],
               relevance: 0
             },
@@ -15528,19 +15528,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    Oo = function(n) {
+    Ao = function(t) {
       const e = {
           $pattern: '[A-Z_][A-Z0-9_.]*',
           keyword: 'IF DO WHILE ENDWHILE CALL ENDIF SUB ENDSUB GOTO REPEAT ENDREPEAT EQ LT GT NE GE LE OR XOR'
         },
-        t = n.inherit(n.C_NUMBER_MODE, { begin: '([-+]?((\\.\\d+)|(\\d+)(\\.\\d*)?))|' + n.C_NUMBER_RE }),
+        n = t.inherit(t.C_NUMBER_MODE, { begin: '([-+]?((\\.\\d+)|(\\d+)(\\.\\d*)?))|' + t.C_NUMBER_RE }),
         a = [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.COMMENT(/\(/, /\)/),
-          t,
-          n.inherit(n.APOS_STRING_MODE, { illegal: null }),
-          n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.COMMENT(/\(/, /\)/),
+          n,
+          t.inherit(t.APOS_STRING_MODE, { illegal: null }),
+          t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
           { className: 'name', begin: '([G])([0-9]+\\.?[0-9]?)' },
           { className: 'name', begin: '([M])([0-9]+\\.?[0-9]?)' },
           { className: 'attr', begin: '(VC|VS|#)', end: '(\\d+)' },
@@ -15548,7 +15548,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           {
             className: 'built_in',
             begin: '(ATAN|ABS|ACOS|ASIN|SIN|COS|EXP|FIX|FUP|ROUND|LN|TAN)(\\[)',
-            contains: [t],
+            contains: [n],
             end: '\\]'
           },
           { className: 'symbol', variants: [{ begin: 'N', end: '\\d+', illegal: '\\W' }] }
@@ -15561,7 +15561,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         contains: [{ className: 'meta', begin: '%' }, { className: 'meta', begin: '([O])([0-9]+)' }].concat(a)
       };
     },
-    Ao = function(n) {
+    Io = function(t) {
       return {
         name: 'Gherkin',
         aliases: ['feature'],
@@ -15572,13 +15572,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'meta', begin: '@[^@\\s]+' },
           { begin: '\\|', end: '\\|\\w*$', contains: [{ className: 'string', begin: '[^|]+' }] },
           { className: 'variable', begin: '<', end: '>' },
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           { className: 'string', begin: '"""', end: '"""' },
-          n.QUOTE_STRING_MODE
+          t.QUOTE_STRING_MODE
         ]
       };
     },
-    Io = function(n) {
+    xo = function(t) {
       return {
         name: 'GLSL',
         keywords: {
@@ -15592,14 +15592,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: '"',
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.C_NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: '#', end: '$' }
         ]
       };
     },
-    xo = function(n) {
+    Do = function(t) {
       return {
         name: 'GML',
         case_insensitive: !1,
@@ -18381,15 +18381,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE
         ]
       };
     },
-    Do = function(n) {
+    wo = function(t) {
       const e = {
         keyword: [
           'break',
@@ -18465,10 +18465,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         keywords: e,
         illegal: '</',
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          { className: 'string', variants: [n.QUOTE_STRING_MODE, n.APOS_STRING_MODE, { begin: '`', end: '`' }] },
-          { className: 'number', variants: [{ begin: n.C_NUMBER_RE + '[i]', relevance: 1 }, n.C_NUMBER_MODE] },
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          { className: 'string', variants: [t.QUOTE_STRING_MODE, t.APOS_STRING_MODE, { begin: '`', end: '`' }] },
+          { className: 'number', variants: [{ begin: t.C_NUMBER_RE + '[i]', relevance: 1 }, t.C_NUMBER_MODE] },
           { begin: /:=/ },
           {
             className: 'function',
@@ -18476,14 +18476,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: '\\s*(\\{|$)',
             excludeEnd: !0,
             contains: [
-              n.TITLE_MODE,
+              t.TITLE_MODE,
               { className: 'params', begin: /\(/, end: /\)/, endsParent: !0, keywords: e, illegal: /["']/ }
             ]
           }
         ]
       };
     },
-    wo = function(n) {
+    Mo = function(t) {
       return {
         name: 'Golo',
         keywords: {
@@ -18538,14 +18538,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: ['true', 'false', 'null']
         },
         contains: [
-          n.HASH_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE,
+          t.HASH_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: '@[A-Za-z]+' }
         ]
       };
     },
-    Mo = function(n) {
+    Lo = function(t) {
       return {
         name: 'Gradle',
         case_insensitive: !0,
@@ -18714,17 +18714,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'writeLine'
         ],
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE,
-          n.REGEXP_MODE
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE,
+          t.REGEXP_MODE
         ]
       };
     },
-    Lo = function(n) {
-      const e = n.regex;
+    ko = function(t) {
+      const e = t.regex;
       return {
         name: 'GraphQL',
         aliases: ['gql'],
@@ -18749,9 +18749,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: ['true', 'false', 'null']
         },
         contains: [
-          n.HASH_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE,
+          t.HASH_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE,
           { scope: 'punctuation', match: /[.]{3}/, relevance: 0 },
           { scope: 'punctuation', begin: /[\!\(\)\:\=\[\]\{\|\}]{1}/, relevance: 0 },
           { scope: 'variable', begin: /\$/, end: /\W/, excludeEnd: !0, relevance: 0 },
@@ -18761,34 +18761,34 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: [/[;<']/, /BEGIN/]
       };
     };
-  function gn(n, e = {}) {
-    return (e.variants = n), e;
+  function Sn(t, e = {}) {
+    return (e.variants = t), e;
   }
-  var ko = function(n) {
-      const e = n.regex,
-        t = '[A-Za-z0-9_$]+',
-        a = gn([
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.COMMENT('/\\*\\*', '\\*/', {
+  var Po = function(t) {
+      const e = t.regex,
+        n = '[A-Za-z0-9_$]+',
+        a = Sn([
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.COMMENT('/\\*\\*', '\\*/', {
             relevance: 0,
             contains: [{ begin: /\w+@/, relevance: 0 }, { className: 'doctag', begin: '@[A-Za-z]+' }]
           })
         ]),
-        i = { className: 'regexp', begin: /~?\/[^\/\n]+\//, contains: [n.BACKSLASH_ESCAPE] },
-        r = gn([n.BINARY_NUMBER_MODE, n.C_NUMBER_MODE]),
-        s = gn(
+        i = { className: 'regexp', begin: /~?\/[^\/\n]+\//, contains: [t.BACKSLASH_ESCAPE] },
+        r = Sn([t.BINARY_NUMBER_MODE, t.C_NUMBER_MODE]),
+        s = Sn(
           [
             { begin: /"""/, end: /"""/ },
             { begin: /'''/, end: /'''/ },
             { begin: '\\$/', end: '/\\$', relevance: 10 },
-            n.APOS_STRING_MODE,
-            n.QUOTE_STRING_MODE
+            t.APOS_STRING_MODE,
+            t.QUOTE_STRING_MODE
           ],
           { className: 'string' }
         ),
         o = {
-          match: [/(class|interface|trait|enum|extends|implements)/, /\s+/, n.UNDERSCORE_IDENT_RE],
+          match: [/(class|interface|trait|enum|extends|implements)/, /\s+/, t.UNDERSCORE_IDENT_RE],
           scope: { 1: 'keyword', 3: 'title.class' }
         };
       return {
@@ -18839,27 +18839,27 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.SHEBANG({ binary: 'groovy', relevance: 10 }),
+          t.SHEBANG({ binary: 'groovy', relevance: 10 }),
           a,
           s,
           i,
           r,
           o,
           { className: 'meta', begin: '@[A-Za-z]+', relevance: 0 },
-          { className: 'attr', begin: t + '[ 	]*:', relevance: 0 },
+          { className: 'attr', begin: n + '[ 	]*:', relevance: 0 },
           { begin: /\?/, end: /:/, relevance: 0, contains: [a, s, i, r, 'self'] },
-          { className: 'symbol', begin: '^[ 	]*' + e.lookahead(t + ':'), excludeBegin: !0, end: t + ':', relevance: 0 }
+          { className: 'symbol', begin: '^[ 	]*' + e.lookahead(n + ':'), excludeBegin: !0, end: n + ':', relevance: 0 }
         ],
         illegal: /#|<\//
       };
     },
-    Po = function(n) {
+    Uo = function(t) {
       return {
         name: 'HAML',
         case_insensitive: !0,
         contains: [
           { className: 'meta', begin: '^!!!( (5|1\\.1|Strict|Frameset|Basic|Mobile|RDFa|XML\\b.*))?$', relevance: 10 },
-          n.COMMENT('^\\s*(!=#|=#|-#|/).*$', null, { relevance: 0 }),
+          t.COMMENT('^\\s*(!=#|=#|-#|/).*$', null, { relevance: 0 }),
           { begin: '^\\s*(-|=|!=)(?!#)', end: /$/, subLanguage: 'ruby', excludeBegin: !0, excludeEnd: !0 },
           {
             className: 'tag',
@@ -18879,8 +18879,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                     endsWithParent: !0,
                     contains: [
                       { className: 'attr', begin: ':\\w+' },
-                      n.APOS_STRING_MODE,
-                      n.QUOTE_STRING_MODE,
+                      t.APOS_STRING_MODE,
+                      t.QUOTE_STRING_MODE,
                       { begin: '\\w+', relevance: 0 }
                     ]
                   }
@@ -18898,8 +18898,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                     endsWithParent: !0,
                     contains: [
                       { className: 'attr', begin: '\\w+', relevance: 0 },
-                      n.APOS_STRING_MODE,
-                      n.QUOTE_STRING_MODE,
+                      t.APOS_STRING_MODE,
+                      t.QUOTE_STRING_MODE,
                       { begin: '\\w+', relevance: 0 }
                     ]
                   }
@@ -18912,9 +18912,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Uo = function(n) {
-      const e = n.regex,
-        t = {
+    Fo = function(t) {
+      const e = t.regex,
+        n = {
           $pattern: /[\w.\/]+/,
           built_in: [
             'action',
@@ -18954,7 +18954,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         s = e.concat(e.optional(/\.|\.\/|\//), r, e.anyNumberOfTimes(e.concat(/(\.|\/)/, r))),
         o = e.concat('(', a, '|', i, ')(?==)'),
         l = { begin: s },
-        c = n.inherit(l, { keywords: { $pattern: /[\w.\/]+/, literal: ['true', 'false', 'undefined', 'null'] } }),
+        c = t.inherit(l, { keywords: { $pattern: /[\w.\/]+/, literal: ['true', 'false', 'undefined', 'null'] } }),
         _ = { begin: /\(/, end: /\)/ },
         d = {
           className: 'attr',
@@ -18963,14 +18963,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           starts: {
             begin: /=/,
             end: /=/,
-            starts: { contains: [n.NUMBER_MODE, n.QUOTE_STRING_MODE, n.APOS_STRING_MODE, c, _] }
+            starts: { contains: [t.NUMBER_MODE, t.QUOTE_STRING_MODE, t.APOS_STRING_MODE, c, _] }
           }
         },
         u = {
           contains: [
-            n.NUMBER_MODE,
-            n.QUOTE_STRING_MODE,
-            n.APOS_STRING_MODE,
+            t.NUMBER_MODE,
+            t.QUOTE_STRING_MODE,
+            t.APOS_STRING_MODE,
             { begin: /as\s+\|/, keywords: { keyword: 'as' }, end: /\|/, contains: [{ begin: /\w+/ }] },
             d,
             c,
@@ -18978,11 +18978,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ],
           returnEnd: !0
         },
-        m = n.inherit(l, { className: 'name', keywords: t, starts: n.inherit(u, { end: /\)/ }) });
+        m = t.inherit(l, { className: 'name', keywords: n, starts: t.inherit(u, { end: /\)/ }) });
       _.contains = [m];
-      const p = n.inherit(l, { keywords: t, className: 'name', starts: n.inherit(u, { end: /\}\}/ }) }),
-        g = n.inherit(l, { keywords: t, className: 'name' }),
-        E = n.inherit(l, { className: 'name', keywords: t, starts: n.inherit(u, { end: /\}\}/ }) });
+      const p = t.inherit(l, { keywords: n, className: 'name', starts: t.inherit(u, { end: /\}\}/ }) }),
+        g = t.inherit(l, { keywords: n, className: 'name' }),
+        E = t.inherit(l, { className: 'name', keywords: n, starts: t.inherit(u, { end: /\}\}/ }) });
       return {
         name: 'Handlebars',
         aliases: ['hbs', 'html.hbs', 'html.handlebars', 'htmlbars'],
@@ -18991,8 +18991,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         contains: [
           { begin: /\\\{\{/, skip: !0 },
           { begin: /\\\\(?=\{\{)/, skip: !0 },
-          n.COMMENT(/\{\{!--/, /--\}\}/),
-          n.COMMENT(/\{\{!/, /\}\}/),
+          t.COMMENT(/\{\{!--/, /--\}\}/),
+          t.COMMENT(/\{\{!/, /\}\}/),
           {
             className: 'template-tag',
             begin: /\{\{\{\{(?!\/)/,
@@ -19010,9 +19010,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Fo = function(n) {
-      const e = { variants: [n.COMMENT('--', '$'), n.COMMENT(/\{-/, /-\}/, { contains: ['self'] })] },
-        t = { className: 'meta', begin: /\{-#/, end: /#-\}/ },
+    Bo = function(t) {
+      const e = { variants: [t.COMMENT('--', '$'), t.COMMENT(/\{-/, /-\}/, { contains: ['self'] })] },
+        n = { className: 'meta', begin: /\{-#/, end: /#-\}/ },
         a = { className: 'meta', begin: '^#', end: '$' },
         i = { className: 'type', begin: "\\b[A-Z][\\w']*", relevance: 0 },
         r = {
@@ -19020,10 +19020,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           end: '\\)',
           illegal: '"',
           contains: [
-            t,
+            n,
             a,
             { className: 'type', begin: '\\b[A-Z][\\w]*(\\((\\.\\.|,|\\w+)\\))?' },
-            n.inherit(n.TITLE_MODE, { begin: "[_a-z][\\w']*" }),
+            t.inherit(t.TITLE_MODE, { begin: "[_a-z][\\w']*" }),
             e
           ]
         },
@@ -19065,29 +19065,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             begin: '\\b(data|(new)?type)\\b',
             end: '$',
             keywords: 'data family type newtype deriving',
-            contains: [t, i, r, { begin: /\{/, end: /\}/, contains: r.contains }, e]
+            contains: [n, i, r, { begin: /\{/, end: /\}/, contains: r.contains }, e]
           },
           { beginKeywords: 'default', end: '$', contains: [i, r, e] },
-          { beginKeywords: 'infix infixl infixr', end: '$', contains: [n.C_NUMBER_MODE, e] },
+          { beginKeywords: 'infix infixl infixr', end: '$', contains: [t.C_NUMBER_MODE, e] },
           {
             begin: '\\bforeign\\b',
             end: '$',
             keywords: 'foreign import export ccall stdcall cplusplus jvm dotnet safe unsafe',
-            contains: [i, n.QUOTE_STRING_MODE, e]
+            contains: [i, t.QUOTE_STRING_MODE, e]
           },
           { className: 'meta', begin: '#!\\/usr\\/bin\\/env runhaskell', end: '$' },
-          t,
+          n,
           a,
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           l,
           i,
-          n.inherit(n.TITLE_MODE, { begin: "^[_a-z][\\w']*" }),
+          t.inherit(t.TITLE_MODE, { begin: "^[_a-z][\\w']*" }),
           e,
           { begin: '->|<-' }
         ]
       };
     },
-    Bo = function(n) {
+    Go = function(t) {
       return {
         name: 'Haxe',
         aliases: ['hx'],
@@ -19103,15 +19103,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             begin: "'",
             end: "'",
             contains: [
-              n.BACKSLASH_ESCAPE,
+              t.BACKSLASH_ESCAPE,
               { className: 'subst', begin: '\\$\\{', end: '\\}' },
               { className: 'subst', begin: '\\$', end: /\W\}/ }
             ]
           },
-          n.QUOTE_STRING_MODE,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.C_NUMBER_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: '@:', end: '$' },
           { className: 'meta', begin: '#', end: '$', keywords: { keyword: 'if else elseif end error' } },
           {
@@ -19124,7 +19124,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           { className: 'type', begin: ':[ 	]*', end: '\\W', excludeBegin: !0, excludeEnd: !0 },
           { className: 'type', begin: 'new *', end: '\\W', excludeBegin: !0, excludeEnd: !0 },
-          { className: 'class', beginKeywords: 'enum', end: '\\{', contains: [n.TITLE_MODE] },
+          { className: 'class', beginKeywords: 'enum', end: '\\{', contains: [t.TITLE_MODE] },
           {
             className: 'class',
             beginKeywords: 'abstract',
@@ -19133,7 +19133,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               { className: 'type', begin: '\\(', end: '\\)', excludeBegin: !0, excludeEnd: !0 },
               { className: 'type', begin: 'from +', end: '\\W', excludeBegin: !0, excludeEnd: !0 },
               { className: 'type', begin: 'to +', end: '\\W', excludeBegin: !0, excludeEnd: !0 },
-              n.TITLE_MODE
+              t.TITLE_MODE
             ],
             keywords: { keyword: 'abstract from to' }
           },
@@ -19148,9 +19148,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 className: 'keyword',
                 begin: '\\b(extends|implements) +',
                 keywords: 'extends implements',
-                contains: [{ className: 'type', begin: n.IDENT_RE, relevance: 0 }]
+                contains: [{ className: 'type', begin: t.IDENT_RE, relevance: 0 }]
               },
-              n.TITLE_MODE
+              t.TITLE_MODE
             ]
           },
           {
@@ -19159,13 +19159,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: '\\(',
             excludeEnd: !0,
             illegal: '\\S',
-            contains: [n.TITLE_MODE]
+            contains: [t.TITLE_MODE]
           }
         ],
         illegal: /<\//
       };
     },
-    Go = function(n) {
+    Yo = function(t) {
       return {
         name: 'HSP',
         case_insensitive: !0,
@@ -19175,12 +19175,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'goto gosub return break repeat loop continue wait await dim sdim foreach dimtype dup dupptr end stop newmod delmod mref run exgoto on mcall assert logmes newlab resume yield onexit onerror onkey onclick oncmd exist delete mkdir chdir dirlist bload bsave bcopy memfile if else poke wpoke lpoke getstr chdpm memexpand memcpy memset notesel noteadd notedel noteload notesave randomize noteunsel noteget split strrep setease button chgdisp exec dialog mmload mmplay mmstop mci pset pget syscolor mes print title pos circle cls font sysfont objsize picload color palcolor palette redraw width gsel gcopy gzoom gmode bmpsave hsvcolor getkey listbox chkbox combox input mesbox buffer screen bgscr mouse objsel groll line clrobj boxf objprm objmode stick grect grotate gsquare gradf objimage objskip objenable celload celdiv celput newcom querycom delcom cnvstow comres axobj winobj sendmsg comevent comevarg sarrayconv callfunc cnvwtos comevdisp libptr system hspstat hspver stat cnt err strsize looplev sublev iparam wparam lparam refstr refdval int rnd strlen length length2 length3 length4 vartype gettime peek wpeek lpeek varptr varuse noteinfo instr abs limit getease str strmid strf getpath strtrim sin cos tan atan sqrt double absf expf logf limitf powf geteasef mousex mousey mousew hwnd hinstance hdc ginfo objinfo dirinfo sysinfo thismod __hspver__ __hsp30__ __date__ __time__ __line__ __file__ _debug __hspdef__ and or xor not screen_normal screen_palette screen_hide screen_fixedsize screen_tool screen_frame gmode_gdi gmode_mem gmode_rgb0 gmode_alpha gmode_rgb0alpha gmode_add gmode_sub gmode_pixela ginfo_mx ginfo_my ginfo_act ginfo_sel ginfo_wx1 ginfo_wy1 ginfo_wx2 ginfo_wy2 ginfo_vx ginfo_vy ginfo_sizex ginfo_sizey ginfo_winx ginfo_winy ginfo_mesx ginfo_mesy ginfo_r ginfo_g ginfo_b ginfo_paluse ginfo_dispx ginfo_dispy ginfo_cx ginfo_cy ginfo_intid ginfo_newid ginfo_sx ginfo_sy objinfo_mode objinfo_bmscr objinfo_hwnd notemax notesize dir_cur dir_exe dir_win dir_sys dir_cmdline dir_desktop dir_mydoc dir_tv font_normal font_bold font_italic font_underline font_strikeout font_antialias objmode_normal objmode_guifont objmode_usefont gsquare_grad msgothic msmincho do until while wend for next _break _continue switch case default swbreak swend ddim ldim alloc m_pi rad2deg deg2rad ease_linear ease_quad_in ease_quad_out ease_quad_inout ease_cubic_in ease_cubic_out ease_cubic_inout ease_quartic_in ease_quartic_out ease_quartic_inout ease_bounce_in ease_bounce_out ease_bounce_inout ease_shake_in ease_shake_out ease_shake_inout ease_loop'
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
-          n.APOS_STRING_MODE,
-          { className: 'string', begin: /\{"/, end: /"\}/, contains: [n.BACKSLASH_ESCAPE] },
-          n.COMMENT(';', '$', { relevance: 0 }),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          { className: 'string', begin: /\{"/, end: /"\}/, contains: [t.BACKSLASH_ESCAPE] },
+          t.COMMENT(';', '$', { relevance: 0 }),
           {
             className: 'meta',
             begin: '#',
@@ -19190,29 +19190,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 'addion cfunc cmd cmpopt comfunc const defcfunc deffunc define else endif enum epack func global if ifdef ifndef include modcfunc modfunc modinit modterm module pack packopt regcmd runtime undef usecom uselib'
             },
             contains: [
-              n.inherit(n.QUOTE_STRING_MODE, { className: 'string' }),
-              n.NUMBER_MODE,
-              n.C_NUMBER_MODE,
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE
+              t.inherit(t.QUOTE_STRING_MODE, { className: 'string' }),
+              t.NUMBER_MODE,
+              t.C_NUMBER_MODE,
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE
             ]
           },
           { className: 'symbol', begin: '^\\*(\\w+|@)' },
-          n.NUMBER_MODE,
-          n.C_NUMBER_MODE
+          t.NUMBER_MODE,
+          t.C_NUMBER_MODE
         ]
       };
     },
-    Yo = function(n) {
+    Ho = function(t) {
       const e = 'HTTP/(2|1\\.[01])',
-        t = {
+        n = {
           className: 'attribute',
-          begin: n.regex.concat('^', /[A-Za-z][A-Za-z0-9-]*/, '(?=\\:\\s)'),
+          begin: t.regex.concat('^', /[A-Za-z][A-Za-z0-9-]*/, '(?=\\:\\s)'),
           starts: {
             contains: [{ className: 'punctuation', begin: /: /, relevance: 0, starts: { end: '$', relevance: 0 } }]
           }
         },
-        a = [t, { begin: '\\n\\n', starts: { subLanguage: [], endsWithParent: !0 } }];
+        a = [n, { begin: '\\n\\n', starts: { subLanguage: [], endsWithParent: !0 } }];
       return {
         name: 'HTTP',
         aliases: ['https'],
@@ -19234,39 +19234,39 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ],
             starts: { end: /\b\B/, illegal: /\S/, contains: a }
           },
-          n.inherit(t, { relevance: 0 })
+          t.inherit(n, { relevance: 0 })
         ]
       };
     },
-    Ho = function(n) {
+    zo = function(t) {
       const e = "a-zA-Z_\\-!.?+*=<>&#'",
-        t = '[' + e + '][' + e + '0-9/;:]*',
+        n = '[' + e + '][' + e + '0-9/;:]*',
         a = {
-          $pattern: t,
+          $pattern: n,
           built_in:
             '!= % %= & &= * ** **= *= *map + += , --build-class-- --import-- -= . / // //= /= < << <<= <= = > >= >> >>= @ @= ^ ^= abs accumulate all and any ap-compose ap-dotimes ap-each ap-each-while ap-filter ap-first ap-if ap-last ap-map ap-map-when ap-pipe ap-reduce ap-reject apply as-> ascii assert assoc bin break butlast callable calling-module-name car case cdr chain chr coll? combinations compile compress cond cons cons? continue count curry cut cycle dec def default-method defclass defmacro defmacro-alias defmacro/g! defmain defmethod defmulti defn defn-alias defnc defnr defreader defseq del delattr delete-route dict-comp dir disassemble dispatch-reader-macro distinct divmod do doto drop drop-last drop-while empty? end-sequence eval eval-and-compile eval-when-compile even? every? except exec filter first flatten float? fn fnc fnr for for* format fraction genexpr gensym get getattr global globals group-by hasattr hash hex id identity if if* if-not if-python2 import in inc input instance? integer integer-char? integer? interleave interpose is is-coll is-cons is-empty is-even is-every is-float is-instance is-integer is-integer-char is-iterable is-iterator is-keyword is-neg is-none is-not is-numeric is-odd is-pos is-string is-symbol is-zero isinstance islice issubclass iter iterable? iterate iterator? keyword keyword? lambda last len let lif lif-not list* list-comp locals loop macro-error macroexpand macroexpand-1 macroexpand-all map max merge-with method-decorator min multi-decorator multicombinations name neg? next none? nonlocal not not-in not? nth numeric? oct odd? open or ord partition permutations pos? post-route postwalk pow prewalk print product profile/calls profile/cpu put-route quasiquote quote raise range read read-str recursive-replace reduce remove repeat repeatedly repr require rest round route route-with-methods rwm second seq set-comp setattr setv some sorted string string? sum switch symbol? take take-nth take-while tee try unless unquote unquote-splicing vars walk when while with with* with-decorator with-gensyms xi xor yield yield-from zero? zip zip-longest | |= ~'
         },
-        i = { begin: t, relevance: 0 },
+        i = { begin: n, relevance: 0 },
         r = { className: 'number', begin: '[-+]?\\d+(\\.\\d+)?', relevance: 0 },
-        s = n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
-        o = n.COMMENT(';', '$', { relevance: 0 }),
+        s = t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
+        o = t.COMMENT(';', '$', { relevance: 0 }),
         l = { className: 'literal', begin: /\b([Tt]rue|[Ff]alse|nil|None)\b/ },
         c = { begin: '[\\[\\{]', end: '[\\]\\}]', relevance: 0 },
-        _ = { className: 'comment', begin: '\\^' + t },
-        d = n.COMMENT('\\^\\{', '\\}'),
-        u = { className: 'symbol', begin: '[:]{1,2}' + t },
+        _ = { className: 'comment', begin: '\\^' + n },
+        d = t.COMMENT('\\^\\{', '\\}'),
+        u = { className: 'symbol', begin: '[:]{1,2}' + n },
         m = { begin: '\\(', end: '\\)' },
         p = { endsWithParent: !0, relevance: 0 },
-        g = { className: 'name', relevance: 0, keywords: a, begin: t, starts: p },
+        g = { className: 'name', relevance: 0, keywords: a, begin: n, starts: p },
         E = [m, s, _, d, o, u, c, r, l, i];
       return (
-        (m.contains = [n.COMMENT('comment', ''), g, p]),
+        (m.contains = [t.COMMENT('comment', ''), g, p]),
         (p.contains = E),
         (c.contains = E),
-        { name: 'Hy', aliases: ['hylang'], illegal: /\S/, contains: [n.SHEBANG(), m, s, _, d, o, u, c, r, l] }
+        { name: 'Hy', aliases: ['hylang'], illegal: /\S/, contains: [t.SHEBANG(), m, s, _, d, o, u, c, r, l] }
       );
     },
-    zo = function(n) {
+    $o = function(t) {
       return {
         name: 'Inform 7',
         aliases: ['i7'],
@@ -19293,20 +19293,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    $o = function(n) {
-      const e = n.regex,
-        t = {
+    Vo = function(t) {
+      const e = t.regex,
+        n = {
           className: 'number',
           relevance: 0,
-          variants: [{ begin: /([+-]+)?[\d]+_[\d_]+/ }, { begin: n.NUMBER_RE }]
+          variants: [{ begin: /([+-]+)?[\d]+_[\d_]+/ }, { begin: t.NUMBER_RE }]
         },
-        a = n.COMMENT();
+        a = t.COMMENT();
       a.variants = [{ begin: /;/, end: /$/ }, { begin: /#/, end: /$/ }];
       const i = { className: 'variable', variants: [{ begin: /\$[\w\d"][\w\d_]*/ }, { begin: /\$\{(.*?)\}/ }] },
         r = { className: 'literal', begin: /\bon|off|true|false|yes|no\b/ },
         s = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE],
+          contains: [t.BACKSLASH_ESCAPE],
           variants: [
             { begin: "'''", end: "'''", relevance: 10 },
             { begin: '"""', end: '"""', relevance: 10 },
@@ -19314,7 +19314,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { begin: "'", end: "'" }
           ]
         },
-        o = { begin: /\[/, end: /\]/, contains: [a, r, i, s, t, 'self'], relevance: 0 },
+        o = { begin: /\[/, end: /\]/, contains: [a, r, i, s, n, 'self'], relevance: 0 },
         l = e.either(/[A-Za-z0-9_-]+/, /"(\\"|[^"])*"/, /'[^']*'/);
       return {
         name: 'TOML, also INI',
@@ -19327,21 +19327,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           {
             begin: e.concat(l, '(\\s*\\.\\s*', l, ')*', e.lookahead(/\s*=\s*[^#\s]/)),
             className: 'attr',
-            starts: { end: /$/, contains: [a, o, r, i, s, t] }
+            starts: { end: /$/, contains: [a, o, r, i, s, n] }
           }
         ]
       };
     },
-    Vo = function(n) {
-      const e = n.regex,
-        t = /(_[a-z_\d]+)?/,
+    jo = function(t) {
+      const e = t.regex,
+        n = /(_[a-z_\d]+)?/,
         a = /([de][+-]?\d+)?/,
         i = {
           className: 'number',
           variants: [
-            { begin: e.concat(/\b\d+/, /\.(\d*)/, a, t) },
-            { begin: e.concat(/\b\d+/, a, t) },
-            { begin: e.concat(/\.\d+/, a, t) }
+            { begin: e.concat(/\b\d+/, /\.(\d*)/, a, n) },
+            { begin: e.concat(/\b\d+/, a, n) },
+            { begin: e.concat(/\.\d+/, a, n) }
           ],
           relevance: 0
         };
@@ -19357,29 +19357,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: /\/\*/,
         contains: [
-          n.inherit(n.APOS_STRING_MODE, { className: 'string', relevance: 0 }),
-          n.inherit(n.QUOTE_STRING_MODE, { className: 'string', relevance: 0 }),
+          t.inherit(t.APOS_STRING_MODE, { className: 'string', relevance: 0 }),
+          t.inherit(t.QUOTE_STRING_MODE, { className: 'string', relevance: 0 }),
           {
             className: 'function',
             beginKeywords: 'subroutine function program',
             illegal: '[${=\\n]',
-            contains: [n.UNDERSCORE_TITLE_MODE, { className: 'params', begin: '\\(', end: '\\)' }]
+            contains: [t.UNDERSCORE_TITLE_MODE, { className: 'params', begin: '\\(', end: '\\)' }]
           },
-          n.COMMENT('!', '$', { relevance: 0 }),
-          n.COMMENT('begin_doc', 'end_doc', { relevance: 10 }),
+          t.COMMENT('!', '$', { relevance: 0 }),
+          t.COMMENT('begin_doc', 'end_doc', { relevance: 10 }),
           i
         ]
       };
     },
-    jo = function(n) {
+    qo = function(t) {
       const e = '[A-Za-z\u0410-\u042F\u0430-\u044F\u0451\u0401_!][A-Za-z\u0410-\u042F\u0430-\u044F\u0451\u0401_0-9]*',
-        t = { className: 'number', begin: n.NUMBER_RE, relevance: 0 },
+        n = { className: 'number', begin: t.NUMBER_RE, relevance: 0 },
         a = { className: 'string', variants: [{ begin: '"', end: '"' }, { begin: "'", end: "'" }] },
         i = { className: 'doctag', begin: '\\b(?:TODO|DONE|BEGIN|END|STUB|CHG|FIXME|NOTE|BUG|XXX)\\b', relevance: 0 },
         r = {
           variants: [
-            { className: 'comment', begin: '//', end: '$', relevance: 0, contains: [n.PHRASAL_WORDS_MODE, i] },
-            { className: 'comment', begin: '/\\*', end: '\\*/', relevance: 0, contains: [n.PHRASAL_WORDS_MODE, i] }
+            { className: 'comment', begin: '//', end: '$', relevance: 0, contains: [t.PHRASAL_WORDS_MODE, i] },
+            { className: 'comment', begin: '/\\*', end: '\\*/', relevance: 0, contains: [t.PHRASAL_WORDS_MODE, i] }
           ]
         },
         s = {
@@ -19392,7 +19392,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'AltState Application CallType ComponentTokens CreatedJobs CreatedNotices ControlState DialogResult Dialogs EDocuments EDocumentVersionSource Folders GlobalIDs Job Jobs InputValue LookUpReference LookUpRequisiteNames LookUpSearch Object ParentComponent Processes References Requisite ReportName Reports Result Scripts Searches SelectedAttachments SelectedItems SelectMode Sender ServerEvents ServiceFactory ShiftState SubTask SystemDialogs Tasks Wizard Wizards Work \u0412\u044B\u0437\u043E\u0432\u0421\u043F\u043E\u0441\u043E\u0431 \u0418\u043C\u044F\u041E\u0442\u0447\u0435\u0442\u0430 \u0420\u0435\u043A\u0432\u0417\u043D\u0430\u0447 ',
           literal: 'null true false nil '
         },
-        o = { begin: '\\.\\s*' + n.UNDERSCORE_IDENT_RE, keywords: s, relevance: 0 },
+        o = { begin: '\\.\\s*' + t.UNDERSCORE_IDENT_RE, keywords: s, relevance: 0 },
         l = {
           className: 'type',
           begin:
@@ -19435,7 +19435,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               o,
               c,
               a,
-              t,
+              n,
               r
             ]
           },
@@ -19443,36 +19443,36 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           o,
           c,
           a,
-          t,
+          n,
           r
         ]
       };
     },
     st = '[0-9](_*[0-9])*',
-    Pt = `\\.(${st})`,
-    Ut = '[0-9a-fA-F](_*[0-9a-fA-F])*',
-    ya = {
+    Ft = `\\.(${st})`,
+    Bt = '[0-9a-fA-F](_*[0-9a-fA-F])*',
+    Na = {
       className: 'number',
       variants: [
-        { begin: `(\\b(${st})((${Pt})|\\.)?|(${Pt}))[eE][+-]?(${st})[fFdD]?\\b` },
-        { begin: `\\b(${st})((${Pt})[fFdD]?\\b|\\.([fFdD]\\b)?)` },
-        { begin: `(${Pt})[fFdD]?\\b` },
+        { begin: `(\\b(${st})((${Ft})|\\.)?|(${Ft}))[eE][+-]?(${st})[fFdD]?\\b` },
+        { begin: `\\b(${st})((${Ft})[fFdD]?\\b|\\.([fFdD]\\b)?)` },
+        { begin: `(${Ft})[fFdD]?\\b` },
         { begin: `\\b(${st})[fFdD]\\b` },
-        { begin: `\\b0[xX]((${Ut})\\.?|(${Ut})?\\.(${Ut}))[pP][+-]?(${st})[fFdD]?\\b` },
+        { begin: `\\b0[xX]((${Bt})\\.?|(${Bt})?\\.(${Bt}))[pP][+-]?(${st})[fFdD]?\\b` },
         { begin: '\\b(0|[1-9](_*[0-9])*)[lL]?\\b' },
-        { begin: `\\b0[xX](${Ut})[lL]?\\b` },
+        { begin: `\\b0[xX](${Bt})[lL]?\\b` },
         { begin: '\\b0(_*[0-7])*[lL]?\\b' },
         { begin: '\\b0[bB][01](_*[01])*[lL]?\\b' }
       ],
       relevance: 0
     };
-  function Ra(n, e, t) {
-    return t === -1 ? '' : n.replace(e, a => Ra(n, e, t - 1));
+  function Oa(t, e, n) {
+    return n === -1 ? '' : t.replace(e, a => Oa(t, e, n - 1));
   }
-  var qo = function(n) {
-    const e = n.regex,
-      t = '[\xC0-\u02B8a-zA-Z_$][\xC0-\u02B8a-zA-Z_$0-9]*',
-      a = t + Ra('(?:<' + t + '~~~(?:\\s*,\\s*' + t + '~~~)*>)?', /~~~/g, 2),
+  var Wo = function(t) {
+    const e = t.regex,
+      n = '[\xC0-\u02B8a-zA-Z_$][\xC0-\u02B8a-zA-Z_$0-9]*',
+      a = n + Oa('(?:<' + n + '~~~(?:\\s*,\\s*' + n + '~~~)*>)?', /~~~/g, 2),
       i = {
         keyword: [
           'synchronized',
@@ -19522,14 +19522,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         type: ['char', 'boolean', 'long', 'float', 'int', 'byte', 'short', 'double'],
         built_in: ['super', 'this']
       },
-      r = { className: 'meta', begin: '@' + t, contains: [{ begin: /\(/, end: /\)/, contains: ['self'] }] },
+      r = { className: 'meta', begin: '@' + n, contains: [{ begin: /\(/, end: /\)/, contains: ['self'] }] },
       s = {
         className: 'params',
         begin: /\(/,
         end: /\)/,
         keywords: i,
         relevance: 0,
-        contains: [n.C_BLOCK_COMMENT_MODE],
+        contains: [t.C_BLOCK_COMMENT_MODE],
         endsParent: !0
       };
     return {
@@ -19538,33 +19538,33 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       keywords: i,
       illegal: /<\/|#/,
       contains: [
-        n.COMMENT('/\\*\\*', '\\*/', {
+        t.COMMENT('/\\*\\*', '\\*/', {
           relevance: 0,
           contains: [{ begin: /\w+@/, relevance: 0 }, { className: 'doctag', begin: '@[A-Za-z]+' }]
         }),
         { begin: /import java\.[a-z]+\./, keywords: 'import', relevance: 2 },
-        n.C_LINE_COMMENT_MODE,
-        n.C_BLOCK_COMMENT_MODE,
-        { begin: /"""/, end: /"""/, className: 'string', contains: [n.BACKSLASH_ESCAPE] },
-        n.APOS_STRING_MODE,
-        n.QUOTE_STRING_MODE,
+        t.C_LINE_COMMENT_MODE,
+        t.C_BLOCK_COMMENT_MODE,
+        { begin: /"""/, end: /"""/, className: 'string', contains: [t.BACKSLASH_ESCAPE] },
+        t.APOS_STRING_MODE,
+        t.QUOTE_STRING_MODE,
         {
-          match: [/\b(?:class|interface|enum|extends|implements|new)/, /\s+/, t],
+          match: [/\b(?:class|interface|enum|extends|implements|new)/, /\s+/, n],
           className: { 1: 'keyword', 3: 'title.class' }
         },
         { match: /non-sealed/, scope: 'keyword' },
         {
-          begin: [e.concat(/(?!else)/, t), /\s+/, t, /\s+/, /=(?!=)/],
+          begin: [e.concat(/(?!else)/, n), /\s+/, n, /\s+/, /=(?!=)/],
           className: { 1: 'type', 3: 'variable', 5: 'operator' }
         },
         {
-          begin: [/record/, /\s+/, t],
+          begin: [/record/, /\s+/, n],
           className: { 1: 'keyword', 3: 'title.class' },
-          contains: [s, n.C_LINE_COMMENT_MODE, n.C_BLOCK_COMMENT_MODE]
+          contains: [s, t.C_LINE_COMMENT_MODE, t.C_BLOCK_COMMENT_MODE]
         },
         { beginKeywords: 'new throw return else', relevance: 0 },
         {
-          begin: ['(?:' + a + '\\s+)', n.UNDERSCORE_IDENT_RE, /\s*(?=\()/],
+          begin: ['(?:' + a + '\\s+)', t.UNDERSCORE_IDENT_RE, /\s*(?=\()/],
           className: { 2: 'title.function' },
           keywords: i,
           contains: [
@@ -19574,19 +19574,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               end: /\)/,
               keywords: i,
               relevance: 0,
-              contains: [r, n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, ya, n.C_BLOCK_COMMENT_MODE]
+              contains: [r, t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, Na, t.C_BLOCK_COMMENT_MODE]
             },
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE
           ]
         },
-        ya,
+        Na,
         r
       ]
     };
   };
-  const Ca = '[A-Za-z$_][0-9A-Za-z$_]*',
-    Wo = [
+  const Aa = '[A-Za-z$_][0-9A-Za-z$_]*',
+    Qo = [
       'as',
       'in',
       'of',
@@ -19626,8 +19626,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'export',
       'extends'
     ],
-    Qo = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
-    Na = [
+    Ko = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
+    Ia = [
       'Object',
       'Function',
       'Boolean',
@@ -19668,7 +19668,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'Intl',
       'WebAssembly'
     ],
-    Oa = [
+    xa = [
       'Error',
       'EvalError',
       'InternalError',
@@ -19678,7 +19678,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'TypeError',
       'URIError'
     ],
-    Aa = [
+    Da = [
       'setInterval',
       'setTimeout',
       'clearInterval',
@@ -19697,11 +19697,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'escape',
       'unescape'
     ],
-    Ko = ['arguments', 'this', 'super', 'console', 'window', 'document', 'localStorage', 'module', 'global'],
-    Xo = [].concat(Aa, Na, Oa);
-  var Zo = function(n) {
-      const e = n.regex,
-        t = Ca,
+    Xo = ['arguments', 'this', 'super', 'console', 'window', 'document', 'localStorage', 'module', 'global'],
+    Zo = [].concat(Da, Ia, xa);
+  var Jo = function(t) {
+      const e = t.regex,
+        n = Aa,
         a = '<>',
         i = '</>',
         r = {
@@ -19722,7 +19722,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ((W = G.match(/^\s*=/)) || ((W = G.match(/^\s+extends\s+/)) && W.index === 0)) && B.ignoreMatch();
           }
         },
-        s = { $pattern: Ca, keyword: Wo, literal: Qo, built_in: Xo, 'variable.language': Ko },
+        s = { $pattern: Aa, keyword: Qo, literal: Ko, built_in: Zo, 'variable.language': Xo },
         o = '[0-9](_?[0-9])*',
         l = `\\.(${o})`,
         c = '0|[1-9](_?[0-9])*|0[0-7]*[89][0-9]*',
@@ -19743,18 +19743,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         u = {
           begin: 'html`',
           end: '',
-          starts: { end: '`', returnEnd: !1, contains: [n.BACKSLASH_ESCAPE, d], subLanguage: 'xml' }
+          starts: { end: '`', returnEnd: !1, contains: [t.BACKSLASH_ESCAPE, d], subLanguage: 'xml' }
         },
         m = {
           begin: 'css`',
           end: '',
-          starts: { end: '`', returnEnd: !1, contains: [n.BACKSLASH_ESCAPE, d], subLanguage: 'css' }
+          starts: { end: '`', returnEnd: !1, contains: [t.BACKSLASH_ESCAPE, d], subLanguage: 'css' }
         },
-        p = { className: 'string', begin: '`', end: '`', contains: [n.BACKSLASH_ESCAPE, d] },
+        p = { className: 'string', begin: '`', end: '`', contains: [t.BACKSLASH_ESCAPE, d] },
         g = {
           className: 'comment',
           variants: [
-            n.COMMENT(/\/\*\*(?!\/)/, '\\*/', {
+            t.COMMENT(/\/\*\*(?!\/)/, '\\*/', {
               relevance: 0,
               contains: [
                 {
@@ -19763,17 +19763,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   contains: [
                     { className: 'doctag', begin: '@[A-Za-z]+' },
                     { className: 'type', begin: '\\{', end: '\\}', excludeEnd: !0, excludeBegin: !0, relevance: 0 },
-                    { className: 'variable', begin: t + '(?=\\s*(-)|$)', endsParent: !0, relevance: 0 },
+                    { className: 'variable', begin: n + '(?=\\s*(-)|$)', endsParent: !0, relevance: 0 },
                     { begin: /(?=[^\n])\s/, relevance: 0 }
                   ]
                 }
               ]
             }),
-            n.C_BLOCK_COMMENT_MODE,
-            n.C_LINE_COMMENT_MODE
+            t.C_BLOCK_COMMENT_MODE,
+            t.C_LINE_COMMENT_MODE
           ]
         },
-        E = [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, u, m, p, { match: /\$\d+/ }, _];
+        E = [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, u, m, p, { match: /\$\d+/ }, _];
       d.contains = E.concat({ begin: /\{/, end: /\}/, keywords: s, contains: ['self'].concat(E) });
       const h = [].concat(g, d.contains),
         T = h.concat([{ begin: /\(/, end: /\)/, keywords: s, contains: ['self'].concat(h) }]),
@@ -19781,13 +19781,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         v = {
           variants: [
             {
-              match: [/class/, /\s+/, t, /\s+/, /extends/, /\s+/, e.concat(t, '(', e.concat(/\./, t), ')*')],
+              match: [/class/, /\s+/, n, /\s+/, /extends/, /\s+/, e.concat(n, '(', e.concat(/\./, n), ')*')],
               scope: { 1: 'keyword', 3: 'title.class', 5: 'keyword', 7: 'title.class.inherited' }
             },
-            { match: [/class/, /\s+/, t], scope: { 1: 'keyword', 3: 'title.class' } }
+            { match: [/class/, /\s+/, n], scope: { 1: 'keyword', 3: 'title.class' } }
           ]
         },
-        R = {
+        C = {
           relevance: 0,
           match: e.either(
             /\bJSON/,
@@ -19796,10 +19796,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/
           ),
           className: 'title.class',
-          keywords: { _: [...Na, ...Oa] }
+          keywords: { _: [...Ia, ...xa] }
         },
-        C = {
-          variants: [{ match: [/function/, /\s+/, t, /(?=\s*\()/] }, { match: [/function/, /\s*(?=\()/] }],
+        R = {
+          variants: [{ match: [/function/, /\s+/, n, /(?=\s*\()/] }, { match: [/function/, /\s*(?=\()/] }],
           className: { 1: 'keyword', 3: 'title.function' },
           label: 'func.def',
           contains: [S],
@@ -19808,8 +19808,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         I = {
           match: e.concat(
             /\b/,
-            ((O = [...Aa, 'super', 'import']), e.concat('(?!', O.join('|'), ')')),
-            t,
+            ((O = [...Da, 'super', 'import']), e.concat('(?!', O.join('|'), ')')),
+            n,
             e.lookahead(/\(/)
           ),
           className: 'title.function',
@@ -19817,21 +19817,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         };
       var O;
       const A = {
-          begin: e.concat(/\./, e.lookahead(e.concat(t, /(?![0-9A-Za-z$_(])/))),
-          end: t,
+          begin: e.concat(/\./, e.lookahead(e.concat(n, /(?![0-9A-Za-z$_(])/))),
+          end: n,
           excludeBegin: !0,
           keywords: 'prototype',
           className: 'property',
           relevance: 0
         },
         F = {
-          match: [/get|set/, /\s+/, t, /(?=\()/],
+          match: [/get|set/, /\s+/, n, /(?=\()/],
           className: { 1: 'keyword', 3: 'title.function' },
           contains: [{ begin: /\(\)/ }, S]
         },
-        w = '(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|' + n.UNDERSCORE_IDENT_RE + ')\\s*=>',
+        w = '(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|' + t.UNDERSCORE_IDENT_RE + ')\\s*=>',
         j = {
-          match: [/const|var|let/, /\s+/, t, /\s*/, /=\s*/, /(async\s*)?/, e.lookahead(w)],
+          match: [/const|var|let/, /\s+/, n, /\s*/, /=\s*/, /(async\s*)?/, e.lookahead(w)],
           keywords: 'async',
           className: { 1: 'keyword', 3: 'title.function' },
           contains: [S]
@@ -19840,29 +19840,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         name: 'Javascript',
         aliases: ['js', 'jsx', 'mjs', 'cjs'],
         keywords: s,
-        exports: { PARAMS_CONTAINS: T, CLASS_REFERENCE: R },
+        exports: { PARAMS_CONTAINS: T, CLASS_REFERENCE: C },
         illegal: /#(?![$_A-z])/,
         contains: [
-          n.SHEBANG({ label: 'shebang', binary: 'node', relevance: 5 }),
+          t.SHEBANG({ label: 'shebang', binary: 'node', relevance: 5 }),
           { label: 'use_strict', className: 'meta', relevance: 10, begin: /^\s*['"]use (strict|asm)['"]/ },
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           u,
           m,
           p,
           g,
           { match: /\$\d+/ },
           _,
-          R,
-          { className: 'attr', begin: t + e.lookahead(':'), relevance: 0 },
+          C,
+          { className: 'attr', begin: n + e.lookahead(':'), relevance: 0 },
           j,
           {
-            begin: '(' + n.RE_STARTERS_RE + '|\\b(case|return|throw)\\b)\\s*',
+            begin: '(' + t.RE_STARTERS_RE + '|\\b(case|return|throw)\\b)\\s*',
             keywords: 'return throw case',
             relevance: 0,
             contains: [
               g,
-              n.REGEXP_MODE,
+              t.REGEXP_MODE,
               {
                 className: 'function',
                 begin: w,
@@ -19872,7 +19872,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   {
                     className: 'params',
                     variants: [
-                      { begin: n.UNDERSCORE_IDENT_RE, relevance: 0 },
+                      { begin: t.UNDERSCORE_IDENT_RE, relevance: 0 },
                       { className: null, begin: /\(\s*\)/, skip: !0 },
                       { begin: /\(/, end: /\)/, excludeBegin: !0, excludeEnd: !0, keywords: s, contains: T }
                     ]
@@ -19892,20 +19892,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               }
             ]
           },
-          C,
+          R,
           { beginKeywords: 'while if switch catch for' },
           {
             begin:
               '\\b(?!function)' +
-              n.UNDERSCORE_IDENT_RE +
+              t.UNDERSCORE_IDENT_RE +
               '\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{',
             returnBegin: !0,
             label: 'func.def',
-            contains: [S, n.inherit(n.TITLE_MODE, { begin: t, className: 'title.function' })]
+            contains: [S, t.inherit(t.TITLE_MODE, { begin: n, className: 'title.function' })]
           },
           { match: /\.\.\./, relevance: 0 },
           A,
-          { match: '\\$' + t, relevance: 0 },
+          { match: '\\$' + n, relevance: 0 },
           { match: [/\bconstructor(?=\s*\()/], className: { 1: 'title.function' }, contains: [S] },
           I,
           { relevance: 0, match: /\b[A-Z][A-Z_0-9]+\b/, className: 'variable.constant' },
@@ -19915,7 +19915,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Jo = function(n) {
+    el = function(t) {
       const e = {
         className: 'params',
         begin: /\(/,
@@ -19935,8 +19935,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: 'true false'
         },
         contains: [
-          n.HASH_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
+          t.HASH_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'params', begin: /--[\w\-=\/]+/ },
           { className: 'function', begin: /:[\w\-.]+/, relevance: 0 },
           { className: 'string', begin: /\B([\/.])[\w\-.\/=]+/ },
@@ -19944,27 +19944,27 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    el = function(n) {
+    tl = function(t) {
       const e = ['true', 'false', 'null'],
-        t = { scope: 'literal', beginKeywords: e.join(' ') };
+        n = { scope: 'literal', beginKeywords: e.join(' ') };
       return {
         name: 'JSON',
         keywords: { literal: e },
         contains: [
           { className: 'attr', begin: /"(\\.|[^\\"\r\n])*"(?=\s*:)/, relevance: 1.01 },
           { match: /[{}[\],:]/, className: 'punctuation', relevance: 0 },
-          n.QUOTE_STRING_MODE,
-          t,
-          n.C_NUMBER_MODE,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE
+          t.QUOTE_STRING_MODE,
+          n,
+          t.C_NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE
         ],
         illegal: '\\S'
       };
     },
-    tl = function(n) {
+    nl = function(t) {
       const e = '[A-Za-z_\\u00A1-\\uFFFF][A-Za-z_0-9\\u00A1-\\uFFFF]*',
-        t = {
+        n = {
           $pattern: e,
           keyword: [
             'baremodule',
@@ -20230,15 +20230,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'WeakRef'
           ]
         },
-        a = { keywords: t, illegal: /<\// },
-        i = { className: 'subst', begin: /\$\(/, end: /\)/, keywords: t },
+        a = { keywords: n, illegal: /<\// },
+        i = { className: 'subst', begin: /\$\(/, end: /\)/, keywords: n },
         r = { className: 'variable', begin: '\\$' + e },
         s = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE, i, r],
+          contains: [t.BACKSLASH_ESCAPE, i, r],
           variants: [{ begin: /\w*"""/, end: /"""\w*/, relevance: 10 }, { begin: /\w*"/, end: /"\w*/ }]
         },
-        o = { className: 'string', contains: [n.BACKSLASH_ESCAPE, i, r], begin: '`', end: '`' },
+        o = { className: 'string', contains: [t.BACKSLASH_ESCAPE, i, r], begin: '`', end: '`' },
         l = { className: 'meta', begin: '@' + e };
       return (
         (a.name = 'Julia'),
@@ -20253,7 +20253,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           o,
           l,
           { className: 'comment', variants: [{ begin: '#=', end: '=#', relevance: 10 }, { begin: '#', end: '$' }] },
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           { className: 'keyword', begin: '\\b(((abstract|primitive)\\s+)type|(mutable\\s+)?struct)\\b' },
           { begin: /<:/ }
         ]),
@@ -20261,7 +20261,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         a
       );
     },
-    nl = function(n) {
+    al = function(t) {
       return {
         name: 'Julia REPL',
         contains: [
@@ -20276,39 +20276,39 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       };
     },
     ot = '[0-9](_*[0-9])*',
-    Ft = `\\.(${ot})`,
-    Bt = '[0-9a-fA-F](_*[0-9a-fA-F])*',
-    al = {
+    Gt = `\\.(${ot})`,
+    Yt = '[0-9a-fA-F](_*[0-9a-fA-F])*',
+    il = {
       className: 'number',
       variants: [
-        { begin: `(\\b(${ot})((${Ft})|\\.)?|(${Ft}))[eE][+-]?(${ot})[fFdD]?\\b` },
-        { begin: `\\b(${ot})((${Ft})[fFdD]?\\b|\\.([fFdD]\\b)?)` },
-        { begin: `(${Ft})[fFdD]?\\b` },
+        { begin: `(\\b(${ot})((${Gt})|\\.)?|(${Gt}))[eE][+-]?(${ot})[fFdD]?\\b` },
+        { begin: `\\b(${ot})((${Gt})[fFdD]?\\b|\\.([fFdD]\\b)?)` },
+        { begin: `(${Gt})[fFdD]?\\b` },
         { begin: `\\b(${ot})[fFdD]\\b` },
-        { begin: `\\b0[xX]((${Bt})\\.?|(${Bt})?\\.(${Bt}))[pP][+-]?(${ot})[fFdD]?\\b` },
+        { begin: `\\b0[xX]((${Yt})\\.?|(${Yt})?\\.(${Yt}))[pP][+-]?(${ot})[fFdD]?\\b` },
         { begin: '\\b(0|[1-9](_*[0-9])*)[lL]?\\b' },
-        { begin: `\\b0[xX](${Bt})[lL]?\\b` },
+        { begin: `\\b0[xX](${Yt})[lL]?\\b` },
         { begin: '\\b0(_*[0-7])*[lL]?\\b' },
         { begin: '\\b0[bB][01](_*[01])*[lL]?\\b' }
       ],
       relevance: 0
     },
-    il = function(n) {
+    rl = function(t) {
       const e = {
           keyword:
             'abstract as val var vararg get set class object open private protected public noinline crossinline dynamic final enum if else do while for when throw try catch finally import package is in fun override companion reified inline lateinit init interface annotation data sealed internal infix operator out by constructor super tailrec where const inner suspend typealias external expect actual',
           built_in: 'Byte Short Char Int Long Boolean Float Double Void Unit Nothing',
           literal: 'true false null'
         },
-        t = { className: 'symbol', begin: n.UNDERSCORE_IDENT_RE + '@' },
-        a = { className: 'subst', begin: /\$\{/, end: /\}/, contains: [n.C_NUMBER_MODE] },
-        i = { className: 'variable', begin: '\\$' + n.UNDERSCORE_IDENT_RE },
+        n = { className: 'symbol', begin: t.UNDERSCORE_IDENT_RE + '@' },
+        a = { className: 'subst', begin: /\$\{/, end: /\}/, contains: [t.C_NUMBER_MODE] },
+        i = { className: 'variable', begin: '\\$' + t.UNDERSCORE_IDENT_RE },
         r = {
           className: 'string',
           variants: [
             { begin: '"""', end: '"""(?=[^"])', contains: [i, a] },
-            { begin: "'", end: "'", illegal: /\n/, contains: [n.BACKSLASH_ESCAPE] },
-            { begin: '"', end: '"', illegal: /\n/, contains: [n.BACKSLASH_ESCAPE, i, a] }
+            { begin: "'", end: "'", illegal: /\n/, contains: [t.BACKSLASH_ESCAPE] },
+            { begin: '"', end: '"', illegal: /\n/, contains: [t.BACKSLASH_ESCAPE, i, a] }
           ]
         };
       a.contains.push(r);
@@ -20316,18 +20316,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           className: 'meta',
           begin:
             '@(?:file|property|field|get|set|receiver|param|setparam|delegate)\\s*:(?:\\s*' +
-            n.UNDERSCORE_IDENT_RE +
+            t.UNDERSCORE_IDENT_RE +
             ')?'
         },
         o = {
           className: 'meta',
-          begin: '@' + n.UNDERSCORE_IDENT_RE,
-          contains: [{ begin: /\(/, end: /\)/, contains: [n.inherit(r, { className: 'string' }), 'self'] }]
+          begin: '@' + t.UNDERSCORE_IDENT_RE,
+          contains: [{ begin: /\(/, end: /\)/, contains: [t.inherit(r, { className: 'string' }), 'self'] }]
         },
-        l = al,
-        c = n.COMMENT('/\\*', '\\*/', { contains: [n.C_BLOCK_COMMENT_MODE] }),
+        l = il,
+        c = t.COMMENT('/\\*', '\\*/', { contains: [t.C_BLOCK_COMMENT_MODE] }),
         _ = {
-          variants: [{ className: 'type', begin: n.UNDERSCORE_IDENT_RE }, { begin: /\(/, end: /\)/, contains: [] }]
+          variants: [{ className: 'type', begin: t.UNDERSCORE_IDENT_RE }, { begin: /\(/, end: /\)/, contains: [] }]
         },
         d = _;
       return (
@@ -20338,15 +20338,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           aliases: ['kt', 'kts'],
           keywords: e,
           contains: [
-            n.COMMENT('/\\*\\*', '\\*/', { relevance: 0, contains: [{ className: 'doctag', begin: '@[A-Za-z]+' }] }),
-            n.C_LINE_COMMENT_MODE,
+            t.COMMENT('/\\*\\*', '\\*/', { relevance: 0, contains: [{ className: 'doctag', begin: '@[A-Za-z]+' }] }),
+            t.C_LINE_COMMENT_MODE,
             c,
             {
               className: 'keyword',
               begin: /\b(break|continue|return|this)\b/,
               starts: { contains: [{ className: 'symbol', begin: /@\w+/ }] }
             },
-            t,
+            n,
             s,
             o,
             {
@@ -20359,10 +20359,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               relevance: 5,
               contains: [
                 {
-                  begin: n.UNDERSCORE_IDENT_RE + '\\s*\\(',
+                  begin: t.UNDERSCORE_IDENT_RE + '\\s*\\(',
                   returnBegin: !0,
                   relevance: 0,
-                  contains: [n.UNDERSCORE_TITLE_MODE]
+                  contains: [t.UNDERSCORE_TITLE_MODE]
                 },
                 { className: 'type', begin: /</, end: />/, keywords: 'reified', relevance: 0 },
                 {
@@ -20377,22 +20377,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                       begin: /:/,
                       end: /[=,\/]/,
                       endsWithParent: !0,
-                      contains: [_, n.C_LINE_COMMENT_MODE, c],
+                      contains: [_, t.C_LINE_COMMENT_MODE, c],
                       relevance: 0
                     },
-                    n.C_LINE_COMMENT_MODE,
+                    t.C_LINE_COMMENT_MODE,
                     c,
                     s,
                     o,
                     r,
-                    n.C_NUMBER_MODE
+                    t.C_NUMBER_MODE
                   ]
                 },
                 c
               ]
             },
             {
-              begin: [/class|interface|trait/, /\s+/, n.UNDERSCORE_IDENT_RE],
+              begin: [/class|interface|trait/, /\s+/, t.UNDERSCORE_IDENT_RE],
               beginScope: { 3: 'title.class' },
               keywords: 'class interface trait',
               end: /[:\{(]|$/,
@@ -20400,7 +20400,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               illegal: 'extends implements',
               contains: [
                 { beginKeywords: 'public protected internal private constructor' },
-                n.UNDERSCORE_TITLE_MODE,
+                t.UNDERSCORE_TITLE_MODE,
                 { className: 'type', begin: /</, end: />/, excludeBegin: !0, excludeEnd: !0, relevance: 0 },
                 { className: 'type', begin: /[,:]\s*/, end: /[<\(,){\s]|$/, excludeBegin: !0, returnEnd: !0 },
                 s,
@@ -20420,9 +20420,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    rl = function(n) {
+    sl = function(t) {
       const e = '[a-zA-Z_][\\w.]*',
-        t = '<\\?(lasso(script)?|=)',
+        n = '<\\?(lasso(script)?|=)',
         a = '\\]|\\?>',
         i = {
           $pattern: e + '|&[lg]t;',
@@ -20433,20 +20433,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           keyword:
             'cache database_names database_schemanames database_tablenames define_tag define_type email_batch encode_set html_comment handle handle_error header if inline iterate ljax_target link link_currentaction link_currentgroup link_currentrecord link_detail link_firstgroup link_firstrecord link_lastgroup link_lastrecord link_nextgroup link_nextrecord link_prevgroup link_prevrecord log loop namespace_using output_none portal private protect records referer referrer repeating resultset rows search_args search_arguments select sort_args sort_arguments thread_atomic value_list while abort case else fail_if fail_ifnot fail if_empty if_false if_null if_true loop_abort loop_continue loop_count params params_up return return_value run_children soap_definetag soap_lastrequest soap_lastresponse tag_name ascending average by define descending do equals frozen group handle_failure import in into join let match max min on order parent protected provide public require returnhome skip split_thread sum take thread to trait type where with yield yieldhome'
         },
-        r = n.COMMENT('<!--', '-->', { relevance: 0 }),
+        r = t.COMMENT('<!--', '-->', { relevance: 0 }),
         s = {
           className: 'meta',
           begin: '\\[noprocess\\]',
           starts: { end: '\\[/noprocess\\]', returnEnd: !0, contains: [r] }
         },
-        o = { className: 'meta', begin: '\\[/noprocess|' + t },
+        o = { className: 'meta', begin: '\\[/noprocess|' + n },
         l = { className: 'symbol', begin: "'" + e + "'" },
         c = [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.inherit(n.C_NUMBER_MODE, { begin: n.C_NUMBER_RE + '|(-?infinity|NaN)\\b' }),
-          n.inherit(n.APOS_STRING_MODE, { illegal: null }),
-          n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.inherit(t.C_NUMBER_MODE, { begin: t.C_NUMBER_RE + '|(-?infinity|NaN)\\b' }),
+          t.inherit(t.APOS_STRING_MODE, { illegal: null }),
+          t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
           { className: 'string', begin: '`', end: '`' },
           { variants: [{ begin: '[#$]' + e }, { begin: '#', end: '\\d+', illegal: '\\W' }] },
           { className: 'type', begin: '::\\s*', end: e, illegal: '\\W' },
@@ -20457,7 +20457,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             beginKeywords: 'define',
             returnEnd: !0,
             end: '\\(|=>',
-            contains: [n.inherit(n.TITLE_MODE, { begin: e + '(=(?!>))?|[-+*/%](?!>)' })]
+            contains: [t.inherit(t.TITLE_MODE, { begin: e + '(=(?!>))?|[-+*/%](?!>)' })]
           }
         ];
       return {
@@ -20470,7 +20470,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             className: 'meta',
             begin: a,
             relevance: 0,
-            starts: { end: '\\[|' + t, returnEnd: !0, relevance: 0, contains: [r] }
+            starts: { end: '\\[|' + n, returnEnd: !0, relevance: 0, contains: [r] }
           },
           s,
           o,
@@ -20485,7 +20485,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   className: 'meta',
                   begin: a,
                   relevance: 0,
-                  starts: { end: '\\[noprocess\\]|' + t, returnEnd: !0, contains: [r] }
+                  starts: { end: '\\[noprocess\\]|' + n, returnEnd: !0, contains: [r] }
                 },
                 s,
                 o
@@ -20497,7 +20497,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ].concat(c)
       };
     },
-    sl = function(n) {
+    ol = function(t) {
       const e = [
           { begin: /\^{6}[0-9a-f]{6}/ },
           { begin: /\^{5}[0-9a-f]{5}/ },
@@ -20506,7 +20506,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { begin: /\^{2}[0-9a-f]{2}/ },
           { begin: /\^{2}[\u0000-\u007f]/ }
         ],
-        t = [
+        n = [
           {
             className: 'keyword',
             begin: /\\/,
@@ -20514,7 +20514,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             contains: [
               {
                 endsParent: !0,
-                begin: n.regex.either(
+                begin: t.regex.either(
                   ...[
                     '(?:NeedsTeXFormat|RequirePackage|GetIdInfo)',
                     'Provides(?:Expl)?(?:Package|Class|File)',
@@ -20565,11 +20565,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { variants: e },
           { className: 'built_in', relevance: 0, begin: /[$&^_]/ },
           { className: 'meta', begin: /% ?!(T[eE]X|tex|BIB|bib)/, end: '$', relevance: 10 },
-          n.COMMENT('%', '$', { relevance: 0 })
+          t.COMMENT('%', '$', { relevance: 0 })
         ],
-        a = { begin: /\{/, end: /\}/, relevance: 0, contains: ['self', ...t] },
-        i = n.inherit(a, { relevance: 0, endsParent: !0, contains: [a, ...t] }),
-        r = { begin: /\[/, end: /\]/, endsParent: !0, relevance: 0, contains: [a, ...t] },
+        a = { begin: /\{/, end: /\}/, relevance: 0, contains: ['self', ...n] },
+        i = t.inherit(a, { relevance: 0, endsParent: !0, contains: [a, ...n] }),
+        r = { begin: /\[/, end: /\]/, endsParent: !0, relevance: 0, contains: [a, ...n] },
         s = { begin: /\s+/, relevance: 0 },
         o = [i],
         l = [r],
@@ -20586,7 +20586,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           };
         },
         d = function(g, E) {
-          return n.inherit(
+          return t.inherit(
             {
               begin: '\\\\begin(?=[ 	]*(\\r?\\n[ 	]*)?\\{' + g + '\\})',
               keywords: { $pattern: /\\[a-zA-Z]+/, keyword: '\\begin' },
@@ -20596,7 +20596,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           );
         },
         u = (g = 'string') =>
-          n.END_SAME_AS_BEGIN({
+          t.END_SAME_AS_BEGIN({
             className: g,
             begin: /(.|\r?\n)/,
             end: /(.|\r?\n)/,
@@ -20640,22 +20640,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ])
           ),
           d('minted', c(l, c(o, m('minted')))),
-          ...t
+          ...n
         ]
       };
     },
-    ol = function(n) {
+    ll = function(t) {
       return {
         name: 'LDIF',
         contains: [
           { className: 'attribute', match: '^dn(?=:)', relevance: 10 },
           { className: 'attribute', match: '^\\w+(?=:)' },
           { className: 'literal', match: '^-' },
-          n.HASH_COMMENT_MODE
+          t.HASH_COMMENT_MODE
         ]
       };
     },
-    ll = function(n) {
+    cl = function(t) {
       return {
         name: 'Leaf',
         contains: [
@@ -20683,7 +20683,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     };
-  const cl = [
+  const dl = [
       'a',
       'abbr',
       'address',
@@ -20757,7 +20757,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'var',
       'video'
     ],
-    dl = [
+    _l = [
       'any-hover',
       'any-pointer',
       'aspect-ratio',
@@ -20792,7 +20792,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'min-height',
       'max-height'
     ],
-    Ia = [
+    wa = [
       'active',
       'any-link',
       'blank',
@@ -20853,7 +20853,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'visited',
       'where'
     ],
-    xa = [
+    Ma = [
       'after',
       'backdrop',
       'before',
@@ -20869,7 +20869,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'slotted',
       'spelling-error'
     ],
-    _l = [
+    ul = [
       'align-content',
       'align-items',
       'align-self',
@@ -21229,8 +21229,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'writing-mode',
       'z-index'
     ].reverse(),
-    ul = Ia.concat(xa);
-  var pl = function(n) {
+    pl = wa.concat(Ma);
+  var ml = function(t) {
       const e = (T => ({
           IMPORTANT: { scope: 'meta', begin: '!important' },
           BLOCK_COMMENT: T.C_BLOCK_COMMENT_MODE,
@@ -21251,8 +21251,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0
           },
           CSS_VARIABLE: { className: 'attr', begin: /--[A-Za-z][A-Za-z0-9_-]*/ }
-        }))(n),
-        t = ul,
+        }))(t),
+        n = pl,
         a = '[\\w-]+',
         i = '(' + a + '|@\\{' + a + '\\})',
         r = [],
@@ -21263,11 +21263,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         l = function(T, S, v) {
           return { className: T, begin: S, relevance: v };
         },
-        c = { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: dl.join(' ') },
+        c = { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: _l.join(' ') },
         _ = { begin: '\\(', end: '\\)', contains: s, keywords: c, relevance: 0 };
       s.push(
-        n.C_LINE_COMMENT_MODE,
-        n.C_BLOCK_COMMENT_MODE,
+        t.C_LINE_COMMENT_MODE,
+        t.C_BLOCK_COMMENT_MODE,
         o("'"),
         o('"'),
         e.CSS_NUMBER_MODE,
@@ -21294,7 +21294,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             e.CSS_VARIABLE,
             {
               className: 'attribute',
-              begin: '\\b(' + _l.join('|') + ')\\b',
+              begin: '\\b(' + ul.join('|') + ')\\b',
               end: /(?=:)/,
               starts: { endsWithParent: !0, illegal: '[<=$]', relevance: 0, contains: s }
             }
@@ -21318,34 +21318,34 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           illegal: `[<='$"]`,
           relevance: 0,
           contains: [
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE,
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE,
             u,
             l('keyword', 'all\\b'),
             l('variable', '@\\{' + a + '\\}'),
-            { begin: '\\b(' + cl.join('|') + ')\\b', className: 'selector-tag' },
+            { begin: '\\b(' + dl.join('|') + ')\\b', className: 'selector-tag' },
             e.CSS_NUMBER_MODE,
             l('selector-tag', i, 0),
             l('selector-id', '#' + i),
             l('selector-class', '\\.' + i, 0),
             l('selector-tag', '&', 0),
             e.ATTRIBUTE_SELECTOR_MODE,
-            { className: 'selector-pseudo', begin: ':(' + Ia.join('|') + ')' },
-            { className: 'selector-pseudo', begin: ':(:)?(' + xa.join('|') + ')' },
+            { className: 'selector-pseudo', begin: ':(' + wa.join('|') + ')' },
+            { className: 'selector-pseudo', begin: ':(:)?(' + Ma.join('|') + ')' },
             { begin: /\(/, end: /\)/, relevance: 0, contains: d },
             { begin: '!important' },
             e.FUNCTION_DISPATCH
           ]
         },
-        h = { begin: a + `:(:)?(${t.join('|')})`, returnBegin: !0, contains: [E] };
+        h = { begin: a + `:(:)?(${n.join('|')})`, returnBegin: !0, contains: [E] };
       return (
-        r.push(n.C_LINE_COMMENT_MODE, n.C_BLOCK_COMMENT_MODE, p, g, h, m, E, u, e.FUNCTION_DISPATCH),
+        r.push(t.C_LINE_COMMENT_MODE, t.C_BLOCK_COMMENT_MODE, p, g, h, m, E, u, e.FUNCTION_DISPATCH),
         { name: 'Less', case_insensitive: !0, illegal: `[=>'/<($"]`, contains: r }
       );
     },
-    ml = function(n) {
+    gl = function(t) {
       const e = '[a-zA-Z_\\-+\\*\\/<=>&#][a-zA-Z0-9_\\-+*\\/<=>&#!]*',
-        t = '\\|[^]*?\\|',
+        n = '\\|[^]*?\\|',
         a = '(-|\\+)?\\d+(\\.\\d+|\\/\\d+)?((d|e|f|l|s|D|E|F|L|S)(\\+|-)?\\d+)?',
         i = { className: 'literal', begin: '\\b(t{1}|nil)\\b' },
         r = {
@@ -21358,40 +21358,40 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { begin: '#(c|C)\\(' + a + ' +' + a, end: '\\)' }
           ]
         },
-        s = n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
-        o = n.COMMENT(';', '$', { relevance: 0 }),
+        s = t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
+        o = t.COMMENT(';', '$', { relevance: 0 }),
         l = { begin: '\\*', end: '\\*' },
         c = { className: 'symbol', begin: '[:&]' + e },
         _ = { begin: e, relevance: 0 },
-        d = { begin: t },
+        d = { begin: n },
         u = {
           contains: [r, s, l, c, { begin: '\\(', end: '\\)', contains: ['self', i, s, r, _] }, _],
           variants: [
             { begin: "['`]\\(", end: '\\)' },
             { begin: '\\(quote ', end: '\\)', keywords: { name: 'quote' } },
-            { begin: "'" + t }
+            { begin: "'" + n }
           ]
         },
         m = { variants: [{ begin: "'" + e }, { begin: "#'" + e + '(::' + e + ')*' }] },
         p = { begin: '\\(\\s*', end: '\\)' },
         g = { endsWithParent: !0, relevance: 0 };
       return (
-        (p.contains = [{ className: 'name', variants: [{ begin: e, relevance: 0 }, { begin: t }] }, g]),
+        (p.contains = [{ className: 'name', variants: [{ begin: e, relevance: 0 }, { begin: n }] }, g]),
         (g.contains = [u, m, p, i, r, s, o, l, c, d, _]),
-        { name: 'Lisp', illegal: /\S/, contains: [r, n.SHEBANG(), i, s, o, u, m, p, _] }
+        { name: 'Lisp', illegal: /\S/, contains: [r, t.SHEBANG(), i, s, o, u, m, p, _] }
       );
     },
-    gl = function(n) {
+    El = function(t) {
       const e = {
           className: 'variable',
           variants: [{ begin: '\\b([gtps][A-Z]{1}[a-zA-Z0-9]*)(\\[.+\\])?(?:\\s*?)' }, { begin: '\\$_[A-Z]+' }],
           relevance: 0
         },
-        t = [n.C_BLOCK_COMMENT_MODE, n.HASH_COMMENT_MODE, n.COMMENT('--', '$'), n.COMMENT('[^:]//', '$')],
-        a = n.inherit(n.TITLE_MODE, {
+        n = [t.C_BLOCK_COMMENT_MODE, t.HASH_COMMENT_MODE, t.COMMENT('--', '$'), t.COMMENT('[^:]//', '$')],
+        a = t.inherit(t.TITLE_MODE, {
           variants: [{ begin: '\\b_*rig[A-Z][A-Za-z0-9_\\-]*' }, { begin: '\\b_[a-z0-9\\-]+' }]
         }),
-        i = n.inherit(n.TITLE_MODE, { begin: '\\b([A-Za-z0-9_\\-]+)\\b' });
+        i = t.inherit(t.TITLE_MODE, { begin: '\\b([A-Za-z0-9_\\-]+)\\b' });
       return {
         name: 'LiveCode',
         case_insensitive: !1,
@@ -21410,28 +21410,28 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             className: 'function',
             beginKeywords: 'function',
             end: '$',
-            contains: [e, i, n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, n.BINARY_NUMBER_MODE, n.C_NUMBER_MODE, a]
+            contains: [e, i, t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, t.BINARY_NUMBER_MODE, t.C_NUMBER_MODE, a]
           },
           { className: 'function', begin: '\\bend\\s+', end: '$', keywords: 'end', contains: [i, a], relevance: 0 },
           {
             beginKeywords: 'command on',
             end: '$',
-            contains: [e, i, n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, n.BINARY_NUMBER_MODE, n.C_NUMBER_MODE, a]
+            contains: [e, i, t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, t.BINARY_NUMBER_MODE, t.C_NUMBER_MODE, a]
           },
           {
             className: 'meta',
             variants: [{ begin: '<\\?(rev|lc|livecode)', relevance: 10 }, { begin: '<\\?' }, { begin: '\\?>' }]
           },
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.BINARY_NUMBER_MODE,
-          n.C_NUMBER_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.BINARY_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           a
-        ].concat(t),
+        ].concat(n),
         illegal: ';$|^\\[|^=|&|\\{'
       };
     };
-  const El = [
+  const Sl = [
       'as',
       'in',
       'of',
@@ -21471,8 +21471,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'export',
       'extends'
     ],
-    Sl = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
-    hl = [].concat(
+    hl = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
+    bl = [].concat(
       [
         'setInterval',
         'setTimeout',
@@ -21535,9 +21535,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       ],
       ['Error', 'EvalError', 'InternalError', 'RangeError', 'ReferenceError', 'SyntaxError', 'TypeError', 'URIError']
     );
-  var bl = function(n) {
+  var fl = function(t) {
       const e = {
-          keyword: El.concat([
+          keyword: Sl.concat([
             'then',
             'unless',
             'until',
@@ -21568,15 +21568,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             '__bind',
             '__indexOf'
           ]),
-          literal: Sl.concat(['yes', 'no', 'on', 'off', 'it', 'that', 'void']),
-          built_in: hl.concat(['npm', 'print'])
+          literal: hl.concat(['yes', 'no', 'on', 'off', 'it', 'that', 'void']),
+          built_in: bl.concat(['npm', 'print'])
         },
-        t = '[A-Za-z$_](?:-[0-9A-Za-z$_]|[0-9A-Za-z$_])*',
-        a = n.inherit(n.TITLE_MODE, { begin: t }),
+        n = '[A-Za-z$_](?:-[0-9A-Za-z$_]|[0-9A-Za-z$_])*',
+        a = t.inherit(t.TITLE_MODE, { begin: n }),
         i = { className: 'subst', begin: /#\{/, end: /\}/, keywords: e },
         r = { className: 'subst', begin: /#[A-Za-z$_]/, end: /(?:-[0-9A-Za-z$_]|[0-9A-Za-z$_])*/, keywords: e },
         s = [
-          n.BINARY_NUMBER_MODE,
+          t.BINARY_NUMBER_MODE,
           {
             className: 'number',
             begin:
@@ -21587,21 +21587,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           {
             className: 'string',
             variants: [
-              { begin: /'''/, end: /'''/, contains: [n.BACKSLASH_ESCAPE] },
-              { begin: /'/, end: /'/, contains: [n.BACKSLASH_ESCAPE] },
-              { begin: /"""/, end: /"""/, contains: [n.BACKSLASH_ESCAPE, i, r] },
-              { begin: /"/, end: /"/, contains: [n.BACKSLASH_ESCAPE, i, r] },
+              { begin: /'''/, end: /'''/, contains: [t.BACKSLASH_ESCAPE] },
+              { begin: /'/, end: /'/, contains: [t.BACKSLASH_ESCAPE] },
+              { begin: /"""/, end: /"""/, contains: [t.BACKSLASH_ESCAPE, i, r] },
+              { begin: /"/, end: /"/, contains: [t.BACKSLASH_ESCAPE, i, r] },
               { begin: /\\/, end: /(\s|$)/, excludeEnd: !0 }
             ]
           },
           {
             className: 'regexp',
             variants: [
-              { begin: '//', end: '//[gim]*', contains: [i, n.HASH_COMMENT_MODE] },
+              { begin: '//', end: '//[gim]*', contains: [i, t.HASH_COMMENT_MODE] },
               { begin: /\/(?![ *])(\\.|[^\\\n])*?\/[gim]*(?=\W)/ }
             ]
           },
-          { begin: '@' + t },
+          { begin: '@' + n },
           { begin: '``', end: '``', excludeBegin: !0, excludeEnd: !0, subLanguage: 'javascript' }
         ];
       i.contains = s;
@@ -21612,7 +21612,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           contains: [{ begin: /\(/, end: /\)/, keywords: e, contains: ['self'].concat(s) }]
         },
         l = {
-          variants: [{ match: [/class\s+/, t, /\s+extends\s+/, t] }, { match: [/class\s+/, t] }],
+          variants: [{ match: [/class\s+/, n, /\s+extends\s+/, n] }, { match: [/class\s+/, n] }],
           scope: { 2: 'title.class', 4: 'title.class.inherited' },
           keywords: e
         };
@@ -21622,35 +21622,35 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         keywords: e,
         illegal: /\/\*/,
         contains: s.concat([
-          n.COMMENT('\\/\\*', '\\*\\/'),
-          n.HASH_COMMENT_MODE,
+          t.COMMENT('\\/\\*', '\\*\\/'),
+          t.HASH_COMMENT_MODE,
           { begin: '(#=>|=>|\\|>>|-?->|!->)' },
           {
             className: 'function',
             contains: [a, o],
             returnBegin: !0,
             variants: [
-              { begin: '(' + t + '\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B->\\*?', end: '->\\*?' },
-              { begin: '(' + t + '\\s*(?:=|:=)\\s*)?!?(\\(.*\\)\\s*)?\\B[-~]{1,2}>\\*?', end: '[-~]{1,2}>\\*?' },
-              { begin: '(' + t + '\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B!?[-~]{1,2}>\\*?', end: '!?[-~]{1,2}>\\*?' }
+              { begin: '(' + n + '\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B->\\*?', end: '->\\*?' },
+              { begin: '(' + n + '\\s*(?:=|:=)\\s*)?!?(\\(.*\\)\\s*)?\\B[-~]{1,2}>\\*?', end: '[-~]{1,2}>\\*?' },
+              { begin: '(' + n + '\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B!?[-~]{1,2}>\\*?', end: '!?[-~]{1,2}>\\*?' }
             ]
           },
           l,
-          { begin: t + ':', end: ':', returnBegin: !0, returnEnd: !0, relevance: 0 }
+          { begin: n + ':', end: ':', returnBegin: !0, returnEnd: !0, relevance: 0 }
         ])
       };
     },
-    fl = function(n) {
-      const e = n.regex,
-        t = /([-a-zA-Z$._][\w$.-]*)/,
-        a = { className: 'variable', variants: [{ begin: e.concat(/%/, t) }, { begin: /%\d+/ }, { begin: /#\d+/ }] },
+    Tl = function(t) {
+      const e = t.regex,
+        n = /([-a-zA-Z$._][\w$.-]*)/,
+        a = { className: 'variable', variants: [{ begin: e.concat(/%/, n) }, { begin: /%\d+/ }, { begin: /#\d+/ }] },
         i = {
           className: 'title',
           variants: [
-            { begin: e.concat(/@/, t) },
+            { begin: e.concat(/@/, n) },
             { begin: /@\d+/ },
-            { begin: e.concat(/!/, t) },
-            { begin: e.concat(/!\d+/, t) },
+            { begin: e.concat(/!/, n) },
+            { begin: e.concat(/!\d+/, n) },
             { begin: /!\d+/ }
           ]
         };
@@ -21660,8 +21660,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'begin end true false declare define global constant private linker_private internal available_externally linkonce linkonce_odr weak weak_odr appending dllimport dllexport common default hidden protected extern_weak external thread_local zeroinitializer undef null to tail target triple datalayout volatile nuw nsw nnan ninf nsz arcp fast exact inbounds align addrspace section alias module asm sideeffect gc dbg linker_private_weak attributes blockaddress initialexec localdynamic localexec prefix unnamed_addr ccc fastcc coldcc x86_stdcallcc x86_fastcallcc arm_apcscc arm_aapcscc arm_aapcs_vfpcc ptx_device ptx_kernel intel_ocl_bicc msp430_intrcc spir_func spir_kernel x86_64_sysvcc x86_64_win64cc x86_thiscallcc cc c signext zeroext inreg sret nounwind noreturn noalias nocapture byval nest readnone readonly inlinehint noinline alwaysinline optsize ssp sspreq noredzone noimplicitfloat naked builtin cold nobuiltin noduplicate nonlazybind optnone returns_twice sanitize_address sanitize_memory sanitize_thread sspstrong uwtable returned type opaque eq ne slt sgt sle sge ult ugt ule uge oeq one olt ogt ole oge ord uno ueq une x acq_rel acquire alignstack atomic catch cleanup filter inteldialect max min monotonic nand personality release seq_cst singlethread umax umin unordered xchg add fadd sub fsub mul fmul udiv sdiv fdiv urem srem frem shl lshr ashr and or xor icmp fcmp phi call trunc zext sext fptrunc fpext uitofp sitofp fptoui fptosi inttoptr ptrtoint bitcast addrspacecast select va_arg ret br switch invoke unwind unreachable indirectbr landingpad resume malloc alloca free load store getelementptr extractelement insertelement shufflevector getresult extractvalue insertvalue atomicrmw cmpxchg fence argmemonly double',
         contains: [
           { className: 'type', begin: /\bi\d+(?=\s|\b)/ },
-          n.COMMENT(/;\s*$/, null, { relevance: 0 }),
-          n.COMMENT(/;/, /$/),
+          t.COMMENT(/;\s*$/, null, { relevance: 0 }),
+          t.COMMENT(/;/, /$/),
           { className: 'string', begin: /"/, end: /"/, contains: [{ className: 'char.escape', match: /\\\d\d/ }] },
           i,
           { className: 'punctuation', relevance: 0, begin: /,/ },
@@ -21679,16 +21679,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Tl = function(n) {
+    vl = function(t) {
       const e = { className: 'string', begin: '"', end: '"', contains: [{ className: 'subst', begin: /\\[tn"\\]/ }] },
-        t = { className: 'number', relevance: 0, begin: n.C_NUMBER_RE };
+        n = { className: 'number', relevance: 0, begin: t.C_NUMBER_RE };
       return {
         name: 'LSL (Linden Scripting Language)',
         illegal: ':',
         contains: [
           e,
-          { className: 'comment', variants: [n.COMMENT('//', '$'), n.COMMENT('/\\*', '\\*/')], relevance: 0 },
-          t,
+          { className: 'comment', variants: [t.COMMENT('//', '$'), t.COMMENT('/\\*', '\\*/')], relevance: 0 },
+          n,
           {
             className: 'section',
             variants: [
@@ -21725,15 +21725,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    vl = function(n) {
+    yl = function(t) {
       const e = '\\[=*\\[',
-        t = '\\]=*\\]',
-        a = { begin: e, end: t, contains: ['self'] },
-        i = [n.COMMENT('--(?!' + e + ')', '$'), n.COMMENT('--' + e, t, { contains: [a], relevance: 10 })];
+        n = '\\]=*\\]',
+        a = { begin: e, end: n, contains: ['self'] },
+        i = [t.COMMENT('--(?!' + e + ')', '$'), t.COMMENT('--' + e, n, { contains: [a], relevance: 10 })];
       return {
         name: 'Lua',
         keywords: {
-          $pattern: n.UNDERSCORE_IDENT_RE,
+          $pattern: t.UNDERSCORE_IDENT_RE,
           literal: 'true false nil',
           keyword: 'and break do else elseif end for goto if in local not or repeat return then until while',
           built_in:
@@ -21745,26 +21745,26 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             beginKeywords: 'function',
             end: '\\)',
             contains: [
-              n.inherit(n.TITLE_MODE, { begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*' }),
+              t.inherit(t.TITLE_MODE, { begin: '([_a-zA-Z]\\w*\\.)*([_a-zA-Z]\\w*:)?[_a-zA-Z]\\w*' }),
               { className: 'params', begin: '\\(', endsWithParent: !0, contains: i }
             ].concat(i)
           },
-          n.C_NUMBER_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          { className: 'string', begin: e, end: t, contains: [a], relevance: 5 }
+          t.C_NUMBER_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          { className: 'string', begin: e, end: n, contains: [a], relevance: 5 }
         ])
       };
     },
-    yl = function(n) {
+    Cl = function(t) {
       const e = {
           className: 'variable',
           variants: [
-            { begin: '\\$\\(' + n.UNDERSCORE_IDENT_RE + '\\)', contains: [n.BACKSLASH_ESCAPE] },
+            { begin: '\\$\\(' + t.UNDERSCORE_IDENT_RE + '\\)', contains: [t.BACKSLASH_ESCAPE] },
             { begin: /\$[@%<?\^\+\*]/ }
           ]
         },
-        t = { className: 'string', begin: /"/, end: /"/, contains: [n.BACKSLASH_ESCAPE, e] },
+        n = { className: 'string', begin: /"/, end: /"/, contains: [t.BACKSLASH_ESCAPE, e] },
         a = {
           className: 'variable',
           begin: /\$\([\w-]+\s/,
@@ -21775,7 +21775,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           contains: [e]
         },
-        i = { begin: '^' + n.UNDERSCORE_IDENT_RE + '\\s*(?=[:+?]?=)' },
+        i = { begin: '^' + t.UNDERSCORE_IDENT_RE + '\\s*(?=[:+?]?=)' },
         r = { className: 'section', begin: /^[^\s]+:/, end: /$/, contains: [e] };
       return {
         name: 'Makefile',
@@ -21786,9 +21786,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'define endef undefine ifdef ifndef ifeq ifneq else endif include -include sinclude override export unexport private vpath'
         },
         contains: [
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           e,
-          t,
+          n,
           a,
           i,
           { className: 'meta', begin: /^\.PHONY:/, end: /$/, keywords: { $pattern: /[\.\w]+/, keyword: '.PHONY' } },
@@ -28422,11 +28422,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
     '$WolframID',
     '$WolframUUID'
   ];
-  var Cl = function(n) {
-      const e = n.regex,
-        t = e.either(e.concat(/([2-9]|[1-2]\d|[3][0-5])\^\^/, /(\w*\.\w+|\w+\.\w*|\w+)/), /(\d*\.\d+|\d+\.\d*|\d+)/),
+  var Nl = function(t) {
+      const e = t.regex,
+        n = e.either(e.concat(/([2-9]|[1-2]\d|[3][0-5])\^\^/, /(\w*\.\w+|\w+\.\w*|\w+)/), /(\d*\.\d+|\d+\.\d*|\d+)/),
         a = e.either(/``[+-]?(\d*\.\d+|\d+\.\d*|\d+)/, /`([+-]?(\d*\.\d+|\d+\.\d*|\d+))?/),
-        i = { className: 'number', relevance: 0, begin: e.concat(t, e.optional(a), e.optional(/\*\^[+-]?\d+/)) },
+        i = { className: 'number', relevance: 0, begin: e.concat(n, e.optional(a), e.optional(/\*\^[+-]?\d+/)) },
         r = /[a-zA-Z$][a-zA-Z0-9$]*/,
         s = new Set(Rl),
         o = {
@@ -28455,22 +28455,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'message-name': 'string'
         },
         contains: [
-          n.COMMENT(/\(\*/, /\*\)/, { contains: ['self'] }),
+          t.COMMENT(/\(\*/, /\*\)/, { contains: ['self'] }),
           { className: 'pattern', relevance: 0, begin: /([a-zA-Z$][a-zA-Z0-9$]*)?_+([a-zA-Z$][a-zA-Z0-9$]*)?/ },
           { className: 'slot', relevance: 0, begin: /#[a-zA-Z$][a-zA-Z0-9$]*|#+[0-9]?/ },
           l,
           o,
           { className: 'named-character', begin: /\\\[[$a-zA-Z][$a-zA-Z0-9]+\]/ },
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           i,
           { className: 'operator', relevance: 0, begin: /[+\-*/,;.:@~=><&|_`'^?!%]+/ },
           { className: 'brace', relevance: 0, begin: /[[\](){}]/ }
         ]
       };
     },
-    Nl = function(n) {
+    Ol = function(t) {
       const e = "('|\\.')+",
-        t = { relevance: 0, contains: [{ begin: e }] };
+        n = { relevance: 0, contains: [{ begin: e }] };
       return {
         name: 'Matlab',
         keywords: {
@@ -28486,22 +28486,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             beginKeywords: 'function',
             end: '$',
             contains: [
-              n.UNDERSCORE_TITLE_MODE,
+              t.UNDERSCORE_TITLE_MODE,
               { className: 'params', variants: [{ begin: '\\(', end: '\\)' }, { begin: '\\[', end: '\\]' }] }
             ]
           },
-          { className: 'built_in', begin: /true|false/, relevance: 0, starts: t },
+          { className: 'built_in', begin: /true|false/, relevance: 0, starts: n },
           { begin: '[a-zA-Z][a-zA-Z_0-9]*' + e, relevance: 0 },
-          { className: 'number', begin: n.C_NUMBER_RE, relevance: 0, starts: t },
+          { className: 'number', begin: t.C_NUMBER_RE, relevance: 0, starts: n },
           { className: 'string', begin: "'", end: "'", contains: [{ begin: "''" }] },
-          { begin: /\]|\}|\)/, relevance: 0, starts: t },
-          { className: 'string', begin: '"', end: '"', contains: [{ begin: '""' }], starts: t },
-          n.COMMENT('^\\s*%\\{\\s*$', '^\\s*%\\}\\s*$'),
-          n.COMMENT('%', '$')
+          { begin: /\]|\}|\)/, relevance: 0, starts: n },
+          { className: 'string', begin: '"', end: '"', contains: [{ begin: '""' }], starts: n },
+          t.COMMENT('^\\s*%\\{\\s*$', '^\\s*%\\}\\s*$'),
+          t.COMMENT('%', '$')
         ]
       };
     },
-    Ol = function(n) {
+    Al = function(t) {
       return {
         name: 'Maxima',
         keywords: {
@@ -28514,7 +28514,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           { className: 'comment', begin: '/\\*', end: '\\*/', contains: ['self'] },
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           {
             className: 'number',
             relevance: 0,
@@ -28529,27 +28529,27 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: /@/
       };
     },
-    Al = function(n) {
+    Il = function(t) {
       return {
         name: 'MEL',
         keywords:
           'int float string vector matrix if else switch case default while do for in break continue global proc return about abs addAttr addAttributeEditorNodeHelp addDynamic addNewShelfTab addPP addPanelCategory addPrefixToName advanceToNextDrivenKey affectedNet affects aimConstraint air alias aliasAttr align alignCtx alignCurve alignSurface allViewFit ambientLight angle angleBetween animCone animCurveEditor animDisplay animView annotate appendStringArray applicationName applyAttrPreset applyTake arcLenDimContext arcLengthDimension arclen arrayMapper art3dPaintCtx artAttrCtx artAttrPaintVertexCtx artAttrSkinPaintCtx artAttrTool artBuildPaintMenu artFluidAttrCtx artPuttyCtx artSelectCtx artSetPaintCtx artUserPaintCtx assignCommand assignInputDevice assignViewportFactories attachCurve attachDeviceAttr attachSurface attrColorSliderGrp attrCompatibility attrControlGrp attrEnumOptionMenu attrEnumOptionMenuGrp attrFieldGrp attrFieldSliderGrp attrNavigationControlGrp attrPresetEditWin attributeExists attributeInfo attributeMenu attributeQuery autoKeyframe autoPlace bakeClip bakeFluidShading bakePartialHistory bakeResults bakeSimulation basename basenameEx batchRender bessel bevel bevelPlus binMembership bindSkin blend2 blendShape blendShapeEditor blendShapePanel blendTwoAttr blindDataType boneLattice boundary boxDollyCtx boxZoomCtx bufferCurve buildBookmarkMenu buildKeyframeMenu button buttonManip CBG cacheFile cacheFileCombine cacheFileMerge cacheFileTrack camera cameraView canCreateManip canvas capitalizeString catch catchQuiet ceil changeSubdivComponentDisplayLevel changeSubdivRegion channelBox character characterMap characterOutlineEditor characterize chdir checkBox checkBoxGrp checkDefaultRenderGlobals choice circle circularFillet clamp clear clearCache clip clipEditor clipEditorCurrentTimeCtx clipSchedule clipSchedulerOutliner clipTrimBefore closeCurve closeSurface cluster cmdFileOutput cmdScrollFieldExecuter cmdScrollFieldReporter cmdShell coarsenSubdivSelectionList collision color colorAtPoint colorEditor colorIndex colorIndexSliderGrp colorSliderButtonGrp colorSliderGrp columnLayout commandEcho commandLine commandPort compactHairSystem componentEditor compositingInterop computePolysetVolume condition cone confirmDialog connectAttr connectControl connectDynamic connectJoint connectionInfo constrain constrainValue constructionHistory container containsMultibyte contextInfo control convertFromOldLayers convertIffToPsd convertLightmap convertSolidTx convertTessellation convertUnit copyArray copyFlexor copyKey copySkinWeights cos cpButton cpCache cpClothSet cpCollision cpConstraint cpConvClothToMesh cpForces cpGetSolverAttr cpPanel cpProperty cpRigidCollisionFilter cpSeam cpSetEdit cpSetSolverAttr cpSolver cpSolverTypes cpTool cpUpdateClothUVs createDisplayLayer createDrawCtx createEditor createLayeredPsdFile createMotionField createNewShelf createNode createRenderLayer createSubdivRegion cross crossProduct ctxAbort ctxCompletion ctxEditMode ctxTraverse currentCtx currentTime currentTimeCtx currentUnit curve curveAddPtCtx curveCVCtx curveEPCtx curveEditorCtx curveIntersect curveMoveEPCtx curveOnSurface curveSketchCtx cutKey cycleCheck cylinder dagPose date defaultLightListCheckBox defaultNavigation defineDataServer defineVirtualDevice deformer deg_to_rad delete deleteAttr deleteShadingGroupsAndMaterials deleteShelfTab deleteUI deleteUnusedBrushes delrandstr detachCurve detachDeviceAttr detachSurface deviceEditor devicePanel dgInfo dgdirty dgeval dgtimer dimWhen directKeyCtx directionalLight dirmap dirname disable disconnectAttr disconnectJoint diskCache displacementToPoly displayAffected displayColor displayCull displayLevelOfDetail displayPref displayRGBColor displaySmoothness displayStats displayString displaySurface distanceDimContext distanceDimension doBlur dolly dollyCtx dopeSheetEditor dot dotProduct doubleProfileBirailSurface drag dragAttrContext draggerContext dropoffLocator duplicate duplicateCurve duplicateSurface dynCache dynControl dynExport dynExpression dynGlobals dynPaintEditor dynParticleCtx dynPref dynRelEdPanel dynRelEditor dynamicLoad editAttrLimits editDisplayLayerGlobals editDisplayLayerMembers editRenderLayerAdjustment editRenderLayerGlobals editRenderLayerMembers editor editorTemplate effector emit emitter enableDevice encodeString endString endsWith env equivalent equivalentTol erf error eval evalDeferred evalEcho event exactWorldBoundingBox exclusiveLightCheckBox exec executeForEachObject exists exp expression expressionEditorListen extendCurve extendSurface extrude fcheck fclose feof fflush fgetline fgetword file fileBrowserDialog fileDialog fileExtension fileInfo filetest filletCurve filter filterCurve filterExpand filterStudioImport findAllIntersections findAnimCurves findKeyframe findMenuItem findRelatedSkinCluster finder firstParentOf fitBspline flexor floatEq floatField floatFieldGrp floatScrollBar floatSlider floatSlider2 floatSliderButtonGrp floatSliderGrp floor flow fluidCacheInfo fluidEmitter fluidVoxelInfo flushUndo fmod fontDialog fopen formLayout format fprint frameLayout fread freeFormFillet frewind fromNativePath fwrite gamma gauss geometryConstraint getApplicationVersionAsFloat getAttr getClassification getDefaultBrush getFileList getFluidAttr getInputDeviceRange getMayaPanelTypes getModifiers getPanel getParticleAttr getPluginResource getenv getpid glRender glRenderEditor globalStitch gmatch goal gotoBindPose grabColor gradientControl gradientControlNoAttr graphDollyCtx graphSelectContext graphTrackCtx gravity grid gridLayout group groupObjectsByName HfAddAttractorToAS HfAssignAS HfBuildEqualMap HfBuildFurFiles HfBuildFurImages HfCancelAFR HfConnectASToHF HfCreateAttractor HfDeleteAS HfEditAS HfPerformCreateAS HfRemoveAttractorFromAS HfSelectAttached HfSelectAttractors HfUnAssignAS hardenPointCurve hardware hardwareRenderPanel headsUpDisplay headsUpMessage help helpLine hermite hide hilite hitTest hotBox hotkey hotkeyCheck hsv_to_rgb hudButton hudSlider hudSliderButton hwReflectionMap hwRender hwRenderLoad hyperGraph hyperPanel hyperShade hypot iconTextButton iconTextCheckBox iconTextRadioButton iconTextRadioCollection iconTextScrollList iconTextStaticLabel ikHandle ikHandleCtx ikHandleDisplayScale ikSolver ikSplineHandleCtx ikSystem ikSystemInfo ikfkDisplayMethod illustratorCurves image imfPlugins inheritTransform insertJoint insertJointCtx insertKeyCtx insertKnotCurve insertKnotSurface instance instanceable instancer intField intFieldGrp intScrollBar intSlider intSliderGrp interToUI internalVar intersect iprEngine isAnimCurve isConnected isDirty isParentOf isSameObject isTrue isValidObjectName isValidString isValidUiName isolateSelect itemFilter itemFilterAttr itemFilterRender itemFilterType joint jointCluster jointCtx jointDisplayScale jointLattice keyTangent keyframe keyframeOutliner keyframeRegionCurrentTimeCtx keyframeRegionDirectKeyCtx keyframeRegionDollyCtx keyframeRegionInsertKeyCtx keyframeRegionMoveKeyCtx keyframeRegionScaleKeyCtx keyframeRegionSelectKeyCtx keyframeRegionSetKeyCtx keyframeRegionTrackCtx keyframeStats lassoContext lattice latticeDeformKeyCtx launch launchImageEditor layerButton layeredShaderPort layeredTexturePort layout layoutDialog lightList lightListEditor lightListPanel lightlink lineIntersection linearPrecision linstep listAnimatable listAttr listCameras listConnections listDeviceAttachments listHistory listInputDeviceAxes listInputDeviceButtons listInputDevices listMenuAnnotation listNodeTypes listPanelCategories listRelatives listSets listTransforms listUnselected listerEditor loadFluid loadNewShelf loadPlugin loadPluginLanguageResources loadPrefObjects localizedPanelLabel lockNode loft log longNameOf lookThru ls lsThroughFilter lsType lsUI Mayatomr mag makeIdentity makeLive makePaintable makeRoll makeSingleSurface makeTubeOn makebot manipMoveContext manipMoveLimitsCtx manipOptions manipRotateContext manipRotateLimitsCtx manipScaleContext manipScaleLimitsCtx marker match max memory menu menuBarLayout menuEditor menuItem menuItemToShelf menuSet menuSetPref messageLine min minimizeApp mirrorJoint modelCurrentTimeCtx modelEditor modelPanel mouse movIn movOut move moveIKtoFK moveKeyCtx moveVertexAlongDirection multiProfileBirailSurface mute nParticle nameCommand nameField namespace namespaceInfo newPanelItems newton nodeCast nodeIconButton nodeOutliner nodePreset nodeType noise nonLinear normalConstraint normalize nurbsBoolean nurbsCopyUVSet nurbsCube nurbsEditUV nurbsPlane nurbsSelect nurbsSquare nurbsToPoly nurbsToPolygonsPref nurbsToSubdiv nurbsToSubdivPref nurbsUVSet nurbsViewDirectionVector objExists objectCenter objectLayer objectType objectTypeUI obsoleteProc oceanNurbsPreviewPlane offsetCurve offsetCurveOnSurface offsetSurface openGLExtension openMayaPref optionMenu optionMenuGrp optionVar orbit orbitCtx orientConstraint outlinerEditor outlinerPanel overrideModifier paintEffectsDisplay pairBlend palettePort paneLayout panel panelConfiguration panelHistory paramDimContext paramDimension paramLocator parent parentConstraint particle particleExists particleInstancer particleRenderInfo partition pasteKey pathAnimation pause pclose percent performanceOptions pfxstrokes pickWalk picture pixelMove planarSrf plane play playbackOptions playblast plugAttr plugNode pluginInfo pluginResourceUtil pointConstraint pointCurveConstraint pointLight pointMatrixMult pointOnCurve pointOnSurface pointPosition poleVectorConstraint polyAppend polyAppendFacetCtx polyAppendVertex polyAutoProjection polyAverageNormal polyAverageVertex polyBevel polyBlendColor polyBlindData polyBoolOp polyBridgeEdge polyCacheMonitor polyCheck polyChipOff polyClipboard polyCloseBorder polyCollapseEdge polyCollapseFacet polyColorBlindData polyColorDel polyColorPerVertex polyColorSet polyCompare polyCone polyCopyUV polyCrease polyCreaseCtx polyCreateFacet polyCreateFacetCtx polyCube polyCut polyCutCtx polyCylinder polyCylindricalProjection polyDelEdge polyDelFacet polyDelVertex polyDuplicateAndConnect polyDuplicateEdge polyEditUV polyEditUVShell polyEvaluate polyExtrudeEdge polyExtrudeFacet polyExtrudeVertex polyFlipEdge polyFlipUV polyForceUV polyGeoSampler polyHelix polyInfo polyInstallAction polyLayoutUV polyListComponentConversion polyMapCut polyMapDel polyMapSew polyMapSewMove polyMergeEdge polyMergeEdgeCtx polyMergeFacet polyMergeFacetCtx polyMergeUV polyMergeVertex polyMirrorFace polyMoveEdge polyMoveFacet polyMoveFacetUV polyMoveUV polyMoveVertex polyNormal polyNormalPerVertex polyNormalizeUV polyOptUvs polyOptions polyOutput polyPipe polyPlanarProjection polyPlane polyPlatonicSolid polyPoke polyPrimitive polyPrism polyProjection polyPyramid polyQuad polyQueryBlindData polyReduce polySelect polySelectConstraint polySelectConstraintMonitor polySelectCtx polySelectEditCtx polySeparate polySetToFaceNormal polySewEdge polyShortestPathCtx polySmooth polySoftEdge polySphere polySphericalProjection polySplit polySplitCtx polySplitEdge polySplitRing polySplitVertex polyStraightenUVBorder polySubdivideEdge polySubdivideFacet polyToSubdiv polyTorus polyTransfer polyTriangulate polyUVSet polyUnite polyWedgeFace popen popupMenu pose pow preloadRefEd print progressBar progressWindow projFileViewer projectCurve projectTangent projectionContext projectionManip promptDialog propModCtx propMove psdChannelOutliner psdEditTextureFile psdExport psdTextureFile putenv pwd python querySubdiv quit rad_to_deg radial radioButton radioButtonGrp radioCollection radioMenuItemCollection rampColorPort rand randomizeFollicles randstate rangeControl readTake rebuildCurve rebuildSurface recordAttr recordDevice redo reference referenceEdit referenceQuery refineSubdivSelectionList refresh refreshAE registerPluginResource rehash reloadImage removeJoint removeMultiInstance removePanelCategory rename renameAttr renameSelectionList renameUI render renderGlobalsNode renderInfo renderLayerButton renderLayerParent renderLayerPostProcess renderLayerUnparent renderManip renderPartition renderQualityNode renderSettings renderThumbnailUpdate renderWindowEditor renderWindowSelectContext renderer reorder reorderDeformers requires reroot resampleFluid resetAE resetPfxToPolyCamera resetTool resolutionNode retarget reverseCurve reverseSurface revolve rgb_to_hsv rigidBody rigidSolver roll rollCtx rootOf rot rotate rotationInterpolation roundConstantRadius rowColumnLayout rowLayout runTimeCommand runup sampleImage saveAllShelves saveAttrPreset saveFluid saveImage saveInitialState saveMenu savePrefObjects savePrefs saveShelf saveToolSettings scale scaleBrushBrightness scaleComponents scaleConstraint scaleKey scaleKeyCtx sceneEditor sceneUIReplacement scmh scriptCtx scriptEditorInfo scriptJob scriptNode scriptTable scriptToShelf scriptedPanel scriptedPanelType scrollField scrollLayout sculpt searchPathArray seed selLoadSettings select selectContext selectCurveCV selectKey selectKeyCtx selectKeyframeRegionCtx selectMode selectPref selectPriority selectType selectedNodes selectionConnection separator setAttr setAttrEnumResource setAttrMapping setAttrNiceNameResource setConstraintRestPosition setDefaultShadingGroup setDrivenKeyframe setDynamic setEditCtx setEditor setFluidAttr setFocus setInfinity setInputDeviceMapping setKeyCtx setKeyPath setKeyframe setKeyframeBlendshapeTargetWts setMenuMode setNodeNiceNameResource setNodeTypeFlag setParent setParticleAttr setPfxToPolyCamera setPluginResource setProject setStampDensity setStartupMessage setState setToolTo setUITemplate setXformManip sets shadingConnection shadingGeometryRelCtx shadingLightRelCtx shadingNetworkCompare shadingNode shapeCompare shelfButton shelfLayout shelfTabLayout shellField shortNameOf showHelp showHidden showManipCtx showSelectionInTitle showShadingGroupAttrEditor showWindow sign simplify sin singleProfileBirailSurface size sizeBytes skinCluster skinPercent smoothCurve smoothTangentSurface smoothstep snap2to2 snapKey snapMode snapTogetherCtx snapshot soft softMod softModCtx sort sound soundControl source spaceLocator sphere sphrand spotLight spotLightPreviewPort spreadSheetEditor spring sqrt squareSurface srtContext stackTrace startString startsWith stitchAndExplodeShell stitchSurface stitchSurfacePoints strcmp stringArrayCatenate stringArrayContains stringArrayCount stringArrayInsertAtIndex stringArrayIntersector stringArrayRemove stringArrayRemoveAtIndex stringArrayRemoveDuplicates stringArrayRemoveExact stringArrayToString stringToStringArray strip stripPrefixFromName stroke subdAutoProjection subdCleanTopology subdCollapse subdDuplicateAndConnect subdEditUV subdListComponentConversion subdMapCut subdMapSewMove subdMatchTopology subdMirror subdToBlind subdToPoly subdTransferUVsToCache subdiv subdivCrease subdivDisplaySmoothness substitute substituteAllString substituteGeometry substring surface surfaceSampler surfaceShaderList swatchDisplayPort switchTable symbolButton symbolCheckBox sysFile system tabLayout tan tangentConstraint texLatticeDeformContext texManipContext texMoveContext texMoveUVShellContext texRotateContext texScaleContext texSelectContext texSelectShortestPathCtx texSmudgeUVContext texWinToolCtx text textCurves textField textFieldButtonGrp textFieldGrp textManip textScrollList textToShelf textureDisplacePlane textureHairColor texturePlacementContext textureWindow threadCount threePointArcCtx timeControl timePort timerX toNativePath toggle toggleAxis toggleWindowVisibility tokenize tokenizeList tolerance tolower toolButton toolCollection toolDropped toolHasOptions toolPropertyWindow torus toupper trace track trackCtx transferAttributes transformCompare transformLimits translator trim trunc truncateFluidCache truncateHairCache tumble tumbleCtx turbulence twoPointArcCtx uiRes uiTemplate unassignInputDevice undo undoInfo ungroup uniform unit unloadPlugin untangleUV untitledFileName untrim upAxis updateAE userCtx uvLink uvSnapshot validateShelfName vectorize view2dToolCtx viewCamera viewClipPlane viewFit viewHeadOn viewLookAt viewManip viewPlace viewSet visor volumeAxis vortex waitCursor warning webBrowser webBrowserPrefs whatIs window windowPref wire wireContext workspace wrinkle wrinkleContext writeTake xbmLangPathList xform',
         illegal: '</',
         contains: [
-          n.C_NUMBER_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          { className: 'string', begin: '`', end: '`', contains: [n.BACKSLASH_ESCAPE] },
+          t.C_NUMBER_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          { className: 'string', begin: '`', end: '`', contains: [t.BACKSLASH_ESCAPE] },
           { begin: /[$%@](\^\w\b|#\w+|[^\s\w{]|\{\w+\}|\w+)/ },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE
         ]
       };
     },
-    Il = function(n) {
-      const e = n.COMMENT('%', '$'),
-        t = n.inherit(n.APOS_STRING_MODE, { relevance: 0 }),
-        a = n.inherit(n.QUOTE_STRING_MODE, { relevance: 0 });
+    xl = function(t) {
+      const e = t.COMMENT('%', '$'),
+        n = t.inherit(t.APOS_STRING_MODE, { relevance: 0 }),
+        a = t.inherit(t.QUOTE_STRING_MODE, { relevance: 0 });
       return (
         (a.contains = a.contains.slice()),
         a.contains.push({
@@ -28581,10 +28581,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             },
             { className: 'built_in', variants: [{ begin: ':-\\|-->' }, { begin: '=', relevance: 0 }] },
             e,
-            n.C_BLOCK_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE,
             { className: 'number', begin: "0'.\\|0[box][0-9a-fA-F]*" },
-            n.NUMBER_MODE,
-            t,
+            t.NUMBER_MODE,
+            n,
             a,
             { begin: /:-/ },
             { begin: /\.$/ }
@@ -28592,13 +28592,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    xl = function(n) {
+    Dl = function(t) {
       return {
         name: 'MIPS Assembly',
         case_insensitive: !0,
         aliases: ['mips'],
         keywords: {
-          $pattern: '\\.?' + n.IDENT_RE,
+          $pattern: '\\.?' + t.IDENT_RE,
           meta:
             '.2byte .4byte .align .ascii .asciz .balign .byte .code .data .else .end .endif .endm .endr .equ .err .exitm .extern .global .hword .if .ifdef .ifndef .include .irp .long .macro .rept .req .section .set .skip .space .text .word .ltorg ',
           built_in:
@@ -28611,9 +28611,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               '\\b(addi?u?|andi?|b(al)?|beql?|bgez(al)?l?|bgtzl?|blezl?|bltz(al)?l?|bnel?|cl[oz]|divu?|ext|ins|j(al)?|jalr(\\.hb)?|jr(\\.hb)?|lbu?|lhu?|ll|lui|lw[lr]?|maddu?|mfhi|mflo|movn|movz|move|msubu?|mthi|mtlo|mul|multu?|nop|nor|ori?|rotrv?|sb|sc|se[bh]|sh|sllv?|slti?u?|srav?|srlv?|subu?|sw[lr]?|xori?|wsbh|abs\\.[sd]|add\\.[sd]|alnv.ps|bc1[ft]l?|c\\.(s?f|un|u?eq|[ou]lt|[ou]le|ngle?|seq|l[et]|ng[et])\\.[sd]|(ceil|floor|round|trunc)\\.[lw]\\.[sd]|cfc1|cvt\\.d\\.[lsw]|cvt\\.l\\.[dsw]|cvt\\.ps\\.s|cvt\\.s\\.[dlw]|cvt\\.s\\.p[lu]|cvt\\.w\\.[dls]|div\\.[ds]|ldx?c1|luxc1|lwx?c1|madd\\.[sd]|mfc1|mov[fntz]?\\.[ds]|msub\\.[sd]|mth?c1|mul\\.[ds]|neg\\.[ds]|nmadd\\.[ds]|nmsub\\.[ds]|p[lu][lu]\\.ps|recip\\.fmt|r?sqrt\\.[ds]|sdx?c1|sub\\.[ds]|suxc1|swx?c1|break|cache|d?eret|[de]i|ehb|mfc0|mtc0|pause|prefx?|rdhwr|rdpgpr|sdbbp|ssnop|synci?|syscall|teqi?|tgei?u?|tlb(p|r|w[ir])|tlti?u?|tnei?|wait|wrpgpr)',
             end: '\\s'
           },
-          n.COMMENT('[;#](?!\\s*$)', '$'),
-          n.C_BLOCK_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
+          t.COMMENT('[;#](?!\\s*$)', '$'),
+          t.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'string', begin: "'", end: "[^\\\\]'", relevance: 0 },
           { className: 'title', begin: '\\|', end: '\\|', illegal: '\\n', relevance: 0 },
           { className: 'number', variants: [{ begin: '0x[0-9a-f]+' }, { begin: '\\b-?\\d+' }], relevance: 0 },
@@ -28630,17 +28630,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: /\//
       };
     },
-    Dl = function(n) {
+    wl = function(t) {
       return {
         name: 'Mizar',
         keywords:
           'environ vocabularies notations constructors definitions registrations theorems schemes requirements begin end definition registration cluster existence pred func defpred deffunc theorem proof let take assume then thus hence ex for st holds consider reconsider such that and in provided of as from be being by means equals implies iff redefine define now not or attr is mode suppose per cases set thesis contradiction scheme reserve struct correctness compatibility coherence symmetry assymetry reflexivity irreflexivity connectedness uniqueness commutativity idempotence involutiveness projectivity',
-        contains: [n.COMMENT('::', '$')]
+        contains: [t.COMMENT('::', '$')]
       };
     },
-    wl = function(n) {
-      const e = n.regex,
-        t = /[dualxmsipngr]{0,12}/,
+    Ml = function(t) {
+      const e = t.regex,
+        n = /[dualxmsipngr]{0,12}/,
         a = {
           $pattern: /[\w.]+/,
           keyword: [
@@ -28885,17 +28885,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { begin: /[$%@][^\s\w{]/, relevance: 0 }
           ]
         },
-        o = [n.BACKSLASH_ESCAPE, i, s],
+        o = [t.BACKSLASH_ESCAPE, i, s],
         l = [/!/, /\//, /\|/, /\?/, /'/, /"/, /#/],
         c = (u, m, p = '\\1') => {
           const g = p === '\\1' ? p : e.concat(p, m);
-          return e.concat(e.concat('(?:', u, ')'), m, /(?:\\.|[^\\\/])*?/, g, /(?:\\.|[^\\\/])*?/, p, t);
+          return e.concat(e.concat('(?:', u, ')'), m, /(?:\\.|[^\\\/])*?/, g, /(?:\\.|[^\\\/])*?/, p, n);
         },
-        _ = (u, m, p) => e.concat(e.concat('(?:', u, ')'), m, /(?:\\.|[^\\\/])*?/, p, t),
+        _ = (u, m, p) => e.concat(e.concat('(?:', u, ')'), m, /(?:\\.|[^\\\/])*?/, p, n),
         d = [
           s,
-          n.HASH_COMMENT_MODE,
-          n.COMMENT(/^=\w/, /=cut/, { endsWithParent: !0 }),
+          t.HASH_COMMENT_MODE,
+          t.COMMENT(/^=\w/, /=cut/, { endsWithParent: !0 }),
           r,
           {
             className: 'string',
@@ -28907,9 +28907,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               { begin: 'q[qwxr]?\\s*\\|', end: '\\|', relevance: 5 },
               { begin: 'q[qwxr]?\\s*<', end: '>', relevance: 5 },
               { begin: 'qw\\s+q', end: 'q', relevance: 5 },
-              { begin: "'", end: "'", contains: [n.BACKSLASH_ESCAPE] },
+              { begin: "'", end: "'", contains: [t.BACKSLASH_ESCAPE] },
               { begin: '"', end: '"' },
-              { begin: '`', end: '`', contains: [n.BACKSLASH_ESCAPE] },
+              { begin: '`', end: '`', contains: [t.BACKSLASH_ESCAPE] },
               { begin: /\{\w+\}/, relevance: 0 },
               { begin: '-?\\w+\\s*=>', relevance: 0 }
             ]
@@ -28920,11 +28920,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0
           },
           {
-            begin: '(\\/\\/|' + n.RE_STARTERS_RE + '|\\b(split|return|print|reverse|grep)\\b)\\s*',
+            begin: '(\\/\\/|' + t.RE_STARTERS_RE + '|\\b(split|return|print|reverse|grep)\\b)\\s*',
             keywords: 'split return print reverse grep',
             relevance: 0,
             contains: [
-              n.HASH_COMMENT_MODE,
+              t.HASH_COMMENT_MODE,
               {
                 className: 'regexp',
                 variants: [
@@ -28954,7 +28954,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: '(\\s*\\(.*?\\))?[;{]',
             excludeEnd: !0,
             relevance: 5,
-            contains: [n.TITLE_MODE]
+            contains: [t.TITLE_MODE]
           },
           { begin: '-\\w\\b', relevance: 0 },
           {
@@ -28966,7 +28966,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ];
       return (i.contains = d), (r.contains = d), { name: 'Perl', aliases: ['pl', 'pm'], keywords: a, contains: d };
     },
-    Ml = function(n) {
+    Ll = function(t) {
       return {
         name: 'Mojolicious',
         subLanguage: 'xml',
@@ -28977,14 +28977,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Ll = function(n) {
-      const e = { className: 'number', relevance: 0, variants: [{ begin: '[$][a-fA-F0-9]+' }, n.NUMBER_MODE] },
-        t = {
-          variants: [{ match: [/(function|method)/, /\s+/, n.UNDERSCORE_IDENT_RE] }],
+    kl = function(t) {
+      const e = { className: 'number', relevance: 0, variants: [{ begin: '[$][a-fA-F0-9]+' }, t.NUMBER_MODE] },
+        n = {
+          variants: [{ match: [/(function|method)/, /\s+/, t.UNDERSCORE_IDENT_RE] }],
           scope: { 1: 'keyword', 3: 'title.function' }
         },
         a = {
-          variants: [{ match: [/(class|interface|extends|implements)/, /\s+/, n.UNDERSCORE_IDENT_RE] }],
+          variants: [{ match: [/(class|interface|extends|implements)/, /\s+/, t.UNDERSCORE_IDENT_RE] }],
           scope: { 1: 'keyword', 3: 'title.class' }
         };
       return {
@@ -29082,20 +29082,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: /\/\*/,
         contains: [
-          n.COMMENT('#rem', '#end'),
-          n.COMMENT("'", '$', { relevance: 0 }),
-          t,
+          t.COMMENT('#rem', '#end'),
+          t.COMMENT("'", '$', { relevance: 0 }),
+          n,
           a,
           { className: 'variable.language', begin: /\b(self|super)\b/ },
           { className: 'meta', begin: /\s*#/, end: '$', keywords: { keyword: 'if else elseif endif end then' } },
           { match: [/^\s*/, /strict\b/], scope: { 2: 'meta' } },
-          { beginKeywords: 'alias', end: '=', contains: [n.UNDERSCORE_TITLE_MODE] },
-          n.QUOTE_STRING_MODE,
+          { beginKeywords: 'alias', end: '=', contains: [t.UNDERSCORE_TITLE_MODE] },
+          t.QUOTE_STRING_MODE,
           e
         ]
       };
     },
-    kl = function(n) {
+    Pl = function(t) {
       const e = {
           keyword:
             'if then not for in while do return else elseif break continue switch and or unless when class extends super local import export from using',
@@ -29103,23 +29103,23 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           built_in:
             '_G _VERSION assert collectgarbage dofile error getfenv getmetatable ipairs load loadfile loadstring module next pairs pcall print rawequal rawget rawset require select setfenv setmetatable tonumber tostring type unpack xpcall coroutine debug io math os package string table'
         },
-        t = '[A-Za-z$_][0-9A-Za-z$_]*',
+        n = '[A-Za-z$_][0-9A-Za-z$_]*',
         a = { className: 'subst', begin: /#\{/, end: /\}/, keywords: e },
         i = [
-          n.inherit(n.C_NUMBER_MODE, { starts: { end: '(\\s*/)?', relevance: 0 } }),
+          t.inherit(t.C_NUMBER_MODE, { starts: { end: '(\\s*/)?', relevance: 0 } }),
           {
             className: 'string',
             variants: [
-              { begin: /'/, end: /'/, contains: [n.BACKSLASH_ESCAPE] },
-              { begin: /"/, end: /"/, contains: [n.BACKSLASH_ESCAPE, a] }
+              { begin: /'/, end: /'/, contains: [t.BACKSLASH_ESCAPE] },
+              { begin: /"/, end: /"/, contains: [t.BACKSLASH_ESCAPE, a] }
             ]
           },
-          { className: 'built_in', begin: '@__' + n.IDENT_RE },
-          { begin: '@' + n.IDENT_RE },
-          { begin: n.IDENT_RE + '\\\\' + n.IDENT_RE }
+          { className: 'built_in', begin: '@__' + t.IDENT_RE },
+          { begin: '@' + t.IDENT_RE },
+          { begin: t.IDENT_RE + '\\\\' + t.IDENT_RE }
         ];
       a.contains = i;
-      const r = n.inherit(n.TITLE_MODE, { begin: t }),
+      const r = t.inherit(t.TITLE_MODE, { begin: n }),
         s = '(\\(.*\\)\\s*)?\\B[-=]>',
         o = {
           className: 'params',
@@ -29133,10 +29133,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         keywords: e,
         illegal: /\/\*/,
         contains: i.concat([
-          n.COMMENT('--', '$'),
+          t.COMMENT('--', '$'),
           {
             className: 'function',
-            begin: '^\\s*' + t + '\\s*=\\s*' + s,
+            begin: '^\\s*' + n + '\\s*=\\s*' + s,
             end: '[-=]>',
             returnBegin: !0,
             contains: [r, o]
@@ -29153,11 +29153,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             illegal: /[:="\[\]]/,
             contains: [{ beginKeywords: 'extends', endsWithParent: !0, illegal: /[:="\[\]]/, contains: [r] }, r]
           },
-          { className: 'name', begin: t + ':', end: ':', returnBegin: !0, returnEnd: !0, relevance: 0 }
+          { className: 'name', begin: n + ':', end: ':', returnBegin: !0, returnEnd: !0, relevance: 0 }
         ])
       };
     },
-    Pl = function(n) {
+    Ul = function(t) {
       return {
         name: 'N1QL',
         case_insensitive: !0,
@@ -29473,23 +29473,23 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               ]
             },
             contains: [
-              { className: 'string', begin: "'", end: "'", contains: [n.BACKSLASH_ESCAPE] },
-              { className: 'string', begin: '"', end: '"', contains: [n.BACKSLASH_ESCAPE] },
-              { className: 'symbol', begin: '`', end: '`', contains: [n.BACKSLASH_ESCAPE] },
-              n.C_NUMBER_MODE,
-              n.C_BLOCK_COMMENT_MODE
+              { className: 'string', begin: "'", end: "'", contains: [t.BACKSLASH_ESCAPE] },
+              { className: 'string', begin: '"', end: '"', contains: [t.BACKSLASH_ESCAPE] },
+              { className: 'symbol', begin: '`', end: '`', contains: [t.BACKSLASH_ESCAPE] },
+              t.C_NUMBER_MODE,
+              t.C_BLOCK_COMMENT_MODE
             ]
           },
-          n.C_BLOCK_COMMENT_MODE
+          t.C_BLOCK_COMMENT_MODE
         ]
       };
     },
-    Ul = function(n) {
+    Fl = function(t) {
       return {
         name: 'Nested Text',
         aliases: ['nt'],
         contains: [
-          n.inherit(n.HASH_COMMENT_MODE, { begin: /^\s*(?=#)/, excludeBegin: !0 }),
+          t.inherit(t.HASH_COMMENT_MODE, { begin: /^\s*(?=#)/, excludeBegin: !0 }),
           {
             variants: [{ match: [/^\s*/, /-/, /[ ]/, /.*$/] }, { match: [/^\s*/, /-$/] }],
             className: { 2: 'bullet', 4: 'string' }
@@ -29503,11 +29503,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Fl = function(n) {
-      const e = n.regex,
-        t = {
+    Bl = function(t) {
+      const e = t.regex,
+        n = {
           className: 'variable',
-          variants: [{ begin: /\$\d+/ }, { begin: /\$\{\w+\}/ }, { begin: e.concat(/[$@]/, n.UNDERSCORE_IDENT_RE) }]
+          variants: [{ begin: /\$\d+/ }, { begin: /\$\{\w+\}/ }, { begin: e.concat(/[$@]/, t.UNDERSCORE_IDENT_RE) }]
         },
         a = {
           endsWithParent: !0,
@@ -29543,16 +29543,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           relevance: 0,
           illegal: '=>',
           contains: [
-            n.HASH_COMMENT_MODE,
+            t.HASH_COMMENT_MODE,
             {
               className: 'string',
-              contains: [n.BACKSLASH_ESCAPE, t],
+              contains: [t.BACKSLASH_ESCAPE, n],
               variants: [{ begin: /"/, end: /"/ }, { begin: /'/, end: /'/ }]
             },
-            { begin: '([a-z]+):/', end: '\\s', endsWithParent: !0, excludeEnd: !0, contains: [t] },
+            { begin: '([a-z]+):/', end: '\\s', endsWithParent: !0, excludeEnd: !0, contains: [n] },
             {
               className: 'regexp',
-              contains: [n.BACKSLASH_ESCAPE, t],
+              contains: [t.BACKSLASH_ESCAPE, n],
               variants: [
                 { begin: '\\s\\^', end: '\\s|\\{|;', returnEnd: !0 },
                 { begin: '~\\*?\\s+', end: '\\s|\\{|;', returnEnd: !0 },
@@ -29562,32 +29562,32 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             },
             { className: 'number', begin: '\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}(:\\d{1,5})?\\b' },
             { className: 'number', begin: '\\b\\d+[kKmMgGdshdwy]?\\b', relevance: 0 },
-            t
+            n
           ]
         };
       return {
         name: 'Nginx config',
         aliases: ['nginxconf'],
         contains: [
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           {
             beginKeywords: 'upstream location',
             end: /;|\{/,
             contains: a.contains,
             keywords: { section: 'upstream location' }
           },
-          { className: 'section', begin: e.concat(n.UNDERSCORE_IDENT_RE + e.lookahead(/\s+\{/)), relevance: 0 },
+          { className: 'section', begin: e.concat(t.UNDERSCORE_IDENT_RE + e.lookahead(/\s+\{/)), relevance: 0 },
           {
-            begin: e.lookahead(n.UNDERSCORE_IDENT_RE + '\\s'),
+            begin: e.lookahead(t.UNDERSCORE_IDENT_RE + '\\s'),
             end: ';|\\{',
-            contains: [{ className: 'attribute', begin: n.UNDERSCORE_IDENT_RE, starts: a }],
+            contains: [{ className: 'attribute', begin: t.UNDERSCORE_IDENT_RE, starts: a }],
             relevance: 0
           }
         ],
         illegal: '[^\\s\\}\\{]'
       };
     },
-    Bl = function(n) {
+    Gl = function(t) {
       return {
         name: 'Nim',
         keywords: {
@@ -29717,7 +29717,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'meta', begin: /\{\./, end: /\.\}/, relevance: 10 },
           { className: 'string', begin: /[a-zA-Z]\w*"/, end: /"/, contains: [{ begin: /""/ }] },
           { className: 'string', begin: /([a-zA-Z]\w*)?"""/, end: /"""/ },
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'type', begin: /\b[A-Z]\w+\b/, relevance: 0 },
           {
             className: 'number',
@@ -29729,11 +29729,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               { begin: /\b(\d[_\d]*)('?[iIuUfF](8|16|32|64))?/ }
             ]
           },
-          n.HASH_COMMENT_MODE
+          t.HASH_COMMENT_MODE
         ]
       };
     },
-    Gl = function(n) {
+    Yl = function(t) {
       const e = {
           keyword: ['rec', 'with', 'let', 'in', 'inherit', 'assert', 'if', 'else', 'then'],
           literal: ['true', 'false', 'or', 'and', 'null'],
@@ -29751,16 +29751,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'derivation'
           ]
         },
-        t = { className: 'subst', begin: /\$\{/, end: /\}/, keywords: e },
+        n = { className: 'subst', begin: /\$\{/, end: /\}/, keywords: e },
         a = {
           className: 'string',
-          contains: [{ className: 'char.escape', begin: /''\$/ }, t],
+          contains: [{ className: 'char.escape', begin: /''\$/ }, n],
           variants: [{ begin: "''", end: "''" }, { begin: '"', end: '"' }]
         },
         i = [
-          n.NUMBER_MODE,
-          n.HASH_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.NUMBER_MODE,
+          t.HASH_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           a,
           {
             begin: /[a-zA-Z0-9-_]+(\s*=)/,
@@ -29769,9 +29769,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             contains: [{ className: 'attr', begin: /\S+/, relevance: 0.2 }]
           }
         ];
-      return (t.contains = i), { name: 'Nix', aliases: ['nixos'], keywords: e, contains: i };
+      return (n.contains = i), { name: 'Nix', aliases: ['nixos'], keywords: e, contains: i };
     },
-    Yl = function(n) {
+    Hl = function(t) {
       return {
         name: 'Node REPL',
         contains: [
@@ -29783,9 +29783,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Hl = function(n) {
-      const e = n.regex,
-        t = {
+    zl = function(t) {
+      const e = t.regex,
+        n = {
           className: 'variable.constant',
           begin: e.concat(
             /\$/,
@@ -29941,9 +29941,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           className: 'string',
           variants: [{ begin: '"', end: '"' }, { begin: "'", end: "'" }, { begin: '`', end: '`' }],
           illegal: /\n/,
-          contains: [{ className: 'char.escape', begin: /\$(\\[nrt]|\$)/ }, t, a, i, r]
+          contains: [{ className: 'char.escape', begin: /\$(\\[nrt]|\$)/ }, n, a, i, r]
         },
-        c = { match: [/Function/, /\s+/, e.concat(/(\.)?/, n.IDENT_RE)], scope: { 1: 'keyword', 3: 'title.function' } },
+        c = { match: [/Function/, /\s+/, e.concat(/(\.)?/, t.IDENT_RE)], scope: { 1: 'keyword', 3: 'title.function' } },
         _ = {
           match: [/Var/, /\s+/, /(?:\/GLOBAL\s+)?/, /[A-Za-z][\w.]*/],
           scope: { 1: 'keyword', 3: 'params', 4: 'variable' }
@@ -30223,9 +30223,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.HASH_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.COMMENT(';', '$', { relevance: 0 }),
+          t.HASH_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.COMMENT(';', '$', { relevance: 0 }),
           _,
           c,
           { beginKeywords: 'Function PageEx Section SectionGroup FunctionEnd SectionEnd' },
@@ -30236,13 +30236,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           r,
           s,
           { className: 'title.function', begin: /\w+::\w+/ },
-          n.NUMBER_MODE
+          t.NUMBER_MODE
         ]
       };
     },
-    zl = function(n) {
+    $l = function(t) {
       const e = /[a-zA-Z@][a-zA-Z0-9_]*/,
-        t = { $pattern: e, keyword: ['@interface', '@class', '@protocol', '@implementation'] };
+        n = { $pattern: e, keyword: ['@interface', '@class', '@protocol', '@implementation'] };
       return {
         name: 'Objective-C',
         aliases: ['mm', 'objc', 'obj-c', 'obj-c++', 'objective-c++'],
@@ -30388,14 +30388,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: '</',
         contains: [
           { className: 'built_in', begin: '\\b(AV|CA|CF|CG|CI|CL|CM|CN|CT|MK|MP|MTK|MTL|NS|SCN|SK|UI|WK|XC)\\w+' },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.C_NUMBER_MODE,
-          n.QUOTE_STRING_MODE,
-          n.APOS_STRING_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.C_NUMBER_MODE,
+          t.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
           {
             className: 'string',
-            variants: [{ begin: '@"', end: '"', illegal: '\\n', contains: [n.BACKSLASH_ESCAPE] }]
+            variants: [{ begin: '@"', end: '"', illegal: '\\n', contains: [t.BACKSLASH_ESCAPE] }]
           },
           {
             className: 'meta',
@@ -30404,25 +30404,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             keywords: { keyword: 'if else elif endif define undef warning error line pragma ifdef ifndef include' },
             contains: [
               { begin: /\\\n/, relevance: 0 },
-              n.inherit(n.QUOTE_STRING_MODE, { className: 'string' }),
+              t.inherit(t.QUOTE_STRING_MODE, { className: 'string' }),
               { className: 'string', begin: /<.*?>/, end: /$/, illegal: '\\n' },
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE
             ]
           },
           {
             className: 'class',
-            begin: '(' + t.keyword.join('|') + ')\\b',
+            begin: '(' + n.keyword.join('|') + ')\\b',
             end: /(\{|$)/,
             excludeEnd: !0,
-            keywords: t,
-            contains: [n.UNDERSCORE_TITLE_MODE]
+            keywords: n,
+            contains: [t.UNDERSCORE_TITLE_MODE]
           },
-          { begin: '\\.' + n.UNDERSCORE_IDENT_RE, relevance: 0 }
+          { begin: '\\.' + t.UNDERSCORE_IDENT_RE, relevance: 0 }
         ]
       };
     },
-    $l = function(n) {
+    Vl = function(t) {
       return {
         name: 'OCaml',
         aliases: ['ml'],
@@ -30437,13 +30437,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: /\/\/|>>/,
         contains: [
           { className: 'literal', begin: '\\[(\\|\\|)?\\]|\\(\\)', relevance: 0 },
-          n.COMMENT('\\(\\*', '\\*\\)', { contains: ['self'] }),
+          t.COMMENT('\\(\\*', '\\*\\)', { contains: ['self'] }),
           { className: 'symbol', begin: "'[A-Za-z_](?!')[\\w']*" },
           { className: 'type', begin: "`[A-Z][\\w']*" },
           { className: 'type', begin: "\\b[A-Z][\\w']*", relevance: 0 },
           { begin: "[a-z_]\\w*'[\\w']*", relevance: 0 },
-          n.inherit(n.APOS_STRING_MODE, { className: 'string', relevance: 0 }),
-          n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
+          t.inherit(t.APOS_STRING_MODE, { className: 'string', relevance: 0 }),
+          t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
           {
             className: 'number',
             begin:
@@ -30454,10 +30454,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Vl = function(n) {
+    jl = function(t) {
       const e = { className: 'keyword', begin: '\\$(f[asn]|t|vp[rtd]|children)' },
-        t = { className: 'number', begin: '\\b\\d+(\\.\\d+)?(e-?\\d+)?', relevance: 0 },
-        a = n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
+        n = { className: 'number', begin: '\\b\\d+(\\.\\d+)?(e-?\\d+)?', relevance: 0 },
+        a = t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
         i = {
           className: 'function',
           beginKeywords: 'module function',
@@ -30467,9 +30467,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               className: 'params',
               begin: '\\(',
               end: '\\)',
-              contains: ['self', t, a, e, { className: 'literal', begin: 'false|true|PI|undef' }]
+              contains: ['self', n, a, e, { className: 'literal', begin: 'false|true|PI|undef' }]
             },
-            n.UNDERSCORE_TITLE_MODE
+            t.UNDERSCORE_TITLE_MODE
           ]
         };
       return {
@@ -30482,9 +30482,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'circle square polygon text sphere cube cylinder polyhedron translate rotate scale resize mirror multmatrix color offset hull minkowski union difference intersection abs sign sin cos tan acos asin atan atan2 floor round ceil ln log pow sqrt exp rands min max concat lookup str chr search version version_num norm cross parent_module echo import import_dxf dxf_linear_extrude linear_extrude rotate_extrude surface projection render children dxf_cross dxf_dim let assign'
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          t,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          n,
           { className: 'meta', keywords: { keyword: 'include use' }, begin: 'include|use <', end: '>' },
           a,
           e,
@@ -30493,14 +30493,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    jl = function(n) {
+    ql = function(t) {
       const e = {
           $pattern: /\.?\w+/,
           keyword:
             'abstract add and array as asc aspect assembly async begin break block by case class concat const copy constructor continue create default delegate desc distinct div do downto dynamic each else empty end ensure enum equals event except exit extension external false final finalize finalizer finally flags for forward from function future global group has if implementation implements implies in index inherited inline interface into invariants is iterator join locked locking loop matching method mod module namespace nested new nil not notify nullable of old on operator or order out override parallel params partial pinned private procedure property protected public queryable raise read readonly record reintroduce remove repeat require result reverse sealed select self sequence set shl shr skip static step soft take then to true try tuple type union unit unsafe until uses using var virtual raises volatile where while with write xor yield await mapped deprecated stdcall cdecl pascal register safecall overload library platform reference packed strict published autoreleasepool selector strong weak unretained'
         },
-        t = n.COMMENT(/\{/, /\}/, { relevance: 0 }),
-        a = n.COMMENT('\\(\\*', '\\*\\)', { relevance: 10 }),
+        n = t.COMMENT(/\{/, /\}/, { relevance: 0 }),
+        a = t.COMMENT('\\(\\*', '\\*\\)', { relevance: 10 }),
         i = { className: 'string', begin: "'", end: "'", contains: [{ begin: "''" }] },
         r = { className: 'string', begin: '(#\\d+)+' },
         s = {
@@ -30508,9 +30508,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           end: '[:;]',
           keywords: 'function constructor|10 destructor|10 procedure|10 method|10',
           contains: [
-            n.inherit(n.TITLE_MODE, { scope: 'title.function' }),
+            t.inherit(t.TITLE_MODE, { scope: 'title.function' }),
             { className: 'params', begin: '\\(', end: '\\)', keywords: e, contains: [i, r] },
-            t,
+            n,
             a
           ]
         };
@@ -30520,36 +30520,36 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         keywords: e,
         illegal: '("|\\$[G-Zg-z]|\\/\\*|</|=>|->)',
         contains: [
-          t,
+          n,
           a,
-          n.C_LINE_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
           i,
           r,
-          n.NUMBER_MODE,
+          t.NUMBER_MODE,
           s,
           { scope: 'punctuation', match: /;/, relevance: 0 }
         ]
       };
     },
-    ql = function(n) {
-      const e = n.COMMENT(/\{/, /\}/, { contains: ['self'] });
+    Wl = function(t) {
+      const e = t.COMMENT(/\{/, /\}/, { contains: ['self'] });
       return {
         name: 'Parser3',
         subLanguage: 'xml',
         relevance: 0,
         contains: [
-          n.COMMENT('^#', '$'),
-          n.COMMENT(/\^rem\{/, /\}/, { relevance: 10, contains: [e] }),
+          t.COMMENT('^#', '$'),
+          t.COMMENT(/\^rem\{/, /\}/, { relevance: 10, contains: [e] }),
           { className: 'meta', begin: '^@(?:BASE|USE|CLASS|OPTIONS)$', relevance: 10 },
           { className: 'title', begin: '@[\\w\\-]+\\[[\\w^;\\-]*\\](?:\\[[\\w^;\\-]*\\])?(?:.*)$' },
           { className: 'variable', begin: /\$\{?[\w\-.:]+\}?/ },
           { className: 'keyword', begin: /\^[\w\-.:]+/ },
           { className: 'number', begin: '\\^#[0-9a-fA-F]+' },
-          n.C_NUMBER_MODE
+          t.C_NUMBER_MODE
         ]
       };
     },
-    Wl = function(n) {
+    Ql = function(t) {
       return {
         name: 'Packet Filter config',
         aliases: ['pf.conf'],
@@ -30561,17 +30561,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: 'all any no-route self urpf-failed egress|5 unknown'
         },
         contains: [
-          n.HASH_COMMENT_MODE,
-          n.NUMBER_MODE,
-          n.QUOTE_STRING_MODE,
+          t.HASH_COMMENT_MODE,
+          t.NUMBER_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'variable', begin: /\$[\w\d#@][\w\d_]*/, relevance: 0 },
           { className: 'variable', begin: /<(?!\/)/, end: />/ }
         ]
       };
     },
-    Ql = function(n) {
-      const e = n.COMMENT('--', '$'),
-        t = '\\$([a-zA-Z_]?|[a-zA-Z_][a-zA-Z_0-9]*)\\$',
+    Kl = function(t) {
+      const e = t.COMMENT('--', '$'),
+        n = '\\$([a-zA-Z_]?|[a-zA-Z_][a-zA-Z_0-9]*)\\$',
         a =
           'BIGINT INT8 BIGSERIAL SERIAL8 BIT VARYING VARBIT BOOLEAN BOOL BOX BYTEA CHARACTER CHAR VARCHAR CIDR CIRCLE DATE DOUBLE PRECISION FLOAT8 FLOAT INET INTEGER INT INT4 INTERVAL JSON JSONB LINE LSEG|10 MACADDR MACADDR8 MONEY NUMERIC DEC DECIMAL PATH POINT POLYGON REAL FLOAT4 SMALLINT INT2 SMALLSERIAL|10 SERIAL2|10 SERIAL|10 SERIAL4|10 TEXT TIME ZONE TIMETZ|10 TIMESTAMP TIMESTAMPTZ|10 TSQUERY|10 TSVECTOR|10 TXID_SNAPSHOT|10 UUID XML NATIONAL NCHAR INT4RANGE|10 INT8RANGE|10 NUMRANGE|10 TSRANGE|10 TSTZRANGE|10 DATERANGE|10 ANYELEMENT ANYARRAY ANYNONARRAY ANYENUM ANYRANGE CSTRING INTERNAL RECORD PG_DDL_COMMAND VOID UNKNOWN OPAQUE REFCURSOR NAME OID REGPROC|10 REGPROCEDURE|10 REGOPER|10 REGOPERATOR|10 REGCLASS|10 REGTYPE|10 REGROLE|10 REGNAMESPACE|10 REGCONFIG|10 REGDICTIONARY|10 ',
         i = a
@@ -30670,7 +30670,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { begin: /\b(XMLPARSE|XMLSERIALIZE)\s*\(\s*(DOCUMENT|CONTENT)/, keywords: { keyword: 'DOCUMENT CONTENT' } },
           {
             beginKeywords: 'CACHE INCREMENT MAXVALUE MINVALUE',
-            end: n.C_NUMBER_RE,
+            end: t.C_NUMBER_RE,
             returnEnd: !0,
             keywords: 'BY CACHE INCREMENT MAXVALUE MINVALUE'
           },
@@ -30692,9 +30692,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'type', begin: '\\b(' + i + ')\\b' },
           { className: 'string', begin: "'", end: "'", contains: [{ begin: "''" }] },
           { className: 'string', begin: "(e|E|u&|U&)'", end: "'", contains: [{ begin: '\\\\.' }], relevance: 10 },
-          n.END_SAME_AS_BEGIN({
-            begin: t,
-            end: t,
+          t.END_SAME_AS_BEGIN({
+            begin: n,
+            end: n,
             contains: [
               {
                 subLanguage: [
@@ -30717,8 +30717,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ]
           }),
           { begin: '"', end: '"', contains: [{ begin: '""' }] },
-          n.C_NUMBER_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_NUMBER_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           e,
           {
             className: 'meta',
@@ -30728,25 +30728,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Kl = function(n) {
-      const e = n.regex,
-        t = /(?![A-Za-z0-9])(?![$])/,
-        a = e.concat(/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/, t),
-        i = e.concat(/(\\?[A-Z][a-z0-9_\x7f-\xff]+|\\?[A-Z]+(?=[A-Z][a-z0-9_\x7f-\xff])){1,}/, t),
+    Xl = function(t) {
+      const e = t.regex,
+        n = /(?![A-Za-z0-9])(?![$])/,
+        a = e.concat(/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/, n),
+        i = e.concat(/(\\?[A-Z][a-z0-9_\x7f-\xff]+|\\?[A-Z]+(?=[A-Z][a-z0-9_\x7f-\xff])){1,}/, n),
         r = { scope: 'variable', match: '\\$+' + a },
         s = { scope: 'subst', variants: [{ begin: /\$\w+/ }, { begin: /\{\$/, end: /\}/ }] },
-        o = n.inherit(n.APOS_STRING_MODE, { illegal: null }),
+        o = t.inherit(t.APOS_STRING_MODE, { illegal: null }),
         l = `[ 	
 ]`,
         c = {
           scope: 'string',
           variants: [
-            n.inherit(n.QUOTE_STRING_MODE, { illegal: null, contains: n.QUOTE_STRING_MODE.contains.concat(s) }),
+            t.inherit(t.QUOTE_STRING_MODE, { illegal: null, contains: t.QUOTE_STRING_MODE.contains.concat(s) }),
             o,
-            n.END_SAME_AS_BEGIN({
+            t.END_SAME_AS_BEGIN({
               begin: /<<<[ \t]*(\w+)\n/,
               end: /[ \t]*(\w+)\b/,
-              contains: n.QUOTE_STRING_MODE.contains.concat(s)
+              contains: t.QUOTE_STRING_MODE.contains.concat(s)
             })
           ]
         },
@@ -30979,8 +30979,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         S = { scope: 'attr', match: e.concat(a, e.lookahead(':'), e.lookahead(/(?!::)/)) },
-        v = { relevance: 0, begin: /\(/, end: /\)/, keywords: p, contains: [S, r, T, n.C_BLOCK_COMMENT_MODE, c, _, E] },
-        R = {
+        v = { relevance: 0, begin: /\(/, end: /\)/, keywords: p, contains: [S, r, T, t.C_BLOCK_COMMENT_MODE, c, _, E] },
+        C = {
           relevance: 0,
           match: [
             /\b/,
@@ -30992,8 +30992,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           scope: { 3: 'title.function.invoke' },
           contains: [v]
         };
-      v.contains.push(R);
-      const C = [S, T, n.C_BLOCK_COMMENT_MODE, c, _, E];
+      v.contains.push(C);
+      const R = [S, T, t.C_BLOCK_COMMENT_MODE, c, _, E];
       return {
         case_insensitive: !1,
         keywords: p,
@@ -31005,20 +31005,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             endScope: 'meta',
             keywords: { literal: d, keyword: ['new', 'array'] },
             contains: [
-              { begin: /\[/, end: /]/, keywords: { literal: d, keyword: ['new', 'array'] }, contains: ['self', ...C] },
-              ...C,
+              { begin: /\[/, end: /]/, keywords: { literal: d, keyword: ['new', 'array'] }, contains: ['self', ...R] },
+              ...R,
               { scope: 'meta', match: i }
             ]
           },
-          n.HASH_COMMENT_MODE,
-          n.COMMENT('//', '$'),
-          n.COMMENT('/\\*', '\\*/', { contains: [{ scope: 'doctag', match: '@[A-Za-z]+' }] }),
+          t.HASH_COMMENT_MODE,
+          t.COMMENT('//', '$'),
+          t.COMMENT('/\\*', '\\*/', { contains: [{ scope: 'doctag', match: '@[A-Za-z]+' }] }),
           {
             match: /__halt_compiler\(\);/,
             keywords: '__halt_compiler',
             starts: {
               scope: 'comment',
-              end: n.MATCH_NOTHING_RE,
+              end: t.MATCH_NOTHING_RE,
               contains: [{ match: /\?>/, scope: 'meta', endsParent: !0 }]
             }
           },
@@ -31033,7 +31033,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           { scope: 'variable.language', match: /\$this\b/ },
           r,
-          R,
+          C,
           T,
           { match: [/const/, /\s/, a], scope: { 1: 'keyword', 3: 'variable.constant' } },
           E,
@@ -31046,7 +31046,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             illegal: '[$%\\[]',
             contains: [
               { beginKeywords: 'use' },
-              n.UNDERSCORE_TITLE_MODE,
+              t.UNDERSCORE_TITLE_MODE,
               { begin: '=>', endsParent: !0 },
               {
                 scope: 'params',
@@ -31055,7 +31055,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 excludeBegin: !0,
                 excludeEnd: !0,
                 keywords: p,
-                contains: ['self', r, T, n.C_BLOCK_COMMENT_MODE, c, _]
+                contains: ['self', r, T, t.C_BLOCK_COMMENT_MODE, c, _]
               }
             ]
           },
@@ -31068,27 +31068,27 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0,
             end: /\{/,
             excludeEnd: !0,
-            contains: [{ beginKeywords: 'extends implements' }, n.UNDERSCORE_TITLE_MODE]
+            contains: [{ beginKeywords: 'extends implements' }, t.UNDERSCORE_TITLE_MODE]
           },
           {
             beginKeywords: 'namespace',
             relevance: 0,
             end: ';',
             illegal: /[.']/,
-            contains: [n.inherit(n.UNDERSCORE_TITLE_MODE, { scope: 'title.class' })]
+            contains: [t.inherit(t.UNDERSCORE_TITLE_MODE, { scope: 'title.class' })]
           },
           {
             beginKeywords: 'use',
             relevance: 0,
             end: ';',
-            contains: [{ match: /\b(as|const|function)\b/, scope: 'keyword' }, n.UNDERSCORE_TITLE_MODE]
+            contains: [{ match: /\b(as|const|function)\b/, scope: 'keyword' }, t.UNDERSCORE_TITLE_MODE]
           },
           c,
           _
         ]
       };
     },
-    Xl = function(n) {
+    Zl = function(t) {
       return {
         name: 'PHP template',
         subLanguage: 'xml',
@@ -31101,17 +31101,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               { begin: '/\\*', end: '\\*/', skip: !0 },
               { begin: 'b"', end: '"', skip: !0 },
               { begin: "b'", end: "'", skip: !0 },
-              n.inherit(n.APOS_STRING_MODE, { illegal: null, className: null, contains: null, skip: !0 }),
-              n.inherit(n.QUOTE_STRING_MODE, { illegal: null, className: null, contains: null, skip: !0 })
+              t.inherit(t.APOS_STRING_MODE, { illegal: null, className: null, contains: null, skip: !0 }),
+              t.inherit(t.QUOTE_STRING_MODE, { illegal: null, className: null, contains: null, skip: !0 })
             ]
           }
         ]
       };
     },
-    Zl = function(n) {
+    Jl = function(t) {
       return { name: 'Plain text', aliases: ['text', 'txt'], disableAutodetect: !0 };
     },
-    Jl = function(n) {
+    ec = function(t) {
       return {
         name: 'Pony',
         keywords: {
@@ -31123,20 +31123,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         contains: [
           { className: 'type', begin: '\\b_?[A-Z][\\w]*', relevance: 0 },
           { className: 'string', begin: '"""', end: '"""', relevance: 10 },
-          { className: 'string', begin: '"', end: '"', contains: [n.BACKSLASH_ESCAPE] },
-          { className: 'string', begin: "'", end: "'", contains: [n.BACKSLASH_ESCAPE], relevance: 0 },
-          { begin: n.IDENT_RE + "'", relevance: 0 },
+          { className: 'string', begin: '"', end: '"', contains: [t.BACKSLASH_ESCAPE] },
+          { className: 'string', begin: "'", end: "'", contains: [t.BACKSLASH_ESCAPE], relevance: 0 },
+          { begin: t.IDENT_RE + "'", relevance: 0 },
           {
             className: 'number',
             begin: '(-?)(\\b0[xX][a-fA-F0-9]+|\\b0[bB][01]+|(\\b\\d+(_\\d+)?(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)',
             relevance: 0
           },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE
         ]
       };
     },
-    ec = function(n) {
+    tc = function(t) {
       const e = {
           $pattern: /-?[A-z\.\-]+\b/,
           keyword:
@@ -31144,7 +31144,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           built_in:
             'ac asnp cat cd CFS chdir clc clear clhy cli clp cls clv cnsn compare copy cp cpi cpp curl cvpa dbp del diff dir dnsn ebp echo|0 epal epcsv epsn erase etsn exsn fc fhx fl ft fw gal gbp gc gcb gci gcm gcs gdr gerr ghy gi gin gjb gl gm gmo gp gps gpv group gsn gsnp gsv gtz gu gv gwmi h history icm iex ihy ii ipal ipcsv ipmo ipsn irm ise iwmi iwr kill lp ls man md measure mi mount move mp mv nal ndr ni nmo npssc nsn nv ogv oh popd ps pushd pwd r rbp rcjb rcsn rd rdr ren ri rjb rm rmdir rmo rni rnp rp rsn rsnp rujb rv rvpa rwmi sajb sal saps sasv sbp sc scb select set shcm si sl sleep sls sort sp spjb spps spsv start stz sujb sv swmi tee trcm type wget where wjb write'
         },
-        t = { begin: '`[\\s\\S]', relevance: 0 },
+        n = { begin: '`[\\s\\S]', relevance: 0 },
         a = {
           className: 'variable',
           variants: [{ begin: /\$\B/ }, { className: 'keyword', begin: /\$this/ }, { begin: /\$[\w\d][\w\d_:]*/ }]
@@ -31152,10 +31152,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         i = {
           className: 'string',
           variants: [{ begin: /"/, end: /"/ }, { begin: /@"/, end: /^"@/ }],
-          contains: [t, a, { className: 'variable', begin: /\$[A-z]/, end: /[^A-z]/ }]
+          contains: [n, a, { className: 'variable', begin: /\$[A-z]/, end: /[^A-z]/ }]
         },
         r = { className: 'string', variants: [{ begin: /'/, end: /'/ }, { begin: /@'/, end: /^'@/ }] },
-        s = n.inherit(n.COMMENT(null, null), {
+        s = t.inherit(t.COMMENT(null, null), {
           variants: [{ begin: /#/, end: /$/ }, { begin: /<#/, end: /#>/ }],
           contains: [
             {
@@ -31186,7 +31186,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           end: /\s*[{]/,
           excludeEnd: !0,
           relevance: 0,
-          contains: [n.TITLE_MODE]
+          contains: [t.TITLE_MODE]
         },
         c = {
           className: 'function',
@@ -31232,14 +31232,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               endsParent: !0,
               relevance: 0
             },
-            n.inherit(n.TITLE_MODE, { endsParent: !0 })
+            t.inherit(t.TITLE_MODE, { endsParent: !0 })
           ]
         },
         m = [
           u,
           s,
-          t,
-          n.NUMBER_MODE,
+          n,
+          t.NUMBER_MODE,
           i,
           r,
           o,
@@ -31293,9 +31293,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    tc = function(n) {
-      const e = n.regex,
-        t = [
+    nc = function(t) {
+      const e = t.regex,
+        n = [
           'displayHeight',
           'displayWidth',
           'mouseY',
@@ -31558,10 +31558,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'randomGaussian',
           'randomSeed'
         ],
-        a = n.IDENT_RE,
+        a = t.IDENT_RE,
         i = {
           variants: [
-            { match: e.concat(e.either(...t), e.lookahead(/\s*\(/)), className: 'built_in' },
+            { match: e.concat(e.either(...n), e.lookahead(/\s*\(/)), className: 'built_in' },
             {
               relevance: 0,
               match: e.concat(/\b(?!for|if|while)/, a, e.lookahead(/\s*\(/)),
@@ -31623,7 +31623,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           title: 'setup draw',
           variable: 'super this',
           built_in: [
-            ...t,
+            ...n,
             'BufferedReader',
             'PVector',
             'PFont',
@@ -31653,19 +31653,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           r,
           i,
           s,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE
         ]
       };
     },
-    nc = function(n) {
+    ac = function(t) {
       return {
         name: 'Python profiler',
         contains: [
-          n.C_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           { begin: '[a-zA-Z_][\\da-zA-Z_]+\\.[\\da-zA-Z_]{1,3}', end: ':', excludeEnd: !0 },
           {
             begin: '(ncalls|tottime|cumtime)',
@@ -31673,18 +31673,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             keywords: 'ncalls tottime|10 cumtime|10 filename',
             relevance: 10
           },
-          { begin: 'function calls', end: '$', contains: [n.C_NUMBER_MODE], relevance: 10 },
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
+          { begin: 'function calls', end: '$', contains: [t.C_NUMBER_MODE], relevance: 10 },
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           { className: 'string', begin: '\\(', end: '\\)$', excludeBegin: !0, excludeEnd: !0, relevance: 0 }
         ]
       };
     },
-    ac = function(n) {
+    ic = function(t) {
       const e = { begin: /\(/, end: /\)/, relevance: 0 },
-        t = { begin: /\[/, end: /\]/ },
-        a = { className: 'comment', begin: /%/, end: /$/, contains: [n.PHRASAL_WORDS_MODE] },
-        i = { className: 'string', begin: /`/, end: /`/, contains: [n.BACKSLASH_ESCAPE] },
+        n = { begin: /\[/, end: /\]/ },
+        a = { className: 'comment', begin: /%/, end: /$/, contains: [t.PHRASAL_WORDS_MODE] },
+        i = { className: 'string', begin: /`/, end: /`/, contains: [t.BACKSLASH_ESCAPE] },
         r = [
           { begin: /[a-z][A-Za-z0-9_]*/, relevance: 0 },
           {
@@ -31694,25 +31694,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           e,
           { begin: /:-/ },
-          t,
+          n,
           a,
-          n.C_BLOCK_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
-          n.APOS_STRING_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
           i,
           { className: 'string', begin: /0'(\\'|.)/ },
           { className: 'string', begin: /0'\\s/ },
-          n.C_NUMBER_MODE
+          t.C_NUMBER_MODE
         ];
-      return (e.contains = r), (t.contains = r), { name: 'Prolog', contains: r.concat([{ begin: /\.$/ }]) };
+      return (e.contains = r), (n.contains = r), { name: 'Prolog', contains: r.concat([{ begin: /\.$/ }]) };
     },
-    ic = function(n) {
+    rc = function(t) {
       const e = '[ \\t\\f]*',
-        t = e + '[:=]' + e,
+        n = e + '[:=]' + e,
         a = '[ \\t\\f]+',
         i = '([^\\\\:= \\t\\f\\n]|\\\\.)+',
         r = {
-          end: '(' + t + '|' + a + ')',
+          end: '(' + n + '|' + a + ')',
           relevance: 0,
           starts: {
             className: 'string',
@@ -31727,10 +31727,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0,
         illegal: /\S/,
         contains: [
-          n.COMMENT('^\\s*[!#]', '$'),
+          t.COMMENT('^\\s*[!#]', '$'),
           {
             returnBegin: !0,
-            variants: [{ begin: i + t }, { begin: i + a }],
+            variants: [{ begin: i + n }, { begin: i + a }],
             contains: [{ className: 'attr', begin: i, endsParent: !0 }],
             starts: r
           },
@@ -31738,8 +31738,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    rc = function(n) {
-      const e = { match: [/(message|enum|service)\s+/, n.IDENT_RE], scope: { 1: 'keyword', 2: 'title.class' } };
+    sc = function(t) {
+      const e = { match: [/(message|enum|service)\s+/, t.IDENT_RE], scope: { 1: 'keyword', 2: 'title.class' } };
       return {
         name: 'Protocol Buffers',
         keywords: {
@@ -31764,24 +31764,24 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: ['true', 'false']
         },
         contains: [
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           e,
           { className: 'function', beginKeywords: 'rpc', end: /[{;]/, excludeEnd: !0, keywords: 'rpc returns' },
           { begin: /^\s*[A-Z_]+(?=\s*=[^\n]+;$)/ }
         ]
       };
     },
-    sc = function(n) {
-      const e = n.COMMENT('#', '$'),
-        t = '([A-Za-z_]|::)(\\w|::)*',
-        a = n.inherit(n.TITLE_MODE, { begin: t }),
-        i = { className: 'variable', begin: '\\$' + t },
+    oc = function(t) {
+      const e = t.COMMENT('#', '$'),
+        n = '([A-Za-z_]|::)(\\w|::)*',
+        a = t.inherit(t.TITLE_MODE, { begin: n }),
+        i = { className: 'variable', begin: '\\$' + n },
         r = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE, i],
+          contains: [t.BACKSLASH_ESCAPE, i],
           variants: [{ begin: /'/, end: /'/ }, { begin: /"/, end: /"/ }]
         };
       return {
@@ -31795,14 +31795,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           {
             beginKeywords: 'define',
             end: /\{/,
-            contains: [{ className: 'section', begin: n.IDENT_RE, endsParent: !0 }]
+            contains: [{ className: 'section', begin: t.IDENT_RE, endsParent: !0 }]
           },
           {
-            begin: n.IDENT_RE + '\\s+\\{',
+            begin: t.IDENT_RE + '\\s+\\{',
             returnBegin: !0,
             end: /\S/,
             contains: [
-              { className: 'keyword', begin: n.IDENT_RE, relevance: 0.2 },
+              { className: 'keyword', begin: t.IDENT_RE, relevance: 0.2 },
               {
                 begin: /\{/,
                 end: /\}/,
@@ -31822,7 +31822,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                     begin: '[a-zA-Z_]+\\s*=>',
                     returnBegin: !0,
                     end: '=>',
-                    contains: [{ className: 'attr', begin: n.IDENT_RE }]
+                    contains: [{ className: 'attr', begin: t.IDENT_RE }]
                   },
                   {
                     className: 'number',
@@ -31838,14 +31838,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    oc = function(n) {
+    lc = function(t) {
       return {
         name: 'PureBASIC',
         aliases: ['pb', 'pbi'],
         keywords:
           'Align And Array As Break CallDebugger Case CompilerCase CompilerDefault CompilerElse CompilerElseIf CompilerEndIf CompilerEndSelect CompilerError CompilerIf CompilerSelect CompilerWarning Continue Data DataSection Debug DebugLevel Declare DeclareC DeclareCDLL DeclareDLL DeclareModule Default Define Dim DisableASM DisableDebugger DisableExplicit Else ElseIf EnableASM EnableDebugger EnableExplicit End EndDataSection EndDeclareModule EndEnumeration EndIf EndImport EndInterface EndMacro EndModule EndProcedure EndSelect EndStructure EndStructureUnion EndWith Enumeration EnumerationBinary Extends FakeReturn For ForEach ForEver Global Gosub Goto If Import ImportC IncludeBinary IncludeFile IncludePath Interface List Macro MacroExpandedCount Map Module NewList NewMap Next Not Or Procedure ProcedureC ProcedureCDLL ProcedureDLL ProcedureReturn Protected Prototype PrototypeC ReDim Read Repeat Restore Return Runtime Select Shared Static Step Structure StructureUnion Swap Threaded To UndefineMacro Until Until  UnuseModule UseModule Wend While With XIncludeFile XOr',
         contains: [
-          n.COMMENT(';', '$', { relevance: 0 }),
+          t.COMMENT(';', '$', { relevance: 0 }),
           {
             className: 'function',
             begin: '\\b(Procedure|Declare)(C|CDLL|DLL)?\\b',
@@ -31855,7 +31855,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             contains: [
               { className: 'keyword', begin: '(Procedure|Declare)(C|CDLL|DLL)?', excludeEnd: !0 },
               { className: 'type', begin: '\\.\\w*' },
-              n.UNDERSCORE_TITLE_MODE
+              t.UNDERSCORE_TITLE_MODE
             ]
           },
           { className: 'string', begin: '(~)?"', end: '"', illegal: '\\n' },
@@ -31863,9 +31863,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    lc = function(n) {
-      const e = n.regex,
-        t = /[\p{XID_Start}_]\p{XID_Continue}*/u,
+    cc = function(t) {
+      const e = t.regex,
+        n = /[\p{XID_Start}_]\p{XID_Continue}*/u,
         a = [
           'and',
           'as',
@@ -31998,30 +31998,30 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         o = { begin: /\{\{/, relevance: 0 },
         l = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE],
+          contains: [t.BACKSLASH_ESCAPE],
           variants: [
             {
               begin: /([uU]|[bB]|[rR]|[bB][rR]|[rR][bB])?'''/,
               end: /'''/,
-              contains: [n.BACKSLASH_ESCAPE, r],
+              contains: [t.BACKSLASH_ESCAPE, r],
               relevance: 10
             },
             {
               begin: /([uU]|[bB]|[rR]|[bB][rR]|[rR][bB])?"""/,
               end: /"""/,
-              contains: [n.BACKSLASH_ESCAPE, r],
+              contains: [t.BACKSLASH_ESCAPE, r],
               relevance: 10
             },
-            { begin: /([fF][rR]|[rR][fF]|[fF])'''/, end: /'''/, contains: [n.BACKSLASH_ESCAPE, r, o, s] },
-            { begin: /([fF][rR]|[rR][fF]|[fF])"""/, end: /"""/, contains: [n.BACKSLASH_ESCAPE, r, o, s] },
+            { begin: /([fF][rR]|[rR][fF]|[fF])'''/, end: /'''/, contains: [t.BACKSLASH_ESCAPE, r, o, s] },
+            { begin: /([fF][rR]|[rR][fF]|[fF])"""/, end: /"""/, contains: [t.BACKSLASH_ESCAPE, r, o, s] },
             { begin: /([uU]|[rR])'/, end: /'/, relevance: 10 },
             { begin: /([uU]|[rR])"/, end: /"/, relevance: 10 },
             { begin: /([bB]|[bB][rR]|[rR][bB])'/, end: /'/ },
             { begin: /([bB]|[bB][rR]|[rR][bB])"/, end: /"/ },
-            { begin: /([fF][rR]|[rR][fF]|[fF])'/, end: /'/, contains: [n.BACKSLASH_ESCAPE, o, s] },
-            { begin: /([fF][rR]|[rR][fF]|[fF])"/, end: /"/, contains: [n.BACKSLASH_ESCAPE, o, s] },
-            n.APOS_STRING_MODE,
-            n.QUOTE_STRING_MODE
+            { begin: /([fF][rR]|[rR][fF]|[fF])'/, end: /'/, contains: [t.BACKSLASH_ESCAPE, o, s] },
+            { begin: /([fF][rR]|[rR][fF]|[fF])"/, end: /"/, contains: [t.BACKSLASH_ESCAPE, o, s] },
+            t.APOS_STRING_MODE,
+            t.QUOTE_STRING_MODE
           ]
         },
         c = '[0-9](_?[0-9])*',
@@ -32057,7 +32057,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               excludeBegin: !0,
               excludeEnd: !0,
               keywords: i,
-              contains: ['self', r, u, l, n.HASH_COMMENT_MODE]
+              contains: ['self', r, u, l, t.HASH_COMMENT_MODE]
             }
           ]
         };
@@ -32076,12 +32076,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { beginKeywords: 'if', relevance: 0 },
             l,
             m,
-            n.HASH_COMMENT_MODE,
-            { match: [/\bdef/, /\s+/, t], scope: { 1: 'keyword', 3: 'title.function' }, contains: [p] },
+            t.HASH_COMMENT_MODE,
+            { match: [/\bdef/, /\s+/, n], scope: { 1: 'keyword', 3: 'title.function' }, contains: [p] },
             {
               variants: [
-                { match: [/\bclass/, /\s+/, t, /\s*/, /\(\s*/, t, /\s*\)/] },
-                { match: [/\bclass/, /\s+/, t] }
+                { match: [/\bclass/, /\s+/, n, /\s*/, /\(\s*/, n, /\s*\)/] },
+                { match: [/\bclass/, /\s+/, n] }
               ],
               scope: { 1: 'keyword', 3: 'title.class', 6: 'title.class.inherited' }
             },
@@ -32090,7 +32090,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    cc = function(n) {
+    dc = function(t) {
       return {
         aliases: ['pycon'],
         contains: [
@@ -32102,7 +32102,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    dc = function(n) {
+    _c = function(t) {
       return {
         name: 'Q',
         aliases: ['k', 'kdb'],
@@ -32115,12 +32115,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           type:
             '`float `double int `timestamp `timespan `datetime `time `boolean `symbol `char `byte `short `long `real `month `date `minute `second `guid'
         },
-        contains: [n.C_LINE_COMMENT_MODE, n.QUOTE_STRING_MODE, n.C_NUMBER_MODE]
+        contains: [t.C_LINE_COMMENT_MODE, t.QUOTE_STRING_MODE, t.C_NUMBER_MODE]
       };
     },
-    _c = function(n) {
+    uc = function(t) {
       const e = '[a-zA-Z_][a-zA-Z0-9\\._]*',
-        t = { className: 'attribute', begin: '\\bid\\s*:', starts: { className: 'string', end: e, returnEnd: !1 } },
+        n = { className: 'attribute', begin: '\\bid\\s*:', starts: { className: 'string', end: e, returnEnd: !1 } },
         a = {
           begin: e + '\\s*:',
           returnBegin: !0,
@@ -32128,11 +32128,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           relevance: 0
         },
         i = {
-          begin: n.regex.concat(e, /\s*\{/),
+          begin: t.regex.concat(e, /\s*\{/),
           end: /\{/,
           returnBegin: !0,
           relevance: 0,
-          contains: [n.inherit(n.TITLE_MODE, { begin: e })]
+          contains: [t.inherit(t.TITLE_MODE, { begin: e })]
         };
       return {
         name: 'QML',
@@ -32147,28 +32147,28 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         contains: [
           { className: 'meta', begin: /^\s*['"]use (strict|asm)['"]/ },
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           {
             className: 'string',
             begin: '`',
             end: '`',
-            contains: [n.BACKSLASH_ESCAPE, { className: 'subst', begin: '\\$\\{', end: '\\}' }]
+            contains: [t.BACKSLASH_ESCAPE, { className: 'subst', begin: '\\$\\{', end: '\\}' }]
           },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           {
             className: 'number',
-            variants: [{ begin: '\\b(0[bB][01]+)' }, { begin: '\\b(0[oO][0-7]+)' }, { begin: n.C_NUMBER_RE }],
+            variants: [{ begin: '\\b(0[bB][01]+)' }, { begin: '\\b(0[oO][0-7]+)' }, { begin: t.C_NUMBER_RE }],
             relevance: 0
           },
           {
-            begin: '(' + n.RE_STARTERS_RE + '|\\b(case|return|throw)\\b)\\s*',
+            begin: '(' + t.RE_STARTERS_RE + '|\\b(case|return|throw)\\b)\\s*',
             keywords: 'return throw case',
             contains: [
-              n.C_LINE_COMMENT_MODE,
-              n.C_BLOCK_COMMENT_MODE,
-              n.REGEXP_MODE,
+              t.C_LINE_COMMENT_MODE,
+              t.C_BLOCK_COMMENT_MODE,
+              t.REGEXP_MODE,
               { begin: /</, end: />\s*[);\]]/, relevance: 0, subLanguage: 'xml' }
             ],
             relevance: 0
@@ -32189,29 +32189,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: /\{/,
             excludeEnd: !0,
             contains: [
-              n.inherit(n.TITLE_MODE, { begin: /[A-Za-z$_][0-9A-Za-z$_]*/ }),
+              t.inherit(t.TITLE_MODE, { begin: /[A-Za-z$_][0-9A-Za-z$_]*/ }),
               {
                 className: 'params',
                 begin: /\(/,
                 end: /\)/,
                 excludeBegin: !0,
                 excludeEnd: !0,
-                contains: [n.C_LINE_COMMENT_MODE, n.C_BLOCK_COMMENT_MODE]
+                contains: [t.C_LINE_COMMENT_MODE, t.C_BLOCK_COMMENT_MODE]
               }
             ],
             illegal: /\[|%/
           },
-          { begin: '\\.' + n.IDENT_RE, relevance: 0 },
-          t,
+          { begin: '\\.' + t.IDENT_RE, relevance: 0 },
+          n,
           a,
           i
         ],
         illegal: /#/
       };
     },
-    uc = function(n) {
-      const e = n.regex,
-        t = /(?:(?:[a-zA-Z]|\.[._a-zA-Z])[._a-zA-Z0-9]*)|\.(?!\d)/,
+    pc = function(t) {
+      const e = t.regex,
+        n = /(?:(?:[a-zA-Z]|\.[._a-zA-Z])[._a-zA-Z0-9]*)|\.(?!\d)/,
         a = e.either(
           /0[xX][0-9a-fA-F]+\.[0-9a-fA-F]*[pP][+-]?\d+i?/,
           /0[xX][0-9a-fA-F]+(?:[pP][+-]?\d+)?[Li]?/,
@@ -32222,14 +32222,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       return {
         name: 'R',
         keywords: {
-          $pattern: t,
+          $pattern: n,
           keyword: 'function if in break next repeat else for while',
           literal: 'NULL NA TRUE FALSE Inf NaN NA_integer_|10 NA_real_|10 NA_character_|10 NA_complex_|10',
           built_in:
             'LETTERS letters month.abb month.name pi T F abs acos acosh all any anyNA Arg as.call as.character as.complex as.double as.environment as.integer as.logical as.null.default as.numeric as.raw asin asinh atan atanh attr attributes baseenv browser c call ceiling class Conj cos cosh cospi cummax cummin cumprod cumsum digamma dim dimnames emptyenv exp expression floor forceAndCall gamma gc.time globalenv Im interactive invisible is.array is.atomic is.call is.character is.complex is.double is.environment is.expression is.finite is.function is.infinite is.integer is.language is.list is.logical is.matrix is.na is.name is.nan is.null is.numeric is.object is.pairlist is.raw is.recursive is.single is.symbol lazyLoadDBfetch length lgamma list log max min missing Mod names nargs nzchar oldClass on.exit pos.to.env proc.time prod quote range Re rep retracemem return round seq_along seq_len seq.int sign signif sin sinh sinpi sqrt standardGeneric substitute sum switch tan tanh tanpi tracemem trigamma trunc unclass untracemem UseMethod xtfrm'
         },
         contains: [
-          n.COMMENT(/#'/, /$/, {
+          t.COMMENT(/#'/, /$/, {
             contains: [
               {
                 scope: 'doctag',
@@ -32241,24 +32241,24 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 begin: '@param',
                 end: /$/,
                 contains: [
-                  { scope: 'variable', variants: [{ match: t }, { match: /`(?:\\.|[^`\\])+`/ }], endsParent: !0 }
+                  { scope: 'variable', variants: [{ match: n }, { match: /`(?:\\.|[^`\\])+`/ }], endsParent: !0 }
                 ]
               },
               { scope: 'doctag', match: /@[a-zA-Z]+/ },
               { scope: 'keyword', match: /\\[a-zA-Z]+/ }
             ]
           }),
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           {
             scope: 'string',
-            contains: [n.BACKSLASH_ESCAPE],
+            contains: [t.BACKSLASH_ESCAPE],
             variants: [
-              n.END_SAME_AS_BEGIN({ begin: /[rR]"(-*)\(/, end: /\)(-*)"/ }),
-              n.END_SAME_AS_BEGIN({ begin: /[rR]"(-*)\{/, end: /\}(-*)"/ }),
-              n.END_SAME_AS_BEGIN({ begin: /[rR]"(-*)\[/, end: /\](-*)"/ }),
-              n.END_SAME_AS_BEGIN({ begin: /[rR]'(-*)\(/, end: /\)(-*)'/ }),
-              n.END_SAME_AS_BEGIN({ begin: /[rR]'(-*)\{/, end: /\}(-*)'/ }),
-              n.END_SAME_AS_BEGIN({ begin: /[rR]'(-*)\[/, end: /\](-*)'/ }),
+              t.END_SAME_AS_BEGIN({ begin: /[rR]"(-*)\(/, end: /\)(-*)"/ }),
+              t.END_SAME_AS_BEGIN({ begin: /[rR]"(-*)\{/, end: /\}(-*)"/ }),
+              t.END_SAME_AS_BEGIN({ begin: /[rR]"(-*)\[/, end: /\](-*)"/ }),
+              t.END_SAME_AS_BEGIN({ begin: /[rR]'(-*)\(/, end: /\)(-*)'/ }),
+              t.END_SAME_AS_BEGIN({ begin: /[rR]'(-*)\{/, end: /\}(-*)'/ }),
+              t.END_SAME_AS_BEGIN({ begin: /[rR]'(-*)\[/, end: /\](-*)'/ }),
               { begin: '"', end: '"', relevance: 0 },
               { begin: "'", end: "'", relevance: 0 }
             ]
@@ -32272,16 +32272,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               { scope: { 2: 'number' }, match: [/[^a-zA-Z0-9._]|^/, a] }
             ]
           },
-          { scope: { 3: 'operator' }, match: [t, /\s+/, /<-/, /\s+/] },
+          { scope: { 3: 'operator' }, match: [n, /\s+/, /<-/, /\s+/] },
           { scope: 'operator', relevance: 0, variants: [{ match: i }, { match: /%[^%]*%/ }] },
           { scope: 'punctuation', relevance: 0, match: r },
           { begin: '`', end: '`', contains: [{ begin: /\\./ }] }
         ]
       };
     },
-    pc = function(n) {
+    mc = function(t) {
       const e = '~?[a-z$_][0-9a-zA-Z$_]*',
-        t = '`?[A-Z$_][0-9a-zA-Z$_]*',
+        n = '`?[A-Z$_][0-9a-zA-Z$_]*',
         a = "'?[a-z$_][0-9a-z$_]*",
         i = e + '(' + ('\\s*:\\s*[a-z$_][0-9a-z$_]*(\\(\\s*(' + a + '\\s*(,' + a + '\\s*)*)?\\))?') + '){0,2}',
         r =
@@ -32309,25 +32309,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         _ = { className: 'operator', relevance: 0, begin: r },
         d = [{ className: 'identifier', relevance: 0, begin: e }, _, c],
         u = [
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           _,
           {
             className: 'module',
-            begin: '\\b' + t,
+            begin: '\\b' + n,
             returnBegin: !0,
             relevance: 0,
             end: '.',
-            contains: [{ className: 'identifier', begin: t, relevance: 0 }]
+            contains: [{ className: 'identifier', begin: n, relevance: 0 }]
           }
         ],
         m = [
           {
             className: 'module',
-            begin: '\\b' + t,
+            begin: '\\b' + n,
             returnBegin: !0,
             end: '.',
             relevance: 0,
-            contains: [{ className: 'identifier', begin: t, relevance: 0 }]
+            contains: [{ className: 'identifier', begin: n, relevance: 0 }]
           }
         ],
         p = {
@@ -32371,11 +32371,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       u.push(p);
       const g = {
           className: 'constructor',
-          begin: t + '\\(',
+          begin: n + '\\(',
           end: '\\)',
           illegal: '\\n',
           keywords: o,
-          contains: [n.QUOTE_STRING_MODE, _, { className: 'params', begin: '\\b' + e }]
+          contains: [t.QUOTE_STRING_MODE, _, { className: 'params', begin: '\\b' + e }]
         },
         E = {
           className: 'pattern-match',
@@ -32384,21 +32384,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           keywords: o,
           end: '=>',
           relevance: 0,
-          contains: [g, _, { relevance: 0, className: 'constructor', begin: t }]
+          contains: [g, _, { relevance: 0, className: 'constructor', begin: n }]
         },
         h = {
           className: 'module-access',
           keywords: o,
           returnBegin: !0,
           variants: [
-            { begin: '\\b(' + t + '\\.)+' + e },
+            { begin: '\\b(' + n + '\\.)+' + e },
             {
-              begin: '\\b(' + t + '\\.)+\\(',
+              begin: '\\b(' + n + '\\.)+\\(',
               end: '\\)',
               returnBegin: !0,
               contains: [p, { begin: '\\(', end: '\\)', relevance: 0, skip: !0 }].concat(u)
             },
-            { begin: '\\b(' + t + '\\.)+\\{', end: /\}/ }
+            { begin: '\\b(' + n + '\\.)+\\{', end: /\}/ }
           ],
           contains: u
         };
@@ -32410,27 +32410,27 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           keywords: o,
           illegal: '(:-|:=|\\$\\{|\\+=)',
           contains: [
-            n.COMMENT('/\\*', '\\*/', { illegal: '^(#,\\/\\/)' }),
+            t.COMMENT('/\\*', '\\*/', { illegal: '^(#,\\/\\/)' }),
             { className: 'character', begin: "'(\\\\[^']+|[^'])'", illegal: '\\n', relevance: 0 },
-            n.QUOTE_STRING_MODE,
+            t.QUOTE_STRING_MODE,
             { className: 'literal', begin: '\\(\\)', relevance: 0 },
             { className: 'literal', begin: '\\[\\|', end: '\\|\\]', relevance: 0, contains: d },
             { className: 'literal', begin: '\\[', end: '\\]', relevance: 0, contains: d },
             g,
             { className: 'operator', begin: s, illegal: '-->', relevance: 0 },
             c,
-            n.C_LINE_COMMENT_MODE,
+            t.C_LINE_COMMENT_MODE,
             E,
             p,
             {
               className: 'module-def',
-              begin: '\\bmodule\\s+' + e + '\\s+' + t + '\\s+=\\s+\\{',
+              begin: '\\bmodule\\s+' + e + '\\s+' + n + '\\s+=\\s+\\{',
               end: /\}/,
               returnBegin: !0,
               keywords: o,
               relevance: 0,
               contains: [
-                { className: 'module', relevance: 0, begin: t },
+                { className: 'module', relevance: 0, begin: n },
                 { begin: /\{/, end: /\}/, relevance: 0, skip: !0 }
               ].concat(u)
             },
@@ -32439,18 +32439,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    mc = function(n) {
+    gc = function(t) {
       return {
         name: 'RenderMan RIB',
         keywords:
           'ArchiveRecord AreaLightSource Atmosphere Attribute AttributeBegin AttributeEnd Basis Begin Blobby Bound Clipping ClippingPlane Color ColorSamples ConcatTransform Cone CoordinateSystem CoordSysTransform CropWindow Curves Cylinder DepthOfField Detail DetailRange Disk Displacement Display End ErrorHandler Exposure Exterior Format FrameAspectRatio FrameBegin FrameEnd GeneralPolygon GeometricApproximation Geometry Hider Hyperboloid Identity Illuminate Imager Interior LightSource MakeCubeFaceEnvironment MakeLatLongEnvironment MakeShadow MakeTexture Matte MotionBegin MotionEnd NuPatch ObjectBegin ObjectEnd ObjectInstance Opacity Option Orientation Paraboloid Patch PatchMesh Perspective PixelFilter PixelSamples PixelVariance Points PointsGeneralPolygons PointsPolygons Polygon Procedural Projection Quantize ReadArchive RelativeDetail ReverseOrientation Rotate Scale ScreenWindow ShadingInterpolation ShadingRate Shutter Sides Skew SolidBegin SolidEnd Sphere SubdivisionMesh Surface TextureCoordinates Torus Transform TransformBegin TransformEnd TransformPoints Translate TrimCurve WorldBegin WorldEnd',
         illegal: '</',
-        contains: [n.HASH_COMMENT_MODE, n.C_NUMBER_MODE, n.APOS_STRING_MODE, n.QUOTE_STRING_MODE]
+        contains: [t.HASH_COMMENT_MODE, t.C_NUMBER_MODE, t.APOS_STRING_MODE, t.QUOTE_STRING_MODE]
       };
     },
-    gc = function(n) {
+    Ec = function(t) {
       const e = '[a-zA-Z-_][^\\n{]+\\{',
-        t = {
+        n = {
           className: 'attribute',
           begin: /[a-zA-Z-_]+/,
           end: /\s*:/,
@@ -32470,31 +32470,31 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0,
         keywords: 'import',
         contains: [
-          { begin: '^facet ' + e, end: /\}/, keywords: 'facet', contains: [t, n.HASH_COMMENT_MODE] },
+          { begin: '^facet ' + e, end: /\}/, keywords: 'facet', contains: [n, t.HASH_COMMENT_MODE] },
           {
             begin: '^\\s*instance of ' + e,
             end: /\}/,
             keywords: 'name count channels instance-data instance-state instance of',
             illegal: /\S/,
-            contains: ['self', t, n.HASH_COMMENT_MODE]
+            contains: ['self', n, t.HASH_COMMENT_MODE]
           },
-          { begin: '^' + e, end: /\}/, contains: [t, n.HASH_COMMENT_MODE] },
-          n.HASH_COMMENT_MODE
+          { begin: '^' + e, end: /\}/, contains: [n, t.HASH_COMMENT_MODE] },
+          t.HASH_COMMENT_MODE
         ]
       };
     },
-    Ec = function(n) {
+    Sc = function(t) {
       const e = 'foreach do while for if from to step else on-error and or not in',
-        t = 'true false yes no nothing nil null',
+        n = 'true false yes no nothing nil null',
         a = { className: 'variable', variants: [{ begin: /\$[\w\d#@][\w\d_]*/ }, { begin: /\$\{(.*?)\}/ }] },
         i = {
           className: 'string',
           begin: /"/,
           end: /"/,
           contains: [
-            n.BACKSLASH_ESCAPE,
+            t.BACKSLASH_ESCAPE,
             a,
-            { className: 'variable', begin: /\$\(/, end: /\)/, contains: [n.BACKSLASH_ESCAPE] }
+            { className: 'variable', begin: /\$\(/, end: /\)/, contains: [t.BACKSLASH_ESCAPE] }
           ]
         },
         r = { className: 'string', begin: /'/, end: /'/ };
@@ -32504,7 +32504,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0,
         keywords: {
           $pattern: /:?[\w-]+/,
-          literal: t,
+          literal: n,
           keyword:
             e +
             ' :' +
@@ -32519,7 +32519,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             variants: [{ begin: /\/\*/, end: /\*\// }, { begin: /\/\//, end: /$/ }, { begin: /<\//, end: />/ }],
             illegal: /./
           },
-          n.COMMENT('^#', '$'),
+          t.COMMENT('^#', '$'),
           i,
           r,
           a,
@@ -32537,7 +32537,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   i,
                   r,
                   a,
-                  { className: 'literal', begin: '\\b(' + t.split(' ').join('|') + ')\\b' },
+                  { className: 'literal', begin: '\\b(' + n.split(' ').join('|') + ')\\b' },
                   { begin: /("[^"]*"|[^\s{}[\]]+)/ }
                 ]
               }
@@ -32571,9 +32571,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Sc = function(n) {
+    hc = function(t) {
       const e = {
-        match: [/(surface|displacement|light|volume|imager)/, /\s+/, n.IDENT_RE],
+        match: [/(surface|displacement|light|volume|imager)/, /\s+/, t.IDENT_RE],
         scope: { 1: 'keyword', 3: 'title.class' }
       };
       return {
@@ -32661,18 +32661,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: '</',
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
-          n.APOS_STRING_MODE,
-          n.C_NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: '#', end: '$' },
           e,
           { beginKeywords: 'illuminate illuminance gather', end: '\\(' }
         ]
       };
     },
-    hc = function(n) {
+    bc = function(t) {
       return {
         name: 'Oracle Rules Language',
         keywords: {
@@ -32682,21 +32682,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'IDENTIFIER OPTIONS XML_ELEMENT XML_OP XML_ELEMENT_OF DOMDOCCREATE DOMDOCLOADFILE DOMDOCLOADXML DOMDOCSAVEFILE DOMDOCGETROOT DOMDOCADDPI DOMNODEGETNAME DOMNODEGETTYPE DOMNODEGETVALUE DOMNODEGETCHILDCT DOMNODEGETFIRSTCHILD DOMNODEGETSIBLING DOMNODECREATECHILDELEMENT DOMNODESETATTRIBUTE DOMNODEGETCHILDELEMENTCT DOMNODEGETFIRSTCHILDELEMENT DOMNODEGETSIBLINGELEMENT DOMNODEGETATTRIBUTECT DOMNODEGETATTRIBUTEI DOMNODEGETATTRIBUTEBYNAME DOMNODEGETBYNAME'
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE,
           { className: 'literal', variants: [{ begin: '#\\s+', relevance: 0 }, { begin: '#[a-zA-Z .]+' }] }
         ]
       };
     },
-    bc = function(n) {
-      const e = n.regex,
-        t = {
+    fc = function(t) {
+      const e = t.regex,
+        n = {
           className: 'title.function.invoke',
           relevance: 0,
-          begin: e.concat(/\b/, /(?!let\b)/, n.IDENT_RE, e.lookahead(/\s*\(/))
+          begin: e.concat(/\b/, /(?!let\b)/, t.IDENT_RE, e.lookahead(/\s*\(/))
         },
         a = '([ui](8|16|32|64|128|size)|f(32|64))?',
         i = [
@@ -32791,7 +32791,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         name: 'Rust',
         aliases: ['rs'],
         keywords: {
-          $pattern: n.IDENT_RE + '!?',
+          $pattern: t.IDENT_RE + '!?',
           type: r,
           keyword: [
             'abstract',
@@ -32851,9 +32851,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: '</',
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.COMMENT('/\\*', '\\*/', { contains: ['self'] }),
-          n.inherit(n.QUOTE_STRING_MODE, { begin: /b?"/, illegal: null }),
+          t.C_LINE_COMMENT_MODE,
+          t.COMMENT('/\\*', '\\*/', { contains: ['self'] }),
+          t.inherit(t.QUOTE_STRING_MODE, { begin: /b?"/, illegal: null }),
           {
             className: 'string',
             variants: [{ begin: /b?r(#*)"(.|\n)*?"\1(?!#)/ }, { begin: /b?'\\?(x\w{2}|u\w{4}|U\w{8}|.)'/ }]
@@ -32869,29 +32869,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ],
             relevance: 0
           },
-          { begin: [/fn/, /\s+/, n.UNDERSCORE_IDENT_RE], className: { 1: 'keyword', 3: 'title.function' } },
+          { begin: [/fn/, /\s+/, t.UNDERSCORE_IDENT_RE], className: { 1: 'keyword', 3: 'title.function' } },
           { className: 'meta', begin: '#!?\\[', end: '\\]', contains: [{ className: 'string', begin: /"/, end: /"/ }] },
           {
-            begin: [/let/, /\s+/, /(?:mut\s+)?/, n.UNDERSCORE_IDENT_RE],
+            begin: [/let/, /\s+/, /(?:mut\s+)?/, t.UNDERSCORE_IDENT_RE],
             className: { 1: 'keyword', 3: 'keyword', 4: 'variable' }
           },
           {
-            begin: [/for/, /\s+/, n.UNDERSCORE_IDENT_RE, /\s+/, /in/],
+            begin: [/for/, /\s+/, t.UNDERSCORE_IDENT_RE, /\s+/, /in/],
             className: { 1: 'keyword', 3: 'variable', 5: 'keyword' }
           },
-          { begin: [/type/, /\s+/, n.UNDERSCORE_IDENT_RE], className: { 1: 'keyword', 3: 'title.class' } },
+          { begin: [/type/, /\s+/, t.UNDERSCORE_IDENT_RE], className: { 1: 'keyword', 3: 'title.class' } },
           {
-            begin: [/(?:trait|enum|struct|union|impl|for)/, /\s+/, n.UNDERSCORE_IDENT_RE],
+            begin: [/(?:trait|enum|struct|union|impl|for)/, /\s+/, t.UNDERSCORE_IDENT_RE],
             className: { 1: 'keyword', 3: 'title.class' }
           },
-          { begin: n.IDENT_RE + '::', keywords: { keyword: 'Self', built_in: i, type: r } },
+          { begin: t.IDENT_RE + '::', keywords: { keyword: 'Self', built_in: i, type: r } },
           { className: 'punctuation', begin: '->' },
-          t
+          n
         ]
       };
     },
-    fc = function(n) {
-      const e = n.regex;
+    Tc = function(t) {
+      const e = t.regex;
       return {
         name: 'SAS',
         case_insensitive: !0,
@@ -33384,22 +33384,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 'zipstate'
               ) + '(?=\\()'
           },
-          { className: 'string', variants: [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE] },
-          n.COMMENT('\\*', ';'),
-          n.C_BLOCK_COMMENT_MODE
+          { className: 'string', variants: [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE] },
+          t.COMMENT('\\*', ';'),
+          t.C_BLOCK_COMMENT_MODE
         ]
       };
     },
-    Tc = function(n) {
-      const e = n.regex,
-        t = { className: 'subst', variants: [{ begin: '\\$[A-Za-z0-9_]+' }, { begin: /\$\{/, end: /\}/ }] },
+    vc = function(t) {
+      const e = t.regex,
+        n = { className: 'subst', variants: [{ begin: '\\$[A-Za-z0-9_]+' }, { begin: /\$\{/, end: /\}/ }] },
         a = {
           className: 'string',
           variants: [
             { begin: '"""', end: '"""' },
-            { begin: '"', end: '"', illegal: '\\n', contains: [n.BACKSLASH_ESCAPE] },
-            { begin: '[a-z]+"', end: '"', illegal: '\\n', contains: [n.BACKSLASH_ESCAPE, t] },
-            { className: 'string', begin: '[a-z]+"""', end: '"""', contains: [t], relevance: 10 }
+            { begin: '"', end: '"', illegal: '\\n', contains: [t.BACKSLASH_ESCAPE] },
+            { begin: '[a-z]+"', end: '"', illegal: '\\n', contains: [t.BACKSLASH_ESCAPE, n] },
+            { className: 'string', begin: '[a-z]+"""', end: '"""', contains: [n], relevance: 10 }
           ]
         },
         i = { className: 'type', begin: '\\b[A-Z][A-Za-z0-9_]*', relevance: 0 },
@@ -33414,8 +33414,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           end: /[:={\[\n;]/,
           excludeEnd: !0,
           contains: [
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE,
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE,
             { beginKeywords: 'extends with', relevance: 10 },
             { begin: /\[/, end: /\]/, excludeBegin: !0, excludeEnd: !0, relevance: 0, contains: [i] },
             {
@@ -33439,13 +33439,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'type yield lazy override def with val var sealed abstract private trait object if then forSome for while do throw finally protected extends import final return else break new catch super class case package default try this match continue throws implicit export enum given transparent'
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           a,
           i,
           o,
           s,
-          n.C_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           { begin: [/^\s*/, 'extension', /\s+(?=[[(])/], beginScope: { 2: 'keyword' } },
           { begin: [/^\s*/, /end/, /\s+/, /(extension\b)?/], beginScope: { 2: 'keyword', 4: 'keyword' } },
           { match: /\.inline\b/ },
@@ -33455,9 +33455,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    vc = function(n) {
+    yc = function(t) {
       const e = '[^\\(\\)\\[\\]\\{\\}",\'`;#|\\\\\\s]+',
-        t = '(-|\\+)?\\d+([./]\\d+)?',
+        n = '(-|\\+)?\\d+([./]\\d+)?',
         a = {
           $pattern: e,
           built_in:
@@ -33467,15 +33467,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         r = {
           className: 'number',
           variants: [
-            { begin: t, relevance: 0 },
-            { begin: t + '[+\\-]' + t + 'i', relevance: 0 },
+            { begin: n, relevance: 0 },
+            { begin: n + '[+\\-]' + n + 'i', relevance: 0 },
             { begin: '#b[0-1]+(/[0-1]+)?' },
             { begin: '#o[0-7]+(/[0-7]+)?' },
             { begin: '#x[0-9a-f]+(/[0-9a-f]+)?' }
           ]
         },
-        s = n.QUOTE_STRING_MODE,
-        o = [n.COMMENT(';', '$', { relevance: 0 }), n.COMMENT('#\\|', '\\|#')],
+        s = t.QUOTE_STRING_MODE,
+        o = [t.COMMENT(';', '$', { relevance: 0 }), t.COMMENT('#\\|', '\\|#')],
         l = { begin: e, relevance: 0 },
         c = { className: 'symbol', begin: "'" + e },
         _ = { endsWithParent: !0, relevance: 0 },
@@ -33502,13 +33502,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         };
       return (
         (_.contains = [i, r, s, l, c, d, m].concat(o)),
-        { name: 'Scheme', aliases: ['scm'], illegal: /\S/, contains: [n.SHEBANG(), r, s, c, d, m].concat(o) }
+        { name: 'Scheme', aliases: ['scm'], illegal: /\S/, contains: [t.SHEBANG(), r, s, c, d, m].concat(o) }
       );
     },
-    yc = function(n) {
+    Cc = function(t) {
       const e = [
-        n.C_NUMBER_MODE,
-        { className: 'string', begin: `'|"`, end: `'|"`, contains: [n.BACKSLASH_ESCAPE, { begin: "''" }] }
+        t.C_NUMBER_MODE,
+        { className: 'string', begin: `'|"`, end: `'|"`, contains: [t.BACKSLASH_ESCAPE, { begin: "''" }] }
       ];
       return {
         name: 'Scilab',
@@ -33527,11 +33527,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             className: 'function',
             beginKeywords: 'function',
             end: '$',
-            contains: [n.UNDERSCORE_TITLE_MODE, { className: 'params', begin: '\\(', end: '\\)' }]
+            contains: [t.UNDERSCORE_TITLE_MODE, { className: 'params', begin: '\\(', end: '\\)' }]
           },
           { begin: "[a-zA-Z_][a-zA-Z_0-9]*[\\.']+", relevance: 0 },
           { begin: '\\[', end: "\\][\\.']*", relevance: 0, contains: e },
-          n.COMMENT('//', '$')
+          t.COMMENT('//', '$')
         ].concat(e)
       };
     };
@@ -33609,7 +33609,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'var',
       'video'
     ],
-    Cc = [
+    Nc = [
       'any-hover',
       'any-pointer',
       'aspect-ratio',
@@ -33644,7 +33644,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'min-height',
       'max-height'
     ],
-    Nc = [
+    Oc = [
       'active',
       'any-link',
       'blank',
@@ -33705,7 +33705,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'visited',
       'where'
     ],
-    Oc = [
+    Ac = [
       'after',
       'backdrop',
       'before',
@@ -33721,7 +33721,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'slotted',
       'spelling-error'
     ],
-    Ac = [
+    Ic = [
       'align-content',
       'align-items',
       'align-self',
@@ -34081,7 +34081,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'writing-mode',
       'z-index'
     ].reverse();
-  var Ic = function(n) {
+  var xc = function(t) {
       const e = (s => ({
           IMPORTANT: { scope: 'meta', begin: '!important' },
           BLOCK_COMMENT: s.C_BLOCK_COMMENT_MODE,
@@ -34102,9 +34102,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0
           },
           CSS_VARIABLE: { className: 'attr', begin: /--[A-Za-z][A-Za-z0-9_-]*/ }
-        }))(n),
-        t = Oc,
-        a = Nc,
+        }))(t),
+        n = Ac,
+        a = Oc,
         i = '@[a-z-]+',
         r = { className: 'variable', begin: '(\\$[a-zA-Z-][a-zA-Z0-9_-]*)\\b', relevance: 0 };
       return {
@@ -34112,19 +34112,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0,
         illegal: "[=/|']",
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           e.CSS_NUMBER_MODE,
           { className: 'selector-id', begin: '#[A-Za-z0-9_-]+', relevance: 0 },
           { className: 'selector-class', begin: '\\.[A-Za-z0-9_-]+', relevance: 0 },
           e.ATTRIBUTE_SELECTOR_MODE,
           { className: 'selector-tag', begin: '\\b(' + Rc.join('|') + ')\\b', relevance: 0 },
           { className: 'selector-pseudo', begin: ':(' + a.join('|') + ')' },
-          { className: 'selector-pseudo', begin: ':(:)?(' + t.join('|') + ')' },
+          { className: 'selector-pseudo', begin: ':(:)?(' + n.join('|') + ')' },
           r,
           { begin: /\(/, end: /\)/, contains: [e.CSS_NUMBER_MODE] },
           e.CSS_VARIABLE,
-          { className: 'attribute', begin: '\\b(' + Ac.join('|') + ')\\b' },
+          { className: 'attribute', begin: '\\b(' + Ic.join('|') + ')\\b' },
           {
             begin:
               '\\b(whitespace|wait|w-resize|visible|vertical-text|vertical-ideographic|uppercase|upper-roman|upper-alpha|underline|transparent|top|thin|thick|text|text-top|text-bottom|tb-rl|table-header-group|table-footer-group|sw-resize|super|strict|static|square|solid|small-caps|separate|se-resize|scroll|s-resize|rtl|row-resize|ridge|right|repeat|repeat-y|repeat-x|relative|progress|pointer|overline|outside|outset|oblique|nowrap|not-allowed|normal|none|nw-resize|no-repeat|no-drop|newspaper|ne-resize|n-resize|move|middle|medium|ltr|lr-tb|lowercase|lower-roman|lower-alpha|loose|list-item|line|line-through|line-edge|lighter|left|keep-all|justify|italic|inter-word|inter-ideograph|inside|inset|inline|inline-block|inherit|inactive|ideograph-space|ideograph-parenthesis|ideograph-numeric|ideograph-alpha|horizontal|hidden|help|hand|groove|fixed|ellipsis|e-resize|double|dotted|distribute|distribute-space|distribute-letter|distribute-all-lines|disc|disabled|default|decimal|dashed|crosshair|collapse|col-resize|circle|char|center|capitalize|break-word|break-all|bottom|both|bolder|bold|block|bidi-override|below|baseline|auto|always|all-scroll|absolute|table|table-cell)\\b'
@@ -34138,8 +34138,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               r,
               e.HEXCOLOR,
               e.CSS_NUMBER_MODE,
-              n.QUOTE_STRING_MODE,
-              n.APOS_STRING_MODE,
+              t.QUOTE_STRING_MODE,
+              t.APOS_STRING_MODE,
               e.IMPORTANT,
               e.FUNCTION_DISPATCH
             ]
@@ -34149,13 +34149,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             begin: '@',
             end: '[{;]',
             returnBegin: !0,
-            keywords: { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: Cc.join(' ') },
+            keywords: { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: Nc.join(' ') },
             contains: [
               { begin: i, className: 'keyword' },
               { begin: /[a-z-]+(?=:)/, className: 'attribute' },
               r,
-              n.QUOTE_STRING_MODE,
-              n.APOS_STRING_MODE,
+              t.QUOTE_STRING_MODE,
+              t.APOS_STRING_MODE,
               e.HEXCOLOR,
               e.CSS_NUMBER_MODE
             ]
@@ -34164,7 +34164,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    xc = function(n) {
+    Dc = function(t) {
       return {
         name: 'Shell Session',
         aliases: ['console', 'shellsession'],
@@ -34177,7 +34177,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Dc = function(n) {
+    wc = function(t) {
       const e = [
         'add',
         'and',
@@ -34213,7 +34213,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         name: 'Smali',
         contains: [
           { className: 'string', begin: '"', end: '"', relevance: 0 },
-          n.COMMENT('#', '$', { relevance: 0 }),
+          t.COMMENT('#', '$', { relevance: 0 }),
           {
             className: 'keyword',
             variants: [
@@ -34282,22 +34282,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    wc = function(n) {
+    Mc = function(t) {
       const e = '[a-z][a-zA-Z0-9_]*',
-        t = { className: 'string', begin: '\\$.{1}' },
-        a = { className: 'symbol', begin: '#' + n.UNDERSCORE_IDENT_RE };
+        n = { className: 'string', begin: '\\$.{1}' },
+        a = { className: 'symbol', begin: '#' + t.UNDERSCORE_IDENT_RE };
       return {
         name: 'Smalltalk',
         aliases: ['st'],
         keywords: ['self', 'super', 'nil', 'true', 'false', 'thisContext'],
         contains: [
-          n.COMMENT('"', '"'),
-          n.APOS_STRING_MODE,
+          t.COMMENT('"', '"'),
+          t.APOS_STRING_MODE,
           { className: 'type', begin: '\\b[A-Z][A-Za-z0-9_]*', relevance: 0 },
           { begin: e + ':', relevance: 0 },
-          n.C_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           a,
-          t,
+          n,
           {
             begin: '\\|[ ]*' + e + '([ ]+' + e + ')*[ ]*\\|',
             returnBegin: !0,
@@ -34305,11 +34305,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             illegal: /\S/,
             contains: [{ begin: '(\\|[ ]*)?' + e }]
           },
-          { begin: '#\\(', end: '\\)', contains: [n.APOS_STRING_MODE, t, n.C_NUMBER_MODE, a] }
+          { begin: '#\\(', end: '\\)', contains: [t.APOS_STRING_MODE, n, t.C_NUMBER_MODE, a] }
         ]
       };
     },
-    Mc = function(n) {
+    Lc = function(t) {
       return {
         name: 'SML (Standard ML)',
         aliases: ['ml'],
@@ -34323,13 +34323,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         illegal: /\/\/|>>/,
         contains: [
           { className: 'literal', begin: /\[(\|\|)?\]|\(\)/, relevance: 0 },
-          n.COMMENT('\\(\\*', '\\*\\)', { contains: ['self'] }),
+          t.COMMENT('\\(\\*', '\\*\\)', { contains: ['self'] }),
           { className: 'symbol', begin: "'[A-Za-z_](?!')[\\w']*" },
           { className: 'type', begin: "`[A-Z][\\w']*" },
           { className: 'type', begin: "\\b[A-Z][\\w']*", relevance: 0 },
           { begin: "[a-z_]\\w*'[\\w']*" },
-          n.inherit(n.APOS_STRING_MODE, { className: 'string', relevance: 0 }),
-          n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
+          t.inherit(t.APOS_STRING_MODE, { className: 'string', relevance: 0 }),
+          t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
           {
             className: 'number',
             begin:
@@ -34340,7 +34340,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Lc = function(n) {
+    kc = function(t) {
       const e = {
           className: 'string',
           variants: [
@@ -34348,17 +34348,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             { begin: "'", end: "'", contains: [{ begin: "''", relevance: 0 }] }
           ]
         },
-        t = {
+        n = {
           className: 'meta',
           begin: /#\s*[a-z]+\b/,
           end: /$/,
           keywords: { keyword: 'define undef ifdef ifndef else endif include' },
           contains: [
             { begin: /\\\n/, relevance: 0 },
-            n.inherit(e, { className: 'string' }),
+            t.inherit(e, { className: 'string' }),
             { className: 'string', begin: /<[^\n>]*>/, end: /$/, illegal: '\\n' },
-            n.C_LINE_COMMENT_MODE,
-            n.C_BLOCK_COMMENT_MODE
+            t.C_LINE_COMMENT_MODE,
+            t.C_BLOCK_COMMENT_MODE
           ]
         };
       return {
@@ -36796,20 +36796,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.NUMBER_MODE,
           { className: 'variable', begin: /\b_+[a-zA-Z]\w*/ },
           { className: 'title', begin: /[a-zA-Z]\w+_fnc_\w+/ },
           e,
-          t
+          n
         ],
         illegal: /#|^\$ /
       };
     },
-    kc = function(n) {
-      const e = n.regex,
-        t = n.COMMENT('--', '$'),
+    Pc = function(t) {
+      const e = t.regex,
+        n = t.COMMENT('--', '$'),
         a = ['true', 'false', 'unknown'],
         i = [
           'bigint',
@@ -37367,16 +37367,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'variable', begin: /@[a-z0-9]+/ },
           { className: 'string', variants: [{ begin: /'/, end: /'/, contains: [{ begin: /''/ }] }] },
           { begin: /"/, end: /"/, contains: [{ begin: /""/ }] },
-          n.C_NUMBER_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          t,
+          t.C_NUMBER_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          n,
           { className: 'operator', begin: /[-+*/=%^~]|&&?|\|\|?|!=?|<(?:=>?|<|>)?|>[>=]?/, relevance: 0 }
         ]
       };
     },
-    Pc = function(n) {
-      const e = n.regex,
-        t = [
+    Uc = function(t) {
+      const e = t.regex,
+        n = [
           'bernoulli',
           'bernoulli_logit',
           'bernoulli_logit_glm',
@@ -37442,19 +37442,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'wiener',
           'wishart'
         ],
-        a = n.COMMENT(/\/\*/, /\*\//, { relevance: 0, contains: [{ scope: 'doctag', match: /@(return|param)/ }] }),
+        a = t.COMMENT(/\/\*/, /\*\//, { relevance: 0, contains: [{ scope: 'doctag', match: /@(return|param)/ }] }),
         i = {
           scope: 'meta',
           begin: /#include\b/,
           end: /$/,
-          contains: [{ match: /[a-z][a-z-._]+/, scope: 'string' }, n.C_LINE_COMMENT_MODE]
+          contains: [{ match: /[a-z][a-z-._]+/, scope: 'string' }, t.C_LINE_COMMENT_MODE]
         },
         r = ['lower', 'upper', 'offset', 'multiplier'];
       return {
         name: 'Stan',
         aliases: ['stanfuncs'],
         keywords: {
-          $pattern: n.IDENT_RE,
+          $pattern: t.IDENT_RE,
           title: ['functions', 'model', 'data', 'parameters', 'quantities', 'transformed', 'generated'],
           type: [
             'array',
@@ -37712,22 +37712,22 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.C_LINE_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
           i,
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           a,
           { scope: 'built_in', match: /\s(pi|e|sqrt2|log2|log10)(?=\()/, relevance: 0 },
           { match: e.concat(/[<,]\s*/, e.either(...r), /\s*=/), keywords: r },
           { scope: 'keyword', match: /\btarget(?=\s*\+=)/ },
-          { match: [/~\s*/, e.either(...t), /(?:\(\))/, /\s*T(?=\s*\[)/], scope: { 2: 'built_in', 4: 'keyword' } },
+          { match: [/~\s*/, e.either(...n), /(?:\(\))/, /\s*T(?=\s*\[)/], scope: { 2: 'built_in', 4: 'keyword' } },
           {
             scope: 'built_in',
-            keywords: t,
-            begin: e.concat(/\w*/, e.either(...t), /(_lpdf|_lupdf|_lpmf|_cdf|_lcdf|_lccdf|_qf)(?=\s*[\(.*\)])/)
+            keywords: n,
+            begin: e.concat(/\w*/, e.either(...n), /(_lpdf|_lupdf|_lpmf|_cdf|_lcdf|_lccdf|_qf)(?=\s*[\(.*\)])/)
           },
-          { begin: [/~/, /\s*/, e.concat(e.either(...t), /(?=\s*[\(.*\)])/)], scope: { 3: 'built_in' } },
+          { begin: [/~/, /\s*/, e.concat(e.either(...n), /(?=\s*[\(.*\)])/)], scope: { 3: 'built_in' } },
           {
-            begin: [/~/, /\s*\w+(?=\s*[\(.*\)])/, '(?!.*/\b(' + e.either(...t) + ')\b)'],
+            begin: [/~/, /\s*\w+(?=\s*[\(.*\)])/, '(?!.*/\b(' + e.either(...n) + ')\b)'],
             scope: { 2: 'title.function' }
           },
           { scope: 'title.function', begin: /\w*(_lpdf|_lupdf|_lpmf|_cdf|_lcdf|_lccdf|_qf)(?=\s*[\(.*\)])/ },
@@ -37743,7 +37743,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Uc = function(n) {
+    Fc = function(t) {
       return {
         name: 'Stata',
         aliases: ['do', 'ado'],
@@ -37775,13 +37775,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               }
             ]
           },
-          n.COMMENT('^[ 	]*\\*.*$', !1),
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE
+          t.COMMENT('^[ 	]*\\*.*$', !1),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE
         ]
       };
     },
-    Fc = function(n) {
+    Bc = function(t) {
       return {
         name: 'STEP Part 21',
         aliases: ['p21', 'step', 'stp'],
@@ -37790,18 +37790,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         contains: [
           { className: 'meta', begin: 'ISO-10303-21;', relevance: 10 },
           { className: 'meta', begin: 'END-ISO-10303-21;', relevance: 10 },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          n.COMMENT('/\\*\\*!', '\\*/'),
-          n.C_NUMBER_MODE,
-          n.inherit(n.APOS_STRING_MODE, { illegal: null }),
-          n.inherit(n.QUOTE_STRING_MODE, { illegal: null }),
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.COMMENT('/\\*\\*!', '\\*/'),
+          t.C_NUMBER_MODE,
+          t.inherit(t.APOS_STRING_MODE, { illegal: null }),
+          t.inherit(t.QUOTE_STRING_MODE, { illegal: null }),
           { className: 'string', begin: "'", end: "'" },
           { className: 'symbol', variants: [{ begin: '#', end: '\\d+', illegal: '\\W' }] }
         ]
       };
     };
-  const Bc = [
+  const Gc = [
       'a',
       'abbr',
       'address',
@@ -37875,7 +37875,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'var',
       'video'
     ],
-    Gc = [
+    Yc = [
       'any-hover',
       'any-pointer',
       'aspect-ratio',
@@ -37910,7 +37910,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'min-height',
       'max-height'
     ],
-    Yc = [
+    Hc = [
       'active',
       'any-link',
       'blank',
@@ -37971,7 +37971,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'visited',
       'where'
     ],
-    Hc = [
+    zc = [
       'after',
       'backdrop',
       'before',
@@ -37987,7 +37987,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'slotted',
       'spelling-error'
     ],
-    zc = [
+    $c = [
       'align-content',
       'align-items',
       'align-self',
@@ -38347,7 +38347,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'writing-mode',
       'z-index'
     ].reverse();
-  var $c = function(n) {
+  var Vc = function(t) {
       const e = (i => ({
           IMPORTANT: { scope: 'meta', begin: '!important' },
           BLOCK_COMMENT: i.C_BLOCK_COMMENT_MODE,
@@ -38368,8 +38368,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             relevance: 0
           },
           CSS_VARIABLE: { className: 'attr', begin: /--[A-Za-z][A-Za-z0-9_-]*/ }
-        }))(n),
-        t = { className: 'variable', begin: '\\$' + n.IDENT_RE },
+        }))(t),
+        n = { className: 'variable', begin: '\\$' + t.IDENT_RE },
         a = '(?=[.\\s\\n[:,(])';
       return {
         name: 'Stylus',
@@ -38393,23 +38393,23 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ].join('|') +
           ')',
         contains: [
-          n.QUOTE_STRING_MODE,
-          n.APOS_STRING_MODE,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.APOS_STRING_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           e.HEXCOLOR,
           { begin: '\\.[a-zA-Z][a-zA-Z0-9_-]*' + a, className: 'selector-class' },
           { begin: '#[a-zA-Z][a-zA-Z0-9_-]*' + a, className: 'selector-id' },
-          { begin: '\\b(' + Bc.join('|') + ')' + a, className: 'selector-tag' },
-          { className: 'selector-pseudo', begin: '&?:(' + Yc.join('|') + ')' + a },
-          { className: 'selector-pseudo', begin: '&?:(:)?(' + Hc.join('|') + ')' + a },
+          { begin: '\\b(' + Gc.join('|') + ')' + a, className: 'selector-tag' },
+          { className: 'selector-pseudo', begin: '&?:(' + Hc.join('|') + ')' + a },
+          { className: 'selector-pseudo', begin: '&?:(:)?(' + zc.join('|') + ')' + a },
           e.ATTRIBUTE_SELECTOR_MODE,
           {
             className: 'keyword',
             begin: /@media/,
             starts: {
               end: /[{;}]/,
-              keywords: { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: Gc.join(' ') },
+              keywords: { $pattern: /[a-z-]+/, keyword: 'and or not only', attribute: Yc.join(' ') },
               contains: [e.CSS_NUMBER_MODE]
             }
           },
@@ -38435,7 +38435,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               ].join('|') +
               '))\\b'
           },
-          t,
+          n,
           e.CSS_NUMBER_MODE,
           {
             className: 'function',
@@ -38448,23 +38448,23 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 className: 'params',
                 begin: /\(/,
                 end: /\)/,
-                contains: [e.HEXCOLOR, t, n.APOS_STRING_MODE, e.CSS_NUMBER_MODE, n.QUOTE_STRING_MODE]
+                contains: [e.HEXCOLOR, n, t.APOS_STRING_MODE, e.CSS_NUMBER_MODE, t.QUOTE_STRING_MODE]
               }
             ]
           },
           e.CSS_VARIABLE,
           {
             className: 'attribute',
-            begin: '\\b(' + zc.join('|') + ')\\b',
+            begin: '\\b(' + $c.join('|') + ')\\b',
             starts: {
               end: /;|$/,
               contains: [
                 e.HEXCOLOR,
-                t,
-                n.APOS_STRING_MODE,
-                n.QUOTE_STRING_MODE,
+                n,
+                t.APOS_STRING_MODE,
+                t.QUOTE_STRING_MODE,
                 e.CSS_NUMBER_MODE,
-                n.C_BLOCK_COMMENT_MODE,
+                t.C_BLOCK_COMMENT_MODE,
                 e.IMPORTANT,
                 e.FUNCTION_DISPATCH
               ],
@@ -38476,7 +38476,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Vc = function(n) {
+    jc = function(t) {
       return {
         name: 'SubUnit',
         case_insensitive: !0,
@@ -38503,33 +38503,33 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     };
-  function Da(n) {
-    return n ? (typeof n == 'string' ? n : n.source) : null;
+  function La(t) {
+    return t ? (typeof t == 'string' ? t : t.source) : null;
   }
-  function Gt(n) {
-    return re('(?=', n, ')');
+  function Ht(t) {
+    return re('(?=', t, ')');
   }
-  function re(...n) {
-    return n.map(e => Da(e)).join('');
+  function re(...t) {
+    return t.map(e => La(e)).join('');
   }
-  function be(...n) {
+  function be(...t) {
     return (
       '(' +
-      ((function(t) {
-        const a = t[t.length - 1];
-        return typeof a == 'object' && a.constructor === Object ? (t.splice(t.length - 1, 1), a) : {};
-      })(n).capture
+      ((function(n) {
+        const a = n[n.length - 1];
+        return typeof a == 'object' && a.constructor === Object ? (n.splice(n.length - 1, 1), a) : {};
+      })(t).capture
         ? ''
         : '?:') +
-      n.map(t => Da(t)).join('|') +
+      t.map(n => La(n)).join('|') +
       ')'
     );
   }
-  const En = n => re(/\b/, n, /\w$/.test(n) ? /\b/ : /\B/),
-    jc = ['Protocol', 'Type'].map(En),
-    wa = ['init', 'self'].map(En),
-    qc = ['Any', 'Self'],
-    Sn = [
+  const hn = t => re(/\b/, t, /\w$/.test(t) ? /\b/ : /\B/),
+    qc = ['Protocol', 'Type'].map(hn),
+    ka = ['init', 'self'].map(hn),
+    Wc = ['Any', 'Self'],
+    bn = [
       'actor',
       'any',
       'associatedtype',
@@ -38618,9 +38618,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'while',
       'willSet'
     ],
-    Ma = ['false', 'nil', 'true'],
-    Wc = ['assignment', 'associativity', 'higherThan', 'left', 'lowerThan', 'none', 'right'],
-    Qc = [
+    Pa = ['false', 'nil', 'true'],
+    Qc = ['assignment', 'associativity', 'higherThan', 'left', 'lowerThan', 'none', 'right'],
+    Kc = [
       '#colorLiteral',
       '#column',
       '#dsohandle',
@@ -38642,7 +38642,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       '#warn_unqualified_access',
       '#warning'
     ],
-    La = [
+    Ua = [
       'abs',
       'all',
       'any',
@@ -38678,7 +38678,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'withoutActuallyEscaping',
       'zip'
     ],
-    ka = be(
+    Fa = be(
       /[/=\-+!*%<>&|^~?]/,
       /[\u00A1-\u00A7]/,
       /[\u00A9\u00AB]/,
@@ -38698,9 +38698,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       /[\u3008-\u3020]/,
       /[\u3030]/
     ),
-    Pa = be(ka, /[\u0300-\u036F]/, /[\u1DC0-\u1DFF]/, /[\u20D0-\u20FF]/, /[\uFE00-\uFE0F]/, /[\uFE20-\uFE2F]/),
-    hn = re(ka, Pa, '*'),
-    Ua = be(
+    Ba = be(Fa, /[\u0300-\u036F]/, /[\u1DC0-\u1DFF]/, /[\u20D0-\u20FF]/, /[\uFE00-\uFE0F]/, /[\uFE20-\uFE2F]/),
+    fn = re(Fa, Ba, '*'),
+    Ga = be(
       /[a-zA-Z_]/,
       /[\u00A8\u00AA\u00AD\u00AF\u00B2-\u00B5\u00B7-\u00BA]/,
       /[\u00BC-\u00BE\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u00FF]/,
@@ -38713,10 +38713,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       /[\uF900-\uFD3D\uFD40-\uFDCF\uFDF0-\uFE1F\uFE30-\uFE44]/,
       /[\uFE47-\uFEFE\uFF00-\uFFFD]/
     ),
-    Yt = be(Ua, /\d/, /[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]/),
-    xe = re(Ua, Yt, '*'),
-    bn = re(/[A-Z]/, Yt, '*'),
-    Kc = [
+    zt = be(Ga, /\d/, /[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]/),
+    xe = re(Ga, zt, '*'),
+    Tn = re(/[A-Z]/, zt, '*'),
+    Xc = [
       'autoclosure',
       re(/convention\(/, be('swift', 'block', 'c'), /\)/),
       'discardableResult',
@@ -38747,7 +38747,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'unknown',
       'usableFromInline'
     ],
-    Xc = [
+    Zc = [
       'iOS',
       'iOSApplicationExtension',
       'macOS',
@@ -38760,34 +38760,35 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'tvOSApplicationExtension',
       'swift'
     ];
-  var Zc = function(n) {
+  var Jc = function(t) {
       const e = { match: /\s+/, relevance: 0 },
-        t = n.COMMENT('/\\*', '\\*/', { contains: ['self'] }),
-        a = [n.C_LINE_COMMENT_MODE, t],
-        i = { match: [/\./, be(...jc, ...wa)], className: { 2: 'keyword' } },
-        r = { match: re(/\./, be(...Sn)), relevance: 0 },
-        s = Sn.filter(G => typeof G == 'string').concat(['_|0']),
+        n = t.COMMENT('/\\*', '\\*/', { contains: ['self'] }),
+        a = [t.C_LINE_COMMENT_MODE, n],
+        i = { match: [/\./, be(...qc, ...ka)], className: { 2: 'keyword' } },
+        r = { match: re(/\./, be(...bn)), relevance: 0 },
+        s = bn.filter(G => typeof G == 'string').concat(['_|0']),
         o = {
           variants: [
             {
               className: 'keyword',
               match: be(
-                ...Sn.filter(G => typeof G != 'string')
-                  .concat(qc)
-                  .map(En),
-                ...wa
+                ...bn
+                  .filter(G => typeof G != 'string')
+                  .concat(Wc)
+                  .map(hn),
+                ...ka
               )
             }
           ]
         },
-        l = { $pattern: be(/\b\w+/, /#\w+/), keyword: s.concat(Qc), literal: Ma },
+        l = { $pattern: be(/\b\w+/, /#\w+/), keyword: s.concat(Kc), literal: Pa },
         c = [i, r, o],
         _ = [
-          { match: re(/\./, be(...La)), relevance: 0 },
-          { className: 'built_in', match: re(/\b/, be(...La), /(?=\()/) }
+          { match: re(/\./, be(...Ua)), relevance: 0 },
+          { className: 'built_in', match: re(/\b/, be(...Ua), /(?=\()/) }
         ],
         d = { match: /->/, relevance: 0 },
-        u = [d, { className: 'operator', relevance: 0, variants: [{ match: hn }, { match: `\\.(\\.|${Pa})+` }] }],
+        u = [d, { className: 'operator', relevance: 0, variants: [{ match: fn }, { match: `\\.(\\.|${Ba})+` }] }],
         m = '([0-9]_*)+',
         p = '([0-9a-fA-F]_*)+',
         g = {
@@ -38808,27 +38809,27 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         T = (G = '') => ({ className: 'subst', label: 'interpol', begin: re(/\\/, G, /\(/), end: /\)/ }),
         S = (G = '') => ({ begin: re(G, /"""/), end: re(/"""/, G), contains: [E(G), h(G), T(G)] }),
         v = (G = '') => ({ begin: re(G, /"/), end: re(/"/, G), contains: [E(G), T(G)] }),
-        R = { className: 'string', variants: [S(), S('#'), S('##'), S('###'), v(), v('#'), v('##'), v('###')] },
-        C = { match: re(/`/, xe, /`/) },
-        I = [C, { className: 'variable', match: /\$\d+/ }, { className: 'variable', match: `\\$${Yt}+` }],
+        C = { className: 'string', variants: [S(), S('#'), S('##'), S('###'), v(), v('#'), v('##'), v('###')] },
+        R = { match: re(/`/, xe, /`/) },
+        I = [R, { className: 'variable', match: /\$\d+/ }, { className: 'variable', match: `\\$${zt}+` }],
         O = [
           {
             match: /(@|#(un)?)available/,
             className: 'keyword',
-            starts: { contains: [{ begin: /\(/, end: /\)/, keywords: Xc, contains: [...u, g, R] }] }
+            starts: { contains: [{ begin: /\(/, end: /\)/, keywords: Zc, contains: [...u, g, C] }] }
           },
-          { className: 'keyword', match: re(/@/, be(...Kc)) },
+          { className: 'keyword', match: re(/@/, be(...Xc)) },
           { className: 'meta', match: re(/@/, xe) }
         ],
         A = {
-          match: Gt(/\b[A-Z]/),
+          match: Ht(/\b[A-Z]/),
           relevance: 0,
           contains: [
-            { className: 'type', match: re(/(AV|CA|CF|CG|CI|CL|CM|CN|CT|MK|MP|MTK|MTL|NS|SCN|SK|UI|WK|XC)/, Yt, '+') },
-            { className: 'type', match: bn, relevance: 0 },
+            { className: 'type', match: re(/(AV|CA|CF|CG|CI|CL|CM|CN|CT|MK|MP|MTK|MTL|NS|SCN|SK|UI|WK|XC)/, zt, '+') },
+            { className: 'type', match: Tn, relevance: 0 },
             { match: /[?!]+/, relevance: 0 },
             { match: /\.\.\./, relevance: 0 },
-            { match: re(/\s+&\s+/, Gt(bn)), relevance: 0 }
+            { match: re(/\s+&\s+/, Ht(Tn)), relevance: 0 }
           ]
         },
         F = { begin: /</, end: />/, keywords: l, contains: [...a, ...c, ...O, d, A] };
@@ -38846,7 +38847,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ..._,
             ...u,
             g,
-            R,
+            C,
             ...I,
             ...O,
             A
@@ -38859,7 +38860,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           keywords: l,
           contains: [
             {
-              begin: be(Gt(re(xe, /\s*:/)), Gt(re(xe, /\s+/, xe, /\s*:/))),
+              begin: be(Ht(re(xe, /\s*:/)), Ht(re(xe, /\s+/, xe, /\s*:/))),
               end: /:/,
               relevance: 0,
               contains: [{ className: 'keyword', match: /\b_\b/ }, { className: 'params', match: xe }]
@@ -38868,7 +38869,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ...c,
             ...u,
             g,
-            R,
+            C,
             ...O,
             A,
             w
@@ -38877,7 +38878,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           illegal: /["']/
         },
         B = {
-          match: [/func/, /\s+/, be(C.match, xe, hn)],
+          match: [/func/, /\s+/, be(R.match, xe, fn)],
           className: { 1: 'keyword', 3: 'title.function' },
           contains: [j, N, e],
           illegal: [/\[/, /%/]
@@ -38888,18 +38889,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           contains: [j, N, e],
           illegal: /\[|%/
         },
-        ee = { match: [/operator/, /\s+/, hn], className: { 1: 'keyword', 3: 'title' } },
+        ee = { match: [/operator/, /\s+/, fn], className: { 1: 'keyword', 3: 'title' } },
         W = {
-          begin: [/precedencegroup/, /\s+/, bn],
+          begin: [/precedencegroup/, /\s+/, Tn],
           className: { 1: 'keyword', 3: 'title' },
           contains: [A],
-          keywords: [...Wc, ...Ma],
+          keywords: [...Qc, ...Pa],
           end: /}/
         };
-      for (const G of R.variants) {
+      for (const G of C.variants) {
         const K = G.contains.find(ge => ge.label === 'interpol');
         K.keywords = l;
-        const U = [...c, ..._, ...u, g, R, ...I];
+        const U = [...c, ..._, ...u, g, C, ...I];
         K.contains = [...U, { begin: /\(/, end: /\)/, contains: ['self', ...U] }];
       }
       return {
@@ -38915,7 +38916,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             excludeEnd: !0,
             keywords: l,
             contains: [
-              n.inherit(n.TITLE_MODE, { className: 'title.class', begin: /[A-Za-z$_][\u00C0-\u02B80-9A-Za-z$_]*/ }),
+              t.inherit(t.TITLE_MODE, { className: 'title.class', begin: /[A-Za-z$_][\u00C0-\u02B80-9A-Za-z$_]*/ }),
               ...c
             ]
           },
@@ -38926,7 +38927,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ..._,
           ...u,
           g,
-          R,
+          C,
           ...I,
           ...O,
           A,
@@ -38934,7 +38935,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Jc = function(n) {
+    ed = function(t) {
       return {
         name: 'Tagger Script',
         contains: [
@@ -38952,19 +38953,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    ed = function(n) {
+    td = function(t) {
       const e = 'true false yes no null',
-        t = "[\\w#;/?:@&=+$,.~*'()[\\]]+",
+        n = "[\\w#;/?:@&=+$,.~*'()[\\]]+",
         a = {
           className: 'string',
           relevance: 0,
           variants: [{ begin: /'/, end: /'/ }, { begin: /"/, end: /"/ }, { begin: /\S+/ }],
           contains: [
-            n.BACKSLASH_ESCAPE,
+            t.BACKSLASH_ESCAPE,
             { className: 'template-variable', variants: [{ begin: /\{\{/, end: /\}\}/ }, { begin: /%\{/, end: /\}/ }] }
           ]
         },
-        i = n.inherit(a, { variants: [{ begin: /'/, end: /'/ }, { begin: /"/, end: /"/ }, { begin: /[^\s,{}[\]]+/ }] }),
+        i = t.inherit(a, { variants: [{ begin: /'/, end: /'/ }, { begin: /"/, end: /"/ }, { begin: /[^\s,{}[\]]+/ }] }),
         r = {
           className: 'number',
           begin:
@@ -38985,17 +38986,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           { className: 'meta', begin: '^---\\s*$', relevance: 10 },
           { className: 'string', begin: '[\\|>]([1-9]?[+-])?[ ]*\\n( +)[^ ][^\\n]*\\n(\\2[^\\n]+\\n?)*' },
           { begin: '<%[%=-]?', end: '[%-]?%>', subLanguage: 'ruby', excludeBegin: !0, excludeEnd: !0, relevance: 0 },
-          { className: 'type', begin: '!\\w+!' + t },
-          { className: 'type', begin: '!<' + t + '>' },
-          { className: 'type', begin: '!' + t },
-          { className: 'type', begin: '!!' + t },
-          { className: 'meta', begin: '&' + n.UNDERSCORE_IDENT_RE + '$' },
-          { className: 'meta', begin: '\\*' + n.UNDERSCORE_IDENT_RE + '$' },
+          { className: 'type', begin: '!\\w+!' + n },
+          { className: 'type', begin: '!<' + n + '>' },
+          { className: 'type', begin: '!' + n },
+          { className: 'type', begin: '!!' + n },
+          { className: 'meta', begin: '&' + t.UNDERSCORE_IDENT_RE + '$' },
+          { className: 'meta', begin: '\\*' + t.UNDERSCORE_IDENT_RE + '$' },
           { className: 'bullet', begin: '-(?=[ ]|$)', relevance: 0 },
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           { beginKeywords: e, keywords: { literal: e } },
           r,
-          { className: 'number', begin: n.C_NUMBER_RE + '\\b', relevance: 0 },
+          { className: 'number', begin: t.C_NUMBER_RE + '\\b', relevance: 0 },
           o,
           l,
           a
@@ -39005,12 +39006,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         _.pop(), _.push(i), (s.contains = _), { name: 'YAML', case_insensitive: !0, aliases: ['yml'], contains: c }
       );
     },
-    td = function(n) {
+    nd = function(t) {
       return {
         name: 'Test Anything Protocol',
         case_insensitive: !0,
         contains: [
-          n.HASH_COMMENT_MODE,
+          t.HASH_COMMENT_MODE,
           { className: 'meta', variants: [{ begin: '^TAP version (\\d+)$' }, { begin: '^1\\.\\.(\\d+)$' }] },
           { begin: /---$/, end: '\\.\\.\\.$', subLanguage: 'yaml', relevance: 0 },
           { className: 'number', begin: ' (\\d+) ' },
@@ -39018,10 +39019,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    nd = function(n) {
-      const e = n.regex,
-        t = /[a-zA-Z_][a-zA-Z0-9_]*/,
-        a = { className: 'number', variants: [n.BINARY_NUMBER_MODE, n.C_NUMBER_MODE] };
+    ad = function(t) {
+      const e = t.regex,
+        n = /[a-zA-Z_][a-zA-Z0-9_]*/,
+        a = { className: 'number', variants: [t.BINARY_NUMBER_MODE, t.C_NUMBER_MODE] };
       return {
         name: 'Tcl',
         aliases: ['tk'],
@@ -39146,8 +39147,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           'while'
         ],
         contains: [
-          n.COMMENT(';[ \\t]*#', '$'),
-          n.COMMENT('^[ \\t]*#', '$'),
+          t.COMMENT(';[ \\t]*#', '$'),
+          t.COMMENT('^[ \\t]*#', '$'),
           {
             beginKeywords: 'proc',
             end: '[\\{]',
@@ -39165,20 +39166,20 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           {
             className: 'variable',
             variants: [
-              { begin: e.concat(/\$/, e.optional(/::/), t, '(::', t, ')*') },
+              { begin: e.concat(/\$/, e.optional(/::/), n, '(::', n, ')*') },
               { begin: '\\$\\{(::)?[a-zA-Z_]((::)?[a-zA-Z0-9_])*', end: '\\}', contains: [a] }
             ]
           },
           {
             className: 'string',
-            contains: [n.BACKSLASH_ESCAPE],
-            variants: [n.inherit(n.QUOTE_STRING_MODE, { illegal: null })]
+            contains: [t.BACKSLASH_ESCAPE],
+            variants: [t.inherit(t.QUOTE_STRING_MODE, { illegal: null })]
           },
           a
         ]
       };
     },
-    ad = function(n) {
+    id = function(t) {
       const e = ['bool', 'byte', 'i16', 'i32', 'i64', 'double', 'string', 'binary'];
       return {
         name: 'Thrift',
@@ -39203,16 +39204,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           literal: 'true false'
         },
         contains: [
-          n.QUOTE_STRING_MODE,
-          n.NUMBER_MODE,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
+          t.NUMBER_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           {
             className: 'class',
             beginKeywords: 'struct enum service exception',
             end: /\{/,
             illegal: /\n/,
-            contains: [n.inherit(n.TITLE_MODE, { starts: { endsWithParent: !0, excludeEnd: !0 } })]
+            contains: [t.inherit(t.TITLE_MODE, { starts: { endsWithParent: !0, excludeEnd: !0 } })]
           },
           {
             begin: '\\b(set|list|map)\\s*<',
@@ -39223,9 +39224,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    id = function(n) {
+    rd = function(t) {
       const e = { className: 'number', begin: '[1-9][0-9]*', relevance: 0 },
-        t = { className: 'symbol', begin: ':[^\\]]+' };
+        n = { className: 'symbol', begin: ':[^\\]]+' };
       return {
         name: 'TP',
         keywords: {
@@ -39307,31 +39308,31 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             begin:
               '(AR|P|PAYLOAD|PR|R|SR|RSR|LBL|VR|UALM|MESSAGE|UTOOL|UFRAME|TIMER|TIMER_OVERFLOW|JOINT_MAX_SPEED|RESUME_PROG|DIAG_REC)\\[',
             end: '\\]',
-            contains: ['self', e, t]
+            contains: ['self', e, n]
           },
           {
             className: 'built_in',
             begin: '(AI|AO|DI|DO|F|RI|RO|UI|UO|GI|GO|SI|SO)\\[',
             end: '\\]',
-            contains: ['self', e, n.QUOTE_STRING_MODE, t]
+            contains: ['self', e, t.QUOTE_STRING_MODE, n]
           },
           { className: 'keyword', begin: '/(PROG|ATTR|MN|POS|END)\\b' },
           { className: 'keyword', begin: '(CALL|RUN|POINT_LOGIC|LBL)\\b' },
           { className: 'keyword', begin: '\\b(ACC|CNT|Skip|Offset|PSPD|RT_LD|AP_LD|Tool_Offset)' },
           { className: 'number', begin: '\\d+(sec|msec|mm/sec|cm/min|inch/min|deg/sec|mm|in|cm)?\\b', relevance: 0 },
-          n.COMMENT('//', '[;$]'),
-          n.COMMENT('!', '[;$]'),
-          n.COMMENT('--eg:', '$'),
-          n.QUOTE_STRING_MODE,
+          t.COMMENT('//', '[;$]'),
+          t.COMMENT('!', '[;$]'),
+          t.COMMENT('--eg:', '$'),
+          t.QUOTE_STRING_MODE,
           { className: 'string', begin: "'", end: "'" },
-          n.C_NUMBER_MODE,
+          t.C_NUMBER_MODE,
           { className: 'variable', begin: '\\$[A-Za-z0-9_]+' }
         ]
       };
     },
-    rd = function(n) {
-      const e = n.regex,
-        t = [
+    sd = function(t) {
+      const e = t.regex,
+        n = [
           'absolute_url',
           'asset|0',
           'asset_version',
@@ -39404,7 +39405,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       const i = { scope: 'string', variants: [{ begin: /'/, end: /'/ }, { begin: /"/, end: /"/ }] },
         r = { scope: 'number', match: /\d+/ },
         s = { begin: /\(/, end: /\)/, excludeBegin: !0, excludeEnd: !0, contains: [i, r] },
-        o = { beginKeywords: t.join(' '), keywords: { name: t }, relevance: 0, contains: [s] },
+        o = { beginKeywords: n.join(' '), keywords: { name: n }, relevance: 0, contains: [s] },
         l = {
           match: /\|(?=[A-Za-z_]+:?)/,
           beginScope: 'punctuation',
@@ -39503,15 +39504,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         case_insensitive: !0,
         subLanguage: 'xml',
         contains: [
-          n.COMMENT(/\{#/, /#\}/),
+          t.COMMENT(/\{#/, /#\}/),
           _,
           d,
           { className: 'template-variable', begin: /\{\{/, end: /\}\}/, contains: ['self', l, o, i, r] }
         ]
       };
     };
-  const Ht = '[A-Za-z$_][0-9A-Za-z$_]*',
-    Fa = [
+  const $t = '[A-Za-z$_][0-9A-Za-z$_]*',
+    Ya = [
       'as',
       'in',
       'of',
@@ -39551,8 +39552,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'export',
       'extends'
     ],
-    Ba = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
-    Ga = [
+    Ha = ['true', 'false', 'null', 'undefined', 'NaN', 'Infinity'],
+    za = [
       'Object',
       'Function',
       'Boolean',
@@ -39593,7 +39594,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'Intl',
       'WebAssembly'
     ],
-    Ya = [
+    $a = [
       'Error',
       'EvalError',
       'InternalError',
@@ -39603,7 +39604,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'TypeError',
       'URIError'
     ],
-    Ha = [
+    Va = [
       'setInterval',
       'setTimeout',
       'clearInterval',
@@ -39622,11 +39623,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       'escape',
       'unescape'
     ],
-    za = ['arguments', 'this', 'super', 'console', 'window', 'document', 'localStorage', 'module', 'global'],
-    $a = [].concat(Ha, Ga, Ya);
-  function sd(n) {
-    const e = n.regex,
-      t = Ht,
+    ja = ['arguments', 'this', 'super', 'console', 'window', 'document', 'localStorage', 'module', 'global'],
+    qa = [].concat(Va, za, $a);
+  function od(t) {
+    const e = t.regex,
+      n = $t,
       a = '<>',
       i = '</>',
       r = {
@@ -39647,7 +39648,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ((W = G.match(/^\s*=/)) || ((W = G.match(/^\s+extends\s+/)) && W.index === 0)) && B.ignoreMatch();
         }
       },
-      s = { $pattern: Ht, keyword: Fa, literal: Ba, built_in: $a, 'variable.language': za },
+      s = { $pattern: $t, keyword: Ya, literal: Ha, built_in: qa, 'variable.language': ja },
       o = '[0-9](_?[0-9])*',
       l = `\\.(${o})`,
       c = '0|[1-9](_?[0-9])*|0[0-7]*[89][0-9]*',
@@ -39668,18 +39669,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       u = {
         begin: 'html`',
         end: '',
-        starts: { end: '`', returnEnd: !1, contains: [n.BACKSLASH_ESCAPE, d], subLanguage: 'xml' }
+        starts: { end: '`', returnEnd: !1, contains: [t.BACKSLASH_ESCAPE, d], subLanguage: 'xml' }
       },
       m = {
         begin: 'css`',
         end: '',
-        starts: { end: '`', returnEnd: !1, contains: [n.BACKSLASH_ESCAPE, d], subLanguage: 'css' }
+        starts: { end: '`', returnEnd: !1, contains: [t.BACKSLASH_ESCAPE, d], subLanguage: 'css' }
       },
-      p = { className: 'string', begin: '`', end: '`', contains: [n.BACKSLASH_ESCAPE, d] },
+      p = { className: 'string', begin: '`', end: '`', contains: [t.BACKSLASH_ESCAPE, d] },
       g = {
         className: 'comment',
         variants: [
-          n.COMMENT(/\/\*\*(?!\/)/, '\\*/', {
+          t.COMMENT(/\/\*\*(?!\/)/, '\\*/', {
             relevance: 0,
             contains: [
               {
@@ -39688,17 +39689,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 contains: [
                   { className: 'doctag', begin: '@[A-Za-z]+' },
                   { className: 'type', begin: '\\{', end: '\\}', excludeEnd: !0, excludeBegin: !0, relevance: 0 },
-                  { className: 'variable', begin: t + '(?=\\s*(-)|$)', endsParent: !0, relevance: 0 },
+                  { className: 'variable', begin: n + '(?=\\s*(-)|$)', endsParent: !0, relevance: 0 },
                   { begin: /(?=[^\n])\s/, relevance: 0 }
                 ]
               }
             ]
           }),
-          n.C_BLOCK_COMMENT_MODE,
-          n.C_LINE_COMMENT_MODE
+          t.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE
         ]
       },
-      E = [n.APOS_STRING_MODE, n.QUOTE_STRING_MODE, u, m, p, { match: /\$\d+/ }, _];
+      E = [t.APOS_STRING_MODE, t.QUOTE_STRING_MODE, u, m, p, { match: /\$\d+/ }, _];
     d.contains = E.concat({ begin: /\{/, end: /\}/, keywords: s, contains: ['self'].concat(E) });
     const h = [].concat(g, d.contains),
       T = h.concat([{ begin: /\(/, end: /\)/, keywords: s, contains: ['self'].concat(h) }]),
@@ -39706,13 +39707,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       v = {
         variants: [
           {
-            match: [/class/, /\s+/, t, /\s+/, /extends/, /\s+/, e.concat(t, '(', e.concat(/\./, t), ')*')],
+            match: [/class/, /\s+/, n, /\s+/, /extends/, /\s+/, e.concat(n, '(', e.concat(/\./, n), ')*')],
             scope: { 1: 'keyword', 3: 'title.class', 5: 'keyword', 7: 'title.class.inherited' }
           },
-          { match: [/class/, /\s+/, t], scope: { 1: 'keyword', 3: 'title.class' } }
+          { match: [/class/, /\s+/, n], scope: { 1: 'keyword', 3: 'title.class' } }
         ]
       },
-      R = {
+      C = {
         relevance: 0,
         match: e.either(
           /\bJSON/,
@@ -39721,10 +39722,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/
         ),
         className: 'title.class',
-        keywords: { _: [...Ga, ...Ya] }
+        keywords: { _: [...za, ...$a] }
       },
-      C = {
-        variants: [{ match: [/function/, /\s+/, t, /(?=\s*\()/] }, { match: [/function/, /\s*(?=\()/] }],
+      R = {
+        variants: [{ match: [/function/, /\s+/, n, /(?=\s*\()/] }, { match: [/function/, /\s*(?=\()/] }],
         className: { 1: 'keyword', 3: 'title.function' },
         label: 'func.def',
         contains: [S],
@@ -39733,8 +39734,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       I = {
         match: e.concat(
           /\b/,
-          ((O = [...Ha, 'super', 'import']), e.concat('(?!', O.join('|'), ')')),
-          t,
+          ((O = [...Va, 'super', 'import']), e.concat('(?!', O.join('|'), ')')),
+          n,
           e.lookahead(/\(/)
         ),
         className: 'title.function',
@@ -39742,21 +39743,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       };
     var O;
     const A = {
-        begin: e.concat(/\./, e.lookahead(e.concat(t, /(?![0-9A-Za-z$_(])/))),
-        end: t,
+        begin: e.concat(/\./, e.lookahead(e.concat(n, /(?![0-9A-Za-z$_(])/))),
+        end: n,
         excludeBegin: !0,
         keywords: 'prototype',
         className: 'property',
         relevance: 0
       },
       F = {
-        match: [/get|set/, /\s+/, t, /(?=\()/],
+        match: [/get|set/, /\s+/, n, /(?=\()/],
         className: { 1: 'keyword', 3: 'title.function' },
         contains: [{ begin: /\(\)/ }, S]
       },
-      w = '(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|' + n.UNDERSCORE_IDENT_RE + ')\\s*=>',
+      w = '(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|' + t.UNDERSCORE_IDENT_RE + ')\\s*=>',
       j = {
-        match: [/const|var|let/, /\s+/, t, /\s*/, /=\s*/, /(async\s*)?/, e.lookahead(w)],
+        match: [/const|var|let/, /\s+/, n, /\s*/, /=\s*/, /(async\s*)?/, e.lookahead(w)],
         keywords: 'async',
         className: { 1: 'keyword', 3: 'title.function' },
         contains: [S]
@@ -39765,29 +39766,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       name: 'Javascript',
       aliases: ['js', 'jsx', 'mjs', 'cjs'],
       keywords: s,
-      exports: { PARAMS_CONTAINS: T, CLASS_REFERENCE: R },
+      exports: { PARAMS_CONTAINS: T, CLASS_REFERENCE: C },
       illegal: /#(?![$_A-z])/,
       contains: [
-        n.SHEBANG({ label: 'shebang', binary: 'node', relevance: 5 }),
+        t.SHEBANG({ label: 'shebang', binary: 'node', relevance: 5 }),
         { label: 'use_strict', className: 'meta', relevance: 10, begin: /^\s*['"]use (strict|asm)['"]/ },
-        n.APOS_STRING_MODE,
-        n.QUOTE_STRING_MODE,
+        t.APOS_STRING_MODE,
+        t.QUOTE_STRING_MODE,
         u,
         m,
         p,
         g,
         { match: /\$\d+/ },
         _,
-        R,
-        { className: 'attr', begin: t + e.lookahead(':'), relevance: 0 },
+        C,
+        { className: 'attr', begin: n + e.lookahead(':'), relevance: 0 },
         j,
         {
-          begin: '(' + n.RE_STARTERS_RE + '|\\b(case|return|throw)\\b)\\s*',
+          begin: '(' + t.RE_STARTERS_RE + '|\\b(case|return|throw)\\b)\\s*',
           keywords: 'return throw case',
           relevance: 0,
           contains: [
             g,
-            n.REGEXP_MODE,
+            t.REGEXP_MODE,
             {
               className: 'function',
               begin: w,
@@ -39797,7 +39798,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 {
                   className: 'params',
                   variants: [
-                    { begin: n.UNDERSCORE_IDENT_RE, relevance: 0 },
+                    { begin: t.UNDERSCORE_IDENT_RE, relevance: 0 },
                     { className: null, begin: /\(\s*\)/, skip: !0 },
                     { begin: /\(/, end: /\)/, excludeBegin: !0, excludeEnd: !0, keywords: s, contains: T }
                   ]
@@ -39817,18 +39818,18 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             }
           ]
         },
-        C,
+        R,
         { beginKeywords: 'while if switch catch for' },
         {
           begin:
-            '\\b(?!function)' + n.UNDERSCORE_IDENT_RE + '\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{',
+            '\\b(?!function)' + t.UNDERSCORE_IDENT_RE + '\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{',
           returnBegin: !0,
           label: 'func.def',
-          contains: [S, n.inherit(n.TITLE_MODE, { begin: t, className: 'title.function' })]
+          contains: [S, t.inherit(t.TITLE_MODE, { begin: n, className: 'title.function' })]
         },
         { match: /\.\.\./, relevance: 0 },
         A,
-        { match: '\\$' + t, relevance: 0 },
+        { match: '\\$' + n, relevance: 0 },
         { match: [/\bconstructor(?=\s*\()/], className: { 1: 'title.function' }, contains: [S] },
         I,
         { relevance: 0, match: /\b[A-Z][A-Z_0-9]+\b/, className: 'variable.constant' },
@@ -39838,9 +39839,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       ]
     };
   }
-  var od = function(n) {
-      const e = sd(n),
-        t = Ht,
+  var ld = function(t) {
+      const e = od(t),
+        n = $t,
         a = ['any', 'void', 'number', 'boolean', 'string', 'object', 'never', 'symbol', 'bigint', 'unknown'],
         i = { beginKeywords: 'namespace', end: /\{/, excludeEnd: !0, contains: [e.exports.CLASS_REFERENCE] },
         r = {
@@ -39851,8 +39852,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           contains: [e.exports.CLASS_REFERENCE]
         },
         s = {
-          $pattern: Ht,
-          keyword: Fa.concat([
+          $pattern: $t,
+          keyword: Ya.concat([
             'type',
             'namespace',
             'interface',
@@ -39866,11 +39867,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'enum',
             'override'
           ]),
-          literal: Ba,
-          built_in: $a.concat(a),
-          'variable.language': za
+          literal: Ha,
+          built_in: qa.concat(a),
+          'variable.language': ja
         },
-        o = { className: 'meta', begin: '@' + t },
+        o = { className: 'meta', begin: '@' + n },
         l = (c, _, d) => {
           const u = c.contains.findIndex(m => m.label === _);
           if (u === -1) throw new Error('can not find mode to replace');
@@ -39880,14 +39881,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         Object.assign(e.keywords, s),
         e.exports.PARAMS_CONTAINS.push(o),
         (e.contains = e.contains.concat([o, i, r])),
-        l(e, 'shebang', n.SHEBANG()),
+        l(e, 'shebang', t.SHEBANG()),
         l(e, 'use_strict', { className: 'meta', relevance: 10, begin: /^\s*['"]use strict['"]/ }),
         (e.contains.find(c => c.label === 'func.def').relevance = 0),
         Object.assign(e, { name: 'TypeScript', aliases: ['ts', 'tsx'] }),
         e
       );
     },
-    ld = function(n) {
+    cd = function(t) {
       return {
         name: 'Vala',
         keywords: {
@@ -39903,35 +39904,35 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: /\{/,
             excludeEnd: !0,
             illegal: '[^,:\\n\\s\\.]',
-            contains: [n.UNDERSCORE_TITLE_MODE]
+            contains: [t.UNDERSCORE_TITLE_MODE]
           },
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           { className: 'string', begin: '"""', end: '"""', relevance: 5 },
-          n.APOS_STRING_MODE,
-          n.QUOTE_STRING_MODE,
-          n.C_NUMBER_MODE,
+          t.APOS_STRING_MODE,
+          t.QUOTE_STRING_MODE,
+          t.C_NUMBER_MODE,
           { className: 'meta', begin: '^#', end: '$' }
         ]
       };
     },
-    cd = function(n) {
-      const e = n.regex,
-        t = /\d{1,2}\/\d{1,2}\/\d{4}/,
+    dd = function(t) {
+      const e = t.regex,
+        n = /\d{1,2}\/\d{1,2}\/\d{4}/,
         a = /\d{4}-\d{1,2}-\d{1,2}/,
         i = /(\d|1[012])(:\d+){0,2} *(AM|PM)/,
         r = /\d{1,2}(:\d{1,2}){1,2}/,
         s = {
           className: 'literal',
           variants: [
-            { begin: e.concat(/# */, e.either(a, t), / *#/) },
+            { begin: e.concat(/# */, e.either(a, n), / *#/) },
             { begin: e.concat(/# */, r, / *#/) },
             { begin: e.concat(/# */, i, / *#/) },
-            { begin: e.concat(/# */, e.either(a, t), / +/, e.either(i, r), / *#/) }
+            { begin: e.concat(/# */, e.either(a, n), / +/, e.either(i, r), / *#/) }
           ]
         },
-        o = n.COMMENT(/'''/, /$/, { contains: [{ className: 'doctag', begin: /<\/?/, end: />/ }] }),
-        l = n.COMMENT(null, /$/, { variants: [{ begin: /'/ }, { begin: /([\t ]|^)REM(?=\s)/ }] });
+        o = t.COMMENT(/'''/, /$/, { contains: [{ className: 'doctag', begin: /<\/?/, end: />/ }] }),
+        l = t.COMMENT(null, /$/, { variants: [{ begin: /'/ }, { begin: /([\t ]|^)REM(?=\s)/ }] });
       return {
         name: 'Visual Basic .NET',
         aliases: ['vb'],
@@ -39975,9 +39976,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    dd = function(n) {
-      const e = n.regex,
-        t = [
+    _d = function(t) {
+      const e = t.regex,
+        n = [
           'lcase',
           'month',
           'vartype',
@@ -40152,23 +40153,23 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: '//',
         contains: [
-          { begin: e.concat(e.either(...t), '\\s*\\('), relevance: 0, keywords: { built_in: t } },
-          n.inherit(n.QUOTE_STRING_MODE, { contains: [{ begin: '""' }] }),
-          n.COMMENT(/'/, /$/, { relevance: 0 }),
-          n.C_NUMBER_MODE
+          { begin: e.concat(e.either(...n), '\\s*\\('), relevance: 0, keywords: { built_in: n } },
+          t.inherit(t.QUOTE_STRING_MODE, { contains: [{ begin: '""' }] }),
+          t.COMMENT(/'/, /$/, { relevance: 0 }),
+          t.C_NUMBER_MODE
         ]
       };
     },
-    _d = function(n) {
+    ud = function(t) {
       return {
         name: 'VBScript in HTML',
         subLanguage: 'xml',
         contains: [{ begin: '<%', end: '%>', subLanguage: 'vbscript' }]
       };
     },
-    ud = function(n) {
-      const e = n.regex,
-        t = [
+    pd = function(t) {
+      const e = t.regex,
+        n = [
           'begin_keywords',
           'celldefine',
           'default_nettype',
@@ -40655,12 +40656,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           ]
         },
         contains: [
-          n.C_BLOCK_COMMENT_MODE,
-          n.C_LINE_COMMENT_MODE,
-          n.QUOTE_STRING_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.QUOTE_STRING_MODE,
           {
             scope: 'number',
-            contains: [n.BACKSLASH_ESCAPE],
+            contains: [t.BACKSLASH_ESCAPE],
             variants: [
               { begin: /\b((\d+'([bhodBHOD]))[0-9xzXZa-fA-F_]+)/ },
               { begin: /\B(('([bhodBHOD]))[0-9xzXZa-fA-F_]+)/ },
@@ -40669,14 +40670,14 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           },
           { scope: 'variable', variants: [{ begin: '#\\((?!parameter).+\\)' }, { begin: '\\.\\w+', relevance: 0 }] },
           { scope: 'variable.constant', match: e.concat(/`/, e.either('__FILE__', '__LINE__')) },
-          { scope: 'meta', begin: e.concat(/`/, e.either(...t)), end: /$|\/\/|\/\*/, returnEnd: !0, keywords: t }
+          { scope: 'meta', begin: e.concat(/`/, e.either(...n)), end: /$|\/\/|\/\*/, returnEnd: !0, keywords: n }
         ]
       };
     },
-    pd = function(n) {
+    md = function(t) {
       const e = '\\d(_|\\d)*',
-        t = '[eE][-+]?' + e,
-        a = '\\b(' + (e + '#\\w+(\\.\\w+)?#(' + t + ')?') + '|' + (e + '(\\.' + e + ')?(' + t + ')?') + ')';
+        n = '[eE][-+]?' + e,
+        a = '\\b(' + (e + '#\\w+(\\.\\w+)?#(' + n + ')?') + '|' + (e + '(\\.' + e + ')?(' + n + ')?') + ')';
       return {
         name: 'VHDL',
         case_insensitive: !0,
@@ -40831,16 +40832,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: /\{/,
         contains: [
-          n.C_BLOCK_COMMENT_MODE,
-          n.COMMENT('--', '$'),
-          n.QUOTE_STRING_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          t.COMMENT('--', '$'),
+          t.QUOTE_STRING_MODE,
           { className: 'number', begin: a, relevance: 0 },
-          { className: 'string', begin: "'(U|X|0|1|Z|W|L|H|-)'", contains: [n.BACKSLASH_ESCAPE] },
-          { className: 'symbol', begin: "'[A-Za-z](_?[A-Za-z0-9])*", contains: [n.BACKSLASH_ESCAPE] }
+          { className: 'string', begin: "'(U|X|0|1|Z|W|L|H|-)'", contains: [t.BACKSLASH_ESCAPE] },
+          { className: 'symbol', begin: "'[A-Za-z](_?[A-Za-z0-9])*", contains: [t.BACKSLASH_ESCAPE] }
         ]
       };
     },
-    md = function(n) {
+    gd = function(t) {
       return {
         name: 'Vim Script',
         keywords: {
@@ -40852,13 +40853,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         },
         illegal: /;/,
         contains: [
-          n.NUMBER_MODE,
+          t.NUMBER_MODE,
           { className: 'string', begin: "'", end: "'", illegal: '\\n' },
           { className: 'string', begin: /"(\\"|\n\\|[^"\n])*"/ },
-          n.COMMENT('"', '$'),
+          t.COMMENT('"', '$'),
           { className: 'variable', begin: /[bwtglsav]:[\w\d_]+/ },
           {
-            begin: [/\b(?:function|function!)/, /\s+/, n.IDENT_RE],
+            begin: [/\b(?:function|function!)/, /\s+/, t.IDENT_RE],
             className: { 1: 'keyword', 3: 'title' },
             end: '$',
             relevance: 0,
@@ -40868,9 +40869,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    gd = function(n) {
-      n.regex;
-      const e = n.COMMENT(/\(;/, /;\)/);
+    Ed = function(t) {
+      t.regex;
+      const e = t.COMMENT(/\(;/, /;\)/);
       return (
         e.contains.push('self'),
         {
@@ -40926,7 +40927,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ]
           },
           contains: [
-            n.COMMENT(/;;/, /$/),
+            t.COMMENT(/;;/, /$/),
             e,
             { match: [/(?:offset|align)/, /\s*/, /=/], className: { 1: 'keyword', 3: 'operator' } },
             { className: 'variable', begin: /\$[\w_]+/ },
@@ -40935,7 +40936,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               begin: [/(?:func|call|call_indirect)/, /\s+/, /\$[^\s)]+/],
               className: { 1: 'keyword', 3: 'title.function' }
             },
-            n.QUOTE_STRING_MODE,
+            t.QUOTE_STRING_MODE,
             { match: /(i32|i64|f32|f64)(?!\.)/, className: 'type' },
             {
               className: 'keyword',
@@ -40950,9 +40951,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         }
       );
     },
-    Ed = function(n) {
-      const e = n.regex,
-        t = /[a-zA-Z]\w*/,
+    Sd = function(t) {
+      const e = t.regex,
+        n = /[a-zA-Z]\w*/,
         a = [
           'as',
           'break',
@@ -41001,25 +41002,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ],
         o = {
           relevance: 0,
-          match: e.concat(/\b(?!(if|while|for|else|super)\b)/, t, /(?=\s*[({])/),
+          match: e.concat(/\b(?!(if|while|for|else|super)\b)/, n, /(?=\s*[({])/),
           className: 'title.function'
         },
         l = {
           match: e.concat(
-            e.either(e.concat(/\b(?!(if|while|for|else|super)\b)/, t), e.either(...s)),
+            e.either(e.concat(/\b(?!(if|while|for|else|super)\b)/, n), e.either(...s)),
             /(?=\s*\([^)]+\)\s*\{)/
           ),
           className: 'title.function',
-          starts: { contains: [{ begin: /\(/, end: /\)/, contains: [{ relevance: 0, scope: 'params', match: t }] }] }
+          starts: { contains: [{ begin: /\(/, end: /\)/, contains: [{ relevance: 0, scope: 'params', match: n }] }] }
         },
         c = {
-          variants: [{ match: [/class\s+/, t, /\s+is\s+/, t] }, { match: [/class\s+/, t] }],
+          variants: [{ match: [/class\s+/, n, /\s+is\s+/, n] }, { match: [/class\s+/, n] }],
           scope: { 2: 'title.class', 4: 'title.class.inherited' },
           keywords: a
         },
         _ = { relevance: 0, match: e.either(...s), className: 'operator' },
-        d = { className: 'property', begin: e.concat(/\./, e.lookahead(t)), end: t, excludeBegin: !0, relevance: 0 },
-        u = { relevance: 0, match: e.concat(/\b_/, t), scope: 'variable' },
+        d = { className: 'property', begin: e.concat(/\./, e.lookahead(n)), end: n, excludeBegin: !0, relevance: 0 },
+        u = { relevance: 0, match: e.concat(/\b_/, n), scope: 'variable' },
         m = {
           relevance: 0,
           match: /\b[A-Z]+[a-z]+([A-Z]+[a-z]+)*/,
@@ -41042,12 +41043,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             ]
           }
         },
-        p = n.C_NUMBER_MODE,
+        p = t.C_NUMBER_MODE,
         g = {
-          match: [t, /\s*/, /=/, /\s*/, /\(/, t, /\)\s*\{/],
+          match: [n, /\s*/, /=/, /\s*/, /\(/, n, /\)\s*\{/],
           scope: { 1: 'title.function', 3: 'operator', 6: 'params' }
         },
-        E = n.COMMENT(/\/\*\*/, /\*\//, { contains: [{ match: /@[a-z]+/, scope: 'doctag' }, 'self'] }),
+        E = t.COMMENT(/\/\*\*/, /\*\//, { contains: [{ match: /@[a-z]+/, scope: 'doctag' }, 'self'] }),
         h = { scope: 'subst', begin: /%\(/, end: /\)/, contains: [p, m, o, u, _] },
         T = {
           scope: 'string',
@@ -41088,8 +41089,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           T,
           { className: 'string', begin: /"""/, end: /"""/ },
           E,
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
           m,
           c,
           g,
@@ -41102,12 +41103,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    Sd = function(n) {
+    hd = function(t) {
       return {
         name: 'Intel x86 Assembly',
         case_insensitive: !0,
         keywords: {
-          $pattern: '[.%]?' + n.IDENT_RE,
+          $pattern: '[.%]?' + t.IDENT_RE,
           keyword:
             'lock rep repe repz repne repnz xaquire xrelease bnd nobnd aaa aad aam aas adc add and arpl bb0_reset bb1_reset bound bsf bsr bswap bt btc btr bts call cbw cdq cdqe clc cld cli clts cmc cmp cmpsb cmpsd cmpsq cmpsw cmpxchg cmpxchg486 cmpxchg8b cmpxchg16b cpuid cpu_read cpu_write cqo cwd cwde daa das dec div dmint emms enter equ f2xm1 fabs fadd faddp fbld fbstp fchs fclex fcmovb fcmovbe fcmove fcmovnb fcmovnbe fcmovne fcmovnu fcmovu fcom fcomi fcomip fcomp fcompp fcos fdecstp fdisi fdiv fdivp fdivr fdivrp femms feni ffree ffreep fiadd ficom ficomp fidiv fidivr fild fimul fincstp finit fist fistp fisttp fisub fisubr fld fld1 fldcw fldenv fldl2e fldl2t fldlg2 fldln2 fldpi fldz fmul fmulp fnclex fndisi fneni fninit fnop fnsave fnstcw fnstenv fnstsw fpatan fprem fprem1 fptan frndint frstor fsave fscale fsetpm fsin fsincos fsqrt fst fstcw fstenv fstp fstsw fsub fsubp fsubr fsubrp ftst fucom fucomi fucomip fucomp fucompp fxam fxch fxtract fyl2x fyl2xp1 hlt ibts icebp idiv imul in inc incbin insb insd insw int int01 int1 int03 int3 into invd invpcid invlpg invlpga iret iretd iretq iretw jcxz jecxz jrcxz jmp jmpe lahf lar lds lea leave les lfence lfs lgdt lgs lidt lldt lmsw loadall loadall286 lodsb lodsd lodsq lodsw loop loope loopne loopnz loopz lsl lss ltr mfence monitor mov movd movq movsb movsd movsq movsw movsx movsxd movzx mul mwait neg nop not or out outsb outsd outsw packssdw packsswb packuswb paddb paddd paddsb paddsiw paddsw paddusb paddusw paddw pand pandn pause paveb pavgusb pcmpeqb pcmpeqd pcmpeqw pcmpgtb pcmpgtd pcmpgtw pdistib pf2id pfacc pfadd pfcmpeq pfcmpge pfcmpgt pfmax pfmin pfmul pfrcp pfrcpit1 pfrcpit2 pfrsqit1 pfrsqrt pfsub pfsubr pi2fd pmachriw pmaddwd pmagw pmulhriw pmulhrwa pmulhrwc pmulhw pmullw pmvgezb pmvlzb pmvnzb pmvzb pop popa popad popaw popf popfd popfq popfw por prefetch prefetchw pslld psllq psllw psrad psraw psrld psrlq psrlw psubb psubd psubsb psubsiw psubsw psubusb psubusw psubw punpckhbw punpckhdq punpckhwd punpcklbw punpckldq punpcklwd push pusha pushad pushaw pushf pushfd pushfq pushfw pxor rcl rcr rdshr rdmsr rdpmc rdtsc rdtscp ret retf retn rol ror rdm rsdc rsldt rsm rsts sahf sal salc sar sbb scasb scasd scasq scasw sfence sgdt shl shld shr shrd sidt sldt skinit smi smint smintold smsw stc std sti stosb stosd stosq stosw str sub svdc svldt svts swapgs syscall sysenter sysexit sysret test ud0 ud1 ud2b ud2 ud2a umov verr verw fwait wbinvd wrshr wrmsr xadd xbts xchg xlatb xlat xor cmove cmovz cmovne cmovnz cmova cmovnbe cmovae cmovnb cmovb cmovnae cmovbe cmovna cmovg cmovnle cmovge cmovnl cmovl cmovnge cmovle cmovng cmovc cmovnc cmovo cmovno cmovs cmovns cmovp cmovpe cmovnp cmovpo je jz jne jnz ja jnbe jae jnb jb jnae jbe jna jg jnle jge jnl jl jnge jle jng jc jnc jo jno js jns jpo jnp jpe jp sete setz setne setnz seta setnbe setae setnb setnc setb setnae setcset setbe setna setg setnle setge setnl setl setnge setle setng sets setns seto setno setpe setp setpo setnp addps addss andnps andps cmpeqps cmpeqss cmpleps cmpless cmpltps cmpltss cmpneqps cmpneqss cmpnleps cmpnless cmpnltps cmpnltss cmpordps cmpordss cmpunordps cmpunordss cmpps cmpss comiss cvtpi2ps cvtps2pi cvtsi2ss cvtss2si cvttps2pi cvttss2si divps divss ldmxcsr maxps maxss minps minss movaps movhps movlhps movlps movhlps movmskps movntps movss movups mulps mulss orps rcpps rcpss rsqrtps rsqrtss shufps sqrtps sqrtss stmxcsr subps subss ucomiss unpckhps unpcklps xorps fxrstor fxrstor64 fxsave fxsave64 xgetbv xsetbv xsave xsave64 xsaveopt xsaveopt64 xrstor xrstor64 prefetchnta prefetcht0 prefetcht1 prefetcht2 maskmovq movntq pavgb pavgw pextrw pinsrw pmaxsw pmaxub pminsw pminub pmovmskb pmulhuw psadbw pshufw pf2iw pfnacc pfpnacc pi2fw pswapd maskmovdqu clflush movntdq movnti movntpd movdqa movdqu movdq2q movq2dq paddq pmuludq pshufd pshufhw pshuflw pslldq psrldq psubq punpckhqdq punpcklqdq addpd addsd andnpd andpd cmpeqpd cmpeqsd cmplepd cmplesd cmpltpd cmpltsd cmpneqpd cmpneqsd cmpnlepd cmpnlesd cmpnltpd cmpnltsd cmpordpd cmpordsd cmpunordpd cmpunordsd cmppd comisd cvtdq2pd cvtdq2ps cvtpd2dq cvtpd2pi cvtpd2ps cvtpi2pd cvtps2dq cvtps2pd cvtsd2si cvtsd2ss cvtsi2sd cvtss2sd cvttpd2pi cvttpd2dq cvttps2dq cvttsd2si divpd divsd maxpd maxsd minpd minsd movapd movhpd movlpd movmskpd movupd mulpd mulsd orpd shufpd sqrtpd sqrtsd subpd subsd ucomisd unpckhpd unpcklpd xorpd addsubpd addsubps haddpd haddps hsubpd hsubps lddqu movddup movshdup movsldup clgi stgi vmcall vmclear vmfunc vmlaunch vmload vmmcall vmptrld vmptrst vmread vmresume vmrun vmsave vmwrite vmxoff vmxon invept invvpid pabsb pabsw pabsd palignr phaddw phaddd phaddsw phsubw phsubd phsubsw pmaddubsw pmulhrsw pshufb psignb psignw psignd extrq insertq movntsd movntss lzcnt blendpd blendps blendvpd blendvps dppd dpps extractps insertps movntdqa mpsadbw packusdw pblendvb pblendw pcmpeqq pextrb pextrd pextrq phminposuw pinsrb pinsrd pinsrq pmaxsb pmaxsd pmaxud pmaxuw pminsb pminsd pminud pminuw pmovsxbw pmovsxbd pmovsxbq pmovsxwd pmovsxwq pmovsxdq pmovzxbw pmovzxbd pmovzxbq pmovzxwd pmovzxwq pmovzxdq pmuldq pmulld ptest roundpd roundps roundsd roundss crc32 pcmpestri pcmpestrm pcmpistri pcmpistrm pcmpgtq popcnt getsec pfrcpv pfrsqrtv movbe aesenc aesenclast aesdec aesdeclast aesimc aeskeygenassist vaesenc vaesenclast vaesdec vaesdeclast vaesimc vaeskeygenassist vaddpd vaddps vaddsd vaddss vaddsubpd vaddsubps vandpd vandps vandnpd vandnps vblendpd vblendps vblendvpd vblendvps vbroadcastss vbroadcastsd vbroadcastf128 vcmpeq_ospd vcmpeqpd vcmplt_ospd vcmpltpd vcmple_ospd vcmplepd vcmpunord_qpd vcmpunordpd vcmpneq_uqpd vcmpneqpd vcmpnlt_uspd vcmpnltpd vcmpnle_uspd vcmpnlepd vcmpord_qpd vcmpordpd vcmpeq_uqpd vcmpnge_uspd vcmpngepd vcmpngt_uspd vcmpngtpd vcmpfalse_oqpd vcmpfalsepd vcmpneq_oqpd vcmpge_ospd vcmpgepd vcmpgt_ospd vcmpgtpd vcmptrue_uqpd vcmptruepd vcmplt_oqpd vcmple_oqpd vcmpunord_spd vcmpneq_uspd vcmpnlt_uqpd vcmpnle_uqpd vcmpord_spd vcmpeq_uspd vcmpnge_uqpd vcmpngt_uqpd vcmpfalse_ospd vcmpneq_ospd vcmpge_oqpd vcmpgt_oqpd vcmptrue_uspd vcmppd vcmpeq_osps vcmpeqps vcmplt_osps vcmpltps vcmple_osps vcmpleps vcmpunord_qps vcmpunordps vcmpneq_uqps vcmpneqps vcmpnlt_usps vcmpnltps vcmpnle_usps vcmpnleps vcmpord_qps vcmpordps vcmpeq_uqps vcmpnge_usps vcmpngeps vcmpngt_usps vcmpngtps vcmpfalse_oqps vcmpfalseps vcmpneq_oqps vcmpge_osps vcmpgeps vcmpgt_osps vcmpgtps vcmptrue_uqps vcmptrueps vcmplt_oqps vcmple_oqps vcmpunord_sps vcmpneq_usps vcmpnlt_uqps vcmpnle_uqps vcmpord_sps vcmpeq_usps vcmpnge_uqps vcmpngt_uqps vcmpfalse_osps vcmpneq_osps vcmpge_oqps vcmpgt_oqps vcmptrue_usps vcmpps vcmpeq_ossd vcmpeqsd vcmplt_ossd vcmpltsd vcmple_ossd vcmplesd vcmpunord_qsd vcmpunordsd vcmpneq_uqsd vcmpneqsd vcmpnlt_ussd vcmpnltsd vcmpnle_ussd vcmpnlesd vcmpord_qsd vcmpordsd vcmpeq_uqsd vcmpnge_ussd vcmpngesd vcmpngt_ussd vcmpngtsd vcmpfalse_oqsd vcmpfalsesd vcmpneq_oqsd vcmpge_ossd vcmpgesd vcmpgt_ossd vcmpgtsd vcmptrue_uqsd vcmptruesd vcmplt_oqsd vcmple_oqsd vcmpunord_ssd vcmpneq_ussd vcmpnlt_uqsd vcmpnle_uqsd vcmpord_ssd vcmpeq_ussd vcmpnge_uqsd vcmpngt_uqsd vcmpfalse_ossd vcmpneq_ossd vcmpge_oqsd vcmpgt_oqsd vcmptrue_ussd vcmpsd vcmpeq_osss vcmpeqss vcmplt_osss vcmpltss vcmple_osss vcmpless vcmpunord_qss vcmpunordss vcmpneq_uqss vcmpneqss vcmpnlt_usss vcmpnltss vcmpnle_usss vcmpnless vcmpord_qss vcmpordss vcmpeq_uqss vcmpnge_usss vcmpngess vcmpngt_usss vcmpngtss vcmpfalse_oqss vcmpfalsess vcmpneq_oqss vcmpge_osss vcmpgess vcmpgt_osss vcmpgtss vcmptrue_uqss vcmptruess vcmplt_oqss vcmple_oqss vcmpunord_sss vcmpneq_usss vcmpnlt_uqss vcmpnle_uqss vcmpord_sss vcmpeq_usss vcmpnge_uqss vcmpngt_uqss vcmpfalse_osss vcmpneq_osss vcmpge_oqss vcmpgt_oqss vcmptrue_usss vcmpss vcomisd vcomiss vcvtdq2pd vcvtdq2ps vcvtpd2dq vcvtpd2ps vcvtps2dq vcvtps2pd vcvtsd2si vcvtsd2ss vcvtsi2sd vcvtsi2ss vcvtss2sd vcvtss2si vcvttpd2dq vcvttps2dq vcvttsd2si vcvttss2si vdivpd vdivps vdivsd vdivss vdppd vdpps vextractf128 vextractps vhaddpd vhaddps vhsubpd vhsubps vinsertf128 vinsertps vlddqu vldqqu vldmxcsr vmaskmovdqu vmaskmovps vmaskmovpd vmaxpd vmaxps vmaxsd vmaxss vminpd vminps vminsd vminss vmovapd vmovaps vmovd vmovq vmovddup vmovdqa vmovqqa vmovdqu vmovqqu vmovhlps vmovhpd vmovhps vmovlhps vmovlpd vmovlps vmovmskpd vmovmskps vmovntdq vmovntqq vmovntdqa vmovntpd vmovntps vmovsd vmovshdup vmovsldup vmovss vmovupd vmovups vmpsadbw vmulpd vmulps vmulsd vmulss vorpd vorps vpabsb vpabsw vpabsd vpacksswb vpackssdw vpackuswb vpackusdw vpaddb vpaddw vpaddd vpaddq vpaddsb vpaddsw vpaddusb vpaddusw vpalignr vpand vpandn vpavgb vpavgw vpblendvb vpblendw vpcmpestri vpcmpestrm vpcmpistri vpcmpistrm vpcmpeqb vpcmpeqw vpcmpeqd vpcmpeqq vpcmpgtb vpcmpgtw vpcmpgtd vpcmpgtq vpermilpd vpermilps vperm2f128 vpextrb vpextrw vpextrd vpextrq vphaddw vphaddd vphaddsw vphminposuw vphsubw vphsubd vphsubsw vpinsrb vpinsrw vpinsrd vpinsrq vpmaddwd vpmaddubsw vpmaxsb vpmaxsw vpmaxsd vpmaxub vpmaxuw vpmaxud vpminsb vpminsw vpminsd vpminub vpminuw vpminud vpmovmskb vpmovsxbw vpmovsxbd vpmovsxbq vpmovsxwd vpmovsxwq vpmovsxdq vpmovzxbw vpmovzxbd vpmovzxbq vpmovzxwd vpmovzxwq vpmovzxdq vpmulhuw vpmulhrsw vpmulhw vpmullw vpmulld vpmuludq vpmuldq vpor vpsadbw vpshufb vpshufd vpshufhw vpshuflw vpsignb vpsignw vpsignd vpslldq vpsrldq vpsllw vpslld vpsllq vpsraw vpsrad vpsrlw vpsrld vpsrlq vptest vpsubb vpsubw vpsubd vpsubq vpsubsb vpsubsw vpsubusb vpsubusw vpunpckhbw vpunpckhwd vpunpckhdq vpunpckhqdq vpunpcklbw vpunpcklwd vpunpckldq vpunpcklqdq vpxor vrcpps vrcpss vrsqrtps vrsqrtss vroundpd vroundps vroundsd vroundss vshufpd vshufps vsqrtpd vsqrtps vsqrtsd vsqrtss vstmxcsr vsubpd vsubps vsubsd vsubss vtestps vtestpd vucomisd vucomiss vunpckhpd vunpckhps vunpcklpd vunpcklps vxorpd vxorps vzeroall vzeroupper pclmullqlqdq pclmulhqlqdq pclmullqhqdq pclmulhqhqdq pclmulqdq vpclmullqlqdq vpclmulhqlqdq vpclmullqhqdq vpclmulhqhqdq vpclmulqdq vfmadd132ps vfmadd132pd vfmadd312ps vfmadd312pd vfmadd213ps vfmadd213pd vfmadd123ps vfmadd123pd vfmadd231ps vfmadd231pd vfmadd321ps vfmadd321pd vfmaddsub132ps vfmaddsub132pd vfmaddsub312ps vfmaddsub312pd vfmaddsub213ps vfmaddsub213pd vfmaddsub123ps vfmaddsub123pd vfmaddsub231ps vfmaddsub231pd vfmaddsub321ps vfmaddsub321pd vfmsub132ps vfmsub132pd vfmsub312ps vfmsub312pd vfmsub213ps vfmsub213pd vfmsub123ps vfmsub123pd vfmsub231ps vfmsub231pd vfmsub321ps vfmsub321pd vfmsubadd132ps vfmsubadd132pd vfmsubadd312ps vfmsubadd312pd vfmsubadd213ps vfmsubadd213pd vfmsubadd123ps vfmsubadd123pd vfmsubadd231ps vfmsubadd231pd vfmsubadd321ps vfmsubadd321pd vfnmadd132ps vfnmadd132pd vfnmadd312ps vfnmadd312pd vfnmadd213ps vfnmadd213pd vfnmadd123ps vfnmadd123pd vfnmadd231ps vfnmadd231pd vfnmadd321ps vfnmadd321pd vfnmsub132ps vfnmsub132pd vfnmsub312ps vfnmsub312pd vfnmsub213ps vfnmsub213pd vfnmsub123ps vfnmsub123pd vfnmsub231ps vfnmsub231pd vfnmsub321ps vfnmsub321pd vfmadd132ss vfmadd132sd vfmadd312ss vfmadd312sd vfmadd213ss vfmadd213sd vfmadd123ss vfmadd123sd vfmadd231ss vfmadd231sd vfmadd321ss vfmadd321sd vfmsub132ss vfmsub132sd vfmsub312ss vfmsub312sd vfmsub213ss vfmsub213sd vfmsub123ss vfmsub123sd vfmsub231ss vfmsub231sd vfmsub321ss vfmsub321sd vfnmadd132ss vfnmadd132sd vfnmadd312ss vfnmadd312sd vfnmadd213ss vfnmadd213sd vfnmadd123ss vfnmadd123sd vfnmadd231ss vfnmadd231sd vfnmadd321ss vfnmadd321sd vfnmsub132ss vfnmsub132sd vfnmsub312ss vfnmsub312sd vfnmsub213ss vfnmsub213sd vfnmsub123ss vfnmsub123sd vfnmsub231ss vfnmsub231sd vfnmsub321ss vfnmsub321sd rdfsbase rdgsbase rdrand wrfsbase wrgsbase vcvtph2ps vcvtps2ph adcx adox rdseed clac stac xstore xcryptecb xcryptcbc xcryptctr xcryptcfb xcryptofb montmul xsha1 xsha256 llwpcb slwpcb lwpval lwpins vfmaddpd vfmaddps vfmaddsd vfmaddss vfmaddsubpd vfmaddsubps vfmsubaddpd vfmsubaddps vfmsubpd vfmsubps vfmsubsd vfmsubss vfnmaddpd vfnmaddps vfnmaddsd vfnmaddss vfnmsubpd vfnmsubps vfnmsubsd vfnmsubss vfrczpd vfrczps vfrczsd vfrczss vpcmov vpcomb vpcomd vpcomq vpcomub vpcomud vpcomuq vpcomuw vpcomw vphaddbd vphaddbq vphaddbw vphadddq vphaddubd vphaddubq vphaddubw vphaddudq vphadduwd vphadduwq vphaddwd vphaddwq vphsubbw vphsubdq vphsubwd vpmacsdd vpmacsdqh vpmacsdql vpmacssdd vpmacssdqh vpmacssdql vpmacsswd vpmacssww vpmacswd vpmacsww vpmadcsswd vpmadcswd vpperm vprotb vprotd vprotq vprotw vpshab vpshad vpshaq vpshaw vpshlb vpshld vpshlq vpshlw vbroadcasti128 vpblendd vpbroadcastb vpbroadcastw vpbroadcastd vpbroadcastq vpermd vpermpd vpermps vpermq vperm2i128 vextracti128 vinserti128 vpmaskmovd vpmaskmovq vpsllvd vpsllvq vpsravd vpsrlvd vpsrlvq vgatherdpd vgatherqpd vgatherdps vgatherqps vpgatherdd vpgatherqd vpgatherdq vpgatherqq xabort xbegin xend xtest andn bextr blci blcic blsi blsic blcfill blsfill blcmsk blsmsk blsr blcs bzhi mulx pdep pext rorx sarx shlx shrx tzcnt tzmsk t1mskc valignd valignq vblendmpd vblendmps vbroadcastf32x4 vbroadcastf64x4 vbroadcasti32x4 vbroadcasti64x4 vcompresspd vcompressps vcvtpd2udq vcvtps2udq vcvtsd2usi vcvtss2usi vcvttpd2udq vcvttps2udq vcvttsd2usi vcvttss2usi vcvtudq2pd vcvtudq2ps vcvtusi2sd vcvtusi2ss vexpandpd vexpandps vextractf32x4 vextractf64x4 vextracti32x4 vextracti64x4 vfixupimmpd vfixupimmps vfixupimmsd vfixupimmss vgetexppd vgetexpps vgetexpsd vgetexpss vgetmantpd vgetmantps vgetmantsd vgetmantss vinsertf32x4 vinsertf64x4 vinserti32x4 vinserti64x4 vmovdqa32 vmovdqa64 vmovdqu32 vmovdqu64 vpabsq vpandd vpandnd vpandnq vpandq vpblendmd vpblendmq vpcmpltd vpcmpled vpcmpneqd vpcmpnltd vpcmpnled vpcmpd vpcmpltq vpcmpleq vpcmpneqq vpcmpnltq vpcmpnleq vpcmpq vpcmpequd vpcmpltud vpcmpleud vpcmpnequd vpcmpnltud vpcmpnleud vpcmpud vpcmpequq vpcmpltuq vpcmpleuq vpcmpnequq vpcmpnltuq vpcmpnleuq vpcmpuq vpcompressd vpcompressq vpermi2d vpermi2pd vpermi2ps vpermi2q vpermt2d vpermt2pd vpermt2ps vpermt2q vpexpandd vpexpandq vpmaxsq vpmaxuq vpminsq vpminuq vpmovdb vpmovdw vpmovqb vpmovqd vpmovqw vpmovsdb vpmovsdw vpmovsqb vpmovsqd vpmovsqw vpmovusdb vpmovusdw vpmovusqb vpmovusqd vpmovusqw vpord vporq vprold vprolq vprolvd vprolvq vprord vprorq vprorvd vprorvq vpscatterdd vpscatterdq vpscatterqd vpscatterqq vpsraq vpsravq vpternlogd vpternlogq vptestmd vptestmq vptestnmd vptestnmq vpxord vpxorq vrcp14pd vrcp14ps vrcp14sd vrcp14ss vrndscalepd vrndscaleps vrndscalesd vrndscaless vrsqrt14pd vrsqrt14ps vrsqrt14sd vrsqrt14ss vscalefpd vscalefps vscalefsd vscalefss vscatterdpd vscatterdps vscatterqpd vscatterqps vshuff32x4 vshuff64x2 vshufi32x4 vshufi64x2 kandnw kandw kmovw knotw kortestw korw kshiftlw kshiftrw kunpckbw kxnorw kxorw vpbroadcastmb2q vpbroadcastmw2d vpconflictd vpconflictq vplzcntd vplzcntq vexp2pd vexp2ps vrcp28pd vrcp28ps vrcp28sd vrcp28ss vrsqrt28pd vrsqrt28ps vrsqrt28sd vrsqrt28ss vgatherpf0dpd vgatherpf0dps vgatherpf0qpd vgatherpf0qps vgatherpf1dpd vgatherpf1dps vgatherpf1qpd vgatherpf1qps vscatterpf0dpd vscatterpf0dps vscatterpf0qpd vscatterpf0qps vscatterpf1dpd vscatterpf1dps vscatterpf1qpd vscatterpf1qps prefetchwt1 bndmk bndcl bndcu bndcn bndmov bndldx bndstx sha1rnds4 sha1nexte sha1msg1 sha1msg2 sha256rnds2 sha256msg1 sha256msg2 hint_nop0 hint_nop1 hint_nop2 hint_nop3 hint_nop4 hint_nop5 hint_nop6 hint_nop7 hint_nop8 hint_nop9 hint_nop10 hint_nop11 hint_nop12 hint_nop13 hint_nop14 hint_nop15 hint_nop16 hint_nop17 hint_nop18 hint_nop19 hint_nop20 hint_nop21 hint_nop22 hint_nop23 hint_nop24 hint_nop25 hint_nop26 hint_nop27 hint_nop28 hint_nop29 hint_nop30 hint_nop31 hint_nop32 hint_nop33 hint_nop34 hint_nop35 hint_nop36 hint_nop37 hint_nop38 hint_nop39 hint_nop40 hint_nop41 hint_nop42 hint_nop43 hint_nop44 hint_nop45 hint_nop46 hint_nop47 hint_nop48 hint_nop49 hint_nop50 hint_nop51 hint_nop52 hint_nop53 hint_nop54 hint_nop55 hint_nop56 hint_nop57 hint_nop58 hint_nop59 hint_nop60 hint_nop61 hint_nop62 hint_nop63',
           built_in:
@@ -41116,7 +41117,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             '%define %xdefine %+ %undef %defstr %deftok %assign %strcat %strlen %substr %rotate %elif %else %endif %if %ifmacro %ifctx %ifidn %ifidni %ifid %ifnum %ifstr %iftoken %ifempty %ifenv %error %warning %fatal %rep %endrep %include %push %pop %repl %pathsearch %depend %use %arg %stacksize %local %line %comment %endcomment .nolist __FILE__ __LINE__ __SECT__  __BITS__ __OUTPUT_FORMAT__ __DATE__ __TIME__ __DATE_NUM__ __TIME_NUM__ __UTC_DATE__ __UTC_TIME__ __UTC_DATE_NUM__ __UTC_TIME_NUM__  __PASS__ struc endstruc istruc at iend align alignb sectalign daz nodaz up down zero default option assume public bits use16 use32 use64 default section segment absolute extern global common cpu float __utf16__ __utf16le__ __utf16be__ __utf32__ __utf32le__ __utf32be__ __float8__ __float16__ __float32__ __float64__ __float80m__ __float80e__ __float128l__ __float128h__ __Infinity__ __QNaN__ __SNaN__ Inf NaN QNaN SNaN float8 float16 float32 float64 float80m float80e float128l float128h __FLOAT_DAZ__ __FLOAT_ROUND__ __FLOAT__'
         },
         contains: [
-          n.COMMENT(';', '$', { relevance: 0 }),
+          t.COMMENT(';', '$', { relevance: 0 }),
           {
             className: 'number',
             variants: [
@@ -41133,7 +41134,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               { begin: '\\b(?:0[Xx][0-9A-Fa-f_]+|0[DdTt][0-9_]+|0[QqOo][0-7_]+|0[BbYy][0-1_]+)\\b' }
             ]
           },
-          n.QUOTE_STRING_MODE,
+          t.QUOTE_STRING_MODE,
           {
             className: 'string',
             variants: [{ begin: "'", end: "[^\\\\]'" }, { begin: '`', end: '[^\\\\]`' }],
@@ -41153,7 +41154,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    hd = function(n) {
+    bd = function(t) {
       const e = {
           $pattern: /[a-zA-Z][a-zA-Z0-9_?]*/,
           keyword: [
@@ -41284,33 +41285,33 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             'Charts'
           ])
         },
-        t = { className: 'string', begin: '"', end: '"', illegal: '\\n' },
-        a = { beginKeywords: 'import', end: '$', keywords: e, contains: [t] },
+        n = { className: 'string', begin: '"', end: '"', illegal: '\\n' },
+        a = { beginKeywords: 'import', end: '$', keywords: e, contains: [n] },
         i = {
           className: 'function',
           begin: /[a-z][^\n]*->/,
           returnBegin: !0,
           end: /->/,
-          contains: [n.inherit(n.TITLE_MODE, { starts: { endsWithParent: !0, keywords: e } })]
+          contains: [t.inherit(t.TITLE_MODE, { starts: { endsWithParent: !0, keywords: e } })]
         };
       return {
         name: 'XL',
         aliases: ['tao'],
         keywords: e,
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.C_BLOCK_COMMENT_MODE,
-          t,
+          t.C_LINE_COMMENT_MODE,
+          t.C_BLOCK_COMMENT_MODE,
+          n,
           { className: 'string', begin: "'", end: "'", illegal: '\\n' },
           { className: 'string', begin: '<<', end: '>>' },
           i,
           a,
           { className: 'number', begin: '[0-9]+#[0-9A-Z_]+(\\.[0-9-A-Z_]+)?#?([Ee][+-]?[0-9]+)?' },
-          n.NUMBER_MODE
+          t.NUMBER_MODE
         ]
       };
     },
-    bd = function(n) {
+    fd = function(t) {
       return {
         name: 'XQuery',
         aliases: ['xpath', 'xq'],
@@ -41550,17 +41551,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         ]
       };
     },
-    fd = function(n) {
+    Td = function(t) {
       const e = {
           className: 'string',
-          contains: [n.BACKSLASH_ESCAPE],
+          contains: [t.BACKSLASH_ESCAPE],
           variants: [
-            n.inherit(n.APOS_STRING_MODE, { illegal: null }),
-            n.inherit(n.QUOTE_STRING_MODE, { illegal: null })
+            t.inherit(t.APOS_STRING_MODE, { illegal: null }),
+            t.inherit(t.QUOTE_STRING_MODE, { illegal: null })
           ]
         },
-        t = n.UNDERSCORE_TITLE_MODE,
-        a = { variants: [n.BINARY_NUMBER_MODE, n.C_NUMBER_MODE] },
+        n = t.UNDERSCORE_TITLE_MODE,
+        a = { variants: [t.BINARY_NUMBER_MODE, t.C_NUMBER_MODE] },
         i =
           'namespace class interface use extends function return abstract final public protected private static deprecated throw try catch Exception echo empty isset instanceof unset let var new const self require if else elseif switch case default do while loop for continue break likely unlikely __LINE__ __FILE__ __DIR__ __FUNCTION__ __CLASS__ __TRAIT__ __METHOD__ __NAMESPACE__ array boolean float double integer object resource string char long unsigned bool int uint ulong uchar true false null undefined';
       return {
@@ -41568,9 +41569,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         aliases: ['zep'],
         keywords: i,
         contains: [
-          n.C_LINE_COMMENT_MODE,
-          n.COMMENT(/\/\*/, /\*\//, { contains: [{ className: 'doctag', begin: /@[A-Za-z]+/ }] }),
-          { className: 'string', begin: /<<<['"]?\w+['"]?$/, end: /^\w+;/, contains: [n.BACKSLASH_ESCAPE] },
+          t.C_LINE_COMMENT_MODE,
+          t.COMMENT(/\/\*/, /\*\//, { contains: [{ className: 'doctag', begin: /@[A-Za-z]+/ }] }),
+          { className: 'string', begin: /<<<['"]?\w+['"]?$/, end: /^\w+;/, contains: [t.BACKSLASH_ESCAPE] },
           { begin: /(::|->)+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/ },
           {
             className: 'function',
@@ -41579,13 +41580,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             excludeEnd: !0,
             illegal: /\$|\[|%/,
             contains: [
-              t,
+              n,
               {
                 className: 'params',
                 begin: /\(/,
                 end: /\)/,
                 keywords: i,
-                contains: ['self', n.C_BLOCK_COMMENT_MODE, e, a]
+                contains: ['self', t.C_BLOCK_COMMENT_MODE, e, a]
               }
             ]
           },
@@ -41595,214 +41596,214 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             end: /\{/,
             excludeEnd: !0,
             illegal: /[:($"]/,
-            contains: [{ beginKeywords: 'extends implements' }, t]
+            contains: [{ beginKeywords: 'extends implements' }, n]
           },
-          { beginKeywords: 'namespace', end: /;/, illegal: /[.']/, contains: [t] },
-          { beginKeywords: 'use', end: /;/, contains: [t] },
+          { beginKeywords: 'namespace', end: /;/, illegal: /[.']/, contains: [n] },
+          { beginKeywords: 'use', end: /;/, contains: [n] },
           { begin: /=>/ },
           e,
           a
         ]
       };
     },
-    f = is;
-  f.registerLanguage('1c', rs),
-    f.registerLanguage('abnf', ss),
-    f.registerLanguage('accesslog', os),
-    f.registerLanguage('actionscript', ls),
-    f.registerLanguage('ada', cs),
-    f.registerLanguage('angelscript', ds),
-    f.registerLanguage('apache', _s),
-    f.registerLanguage('applescript', us),
-    f.registerLanguage('arcade', ps),
-    f.registerLanguage('arduino', ms),
-    f.registerLanguage('armasm', gs),
-    f.registerLanguage('xml', Es),
-    f.registerLanguage('asciidoc', Ss),
-    f.registerLanguage('aspectj', hs),
-    f.registerLanguage('autohotkey', bs),
-    f.registerLanguage('autoit', fs),
-    f.registerLanguage('avrasm', Ts),
-    f.registerLanguage('awk', vs),
-    f.registerLanguage('axapta', ys),
+    f = rs;
+  f.registerLanguage('1c', ss),
+    f.registerLanguage('abnf', os),
+    f.registerLanguage('accesslog', ls),
+    f.registerLanguage('actionscript', cs),
+    f.registerLanguage('ada', ds),
+    f.registerLanguage('angelscript', _s),
+    f.registerLanguage('apache', us),
+    f.registerLanguage('applescript', ps),
+    f.registerLanguage('arcade', ms),
+    f.registerLanguage('arduino', gs),
+    f.registerLanguage('armasm', Es),
+    f.registerLanguage('xml', Ss),
+    f.registerLanguage('asciidoc', hs),
+    f.registerLanguage('aspectj', bs),
+    f.registerLanguage('autohotkey', fs),
+    f.registerLanguage('autoit', Ts),
+    f.registerLanguage('avrasm', vs),
+    f.registerLanguage('awk', ys),
+    f.registerLanguage('axapta', Cs),
     f.registerLanguage('bash', Rs),
-    f.registerLanguage('basic', Cs),
-    f.registerLanguage('bnf', Ns),
-    f.registerLanguage('brainfuck', Os),
-    f.registerLanguage('c', As),
-    f.registerLanguage('cal', Is),
-    f.registerLanguage('capnproto', xs),
-    f.registerLanguage('ceylon', Ds),
-    f.registerLanguage('clean', ws),
-    f.registerLanguage('clojure', Ms),
-    f.registerLanguage('clojure-repl', Ls),
-    f.registerLanguage('cmake', ks),
-    f.registerLanguage('coffeescript', Bs),
-    f.registerLanguage('coq', Gs),
-    f.registerLanguage('cos', Ys),
-    f.registerLanguage('cpp', Hs),
-    f.registerLanguage('crmsh', zs),
-    f.registerLanguage('crystal', $s),
-    f.registerLanguage('csharp', Vs),
-    f.registerLanguage('csp', js),
-    f.registerLanguage('css', Zs),
-    f.registerLanguage('d', Js),
-    f.registerLanguage('markdown', eo),
-    f.registerLanguage('dart', to),
-    f.registerLanguage('delphi', no),
-    f.registerLanguage('diff', ao),
-    f.registerLanguage('django', io),
-    f.registerLanguage('dns', ro),
-    f.registerLanguage('dockerfile', so),
-    f.registerLanguage('dos', oo),
-    f.registerLanguage('dsconfig', lo),
-    f.registerLanguage('dts', co),
-    f.registerLanguage('dust', _o),
-    f.registerLanguage('ebnf', uo),
-    f.registerLanguage('elixir', po),
-    f.registerLanguage('elm', mo),
-    f.registerLanguage('ruby', go),
-    f.registerLanguage('erb', Eo),
-    f.registerLanguage('erlang-repl', So),
-    f.registerLanguage('erlang', ho),
-    f.registerLanguage('excel', bo),
-    f.registerLanguage('fix', fo),
-    f.registerLanguage('flix', To),
-    f.registerLanguage('fortran', vo),
+    f.registerLanguage('basic', Ns),
+    f.registerLanguage('bnf', Os),
+    f.registerLanguage('brainfuck', As),
+    f.registerLanguage('c', Is),
+    f.registerLanguage('cal', xs),
+    f.registerLanguage('capnproto', Ds),
+    f.registerLanguage('ceylon', ws),
+    f.registerLanguage('clean', Ms),
+    f.registerLanguage('clojure', Ls),
+    f.registerLanguage('clojure-repl', ks),
+    f.registerLanguage('cmake', Ps),
+    f.registerLanguage('coffeescript', Gs),
+    f.registerLanguage('coq', Ys),
+    f.registerLanguage('cos', Hs),
+    f.registerLanguage('cpp', zs),
+    f.registerLanguage('crmsh', $s),
+    f.registerLanguage('crystal', Vs),
+    f.registerLanguage('csharp', js),
+    f.registerLanguage('csp', qs),
+    f.registerLanguage('css', Js),
+    f.registerLanguage('d', eo),
+    f.registerLanguage('markdown', to),
+    f.registerLanguage('dart', no),
+    f.registerLanguage('delphi', ao),
+    f.registerLanguage('diff', io),
+    f.registerLanguage('django', ro),
+    f.registerLanguage('dns', so),
+    f.registerLanguage('dockerfile', oo),
+    f.registerLanguage('dos', lo),
+    f.registerLanguage('dsconfig', co),
+    f.registerLanguage('dts', _o),
+    f.registerLanguage('dust', uo),
+    f.registerLanguage('ebnf', po),
+    f.registerLanguage('elixir', mo),
+    f.registerLanguage('elm', go),
+    f.registerLanguage('ruby', Eo),
+    f.registerLanguage('erb', So),
+    f.registerLanguage('erlang-repl', ho),
+    f.registerLanguage('erlang', bo),
+    f.registerLanguage('excel', fo),
+    f.registerLanguage('fix', To),
+    f.registerLanguage('flix', vo),
+    f.registerLanguage('fortran', yo),
     f.registerLanguage('fsharp', Ro),
-    f.registerLanguage('gams', Co),
-    f.registerLanguage('gauss', No),
-    f.registerLanguage('gcode', Oo),
-    f.registerLanguage('gherkin', Ao),
-    f.registerLanguage('glsl', Io),
-    f.registerLanguage('gml', xo),
-    f.registerLanguage('go', Do),
-    f.registerLanguage('golo', wo),
-    f.registerLanguage('gradle', Mo),
-    f.registerLanguage('graphql', Lo),
-    f.registerLanguage('groovy', ko),
-    f.registerLanguage('haml', Po),
-    f.registerLanguage('handlebars', Uo),
-    f.registerLanguage('haskell', Fo),
-    f.registerLanguage('haxe', Bo),
-    f.registerLanguage('hsp', Go),
-    f.registerLanguage('http', Yo),
-    f.registerLanguage('hy', Ho),
-    f.registerLanguage('inform7', zo),
-    f.registerLanguage('ini', $o),
-    f.registerLanguage('irpf90', Vo),
-    f.registerLanguage('isbl', jo),
-    f.registerLanguage('java', qo),
-    f.registerLanguage('javascript', Zo),
-    f.registerLanguage('jboss-cli', Jo),
-    f.registerLanguage('json', el),
-    f.registerLanguage('julia', tl),
-    f.registerLanguage('julia-repl', nl),
-    f.registerLanguage('kotlin', il),
-    f.registerLanguage('lasso', rl),
-    f.registerLanguage('latex', sl),
-    f.registerLanguage('ldif', ol),
-    f.registerLanguage('leaf', ll),
-    f.registerLanguage('less', pl),
-    f.registerLanguage('lisp', ml),
-    f.registerLanguage('livecodeserver', gl),
-    f.registerLanguage('livescript', bl),
-    f.registerLanguage('llvm', fl),
-    f.registerLanguage('lsl', Tl),
-    f.registerLanguage('lua', vl),
-    f.registerLanguage('makefile', yl),
-    f.registerLanguage('mathematica', Cl),
-    f.registerLanguage('matlab', Nl),
-    f.registerLanguage('maxima', Ol),
-    f.registerLanguage('mel', Al),
-    f.registerLanguage('mercury', Il),
-    f.registerLanguage('mipsasm', xl),
-    f.registerLanguage('mizar', Dl),
-    f.registerLanguage('perl', wl),
-    f.registerLanguage('mojolicious', Ml),
-    f.registerLanguage('monkey', Ll),
-    f.registerLanguage('moonscript', kl),
-    f.registerLanguage('n1ql', Pl),
-    f.registerLanguage('nestedtext', Ul),
-    f.registerLanguage('nginx', Fl),
-    f.registerLanguage('nim', Bl),
-    f.registerLanguage('nix', Gl),
-    f.registerLanguage('node-repl', Yl),
-    f.registerLanguage('nsis', Hl),
-    f.registerLanguage('objectivec', zl),
-    f.registerLanguage('ocaml', $l),
-    f.registerLanguage('openscad', Vl),
-    f.registerLanguage('oxygene', jl),
-    f.registerLanguage('parser3', ql),
-    f.registerLanguage('pf', Wl),
-    f.registerLanguage('pgsql', Ql),
-    f.registerLanguage('php', Kl),
-    f.registerLanguage('php-template', Xl),
-    f.registerLanguage('plaintext', Zl),
-    f.registerLanguage('pony', Jl),
-    f.registerLanguage('powershell', ec),
-    f.registerLanguage('processing', tc),
-    f.registerLanguage('profile', nc),
-    f.registerLanguage('prolog', ac),
-    f.registerLanguage('properties', ic),
-    f.registerLanguage('protobuf', rc),
-    f.registerLanguage('puppet', sc),
-    f.registerLanguage('purebasic', oc),
-    f.registerLanguage('python', lc),
-    f.registerLanguage('python-repl', cc),
-    f.registerLanguage('q', dc),
-    f.registerLanguage('qml', _c),
-    f.registerLanguage('r', uc),
-    f.registerLanguage('reasonml', pc),
-    f.registerLanguage('rib', mc),
-    f.registerLanguage('roboconf', gc),
-    f.registerLanguage('routeros', Ec),
-    f.registerLanguage('rsl', Sc),
-    f.registerLanguage('ruleslanguage', hc),
-    f.registerLanguage('rust', bc),
-    f.registerLanguage('sas', fc),
-    f.registerLanguage('scala', Tc),
-    f.registerLanguage('scheme', vc),
-    f.registerLanguage('scilab', yc),
-    f.registerLanguage('scss', Ic),
-    f.registerLanguage('shell', xc),
-    f.registerLanguage('smali', Dc),
-    f.registerLanguage('smalltalk', wc),
-    f.registerLanguage('sml', Mc),
-    f.registerLanguage('sqf', Lc),
-    f.registerLanguage('sql', kc),
-    f.registerLanguage('stan', Pc),
-    f.registerLanguage('stata', Uc),
-    f.registerLanguage('step21', Fc),
-    f.registerLanguage('stylus', $c),
-    f.registerLanguage('subunit', Vc),
-    f.registerLanguage('swift', Zc),
-    f.registerLanguage('taggerscript', Jc),
-    f.registerLanguage('yaml', ed),
-    f.registerLanguage('tap', td),
-    f.registerLanguage('tcl', nd),
-    f.registerLanguage('thrift', ad),
-    f.registerLanguage('tp', id),
-    f.registerLanguage('twig', rd),
-    f.registerLanguage('typescript', od),
-    f.registerLanguage('vala', ld),
-    f.registerLanguage('vbnet', cd),
-    f.registerLanguage('vbscript', dd),
-    f.registerLanguage('vbscript-html', _d),
-    f.registerLanguage('verilog', ud),
-    f.registerLanguage('vhdl', pd),
-    f.registerLanguage('vim', md),
-    f.registerLanguage('wasm', gd),
-    f.registerLanguage('wren', Ed),
-    f.registerLanguage('x86asm', Sd),
-    f.registerLanguage('xl', hd),
-    f.registerLanguage('xquery', bd),
-    f.registerLanguage('zephir', fd),
+    f.registerLanguage('gams', No),
+    f.registerLanguage('gauss', Oo),
+    f.registerLanguage('gcode', Ao),
+    f.registerLanguage('gherkin', Io),
+    f.registerLanguage('glsl', xo),
+    f.registerLanguage('gml', Do),
+    f.registerLanguage('go', wo),
+    f.registerLanguage('golo', Mo),
+    f.registerLanguage('gradle', Lo),
+    f.registerLanguage('graphql', ko),
+    f.registerLanguage('groovy', Po),
+    f.registerLanguage('haml', Uo),
+    f.registerLanguage('handlebars', Fo),
+    f.registerLanguage('haskell', Bo),
+    f.registerLanguage('haxe', Go),
+    f.registerLanguage('hsp', Yo),
+    f.registerLanguage('http', Ho),
+    f.registerLanguage('hy', zo),
+    f.registerLanguage('inform7', $o),
+    f.registerLanguage('ini', Vo),
+    f.registerLanguage('irpf90', jo),
+    f.registerLanguage('isbl', qo),
+    f.registerLanguage('java', Wo),
+    f.registerLanguage('javascript', Jo),
+    f.registerLanguage('jboss-cli', el),
+    f.registerLanguage('json', tl),
+    f.registerLanguage('julia', nl),
+    f.registerLanguage('julia-repl', al),
+    f.registerLanguage('kotlin', rl),
+    f.registerLanguage('lasso', sl),
+    f.registerLanguage('latex', ol),
+    f.registerLanguage('ldif', ll),
+    f.registerLanguage('leaf', cl),
+    f.registerLanguage('less', ml),
+    f.registerLanguage('lisp', gl),
+    f.registerLanguage('livecodeserver', El),
+    f.registerLanguage('livescript', fl),
+    f.registerLanguage('llvm', Tl),
+    f.registerLanguage('lsl', vl),
+    f.registerLanguage('lua', yl),
+    f.registerLanguage('makefile', Cl),
+    f.registerLanguage('mathematica', Nl),
+    f.registerLanguage('matlab', Ol),
+    f.registerLanguage('maxima', Al),
+    f.registerLanguage('mel', Il),
+    f.registerLanguage('mercury', xl),
+    f.registerLanguage('mipsasm', Dl),
+    f.registerLanguage('mizar', wl),
+    f.registerLanguage('perl', Ml),
+    f.registerLanguage('mojolicious', Ll),
+    f.registerLanguage('monkey', kl),
+    f.registerLanguage('moonscript', Pl),
+    f.registerLanguage('n1ql', Ul),
+    f.registerLanguage('nestedtext', Fl),
+    f.registerLanguage('nginx', Bl),
+    f.registerLanguage('nim', Gl),
+    f.registerLanguage('nix', Yl),
+    f.registerLanguage('node-repl', Hl),
+    f.registerLanguage('nsis', zl),
+    f.registerLanguage('objectivec', $l),
+    f.registerLanguage('ocaml', Vl),
+    f.registerLanguage('openscad', jl),
+    f.registerLanguage('oxygene', ql),
+    f.registerLanguage('parser3', Wl),
+    f.registerLanguage('pf', Ql),
+    f.registerLanguage('pgsql', Kl),
+    f.registerLanguage('php', Xl),
+    f.registerLanguage('php-template', Zl),
+    f.registerLanguage('plaintext', Jl),
+    f.registerLanguage('pony', ec),
+    f.registerLanguage('powershell', tc),
+    f.registerLanguage('processing', nc),
+    f.registerLanguage('profile', ac),
+    f.registerLanguage('prolog', ic),
+    f.registerLanguage('properties', rc),
+    f.registerLanguage('protobuf', sc),
+    f.registerLanguage('puppet', oc),
+    f.registerLanguage('purebasic', lc),
+    f.registerLanguage('python', cc),
+    f.registerLanguage('python-repl', dc),
+    f.registerLanguage('q', _c),
+    f.registerLanguage('qml', uc),
+    f.registerLanguage('r', pc),
+    f.registerLanguage('reasonml', mc),
+    f.registerLanguage('rib', gc),
+    f.registerLanguage('roboconf', Ec),
+    f.registerLanguage('routeros', Sc),
+    f.registerLanguage('rsl', hc),
+    f.registerLanguage('ruleslanguage', bc),
+    f.registerLanguage('rust', fc),
+    f.registerLanguage('sas', Tc),
+    f.registerLanguage('scala', vc),
+    f.registerLanguage('scheme', yc),
+    f.registerLanguage('scilab', Cc),
+    f.registerLanguage('scss', xc),
+    f.registerLanguage('shell', Dc),
+    f.registerLanguage('smali', wc),
+    f.registerLanguage('smalltalk', Mc),
+    f.registerLanguage('sml', Lc),
+    f.registerLanguage('sqf', kc),
+    f.registerLanguage('sql', Pc),
+    f.registerLanguage('stan', Uc),
+    f.registerLanguage('stata', Fc),
+    f.registerLanguage('step21', Bc),
+    f.registerLanguage('stylus', Vc),
+    f.registerLanguage('subunit', jc),
+    f.registerLanguage('swift', Jc),
+    f.registerLanguage('taggerscript', ed),
+    f.registerLanguage('yaml', td),
+    f.registerLanguage('tap', nd),
+    f.registerLanguage('tcl', ad),
+    f.registerLanguage('thrift', id),
+    f.registerLanguage('tp', rd),
+    f.registerLanguage('twig', sd),
+    f.registerLanguage('typescript', ld),
+    f.registerLanguage('vala', cd),
+    f.registerLanguage('vbnet', dd),
+    f.registerLanguage('vbscript', _d),
+    f.registerLanguage('vbscript-html', ud),
+    f.registerLanguage('verilog', pd),
+    f.registerLanguage('vhdl', md),
+    f.registerLanguage('vim', gd),
+    f.registerLanguage('wasm', Ed),
+    f.registerLanguage('wren', Sd),
+    f.registerLanguage('x86asm', hd),
+    f.registerLanguage('xl', bd),
+    f.registerLanguage('xquery', fd),
+    f.registerLanguage('zephir', Td),
     (f.HighlightJS = f),
     (f.default = f);
   var De = f;
-  (function(n, e) {
-    var t,
+  (function(t, e) {
+    var n,
       a = 'hljs-ln',
       i = 'hljs-ln-code',
       r = 'hljs-ln-n',
@@ -41813,7 +41814,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         var g = e.querySelectorAll('code.hljs,code.nohighlight');
         for (var E in g) g.hasOwnProperty(E) && (g[E].classList.contains('nohljsln') || c(g[E], p));
       } catch (h) {
-        n.console.error('LineNumbers error: ', h);
+        t.console.error('LineNumbers error: ', h);
       }
     }
     function c(p, g) {
@@ -41828,41 +41829,41 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             return !!S.singleLine && S.singleLine;
           })((h = (h = g) || {})),
           startFrom: (function(S, v) {
-            var R = 1;
-            isFinite(v.startFrom) && (R = v.startFrom);
-            var C = (function(I, O) {
+            var C = 1;
+            isFinite(v.startFrom) && (C = v.startFrom);
+            var R = (function(I, O) {
               return I.hasAttribute(O) ? I.getAttribute(O) : null;
             })(S, 'data-ln-start-from');
             return (
-              C !== null &&
-                (R = (function(I, O) {
+              R !== null &&
+                (C = (function(I, O) {
                   if (!I) return 1;
                   var A = Number(I);
                   return isFinite(A) ? A : 1;
-                })(C)),
-              R
+                })(R)),
+              C
             );
           })(E, h)
         });
       return (
         (function S(v) {
-          var R = v.childNodes;
-          for (var C in R) {
+          var C = v.childNodes;
+          for (var R in C) {
             var I;
-            R.hasOwnProperty(C) &&
-              0 < ((I = R[C]).textContent.trim().match(o) || []).length &&
+            C.hasOwnProperty(R) &&
+              0 < ((I = C[R]).textContent.trim().match(o) || []).length &&
               (0 < I.childNodes.length ? S(I) : d(I.parentNode));
           }
         })(p),
         (function(S, v) {
-          var R = u(S);
-          if ((R[R.length - 1].trim() === '' && R.pop(), 1 < R.length || v.singleLine)) {
-            for (var C = '', I = 0, O = R.length; I < O; I++)
-              C += m(
+          var C = u(S);
+          if ((C[C.length - 1].trim() === '' && C.pop(), 1 < C.length || v.singleLine)) {
+            for (var R = '', I = 0, O = C.length; I < O; I++)
+              R += m(
                 '<tr><td class="{0} {1}" {3}="{5}"><div class="{2}" {3}="{5}"></div></td><td class="{0} {4}" {3}="{5}">{6}</td></tr>',
-                ['hljs-ln-line', 'hljs-ln-numbers', r, s, i, I + v.startFrom, 0 < R[I].length ? R[I] : ' ']
+                ['hljs-ln-line', 'hljs-ln-numbers', r, s, i, I + v.startFrom, 0 < C[I].length ? C[I] : ' ']
               );
-            return m('<table class="{0}">{1}</table>', [a, C]);
+            return m('<table class="{0}">{1}</table>', [a, R]);
           }
           return S;
         })(p.innerHTML, T)
@@ -41892,7 +41893,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       ? ((De.initLineNumbersOnLoad = function(p) {
           e.readyState === 'interactive' || e.readyState === 'complete'
             ? l(p)
-            : n.addEventListener('DOMContentLoaded', function() {
+            : t.addEventListener('DOMContentLoaded', function() {
                 l(p);
               });
         }),
@@ -41903,10 +41904,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             return (E.innerHTML = p), _(E, g);
           }
         }),
-        ((t = e.createElement('style')).type = 'text/css'),
-        (t.innerHTML = m('.{0}{border-collapse:collapse}.{0} td{padding:0}.{1}:before{content:attr({2})}', [a, r, s])),
-        e.getElementsByTagName('head')[0].appendChild(t))
-      : n.console.error('highlight.js not detected!'),
+        ((n = e.createElement('style')).type = 'text/css'),
+        (n.innerHTML = m('.{0}{border-collapse:collapse}.{0} td{padding:0}.{1}:before{content:attr({2})}', [a, r, s])),
+        e.getElementsByTagName('head')[0].appendChild(n))
+      : t.console.error('highlight.js not detected!'),
       document.addEventListener('copy', function(p) {
         var g,
           E = window.getSelection();
@@ -41921,13 +41922,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               ? (function(h) {
                   for (var T = h.toString(), S = h.anchorNode; S.nodeName !== 'TD'; ) S = S.parentNode;
                   for (var v = h.focusNode; v.nodeName !== 'TD'; ) v = v.parentNode;
-                  var R = parseInt(S.dataset.lineNumber),
-                    C = parseInt(v.dataset.lineNumber);
-                  if (R == C) return T;
+                  var C = parseInt(S.dataset.lineNumber),
+                    R = parseInt(v.dataset.lineNumber);
+                  if (C == R) return T;
                   var I,
                     O = S.textContent,
                     A = v.textContent;
-                  for (C < R && ((I = R), (R = C), (C = I), (I = O), (O = A), (A = I)); T.indexOf(O) !== 0; )
+                  for (R < C && ((I = C), (C = R), (R = I), (I = O), (O = A), (A = I)); T.indexOf(O) !== 0; )
                     O = O.slice(1);
                   for (; T.lastIndexOf(A) === -1; ) A = A.slice(0, -1);
                   for (
@@ -41936,8 +41937,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                         for (var Q = B; Q.nodeName !== 'TABLE'; ) Q = Q.parentNode;
                         return Q;
                       })(S),
-                      j = R + 1;
-                    j < C;
+                      j = C + 1;
+                    j < R;
                     ++j
                   ) {
                     var N = m('.{0}[{1}="{2}"]', [i, s, j]);
@@ -41965,17 +41966,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       HIGHLIGHT_LINE_DELIMITER: ',',
       HIGHLIGHT_LINE_RANGE_DELIMITER: '-',
       hljs: De,
-      init: function(n) {
-        let e = n.getConfig().highlight || {};
+      init: function(t) {
+        let e = t.getConfig().highlight || {};
         (e.highlightOnLoad = typeof e.highlightOnLoad != 'boolean' || e.highlightOnLoad),
           (e.escapeHTML = typeof e.escapeHTML != 'boolean' || e.escapeHTML),
-          Array.from(n.getRevealElement().querySelectorAll('pre code')).forEach(t => {
-            t.parentNode.classList.add('code-wrapper');
-            let a = t.querySelector('script[type="text/template"]');
-            a && (t.textContent = a.innerHTML),
-              t.hasAttribute('data-trim') &&
-                typeof t.innerHTML.trim == 'function' &&
-                (t.innerHTML = (function(i) {
+          Array.from(t.getRevealElement().querySelectorAll('pre code')).forEach(n => {
+            n.parentNode.classList.add('code-wrapper');
+            let a = n.querySelector('script[type="text/template"]');
+            a && (n.textContent = a.innerHTML),
+              n.hasAttribute('data-trim') &&
+                typeof n.innerHTML.trim == 'function' &&
+                (n.innerHTML = (function(i) {
                   function r(o) {
                     return o.replace(/^[\s\uFEFF\xA0]+/g, '');
                   }
@@ -42005,11 +42006,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                     }).join(`
 `);
                   })(i);
-                })(t)),
+                })(n)),
               e.escapeHTML &&
-                !t.hasAttribute('data-noescape') &&
-                (t.innerHTML = t.innerHTML.replace(/</g, '&lt;').replace(/>/g, '&gt;')),
-              t.addEventListener(
+                !n.hasAttribute('data-noescape') &&
+                (n.innerHTML = n.innerHTML.replace(/</g, '&lt;').replace(/>/g, '&gt;')),
+              n.addEventListener(
                 'focusout',
                 function(i) {
                   De.highlightElement(i.currentTarget);
@@ -42019,30 +42020,30 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           }),
           typeof e.beforeHighlight == 'function' && e.beforeHighlight(De),
           e.highlightOnLoad &&
-            Array.from(n.getRevealElement().querySelectorAll('pre code')).forEach(t => {
-              le.highlightBlock(t);
+            Array.from(t.getRevealElement().querySelectorAll('pre code')).forEach(n => {
+              le.highlightBlock(n);
             }),
-          n.on('pdf-ready', function() {
+          t.on('pdf-ready', function() {
             [].slice
-              .call(n.getRevealElement().querySelectorAll('pre code[data-line-numbers].current-fragment'))
-              .forEach(function(t) {
-                le.scrollHighlightedLineIntoView(t, {}, !0);
+              .call(t.getRevealElement().querySelectorAll('pre code[data-line-numbers].current-fragment'))
+              .forEach(function(n) {
+                le.scrollHighlightedLineIntoView(n, {}, !0);
               });
           });
       },
-      highlightBlock: function(n) {
-        if ((De.highlightElement(n), n.innerHTML.trim().length !== 0 && n.hasAttribute('data-line-numbers'))) {
-          De.lineNumbersBlock(n, { singleLine: !0 });
-          var e = { currentBlock: n },
-            t = le.deserializeHighlightSteps(n.getAttribute('data-line-numbers'));
-          if (t.length > 1) {
-            var a = parseInt(n.getAttribute('data-fragment-index'), 10);
+      highlightBlock: function(t) {
+        if ((De.highlightElement(t), t.innerHTML.trim().length !== 0 && t.hasAttribute('data-line-numbers'))) {
+          De.lineNumbersBlock(t, { singleLine: !0 });
+          var e = { currentBlock: t },
+            n = le.deserializeHighlightSteps(t.getAttribute('data-line-numbers'));
+          if (n.length > 1) {
+            var a = parseInt(t.getAttribute('data-fragment-index'), 10);
             (typeof a != 'number' || isNaN(a)) && (a = null),
-              t.slice(1).forEach(function(s) {
-                var o = n.cloneNode(!0);
+              n.slice(1).forEach(function(s) {
+                var o = t.cloneNode(!0);
                 o.setAttribute('data-line-numbers', le.serializeHighlightSteps([s])),
                   o.classList.add('fragment'),
-                  n.parentNode.appendChild(o),
+                  t.parentNode.appendChild(o),
                   le.highlightLines(o),
                   typeof a == 'number'
                     ? (o.setAttribute('data-fragment-index', a), (a += 1))
@@ -42050,97 +42051,97 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   o.addEventListener('visible', le.scrollHighlightedLineIntoView.bind(le, o, e)),
                   o.addEventListener('hidden', le.scrollHighlightedLineIntoView.bind(le, o.previousSibling, e));
               }),
-              n.removeAttribute('data-fragment-index'),
-              n.setAttribute('data-line-numbers', le.serializeHighlightSteps([t[0]]));
+              t.removeAttribute('data-fragment-index'),
+              t.setAttribute('data-line-numbers', le.serializeHighlightSteps([n[0]]));
           }
-          var i = typeof n.closest == 'function' ? n.closest('section:not(.stack)') : null;
+          var i = typeof t.closest == 'function' ? t.closest('section:not(.stack)') : null;
           if (i) {
             var r = function() {
-              le.scrollHighlightedLineIntoView(n, e, !0), i.removeEventListener('visible', r);
+              le.scrollHighlightedLineIntoView(t, e, !0), i.removeEventListener('visible', r);
             };
             i.addEventListener('visible', r);
           }
-          le.highlightLines(n);
+          le.highlightLines(t);
         }
       },
-      scrollHighlightedLineIntoView: function(n, e, t) {
+      scrollHighlightedLineIntoView: function(t, e, n) {
         cancelAnimationFrame(e.animationFrameID),
-          e.currentBlock && (n.scrollTop = e.currentBlock.scrollTop),
-          (e.currentBlock = n);
-        var a = this.getHighlightedLineBounds(n),
-          i = n.offsetHeight,
-          r = getComputedStyle(n);
+          e.currentBlock && (t.scrollTop = e.currentBlock.scrollTop),
+          (e.currentBlock = t);
+        var a = this.getHighlightedLineBounds(t),
+          i = t.offsetHeight,
+          r = getComputedStyle(t);
         i -= parseInt(r.paddingTop) + parseInt(r.paddingBottom);
-        var s = n.scrollTop,
+        var s = t.scrollTop,
           o = a.top + (Math.min(a.bottom - a.top, i) - i) / 2,
-          l = n.querySelector('.hljs-ln');
+          l = t.querySelector('.hljs-ln');
         if (
           (l && (o += l.offsetTop - parseInt(r.paddingTop)),
-          (o = Math.max(Math.min(o, n.scrollHeight - i), 0)),
-          t === !0 || s === o)
+          (o = Math.max(Math.min(o, t.scrollHeight - i), 0)),
+          n === !0 || s === o)
         )
-          n.scrollTop = o;
+          t.scrollTop = o;
         else {
-          if (n.scrollHeight <= i) return;
+          if (t.scrollHeight <= i) return;
           var c = 0,
             _ = function() {
               (c = Math.min(c + 0.02, 1)),
-                (n.scrollTop = s + (o - s) * le.easeInOutQuart(c)),
+                (t.scrollTop = s + (o - s) * le.easeInOutQuart(c)),
                 c < 1 && (e.animationFrameID = requestAnimationFrame(_));
             };
           _();
         }
       },
-      easeInOutQuart: function(n) {
-        return n < 0.5 ? 8 * n * n * n * n : 1 - 8 * --n * n * n * n;
+      easeInOutQuart: function(t) {
+        return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * --t * t * t * t;
       },
-      getHighlightedLineBounds: function(n) {
-        var e = n.querySelectorAll('.highlight-line');
+      getHighlightedLineBounds: function(t) {
+        var e = t.querySelectorAll('.highlight-line');
         if (e.length === 0) return { top: 0, bottom: 0 };
-        var t = e[0],
+        var n = e[0],
           a = e[e.length - 1];
-        return { top: t.offsetTop, bottom: a.offsetTop + a.offsetHeight };
+        return { top: n.offsetTop, bottom: a.offsetTop + a.offsetHeight };
       },
-      highlightLines: function(n, e) {
-        var t = le.deserializeHighlightSteps(e || n.getAttribute('data-line-numbers'));
-        t.length &&
-          t[0].forEach(function(a) {
+      highlightLines: function(t, e) {
+        var n = le.deserializeHighlightSteps(e || t.getAttribute('data-line-numbers'));
+        n.length &&
+          n[0].forEach(function(a) {
             var i = [];
             typeof a.end == 'number'
               ? (i = [].slice.call(
-                  n.querySelectorAll('table tr:nth-child(n+' + a.start + '):nth-child(-n+' + a.end + ')')
+                  t.querySelectorAll('table tr:nth-child(n+' + a.start + '):nth-child(-n+' + a.end + ')')
                 ))
               : typeof a.start == 'number' &&
-                (i = [].slice.call(n.querySelectorAll('table tr:nth-child(' + a.start + ')'))),
+                (i = [].slice.call(t.querySelectorAll('table tr:nth-child(' + a.start + ')'))),
               i.length &&
                 (i.forEach(function(r) {
                   r.classList.add('highlight-line');
                 }),
-                n.classList.add('has-highlights'));
+                t.classList.add('has-highlights'));
           });
       },
-      deserializeHighlightSteps: function(n) {
-        return (n = (n = n.replace(/\s/g, '')).split(le.HIGHLIGHT_STEP_DELIMITER)).map(function(e) {
-          return e.split(le.HIGHLIGHT_LINE_DELIMITER).map(function(t) {
-            if (/^[\d-]+$/.test(t)) {
-              t = t.split(le.HIGHLIGHT_LINE_RANGE_DELIMITER);
-              var a = parseInt(t[0], 10),
-                i = parseInt(t[1], 10);
+      deserializeHighlightSteps: function(t) {
+        return (t = (t = t.replace(/\s/g, '')).split(le.HIGHLIGHT_STEP_DELIMITER)).map(function(e) {
+          return e.split(le.HIGHLIGHT_LINE_DELIMITER).map(function(n) {
+            if (/^[\d-]+$/.test(n)) {
+              n = n.split(le.HIGHLIGHT_LINE_RANGE_DELIMITER);
+              var a = parseInt(n[0], 10),
+                i = parseInt(n[1], 10);
               return isNaN(i) ? { start: a } : { start: a, end: i };
             }
             return {};
           });
         });
       },
-      serializeHighlightSteps: function(n) {
-        return n
+      serializeHighlightSteps: function(t) {
+        return t
           .map(function(e) {
             return e
-              .map(function(t) {
-                return typeof t.end == 'number'
-                  ? t.start + le.HIGHLIGHT_LINE_RANGE_DELIMITER + t.end
-                  : typeof t.start == 'number'
-                  ? t.start
+              .map(function(n) {
+                return typeof n.end == 'number'
+                  ? n.start + le.HIGHLIGHT_LINE_RANGE_DELIMITER + n.end
+                  : typeof n.start == 'number'
+                  ? n.start
                   : '';
               })
               .join(le.HIGHLIGHT_LINE_DELIMITER);
@@ -42148,8 +42149,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           .join(le.HIGHLIGHT_STEP_DELIMITER);
       }
     },
-    Td = () => le;
-  function vd() {
+    vd = () => le;
+  function yd() {
     return {
       baseUrl: null,
       breaks: !1,
@@ -42193,47 +42194,47 @@ https://github.com/highlightjs/highlight.js/issues/2277`
     walkTokens: null,
     xhtml: !1
   };
-  const yd = /[&<>"']/,
+  const Cd = /[&<>"']/,
     Rd = /[&<>"']/g,
-    Cd = /[<>"']|&(?!#?\w+;)/,
-    Nd = /[<>"']|&(?!#?\w+;)/g,
-    Od = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
-    Va = n => Od[n];
-  function pe(n, e) {
+    Nd = /[<>"']|&(?!#?\w+;)/,
+    Od = /[<>"']|&(?!#?\w+;)/g,
+    Ad = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
+    Wa = t => Ad[t];
+  function pe(t, e) {
     if (e) {
-      if (yd.test(n)) return n.replace(Rd, Va);
-    } else if (Cd.test(n)) return n.replace(Nd, Va);
-    return n;
+      if (Cd.test(t)) return t.replace(Rd, Wa);
+    } else if (Nd.test(t)) return t.replace(Od, Wa);
+    return t;
   }
-  const Ad = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi;
-  function ja(n) {
-    return n.replace(Ad, (e, t) =>
-      (t = t.toLowerCase()) === 'colon'
+  const Id = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi;
+  function Qa(t) {
+    return t.replace(Id, (e, n) =>
+      (n = n.toLowerCase()) === 'colon'
         ? ':'
-        : t.charAt(0) === '#'
-        ? t.charAt(1) === 'x'
-          ? String.fromCharCode(parseInt(t.substring(2), 16))
-          : String.fromCharCode(+t.substring(1))
+        : n.charAt(0) === '#'
+        ? n.charAt(1) === 'x'
+          ? String.fromCharCode(parseInt(n.substring(2), 16))
+          : String.fromCharCode(+n.substring(1))
         : ''
     );
   }
-  const Id = /(^|[^\[])\^/g;
-  function ae(n, e) {
-    (n = n.source || n), (e = e || '');
-    const t = {
-      replace: (a, i) => ((i = (i = i.source || i).replace(Id, '$1')), (n = n.replace(a, i)), t),
-      getRegex: () => new RegExp(n, e)
+  const xd = /(^|[^\[])\^/g;
+  function ae(t, e) {
+    (t = t.source || t), (e = e || '');
+    const n = {
+      replace: (a, i) => ((i = (i = i.source || i).replace(xd, '$1')), (t = t.replace(a, i)), n),
+      getRegex: () => new RegExp(t, e)
     };
-    return t;
+    return n;
   }
-  const xd = /[^\w:]/g,
-    Dd = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
-  function qa(n, e, t) {
-    if (n) {
+  const Dd = /[^\w:]/g,
+    wd = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
+  function Ka(t, e, n) {
+    if (t) {
       let a;
       try {
-        a = decodeURIComponent(ja(t))
-          .replace(xd, '')
+        a = decodeURIComponent(Qa(n))
+          .replace(Dd, '')
           .toLowerCase();
       } catch {
         return null;
@@ -42241,42 +42242,42 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       if (a.indexOf('javascript:') === 0 || a.indexOf('vbscript:') === 0 || a.indexOf('data:') === 0) return null;
     }
     e &&
-      !Dd.test(t) &&
-      (t = (function(a, i) {
-        zt[' ' + a] || (wd.test(a) ? (zt[' ' + a] = a + '/') : (zt[' ' + a] = Vt(a, '/', !0))), (a = zt[' ' + a]);
+      !wd.test(n) &&
+      (n = (function(a, i) {
+        Vt[' ' + a] || (Md.test(a) ? (Vt[' ' + a] = a + '/') : (Vt[' ' + a] = qt(a, '/', !0))), (a = Vt[' ' + a]);
         const r = a.indexOf(':') === -1;
         return i.substring(0, 2) === '//'
           ? r
             ? i
-            : a.replace(Md, '$1') + i
+            : a.replace(Ld, '$1') + i
           : i.charAt(0) === '/'
           ? r
             ? i
-            : a.replace(Ld, '$1') + i
+            : a.replace(kd, '$1') + i
           : a + i;
-      })(e, t));
+      })(e, n));
     try {
-      t = encodeURI(t).replace(/%25/g, '%');
+      n = encodeURI(n).replace(/%25/g, '%');
     } catch {
       return null;
     }
-    return t;
-  }
-  const zt = {},
-    wd = /^[^:]+:\/*[^/]*$/,
-    Md = /^([^:]+:)[\s\S]*$/,
-    Ld = /^([^:]+:\/*[^/]*)[\s\S]*$/,
-    $t = { exec: function() {} };
-  function Ne(n) {
-    let e,
-      t,
-      a = 1;
-    for (; a < arguments.length; a++)
-      for (t in ((e = arguments[a]), e)) Object.prototype.hasOwnProperty.call(e, t) && (n[t] = e[t]);
     return n;
   }
-  function Wa(n, e) {
-    const t = n
+  const Vt = {},
+    Md = /^[^:]+:\/*[^/]*$/,
+    Ld = /^([^:]+:)[\s\S]*$/,
+    kd = /^([^:]+:\/*[^/]*)[\s\S]*$/,
+    jt = { exec: function() {} };
+  function Ne(t) {
+    let e,
+      n,
+      a = 1;
+    for (; a < arguments.length; a++)
+      for (n in ((e = arguments[a]), e)) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+    return t;
+  }
+  function Xa(t, e) {
+    const n = t
       .replace(/\|/g, (i, r, s) => {
         let o = !1,
           l = r;
@@ -42285,68 +42286,68 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       })
       .split(/ \|/);
     let a = 0;
-    if ((t[0].trim() || t.shift(), t.length > 0 && !t[t.length - 1].trim() && t.pop(), t.length > e)) t.splice(e);
-    else for (; t.length < e; ) t.push('');
-    for (; a < t.length; a++) t[a] = t[a].trim().replace(/\\\|/g, '|');
-    return t;
+    if ((n[0].trim() || n.shift(), n.length > 0 && !n[n.length - 1].trim() && n.pop(), n.length > e)) n.splice(e);
+    else for (; n.length < e; ) n.push('');
+    for (; a < n.length; a++) n[a] = n[a].trim().replace(/\\\|/g, '|');
+    return n;
   }
-  function Vt(n, e, t) {
-    const a = n.length;
+  function qt(t, e, n) {
+    const a = t.length;
     if (a === 0) return '';
     let i = 0;
     for (; i < a; ) {
-      const r = n.charAt(a - i - 1);
-      if (r !== e || t) {
-        if (r === e || !t) break;
+      const r = t.charAt(a - i - 1);
+      if (r !== e || n) {
+        if (r === e || !n) break;
         i++;
       } else i++;
     }
-    return n.substr(0, a - i);
+    return t.substr(0, a - i);
   }
-  function Qa(n) {
-    n &&
-      n.sanitize &&
-      !n.silent &&
+  function Za(t) {
+    t &&
+      t.sanitize &&
+      !t.silent &&
       console.warn(
         'marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options'
       );
   }
-  function Ka(n, e) {
+  function Ja(t, e) {
     if (e < 1) return '';
-    let t = '';
-    for (; e > 1; ) 1 & e && (t += n), (e >>= 1), (n += n);
-    return t + n;
+    let n = '';
+    for (; e > 1; ) 1 & e && (n += t), (e >>= 1), (t += t);
+    return n + t;
   }
-  function Xa(n, e, t, a) {
+  function ei(t, e, n, a) {
     const i = e.href,
       r = e.title ? pe(e.title) : null,
-      s = n[1].replace(/\\([\[\]])/g, '$1');
-    if (n[0].charAt(0) !== '!') {
+      s = t[1].replace(/\\([\[\]])/g, '$1');
+    if (t[0].charAt(0) !== '!') {
       a.state.inLink = !0;
-      const o = { type: 'link', raw: t, href: i, title: r, text: s, tokens: a.inlineTokens(s, []) };
+      const o = { type: 'link', raw: n, href: i, title: r, text: s, tokens: a.inlineTokens(s, []) };
       return (a.state.inLink = !1), o;
     }
-    return { type: 'image', raw: t, href: i, title: r, text: pe(s) };
+    return { type: 'image', raw: n, href: i, title: r, text: pe(s) };
   }
-  class fn {
+  class vn {
     constructor(e) {
       this.options = e || lt;
     }
     space(e) {
-      const t = this.rules.block.newline.exec(e);
-      if (t && t[0].length > 0) return { type: 'space', raw: t[0] };
+      const n = this.rules.block.newline.exec(e);
+      if (n && n[0].length > 0) return { type: 'space', raw: n[0] };
     }
     code(e) {
-      const t = this.rules.block.code.exec(e);
-      if (t) {
-        const a = t[0].replace(/^ {1,4}/gm, '');
+      const n = this.rules.block.code.exec(e);
+      if (n) {
+        const a = n[0].replace(/^ {1,4}/gm, '');
         return {
           type: 'code',
-          raw: t[0],
+          raw: n[0],
           codeBlockStyle: 'indented',
           text: this.options.pedantic
             ? a
-            : Vt(
+            : qt(
                 a,
                 `
 `
@@ -42355,9 +42356,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       }
     }
     fences(e) {
-      const t = this.rules.block.fences.exec(e);
-      if (t) {
-        const a = t[0],
+      const n = this.rules.block.fences.exec(e);
+      if (n) {
+        const a = n[0],
           i = (function(r, s) {
             const o = r.match(/^(\s+)(?:```)/);
             if (o === null) return s;
@@ -42374,36 +42375,36 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 return d.length >= l.length ? c.slice(l.length) : c;
               }).join(`
 `);
-          })(a, t[3] || '');
-        return { type: 'code', raw: a, lang: t[2] ? t[2].trim() : t[2], text: i };
+          })(a, n[3] || '');
+        return { type: 'code', raw: a, lang: n[2] ? n[2].trim() : n[2], text: i };
       }
     }
     heading(e) {
-      const t = this.rules.block.heading.exec(e);
-      if (t) {
-        let a = t[2].trim();
+      const n = this.rules.block.heading.exec(e);
+      if (n) {
+        let a = n[2].trim();
         if (/#$/.test(a)) {
-          const r = Vt(a, '#');
+          const r = qt(a, '#');
           this.options.pedantic ? (a = r.trim()) : (r && !/ $/.test(r)) || (a = r.trim());
         }
-        const i = { type: 'heading', raw: t[0], depth: t[1].length, text: a, tokens: [] };
+        const i = { type: 'heading', raw: n[0], depth: n[1].length, text: a, tokens: [] };
         return this.lexer.inline(i.text, i.tokens), i;
       }
     }
     hr(e) {
-      const t = this.rules.block.hr.exec(e);
-      if (t) return { type: 'hr', raw: t[0] };
+      const n = this.rules.block.hr.exec(e);
+      if (n) return { type: 'hr', raw: n[0] };
     }
     blockquote(e) {
-      const t = this.rules.block.blockquote.exec(e);
-      if (t) {
-        const a = t[0].replace(/^ *> ?/gm, '');
-        return { type: 'blockquote', raw: t[0], tokens: this.lexer.blockTokens(a, []), text: a };
+      const n = this.rules.block.blockquote.exec(e);
+      if (n) {
+        const a = n[0].replace(/^ *> ?/gm, '');
+        return { type: 'blockquote', raw: n[0], tokens: this.lexer.blockTokens(a, []), text: a };
       }
     }
     list(e) {
-      let t = this.rules.block.list.exec(e);
-      if (t) {
+      let n = this.rules.block.list.exec(e);
+      if (n) {
         let a,
           i,
           r,
@@ -42416,16 +42417,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           u,
           m,
           p,
-          g = t[1].trim();
+          g = n[1].trim();
         const E = g.length > 1,
           h = { type: 'list', raw: '', ordered: E, start: E ? +g.slice(0, -1) : '', loose: !1, items: [] };
         (g = E ? `\\d{1,9}\\${g.slice(-1)}` : `\\${g}`), this.options.pedantic && (g = E ? g : '[*+-]');
         const T = new RegExp(`^( {0,3}${g})((?: [^\\n]*)?(?:\\n|$))`);
-        for (; e && ((p = !1), (t = T.exec(e))) && !this.rules.block.hr.test(e); ) {
+        for (; e && ((p = !1), (n = T.exec(e))) && !this.rules.block.hr.test(e); ) {
           if (
-            ((a = t[0]),
+            ((a = n[0]),
             (e = e.substring(a.length)),
-            (_ = t[2].split(
+            (_ = n[2].split(
               `
 `,
               1
@@ -42437,7 +42438,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             )[0]),
             this.options.pedantic
               ? ((s = 2), (m = _.trimLeft()))
-              : ((s = t[2].search(/[^ ]/)), (s = s > 4 ? 1 : s), (m = _.slice(s)), (s += t[1].length)),
+              : ((s = n[2].search(/[^ ]/)), (s = s > 4 ? 1 : s), (m = _.slice(s)), (s += n[1].length)),
             (l = !1),
             !_ &&
               /^ *$/.test(d) &&
@@ -42493,9 +42494,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         const S = h.items.length;
         for (o = 0; o < S; o++) {
           (this.lexer.state.top = !1), (h.items[o].tokens = this.lexer.blockTokens(h.items[o].text, []));
-          const v = h.items[o].tokens.filter(C => C.type === 'space'),
-            R = v.every(C => {
-              const I = C.raw.split('');
+          const v = h.items[o].tokens.filter(R => R.type === 'space'),
+            C = v.every(R => {
+              const I = R.raw.split('');
               let O = 0;
               for (const A of I)
                 if (
@@ -42507,24 +42508,24 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   return !0;
               return !1;
             });
-          !h.loose && v.length && R && ((h.loose = !0), (h.items[o].loose = !0));
+          !h.loose && v.length && C && ((h.loose = !0), (h.items[o].loose = !0));
         }
         return h;
       }
     }
     html(e) {
-      const t = this.rules.block.html.exec(e);
-      if (t) {
+      const n = this.rules.block.html.exec(e);
+      if (n) {
         const a = {
           type: 'html',
-          raw: t[0],
-          pre: !this.options.sanitizer && (t[1] === 'pre' || t[1] === 'script' || t[1] === 'style'),
-          text: t[0]
+          raw: n[0],
+          pre: !this.options.sanitizer && (n[1] === 'pre' || n[1] === 'script' || n[1] === 'style'),
+          text: n[0]
         };
         return (
           this.options.sanitize &&
             ((a.type = 'paragraph'),
-            (a.text = this.options.sanitizer ? this.options.sanitizer(t[0]) : pe(t[0])),
+            (a.text = this.options.sanitizer ? this.options.sanitizer(n[0]) : pe(n[0])),
             (a.tokens = []),
             this.lexer.inline(a.text, a.tokens)),
           a
@@ -42532,28 +42533,28 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       }
     }
     def(e) {
-      const t = this.rules.block.def.exec(e);
-      if (t)
+      const n = this.rules.block.def.exec(e);
+      if (n)
         return (
-          t[3] && (t[3] = t[3].substring(1, t[3].length - 1)),
-          { type: 'def', tag: t[1].toLowerCase().replace(/\s+/g, ' '), raw: t[0], href: t[2], title: t[3] }
+          n[3] && (n[3] = n[3].substring(1, n[3].length - 1)),
+          { type: 'def', tag: n[1].toLowerCase().replace(/\s+/g, ' '), raw: n[0], href: n[2], title: n[3] }
         );
     }
     table(e) {
-      const t = this.rules.block.table.exec(e);
-      if (t) {
+      const n = this.rules.block.table.exec(e);
+      if (n) {
         const a = {
           type: 'table',
-          header: Wa(t[1]).map(i => ({ text: i })),
-          align: t[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
+          header: Xa(n[1]).map(i => ({ text: i })),
+          align: n[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
           rows:
-            t[3] && t[3].trim()
-              ? t[3].replace(/\n[ \t]*$/, '').split(`
+            n[3] && n[3].trim()
+              ? n[3].replace(/\n[ \t]*$/, '').split(`
 `)
               : []
         };
         if (a.header.length === a.align.length) {
-          a.raw = t[0];
+          a.raw = n[0];
           let i,
             r,
             s,
@@ -42567,7 +42568,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               : /^ *:-+ *$/.test(a.align[i])
               ? (a.align[i] = 'left')
               : (a.align[i] = null);
-          for (l = a.rows.length, i = 0; i < l; i++) a.rows[i] = Wa(a.rows[i], a.header.length).map(c => ({ text: c }));
+          for (l = a.rows.length, i = 0; i < l; i++) a.rows[i] = Xa(a.rows[i], a.header.length).map(c => ({ text: c }));
           for (l = a.header.length, r = 0; r < l; r++)
             (a.header[r].tokens = []), this.lexer.inlineTokens(a.header[r].text, a.header[r].tokens);
           for (l = a.rows.length, r = 0; r < l; r++)
@@ -42578,68 +42579,68 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       }
     }
     lheading(e) {
-      const t = this.rules.block.lheading.exec(e);
-      if (t) {
-        const a = { type: 'heading', raw: t[0], depth: t[2].charAt(0) === '=' ? 1 : 2, text: t[1], tokens: [] };
+      const n = this.rules.block.lheading.exec(e);
+      if (n) {
+        const a = { type: 'heading', raw: n[0], depth: n[2].charAt(0) === '=' ? 1 : 2, text: n[1], tokens: [] };
         return this.lexer.inline(a.text, a.tokens), a;
       }
     }
     paragraph(e) {
-      const t = this.rules.block.paragraph.exec(e);
-      if (t) {
+      const n = this.rules.block.paragraph.exec(e);
+      if (n) {
         const a = {
           type: 'paragraph',
-          raw: t[0],
+          raw: n[0],
           text:
-            t[1].charAt(t[1].length - 1) ===
+            n[1].charAt(n[1].length - 1) ===
             `
 `
-              ? t[1].slice(0, -1)
-              : t[1],
+              ? n[1].slice(0, -1)
+              : n[1],
           tokens: []
         };
         return this.lexer.inline(a.text, a.tokens), a;
       }
     }
     text(e) {
-      const t = this.rules.block.text.exec(e);
-      if (t) {
-        const a = { type: 'text', raw: t[0], text: t[0], tokens: [] };
+      const n = this.rules.block.text.exec(e);
+      if (n) {
+        const a = { type: 'text', raw: n[0], text: n[0], tokens: [] };
         return this.lexer.inline(a.text, a.tokens), a;
       }
     }
     escape(e) {
-      const t = this.rules.inline.escape.exec(e);
-      if (t) return { type: 'escape', raw: t[0], text: pe(t[1]) };
+      const n = this.rules.inline.escape.exec(e);
+      if (n) return { type: 'escape', raw: n[0], text: pe(n[1]) };
     }
     tag(e) {
-      const t = this.rules.inline.tag.exec(e);
-      if (t)
+      const n = this.rules.inline.tag.exec(e);
+      if (n)
         return (
-          !this.lexer.state.inLink && /^<a /i.test(t[0])
+          !this.lexer.state.inLink && /^<a /i.test(n[0])
             ? (this.lexer.state.inLink = !0)
-            : this.lexer.state.inLink && /^<\/a>/i.test(t[0]) && (this.lexer.state.inLink = !1),
-          !this.lexer.state.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(t[0])
+            : this.lexer.state.inLink && /^<\/a>/i.test(n[0]) && (this.lexer.state.inLink = !1),
+          !this.lexer.state.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(n[0])
             ? (this.lexer.state.inRawBlock = !0)
             : this.lexer.state.inRawBlock &&
-              /^<\/(pre|code|kbd|script)(\s|>)/i.test(t[0]) &&
+              /^<\/(pre|code|kbd|script)(\s|>)/i.test(n[0]) &&
               (this.lexer.state.inRawBlock = !1),
           {
             type: this.options.sanitize ? 'text' : 'html',
-            raw: t[0],
+            raw: n[0],
             inLink: this.lexer.state.inLink,
             inRawBlock: this.lexer.state.inRawBlock,
-            text: this.options.sanitize ? (this.options.sanitizer ? this.options.sanitizer(t[0]) : pe(t[0])) : t[0]
+            text: this.options.sanitize ? (this.options.sanitizer ? this.options.sanitizer(n[0]) : pe(n[0])) : n[0]
           }
         );
     }
     link(e) {
-      const t = this.rules.inline.link.exec(e);
-      if (t) {
-        const a = t[2].trim();
+      const n = this.rules.inline.link.exec(e);
+      if (n) {
+        const a = n[2].trim();
         if (!this.options.pedantic && /^</.test(a)) {
           if (!/>$/.test(a)) return;
-          const s = Vt(a.slice(0, -1), '\\');
+          const s = qt(a.slice(0, -1), '\\');
           if ((a.length - s.length) % 2 == 0) return;
         } else {
           const s = (function(o, l) {
@@ -42652,45 +42653,45 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               else if (o[d] === l[0]) _++;
               else if (o[d] === l[1] && (_--, _ < 0)) return d;
             return -1;
-          })(t[2], '()');
+          })(n[2], '()');
           if (s > -1) {
-            const o = (t[0].indexOf('!') === 0 ? 5 : 4) + t[1].length + s;
-            (t[2] = t[2].substring(0, s)), (t[0] = t[0].substring(0, o).trim()), (t[3] = '');
+            const o = (n[0].indexOf('!') === 0 ? 5 : 4) + n[1].length + s;
+            (n[2] = n[2].substring(0, s)), (n[0] = n[0].substring(0, o).trim()), (n[3] = '');
           }
         }
-        let i = t[2],
+        let i = n[2],
           r = '';
         if (this.options.pedantic) {
           const s = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(i);
           s && ((i = s[1]), (r = s[3]));
-        } else r = t[3] ? t[3].slice(1, -1) : '';
+        } else r = n[3] ? n[3].slice(1, -1) : '';
         return (
           (i = i.trim()),
           /^</.test(i) && (i = this.options.pedantic && !/>$/.test(a) ? i.slice(1) : i.slice(1, -1)),
-          Xa(
-            t,
+          ei(
+            n,
             {
               href: i && i.replace(this.rules.inline._escapes, '$1'),
               title: r && r.replace(this.rules.inline._escapes, '$1')
             },
-            t[0],
+            n[0],
             this.lexer
           )
         );
       }
     }
-    reflink(e, t) {
+    reflink(e, n) {
       let a;
       if ((a = this.rules.inline.reflink.exec(e)) || (a = this.rules.inline.nolink.exec(e))) {
         let i = (a[2] || a[1]).replace(/\s+/g, ' ');
-        if (((i = t[i.toLowerCase()]), !i || !i.href)) {
+        if (((i = n[i.toLowerCase()]), !i || !i.href)) {
           const r = a[0].charAt(0);
           return { type: 'text', raw: r, text: r };
         }
-        return Xa(a, i, a[0], this.lexer);
+        return ei(a, i, a[0], this.lexer);
       }
     }
-    emStrong(e, t, a = '') {
+    emStrong(e, n, a = '') {
       let i = this.rules.inline.emStrong.lDelim.exec(e);
       if (!i || (i[3] && a.match(/[\p{L}\p{N}]/u))) return;
       const r = i[1] || i[2] || '';
@@ -42701,7 +42702,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           c = s,
           _ = 0;
         const d = i[0][0] === '*' ? this.rules.inline.emStrong.rDelimAst : this.rules.inline.emStrong.rDelimUnd;
-        for (d.lastIndex = 0, t = t.slice(-1 * e.length + s); (i = d.exec(t)) != null; ) {
+        for (d.lastIndex = 0, n = n.slice(-1 * e.length + s); (i = d.exec(n)) != null; ) {
           if (((o = i[1] || i[2] || i[3] || i[4] || i[5] || i[6]), !o)) continue;
           if (((l = o.length), i[3] || i[4])) {
             c += l;
@@ -42732,39 +42733,39 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       }
     }
     codespan(e) {
-      const t = this.rules.inline.code.exec(e);
-      if (t) {
-        let a = t[2].replace(/\n/g, ' ');
+      const n = this.rules.inline.code.exec(e);
+      if (n) {
+        let a = n[2].replace(/\n/g, ' ');
         const i = /[^ ]/.test(a),
           r = /^ /.test(a) && / $/.test(a);
-        return i && r && (a = a.substring(1, a.length - 1)), (a = pe(a, !0)), { type: 'codespan', raw: t[0], text: a };
+        return i && r && (a = a.substring(1, a.length - 1)), (a = pe(a, !0)), { type: 'codespan', raw: n[0], text: a };
       }
     }
     br(e) {
-      const t = this.rules.inline.br.exec(e);
-      if (t) return { type: 'br', raw: t[0] };
+      const n = this.rules.inline.br.exec(e);
+      if (n) return { type: 'br', raw: n[0] };
     }
     del(e) {
-      const t = this.rules.inline.del.exec(e);
-      if (t) return { type: 'del', raw: t[0], text: t[2], tokens: this.lexer.inlineTokens(t[2], []) };
+      const n = this.rules.inline.del.exec(e);
+      if (n) return { type: 'del', raw: n[0], text: n[2], tokens: this.lexer.inlineTokens(n[2], []) };
     }
-    autolink(e, t) {
+    autolink(e, n) {
       const a = this.rules.inline.autolink.exec(e);
       if (a) {
         let i, r;
         return (
           a[2] === '@'
-            ? ((i = pe(this.options.mangle ? t(a[1]) : a[1])), (r = 'mailto:' + i))
+            ? ((i = pe(this.options.mangle ? n(a[1]) : a[1])), (r = 'mailto:' + i))
             : ((i = pe(a[1])), (r = i)),
           { type: 'link', raw: a[0], text: i, href: r, tokens: [{ type: 'text', raw: i, text: i }] }
         );
       }
     }
-    url(e, t) {
+    url(e, n) {
       let a;
       if ((a = this.rules.inline.url.exec(e))) {
         let i, r;
-        if (a[2] === '@') (i = pe(this.options.mangle ? t(a[0]) : a[0])), (r = 'mailto:' + i);
+        if (a[2] === '@') (i = pe(this.options.mangle ? n(a[0]) : a[0])), (r = 'mailto:' + i);
         else {
           let s;
           do (s = a[0]), (a[0] = this.rules.inline._backpedal.exec(a[0])[0]);
@@ -42774,7 +42775,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         return { type: 'link', raw: a[0], text: i, href: r, tokens: [{ type: 'text', raw: i, text: i }] };
       }
     }
-    inlineText(e, t) {
+    inlineText(e, n) {
       const a = this.rules.inline.text.exec(e);
       if (a) {
         let i;
@@ -42785,7 +42786,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 ? this.options.sanitizer(a[0])
                 : pe(a[0])
               : a[0]
-            : pe(this.options.smartypants ? t(a[0]) : a[0])),
+            : pe(this.options.smartypants ? n(a[0]) : a[0])),
           { type: 'text', raw: a[0], text: i }
         );
       }
@@ -42802,7 +42803,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
     html:
       '^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n *)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$))',
     def: /^ {0,3}\[(label)\]: *(?:\n *)?<?([^\s>]+)>?(?:(?: +(?:\n *)?| *\n *)(title))? *(?:\n+|$)/,
-    table: $t,
+    table: jt,
     lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/,
     _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,
     text: /^[^\n]+/,
@@ -42882,7 +42883,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         .getRegex(),
       def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
       heading: /^(#{1,6})(.*)(?:\n+|$)/,
-      fences: $t,
+      fences: jt,
       paragraph: ae(H.normal._paragraph)
         .replace('hr', H.hr)
         .replace(
@@ -42900,7 +42901,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
   const k = {
     escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
     autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
-    url: $t,
+    url: jt,
     tag:
       '^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',
     link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/,
@@ -42914,12 +42915,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
     },
     code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
     br: /^( {2,}|\\)\n(?!\s*$)/,
-    del: $t,
+    del: jt,
     text: /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,
     punctuation: /^([\spunctuation])/
   };
-  function kd(n) {
-    return n
+  function Pd(t) {
+    return t
       .replace(/---/g, '\u2014')
       .replace(/--/g, '\u2013')
       .replace(/(^|[-\u2014/(\[{"\s])'/g, '$1\u2018')
@@ -42928,13 +42929,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       .replace(/"/g, '\u201D')
       .replace(/\.{3}/g, '\u2026');
   }
-  function Za(n) {
+  function ti(t) {
     let e,
-      t,
+      n,
       a = '';
-    const i = n.length;
+    const i = t.length;
     for (e = 0; e < i; e++)
-      (t = n.charCodeAt(e)), Math.random() > 0.5 && (t = 'x' + t.toString(16)), (a += '&#' + t + ';');
+      (n = t.charCodeAt(e)), Math.random() > 0.5 && (n = 'x' + n.toString(16)), (a += '&#' + n + ';');
     return a;
   }
   (k._punctuation = '!"#$%&\'()+\\-.,/:;<=>?@\\[\\]`^{|}~'),
@@ -43034,29 +43035,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       (this.tokens = []),
         (this.tokens.links = Object.create(null)),
         (this.options = e || lt),
-        (this.options.tokenizer = this.options.tokenizer || new fn()),
+        (this.options.tokenizer = this.options.tokenizer || new vn()),
         (this.tokenizer = this.options.tokenizer),
         (this.tokenizer.options = this.options),
         (this.tokenizer.lexer = this),
         (this.inlineQueue = []),
         (this.state = { inLink: !1, inRawBlock: !1, top: !0 });
-      const t = { block: H.normal, inline: k.normal };
+      const n = { block: H.normal, inline: k.normal };
       this.options.pedantic
-        ? ((t.block = H.pedantic), (t.inline = k.pedantic))
-        : this.options.gfm && ((t.block = H.gfm), this.options.breaks ? (t.inline = k.breaks) : (t.inline = k.gfm)),
-        (this.tokenizer.rules = t);
+        ? ((n.block = H.pedantic), (n.inline = k.pedantic))
+        : this.options.gfm && ((n.block = H.gfm), this.options.breaks ? (n.inline = k.breaks) : (n.inline = k.gfm)),
+        (this.tokenizer.rules = n);
     }
     static get rules() {
       return { block: H, inline: k };
     }
-    static lex(e, t) {
-      return new Fe(t).lex(e);
+    static lex(e, n) {
+      return new Fe(n).lex(e);
     }
-    static lexInline(e, t) {
-      return new Fe(t).inlineTokens(e);
+    static lexInline(e, n) {
+      return new Fe(n).inlineTokens(e);
     }
     lex(e) {
-      let t;
+      let n;
       for (
         e = e
           .replace(
@@ -43066,13 +43067,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           )
           .replace(/\t/g, '    '),
           this.blockTokens(e, this.tokens);
-        (t = this.inlineQueue.shift());
+        (n = this.inlineQueue.shift());
 
       )
-        this.inlineTokens(t.src, t.tokens);
+        this.inlineTokens(n.src, n.tokens);
       return this.tokens;
     }
-    blockTokens(e, t = []) {
+    blockTokens(e, n = []) {
       let a, i, r, s;
       for (this.options.pedantic && (e = e.replace(/^ +$/gm, '')); e; )
         if (
@@ -43080,21 +43081,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             this.options.extensions &&
             this.options.extensions.block &&
             this.options.extensions.block.some(
-              o => !!(a = o.call({ lexer: this }, e, t)) && ((e = e.substring(a.raw.length)), t.push(a), !0)
+              o => !!(a = o.call({ lexer: this }, e, n)) && ((e = e.substring(a.raw.length)), n.push(a), !0)
             )
           )
         )
           if ((a = this.tokenizer.space(e)))
             (e = e.substring(a.raw.length)),
-              a.raw.length === 1 && t.length > 0
-                ? (t[t.length - 1].raw += `
+              a.raw.length === 1 && n.length > 0
+                ? (n[n.length - 1].raw += `
 `)
-                : t.push(a);
+                : n.push(a);
           else if ((a = this.tokenizer.code(e)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
+              (i = n[n.length - 1]),
               !i || (i.type !== 'paragraph' && i.type !== 'text')
-                ? t.push(a)
+                ? n.push(a)
                 : ((i.raw +=
                     `
 ` + a.raw),
@@ -43102,15 +43103,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                     `
 ` + a.text),
                   (this.inlineQueue[this.inlineQueue.length - 1].src = i.text));
-          else if ((a = this.tokenizer.fences(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.heading(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.hr(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.blockquote(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.list(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.html(e))) (e = e.substring(a.raw.length)), t.push(a);
+          else if ((a = this.tokenizer.fences(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.heading(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.hr(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.blockquote(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.list(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.html(e))) (e = e.substring(a.raw.length)), n.push(a);
           else if ((a = this.tokenizer.def(e)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
+              (i = n[n.length - 1]),
               !i || (i.type !== 'paragraph' && i.type !== 'text')
                 ? this.tokens.links[a.tag] || (this.tokens.links[a.tag] = { href: a.href, title: a.title })
                 : ((i.raw +=
@@ -43120,8 +43121,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                     `
 ` + a.raw),
                   (this.inlineQueue[this.inlineQueue.length - 1].src = i.text));
-          else if ((a = this.tokenizer.table(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.lheading(e))) (e = e.substring(a.raw.length)), t.push(a);
+          else if ((a = this.tokenizer.table(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.lheading(e))) (e = e.substring(a.raw.length)), n.push(a);
           else {
             if (((r = e), this.options.extensions && this.options.extensions.startBlock)) {
               let o = 1 / 0;
@@ -43133,7 +43134,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                 o < 1 / 0 && o >= 0 && (r = e.substring(0, o + 1));
             }
             if (this.state.top && (a = this.tokenizer.paragraph(r)))
-              (i = t[t.length - 1]),
+              (i = n[n.length - 1]),
                 s && i.type === 'paragraph'
                   ? ((i.raw +=
                       `
@@ -43143,12 +43144,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
 ` + a.text),
                     this.inlineQueue.pop(),
                     (this.inlineQueue[this.inlineQueue.length - 1].src = i.text))
-                  : t.push(a),
+                  : n.push(a),
                 (s = r.length !== e.length),
                 (e = e.substring(a.raw.length));
             else if ((a = this.tokenizer.text(e)))
               (e = e.substring(a.raw.length)),
-                (i = t[t.length - 1]),
+                (i = n[n.length - 1]),
                 i && i.type === 'text'
                   ? ((i.raw +=
                       `
@@ -43158,7 +43159,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
 ` + a.text),
                     this.inlineQueue.pop(),
                     (this.inlineQueue[this.inlineQueue.length - 1].src = i.text))
-                  : t.push(a);
+                  : n.push(a);
             else if (e) {
               const o = 'Infinite loop on byte: ' + e.charCodeAt(0);
               if (this.options.silent) {
@@ -43168,12 +43169,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               throw new Error(o);
             }
           }
-      return (this.state.top = !0), t;
+      return (this.state.top = !0), n;
     }
-    inline(e, t) {
-      this.inlineQueue.push({ src: e, tokens: t });
+    inline(e, n) {
+      this.inlineQueue.push({ src: e, tokens: n });
     }
-    inlineTokens(e, t = []) {
+    inlineTokens(e, n = []) {
       let a,
         i,
         r,
@@ -43189,7 +43190,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               (c =
                 c.slice(0, s.index) +
                 '[' +
-                Ka('a', s[0].length - 2) +
+                Ja('a', s[0].length - 2) +
                 ']' +
                 c.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex));
       }
@@ -43197,7 +43198,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         c =
           c.slice(0, s.index) +
           '[' +
-          Ka('a', s[0].length - 2) +
+          Ja('a', s[0].length - 2) +
           ']' +
           c.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);
       for (; (s = this.tokenizer.rules.inline.escapedEmSt.exec(c)) != null; )
@@ -43210,26 +43211,26 @@ https://github.com/highlightjs/highlight.js/issues/2277`
             this.options.extensions &&
             this.options.extensions.inline &&
             this.options.extensions.inline.some(
-              _ => !!(a = _.call({ lexer: this }, e, t)) && ((e = e.substring(a.raw.length)), t.push(a), !0)
+              _ => !!(a = _.call({ lexer: this }, e, n)) && ((e = e.substring(a.raw.length)), n.push(a), !0)
             )
           ))
         )
-          if ((a = this.tokenizer.escape(e))) (e = e.substring(a.raw.length)), t.push(a);
+          if ((a = this.tokenizer.escape(e))) (e = e.substring(a.raw.length)), n.push(a);
           else if ((a = this.tokenizer.tag(e)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
-              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : t.push(a);
-          else if ((a = this.tokenizer.link(e))) (e = e.substring(a.raw.length)), t.push(a);
+              (i = n[n.length - 1]),
+              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : n.push(a);
+          else if ((a = this.tokenizer.link(e))) (e = e.substring(a.raw.length)), n.push(a);
           else if ((a = this.tokenizer.reflink(e, this.tokens.links)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
-              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : t.push(a);
-          else if ((a = this.tokenizer.emStrong(e, c, l))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.codespan(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.br(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.del(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.autolink(e, Za))) (e = e.substring(a.raw.length)), t.push(a);
-          else if (this.state.inLink || !(a = this.tokenizer.url(e, Za))) {
+              (i = n[n.length - 1]),
+              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : n.push(a);
+          else if ((a = this.tokenizer.emStrong(e, c, l))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.codespan(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.br(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.del(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.autolink(e, ti))) (e = e.substring(a.raw.length)), n.push(a);
+          else if (this.state.inLink || !(a = this.tokenizer.url(e, ti))) {
             if (((r = e), this.options.extensions && this.options.extensions.startInline)) {
               let _ = 1 / 0;
               const d = e.slice(1);
@@ -43239,12 +43240,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               }),
                 _ < 1 / 0 && _ >= 0 && (r = e.substring(0, _ + 1));
             }
-            if ((a = this.tokenizer.inlineText(r, kd)))
+            if ((a = this.tokenizer.inlineText(r, Pd)))
               (e = e.substring(a.raw.length)),
                 a.raw.slice(-1) !== '_' && (l = a.raw.slice(-1)),
                 (o = !0),
-                (i = t[t.length - 1]),
-                i && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : t.push(a);
+                (i = n[n.length - 1]),
+                i && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : n.push(a);
             else if (e) {
               const _ = 'Infinite loop on byte: ' + e.charCodeAt(0);
               if (this.options.silent) {
@@ -43253,16 +43254,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               }
               throw new Error(_);
             }
-          } else (e = e.substring(a.raw.length)), t.push(a);
-      return t;
+          } else (e = e.substring(a.raw.length)), n.push(a);
+      return n;
     }
   }
-  class Tn {
+  class yn {
     constructor(e) {
       this.options = e || lt;
     }
-    code(e, t, a) {
-      const i = (t || '').match(/\S*/)[0];
+    code(e, n, a) {
+      const i = (n || '').match(/\S*/)[0];
       if (this.options.highlight) {
         const r = this.options.highlight(e, i);
         r != null && r !== e && ((a = !0), (e = r));
@@ -43298,25 +43299,25 @@ https://github.com/highlightjs/highlight.js/issues/2277`
     html(e) {
       return e;
     }
-    heading(e, t, a, i) {
+    heading(e, n, a, i) {
       return this.options.headerIds
         ? '<h' +
-            t +
+            n +
             ' id="' +
             this.options.headerPrefix +
             i.slug(a) +
             '">' +
             e +
             '</h' +
-            t +
+            n +
             `>
 `
         : '<h' +
-            t +
+            n +
             '>' +
             e +
             '</h' +
-            t +
+            n +
             `>
 `;
     }
@@ -43327,12 +43328,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         : `<hr>
 `;
     }
-    list(e, t, a) {
-      const i = t ? 'ol' : 'ul';
+    list(e, n, a) {
+      const i = n ? 'ol' : 'ul';
       return (
         '<' +
         i +
-        (t && a !== 1 ? ' start="' + a + '"' : '') +
+        (n && a !== 1 ? ' start="' + a + '"' : '') +
         `>
 ` +
         e +
@@ -43363,16 +43364,16 @@ https://github.com/highlightjs/highlight.js/issues/2277`
 `
       );
     }
-    table(e, t) {
+    table(e, n) {
       return (
-        t && (t = '<tbody>' + t + '</tbody>'),
+        n && (n = '<tbody>' + n + '</tbody>'),
         `<table>
 <thead>
 ` +
           e +
           `</thead>
 ` +
-          t +
+          n +
           `</table>
 `
       );
@@ -43386,10 +43387,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
 `
       );
     }
-    tablecell(e, t) {
-      const a = t.header ? 'th' : 'td';
+    tablecell(e, n) {
+      const a = n.header ? 'th' : 'td';
       return (
-        (t.align ? '<' + a + ' align="' + t.align + '">' : '<' + a + '>') +
+        (n.align ? '<' + a + ' align="' + n.align + '">' : '<' + a + '>') +
         e +
         '</' +
         a +
@@ -43412,21 +43413,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`
     del(e) {
       return '<del>' + e + '</del>';
     }
-    link(e, t, a) {
-      if ((e = qa(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
+    link(e, n, a) {
+      if ((e = Ka(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
       let i = '<a href="' + pe(e) + '"';
-      return t && (i += ' title="' + t + '"'), (i += '>' + a + '</a>'), i;
+      return n && (i += ' title="' + n + '"'), (i += '>' + a + '</a>'), i;
     }
-    image(e, t, a) {
-      if ((e = qa(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
+    image(e, n, a) {
+      if ((e = Ka(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
       let i = '<img src="' + e + '" alt="' + a + '"';
-      return t && (i += ' title="' + t + '"'), (i += this.options.xhtml ? '/>' : '>'), i;
+      return n && (i += ' title="' + n + '"'), (i += this.options.xhtml ? '/>' : '>'), i;
     }
     text(e) {
       return e;
     }
   }
-  class Ja {
+  class ni {
     strong(e) {
       return e;
     }
@@ -43445,17 +43446,17 @@ https://github.com/highlightjs/highlight.js/issues/2277`
     text(e) {
       return e;
     }
-    link(e, t, a) {
+    link(e, n, a) {
       return '' + a;
     }
-    image(e, t, a) {
+    image(e, n, a) {
       return '' + a;
     }
     br() {
       return '';
     }
   }
-  class ei {
+  class ai {
     constructor() {
       this.seen = {};
     }
@@ -43467,7 +43468,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         .replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '')
         .replace(/\s/g, '-');
     }
-    getNextSafeSlug(e, t) {
+    getNextSafeSlug(e, n) {
       let a = e,
         i = 0;
       if (this.seen.hasOwnProperty(a)) {
@@ -43475,29 +43476,29 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         do i++, (a = e + '-' + i);
         while (this.seen.hasOwnProperty(a));
       }
-      return t || ((this.seen[e] = i), (this.seen[a] = 0)), a;
+      return n || ((this.seen[e] = i), (this.seen[a] = 0)), a;
     }
-    slug(e, t = {}) {
+    slug(e, n = {}) {
       const a = this.serialize(e);
-      return this.getNextSafeSlug(a, t.dryrun);
+      return this.getNextSafeSlug(a, n.dryrun);
     }
   }
   class Be {
     constructor(e) {
       (this.options = e || lt),
-        (this.options.renderer = this.options.renderer || new Tn()),
+        (this.options.renderer = this.options.renderer || new yn()),
         (this.renderer = this.options.renderer),
         (this.renderer.options = this.options),
-        (this.textRenderer = new Ja()),
-        (this.slugger = new ei());
+        (this.textRenderer = new ni()),
+        (this.slugger = new ai());
     }
-    static parse(e, t) {
-      return new Be(t).parse(e);
+    static parse(e, n) {
+      return new Be(n).parse(e);
     }
-    static parseInline(e, t) {
-      return new Be(t).parseInline(e);
+    static parseInline(e, n) {
+      return new Be(n).parseInline(e);
     }
-    parse(e, t = !0) {
+    parse(e, n = !0) {
       let a,
         i,
         r,
@@ -43516,8 +43517,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`
         T,
         S,
         v,
-        R,
-        C = '';
+        C,
+        R = '';
       const I = e.length;
       for (a = 0; a < I; a++)
         if (
@@ -43525,30 +43526,30 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           this.options.extensions &&
             this.options.extensions.renderers &&
             this.options.extensions.renderers[u.type] &&
-            ((R = this.options.extensions.renderers[u.type].call({ parser: this }, u)),
-            R !== !1 ||
+            ((C = this.options.extensions.renderers[u.type].call({ parser: this }, u)),
+            C !== !1 ||
               !['space', 'hr', 'heading', 'code', 'table', 'blockquote', 'list', 'html', 'paragraph', 'text'].includes(
                 u.type
               )))
         )
-          C += R || '';
+          R += C || '';
         else
           switch (u.type) {
             case 'space':
               continue;
             case 'hr':
-              C += this.renderer.hr();
+              R += this.renderer.hr();
               continue;
             case 'heading':
-              C += this.renderer.heading(
+              R += this.renderer.heading(
                 this.parseInline(u.tokens),
                 u.depth,
-                ja(this.parseInline(u.tokens, this.textRenderer)),
+                Qa(this.parseInline(u.tokens, this.textRenderer)),
                 this.slugger
               );
               continue;
             case 'code':
-              C += this.renderer.code(u.text, u.lang, u.escaped);
+              R += this.renderer.code(u.text, u.lang, u.escaped);
               continue;
             case 'table':
               for (_ = '', c = '', s = u.header.length, i = 0; i < s; i++)
@@ -43558,10 +43559,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   c += this.renderer.tablecell(this.parseInline(l[r].tokens), { header: !1, align: u.align[r] });
                 d += this.renderer.tablerow(c);
               }
-              C += this.renderer.table(_, d);
+              R += this.renderer.table(_, d);
               continue;
             case 'blockquote':
-              (d = this.parse(u.tokens)), (C += this.renderer.blockquote(d));
+              (d = this.parse(u.tokens)), (R += this.renderer.blockquote(d));
               continue;
             case 'list':
               for (m = u.ordered, p = u.start, g = u.loose, s = u.items.length, d = '', i = 0; i < s; i++)
@@ -43582,13 +43583,13 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                       : (E += v)),
                   (E += this.parse(h.tokens, g)),
                   (d += this.renderer.listitem(E, S, T));
-              C += this.renderer.list(d, m, p);
+              R += this.renderer.list(d, m, p);
               continue;
             case 'html':
-              C += this.renderer.html(u.text);
+              R += this.renderer.html(u.text);
               continue;
             case 'paragraph':
-              C += this.renderer.paragraph(this.parseInline(u.tokens));
+              R += this.renderer.paragraph(this.parseInline(u.tokens));
               continue;
             case 'text':
               for (d = u.tokens ? this.parseInline(u.tokens) : u.text; a + 1 < I && e[a + 1].type === 'text'; )
@@ -43596,7 +43597,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
                   (d +=
                     `
 ` + (u.tokens ? this.parseInline(u.tokens) : u.text));
-              C += t ? this.renderer.paragraph(d) : d;
+              R += n ? this.renderer.paragraph(d) : d;
               continue;
             default: {
               const O = 'Token with "' + u.type + '" type was not found.';
@@ -43604,10 +43605,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`
               throw new Error(O);
             }
           }
-      return C;
+      return R;
     }
-    parseInline(e, t) {
-      t = t || this.renderer;
+    parseInline(e, n) {
+      n = n || this.renderer;
       let a,
         i,
         r,
@@ -43628,31 +43629,31 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           switch (i.type) {
             case 'escape':
             case 'text':
-              s += t.text(i.text);
+              s += n.text(i.text);
               break;
             case 'html':
-              s += t.html(i.text);
+              s += n.html(i.text);
               break;
             case 'link':
-              s += t.link(i.href, i.title, this.parseInline(i.tokens, t));
+              s += n.link(i.href, i.title, this.parseInline(i.tokens, n));
               break;
             case 'image':
-              s += t.image(i.href, i.title, i.text);
+              s += n.image(i.href, i.title, i.text);
               break;
             case 'strong':
-              s += t.strong(this.parseInline(i.tokens, t));
+              s += n.strong(this.parseInline(i.tokens, n));
               break;
             case 'em':
-              s += t.em(this.parseInline(i.tokens, t));
+              s += n.em(this.parseInline(i.tokens, n));
               break;
             case 'codespan':
-              s += t.codespan(i.text);
+              s += n.codespan(i.text);
               break;
             case 'br':
-              s += t.br();
+              s += n.br();
               break;
             case 'del':
-              s += t.del(this.parseInline(i.tokens, t));
+              s += n.del(this.parseInline(i.tokens, n));
               break;
             default: {
               const l = 'Token with "' + i.type + '" type was not found.';
@@ -43663,19 +43664,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       return s;
     }
   }
-  function V(n, e, t) {
-    if (n == null) throw new Error('marked(): input parameter is undefined or null');
-    if (typeof n != 'string')
+  function V(t, e, n) {
+    if (t == null) throw new Error('marked(): input parameter is undefined or null');
+    if (typeof t != 'string')
       throw new Error(
-        'marked(): input parameter is of type ' + Object.prototype.toString.call(n) + ', string expected'
+        'marked(): input parameter is of type ' + Object.prototype.toString.call(t) + ', string expected'
       );
-    if ((typeof e == 'function' && ((t = e), (e = null)), Qa((e = Ne({}, V.defaults, e || {}))), t)) {
+    if ((typeof e == 'function' && ((n = e), (e = null)), Za((e = Ne({}, V.defaults, e || {}))), n)) {
       const a = e.highlight;
       let i;
       try {
-        i = Fe.lex(n, e);
+        i = Fe.lex(t, e);
       } catch (o) {
-        return t(o);
+        return n(o);
       }
       const r = function(o) {
         let l;
@@ -43685,7 +43686,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
           } catch (c) {
             o = c;
           }
-        return (e.highlight = a), o ? t(o) : t(null, l);
+        return (e.highlight = a), o ? n(o) : n(null, l);
       };
       if (!a || a.length < 3 || (delete e.highlight, !i.length)) return r();
       let s = 0;
@@ -43704,7 +43705,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`
       );
     }
     try {
-      const a = Fe.lex(n, e);
+      const a = Fe.lex(t, e);
       return e.walkTokens && V.walkTokens(a, e.walkTokens), Be.parse(a, e);
     } catch (a) {
       if (
@@ -43716,25 +43717,25 @@ Please report this to https://github.com/markedjs/marked.`),
       throw a;
     }
   }
-  (V.options = V.setOptions = function(n) {
+  (V.options = V.setOptions = function(t) {
     var e;
-    return Ne(V.defaults, n), (e = V.defaults), (lt = e), V;
+    return Ne(V.defaults, t), (e = V.defaults), (lt = e), V;
   }),
-    (V.getDefaults = vd),
+    (V.getDefaults = yd),
     (V.defaults = lt),
-    (V.use = function(...n) {
-      const e = Ne({}, ...n),
-        t = V.defaults.extensions || { renderers: {}, childTokens: {} };
+    (V.use = function(...t) {
+      const e = Ne({}, ...t),
+        n = V.defaults.extensions || { renderers: {}, childTokens: {} };
       let a;
-      n.forEach(i => {
+      t.forEach(i => {
         if (
           (i.extensions &&
             ((a = !0),
             i.extensions.forEach(r => {
               if (!r.name) throw new Error('extension name required');
               if (r.renderer) {
-                const s = t.renderers ? t.renderers[r.name] : null;
-                t.renderers[r.name] = s
+                const s = n.renderers ? n.renderers[r.name] : null;
+                n.renderers[r.name] = s
                   ? function(...o) {
                       let l = r.renderer.apply(this, o);
                       return l === !1 && (l = s.apply(this, o)), l;
@@ -43744,20 +43745,20 @@ Please report this to https://github.com/markedjs/marked.`),
               if (r.tokenizer) {
                 if (!r.level || (r.level !== 'block' && r.level !== 'inline'))
                   throw new Error("extension level must be 'block' or 'inline'");
-                t[r.level] ? t[r.level].unshift(r.tokenizer) : (t[r.level] = [r.tokenizer]),
+                n[r.level] ? n[r.level].unshift(r.tokenizer) : (n[r.level] = [r.tokenizer]),
                   r.start &&
                     (r.level === 'block'
-                      ? t.startBlock
-                        ? t.startBlock.push(r.start)
-                        : (t.startBlock = [r.start])
+                      ? n.startBlock
+                        ? n.startBlock.push(r.start)
+                        : (n.startBlock = [r.start])
                       : r.level === 'inline' &&
-                        (t.startInline ? t.startInline.push(r.start) : (t.startInline = [r.start])));
+                        (n.startInline ? n.startInline.push(r.start) : (n.startInline = [r.start])));
               }
-              r.childTokens && (t.childTokens[r.name] = r.childTokens);
+              r.childTokens && (n.childTokens[r.name] = r.childTokens);
             })),
           i.renderer)
         ) {
-          const r = V.defaults.renderer || new Tn();
+          const r = V.defaults.renderer || new yn();
           for (const s in i.renderer) {
             const o = r[s];
             r[s] = (...l) => {
@@ -43768,7 +43769,7 @@ Please report this to https://github.com/markedjs/marked.`),
           e.renderer = r;
         }
         if (i.tokenizer) {
-          const r = V.defaults.tokenizer || new fn();
+          const r = V.defaults.tokenizer || new vn();
           for (const s in i.tokenizer) {
             const o = r[s];
             r[s] = (...l) => {
@@ -43784,68 +43785,68 @@ Please report this to https://github.com/markedjs/marked.`),
             i.walkTokens.call(this, s), r && r.call(this, s);
           };
         }
-        a && (e.extensions = t), V.setOptions(e);
+        a && (e.extensions = n), V.setOptions(e);
       });
     }),
-    (V.walkTokens = function(n, e) {
-      for (const t of n)
-        switch ((e.call(V, t), t.type)) {
+    (V.walkTokens = function(t, e) {
+      for (const n of t)
+        switch ((e.call(V, n), n.type)) {
           case 'table':
-            for (const a of t.header) V.walkTokens(a.tokens, e);
-            for (const a of t.rows) for (const i of a) V.walkTokens(i.tokens, e);
+            for (const a of n.header) V.walkTokens(a.tokens, e);
+            for (const a of n.rows) for (const i of a) V.walkTokens(i.tokens, e);
             break;
           case 'list':
-            V.walkTokens(t.items, e);
+            V.walkTokens(n.items, e);
             break;
           default:
-            V.defaults.extensions && V.defaults.extensions.childTokens && V.defaults.extensions.childTokens[t.type]
-              ? V.defaults.extensions.childTokens[t.type].forEach(function(a) {
-                  V.walkTokens(t[a], e);
+            V.defaults.extensions && V.defaults.extensions.childTokens && V.defaults.extensions.childTokens[n.type]
+              ? V.defaults.extensions.childTokens[n.type].forEach(function(a) {
+                  V.walkTokens(n[a], e);
                 })
-              : t.tokens && V.walkTokens(t.tokens, e);
+              : n.tokens && V.walkTokens(n.tokens, e);
         }
     }),
-    (V.parseInline = function(n, e) {
-      if (n == null) throw new Error('marked.parseInline(): input parameter is undefined or null');
-      if (typeof n != 'string')
+    (V.parseInline = function(t, e) {
+      if (t == null) throw new Error('marked.parseInline(): input parameter is undefined or null');
+      if (typeof t != 'string')
         throw new Error(
-          'marked.parseInline(): input parameter is of type ' + Object.prototype.toString.call(n) + ', string expected'
+          'marked.parseInline(): input parameter is of type ' + Object.prototype.toString.call(t) + ', string expected'
         );
-      Qa((e = Ne({}, V.defaults, e || {})));
+      Za((e = Ne({}, V.defaults, e || {})));
       try {
-        const t = Fe.lexInline(n, e);
-        return e.walkTokens && V.walkTokens(t, e.walkTokens), Be.parseInline(t, e);
-      } catch (t) {
+        const n = Fe.lexInline(t, e);
+        return e.walkTokens && V.walkTokens(n, e.walkTokens), Be.parseInline(n, e);
+      } catch (n) {
         if (
-          ((t.message += `
+          ((n.message += `
 Please report this to https://github.com/markedjs/marked.`),
           e.silent)
         )
-          return '<p>An error occurred:</p><pre>' + pe(t.message + '', !0) + '</pre>';
-        throw t;
+          return '<p>An error occurred:</p><pre>' + pe(n.message + '', !0) + '</pre>';
+        throw n;
       }
     }),
     (V.Parser = Be),
     (V.parser = Be.parse),
-    (V.Renderer = Tn),
-    (V.TextRenderer = Ja),
+    (V.Renderer = yn),
+    (V.TextRenderer = ni),
     (V.Lexer = Fe),
     (V.lexer = Fe.lex),
-    (V.Tokenizer = fn),
-    (V.Slugger = ei),
+    (V.Tokenizer = vn),
+    (V.Slugger = ai),
     (V.parse = V);
   /*!
    * The reveal.js markdown plugin. Handles parsing of
    * markdown inside of presentations as well as loading
    * of external markdown documents.
-   */ const ti = '__SCRIPT_END__',
-    vn = /\[([\s\d,|-]*)\]/,
-    Pd = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
-    Ud = () => {
-      let n;
+   */ const ii = '__SCRIPT_END__',
+    Cn = /\[([\s\d,|-]*)\]/,
+    Ud = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
+    Fd = () => {
+      let t;
       function e(_) {
         var d = (_.querySelector('[data-template]') || _.querySelector('script') || _).textContent,
-          u = (d = d.replace(new RegExp(ti, 'g'), '</script>')).match(/^\n?(\s*)/)[1].length,
+          u = (d = d.replace(new RegExp(ii, 'g'), '</script>')).match(/^\n?(\s*)/)[1].length,
           m = d.match(/^\n?(\t*)/)[1].length;
         return (
           m > 0
@@ -43865,7 +43866,7 @@ Please report this to https://github.com/markedjs/marked.`),
           d
         );
       }
-      function t(_) {
+      function n(_) {
         for (var d = _.attributes, u = [], m = 0, p = d.length; m < p; m++) {
           var g = d[m].name,
             E = d[m].value;
@@ -43890,7 +43891,7 @@ Please report this to https://github.com/markedjs/marked.`),
         var u = _.split(new RegExp(d.notesSeparator, 'mgi'));
         return (
           u.length === 2 && (_ = u[0] + '<aside class="notes">' + V(u[1].trim()) + '</aside>'),
-          '<script type="text/template">' + (_ = _.replace(/<\/script>/g, ti)) + '</script>'
+          '<script type="text/template">' + (_ = _.replace(/<\/script>/g, ii)) + '</script>'
         );
       }
       function r(_, d) {
@@ -43913,14 +43914,14 @@ Please report this to https://github.com/markedjs/marked.`),
             (h = g.lastIndex),
             (T = m);
         (T ? S : S[S.length - 1]).push(_.substring(h));
-        for (var v = '', R = 0, C = S.length; R < C; R++)
-          S[R] instanceof Array
+        for (var v = '', C = 0, R = S.length; C < R; C++)
+          S[C] instanceof Array
             ? ((v += '<section ' + d.attributes + '>'),
-              S[R].forEach(function(I) {
+              S[C].forEach(function(I) {
                 v += '<section data-markdown>' + i(I, d) + '</section>';
               }),
               (v += '</section>'))
-            : (v += '<section ' + d.attributes + ' data-markdown>' + i(S[R], d) + '</section>');
+            : (v += '<section ' + d.attributes + ' data-markdown>' + i(S[C], d) + '</section>');
         return v;
       }
       function s(_) {
@@ -43937,19 +43938,19 @@ Please report this to https://github.com/markedjs/marked.`),
                           S = g.getAttribute('data-markdown'),
                           v = g.getAttribute('data-charset');
                         v != null && v != '' && T.overrideMimeType('text/html; charset=' + v),
-                          (T.onreadystatechange = function(R, C) {
-                            C.readyState === 4 &&
-                              ((C.status >= 200 && C.status < 300) || C.status === 0 ? E(C, S) : h(C, S));
+                          (T.onreadystatechange = function(C, R) {
+                            R.readyState === 4 &&
+                              ((R.status >= 200 && R.status < 300) || R.status === 0 ? E(R, S) : h(R, S));
                           }.bind(this, g, T)),
                           T.open('GET', S, !0);
                         try {
                           T.send();
-                        } catch (R) {
+                        } catch (C) {
                           console.warn(
                             'Failed to get the Markdown file ' +
                               S +
                               '. Make sure that the presentation and the file are served by a HTTP server and the file can be found there. ' +
-                              R
+                              C
                           ),
                             E(T, S);
                         }
@@ -43960,7 +43961,7 @@ Please report this to https://github.com/markedjs/marked.`),
                           separator: m.getAttribute('data-separator'),
                           verticalSeparator: m.getAttribute('data-separator-vertical'),
                           notesSeparator: m.getAttribute('data-separator-notes'),
-                          attributes: t(m)
+                          attributes: n(m)
                         });
                       },
                       function(g, E) {
@@ -43977,7 +43978,7 @@ Please report this to https://github.com/markedjs/marked.`),
                     separator: m.getAttribute('data-separator'),
                     verticalSeparator: m.getAttribute('data-separator-vertical'),
                     notesSeparator: m.getAttribute('data-separator-notes'),
-                    attributes: t(m)
+                    attributes: n(m)
                   }));
             }),
             Promise.all(u).then(d);
@@ -44017,7 +44018,7 @@ Please report this to https://github.com/markedjs/marked.`),
         d.nodeType == Node.COMMENT_NODE && o(d, u, m) == 0 && o(d, _, p);
       }
       function c() {
-        var _ = n.getRevealElement().querySelectorAll('[data-markdown]:not([data-markdown-parsed])');
+        var _ = t.getRevealElement().querySelectorAll('[data-markdown]:not([data-markdown-parsed])');
         return (
           [].slice.call(_).forEach(function(d) {
             d.setAttribute('data-markdown-parsed', !0);
@@ -44043,22 +44044,22 @@ Please report this to https://github.com/markedjs/marked.`),
       return {
         id: 'markdown',
         init: function(_) {
-          n = _;
-          let { renderer: d, animateLists: u, ...m } = n.getConfig().markdown || {};
+          t = _;
+          let { renderer: d, animateLists: u, ...m } = t.getConfig().markdown || {};
           return (
             d ||
               ((d = new V.Renderer()),
               (d.code = (p, g) => {
                 let E = '';
                 return (
-                  vn.test(g) &&
-                    ((E = g.match(vn)[1].trim()), (E = `data-line-numbers="${E}"`), (g = g.replace(vn, '').trim())),
-                  `<pre><code ${E} class="${g}">${(p = p.replace(/([&<>'"])/g, h => Pd[h]))}</code></pre>`
+                  Cn.test(g) &&
+                    ((E = g.match(Cn)[1].trim()), (E = `data-line-numbers="${E}"`), (g = g.replace(Cn, '').trim())),
+                  `<pre><code ${E} class="${g}">${(p = p.replace(/([&<>'"])/g, h => Ud[h]))}</code></pre>`
                 );
               })),
             u === !0 && (d.listitem = p => `<li class="fragment">${p}</li>`),
             V.setOptions({ renderer: d, ...m }),
-            s(n.getRevealElement()).then(c)
+            s(t.getRevealElement()).then(c)
           );
         },
         processSlides: s,
@@ -44067,7 +44068,7 @@ Please report this to https://github.com/markedjs/marked.`),
         marked: V
       };
     };
-  function Fd() {
+  function Bd() {
     return {
       baseUrl: null,
       breaks: !1,
@@ -44111,47 +44112,47 @@ Please report this to https://github.com/markedjs/marked.`),
     walkTokens: null,
     xhtml: !1
   };
-  const Bd = /[&<>"']/,
-    Gd = /[&<>"']/g,
-    Yd = /[<>"']|&(?!#?\w+;)/,
-    Hd = /[<>"']|&(?!#?\w+;)/g,
-    zd = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
-    ni = n => zd[n];
-  function me(n, e) {
+  const Gd = /[&<>"']/,
+    Yd = /[&<>"']/g,
+    Hd = /[<>"']|&(?!#?\w+;)/,
+    zd = /[<>"']|&(?!#?\w+;)/g,
+    $d = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
+    ri = t => $d[t];
+  function me(t, e) {
     if (e) {
-      if (Bd.test(n)) return n.replace(Gd, ni);
-    } else if (Yd.test(n)) return n.replace(Hd, ni);
-    return n;
+      if (Gd.test(t)) return t.replace(Yd, ri);
+    } else if (Hd.test(t)) return t.replace(zd, ri);
+    return t;
   }
-  const $d = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi;
-  function ai(n) {
-    return n.replace($d, (e, t) =>
-      (t = t.toLowerCase()) === 'colon'
+  const Vd = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi;
+  function si(t) {
+    return t.replace(Vd, (e, n) =>
+      (n = n.toLowerCase()) === 'colon'
         ? ':'
-        : t.charAt(0) === '#'
-        ? t.charAt(1) === 'x'
-          ? String.fromCharCode(parseInt(t.substring(2), 16))
-          : String.fromCharCode(+t.substring(1))
+        : n.charAt(0) === '#'
+        ? n.charAt(1) === 'x'
+          ? String.fromCharCode(parseInt(n.substring(2), 16))
+          : String.fromCharCode(+n.substring(1))
         : ''
     );
   }
-  const Vd = /(^|[^\[])\^/g;
-  function ie(n, e) {
-    (n = n.source || n), (e = e || '');
-    const t = {
-      replace: (a, i) => ((i = (i = i.source || i).replace(Vd, '$1')), (n = n.replace(a, i)), t),
-      getRegex: () => new RegExp(n, e)
+  const jd = /(^|[^\[])\^/g;
+  function ie(t, e) {
+    (t = t.source || t), (e = e || '');
+    const n = {
+      replace: (a, i) => ((i = (i = i.source || i).replace(jd, '$1')), (t = t.replace(a, i)), n),
+      getRegex: () => new RegExp(t, e)
     };
-    return t;
+    return n;
   }
-  const jd = /[^\w:]/g,
-    qd = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
-  function ii(n, e, t) {
-    if (n) {
+  const qd = /[^\w:]/g,
+    Wd = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
+  function oi(t, e, n) {
+    if (t) {
       let a;
       try {
-        a = decodeURIComponent(ai(t))
-          .replace(jd, '')
+        a = decodeURIComponent(si(n))
+          .replace(qd, '')
           .toLowerCase();
       } catch {
         return null;
@@ -44159,42 +44160,42 @@ Please report this to https://github.com/markedjs/marked.`),
       if (a.indexOf('javascript:') === 0 || a.indexOf('vbscript:') === 0 || a.indexOf('data:') === 0) return null;
     }
     e &&
-      !qd.test(t) &&
-      (t = (function(a, i) {
-        jt[' ' + a] || (Wd.test(a) ? (jt[' ' + a] = a + '/') : (jt[' ' + a] = Wt(a, '/', !0))), (a = jt[' ' + a]);
+      !Wd.test(n) &&
+      (n = (function(a, i) {
+        Wt[' ' + a] || (Qd.test(a) ? (Wt[' ' + a] = a + '/') : (Wt[' ' + a] = Kt(a, '/', !0))), (a = Wt[' ' + a]);
         const r = a.indexOf(':') === -1;
         return i.substring(0, 2) === '//'
           ? r
             ? i
-            : a.replace(Qd, '$1') + i
+            : a.replace(Kd, '$1') + i
           : i.charAt(0) === '/'
           ? r
             ? i
-            : a.replace(Kd, '$1') + i
+            : a.replace(Xd, '$1') + i
           : a + i;
-      })(e, t));
+      })(e, n));
     try {
-      t = encodeURI(t).replace(/%25/g, '%');
+      n = encodeURI(n).replace(/%25/g, '%');
     } catch {
       return null;
     }
-    return t;
-  }
-  const jt = {},
-    Wd = /^[^:]+:\/*[^/]*$/,
-    Qd = /^([^:]+:)[\s\S]*$/,
-    Kd = /^([^:]+:\/*[^/]*)[\s\S]*$/,
-    qt = { exec: function() {} };
-  function Oe(n) {
-    let e,
-      t,
-      a = 1;
-    for (; a < arguments.length; a++)
-      for (t in ((e = arguments[a]), e)) Object.prototype.hasOwnProperty.call(e, t) && (n[t] = e[t]);
     return n;
   }
-  function ri(n, e) {
-    const t = n
+  const Wt = {},
+    Qd = /^[^:]+:\/*[^/]*$/,
+    Kd = /^([^:]+:)[\s\S]*$/,
+    Xd = /^([^:]+:\/*[^/]*)[\s\S]*$/,
+    Qt = { exec: function() {} };
+  function Oe(t) {
+    let e,
+      n,
+      a = 1;
+    for (; a < arguments.length; a++)
+      for (n in ((e = arguments[a]), e)) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+    return t;
+  }
+  function li(t, e) {
+    const n = t
       .replace(/\|/g, (i, r, s) => {
         let o = !1,
           l = r;
@@ -44203,68 +44204,68 @@ Please report this to https://github.com/markedjs/marked.`),
       })
       .split(/ \|/);
     let a = 0;
-    if ((t[0].trim() || t.shift(), t.length > 0 && !t[t.length - 1].trim() && t.pop(), t.length > e)) t.splice(e);
-    else for (; t.length < e; ) t.push('');
-    for (; a < t.length; a++) t[a] = t[a].trim().replace(/\\\|/g, '|');
-    return t;
+    if ((n[0].trim() || n.shift(), n.length > 0 && !n[n.length - 1].trim() && n.pop(), n.length > e)) n.splice(e);
+    else for (; n.length < e; ) n.push('');
+    for (; a < n.length; a++) n[a] = n[a].trim().replace(/\\\|/g, '|');
+    return n;
   }
-  function Wt(n, e, t) {
-    const a = n.length;
+  function Kt(t, e, n) {
+    const a = t.length;
     if (a === 0) return '';
     let i = 0;
     for (; i < a; ) {
-      const r = n.charAt(a - i - 1);
-      if (r !== e || t) {
-        if (r === e || !t) break;
+      const r = t.charAt(a - i - 1);
+      if (r !== e || n) {
+        if (r === e || !n) break;
         i++;
       } else i++;
     }
-    return n.substr(0, a - i);
+    return t.substr(0, a - i);
   }
-  function si(n) {
-    n &&
-      n.sanitize &&
-      !n.silent &&
+  function ci(t) {
+    t &&
+      t.sanitize &&
+      !t.silent &&
       console.warn(
         'marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options'
       );
   }
-  function oi(n, e) {
+  function di(t, e) {
     if (e < 1) return '';
-    let t = '';
-    for (; e > 1; ) 1 & e && (t += n), (e >>= 1), (n += n);
-    return t + n;
+    let n = '';
+    for (; e > 1; ) 1 & e && (n += t), (e >>= 1), (t += t);
+    return n + t;
   }
-  function li(n, e, t, a) {
+  function _i(t, e, n, a) {
     const i = e.href,
       r = e.title ? me(e.title) : null,
-      s = n[1].replace(/\\([\[\]])/g, '$1');
-    if (n[0].charAt(0) !== '!') {
+      s = t[1].replace(/\\([\[\]])/g, '$1');
+    if (t[0].charAt(0) !== '!') {
       a.state.inLink = !0;
-      const o = { type: 'link', raw: t, href: i, title: r, text: s, tokens: a.inlineTokens(s, []) };
+      const o = { type: 'link', raw: n, href: i, title: r, text: s, tokens: a.inlineTokens(s, []) };
       return (a.state.inLink = !1), o;
     }
-    return { type: 'image', raw: t, href: i, title: r, text: me(s) };
+    return { type: 'image', raw: n, href: i, title: r, text: me(s) };
   }
-  class yn {
+  class Rn {
     constructor(e) {
       this.options = e || ct;
     }
     space(e) {
-      const t = this.rules.block.newline.exec(e);
-      if (t && t[0].length > 0) return { type: 'space', raw: t[0] };
+      const n = this.rules.block.newline.exec(e);
+      if (n && n[0].length > 0) return { type: 'space', raw: n[0] };
     }
     code(e) {
-      const t = this.rules.block.code.exec(e);
-      if (t) {
-        const a = t[0].replace(/^ {1,4}/gm, '');
+      const n = this.rules.block.code.exec(e);
+      if (n) {
+        const a = n[0].replace(/^ {1,4}/gm, '');
         return {
           type: 'code',
-          raw: t[0],
+          raw: n[0],
           codeBlockStyle: 'indented',
           text: this.options.pedantic
             ? a
-            : Wt(
+            : Kt(
                 a,
                 `
 `
@@ -44273,9 +44274,9 @@ Please report this to https://github.com/markedjs/marked.`),
       }
     }
     fences(e) {
-      const t = this.rules.block.fences.exec(e);
-      if (t) {
-        const a = t[0],
+      const n = this.rules.block.fences.exec(e);
+      if (n) {
+        const a = n[0],
           i = (function(r, s) {
             const o = r.match(/^(\s+)(?:```)/);
             if (o === null) return s;
@@ -44292,36 +44293,36 @@ Please report this to https://github.com/markedjs/marked.`),
                 return d.length >= l.length ? c.slice(l.length) : c;
               }).join(`
 `);
-          })(a, t[3] || '');
-        return { type: 'code', raw: a, lang: t[2] ? t[2].trim() : t[2], text: i };
+          })(a, n[3] || '');
+        return { type: 'code', raw: a, lang: n[2] ? n[2].trim() : n[2], text: i };
       }
     }
     heading(e) {
-      const t = this.rules.block.heading.exec(e);
-      if (t) {
-        let a = t[2].trim();
+      const n = this.rules.block.heading.exec(e);
+      if (n) {
+        let a = n[2].trim();
         if (/#$/.test(a)) {
-          const r = Wt(a, '#');
+          const r = Kt(a, '#');
           this.options.pedantic ? (a = r.trim()) : (r && !/ $/.test(r)) || (a = r.trim());
         }
-        const i = { type: 'heading', raw: t[0], depth: t[1].length, text: a, tokens: [] };
+        const i = { type: 'heading', raw: n[0], depth: n[1].length, text: a, tokens: [] };
         return this.lexer.inline(i.text, i.tokens), i;
       }
     }
     hr(e) {
-      const t = this.rules.block.hr.exec(e);
-      if (t) return { type: 'hr', raw: t[0] };
+      const n = this.rules.block.hr.exec(e);
+      if (n) return { type: 'hr', raw: n[0] };
     }
     blockquote(e) {
-      const t = this.rules.block.blockquote.exec(e);
-      if (t) {
-        const a = t[0].replace(/^ *> ?/gm, '');
-        return { type: 'blockquote', raw: t[0], tokens: this.lexer.blockTokens(a, []), text: a };
+      const n = this.rules.block.blockquote.exec(e);
+      if (n) {
+        const a = n[0].replace(/^ *> ?/gm, '');
+        return { type: 'blockquote', raw: n[0], tokens: this.lexer.blockTokens(a, []), text: a };
       }
     }
     list(e) {
-      let t = this.rules.block.list.exec(e);
-      if (t) {
+      let n = this.rules.block.list.exec(e);
+      if (n) {
         let a,
           i,
           r,
@@ -44334,16 +44335,16 @@ Please report this to https://github.com/markedjs/marked.`),
           u,
           m,
           p,
-          g = t[1].trim();
+          g = n[1].trim();
         const E = g.length > 1,
           h = { type: 'list', raw: '', ordered: E, start: E ? +g.slice(0, -1) : '', loose: !1, items: [] };
         (g = E ? `\\d{1,9}\\${g.slice(-1)}` : `\\${g}`), this.options.pedantic && (g = E ? g : '[*+-]');
         const T = new RegExp(`^( {0,3}${g})((?: [^\\n]*)?(?:\\n|$))`);
-        for (; e && ((p = !1), (t = T.exec(e))) && !this.rules.block.hr.test(e); ) {
+        for (; e && ((p = !1), (n = T.exec(e))) && !this.rules.block.hr.test(e); ) {
           if (
-            ((a = t[0]),
+            ((a = n[0]),
             (e = e.substring(a.length)),
-            (_ = t[2].split(
+            (_ = n[2].split(
               `
 `,
               1
@@ -44355,7 +44356,7 @@ Please report this to https://github.com/markedjs/marked.`),
             )[0]),
             this.options.pedantic
               ? ((s = 2), (m = _.trimLeft()))
-              : ((s = t[2].search(/[^ ]/)), (s = s > 4 ? 1 : s), (m = _.slice(s)), (s += t[1].length)),
+              : ((s = n[2].search(/[^ ]/)), (s = s > 4 ? 1 : s), (m = _.slice(s)), (s += n[1].length)),
             (l = !1),
             !_ &&
               /^ *$/.test(d) &&
@@ -44411,9 +44412,9 @@ Please report this to https://github.com/markedjs/marked.`),
         const S = h.items.length;
         for (o = 0; o < S; o++) {
           (this.lexer.state.top = !1), (h.items[o].tokens = this.lexer.blockTokens(h.items[o].text, []));
-          const v = h.items[o].tokens.filter(C => C.type === 'space'),
-            R = v.every(C => {
-              const I = C.raw.split('');
+          const v = h.items[o].tokens.filter(R => R.type === 'space'),
+            C = v.every(R => {
+              const I = R.raw.split('');
               let O = 0;
               for (const A of I)
                 if (
@@ -44425,24 +44426,24 @@ Please report this to https://github.com/markedjs/marked.`),
                   return !0;
               return !1;
             });
-          !h.loose && v.length && R && ((h.loose = !0), (h.items[o].loose = !0));
+          !h.loose && v.length && C && ((h.loose = !0), (h.items[o].loose = !0));
         }
         return h;
       }
     }
     html(e) {
-      const t = this.rules.block.html.exec(e);
-      if (t) {
+      const n = this.rules.block.html.exec(e);
+      if (n) {
         const a = {
           type: 'html',
-          raw: t[0],
-          pre: !this.options.sanitizer && (t[1] === 'pre' || t[1] === 'script' || t[1] === 'style'),
-          text: t[0]
+          raw: n[0],
+          pre: !this.options.sanitizer && (n[1] === 'pre' || n[1] === 'script' || n[1] === 'style'),
+          text: n[0]
         };
         return (
           this.options.sanitize &&
             ((a.type = 'paragraph'),
-            (a.text = this.options.sanitizer ? this.options.sanitizer(t[0]) : me(t[0])),
+            (a.text = this.options.sanitizer ? this.options.sanitizer(n[0]) : me(n[0])),
             (a.tokens = []),
             this.lexer.inline(a.text, a.tokens)),
           a
@@ -44450,28 +44451,28 @@ Please report this to https://github.com/markedjs/marked.`),
       }
     }
     def(e) {
-      const t = this.rules.block.def.exec(e);
-      if (t)
+      const n = this.rules.block.def.exec(e);
+      if (n)
         return (
-          t[3] && (t[3] = t[3].substring(1, t[3].length - 1)),
-          { type: 'def', tag: t[1].toLowerCase().replace(/\s+/g, ' '), raw: t[0], href: t[2], title: t[3] }
+          n[3] && (n[3] = n[3].substring(1, n[3].length - 1)),
+          { type: 'def', tag: n[1].toLowerCase().replace(/\s+/g, ' '), raw: n[0], href: n[2], title: n[3] }
         );
     }
     table(e) {
-      const t = this.rules.block.table.exec(e);
-      if (t) {
+      const n = this.rules.block.table.exec(e);
+      if (n) {
         const a = {
           type: 'table',
-          header: ri(t[1]).map(i => ({ text: i })),
-          align: t[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
+          header: li(n[1]).map(i => ({ text: i })),
+          align: n[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
           rows:
-            t[3] && t[3].trim()
-              ? t[3].replace(/\n[ \t]*$/, '').split(`
+            n[3] && n[3].trim()
+              ? n[3].replace(/\n[ \t]*$/, '').split(`
 `)
               : []
         };
         if (a.header.length === a.align.length) {
-          a.raw = t[0];
+          a.raw = n[0];
           let i,
             r,
             s,
@@ -44485,7 +44486,7 @@ Please report this to https://github.com/markedjs/marked.`),
               : /^ *:-+ *$/.test(a.align[i])
               ? (a.align[i] = 'left')
               : (a.align[i] = null);
-          for (l = a.rows.length, i = 0; i < l; i++) a.rows[i] = ri(a.rows[i], a.header.length).map(c => ({ text: c }));
+          for (l = a.rows.length, i = 0; i < l; i++) a.rows[i] = li(a.rows[i], a.header.length).map(c => ({ text: c }));
           for (l = a.header.length, r = 0; r < l; r++)
             (a.header[r].tokens = []), this.lexer.inlineTokens(a.header[r].text, a.header[r].tokens);
           for (l = a.rows.length, r = 0; r < l; r++)
@@ -44496,68 +44497,68 @@ Please report this to https://github.com/markedjs/marked.`),
       }
     }
     lheading(e) {
-      const t = this.rules.block.lheading.exec(e);
-      if (t) {
-        const a = { type: 'heading', raw: t[0], depth: t[2].charAt(0) === '=' ? 1 : 2, text: t[1], tokens: [] };
+      const n = this.rules.block.lheading.exec(e);
+      if (n) {
+        const a = { type: 'heading', raw: n[0], depth: n[2].charAt(0) === '=' ? 1 : 2, text: n[1], tokens: [] };
         return this.lexer.inline(a.text, a.tokens), a;
       }
     }
     paragraph(e) {
-      const t = this.rules.block.paragraph.exec(e);
-      if (t) {
+      const n = this.rules.block.paragraph.exec(e);
+      if (n) {
         const a = {
           type: 'paragraph',
-          raw: t[0],
+          raw: n[0],
           text:
-            t[1].charAt(t[1].length - 1) ===
+            n[1].charAt(n[1].length - 1) ===
             `
 `
-              ? t[1].slice(0, -1)
-              : t[1],
+              ? n[1].slice(0, -1)
+              : n[1],
           tokens: []
         };
         return this.lexer.inline(a.text, a.tokens), a;
       }
     }
     text(e) {
-      const t = this.rules.block.text.exec(e);
-      if (t) {
-        const a = { type: 'text', raw: t[0], text: t[0], tokens: [] };
+      const n = this.rules.block.text.exec(e);
+      if (n) {
+        const a = { type: 'text', raw: n[0], text: n[0], tokens: [] };
         return this.lexer.inline(a.text, a.tokens), a;
       }
     }
     escape(e) {
-      const t = this.rules.inline.escape.exec(e);
-      if (t) return { type: 'escape', raw: t[0], text: me(t[1]) };
+      const n = this.rules.inline.escape.exec(e);
+      if (n) return { type: 'escape', raw: n[0], text: me(n[1]) };
     }
     tag(e) {
-      const t = this.rules.inline.tag.exec(e);
-      if (t)
+      const n = this.rules.inline.tag.exec(e);
+      if (n)
         return (
-          !this.lexer.state.inLink && /^<a /i.test(t[0])
+          !this.lexer.state.inLink && /^<a /i.test(n[0])
             ? (this.lexer.state.inLink = !0)
-            : this.lexer.state.inLink && /^<\/a>/i.test(t[0]) && (this.lexer.state.inLink = !1),
-          !this.lexer.state.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(t[0])
+            : this.lexer.state.inLink && /^<\/a>/i.test(n[0]) && (this.lexer.state.inLink = !1),
+          !this.lexer.state.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(n[0])
             ? (this.lexer.state.inRawBlock = !0)
             : this.lexer.state.inRawBlock &&
-              /^<\/(pre|code|kbd|script)(\s|>)/i.test(t[0]) &&
+              /^<\/(pre|code|kbd|script)(\s|>)/i.test(n[0]) &&
               (this.lexer.state.inRawBlock = !1),
           {
             type: this.options.sanitize ? 'text' : 'html',
-            raw: t[0],
+            raw: n[0],
             inLink: this.lexer.state.inLink,
             inRawBlock: this.lexer.state.inRawBlock,
-            text: this.options.sanitize ? (this.options.sanitizer ? this.options.sanitizer(t[0]) : me(t[0])) : t[0]
+            text: this.options.sanitize ? (this.options.sanitizer ? this.options.sanitizer(n[0]) : me(n[0])) : n[0]
           }
         );
     }
     link(e) {
-      const t = this.rules.inline.link.exec(e);
-      if (t) {
-        const a = t[2].trim();
+      const n = this.rules.inline.link.exec(e);
+      if (n) {
+        const a = n[2].trim();
         if (!this.options.pedantic && /^</.test(a)) {
           if (!/>$/.test(a)) return;
-          const s = Wt(a.slice(0, -1), '\\');
+          const s = Kt(a.slice(0, -1), '\\');
           if ((a.length - s.length) % 2 == 0) return;
         } else {
           const s = (function(o, l) {
@@ -44570,45 +44571,45 @@ Please report this to https://github.com/markedjs/marked.`),
               else if (o[d] === l[0]) _++;
               else if (o[d] === l[1] && (_--, _ < 0)) return d;
             return -1;
-          })(t[2], '()');
+          })(n[2], '()');
           if (s > -1) {
-            const o = (t[0].indexOf('!') === 0 ? 5 : 4) + t[1].length + s;
-            (t[2] = t[2].substring(0, s)), (t[0] = t[0].substring(0, o).trim()), (t[3] = '');
+            const o = (n[0].indexOf('!') === 0 ? 5 : 4) + n[1].length + s;
+            (n[2] = n[2].substring(0, s)), (n[0] = n[0].substring(0, o).trim()), (n[3] = '');
           }
         }
-        let i = t[2],
+        let i = n[2],
           r = '';
         if (this.options.pedantic) {
           const s = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(i);
           s && ((i = s[1]), (r = s[3]));
-        } else r = t[3] ? t[3].slice(1, -1) : '';
+        } else r = n[3] ? n[3].slice(1, -1) : '';
         return (
           (i = i.trim()),
           /^</.test(i) && (i = this.options.pedantic && !/>$/.test(a) ? i.slice(1) : i.slice(1, -1)),
-          li(
-            t,
+          _i(
+            n,
             {
               href: i && i.replace(this.rules.inline._escapes, '$1'),
               title: r && r.replace(this.rules.inline._escapes, '$1')
             },
-            t[0],
+            n[0],
             this.lexer
           )
         );
       }
     }
-    reflink(e, t) {
+    reflink(e, n) {
       let a;
       if ((a = this.rules.inline.reflink.exec(e)) || (a = this.rules.inline.nolink.exec(e))) {
         let i = (a[2] || a[1]).replace(/\s+/g, ' ');
-        if (((i = t[i.toLowerCase()]), !i || !i.href)) {
+        if (((i = n[i.toLowerCase()]), !i || !i.href)) {
           const r = a[0].charAt(0);
           return { type: 'text', raw: r, text: r };
         }
-        return li(a, i, a[0], this.lexer);
+        return _i(a, i, a[0], this.lexer);
       }
     }
-    emStrong(e, t, a = '') {
+    emStrong(e, n, a = '') {
       let i = this.rules.inline.emStrong.lDelim.exec(e);
       if (!i || (i[3] && a.match(/[\p{L}\p{N}]/u))) return;
       const r = i[1] || i[2] || '';
@@ -44619,7 +44620,7 @@ Please report this to https://github.com/markedjs/marked.`),
           c = s,
           _ = 0;
         const d = i[0][0] === '*' ? this.rules.inline.emStrong.rDelimAst : this.rules.inline.emStrong.rDelimUnd;
-        for (d.lastIndex = 0, t = t.slice(-1 * e.length + s); (i = d.exec(t)) != null; ) {
+        for (d.lastIndex = 0, n = n.slice(-1 * e.length + s); (i = d.exec(n)) != null; ) {
           if (((o = i[1] || i[2] || i[3] || i[4] || i[5] || i[6]), !o)) continue;
           if (((l = o.length), i[3] || i[4])) {
             c += l;
@@ -44650,39 +44651,39 @@ Please report this to https://github.com/markedjs/marked.`),
       }
     }
     codespan(e) {
-      const t = this.rules.inline.code.exec(e);
-      if (t) {
-        let a = t[2].replace(/\n/g, ' ');
+      const n = this.rules.inline.code.exec(e);
+      if (n) {
+        let a = n[2].replace(/\n/g, ' ');
         const i = /[^ ]/.test(a),
           r = /^ /.test(a) && / $/.test(a);
-        return i && r && (a = a.substring(1, a.length - 1)), (a = me(a, !0)), { type: 'codespan', raw: t[0], text: a };
+        return i && r && (a = a.substring(1, a.length - 1)), (a = me(a, !0)), { type: 'codespan', raw: n[0], text: a };
       }
     }
     br(e) {
-      const t = this.rules.inline.br.exec(e);
-      if (t) return { type: 'br', raw: t[0] };
+      const n = this.rules.inline.br.exec(e);
+      if (n) return { type: 'br', raw: n[0] };
     }
     del(e) {
-      const t = this.rules.inline.del.exec(e);
-      if (t) return { type: 'del', raw: t[0], text: t[2], tokens: this.lexer.inlineTokens(t[2], []) };
+      const n = this.rules.inline.del.exec(e);
+      if (n) return { type: 'del', raw: n[0], text: n[2], tokens: this.lexer.inlineTokens(n[2], []) };
     }
-    autolink(e, t) {
+    autolink(e, n) {
       const a = this.rules.inline.autolink.exec(e);
       if (a) {
         let i, r;
         return (
           a[2] === '@'
-            ? ((i = me(this.options.mangle ? t(a[1]) : a[1])), (r = 'mailto:' + i))
+            ? ((i = me(this.options.mangle ? n(a[1]) : a[1])), (r = 'mailto:' + i))
             : ((i = me(a[1])), (r = i)),
           { type: 'link', raw: a[0], text: i, href: r, tokens: [{ type: 'text', raw: i, text: i }] }
         );
       }
     }
-    url(e, t) {
+    url(e, n) {
       let a;
       if ((a = this.rules.inline.url.exec(e))) {
         let i, r;
-        if (a[2] === '@') (i = me(this.options.mangle ? t(a[0]) : a[0])), (r = 'mailto:' + i);
+        if (a[2] === '@') (i = me(this.options.mangle ? n(a[0]) : a[0])), (r = 'mailto:' + i);
         else {
           let s;
           do (s = a[0]), (a[0] = this.rules.inline._backpedal.exec(a[0])[0]);
@@ -44692,7 +44693,7 @@ Please report this to https://github.com/markedjs/marked.`),
         return { type: 'link', raw: a[0], text: i, href: r, tokens: [{ type: 'text', raw: i, text: i }] };
       }
     }
-    inlineText(e, t) {
+    inlineText(e, n) {
       const a = this.rules.inline.text.exec(e);
       if (a) {
         let i;
@@ -44703,7 +44704,7 @@ Please report this to https://github.com/markedjs/marked.`),
                 ? this.options.sanitizer(a[0])
                 : me(a[0])
               : a[0]
-            : me(this.options.smartypants ? t(a[0]) : a[0])),
+            : me(this.options.smartypants ? n(a[0]) : a[0])),
           { type: 'text', raw: a[0], text: i }
         );
       }
@@ -44720,7 +44721,7 @@ Please report this to https://github.com/markedjs/marked.`),
     html:
       '^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n *)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$))',
     def: /^ {0,3}\[(label)\]: *(?:\n *)?<?([^\s>]+)>?(?:(?: +(?:\n *)?| *\n *)(title))? *(?:\n+|$)/,
-    table: qt,
+    table: Qt,
     lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/,
     _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,
     text: /^[^\n]+/,
@@ -44800,7 +44801,7 @@ Please report this to https://github.com/markedjs/marked.`),
         .getRegex(),
       def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
       heading: /^(#{1,6})(.*)(?:\n+|$)/,
-      fences: qt,
+      fences: Qt,
       paragraph: ie(z.normal._paragraph)
         .replace('hr', z.hr)
         .replace(
@@ -44818,7 +44819,7 @@ Please report this to https://github.com/markedjs/marked.`),
   const P = {
     escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
     autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
-    url: qt,
+    url: Qt,
     tag:
       '^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',
     link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/,
@@ -44832,12 +44833,12 @@ Please report this to https://github.com/markedjs/marked.`),
     },
     code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
     br: /^( {2,}|\\)\n(?!\s*$)/,
-    del: qt,
+    del: Qt,
     text: /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,
     punctuation: /^([\spunctuation])/
   };
-  function Xd(n) {
-    return n
+  function Zd(t) {
+    return t
       .replace(/---/g, '\u2014')
       .replace(/--/g, '\u2013')
       .replace(/(^|[-\u2014/(\[{"\s])'/g, '$1\u2018')
@@ -44846,13 +44847,13 @@ Please report this to https://github.com/markedjs/marked.`),
       .replace(/"/g, '\u201D')
       .replace(/\.{3}/g, '\u2026');
   }
-  function ci(n) {
+  function ui(t) {
     let e,
-      t,
+      n,
       a = '';
-    const i = n.length;
+    const i = t.length;
     for (e = 0; e < i; e++)
-      (t = n.charCodeAt(e)), Math.random() > 0.5 && (t = 'x' + t.toString(16)), (a += '&#' + t + ';');
+      (n = t.charCodeAt(e)), Math.random() > 0.5 && (n = 'x' + n.toString(16)), (a += '&#' + n + ';');
     return a;
   }
   (P._punctuation = '!"#$%&\'()+\\-.,/:;<=>?@\\[\\]`^{|}~'),
@@ -44952,29 +44953,29 @@ Please report this to https://github.com/markedjs/marked.`),
       (this.tokens = []),
         (this.tokens.links = Object.create(null)),
         (this.options = e || ct),
-        (this.options.tokenizer = this.options.tokenizer || new yn()),
+        (this.options.tokenizer = this.options.tokenizer || new Rn()),
         (this.tokenizer = this.options.tokenizer),
         (this.tokenizer.options = this.options),
         (this.tokenizer.lexer = this),
         (this.inlineQueue = []),
         (this.state = { inLink: !1, inRawBlock: !1, top: !0 });
-      const t = { block: z.normal, inline: P.normal };
+      const n = { block: z.normal, inline: P.normal };
       this.options.pedantic
-        ? ((t.block = z.pedantic), (t.inline = P.pedantic))
-        : this.options.gfm && ((t.block = z.gfm), this.options.breaks ? (t.inline = P.breaks) : (t.inline = P.gfm)),
-        (this.tokenizer.rules = t);
+        ? ((n.block = z.pedantic), (n.inline = P.pedantic))
+        : this.options.gfm && ((n.block = z.gfm), this.options.breaks ? (n.inline = P.breaks) : (n.inline = P.gfm)),
+        (this.tokenizer.rules = n);
     }
     static get rules() {
       return { block: z, inline: P };
     }
-    static lex(e, t) {
-      return new Ge(t).lex(e);
+    static lex(e, n) {
+      return new Ge(n).lex(e);
     }
-    static lexInline(e, t) {
-      return new Ge(t).inlineTokens(e);
+    static lexInline(e, n) {
+      return new Ge(n).inlineTokens(e);
     }
     lex(e) {
-      let t;
+      let n;
       for (
         e = e
           .replace(
@@ -44984,13 +44985,13 @@ Please report this to https://github.com/markedjs/marked.`),
           )
           .replace(/\t/g, '    '),
           this.blockTokens(e, this.tokens);
-        (t = this.inlineQueue.shift());
+        (n = this.inlineQueue.shift());
 
       )
-        this.inlineTokens(t.src, t.tokens);
+        this.inlineTokens(n.src, n.tokens);
       return this.tokens;
     }
-    blockTokens(e, t = []) {
+    blockTokens(e, n = []) {
       let a, i, r, s;
       for (this.options.pedantic && (e = e.replace(/^ +$/gm, '')); e; )
         if (
@@ -44998,21 +44999,21 @@ Please report this to https://github.com/markedjs/marked.`),
             this.options.extensions &&
             this.options.extensions.block &&
             this.options.extensions.block.some(
-              o => !!(a = o.call({ lexer: this }, e, t)) && ((e = e.substring(a.raw.length)), t.push(a), !0)
+              o => !!(a = o.call({ lexer: this }, e, n)) && ((e = e.substring(a.raw.length)), n.push(a), !0)
             )
           )
         )
           if ((a = this.tokenizer.space(e)))
             (e = e.substring(a.raw.length)),
-              a.raw.length === 1 && t.length > 0
-                ? (t[t.length - 1].raw += `
+              a.raw.length === 1 && n.length > 0
+                ? (n[n.length - 1].raw += `
 `)
-                : t.push(a);
+                : n.push(a);
           else if ((a = this.tokenizer.code(e)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
+              (i = n[n.length - 1]),
               !i || (i.type !== 'paragraph' && i.type !== 'text')
-                ? t.push(a)
+                ? n.push(a)
                 : ((i.raw +=
                     `
 ` + a.raw),
@@ -45020,15 +45021,15 @@ Please report this to https://github.com/markedjs/marked.`),
                     `
 ` + a.text),
                   (this.inlineQueue[this.inlineQueue.length - 1].src = i.text));
-          else if ((a = this.tokenizer.fences(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.heading(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.hr(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.blockquote(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.list(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.html(e))) (e = e.substring(a.raw.length)), t.push(a);
+          else if ((a = this.tokenizer.fences(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.heading(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.hr(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.blockquote(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.list(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.html(e))) (e = e.substring(a.raw.length)), n.push(a);
           else if ((a = this.tokenizer.def(e)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
+              (i = n[n.length - 1]),
               !i || (i.type !== 'paragraph' && i.type !== 'text')
                 ? this.tokens.links[a.tag] || (this.tokens.links[a.tag] = { href: a.href, title: a.title })
                 : ((i.raw +=
@@ -45038,8 +45039,8 @@ Please report this to https://github.com/markedjs/marked.`),
                     `
 ` + a.raw),
                   (this.inlineQueue[this.inlineQueue.length - 1].src = i.text));
-          else if ((a = this.tokenizer.table(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.lheading(e))) (e = e.substring(a.raw.length)), t.push(a);
+          else if ((a = this.tokenizer.table(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.lheading(e))) (e = e.substring(a.raw.length)), n.push(a);
           else {
             if (((r = e), this.options.extensions && this.options.extensions.startBlock)) {
               let o = 1 / 0;
@@ -45051,7 +45052,7 @@ Please report this to https://github.com/markedjs/marked.`),
                 o < 1 / 0 && o >= 0 && (r = e.substring(0, o + 1));
             }
             if (this.state.top && (a = this.tokenizer.paragraph(r)))
-              (i = t[t.length - 1]),
+              (i = n[n.length - 1]),
                 s && i.type === 'paragraph'
                   ? ((i.raw +=
                       `
@@ -45061,12 +45062,12 @@ Please report this to https://github.com/markedjs/marked.`),
 ` + a.text),
                     this.inlineQueue.pop(),
                     (this.inlineQueue[this.inlineQueue.length - 1].src = i.text))
-                  : t.push(a),
+                  : n.push(a),
                 (s = r.length !== e.length),
                 (e = e.substring(a.raw.length));
             else if ((a = this.tokenizer.text(e)))
               (e = e.substring(a.raw.length)),
-                (i = t[t.length - 1]),
+                (i = n[n.length - 1]),
                 i && i.type === 'text'
                   ? ((i.raw +=
                       `
@@ -45076,7 +45077,7 @@ Please report this to https://github.com/markedjs/marked.`),
 ` + a.text),
                     this.inlineQueue.pop(),
                     (this.inlineQueue[this.inlineQueue.length - 1].src = i.text))
-                  : t.push(a);
+                  : n.push(a);
             else if (e) {
               const o = 'Infinite loop on byte: ' + e.charCodeAt(0);
               if (this.options.silent) {
@@ -45086,12 +45087,12 @@ Please report this to https://github.com/markedjs/marked.`),
               throw new Error(o);
             }
           }
-      return (this.state.top = !0), t;
+      return (this.state.top = !0), n;
     }
-    inline(e, t) {
-      this.inlineQueue.push({ src: e, tokens: t });
+    inline(e, n) {
+      this.inlineQueue.push({ src: e, tokens: n });
     }
-    inlineTokens(e, t = []) {
+    inlineTokens(e, n = []) {
       let a,
         i,
         r,
@@ -45107,7 +45108,7 @@ Please report this to https://github.com/markedjs/marked.`),
               (c =
                 c.slice(0, s.index) +
                 '[' +
-                oi('a', s[0].length - 2) +
+                di('a', s[0].length - 2) +
                 ']' +
                 c.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex));
       }
@@ -45115,7 +45116,7 @@ Please report this to https://github.com/markedjs/marked.`),
         c =
           c.slice(0, s.index) +
           '[' +
-          oi('a', s[0].length - 2) +
+          di('a', s[0].length - 2) +
           ']' +
           c.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);
       for (; (s = this.tokenizer.rules.inline.escapedEmSt.exec(c)) != null; )
@@ -45128,26 +45129,26 @@ Please report this to https://github.com/markedjs/marked.`),
             this.options.extensions &&
             this.options.extensions.inline &&
             this.options.extensions.inline.some(
-              _ => !!(a = _.call({ lexer: this }, e, t)) && ((e = e.substring(a.raw.length)), t.push(a), !0)
+              _ => !!(a = _.call({ lexer: this }, e, n)) && ((e = e.substring(a.raw.length)), n.push(a), !0)
             )
           ))
         )
-          if ((a = this.tokenizer.escape(e))) (e = e.substring(a.raw.length)), t.push(a);
+          if ((a = this.tokenizer.escape(e))) (e = e.substring(a.raw.length)), n.push(a);
           else if ((a = this.tokenizer.tag(e)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
-              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : t.push(a);
-          else if ((a = this.tokenizer.link(e))) (e = e.substring(a.raw.length)), t.push(a);
+              (i = n[n.length - 1]),
+              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : n.push(a);
+          else if ((a = this.tokenizer.link(e))) (e = e.substring(a.raw.length)), n.push(a);
           else if ((a = this.tokenizer.reflink(e, this.tokens.links)))
             (e = e.substring(a.raw.length)),
-              (i = t[t.length - 1]),
-              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : t.push(a);
-          else if ((a = this.tokenizer.emStrong(e, c, l))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.codespan(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.br(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.del(e))) (e = e.substring(a.raw.length)), t.push(a);
-          else if ((a = this.tokenizer.autolink(e, ci))) (e = e.substring(a.raw.length)), t.push(a);
-          else if (this.state.inLink || !(a = this.tokenizer.url(e, ci))) {
+              (i = n[n.length - 1]),
+              i && a.type === 'text' && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : n.push(a);
+          else if ((a = this.tokenizer.emStrong(e, c, l))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.codespan(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.br(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.del(e))) (e = e.substring(a.raw.length)), n.push(a);
+          else if ((a = this.tokenizer.autolink(e, ui))) (e = e.substring(a.raw.length)), n.push(a);
+          else if (this.state.inLink || !(a = this.tokenizer.url(e, ui))) {
             if (((r = e), this.options.extensions && this.options.extensions.startInline)) {
               let _ = 1 / 0;
               const d = e.slice(1);
@@ -45157,12 +45158,12 @@ Please report this to https://github.com/markedjs/marked.`),
               }),
                 _ < 1 / 0 && _ >= 0 && (r = e.substring(0, _ + 1));
             }
-            if ((a = this.tokenizer.inlineText(r, Xd)))
+            if ((a = this.tokenizer.inlineText(r, Zd)))
               (e = e.substring(a.raw.length)),
                 a.raw.slice(-1) !== '_' && (l = a.raw.slice(-1)),
                 (o = !0),
-                (i = t[t.length - 1]),
-                i && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : t.push(a);
+                (i = n[n.length - 1]),
+                i && i.type === 'text' ? ((i.raw += a.raw), (i.text += a.text)) : n.push(a);
             else if (e) {
               const _ = 'Infinite loop on byte: ' + e.charCodeAt(0);
               if (this.options.silent) {
@@ -45171,16 +45172,16 @@ Please report this to https://github.com/markedjs/marked.`),
               }
               throw new Error(_);
             }
-          } else (e = e.substring(a.raw.length)), t.push(a);
-      return t;
+          } else (e = e.substring(a.raw.length)), n.push(a);
+      return n;
     }
   }
-  class Rn {
+  class Nn {
     constructor(e) {
       this.options = e || ct;
     }
-    code(e, t, a) {
-      const i = (t || '').match(/\S*/)[0];
+    code(e, n, a) {
+      const i = (n || '').match(/\S*/)[0];
       if (this.options.highlight) {
         const r = this.options.highlight(e, i);
         r != null && r !== e && ((a = !0), (e = r));
@@ -45216,25 +45217,25 @@ Please report this to https://github.com/markedjs/marked.`),
     html(e) {
       return e;
     }
-    heading(e, t, a, i) {
+    heading(e, n, a, i) {
       return this.options.headerIds
         ? '<h' +
-            t +
+            n +
             ' id="' +
             this.options.headerPrefix +
             i.slug(a) +
             '">' +
             e +
             '</h' +
-            t +
+            n +
             `>
 `
         : '<h' +
-            t +
+            n +
             '>' +
             e +
             '</h' +
-            t +
+            n +
             `>
 `;
     }
@@ -45245,12 +45246,12 @@ Please report this to https://github.com/markedjs/marked.`),
         : `<hr>
 `;
     }
-    list(e, t, a) {
-      const i = t ? 'ol' : 'ul';
+    list(e, n, a) {
+      const i = n ? 'ol' : 'ul';
       return (
         '<' +
         i +
-        (t && a !== 1 ? ' start="' + a + '"' : '') +
+        (n && a !== 1 ? ' start="' + a + '"' : '') +
         `>
 ` +
         e +
@@ -45281,16 +45282,16 @@ Please report this to https://github.com/markedjs/marked.`),
 `
       );
     }
-    table(e, t) {
+    table(e, n) {
       return (
-        t && (t = '<tbody>' + t + '</tbody>'),
+        n && (n = '<tbody>' + n + '</tbody>'),
         `<table>
 <thead>
 ` +
           e +
           `</thead>
 ` +
-          t +
+          n +
           `</table>
 `
       );
@@ -45304,10 +45305,10 @@ Please report this to https://github.com/markedjs/marked.`),
 `
       );
     }
-    tablecell(e, t) {
-      const a = t.header ? 'th' : 'td';
+    tablecell(e, n) {
+      const a = n.header ? 'th' : 'td';
       return (
-        (t.align ? '<' + a + ' align="' + t.align + '">' : '<' + a + '>') +
+        (n.align ? '<' + a + ' align="' + n.align + '">' : '<' + a + '>') +
         e +
         '</' +
         a +
@@ -45330,21 +45331,21 @@ Please report this to https://github.com/markedjs/marked.`),
     del(e) {
       return '<del>' + e + '</del>';
     }
-    link(e, t, a) {
-      if ((e = ii(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
+    link(e, n, a) {
+      if ((e = oi(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
       let i = '<a href="' + me(e) + '"';
-      return t && (i += ' title="' + t + '"'), (i += '>' + a + '</a>'), i;
+      return n && (i += ' title="' + n + '"'), (i += '>' + a + '</a>'), i;
     }
-    image(e, t, a) {
-      if ((e = ii(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
+    image(e, n, a) {
+      if ((e = oi(this.options.sanitize, this.options.baseUrl, e)) === null) return a;
       let i = '<img src="' + e + '" alt="' + a + '"';
-      return t && (i += ' title="' + t + '"'), (i += this.options.xhtml ? '/>' : '>'), i;
+      return n && (i += ' title="' + n + '"'), (i += this.options.xhtml ? '/>' : '>'), i;
     }
     text(e) {
       return e;
     }
   }
-  class di {
+  class pi {
     strong(e) {
       return e;
     }
@@ -45363,17 +45364,17 @@ Please report this to https://github.com/markedjs/marked.`),
     text(e) {
       return e;
     }
-    link(e, t, a) {
+    link(e, n, a) {
       return '' + a;
     }
-    image(e, t, a) {
+    image(e, n, a) {
       return '' + a;
     }
     br() {
       return '';
     }
   }
-  class _i {
+  class mi {
     constructor() {
       this.seen = {};
     }
@@ -45385,7 +45386,7 @@ Please report this to https://github.com/markedjs/marked.`),
         .replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '')
         .replace(/\s/g, '-');
     }
-    getNextSafeSlug(e, t) {
+    getNextSafeSlug(e, n) {
       let a = e,
         i = 0;
       if (this.seen.hasOwnProperty(a)) {
@@ -45393,29 +45394,29 @@ Please report this to https://github.com/markedjs/marked.`),
         do i++, (a = e + '-' + i);
         while (this.seen.hasOwnProperty(a));
       }
-      return t || ((this.seen[e] = i), (this.seen[a] = 0)), a;
+      return n || ((this.seen[e] = i), (this.seen[a] = 0)), a;
     }
-    slug(e, t = {}) {
+    slug(e, n = {}) {
       const a = this.serialize(e);
-      return this.getNextSafeSlug(a, t.dryrun);
+      return this.getNextSafeSlug(a, n.dryrun);
     }
   }
   class Ye {
     constructor(e) {
       (this.options = e || ct),
-        (this.options.renderer = this.options.renderer || new Rn()),
+        (this.options.renderer = this.options.renderer || new Nn()),
         (this.renderer = this.options.renderer),
         (this.renderer.options = this.options),
-        (this.textRenderer = new di()),
-        (this.slugger = new _i());
+        (this.textRenderer = new pi()),
+        (this.slugger = new mi());
     }
-    static parse(e, t) {
-      return new Ye(t).parse(e);
+    static parse(e, n) {
+      return new Ye(n).parse(e);
     }
-    static parseInline(e, t) {
-      return new Ye(t).parseInline(e);
+    static parseInline(e, n) {
+      return new Ye(n).parseInline(e);
     }
-    parse(e, t = !0) {
+    parse(e, n = !0) {
       let a,
         i,
         r,
@@ -45434,8 +45435,8 @@ Please report this to https://github.com/markedjs/marked.`),
         T,
         S,
         v,
-        R,
-        C = '';
+        C,
+        R = '';
       const I = e.length;
       for (a = 0; a < I; a++)
         if (
@@ -45443,30 +45444,30 @@ Please report this to https://github.com/markedjs/marked.`),
           this.options.extensions &&
             this.options.extensions.renderers &&
             this.options.extensions.renderers[u.type] &&
-            ((R = this.options.extensions.renderers[u.type].call({ parser: this }, u)),
-            R !== !1 ||
+            ((C = this.options.extensions.renderers[u.type].call({ parser: this }, u)),
+            C !== !1 ||
               !['space', 'hr', 'heading', 'code', 'table', 'blockquote', 'list', 'html', 'paragraph', 'text'].includes(
                 u.type
               )))
         )
-          C += R || '';
+          R += C || '';
         else
           switch (u.type) {
             case 'space':
               continue;
             case 'hr':
-              C += this.renderer.hr();
+              R += this.renderer.hr();
               continue;
             case 'heading':
-              C += this.renderer.heading(
+              R += this.renderer.heading(
                 this.parseInline(u.tokens),
                 u.depth,
-                ai(this.parseInline(u.tokens, this.textRenderer)),
+                si(this.parseInline(u.tokens, this.textRenderer)),
                 this.slugger
               );
               continue;
             case 'code':
-              C += this.renderer.code(u.text, u.lang, u.escaped);
+              R += this.renderer.code(u.text, u.lang, u.escaped);
               continue;
             case 'table':
               for (_ = '', c = '', s = u.header.length, i = 0; i < s; i++)
@@ -45476,10 +45477,10 @@ Please report this to https://github.com/markedjs/marked.`),
                   c += this.renderer.tablecell(this.parseInline(l[r].tokens), { header: !1, align: u.align[r] });
                 d += this.renderer.tablerow(c);
               }
-              C += this.renderer.table(_, d);
+              R += this.renderer.table(_, d);
               continue;
             case 'blockquote':
-              (d = this.parse(u.tokens)), (C += this.renderer.blockquote(d));
+              (d = this.parse(u.tokens)), (R += this.renderer.blockquote(d));
               continue;
             case 'list':
               for (m = u.ordered, p = u.start, g = u.loose, s = u.items.length, d = '', i = 0; i < s; i++)
@@ -45500,13 +45501,13 @@ Please report this to https://github.com/markedjs/marked.`),
                       : (E += v)),
                   (E += this.parse(h.tokens, g)),
                   (d += this.renderer.listitem(E, S, T));
-              C += this.renderer.list(d, m, p);
+              R += this.renderer.list(d, m, p);
               continue;
             case 'html':
-              C += this.renderer.html(u.text);
+              R += this.renderer.html(u.text);
               continue;
             case 'paragraph':
-              C += this.renderer.paragraph(this.parseInline(u.tokens));
+              R += this.renderer.paragraph(this.parseInline(u.tokens));
               continue;
             case 'text':
               for (d = u.tokens ? this.parseInline(u.tokens) : u.text; a + 1 < I && e[a + 1].type === 'text'; )
@@ -45514,7 +45515,7 @@ Please report this to https://github.com/markedjs/marked.`),
                   (d +=
                     `
 ` + (u.tokens ? this.parseInline(u.tokens) : u.text));
-              C += t ? this.renderer.paragraph(d) : d;
+              R += n ? this.renderer.paragraph(d) : d;
               continue;
             default: {
               const O = 'Token with "' + u.type + '" type was not found.';
@@ -45522,10 +45523,10 @@ Please report this to https://github.com/markedjs/marked.`),
               throw new Error(O);
             }
           }
-      return C;
+      return R;
     }
-    parseInline(e, t) {
-      t = t || this.renderer;
+    parseInline(e, n) {
+      n = n || this.renderer;
       let a,
         i,
         r,
@@ -45546,31 +45547,31 @@ Please report this to https://github.com/markedjs/marked.`),
           switch (i.type) {
             case 'escape':
             case 'text':
-              s += t.text(i.text);
+              s += n.text(i.text);
               break;
             case 'html':
-              s += t.html(i.text);
+              s += n.html(i.text);
               break;
             case 'link':
-              s += t.link(i.href, i.title, this.parseInline(i.tokens, t));
+              s += n.link(i.href, i.title, this.parseInline(i.tokens, n));
               break;
             case 'image':
-              s += t.image(i.href, i.title, i.text);
+              s += n.image(i.href, i.title, i.text);
               break;
             case 'strong':
-              s += t.strong(this.parseInline(i.tokens, t));
+              s += n.strong(this.parseInline(i.tokens, n));
               break;
             case 'em':
-              s += t.em(this.parseInline(i.tokens, t));
+              s += n.em(this.parseInline(i.tokens, n));
               break;
             case 'codespan':
-              s += t.codespan(i.text);
+              s += n.codespan(i.text);
               break;
             case 'br':
-              s += t.br();
+              s += n.br();
               break;
             case 'del':
-              s += t.del(this.parseInline(i.tokens, t));
+              s += n.del(this.parseInline(i.tokens, n));
               break;
             default: {
               const l = 'Token with "' + i.type + '" type was not found.';
@@ -45581,19 +45582,19 @@ Please report this to https://github.com/markedjs/marked.`),
       return s;
     }
   }
-  function q(n, e, t) {
-    if (n == null) throw new Error('marked(): input parameter is undefined or null');
-    if (typeof n != 'string')
+  function q(t, e, n) {
+    if (t == null) throw new Error('marked(): input parameter is undefined or null');
+    if (typeof t != 'string')
       throw new Error(
-        'marked(): input parameter is of type ' + Object.prototype.toString.call(n) + ', string expected'
+        'marked(): input parameter is of type ' + Object.prototype.toString.call(t) + ', string expected'
       );
-    if ((typeof e == 'function' && ((t = e), (e = null)), si((e = Oe({}, q.defaults, e || {}))), t)) {
+    if ((typeof e == 'function' && ((n = e), (e = null)), ci((e = Oe({}, q.defaults, e || {}))), n)) {
       const a = e.highlight;
       let i;
       try {
-        i = Ge.lex(n, e);
+        i = Ge.lex(t, e);
       } catch (o) {
-        return t(o);
+        return n(o);
       }
       const r = function(o) {
         let l;
@@ -45603,7 +45604,7 @@ Please report this to https://github.com/markedjs/marked.`),
           } catch (c) {
             o = c;
           }
-        return (e.highlight = a), o ? t(o) : t(null, l);
+        return (e.highlight = a), o ? n(o) : n(null, l);
       };
       if (!a || a.length < 3 || (delete e.highlight, !i.length)) return r();
       let s = 0;
@@ -45622,7 +45623,7 @@ Please report this to https://github.com/markedjs/marked.`),
       );
     }
     try {
-      const a = Ge.lex(n, e);
+      const a = Ge.lex(t, e);
       return e.walkTokens && q.walkTokens(a, e.walkTokens), Ye.parse(a, e);
     } catch (a) {
       if (
@@ -45634,25 +45635,25 @@ Please report this to https://github.com/markedjs/marked.`),
       throw a;
     }
   }
-  (q.options = q.setOptions = function(n) {
+  (q.options = q.setOptions = function(t) {
     var e;
-    return Oe(q.defaults, n), (e = q.defaults), (ct = e), q;
+    return Oe(q.defaults, t), (e = q.defaults), (ct = e), q;
   }),
-    (q.getDefaults = Fd),
+    (q.getDefaults = Bd),
     (q.defaults = ct),
-    (q.use = function(...n) {
-      const e = Oe({}, ...n),
-        t = q.defaults.extensions || { renderers: {}, childTokens: {} };
+    (q.use = function(...t) {
+      const e = Oe({}, ...t),
+        n = q.defaults.extensions || { renderers: {}, childTokens: {} };
       let a;
-      n.forEach(i => {
+      t.forEach(i => {
         if (
           (i.extensions &&
             ((a = !0),
             i.extensions.forEach(r => {
               if (!r.name) throw new Error('extension name required');
               if (r.renderer) {
-                const s = t.renderers ? t.renderers[r.name] : null;
-                t.renderers[r.name] = s
+                const s = n.renderers ? n.renderers[r.name] : null;
+                n.renderers[r.name] = s
                   ? function(...o) {
                       let l = r.renderer.apply(this, o);
                       return l === !1 && (l = s.apply(this, o)), l;
@@ -45662,20 +45663,20 @@ Please report this to https://github.com/markedjs/marked.`),
               if (r.tokenizer) {
                 if (!r.level || (r.level !== 'block' && r.level !== 'inline'))
                   throw new Error("extension level must be 'block' or 'inline'");
-                t[r.level] ? t[r.level].unshift(r.tokenizer) : (t[r.level] = [r.tokenizer]),
+                n[r.level] ? n[r.level].unshift(r.tokenizer) : (n[r.level] = [r.tokenizer]),
                   r.start &&
                     (r.level === 'block'
-                      ? t.startBlock
-                        ? t.startBlock.push(r.start)
-                        : (t.startBlock = [r.start])
+                      ? n.startBlock
+                        ? n.startBlock.push(r.start)
+                        : (n.startBlock = [r.start])
                       : r.level === 'inline' &&
-                        (t.startInline ? t.startInline.push(r.start) : (t.startInline = [r.start])));
+                        (n.startInline ? n.startInline.push(r.start) : (n.startInline = [r.start])));
               }
-              r.childTokens && (t.childTokens[r.name] = r.childTokens);
+              r.childTokens && (n.childTokens[r.name] = r.childTokens);
             })),
           i.renderer)
         ) {
-          const r = q.defaults.renderer || new Rn();
+          const r = q.defaults.renderer || new Nn();
           for (const s in i.renderer) {
             const o = r[s];
             r[s] = (...l) => {
@@ -45686,7 +45687,7 @@ Please report this to https://github.com/markedjs/marked.`),
           e.renderer = r;
         }
         if (i.tokenizer) {
-          const r = q.defaults.tokenizer || new yn();
+          const r = q.defaults.tokenizer || new Rn();
           for (const s in i.tokenizer) {
             const o = r[s];
             r[s] = (...l) => {
@@ -45702,67 +45703,67 @@ Please report this to https://github.com/markedjs/marked.`),
             i.walkTokens.call(this, s), r && r.call(this, s);
           };
         }
-        a && (e.extensions = t), q.setOptions(e);
+        a && (e.extensions = n), q.setOptions(e);
       });
     }),
-    (q.walkTokens = function(n, e) {
-      for (const t of n)
-        switch ((e.call(q, t), t.type)) {
+    (q.walkTokens = function(t, e) {
+      for (const n of t)
+        switch ((e.call(q, n), n.type)) {
           case 'table':
-            for (const a of t.header) q.walkTokens(a.tokens, e);
-            for (const a of t.rows) for (const i of a) q.walkTokens(i.tokens, e);
+            for (const a of n.header) q.walkTokens(a.tokens, e);
+            for (const a of n.rows) for (const i of a) q.walkTokens(i.tokens, e);
             break;
           case 'list':
-            q.walkTokens(t.items, e);
+            q.walkTokens(n.items, e);
             break;
           default:
-            q.defaults.extensions && q.defaults.extensions.childTokens && q.defaults.extensions.childTokens[t.type]
-              ? q.defaults.extensions.childTokens[t.type].forEach(function(a) {
-                  q.walkTokens(t[a], e);
+            q.defaults.extensions && q.defaults.extensions.childTokens && q.defaults.extensions.childTokens[n.type]
+              ? q.defaults.extensions.childTokens[n.type].forEach(function(a) {
+                  q.walkTokens(n[a], e);
                 })
-              : t.tokens && q.walkTokens(t.tokens, e);
+              : n.tokens && q.walkTokens(n.tokens, e);
         }
     }),
-    (q.parseInline = function(n, e) {
-      if (n == null) throw new Error('marked.parseInline(): input parameter is undefined or null');
-      if (typeof n != 'string')
+    (q.parseInline = function(t, e) {
+      if (t == null) throw new Error('marked.parseInline(): input parameter is undefined or null');
+      if (typeof t != 'string')
         throw new Error(
-          'marked.parseInline(): input parameter is of type ' + Object.prototype.toString.call(n) + ', string expected'
+          'marked.parseInline(): input parameter is of type ' + Object.prototype.toString.call(t) + ', string expected'
         );
-      si((e = Oe({}, q.defaults, e || {})));
+      ci((e = Oe({}, q.defaults, e || {})));
       try {
-        const t = Ge.lexInline(n, e);
-        return e.walkTokens && q.walkTokens(t, e.walkTokens), Ye.parseInline(t, e);
-      } catch (t) {
+        const n = Ge.lexInline(t, e);
+        return e.walkTokens && q.walkTokens(n, e.walkTokens), Ye.parseInline(n, e);
+      } catch (n) {
         if (
-          ((t.message += `
+          ((n.message += `
 Please report this to https://github.com/markedjs/marked.`),
           e.silent)
         )
-          return '<p>An error occurred:</p><pre>' + me(t.message + '', !0) + '</pre>';
-        throw t;
+          return '<p>An error occurred:</p><pre>' + me(n.message + '', !0) + '</pre>';
+        throw n;
       }
     }),
     (q.Parser = Ye),
     (q.parser = Ye.parse),
-    (q.Renderer = Rn),
-    (q.TextRenderer = di),
+    (q.Renderer = Nn),
+    (q.TextRenderer = pi),
     (q.Lexer = Ge),
     (q.lexer = Ge.lex),
-    (q.Tokenizer = yn),
-    (q.Slugger = _i),
+    (q.Tokenizer = Rn),
+    (q.Slugger = mi),
     (q.parse = q);
-  const Zd = () => {
-    let n,
+  const Jd = () => {
+    let t,
       e,
-      t = null;
+      n = null;
     function a() {
-      if (t && !t.closed) t.focus();
+      if (n && !n.closed) n.focus();
       else {
         if (
-          ((t = window.open('about:blank', 'reveal.js - Notes', 'width=1100,height=700')),
-          (t.marked = q),
-          t.document.write(`<!--
+          ((n = window.open('about:blank', 'reveal.js - Notes', 'width=1100,height=700')),
+          (n.marked = q),
+          n.document.write(`<!--
 	NOTE: You need to build the notes plugin after making changes to this file.
 -->
 <html lang="en">
@@ -46653,7 +46654,7 @@ Please report this to https://github.com/markedjs/marked.`),
 		<\/script>
 	</body>
 </html>`),
-          !t)
+          !n)
         )
           return void alert(
             'Speaker view popup failed to open. Please make sure popups are allowed and reopen the speaker view.'
@@ -46668,8 +46669,8 @@ Please report this to https://github.com/markedjs/marked.`),
                   window.location.host +
                   window.location.pathname +
                   window.location.search;
-          (n = setInterval(function() {
-            t.postMessage(
+          (t = setInterval(function() {
+            n.postMessage(
               JSON.stringify({ namespace: 'reveal-notes', type: 'connect', state: e.getState(), url: l }),
               '*'
             );
@@ -46703,7 +46704,7 @@ Please report this to https://github.com/markedjs/marked.`),
         ((d.notes = Array.from(c).map(u => u.innerHTML).join(`
 `)),
         (d.markdown = c[0] && typeof c[0].getAttribute('data-markdown') == 'string')),
-        t.postMessage(JSON.stringify(d), '*');
+        n.postMessage(JSON.stringify(d), '*');
     }
     function r(o) {
       if (
@@ -46717,13 +46718,13 @@ Please report this to https://github.com/markedjs/marked.`),
       ) {
         let l = JSON.parse(o.data);
         l && l.namespace === 'reveal-notes' && l.type === 'connected'
-          ? (clearInterval(n), s())
+          ? (clearInterval(t), s())
           : l &&
             l.namespace === 'reveal-notes' &&
             l.type === 'call' &&
             (function(c, _, d) {
               let u = e[c].apply(e, _);
-              t.postMessage(JSON.stringify({ namespace: 'reveal-notes', type: 'return', result: u, callId: d }), '*');
+              n.postMessage(JSON.stringify({ namespace: 'reveal-notes', type: 'return', result: u, callId: d }), '*');
             })(l.methodName, l.arguments, l.callId);
       }
     }
@@ -46745,7 +46746,7 @@ Please report this to https://github.com/markedjs/marked.`),
             (window.location.search.match(/(\?|\&)notes/gi) !== null
               ? a()
               : window.addEventListener('message', l => {
-                  if (!t && typeof l.data == 'string') {
+                  if (!n && typeof l.data == 'string') {
                     let _;
                     try {
                       _ = JSON.parse(l.data);
@@ -46754,7 +46755,7 @@ Please report this to https://github.com/markedjs/marked.`),
                       _.namespace === 'reveal-notes' &&
                       _.type === 'heartbeat' &&
                       ((c = l.source),
-                      t && !t.closed ? t.focus() : ((t = c), window.addEventListener('message', r), s()));
+                      n && !n.closed ? n.focus() : ((n = c), window.addEventListener('message', r), s()));
                   }
                   var c;
                 }),
@@ -46767,24 +46768,24 @@ Please report this to https://github.com/markedjs/marked.`),
   };
   /*!
    * reveal.js Zoom plugin
-   */ const Jd = {
+   */ const e_ = {
     id: 'zoom',
-    init: function(n) {
-      n.getRevealElement().addEventListener('mousedown', function(e) {
-        var t = /Linux/.test(window.navigator.platform) ? 'ctrl' : 'alt',
-          a = (n.getConfig().zoomKey ? n.getConfig().zoomKey : t) + 'Key',
-          i = n.getConfig().zoomLevel ? n.getConfig().zoomLevel : 2;
-        e[a] && !n.isOverview() && (e.preventDefault(), Qt.to({ x: e.clientX, y: e.clientY, scale: i, pan: !1 }));
+    init: function(t) {
+      t.getRevealElement().addEventListener('mousedown', function(e) {
+        var n = /Linux/.test(window.navigator.platform) ? 'ctrl' : 'alt',
+          a = (t.getConfig().zoomKey ? t.getConfig().zoomKey : n) + 'Key',
+          i = t.getConfig().zoomLevel ? t.getConfig().zoomLevel : 2;
+        e[a] && !t.isOverview() && (e.preventDefault(), Xt.to({ x: e.clientX, y: e.clientY, scale: i, pan: !1 }));
       });
     },
     destroy: () => {
-      Qt.reset();
+      Xt.reset();
     }
   };
-  var Qt = (function() {
-    var n = 1,
+  var Xt = (function() {
+    var t = 1,
       e = 0,
-      t = 0,
+      n = 0,
       a = -1,
       i = -1,
       r = 'transform' in document.body.style;
@@ -46817,9 +46818,9 @@ Please report this to https://github.com/markedjs/marked.`),
             (document.body.style.width = 100 * _ + '%'),
             (document.body.style.height = 100 * _ + '%'),
             (document.body.style.zoom = _));
-      (n = _),
+      (t = _),
         document.documentElement.classList &&
-          (n !== 1
+          (t !== 1
             ? document.documentElement.classList.add('zoomed')
             : document.documentElement.classList.remove('zoomed'));
     }
@@ -46827,12 +46828,12 @@ Please report this to https://github.com/markedjs/marked.`),
       var c = 0.12 * window.innerWidth,
         _ = 0.12 * window.innerHeight,
         d = l();
-      t < _
-        ? window.scroll(d.x, d.y - (14 / n) * (1 - t / _))
-        : t > window.innerHeight - _ && window.scroll(d.x, d.y + (1 - (window.innerHeight - t) / _) * (14 / n)),
+      n < _
+        ? window.scroll(d.x, d.y - (14 / t) * (1 - n / _))
+        : n > window.innerHeight - _ && window.scroll(d.x, d.y + (1 - (window.innerHeight - n) / _) * (14 / t)),
         e < c
-          ? window.scroll(d.x - (14 / n) * (1 - e / c), d.y)
-          : e > window.innerWidth - c && window.scroll(d.x + (1 - (window.innerWidth - e) / c) * (14 / n), d.y);
+          ? window.scroll(d.x - (14 / t) * (1 - e / c), d.y)
+          : e > window.innerWidth - c && window.scroll(d.x + (1 - (window.innerWidth - e) / c) * (14 / t), d.y);
     }
     function l() {
       return {
@@ -46843,14 +46844,14 @@ Please report this to https://github.com/markedjs/marked.`),
     return (
       r && (document.body.style.transition = 'transform 0.8s ease'),
       document.addEventListener('keyup', function(c) {
-        n !== 1 && c.keyCode === 27 && Qt.out();
+        t !== 1 && c.keyCode === 27 && Xt.out();
       }),
       document.addEventListener('mousemove', function(c) {
-        n !== 1 && ((e = c.clientX), (t = c.clientY));
+        t !== 1 && ((e = c.clientX), (n = c.clientY));
       }),
       {
         to: function(c) {
-          if (n !== 1) Qt.out();
+          if (t !== 1) Xt.out();
           else {
             if (((c.x = c.x || 0), (c.y = c.y || 0), c.element)) {
               var _ = c.element.getBoundingClientRect();
@@ -46870,7 +46871,7 @@ Please report this to https://github.com/markedjs/marked.`),
           }
         },
         out: function() {
-          clearTimeout(a), clearInterval(i), s({ x: 0, y: 0 }, 1), (n = 1);
+          clearTimeout(a), clearInterval(i), s({ x: 0, y: 0 }, 1), (t = 1);
         },
         magnify: function(c) {
           this.to(c);
@@ -46879,7 +46880,7 @@ Please report this to https://github.com/markedjs/marked.`),
           this.out();
         },
         zoomLevel: function() {
-          return n;
+          return t;
         }
       }
     );
@@ -46890,37 +46891,24 @@ Please report this to https://github.com/markedjs/marked.`),
    * MIT licensed
    *
    * Copyright (C) 2011-2014 Hakim El Hattab, http://hakim.se
-   */ const e_ = () => Jd,
-    oe = 'web_modules/sfeir-school-theme/images';
-  class t_ {
+   */ const t_ = () => e_;
+  function dt(t, e, n, a, i) {
+    if (t.has(e)) {
+      const r = t.get(e);
+      n.setAttribute(a, r);
+    }
+    return !n.hasAttribute(a) && i && n.setAttribute(a, i), n.getAttribute(a);
+  }
+  const oe = 'web_modules/sfeir-school-theme/images';
+  class n_ {
     constructor() {
       this.path = '';
       const e = window.location.search;
       (this.urlParams = new URLSearchParams(e)),
         (this.slidesElement = document.querySelector('.reveal .slides')),
-        (this.slidesType = this._handle_parameter('type', 'data-type-show', 'prez')),
-        (this.slidesTheme = this._handle_parameter('theme', 'data-theme-slides', 'school'));
-    }
-    _handle_parameter(e, t, a) {
-      if (this.urlParams.has(e)) {
-        const i = this.urlParams.get(e);
-        this.slidesElement.setAttribute(t, i);
-      }
-      return (
-        this.slidesElement.hasAttribute(t) || this.slidesElement.setAttribute(t, a), this.slidesElement.getAttribute(t)
-      );
-    }
-    _determine_type() {
-      var a;
-      const e = this.slidesElement.getAttribute('data-type-show'),
-        t = this.urlParams.get('type');
-      return (a = t != null ? t : e) != null ? a : 'prez';
-    }
-    _determine_theme() {
-      var a;
-      const e = this.slidesElement.getAttribute('data-theme-slides'),
-        t = this.urlParams.get('theme');
-      return (a = e != null ? e : t) != null ? a : 'school';
+        (this.slidesType = dt(this.urlParams, 'type', this.slidesElement, 'data-type-show', 'prez')),
+        (this.slidesTheme = dt(this.urlParams, 'theme', this.slidesElement, 'data-theme-slides', 'school')),
+        (this.copyCode = !0);
     }
     postprocess() {
       (this.path = this._extractPath()),
@@ -46931,12 +46919,13 @@ Please report this to https://github.com/markedjs/marked.`),
         this._manageSpecificsColumnsSlides(),
         this._manageListFragment(),
         this._manageSpeakersBorders(),
-        this._manageFeatherIcons();
+        this._manageFeatherIcons(),
+        this.copyCode && this._manageCopyPasteClipBoard();
     }
     _extractPath() {
       const e = document.getElementsByTagName('link');
-      for (let t = 0; t < e.length; t++) {
-        const a = e.item(t);
+      for (let n = 0; n < e.length; n++) {
+        const a = e.item(n);
         if (a.href && a.href.match(/sfeir-school-theme\.css$/)) {
           const i = a.href;
           return i.substring(0, i.indexOf('css/sfeir-school-theme.css'));
@@ -46954,43 +46943,43 @@ Please report this to https://github.com/markedjs/marked.`),
           (i.href = `${this.path}${oe}/favicon-${a}.png`),
           document.getElementsByTagName('head')[0].appendChild(i);
       }
-      const t = document.createElement('link');
-      (t.type = 'image/x-icon'),
-        (t.rel = 'shortcut icon'),
-        (t.href = `${this.path}${oe}/favicon.ico`),
-        document.getElementsByTagName('head')[0].appendChild(t);
+      const n = document.createElement('link');
+      (n.type = 'image/x-icon'),
+        (n.rel = 'shortcut icon'),
+        (n.href = `${this.path}${oe}/favicon.ico`),
+        document.getElementsByTagName('head')[0].appendChild(n);
     }
     _manageBackgrounds() {
       const e = {
-        'first-slide': `${this.path}${oe}/${this.slidesTheme === 'institute' ? 'bg-blue-1.png' : 'bg-green-1.png'}`,
-        transition: `${this.path}${oe}/${this.slidesTheme === 'institute' ? 'bg-blue-1.png' : 'bg-green-1.png'}`,
+        'first-slide': `${this.path}${oe}/${this.slidesTheme === 'institute' ? 'bg-blue-1.webp' : 'bg-green-1.webp'}`,
+        transition: `${this.path}${oe}/${this.slidesTheme === 'institute' ? 'bg-blue-1.webp' : 'bg-green-1.webp'}`,
         'speaker-slide': 'var(--black)',
         'quote-slide': 'var(--black)',
-        'sfeir-slide': `${this.path}${oe}/bg-green-1.png`,
-        'bg-white': `${this.path}${oe}/bg-green-1.png`,
-        'bg-pink': `${this.path}${oe}/bg-green-1.png`,
-        'bg-blue': `${this.path}${oe}/bg-green-1.png`,
-        'bg-green': `${this.path}${oe}/bg-green-1.png`,
-        'bg-blur': `${this.path}${oe}/${this.slidesTheme === 'institute' ? 'bg-blue-blur.jpeg' : 'bg-green-blur.jpeg'}`,
+        'sfeir-slide': `${this.path}${oe}/bg-green-1.webp`,
+        'bg-white': `${this.path}${oe}/bg-green-1.webp`,
+        'bg-pink': `${this.path}${oe}/bg-green-1.webp`,
+        'bg-blue': `${this.path}${oe}/bg-green-1.webp`,
+        'bg-green': `${this.path}${oe}/bg-green-1.webp`,
+        'bg-blur': `${this.path}${oe}/${this.slidesTheme === 'institute' ? 'bg-blue-blur.webp' : 'bg-green-blur.webp'}`,
         'transition-bg-sfeir-1': `${this.path}${oe}/${
-          this.slidesTheme === 'institute' ? 'bg-blue-1.png' : 'bg-green-1.png'
+          this.slidesTheme === 'institute' ? 'bg-blue-1.webp' : 'bg-green-1.webp'
         }`,
         'transition-bg-sfeir-2': `${this.path}${oe}/${
-          this.slidesTheme === 'institute' ? 'bg-blue-2.png' : 'bg-green-2.png'
+          this.slidesTheme === 'institute' ? 'bg-blue-2.webp' : 'bg-green-2.webp'
         }`,
         'transition-bg-sfeir-3': `${this.path}${oe}/${
-          this.slidesTheme === 'institute' ? 'bg-blue-3.png' : 'bg-green-3.png'
+          this.slidesTheme === 'institute' ? 'bg-blue-3.webp' : 'bg-green-3.webp'
         }`,
-        'transition-bg-blue-1': `${this.path}${oe}/bg-blue-1.png`,
-        'transition-bg-blue-2': `${this.path}${oe}/bg-blue-2.jpeg`,
-        'transition-bg-blue-3': `${this.path}${oe}/bg-blue-3.png`,
-        'transition-bg-blue-blur': `${this.path}${oe}/bg-blue-blur.jpg`,
-        'transition-bg-green-1': `${this.path}${oe}/bg-green-1.png`,
-        'transition-bg-green-2': `${this.path}${oe}/bg-green-2.png`,
-        'transition-bg-green-3': `${this.path}${oe}/bg-green-3.png`,
-        'transition-bg-green-4': `${this.path}${oe}/bg-green-4.png`,
-        'transition-bg-green-5': `${this.path}${oe}/bg-green-5.png`,
-        'transition-bg-green-6': `${this.path}${oe}/bg-green-6.png`
+        'transition-bg-blue-1': `${this.path}${oe}/bg-blue-1.webp`,
+        'transition-bg-blue-2': `${this.path}${oe}/bg-blue-2.webp`,
+        'transition-bg-blue-3': `${this.path}${oe}/bg-blue-3.webp`,
+        'transition-bg-blue-blur': `${this.path}${oe}/bg-blue-blur.webp`,
+        'transition-bg-green-1': `${this.path}${oe}/bg-green-1.webp`,
+        'transition-bg-green-2': `${this.path}${oe}/bg-green-2.webp`,
+        'transition-bg-green-3': `${this.path}${oe}/bg-green-3.webp`,
+        'transition-bg-green-4': `${this.path}${oe}/bg-green-4.webp`,
+        'transition-bg-green-5': `${this.path}${oe}/bg-green-5.webp`,
+        'transition-bg-green-6': `${this.path}${oe}/bg-green-6.webp`
       };
       for (let a in e) {
         const i = document.querySelectorAll('.reveal .slides section:not([data-background]).' + a);
@@ -46999,37 +46988,37 @@ Please report this to https://github.com/markedjs/marked.`),
           s.classList.add('sfeir-specific-slide'), s.setAttribute('data-background', e[a]);
         }
       }
-      const t = [
+      const n = [
         ...document.querySelectorAll(
           '.reveal .slides section:not([data-background]):not(.sfeir-specific-slide):not(.no-background):not(.with-code-dark):not([class*=transition])'
         )
       ];
-      for (let a of t) a.classList.add('sfeir-basic-slide');
+      for (let a of n) a.classList.add('sfeir-basic-slide');
       this._manageFirstSlide();
     }
     _manageFirstSlide() {
       const e = [...document.querySelectorAll('.reveal .slides section.first-slide')];
-      for (let t of e) {
+      for (let n of e) {
         const a = document.createElement('DIV');
-        a.classList.add('sfeir-logo'), (a.style['background-image'] = `url(${this.path}${oe}/logo_empty.png)`);
-        const i = t.hasAttribute('sfeir-level') ? +t.getAttribute('sfeir-level') : 1,
-          r = t.hasAttribute('sfeir-techno') ? t.getAttribute('sfeir-techno') : '';
+        a.classList.add('sfeir-logo'), (a.style['background-image'] = `url(${this.path}${oe}/logo_empty.webp)`);
+        const i = n.hasAttribute('sfeir-level') ? +n.getAttribute('sfeir-level') : 1,
+          r = n.hasAttribute('sfeir-techno') ? n.getAttribute('sfeir-techno') : '';
         a.setAttribute('data-sfeir-level', i),
           a.setAttribute('data-sfeir-techno', r),
-          t.insertAdjacentElement('afterbegin', a);
+          n.insertAdjacentElement('afterbegin', a);
       }
     }
     _manageExerciceSlide() {
       const e = [...document.querySelectorAll('.reveal .slides section.exercice')];
-      for (let t of e) {
+      for (let n of e) {
         const a = this.slidesTheme === 'institute' ? 'var(--sfeir-blue)' : 'var(--sfeir-green)';
-        t.setAttribute('data-background', `linear-gradient(90deg,  ${a} 25%, white 25%, white 100%)`);
+        n.setAttribute('data-background', `linear-gradient(90deg,  ${a} 25%, white 25%, white 100%)`);
       }
     }
     _manageShowTypeContent() {
       this.slidesType !== 'all' &&
         Array.from(this.slidesElement.querySelectorAll('section[data-type-show]'))
-          .filter(e => e.getAttribute('data-type-show') !== this.slidesType)
+          .filter(e => e.getAttribute('data-type-show').indexOf(this.slidesType) === -1)
           .forEach(e => e.parentNode.removeChild(e));
     }
     _manageSpecificsColumnsSlides() {
@@ -47041,8 +47030,8 @@ Please report this to https://github.com/markedjs/marked.`),
           for (let s of r) s.classList.remove('two-column-layout'), (s.style.display = 'block');
         }
       }
-      const t = [...document.querySelectorAll('.reveal .slides section.two-column')];
-      for (let a of t) {
+      const n = [...document.querySelectorAll('.reveal .slides section.two-column')];
+      for (let a of n) {
         const i = a.parentElement;
         i.classList.add('two-column');
         const r = document.createElement('DIV');
@@ -47101,8 +47090,8 @@ Please report this to https://github.com/markedjs/marked.`),
     }
     _manageListFragment() {
       const e = [...document.querySelectorAll('.reveal .slides section .list-fragment')];
-      for (let t of e) {
-        let a = t.parentElement;
+      for (let n of e) {
+        let a = n.parentElement;
         if ((a.nodeName === 'LI' && (a = a.parentElement), a.nodeName === 'UL' || a.nodeName === 'OL')) {
           const i = [...a.querySelectorAll('li')];
           for (let r of i) r.classList.add('fragment');
@@ -47111,22 +47100,22 @@ Please report this to https://github.com/markedjs/marked.`),
     }
     _manageSpeakersBorders() {
       const e = [...document.querySelectorAll('.reveal .slides section img[alt*=speaker]')];
-      for (let t of e) {
-        let a = t.parentElement;
+      for (let n of e) {
+        let a = n.parentElement;
         const i = document.createElement('DIV');
-        i.classList.add('speaker'), (i.style['background-image'] = `url(${t.src})`), a.appendChild(i), a.removeChild(t);
+        i.classList.add('speaker'), (i.style['background-image'] = `url(${n.src})`), a.appendChild(i), a.removeChild(n);
       }
     }
     _manageFeatherIcons() {
       const e = [...document.querySelectorAll('.reveal .slides section img[alt*=sfeir-icons]')],
-        t = [],
+        n = [],
         a = [];
       for (let r of e) {
         let s = r.closest('.reveal .slides section');
-        t.findIndex(o => o === s) === -1 && t.push(s), a.push(r.outerHTML);
+        n.findIndex(o => o === s) === -1 && n.push(s), a.push(r.outerHTML);
       }
       let i = a;
-      for (let r of t) {
+      for (let r of n) {
         let s = [];
         for (let o of i)
           if (r.innerHTML.indexOf(o) !== -1) {
@@ -47135,22 +47124,269 @@ Please report this to https://github.com/markedjs/marked.`),
           } else s.push(o);
         i = s;
       }
-      qi.replace();
+      Fn.replace();
+    }
+    _manageCopyPasteClipBoard() {
+      const e = [...document.querySelectorAll('.reveal .slides section[class*="with-code"] pre code')];
+      for (let a of e) {
+        const i = document.createElement('i');
+        i.setAttribute('data-feather', 'copy'),
+          i.setAttribute('alt', 'big'),
+          i.classList.add('sfeir-theme-copy-to-clipboard'),
+          a.parentElement.appendChild(i);
+      }
+      Fn.replace();
+      const n = [...document.querySelectorAll('.reveal .slides section svg.sfeir-theme-copy-to-clipboard')];
+      for (let a of n)
+        a.addEventListener('click', i => {
+          const s = i.target.parentElement.querySelector('code').innerText;
+          navigator.clipboard.writeText(s),
+            i.target.classList.add('copied'),
+            setTimeout(() => {
+              i.target.classList.remove('copied');
+            }, 300);
+          const o = document.createElement('div');
+          o.classList.add('sfeir-theme-copy-popup'),
+            (o.innerText = 'Copied to clipboard'),
+            i.target.parentElement.appendChild(o),
+            setTimeout(() => {
+              o.classList.add('hide'),
+                setTimeout(() => {
+                  i.target.parentElement.removeChild(o);
+                }, 1e3);
+            }, 1e3);
+        });
     }
   }
-  const n_ = {
+  const a_ = {
       id: 'sfeir-theme',
       init: () => {
-        new t_().postprocess();
+        new n_().postprocess();
       }
     },
-    a_ = {
-      async init(n, e = s_) {
-        const t = document.querySelector('.slides'),
-          a = n(),
-          i = await i_(a);
-        await e(t, i);
-        let { enableShowNotes: r, pdfMaxPagesPerSlide: s, pdfSeparateFragments: o } = o_(t);
+    i_ = `   
+    .ui-slide-selector-container {
+        position: absolute;
+        width: 50%;
+        height: 70%;
+        top: 20%;
+        left: 25%;
+
+        border-radius: 10px;
+        background-color: #fafafa;
+        box-shadow: #37474F 2px 2px 4px 2px;
+        
+        font-family:monospace;
+        
+        z-index: 100;
+
+        display:grid;
+        grid-template-rows: 50px 1fr 50px 150px 100px 20px;
+        gir-template-columns: 1fr;
+
+        #ui-slide-selector-close{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+            justify-self: center;
+        }
+
+        .slide-selector {
+            overflow-y: auto;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 10px;
+        }
+
+        div.modes {
+            align-self: center;
+            text-align: center;
+            padding: 50px;
+        }
+
+        button{
+            width: 150px;
+            justify-self: center;
+            margin: 20px;
+        }
+        span{
+            text-align: center;
+        }
+    }
+`,
+    r_ = {
+      state: { slides: [], show: !1, theme: void 0, type: void 0, language: void 0 },
+      init(t) {
+        (this.state.slides = t.map((a, i) => {
+          const r = /^(?:(.+?)\/)?(.+?)(?=\.md$)/,
+            [, s, o] = a.path.match(r);
+          return { prefix: s, path: o + '.md', index: i, check: !0 };
+        })),
+          document.body.addEventListener('keyup', a => this.keyUpHandler(a, t)),
+          this.initModes();
+        let e = t,
+          n = sessionStorage.getItem('sfeir-theme-slides-selected');
+        if (n) {
+          const a = JSON.parse(n);
+          (this.state.slides = a),
+            (e = a.filter(i => i.check).map(i => ({ path: i.prefix ? i.prefix + '/' + i.path : i.path })));
+        }
+        return e;
+      },
+      keyUpHandler(t) {
+        (t.key === 'c' || t.key === 'C') && !t.ctrlKey && !t.shiftKey && !t.metaKey && !this.state.show
+          ? (t.preventDefault(), (this.state.show = !0), this.resetOrCreateUI())
+          : t.key === 'Escape' && this.state.show && (t.preventDefault(), this.closeUI());
+      },
+      initModes() {
+        const t = window.location.search,
+          e = new URLSearchParams(t),
+          n = document.querySelector('.reveal .slides');
+        (this.state.theme = dt(e, 'theme', n, 'data-theme-slides', void 0)),
+          (this.state.type = dt(e, 'type', n, 'data-type-show', void 0)),
+          (this.state.language = dt(e, 'data-lang', n, 'data-lang', void 0));
+      },
+      closeUI() {
+        this.state.show = !1;
+        let t = document.querySelector('#ui-slide-selector');
+        t && (t.style = 'display:none');
+      },
+      createTreeFromSlides() {
+        const t = {},
+          e = [];
+        this.state.slides.forEach(a => {
+          a.prefix ? (t[a.prefix] || (t[a.prefix] = []), t[a.prefix].push(a)) : e.push([a]);
+        });
+        const n = Object.entries(t);
+        return n.unshift(...e), n;
+      },
+      resetOrCreateUI() {
+        let t = document.querySelector('#ui-slide-selector');
+        t ||
+          ((t = document.createElement('DIV')),
+          (t.id = 'ui-slide-selector'),
+          (t.style = 'position:absolute; width:100%; height: 100%; top:0; left:0; z-index:100;'),
+          document.body.appendChild(t)),
+          (t.style.display = this.state.show ? 'grid' : 'none'),
+          this.initUI(t);
+      },
+      initUI(t) {
+        const e = this.createTreeFromSlides();
+        return sa(
+          St`
+                <style>
+                    ${i_}
+                </style>
+                <div class="ui-slide-selector-container">
+                    <div
+                        id="ui-slide-selector-close"
+                        @click="${() => this.closeUI()}">
+                        ✖️
+                    </div>
+                    <h1>Slide selector</h1>
+                    <div class="slide-selector">
+                        <ul>
+                            ${e.map(([n, a]) => this.renderTreeElement(n, a))}
+                        </ul>
+                    </div>
+                    <h1>Modes (type / theme / language)</h1>
+                    <div class="modes">
+                        <label for="mode-theme">Theme</label>
+                        <input
+                            type="text"
+                            id="mode-theme"
+                            placeholder="(empty default 'school')"
+                            value="${this.state.theme ? this.state.theme : void 0}" />
+                        <label for="mode-language">Language</label>
+                        <input
+                            type="text"
+                            id="mode-language"
+                            placeholder="(empty default 'FR')"
+                            value="${this.state.language ? this.state.language : void 0}" />
+                        <label for="mode-slides">Type</label>
+                        <input
+                            type="text"
+                            id="mode-type"
+                            placeholder="(empty default 'prez')"
+                            value="${this.state.type ? this.state.type : void 0}" />
+                    </div>
+                    <button @click="${() => this.applyConfiguration()}">
+                        Validate selection
+                    </button>
+                    <span
+                        >Close this window by pressing 'Escape', clicking on
+                        cross or validating the selection</span
+                    >
+                </div>
+            `,
+          t
+        );
+      },
+      renderTreeElement(t, e) {
+        return e
+          ? St`<li>
+                <input @click="${n => this.checkPrefix(n, t)}" type="checkbox" ?checked=${e.reduce(
+              (n, a) => n + (a.check ? 1 : 0),
+              0
+            ) === e.length}></input><span>${t}</span>
+                <ul>
+                    ${e.map(n => this.renderLiElement(n))}
+                </ul>
+            </li>`
+          : this.renderLiElement(t);
+      },
+      renderLiElement(t) {
+        return St`<li>
+                    <input @click="${e => this.checkSlide(e, t.index)}" type="checkbox" ?checked=${t.check}>
+                        </input>${t.path}
+                </li>`;
+      },
+      checkPrefix(t, e) {
+        this.state.slides.forEach(n => {
+          n.prefix === e && (n.check = t.srcElement.checked);
+        }),
+          sessionStorage.setItem('sfeir-theme-slides-selected', JSON.stringify(this.state.slides)),
+          this.resetOrCreateUI();
+      },
+      checkSlide(t, e) {
+        (this.state.slides[e].check = t.srcElement.checked),
+          sessionStorage.setItem('sfeir-theme-slides-selected', JSON.stringify(this.state.slides)),
+          this.resetOrCreateUI();
+      },
+      extractModes() {
+        const t = document.querySelector('#mode-theme').value || void 0,
+          e = document.querySelector('#mode-language').value || void 0,
+          n = document.querySelector('#mode-type').value || void 0;
+        return { theme: t, language: e, type: n };
+      },
+      applyConfiguration() {
+        const { theme: t, language: e, type: n } = this.extractModes();
+        let a = '';
+        const i = (r, s, o) => (o && r ? `${r}&${s}=${o}` : o ? `${r}?${s}=${o}` : r);
+        (a = i(a, 'theme', t)),
+          (a = i(a, 'data-lang', e)),
+          (a = i(a, 'type', n)),
+          history.pushState({ theme: t, language: e, type: n }, '', a),
+          history.go(0);
+      }
+    },
+    s_ = {
+      async init(t, e = c_) {
+        const n = document.querySelector('.slides'),
+          a = t(),
+          i = r_.init(a),
+          r = await o_(i);
+        await e(n, r);
+        let { enableShowNotes: s, pdfMaxPagesPerSlide: o, pdfSeparateFragments: l } = d_(n);
         Se.initialize({
           controls: !0,
           progress: !0,
@@ -47160,47 +47396,42 @@ Please report this to https://github.com/markedjs/marked.`),
           height: 1080,
           keyboard: {
             32: function() {
-              var l = document.querySelector('.present video');
-              l.paused == !0 ? l.play() : l.pause();
+              var c = document.querySelector('.present video');
+              c.paused == !0 ? c.play() : c.pause();
             }
           },
           slideNumber: 'c/t',
           showSlideNumber: 'speaker',
-          showNotes: r,
-          pdfMaxPagesPerSlide: s,
-          pdfSeparateFragments: o,
-          plugins: [Ud, n_, e_, Zd, Td]
+          showNotes: s,
+          pdfMaxPagesPerSlide: o,
+          pdfSeparateFragments: l,
+          plugins: [Fd, a_, t_, Jd, vd]
         }).then(() => {
           Se.configure({ theme: Se.getQueryHash().theme, transition: Se.getQueryHash().transition || 'none' });
         });
       }
     };
-  async function i_(n) {
-    var t, a;
-    const e =
-      (a =
-        (t = new URLSearchParams(window.location.search).get('data-lang')) != null
-          ? t
-          : document.querySelector('.reveal .slides').getAttribute('data-lang')) != null
-        ? a
-        : 'FR';
-    return e === 'FR'
-      ? Promise.resolve(n)
-      : n.map(i => {
+  async function o_(t) {
+    const e = new URLSearchParams(window.location.search),
+      n = document.querySelector('.reveal .slides'),
+      a = dt(e, 'data-lang', n, 'data-lang', 'FR');
+    return a === 'FR'
+      ? Promise.resolve(t)
+      : t.map(i => {
           const r = i.path.substring(0, i.path.length - 3);
-          return r_({ path: `${r}.${e.toUpperCase()}.md` }, { path: `${r}.md` });
+          return l_({ path: `${r}.${a.toUpperCase()}.md` }, { path: `${r}.md` });
         });
   }
-  async function r_(...n) {
-    const e = n.map(t => fetch('markdown/' + t.path, { method: 'HEAD' }));
-    for (const t in e) if ((await e[t]).status === 200) return n[t];
+  async function l_(...t) {
+    const e = t.map(n => fetch('markdown/' + n.path, { method: 'HEAD' }));
+    for (const n in e) if ((await e[n]).status === 200) return t[n];
   }
-  async function s_(n, e) {
-    const t = await Promise.all(e);
-    return Tr(
-      na`
-            ${t.map(
-              a => na`
+  async function c_(t, e) {
+    const n = await Promise.all(e);
+    return sa(
+      St`
+            ${n.map(
+              a => St`
                     <section
                         data-markdown="./markdown/${a.path}"
                         data-separator="##==##"
@@ -47209,32 +47440,32 @@ Please report this to https://github.com/markedjs/marked.`),
                 `
             )}
         `,
-      n
+      t
     );
   }
-  function o_(n) {
+  function d_(t) {
     const e = new URLSearchParams(window.location.search);
-    let t = !1;
+    let n = !1;
     if (e.has('show-notes')) {
       const r = e.get('show-notes');
-      n.dataset.showNotes = r != null ? r : !0;
+      t.dataset.showNotes = r != null ? r : !0;
     }
-    n.dataset.showNotes == 'separate-page' ? (t = 'separate-page') : n.dataset.showNotes == '' && (t = !0);
+    t.dataset.showNotes == 'separate-page' ? (n = 'separate-page') : t.dataset.showNotes == '' && (n = !0);
     let a = 1;
     if (e.has('pdf-max-pages-per-slide')) {
       const r = e.get('pdf-max-pages-per-slide');
-      n.dataset.pdfMaxPagesPerSlide = +r;
+      t.dataset.pdfMaxPagesPerSlide = +r;
     }
-    n.dataset.pdfMaxPagesPerSlide != null && (a = n.dataset.pdfMaxPagesPerSlide);
+    t.dataset.pdfMaxPagesPerSlide != null && (a = t.dataset.pdfMaxPagesPerSlide);
     let i = !0;
     return (
-      e.has('pdf-dont-separate-fragments') && (n.dataset.pdfDontSeparateFragments = !0),
-      n.dataset.pdfDontSeparateFragments == '' && (i = !1),
-      { enableShowNotes: t, pdfMaxPagesPerSlide: a, pdfSeparateFragments: i }
+      e.has('pdf-dont-separate-fragments') && (t.dataset.pdfDontSeparateFragments = !0),
+      t.dataset.pdfDontSeparateFragments == '' && (i = !1),
+      { enableShowNotes: n, pdfMaxPagesPerSlide: a, pdfSeparateFragments: i }
     );
   }
   (ze.Reveal = Se),
-    (ze.SfeirThemeInitializer = a_),
+    (ze.SfeirThemeInitializer = s_),
     Object.defineProperties(ze, { __esModule: { value: !0 }, [Symbol.toStringTag]: { value: 'Module' } });
 });
 //# sourceMappingURL=sfeir-school-theme.umd.js.map
