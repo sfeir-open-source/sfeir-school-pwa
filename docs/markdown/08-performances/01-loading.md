@@ -1,14 +1,16 @@
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # Chargement
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/compression_bg.jpg" class="transition mask" -->
+<!-- .slide: data-background="./assets/images/compression_bg.jpg" class="transition mask" data-type-show="prez"-->
 
 # Compression
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Compression
 
@@ -22,6 +24,8 @@
 | bootstrap-3.1.1.min.css | 98 KB  | 17 KB           | 83%               |
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Brotli vs Gzip
 
@@ -46,7 +50,7 @@ https://certsimple.com/blog/nginx-brotli
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 # Brotli
 
@@ -57,22 +61,23 @@ MAJ: 2018-08-31
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition mask" -->
+<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition mask" data-type-show="prez"-->
 
 # Images
-
 
 <br>
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 # Quel format choisir
 
 ![h-600](./assets/images/decision_tree_images.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Format modernes
 
@@ -91,7 +96,7 @@ Offrent de meilleures performances et plus de souplesse
 
 ##==##
 
-<!-- .slide: class="flex-row"  -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 ![h-150](./assets/images/chrome_logo.png)
 ![h-150](./assets/images/webp_logo.png)
@@ -112,7 +117,7 @@ on-the-fly-webp-decoding-using-wasm-and-a-service-worker-33e519d8c21e
 
 ##==##
 
-<!-- .slide: class="flex-row"  -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 ![h-150](./assets/images/safari_logo.png)
 ![h-150](./assets/images/jpef2000_logo.png)
@@ -126,6 +131,8 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 ![center h-400](./assets/images/caniuse_jpeg2000.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # JPeg XR
 
@@ -141,7 +148,7 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Fallback
 
@@ -157,7 +164,7 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Gif is 💀
 
@@ -180,20 +187,21 @@ ffmpeg -i input.gif output.mp4
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition mask" -->
+<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition mask" data-type-show="prez" -->
 
 # Scripts
 
-
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 # Download & Excecution cost
 
 ![h-700](./assets/images/download_execution_bg.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Réduire le "poid" de vos scripts
 
@@ -207,7 +215,7 @@ ffmpeg -i input.gif output.mp4
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center"  data-type-show="prez"-->
 
 # Devtools Code coverage
 
@@ -218,7 +226,7 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 # Parse / Compile
 
@@ -226,7 +234,7 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 ##==##
 
-<!-- .slide: class="" -->
+<!-- .slide: class="" data-type-show="prez"-->
 
 ![h-800 center](./assets/images/javascript_parse_cost.png)
 
@@ -236,25 +244,25 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 ![h-800](./assets/images/javascript_parse_cost_phone.png)
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 ![h-800](./assets/images/time_to_interactive.png)
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 ![h-800](./assets/images/tti_on_mobile.png)
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 # Chargement des scripts tiers
 
@@ -269,7 +277,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="" -->
+<!-- .slide: class="" data-type-show="prez"-->
 
 # HTTP2
 
@@ -283,9 +291,10 @@ Notes:
 
 - HTTP/1 chargeait les ressources les unes après les autres
 - HTTP/2 va vous permettre de gagner du temps au niveau des états d’attente car plusieurs ressources pourront être directement déchargées dans le même flux de réponse HTTP.
-  ##==##
 
-<!-- .slide: class="full-center" -->
+##==##
+
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 # HTTP1 Waterfall
 
@@ -296,9 +305,10 @@ Notes:
 - vert : temps d’attente avant le chargement de la ressource,
 - violet : temps d’attente de chargement de la ressource (TTFB - Time To First Byte)
 - gris : temps de réception de la ressource.
-  ##==##
 
-<!-- .slide: class="full-center" -->
+##==##
+
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 # HTTP2 Waterfall
 
@@ -313,6 +323,8 @@ Notes:
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # HTTP n'est pas le futur...
 
 ... c'est le présent
@@ -320,7 +332,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # How to ?
 

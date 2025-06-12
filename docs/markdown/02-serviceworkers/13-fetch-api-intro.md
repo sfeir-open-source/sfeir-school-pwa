@@ -1,8 +1,10 @@
-<!-- .slide: data-background="./assets/images/fetch_bg.png" class="transition transition mask" -->
+<!-- .slide: data-background="./assets/images/fetch_bg.png" class="transition transition mask" data-type-show="prez" -->
 
 # Fetch API
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # L'API Fetch
 
@@ -10,13 +12,15 @@
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Retourner une réponse personnalisée
 
 ![center](./assets/images/fetch_custom_response.svg)
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # L'API Fetch
 

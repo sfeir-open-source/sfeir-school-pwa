@@ -1,16 +1,16 @@
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # The PRPL Pattern
 
 ##==##
 
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez"-->
 
 # Principles
 
 ##==##
 
-<!-- .slide: class="flex-row"-->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # P.R.P.L
 
@@ -30,7 +30,7 @@
 
 ##==##
 
-<!-- .slide: class="flex-row"-->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # P.R.P.L
 
@@ -50,7 +50,7 @@
 
 ##==##
 
-<!-- .slide: class="flex-row"-->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # P.R.P.L
 
@@ -58,7 +58,7 @@
 
 ##==##
 
-<!-- .slide: class="flex-row"-->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # P.R.P.L
 
@@ -77,6 +77,8 @@
 </p>
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # App Structure
 

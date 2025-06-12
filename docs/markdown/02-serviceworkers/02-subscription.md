@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # **Service Worker :** Souscription
 
 <br>
@@ -9,6 +11,8 @@
 <!-- .element: class="center" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # ⚠️ Scope
 

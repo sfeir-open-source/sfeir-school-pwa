@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Envoyer un message au SW
 
@@ -14,7 +14,7 @@ function send_message_to_sw(message) {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Réceptionner et répondre
 
@@ -31,7 +31,7 @@ self.addEventListener('message', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Écouter les messages provenant du SW
 

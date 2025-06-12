@@ -1,8 +1,10 @@
-<!-- .slide: class="transition bg-green" -->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
 
 # Network Only
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # Stratégies de cache : Network-only
 
@@ -15,7 +17,7 @@ Si ce n'est qu'une partie de l'application, il est important d'expliquer clairem
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
 
 # Network-only : Utilisation
 
@@ -36,7 +38,7 @@ Il n'y a pas ici d'initialisation
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
 
 # Network-only : Utilisation (Real Life example)
 
@@ -73,37 +75,14 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 
 ##==##
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
 
 # Network-only : Avec Workbox bis
 
 service-worker.js
 
-```javascript
+```javascript [2|3-10]
 import { registerRoute } from 'workbox-routing';
-import { NetworkOnly } from 'workbox-strategies';
-
-
-
-
-
-
-
-...
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Network-only : Avec Workbox bis
-
-service-worker.js
-
-```javascript
-//import { registerRoute } from 'workbox-routing';
 import { NetworkOnly } from 'workbox-strategies';
 
 // Let all request going to api passed through network
@@ -136,42 +115,21 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="transition bg-white" -->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
 
 # Avec Angular
 
 En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
 
-```javascript
+```javascript [1-2 | 4-5 | 1-5]
 // Append ngsw-bypass at the end of the desire request
 this.http.get('api/users?ngsw-bypass');
-
-
-...
-```
-
-<!-- .element: class="big-code" -->
-
-Notes:
-En fait, il faut dire à angular de ne pas prendre en compte l'url
-
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Avec Angular
-
-En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
-
-```javascript
-// Append ngsw-bypass at the end of the desire request
-//this.http.get('api/users?ngsw-bypass');
 
 // Or set in header
 this.http.get('api/users', { headers: { 'ngsw-bypass': true } });

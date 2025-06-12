@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # Workbox
 
 ## **TODO**
@@ -6,6 +8,8 @@ Notes:
 Ajouter des slides pour expliquer comment utiliser workbox
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Stratégies de caches
 

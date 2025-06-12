@@ -1,4 +1,4 @@
-import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+import { Reveal, SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
 
 function schoolSlides() {
   return ['00-school/00-TITLE.md', '00-school/speaker-jef.md'];
@@ -195,3 +195,16 @@ function formation() {
 }
 
 SfeirThemeInitializer.init(formation);
+
+// Hudge Hack waiting fix in theme for removing two-column slides that are not in correct data-type
+setTimeout(() => {
+  const params = new URLSearchParams(document.location.search);
+  if (params.get('type') === 'prez-cache') {
+    const sections = [...document.querySelectorAll('.two-column-layout')];
+    for (let section of sections) {
+      section.remove();
+    }
+
+    Reveal.sync();
+  }
+}, 500);

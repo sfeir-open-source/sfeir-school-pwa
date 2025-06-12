@@ -1,4 +1,4 @@
-<!-- .slide: class="" -->
+<!-- .slide: class="" data-type-show="prez"-->
 
 # Workbox
 
@@ -12,6 +12,8 @@
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Prpl-server-node
 
 ## http2 prpl server node
@@ -24,6 +26,8 @@
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Http2-Push-Manifest
 
 ## Generate http2 list of file node
@@ -35,6 +39,8 @@
 <!-- .element: class="center" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Http2push-gae
 

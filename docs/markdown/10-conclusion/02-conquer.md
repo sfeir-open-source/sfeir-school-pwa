@@ -1,5 +1,4 @@
-<!-- .slide: data-background="black" class="mariane transition" -->
-
+<!-- .slide: data-background="black" class="mariane transition" data-type-show="prez"-->
 
 # Les PWAs guidant le Web
 

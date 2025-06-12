@@ -1,4 +1,4 @@
-<!-- .slide: class="no-background" -->
+<!-- .slide: class="no-background" data-type-show="prez" -->
 
 ![float-left w-250](./assets/images/twitter_school.svg)
 

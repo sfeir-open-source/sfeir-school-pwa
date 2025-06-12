@@ -1,8 +1,10 @@
-<!-- .slide: class="transition bg-green" -->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
 
 # Stale While Revalidate
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez"-->
 
 # Stratégies de cache : Stale-While-Revalidate
 
@@ -15,117 +17,14 @@ La différence avec le cache first, est qu'en cache first, on ne cherche pas à 
 
 ##==##
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
 
 # Stale-While-Revalidate : example
 
-service-worker.js
+service-worker.js <!-- .element: style="margin-top:-20px;" -->
 
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(
-
-
-
-
-
-
-
-    ...
-    )
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Stale-While-Revalidate : example
-
-service-worker.js
-
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.open('dynamic').then(cache =>
-      cache.match(event.request).then(response => {
-
-
-
-
-        ...
-      })
-    )
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Stale-While-Revalidate : example
-
-service-worker.js
-
-```javascript
-/*self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.open('dynamic').then(cache =>
-      cache.match(event.request).then(response => {*/
-        const fetchPromise = fetch(event.request).then(networkResponse => {
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        });
-        ...
-      })
-    /*)
-  );
-});*/
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Stale-While-Revalidate : example
-
-service-worker.js
-
-```javascript
-//self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.open('dynamic').then(cache =>
-      cache.match(event.request).then(response => {
-        /*const fetchPromise = fetch(event.request).then(networkResponse => {
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        });*/
-        return response || fetchPromise;
-      })
-    )
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Stale-While-Revalidate : example
-
-service-worker.js
-
-```javascript
+<!-- prettier-ignore -->
+```javascript [1-2,11-12|3-4,10|5-8|9|1-12]
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.open('dynamic').then(cache =>
@@ -136,8 +35,7 @@ self.addEventListener('fetch', event => {
         });
         return response || fetchPromise;
       })
-    )
-  );
+    ));
 });
 ```
 
@@ -160,14 +58,14 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
 
 # Stale While Revalidate : Avec Workbox
 
 service-worker.js
 
-```javascript
-//import { registerRoute } from 'workbox-routing';
+```javascript [2,6]
+import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate } from 'workbox-strategies';
 
 registerRoute(
@@ -198,31 +96,31 @@ Toujours aussi simple à mettre en oeuvre
 
 ##==##
 
-<!-- .slide: class="transition bg-white" -->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
 
 # Avec Angular - que pour les urls type api
 
 Non applicable pour les ressources (en même temps, ça n'a pas trop de sens)
 
-```json
+<!-- prettier-ignore -->
+```json [1-3,6-11]
 {
   "dataGroups": [
     {
-      //"name": "api",
-      //"urls": "/myAPI/*",
+      "name": "api",
+      "urls": "/myAPI/*",
       "cacheConfig": {
         "strategy": "freshness",
         "timeout": 0
       }
     }
-  ]
-}
+  ]}
 ```
 
 <!-- .element: class="big-code" -->

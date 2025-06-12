@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # Service Worker
 
 ![center](./assets/images/service_worker_explain.svg)
@@ -6,7 +8,7 @@ Notes: Un service worker est un proxy programmable côté client entre la webapp
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/grid_background.svg" -->
+<!-- .slide: data-background="./assets/images/grid_background.svg" data-type-show="prez" -->
 
 <div class="grid-worker">
     <div class="cell-1">
@@ -32,6 +34,8 @@ Thread différente du script principal donc non-bloquant
 https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Support
 

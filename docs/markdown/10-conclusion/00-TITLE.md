@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # Ressources
 
 - https://jakearchibald.com/2014/offline-cookbook/
@@ -10,6 +12,6 @@
 
 ##==##
 
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" data-type-show="prez" -->
 
 # Conclusion

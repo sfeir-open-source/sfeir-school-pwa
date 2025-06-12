@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Les événements des SW
 

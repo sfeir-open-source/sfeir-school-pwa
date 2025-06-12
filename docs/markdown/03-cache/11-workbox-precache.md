@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
+<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="prez" -->
 
 # Precache
 

@@ -1,10 +1,10 @@
-<!-- .slide: data-background="./assets/images/event_bg.jpg" -->
+<!-- .slide: data-background="./assets/images/event_bg.jpg" data-type-show="prez" -->
 
 Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Service Worker : AddEventListener
 
@@ -20,6 +20,8 @@ self.addEventListener('event-name', event => {
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Service Worker : Events
 
 ![center h-500](./assets/images/events_sw.png)
@@ -29,7 +31,7 @@ install =>
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Service Worker : AddEventListener
 

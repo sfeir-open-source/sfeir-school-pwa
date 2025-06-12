@@ -1,8 +1,10 @@
-<!-- .slide: class="transition bg-green" -->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
 
 # Generic Fallback
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # Stratégies de cache : Generic-Fallback
 
@@ -13,97 +15,13 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 ##==##
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
 
 # Generic-Fallback : example
 
 service-worker.js
 
-```javascript
-self.addEventListener('fetch', event => {
-  event.respondWith(
-
-
-
-    ...
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic-Fallback : example
-
-service-worker.js
-
-```javascript
-/*self.addEventListener('fetch', event => {
-  event.respondWith(*/
-    caches
-      .match(event.request)
-
-      ...
-  );
-//});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic-Fallback : example
-
-service-worker.js
-
-```javascript
-/*self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches
-      .match(event.request)*/
-      .then(response => response || fetch(event.request))
-      ...
-  );
-//});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic-Fallback : example
-
-service-worker.js
-
-```javascript
-/*self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches
-      .match(event.request)
-      .then(response => response || fetch(event.request))*/
-      .catch(_ => caches.match('offline.html'))
-  );
-});
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic-Fallback : example
-
-service-worker.js
-
-```javascript
+```javascript [1-2,7-8|3-4|5|6|1-8]
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches
@@ -132,59 +50,13 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
 
 # Generic Fallback : Avec Workbox
 
 service-worker.js - Utilisation
 
-```javascript
-//import { registerRoute } from 'workbox-routing';
-import { NetworkFirst } from 'workbox-strategies';
-import {PrecacheFallbackPlugin} from 'workbox-precaching';
-
-registerRoute(
-
-
-
-  ...
-);
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic Fallback : Avec Workbox
-
-service-worker.js - Utilisation
-
-```javascript
-//import { registerRoute } from 'workbox-routing';
-import { NetworkFirst } from 'workbox-strategies';
-import {PrecacheFallbackPlugin} from 'workbox-precaching';
-
-registerRoute(
-  ({ request }) => request.mode === 'navigate',
-  new NetworkFirst({
-    ...
-  })
-);
-```
-
-<!-- .element: class="big-code" -->
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Generic Fallback : Avec Workbox
-
-service-worker.js - Utilisation
-
-```javascript
+```javascript [2-5,10|6-7,9|8]
 //import { registerRoute } from 'workbox-routing';
 import { NetworkFirst } from 'workbox-strategies';
 import { PrecacheFallbackPlugin } from 'workbox-precaching';
@@ -215,13 +87,13 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="transition bg-white" -->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
 
 # Avec Angular
 

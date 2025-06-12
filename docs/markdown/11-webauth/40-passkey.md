@@ -1,3 +1,3 @@
-<!-- .slide: class="transition" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # PassKey

@@ -1,4 +1,4 @@
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # Résumons
 

@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # WorkerGlobalScope
 
 <br>

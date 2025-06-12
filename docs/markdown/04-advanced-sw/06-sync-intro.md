@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Syncrhonisation de données
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez" -->
 
 # Avant le Background-sync
 
@@ -21,7 +21,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez" -->
 
 # Background-sync
 
@@ -39,7 +39,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Background-sync
 
@@ -71,7 +71,7 @@ tag = unique sinon ecrase
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Real World Code
 
@@ -95,7 +95,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Real World Code
 
@@ -119,7 +119,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code"  data-background="#fb8c00" -->
+<!-- .slide: class="with-code"  data-background="#fb8c00" data-type-show="prez" -->
 
 # BackgroundSync - Wokrbox
 
@@ -147,6 +147,8 @@ Notes:
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Utilisabilité
 
 ![h-600](./assets/images/caniuse-background-sync.png)
@@ -155,7 +157,7 @@ Notes: 03/07/2019
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez"-->
 
 # Mettons en place du background Sync
 
@@ -169,11 +171,13 @@ Notes: 03/07/2019
 
 ##==##
 
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Periodic Background Sync
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 ## PBS: Periodic Background Sync
 
@@ -184,7 +188,7 @@ Infos du 03/09/20
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Demander l'autorisation
 
@@ -208,7 +212,7 @@ Toujours demander l'autorisation !!
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 ## Enregistrement du PBS
 
@@ -234,7 +238,7 @@ En général, pas plus d'une syncrho par jour !
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 ## Désinscription du PBS
 
@@ -253,7 +257,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 ## Réponse à un pbs event
 
@@ -269,9 +273,12 @@ self.addEventListener('periodicsync', event => {
   // Other logic for different tags as needed.
 });
 ```
+
 <!-- .element: class="big-code" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Utilisabilité
 

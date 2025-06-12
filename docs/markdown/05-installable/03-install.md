@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Créer un bouton pour installer l'app
 

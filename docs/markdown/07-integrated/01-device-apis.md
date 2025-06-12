@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # WebAPIs for your Device
 
 <br><br>
@@ -17,6 +19,8 @@
 </div>
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Demandez (gentiment) la permission !
 
@@ -48,18 +52,20 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 ![h-800](./assets/images/install_do.png)
 ![h-800](./assets/images/install_dont.png)
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/geolocation.png" class="transition mask"-->
+<!-- .slide: data-background="./assets/images/geolocation.png" class="transition mask" data-type-show="prez"-->
 
 # Geolocation
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Support 🎉
 
@@ -70,11 +76,13 @@ Tous sauf IE8, Safari 4 & Opera Mini
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/fullscreen_api.jpg" class="transition bottom" -->
+<!-- .slide: data-background="./assets/images/fullscreen_api.jpg" class="transition bottom" data-type-show="prez"-->
 
 # API
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Support
 
@@ -92,7 +100,7 @@ Opera 12.1 uses the older specificaton's :fullscreen-ancestor pseudo-class inste
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # Appeler un numéro depuis un site web ?
 
@@ -102,7 +110,7 @@ Opera 12.1 uses the older specificaton's :fullscreen-ancestor pseudo-class inste
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Click to call
 
@@ -124,11 +132,15 @@ https://developers.google.com/web/fundamentals/native-hardware/click-to-call/
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Support 👌
 
 ![center h-800](./assets/images/support_call_phone.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez"-->
 
 # Effectuer un achat en ligne ?
 
@@ -151,11 +163,15 @@ Je pense que pour cette partie, on peut adopter un bon rythme avec la répétiti
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Payment Request API
 
 ![center h-800](./assets/images/payment_request_api.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Payment Request API : process
 
@@ -171,6 +187,8 @@ The browser then presents the payments UI to the user, who selects a payment met
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Support 🚀
 
 ![center h-800](./assets/images/caniuse_payment.png)
@@ -180,7 +198,7 @@ MAJ 2019-05-16
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # Partager un contenu ?
 
@@ -193,7 +211,7 @@ This method, part of the simple Web Share API—written by Matt Giuca on the Chr
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Share API
 
@@ -220,6 +238,8 @@ This method, part of the simple Web Share API—written by Matt Giuca on the Chr
 
 ##==##
 
+<!-- .slide: data-type-show="prez"  -->
+
 # Support 🧐
 
 ![center h-800](./assets/images/caniuse_webshare.png)
@@ -228,6 +248,8 @@ Notes:
 Update on 2024-06-10
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # What web can do today ?
 
@@ -238,19 +260,19 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez" -->
 
 ![](./assets/images/webauthn/good-signup-in_io18.png)
 
 ##==##
 
-<!-- .slide: data-background="white" class="full-center" -->
+<!-- .slide: data-background="white" class="full-center" data-type-show="prez"-->
 
 ![](./assets/images/webauthn/webauthn-logo.png)
 
 ##==##
 
-<!-- .slide: class="transition left underline" data-background="./assets/images/webauthn/bored.jpeg" -->
+<!-- .slide: class="transition left underline" data-background="./assets/images/webauthn/bored.jpeg" data-type-show="prez"-->
 
 # Security is boring!
 
@@ -259,19 +281,19 @@ ajoute de la friction pour l'utilisateur
 
 ##==##
 
-<!-- .slide: class="full-center"-->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 ![signup-email h-900](./assets/images/webauthn/signup-email.jpg)
 
 ##==##
 
-<!-- .slide: class="full-center"-->
+<!-- .slide: class="full-center" data-type-show="prez"-->
 
 ![password-strength h-600](./assets/images/webauthn/password-strength-meters.png)
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/webauthn/one-tap.png" class="full-center transition" -->
+<!-- .slide: data-background="./assets/images/webauthn/one-tap.png" class="full-center transition" data-type-show="prez"-->
 
 Notes:
 un premier pas vers une meilleur UX
@@ -279,7 +301,7 @@ mais quid de la sécu ?
 
 ##==##
 
-<!-- .slide: data-background="black" class="full-center mariane" -->
+<!-- .slide: data-background="black" class="full-center mariane" data-type-show="prez"-->
 
 What's new?
 
@@ -287,4 +309,4 @@ What's new?
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/webauthn/2fa-new.png" class="full-center" -->
+<!-- .slide: data-background="./assets/images/webauthn/2fa-new.png" class="full-center"  data-type-show="prez"-->

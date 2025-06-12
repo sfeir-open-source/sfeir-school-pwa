@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Implémenter la Push API
 
@@ -17,7 +17,7 @@ Pensez à utiliser event.waitUntil ;) !
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez"-->
 
 # Tester la Push API
 
@@ -30,6 +30,8 @@ Utiliser Chrome devtools pour tester le push
 ![center h-500](./assets/images/devtools_test_push.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 ![center h-800](./assets/images/push_companion.png)
 
@@ -48,7 +50,7 @@ There are a bunch of different ways to create the application server keys. You c
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Tester la Push API
 

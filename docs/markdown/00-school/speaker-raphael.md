@@ -1,4 +1,4 @@
-<!-- .slide: class="speaker-slide" -->
+<!-- .slide: class="speaker-slide" data-type-show="prez" -->
 
 # Présentation
 

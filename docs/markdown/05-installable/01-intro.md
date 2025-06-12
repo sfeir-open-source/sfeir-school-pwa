@@ -1,8 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Rendre l'application installable
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Objectifs
 
@@ -20,13 +22,13 @@
 
 ##==##
 
-<!-- .slide: class="transition top mask" data-background="./assets/images/manifest.png" -->
+<!-- .slide: class="transition top mask" data-background="./assets/images/manifest.png" data-type-show="prez" -->
 
 # Le Manifest
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Manifest : lier à l'application
 
@@ -329,6 +331,8 @@ Notes:
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Générateur de manifest
 
 ![center h-700](./assets/images/manifest_generator.png)
@@ -342,6 +346,8 @@ https://app-manifest.firebaseapp.com/
 <br>
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Tester
 

@@ -1,8 +1,12 @@
+<!-- .slide: data-type-show="prez" -->
+
 <br>
 
 ![center h-600](./assets/images/sw_lifecycle.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Première installation
 
@@ -19,6 +23,8 @@ Notes:
 - clients.claim() can override this default, and take control of non-controlled pages.
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Mise à jour
 
@@ -41,6 +47,8 @@ https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
 - `self.skipWaiting()` prevents the waiting, meaning the service worker activates as soon as it's finished installing.
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 <br>
 

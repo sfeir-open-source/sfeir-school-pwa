@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
+<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="prez" -->
 
 # Routing
 
@@ -25,7 +25,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
+<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="prez" -->
 
 # Routing - expiration plugin
 
@@ -45,7 +45,7 @@ plugins: [
 
 ##==##
 
-<!-- .slide: class="with-code" data-background="#fb8c00" -->
+<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="prez" -->
 
 # Workbox
 

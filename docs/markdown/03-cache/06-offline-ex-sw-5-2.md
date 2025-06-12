@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Offline.html
 
@@ -12,6 +12,8 @@
 ### Step: sw-5-2
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Offline First
 

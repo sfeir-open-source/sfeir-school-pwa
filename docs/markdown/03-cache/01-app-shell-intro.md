@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # L’app shell
 
 <br>
@@ -24,15 +26,19 @@ Notes: catégorie "Performance"
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 ![center h-800](./assets/images/app_shell.png)
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/polaroid.png" class="transition transition" -->
+<!-- .slide: data-background="./assets/images/polaroid.png" class="transition transition" data-type-show="prez" -->
 
 # Instant loading
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # 1ère étape : le besoin
 
@@ -47,6 +53,8 @@ Demandez vous :
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # 2ème étape : Le cache
 
 - **Premier chargement** : Mettre les fichiers dans le cache.
@@ -58,16 +66,17 @@ Demandez vous :
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # On install
 
 ![center h-700](./assets/images/sw_install.png)
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Cache API
-
 
 Ouvrir un cache et ajouter un ensemble de fichiers
 
@@ -83,11 +92,9 @@ caches.open('cache-name').then(cache => cache.addAll(/* Array of files path */))
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Cache API
-
-
 
 Chercher une requête dans les caches
 
@@ -105,11 +112,9 @@ caches.match(event.request).then(response => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Cache API
-
-
 
 Exécuter une requête et mettre le résultat dans le cache
 

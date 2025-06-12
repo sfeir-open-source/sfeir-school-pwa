@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Créer votre propre manifest
 
@@ -15,7 +15,7 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/installabilite.png" class="transition mask" -->
+<!-- .slide: data-background="./assets/images/installabilite.png" class="transition mask" data-type-show="prez" -->
 
 # Installabilité
 
@@ -43,6 +43,8 @@ Notes:
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Et aussi ...
 
 <br><br>
@@ -57,7 +59,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Pour IOS
 
@@ -73,9 +75,11 @@ Notes:
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/install_banner.png" -->
+<!-- .slide: data-background="./assets/images/install_banner.png" data-type-show="prez" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Bannière
 
@@ -86,7 +90,7 @@ https://developers.google.com/web/fundamentals/engage-and-retain/app-install-ban
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Bannière : L’évènement beforeinstallprompt
 
@@ -104,7 +108,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Bannière : L’évènement beforeinstallprompt
 
@@ -126,7 +130,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Reporter l’installation de la bannière
 
@@ -148,7 +152,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Reporter l’installation de la bannière
 
@@ -168,7 +172,7 @@ btnSave.addEventListener('click', () => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Reporter l’installation de la bannière
 
@@ -193,7 +197,7 @@ btnSave.addEventListener('click', () => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Désactiver la bannière
 
@@ -213,7 +217,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # ⚠️ Chrome on Android
 

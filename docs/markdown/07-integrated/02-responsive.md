@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition"  data-type-show="prez"-->
 
 # Responsive Design
 
 ##==##
 
-<!-- .slide: class="" -->
+<!-- .slide: class="" data-type-show="prez"-->
 
 # Responsive Design ?
 
@@ -22,6 +22,8 @@ Par exemple :
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Comment faire ?
 
 - Utilisez des tailles relatives, em, rem, %.
@@ -33,7 +35,7 @@ Par exemple :
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Le meta tag viewport
 
@@ -51,6 +53,8 @@ Sinon le viewport va être définit comme faisant 980px sur la plupart des brows
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Relative sizing ?
 
 ![center h-600](./assets/images/relative-sizing.png)
@@ -60,6 +64,8 @@ Ce type de layout sur mobile va rendre des contenus beaucoup trop petit pour êt
 
 ##==##
 
+<!-- .slide: data-type-show="prez"-->
+
 # Media queries
 
 ![center h-600](./assets/images/media-queries.png)
@@ -68,7 +74,7 @@ Notes: Utiliser différentes règles CSS pour différentes taille du viewport, b
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Media queries (exemples)
 
@@ -88,7 +94,7 @@ Notes: Commencer par le plus petit, et en faire celui par défaut
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Media queries en javascript
 
@@ -104,7 +110,7 @@ if (window.matchMedia(media).matches) {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Calc() à la rescousse
 
@@ -123,6 +129,8 @@ img:last-of-type {
 Notes: Si vous souhaitez 2 images sur la largeur, avec une marge, calc permet de soustraire la marge de la largeur total
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # ⚠️ Faire attention
 

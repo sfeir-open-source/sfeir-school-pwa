@@ -1,8 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Web App
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Une bonne Web App avant tout !
 
@@ -16,7 +18,7 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # Notre application
 
@@ -28,7 +30,7 @@
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Pour récupérer l'appli
 
@@ -50,7 +52,7 @@ git clone https://github.com/sfeir-open-source/sfeir-school-pwa.git
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Lancer l'appli
 
