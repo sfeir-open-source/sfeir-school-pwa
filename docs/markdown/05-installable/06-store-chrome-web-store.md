@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Chrome Web Store <br>& G Suite Marketplace
 

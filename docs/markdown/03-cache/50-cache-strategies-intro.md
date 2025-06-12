@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez-cache prez" -->
 
 # Strategies de cache
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez-cache prez" -->
 
 # Stratégies de cache
 
@@ -107,6 +107,8 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 ##==##
 
+<!-- .slide: data-type-show="prez-cache prez" -->
+
 # Comment faire avec Workbox en cas de besoins spécifiques ?
 
 1. Créer son propre service worker
@@ -117,35 +119,16 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache prez" -->
 
 # Comment faire avec Workbox en cas de besoins spécifiques ?
 
 ### my-service-worker.js
 
-```javascript
+```javascript [1-3|4-6|1-6]
 /*******************************/
 /****IMPORT WORKBOX******/
-importScripts('./service-worker.js');
-
-
-...
-```
-
-<!-- .element: class="big-code"  -->
-
-##==##
-
-<!-- .slide: class="with-code" -->
-
-# Comment faire avec Workbox en cas de besoins spécifiques ?
-
-### my-service-worker.js
-
-```javascript
-/*******************************/
-/****IMPORT WORKBOX******/
-//importScripts('./service-worker.js')
+importScripts('./service-worker.js')
 
 // Override every event we need
 self.addEventListener('activate', event => event.waitUntil( ...))
@@ -155,11 +138,13 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="transition bg-white" -->
+<!-- .slide: class="transition" data-type-show="prez-cache prez" -->
 
 # Avec les frameworks
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # Avec les frameworks
 
@@ -169,41 +154,16 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez" -->
 
 # Avec Angular
 
 En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
 
-```json
+<!-- prettier-ignore -->
+```json [1-2,10|3-9|1-10]
 {
   "index": "/index.html",
-  "assetGroups": [
-    {
-      ...
-
-
-    }
-  ]
-}
-```
-
-<!-- .element: class="big-code" -->
-
-Notes:
-Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
-
-##==##
-
-<!-- .slide: class="with-code max-height" -->
-
-# Avec Angular
-
-En utilisant la schematics `@angular/pwa` et en configurant le `ngsw-worker.js`
-
-```json
-{
-  ...
   "assetGroups": [{
       "name": "cacheOnly",
       "installMode": "prefetch",
@@ -221,7 +181,7 @@ Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache prez" -->
 
 # Comment faire du spécifique avec Angular ?
 
@@ -243,15 +203,15 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez" -->
 
 # Comment faire du spécifique avec Angular ?
 
 ### app.module.ts
 
-```javascript
-//import { ServiceWorkerModule } from '@angular/service-worker'
-//@NgModule({
+```javascript [2,4-8]
+import { ServiceWorkerModule } from '@angular/service-worker'
+@NgModule({
   ...
   imports: [
     ServiceWorkerModule.register('/my-service-worker.js', {
@@ -260,12 +220,14 @@ self.addEventListener('activate', event => event.waitUntil( ...))
   ],
   ...
 })
-//export class AppModule {}
+export class AppModule {}
 ```
 
 <!-- .element: class="big-code" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez"-->
 
 # Avec React
 
@@ -278,12 +240,13 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 # Avec VueJS
 
-<!-- .slide: class="with-code max-height" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez" -->
 
 En utilisant aussi Workbox dans le fichier de config de vue
 
 vue.config.js
 
+<!-- prettier-ignore -->
 ```javascript
 module.exports = {
   // ...other vue-cli plugin options...
@@ -293,8 +256,7 @@ module.exports = {
     workboxOptions: {
       swSrc: 'dev/sw.js'
       // ...other Workbox options...
-    }
-  }
+    }}
 };
 ```
 

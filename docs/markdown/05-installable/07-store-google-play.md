@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Google Play
 
 ##==##
 
-<!-- .slide: class="mariane" -->
+<!-- .slide: class="mariane"  data-type-show="prez"-->
 
 <br><br>
 
@@ -22,7 +22,7 @@ Just to point out that there is much more to it than just simply publishing PWAs
 
 ##==##
 
-<!-- .slide: data-background="" class="flex-row" -->
+<!-- .slide: data-background="" class="flex-row" data-type-show="prez" -->
 
 <br><br>
 
@@ -38,13 +38,13 @@ Notes:
 Un nouvelle façon d'apporter d'apporter une experience web dans une application android native
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 ![center](./assets/images/store/webview.png)
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 ![center](./assets/images/store/custom-tabs.png)
 
@@ -70,6 +70,8 @@ Par exemple, installation store, mode avion => Dino / car par de SW installé
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Webview vs Custom Tabs vs TWA
 
 <!-- .slide: class="flex-row" -->
@@ -77,6 +79,8 @@ Par exemple, installation store, mode avion => Dino / car par de SW installé
 ![center h-700](./assets/images/advantages-twa.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # TWA
 
@@ -95,7 +99,7 @@ Il est vérifié que le propriétaire de l'application est le propriétaire du c
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # TWA
 
@@ -114,6 +118,8 @@ Le browser de l'utilisateur, mis à jour en evergreen plutôt qu'une version pas
 Accés aux dernières API
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 <br><br><br>
 

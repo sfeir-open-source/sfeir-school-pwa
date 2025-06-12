@@ -1,8 +1,10 @@
-<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition mask" -->
+<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition mask" data-type-show="prez" -->
 
 # Contrôler le cycle de vie
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 ## Devtools
 
@@ -15,7 +17,7 @@ Montrer à quoi sert le "update on reload" & "unregister" & "update" & numéro d
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Event API
 
@@ -32,13 +34,15 @@ Se termine avant que l'on ai fini les actions a faire
 Fixé avec waitUntil, qui va attendre la résolution de la dernière promise a l'interieur avant de terminer l'event
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Installation
 
 ![center h-600](./assets/images/sw_life_cycle_installing.png)
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # skipWaiting
 
@@ -71,13 +75,15 @@ The claim() method of the of the Clients interface allows an active Service Work
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Activation
 
 ![center h-600](./assets/images/sw_life_cycle_activating.png)
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code"  data-type-show="prez"-->
 
 # claim
 

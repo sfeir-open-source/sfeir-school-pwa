@@ -1,8 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # HTTP/2 Multiplexing
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # HTTP/2 Multiplexing
 
@@ -16,6 +18,8 @@
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # ES Modules
 
 ![center h-800](./assets/images/PRPL/es_module.png)
@@ -25,6 +29,8 @@
 <!-- .element: class="copyright" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez"-->
 
 # Performance
 
@@ -36,6 +42,8 @@
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Bundling
 
 ![center h-800](./assets/images/PRPL/app-build-bundles.png)
@@ -45,6 +53,8 @@
 <!-- .element: class="copyright" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Dynamic import
 

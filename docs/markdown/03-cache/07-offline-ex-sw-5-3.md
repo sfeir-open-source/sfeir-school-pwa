@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Chercher dans le cache
 
@@ -14,6 +14,8 @@
 
 ##==##
 
+<!-- .slide: data-type-show="prez"  -->
+
 # Outil Chrome
 
 ## Devtools -> Network
@@ -23,6 +25,8 @@
 ![center h-500](./assets/images/devtools_offline.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # API Cache
 

@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Push API
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # ⚠ Ne pas confondre
 
@@ -29,7 +29,7 @@ Complémentaires
 
 ##==##
 
-<!-- .slide: data-background="#dcdee0" class="transition top mask" -->
+<!-- .slide: data-background="#dcdee0" class="transition top mask" data-type-show="prez" -->
 
 ![center h-800](./assets/images/notification_icon.png)
 
@@ -39,6 +39,8 @@ Notes:
 https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Des notifications intégrées
 
@@ -53,7 +55,7 @@ The Notifications API lets a web page or app send notifications that are display
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Qu'est ce qu'une bonne notification ?
 
@@ -67,7 +69,7 @@ And it’s relevant - something I should be interested in.
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Qu'est ce qu'une bonne notification ?
 
@@ -79,7 +81,7 @@ You’ll have opportunities to monetize the user experience once they’re in yo
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # L’objet Notification
 
@@ -116,7 +118,7 @@ It's possible to send a notification as follows — here we present a fairly ver
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Fermer une notification
 
@@ -137,11 +139,15 @@ Note: When you receive a "close" event, there is no guarantee that it's the user
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Réengageante
 
 ![center h-700](./assets/images/rengaging.png)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Support
 
@@ -152,7 +158,7 @@ MAJ: 2019-06-18
 
 ##==##
 
-<!-- .slide: data-background="#dcdee0" class="transition top no-margin" -->
+<!-- .slide: data-background="#dcdee0" class="transition top no-margin" data-type-show="prez" -->
 
 ![center h-800](./assets/images/cloud_messaging.svg)
 
@@ -163,7 +169,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Partie client
 
@@ -181,7 +187,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Envoyer un message
 
@@ -201,7 +207,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Recevoir un message
 
@@ -219,7 +225,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Vérifier les souscriptions
 
@@ -236,7 +242,7 @@ if ('serviceWorker' in navigator) {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # S'abonner
 
@@ -251,7 +257,7 @@ function subscribe() {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code"  data-type-show="prez"-->
 
 # S'abonner
 
@@ -269,7 +275,7 @@ function subscribe() {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Se désabonner
 
@@ -286,7 +292,7 @@ reg.pushManager.getSubscription().then(sub => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Traiter une notification
 
@@ -298,7 +304,7 @@ self.addEventListener('push', event => {...});
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Traiter une notification
 
@@ -317,7 +323,7 @@ self.addEventListener('push', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # De vrais données
 
@@ -329,7 +335,7 @@ fetch('/notification.json').then(response => response.json());
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # De vrais données
 
@@ -349,7 +355,7 @@ fetch('/notification.json')
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez" -->
 
 # Proposer des actions
 
@@ -371,7 +377,7 @@ self.registration.showNotification(data.title, {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Gérer l'action
 
@@ -383,7 +389,7 @@ self.addEventListener('notificationclick', event => {...});
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Gérer l'action
 
@@ -401,7 +407,7 @@ self.addEventListener('notificationclick', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code" data-type-show="prez"-->
 
 # Gérer l'action
 
@@ -416,6 +422,8 @@ self.addEventListener('notificationclick', event => {
 <!-- .element: class="big-code" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Support
 

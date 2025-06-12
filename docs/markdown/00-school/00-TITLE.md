@@ -1,3 +1,8 @@
+<!-- .slide: class="transition" data-type-show="prez-cache" -->
+
+# **Explorons les stratégies de caches offertes sur les PWA**
+
+##==##
 
 <!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" data-type-show="prez" -->
 
@@ -6,11 +11,12 @@
 ## **PWA 200**
 
 ##==##
-<!-- .slide: class="bg-blur" -->
+
+<!-- .slide: class="bg-blur" data-type-show="prez" -->
 
 <br>
 
-### Wifi available 
+### Wifi available
 
 <br>
 
@@ -19,6 +25,7 @@
 <br>
 
 Credentials
+
 <!-- .element: class="center" -->
 <br>
 

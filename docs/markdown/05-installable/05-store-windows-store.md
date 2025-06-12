@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Windows Store
 
@@ -99,11 +99,13 @@ $ pwabuilder package -p windows10 -l debug
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # OR...
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Automatic PWA importing
 

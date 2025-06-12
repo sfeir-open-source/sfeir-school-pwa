@@ -1,8 +1,10 @@
-<!-- .slide: class="transition" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # WebOTP
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebOTP API
 
@@ -12,11 +14,15 @@ API permettant de récupérer des OTP (One Time Password) envoyés par SMS.
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # WebOTP API
 
 ![center h-800](./assets/images/webotp.svg)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebOTP API
 
@@ -28,6 +34,8 @@ API permettant de récupérer des OTP (One Time Password) envoyés par SMS.
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # WebOTP API
 
 ## Points d'attention
@@ -37,6 +45,8 @@ API permettant de récupérer des OTP (One Time Password) envoyés par SMS.
 3. Utiliser l'API
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebOTP API
 
@@ -52,6 +62,8 @@ Notes:
 L'utilisation d'un type "text" est volontaire car le type "number" affiche aussi des boutons + et - pouvant ne pas prendre en compte un 0 en début de code. Le inputmode="numeric" quand à lui permettra d'afficher uniquement un pavé numérique dans la saisie.
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # WebOTP API
 
@@ -75,6 +87,8 @@ Your OTP Code: 123456
 
 ##==##
 
+  <!-- .slide: data-type-show="prez" -->
+
 # WebOTP API
 
 ## Api WebOTP
@@ -88,6 +102,8 @@ if ('OTPCredential' in window) {
 ```
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebOTP API
 
@@ -107,6 +123,8 @@ if ('OTPCredential' in window) {
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # WebOTP API
 
 ## Gestion de l'annulation
@@ -123,6 +141,8 @@ navigator.credentials.get({
 
 ##==##
 
+  <!-- .slide: data-type-show="prez" -->
+
 # WebOTP API
 
 ## Fonctionnement desktop
@@ -138,6 +158,8 @@ Ne marche que sur Chrome et si vous êtes connectés avec le même compte !
 
 ##==##
 
+  <!-- .slide: data-type-show="prez" -->
+
 # WebOTP API
 
 ## /!\ aux URLs
@@ -147,6 +169,8 @@ Ne marche que sur Chrome et si vous êtes connectés avec le même compte !
 - `@domain.com` : peut envoyer un code pour `@sub.domain.com` mais il ne sera pas bien reçu
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # Tableau de compatibilité
 

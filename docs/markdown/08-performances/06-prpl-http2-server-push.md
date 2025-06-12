@@ -1,11 +1,12 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez"-->
 
 # Server Push
 
 ##==##
 
-# HTTP/2 Server Push
+<!-- .slide: data-type-show="prez" -->
 
+# HTTP/2 Server Push
 
 ![center](./assets/images/PRPL/push01.svg)
 
@@ -14,6 +15,8 @@
 <!-- .element: class="copyright" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 | Keyword       | Description                                                                                                                  |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------- |

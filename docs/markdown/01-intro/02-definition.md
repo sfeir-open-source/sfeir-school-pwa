@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition" data-type-show="prez" -->
 
 # Définition
 
@@ -10,6 +10,8 @@ Making the most of the reach and capabilities of the platform — but also showi
 But... What does this actually mean in practice?
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 ![center h-800](./assets/images/before_target.png)
 
@@ -24,6 +26,8 @@ The web is safer, and it’s permission model is more respectful of your privacy
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 ![center h-800](./assets/images/after_target.png)
 
 <span class="target-capacities">Capacités</span>
@@ -36,7 +40,7 @@ A Progressive Web App is simply that, a great user experience that feels integra
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Intégrée
 
@@ -49,7 +53,7 @@ Parler du fait que c'est complétement intégrer maintenant et que c'est transpa
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Case Studies
 
@@ -65,6 +69,8 @@ Parler du fait que c'est complétement intégrer maintenant et que c'est transpa
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Au delà du buzz word
 
 ![center w-1000](./assets/images/buzz_words.png)
@@ -75,6 +81,8 @@ Souvent réduit à “une web app installable” -> fausse impression de nouvell
 De nouvelles technos pour un MEILLEUR web, sans oublier les best practices “historiques” !
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Progressive
 
@@ -94,6 +102,8 @@ Making the most of the reach and capabilities of the platform — but also showi
 But... What does this actually mean in practice?
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Progressive
 

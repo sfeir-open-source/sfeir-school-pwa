@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # 🔥 F.I.R.E. 🔥
 
@@ -6,7 +6,7 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # PWA F.I.R.E. 💡
 
@@ -42,7 +42,7 @@ Linkable → Peut être tout simplement identifier par une URL
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez"-->
 
 # PWA F.I.R.E. ✨
 
@@ -62,7 +62,7 @@ Linkable → Peut être tout simplement identifier par une URL
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # 🔥 F.I.R.E. 🔥
 

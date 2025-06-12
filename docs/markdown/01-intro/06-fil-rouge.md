@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-red" -->
+<!-- .slide: class="transition bg-red" data-type-show="prez" -->
 
 # Fil rouge
 
@@ -39,6 +39,8 @@ Lighthouse, which you'll learn more about, has tools from the app and from the c
 --chrome-flags=”no-sandbox” pour linux
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Rapport lighthouse
 

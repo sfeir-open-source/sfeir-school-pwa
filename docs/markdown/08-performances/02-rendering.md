@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Rendering
 
 ##==##
 
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="full-center" data-type-show="prez" -->
 
 # The "Pixel Pipeline"
 
@@ -12,8 +12,9 @@
 
 ##==##
 
-# Performance : CSS
+<!-- .slide: data-type-show="prez"-->
 
+# Performance : CSS
 
 ![center h-700](./assets/images/css_preformance_trigger.png)
 

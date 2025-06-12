@@ -1,8 +1,10 @@
-<!-- .slide: class="transition" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # WebAuthN
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebAuthN ou FIDO Authentication
 
@@ -14,6 +16,8 @@ Leur but est de proposer des standards d'authentification forte qui soient à la
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # WebAuthN Pourquoi ?
 
 - Les mots de passe sont souvent faibles et réutilisés.
@@ -22,6 +26,8 @@ Leur but est de proposer des standards d'authentification forte qui soient à la
 - UX d'authentification simple et rapide.
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebAuthN Fonctionnement ?
 
@@ -41,6 +47,8 @@ Notes:
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Pourquoi WebAuthN est resistant au phishing ?
 
 ## Exemple de phishing
@@ -48,6 +56,8 @@ Notes:
 ![full-center h-800](./assets/images/webAuthN-phishing.svg)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Pourquoi WebAuthN est resistant au phishing ?
 
@@ -60,17 +70,21 @@ où il saisit ses informations d'identification, qui sont ensuite utilisées pou
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # WebAuthN, quels moyens d'authentification ?
 
 ![full-center h-800](./assets/images/webAuthN-authenticators.svg)
 
 ##==##
 
-<!-- .slide: class="transition" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # WebAuthN - L'enregistrement
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebAuthN - L'enregistrement
 
@@ -88,6 +102,8 @@ const response = await rawGetResponse.json();
 ```
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebAuthN - L'enregistrement
 
@@ -139,25 +155,29 @@ This OPTIONAL member contains additional parameters requesting additional proces
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # WebAuthN - L'enregistrement
 
 ## Step 2-3 ? : Create options with challenge (Server side)
 
 ```javascript
 {
-   challenge: generateRandomBufferStr(64),
+  challenge: generateRandomBufferStr(64),
    allowCredentials: [
-      { type: "public-key", alg: -7, id: credID },
+     { type: "public-key", alg: -7, id: credID },
       { type: "public-key", alg: -257, id: credID }
    ],
    rpId: {
-      name: rpName
+     name: rpName
    },
    userVerification: "discouraged"
 }
 ```
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # WebAuthN - L'enregistrement
 
@@ -174,6 +194,8 @@ Notes:
 On renvoie le challenge au navigateur pour qu'il puisse créer la signature.
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # WebAuthN - L'enregistrement
 
@@ -195,17 +217,21 @@ return await _fetch(`/auth/signinResponse`, credential);
 
 ##==##
 
+  <!-- .slide: data-type-show="prez" -->
+
 # WebAuthN - L'enregistrement
 
 Par la suite, on va stocker les informations côté serveur et côté client de façon à pouvoir les réutiliser pour l'authentification.
 
 ##==##
 
-<!-- .slide: class="transition" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # WebAuthN - L'authentification
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # WebAuthN - L'authentification
 
@@ -227,6 +253,8 @@ Notes:
 
 ##==##
 
+  <!-- .slide: data-type-show="prez" -->
+
 # WebAuthN - multiples authenticators
 
 Il est important d'avoir en tête que cette authentification est liée à un moyen de double authentification forte et que votre empreinte, quand bien même elle est unique dépend de votre appareil.
@@ -234,6 +262,8 @@ Il est important d'avoir en tête que cette authentification est liée à un moy
 Il est donc recommandé d'avoir la possibilité de "stocker" / "associer" plusieurs authenticators à un même compte.
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # WebAuthN - authent sans mot de passe ?
 

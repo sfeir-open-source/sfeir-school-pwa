@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez"-->
 
 # Entry Point & App Shell
 
@@ -23,6 +23,8 @@ right: application shell in PeopleApp -> light entry point = better first paint 
 The App Entrypoint should have minimal static dependencies, in other words, not much beyond the app-shell itself.
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Shell
 

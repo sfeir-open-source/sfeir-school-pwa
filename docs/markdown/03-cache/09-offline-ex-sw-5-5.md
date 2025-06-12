@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice" data-type-show="prez" -->
 
 # Bye bye le cache
 
@@ -15,6 +15,8 @@ Lors de l’event “activate”, supprimer le cache dynamic !
 ### Step: sw-5-5
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Sinon ...on a Workbox
 

@@ -1,8 +1,10 @@
-<!-- .slide: class="transition" -->
+<!-- .slide: class="transition" data-type-show="prez"-->
 
 # Credentials
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Credential Management API
 
@@ -15,17 +17,23 @@ Api permettant de stocker de stocker et récupérer des informations d'identific
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Flot d'enregistrement
 
 ![center h-800](./assets/images/credential-managment-register.svg)
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Flot Auto Sign-In
 
 ![center h-800](./assets/images/credential-managment-auto-sign-in.svg)
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Détail de l'API : Existence
 
@@ -39,6 +47,8 @@ if (window.PasswordCredential || window.FederatedCredential) {
 
 ##==##
 
+  <!-- .slide: data-type-show="prez" -->
+
 # Détail de l'API : Enregistrement
 
 ```js
@@ -48,6 +58,8 @@ navigator.credentials.store(credential);
 `credential` peut être un objet de type `PasswordCredential` ou `FederatedCredential`
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # Enregistrement d'un password
 
@@ -62,6 +74,8 @@ new PasswordCredential({
 ```
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # Enregistrement d'une identité fédérée
 
@@ -80,6 +94,8 @@ Le `protocol` doit être à `null` si il peut être inéféré par le provider
 
 ##==##
 
+  <!-- .slide: data-type-show="prez" -->
+
 # Détail de l'API : Auto Sign-In
 
 Cette API permet de faire de l'auto sign-in sur un site web.
@@ -95,6 +111,8 @@ Les étapes nécessaires à l'auto sign-in sont :
 On peut "forcer" l'auto sign-in ou le proposer à l'utilisateur.
 
 ##==##
+
+  <!-- .slide: data-type-show="prez" -->
 
 # Auto Sign-In : fonctionnement
 
@@ -117,6 +135,8 @@ Attention, si il y a plusieurs comptes et qu'on est en mode 'silent', ça ne ren
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Auto Sign-In : médiation
 
 La médiation peut prendre 3 valeurs :
@@ -128,6 +148,8 @@ La médiation peut prendre 3 valeurs :
 - `required` : forcer l'auto sign-in, si l'utilisateur n'est pas connecté, une popup s'ouvre pour lui demander de se connecter.
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Auto Sign-In : récupération des credentials
 
@@ -147,6 +169,8 @@ navigator.credentials.get({...}).then((credential) => {
 ```
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Tableau de compatibilité
 

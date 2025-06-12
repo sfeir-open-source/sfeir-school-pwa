@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez"-->
 
 # Installation via un "Store" ?
 
 ##==##
 
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" data-type-show="prez" -->
 
 # As-t-on besoin d'installer via un store ?
 
@@ -40,7 +40,7 @@ Perspectives d'affaires<br/>
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Discoverability?
 
@@ -74,7 +74,7 @@ are now supported on all desktop platforms, including Chrome OS, Linux, Mac, and
 
 ##==##
 
-<!-- .slide: class="transition bg-pink" -->
+<!-- .slide: class="transition" data-type-show="prez" -->
 
 # En réalité on en a besoin
 
@@ -83,7 +83,7 @@ Car si on est pas sur le store, nos concurents le sont. Donc on doit suivre le m
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Stores
 
@@ -97,13 +97,13 @@ Car si on est pas sur le store, nos concurents le sont. Donc on doit suivre le m
 
 ##==##
 
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Apple Store
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 <br><br>
 

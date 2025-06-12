@@ -1,8 +1,10 @@
-<!-- .slide: class="transition bg-green" -->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
 
 # Offline Cookbook - Bonus
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # Offline Cookbook
 
@@ -21,6 +23,8 @@ Notes:
 Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveur, sinon, on prend un résultat par défaut
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # On Install - as a dependency
 
@@ -57,6 +61,8 @@ self.addEventListener('install', function(event) {
 
 ##==##
 
+<!-- .slide: data-type-show="prez-cache prez" -->
+
 # On Install - not as a dependency
 
 ![center h-800](./assets/images/cm-on-install-not.png)
@@ -88,6 +94,8 @@ self.addEventListener('install', function(event) {
 <!-- .element: class="big-code" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # On Activate
 
@@ -125,6 +133,8 @@ self.addEventListener('activate', function(event) {
 
 ##==##
 
+<!-- .slide: data-type-show="prez-cache prez" -->
+
 # On user interaction
 
 ![center h-450](./assets/images/cm-on-user-interaction.png)
@@ -158,6 +168,8 @@ document.querySelector('.cache-article').addEventListener('click', function(even
 <!-- .element: class="big-code" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # On push message
 
@@ -207,6 +219,8 @@ self.addEventListener('notificationclick', function(event) {
 
 ##==##
 
+<!-- .slide: data-type-show="prez-cache prez" -->
+
 # Cache and network race
 
 ![center h-800](./assets/images/ss-cache-and-network-race.png)
@@ -231,6 +245,8 @@ self.addEventListener('fetch', function(event) {
 <!-- .element: class="big-code" -->
 
 ##==##
+
+<!-- .slide: data-type-show="prez-cache prez" -->
 
 # Service worker-side templating
 

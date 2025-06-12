@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
 
 # Mode offline
 
 ##==##
 
-<!-- .slide: class="flex-row" -->
+<!-- .slide: class="flex-row" data-type-show="prez" -->
 
 # Le réseau
 
@@ -21,8 +21,9 @@
 </p>
 ##==##
 
-# Stratégies de cache
+<!-- .slide: data-type-show="prez" -->
 
+# Stratégies de cache
 
 ![center h-600](./assets/images/offline_dinosaur.png)
 

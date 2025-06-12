@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # Les débuts : Juin 2015
 
 [Progressive Web Apps:<br> Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
@@ -23,7 +25,7 @@ Invente le nom PWA, qu’il présente comme un nouveau type d’app, en oppositi
 exploiter les technologies modernes du Web pour offrir le confort d’une application native aux utilisateurs. Dit autrement, le rôle d’une PWA est de faire oublier à l’utilisateur qu’il est sur une ap- plication web, en lui offrant les mêmes ser- vices et les mêmes performances qu’une application native qu’il aurait téléchargée sur un AppStore classique
 ##==##
 
-<!-- .slide: class="quote-slide" -->
+<!-- .slide: class="quote-slide" data-type-show="prez" -->
 
 <br><br><br>
 
@@ -34,7 +36,7 @@ Expliquer que ce n'est qu'une évolution et pas un nouveau framework
 
 ##==##
 
-<!-- .slide: class="quote-slide" -->
+<!-- .slide: class="quote-slide" data-type-show="prez" -->
 
 <br><br><br>
 
@@ -45,7 +47,7 @@ On continue de parler de sites web ! c'est juste qu'ils auront plus de possibili
 
 ##==##
 
-<!-- .slide: class="quote-slide" -->
+<!-- .slide: class="quote-slide" data-type-show="prez" -->
 
 <br><br><br>
 
@@ -56,7 +58,7 @@ L'enjeu est de faire évoluer les sites selon le besoin progressivement vers des
 
 ##==##
 
-<!-- .slide: class="quote-slide" -->
+<!-- .slide: class="quote-slide" data-type-show="prez" -->
 
 <br><br><br>
 

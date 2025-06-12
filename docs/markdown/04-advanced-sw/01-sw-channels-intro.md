@@ -1,4 +1,4 @@
-<!-- .slide: class="center" -->
+<!-- .slide: class="center" data-type-show="prez" -->
 
 # Channel Messaging API
 

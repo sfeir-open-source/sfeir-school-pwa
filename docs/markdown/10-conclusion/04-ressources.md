@@ -1,3 +1,5 @@
+<!-- .slide: data-type-show="prez" -->
+
 # Ressources
 
 - https://jakearchibald.com/2014/offline-cookbook/
@@ -12,6 +14,8 @@
 
 ##==##
 
+<!-- .slide: data-type-show="prez" -->
+
 # Ressources
 
 - https://developers.google.com/web/updates/2016/03/link-rel-preload
@@ -19,6 +23,8 @@
 - https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/
 
 ##==##
+
+<!-- .slide: data-type-show="prez" -->
 
 # Specs
 
