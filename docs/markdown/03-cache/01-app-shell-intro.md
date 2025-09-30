@@ -1,4 +1,4 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # L’app shell
 
@@ -26,19 +26,19 @@ Notes: catégorie "Performance"
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
-![center h-800](./assets/images/app_shell.png)
+![](./assets/images/app_shell.png 'center h-800')
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/polaroid.png" class="transition transition" data-type-show="prez" -->
+<!-- .slide: data-background="./assets/images/polaroid.png" class="transition transition" data-type-show="on-stage" -->
 
 # Instant loading
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # 1ère étape : le besoin
 
@@ -53,7 +53,7 @@ Demandez vous :
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # 2ème étape : Le cache
 
@@ -62,19 +62,19 @@ Demandez vous :
   - Si les fichiers ne sont plus à jour, mettre les nouveaux fichiers dans le cache et supprimer les anciens.
   - **chargement N+1** : utiliser les fichiers mis à jour.
 
-![center h-500](./assets/images/minifig.png)
+![](./assets/images/minifig.png 'center h-500')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # On install
 
-![center h-700](./assets/images/sw_install.png)
+![](./assets/images/sw_install.png 'center h-700')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Cache API
 
@@ -92,7 +92,7 @@ caches.open('cache-name').then(cache => cache.addAll(/* Array of files path */))
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Cache API
 
@@ -112,7 +112,7 @@ caches.match(event.request).then(response => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Cache API
 

@@ -1,18 +1,19 @@
-<!-- .slide: class="speaker-slide" data-type-show="prez-cache prez" -->
+<!-- .slide: class="speaker-slide" data-type-show="prez-cache on-stage" -->
+
+<div class="speaker-slide">
 
 # Présentation
 
-![speaker](./assets/images/jf.jpg)
-![badge](./assets/images/gde.png)
+![](./assets/images/jf.jpg 'speaker')
+
+![](./assets/images/gde.png 'badge')
 
 <h2> Jean-François<span> Garreau</span></h2>
 
 ### Dev Front @SFEIR
 
-<!-- .element: class="icon-rule icon-first" -->
-
 ### @jefbinomed
 
-<!-- .element: class="icon-twitter icon-second" -->
+![](./assets/images/logo-SFEIR-blanc.png 'company')
 
-![company](./assets/images/logo-SFEIR-blanc.png)
+</div>

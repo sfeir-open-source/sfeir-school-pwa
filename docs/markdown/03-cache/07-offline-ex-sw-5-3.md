@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Chercher dans le cache
 
@@ -14,7 +14,7 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez"  -->
+<!-- .slide: data-type-show="on-stage"  -->
 
 # Outil Chrome
 
@@ -22,12 +22,12 @@
 
 <br>
 
-![center h-500](./assets/images/devtools_offline.png)
+![](./assets/images/devtools_offline.png 'center h-500')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # API Cache
 
-![center h-700](./assets/images/sw_mecanism.png)
+![](./assets/images/sw_mecanism.png 'center h-700')

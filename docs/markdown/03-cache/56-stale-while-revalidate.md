@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage"-->
 
 # Stale While Revalidate
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez"-->
+<!-- .slide: data-type-show="prez-cache on-stage"-->
 
 # Stratégies de cache : Stale-While-Revalidate
 
-![center h-800](./assets/images/cache-strategy-stale-while-revalidate.png)
+![](./assets/images/cache-strategy-stale-while-revalidate.png 'center h-800')
 
 Notes:
 Proche de la version Cache-Then-Network
@@ -17,7 +17,7 @@ La différence avec le cache first, est qu'en cache first, on ne cherche pas à 
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Stale-While-Revalidate : example
 
@@ -43,7 +43,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Stale While Revalidate
 
@@ -58,7 +58,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage"-->
 
 # Stale While Revalidate : Avec Workbox
 
@@ -81,7 +81,7 @@ Toujours aussi simple à mettre en oeuvre
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache Then Network avec Workbox
 
@@ -96,13 +96,13 @@ Toujours aussi simple à mettre en oeuvre
 
 ##==##
 
-<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache on-stage"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular - que pour les urls type api
 

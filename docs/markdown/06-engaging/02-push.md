@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Push API
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # ⚠ Ne pas confondre
 
@@ -29,9 +29,9 @@ Complémentaires
 
 ##==##
 
-<!-- .slide: data-background="#dcdee0" class="transition top mask" data-type-show="prez" -->
+<!-- .slide: data-background="#dcdee0" class="transition top mask" data-type-show="on-stage" -->
 
-![center h-800](./assets/images/notification_icon.png)
+![](./assets/images/notification_icon.png 'center h-800')
 
 # Notification API
 
@@ -40,7 +40,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Des notifications intégrées
 
@@ -48,19 +48,19 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ## Permet d'afficher des notifications natives
 
-![center h-700](./assets/images/notifications.png)
+![](./assets/images/notifications.png 'center h-700')
 
 Notes:
 The Notifications API lets a web page or app send notifications that are displayed outside the page at the system level; this lets web apps send information to a user even if the application is idle or in the background. This article looks at the basics of using this API in your own apps.
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Qu'est ce qu'une bonne notification ?
 
-![w-600](./assets/images/car_notification.png)
-![w-600](./assets/images/good_notification.svg)
+![](./assets/images/car_notification.png 'w-600')
+![](./assets/images/good_notification.svg 'w-600')
 
 Notes:
 It’s timely, my car has arrived.
@@ -69,19 +69,19 @@ And it’s relevant - something I should be interested in.
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Qu'est ce qu'une bonne notification ?
 
-![w-600](./assets/images/bad_app_notification.png)
-![w-600](./assets/images/bad_notification.svg)
+![](./assets/images/bad_app_notification.png 'w-600')
+![](./assets/images/bad_notification.svg 'w-600')
 
 Notes:
 You’ll have opportunities to monetize the user experience once they’re in your app. [CLICK] Don’t blow it by spamming your users when they’re not. If you spam your users with notifications, they may stop allowing them altogether.
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # L’objet Notification
 
@@ -118,7 +118,7 @@ It's possible to send a notification as follows — here we present a fairly ver
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Fermer une notification
 
@@ -139,28 +139,28 @@ Note: When you receive a "close" event, there is no guarantee that it's the user
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Réengageante
 
-![center h-700](./assets/images/rengaging.png)
+![](./assets/images/rengaging.png 'center h-700')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Support
 
-![center h-800](./assets/images/caniuse_notification.png)
+![](./assets/images/caniuse_notification.png 'center h-800')
 
 Notes:
 MAJ: 2019-06-18
 
 ##==##
 
-<!-- .slide: data-background="#dcdee0" class="transition top no-margin" data-type-show="prez" -->
+<!-- .slide: data-background="#575eaa" class="transition top no-margin" data-type-show="on-stage" -->
 
-![center h-800](./assets/images/cloud_messaging.svg)
+![](./assets/images/cloud_messaging.svg 'center h-800')
 
 # Push API
 
@@ -169,15 +169,15 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Partie client
 
 <br>
 
-![border-circle blue w-300](./assets/images/permission_logo.png)
-![border-circle blue w-300](./assets/images/subscription_logo.png)
-![border-circle blue w-300](./assets/images/pubsub_logo.png)
+![](./assets/images/permission_logo.png 'border-circle blue w-300')
+![](./assets/images/subscription_logo.png 'border-circle blue w-300')
+![](./assets/images/pubsub_logo.png 'border-circle blue w-300')
 
 <p>
 <span class="center">Obtenir la permission<br>pour envoyer des<br>notifications</span>
@@ -187,16 +187,16 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Envoyer un message
 
 <br>
 
-![border-circle blue w-300](./assets/images/message_server_logo.png)
-![border-circle blue w-300](./assets/images/http_logo.png)
-![border-circle blue w-300](./assets/images/airplane_logo.png)
-![border-circle blue w-300](./assets/images/to_device_logo.png)
+![](./assets/images/message_server_logo.png 'border-circle blue w-300')
+![](./assets/images/http_logo.png 'border-circle blue w-300')
+![](./assets/images/airplane_logo.png 'border-circle blue w-300')
+![](./assets/images/to_device_logo.png 'border-circle blue w-300')
 
 <p>
 <span class="center">Créer un<br>message sur<br>votre serveur</span>
@@ -207,15 +207,15 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Recevoir un message
 
 <br>
 
-![border-circle blue w-300](./assets/images/download_logo.png)
-![border-circle blue w-300](./assets/images/light_logo.png)
-![border-circle blue w-300](./assets/images/ring_logo.png)
+![](./assets/images/download_logo.png 'border-circle blue w-300')
+![](./assets/images/light_logo.png 'border-circle blue w-300')
+![](./assets/images/ring_logo.png 'border-circle blue w-300')
 
 <p>
 <span class="center">Le message arrive sur<br>votre appareil</span>
@@ -225,7 +225,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Not
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Vérifier les souscriptions
 
@@ -242,7 +242,7 @@ if ('serviceWorker' in navigator) {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # S'abonner
 
@@ -257,7 +257,7 @@ function subscribe() {
 
 ##==##
 
-<!-- .slide: class="with-code"  data-type-show="prez"-->
+<!-- .slide: class="with-code"  data-type-show="on-stage"-->
 
 # S'abonner
 
@@ -275,7 +275,7 @@ function subscribe() {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Se désabonner
 
@@ -292,7 +292,7 @@ reg.pushManager.getSubscription().then(sub => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Traiter une notification
 
@@ -304,7 +304,7 @@ self.addEventListener('push', event => {...});
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Traiter une notification
 
@@ -323,7 +323,7 @@ self.addEventListener('push', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # De vrais données
 
@@ -335,7 +335,7 @@ fetch('/notification.json').then(response => response.json());
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # De vrais données
 
@@ -355,7 +355,7 @@ fetch('/notification.json')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Proposer des actions
 
@@ -377,7 +377,7 @@ self.registration.showNotification(data.title, {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Gérer l'action
 
@@ -389,7 +389,7 @@ self.addEventListener('notificationclick', event => {...});
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Gérer l'action
 
@@ -407,7 +407,7 @@ self.addEventListener('notificationclick', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Gérer l'action
 
@@ -423,11 +423,11 @@ self.addEventListener('notificationclick', event => {
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Support
 
-![center h-800](./assets/images/caniuse_push.png)
+![](./assets/images/caniuse_push.png 'center h-800')
 
 Notes:
 MAJ: 2024-06-10

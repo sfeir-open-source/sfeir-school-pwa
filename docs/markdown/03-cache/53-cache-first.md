@@ -1,20 +1,20 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage"-->
 
 # Cache First
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez"-->
+<!-- .slide: data-type-show="prez-cache on-stage"-->
 
 # Stratégies de cache : Cache-first
 
-![center h-800](./assets/images/cache-strategy-cache-first.png)
+![](./assets/images/cache-strategy-cache-first.png 'center h-800')
 Notes:
 D'abord le cache, et si pas trouvé, network
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-first : mise en cache
 
@@ -38,7 +38,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache First
 
@@ -53,7 +53,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-first : Avec Workbox
 
@@ -78,7 +78,7 @@ On va en général dédié ça à une stratégie bien particulière exemple les 
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache First avec Workbox
 
@@ -93,13 +93,13 @@ On va en général dédié ça à une stratégie bien particulière exemple les 
 
 ##==##
 
-<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache on-stage"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular - pour les assets
 
@@ -128,7 +128,7 @@ Update Prefetch: prefetch tells the service worker to download and cache the cha
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular - pour les urls type api
 

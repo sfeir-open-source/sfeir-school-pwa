@@ -1,26 +1,26 @@
-<!-- .slide: data-background="./assets/images/fetch_bg.png" class="transition transition mask" data-type-show="prez" -->
+<!-- .slide: data-background="./assets/images/fetch_bg.png" class="transition transition mask" data-type-show="on-stage" -->
 
 # Fetch API
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # L'API Fetch
 
-![center](./assets/images/fetch_api.svg)
+![](./assets/images/fetch_api.svg 'center')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Retourner une réponse personnalisée
 
-![center](./assets/images/fetch_custom_response.svg)
+![](./assets/images/fetch_custom_response.svg 'center')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # L'API Fetch
 

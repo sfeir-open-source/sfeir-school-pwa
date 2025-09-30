@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Implémenter la Push API
 
@@ -17,7 +17,7 @@ Pensez à utiliser event.waitUntil ;) !
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez"-->
+<!-- .slide: class="exercice" data-type-show="on-stage"-->
 
 # Tester la Push API
 
@@ -27,13 +27,13 @@ Utiliser Chrome devtools pour tester le push
 
 <br>
 
-![center h-500](./assets/images/devtools_test_push.png)
+![](./assets/images/devtools_test_push.png 'center h-500')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
-![center h-800](./assets/images/push_companion.png)
+![](./assets/images/push_companion.png 'center h-800')
 
 https://web-push-codelab.glitch.me/
 
@@ -50,7 +50,7 @@ There are a bunch of different ways to create the application server keys. You c
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Tester la Push API
 

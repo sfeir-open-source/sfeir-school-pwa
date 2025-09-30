@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Web App
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Une bonne Web App avant tout !
 
-![w-400 center](./assets/images/ron_harry.png)
+![](./assets/images/ron_harry.png 'w-400 center')
 
 - PWA != premier besoin
 - Une bonne Web App avant tout !
@@ -18,19 +18,19 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # Notre application
 
-![w-200](./assets/images/vanillajs.png)
+![](./assets/images/vanillajs.png 'w-200')
 <span class="big-text">+</span>
-![w-500](./assets/images/material_design.gif)
+![](./assets/images/material_design.gif 'w-500')
 <span class="big-text">=</span>
-![w-300](./assets/images/gabary_phone_sfeirpeople.png)
+![](./assets/images/gabary_phone_sfeirpeople.png 'w-300')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Pour récupérer l'appli
 
@@ -52,7 +52,7 @@ git clone https://github.com/sfeir-open-source/sfeir-school-pwa.git
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Lancer l'appli
 

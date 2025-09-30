@@ -1,16 +1,16 @@
-<!-- .slide: class="transition" data-type-show="prez"-->
+<!-- .slide: class="transition" data-type-show="on-stage"-->
 
 # Chargement
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/compression_bg.jpg" class="transition mask" data-type-show="prez"-->
+<!-- .slide: data-background="./assets/images/compression_bg.jpg" class="transition mask" data-type-show="on-stage"-->
 
 # Compression
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Compression
 
@@ -25,7 +25,7 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Brotli vs Gzip
 
@@ -50,18 +50,18 @@ https://certsimple.com/blog/nginx-brotli
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
 # Brotli
 
-![h-700](./assets/images/caniuse_brotli.png)
+![](./assets/images/caniuse_brotli.png 'h-700')
 
 Notes:
 MAJ: 2018-08-31
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition mask" data-type-show="prez"-->
+<!-- .slide: data-background="./assets/images/images_bg.jpg" class="transition mask" data-type-show="on-stage"-->
 
 # Images
 
@@ -69,15 +69,15 @@ MAJ: 2018-08-31
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
 # Quel format choisir
 
-![h-600](./assets/images/decision_tree_images.png)
+![](./assets/images/decision_tree_images.png 'h-600')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Format modernes
 
@@ -96,10 +96,10 @@ Offrent de meilleures performances et plus de souplesse
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
-![h-150](./assets/images/chrome_logo.png)
-![h-150](./assets/images/webp_logo.png)
+![](./assets/images/chrome_logo.png 'h-150')
+![](./assets/images/webp_logo.png 'h-150')
 
 <br>
 
@@ -107,7 +107,7 @@ Les fichiers WebP sont 26% plus petit que les PNG.
 
 Les fichiers WebP sont 25-34% plus petit que les JPEG.
 
-![center h-400](./assets/images/caniuse_webp.png)
+![](./assets/images/caniuse_webp.png 'center h-400')
 
 Notes:
 Update on 2019-05-16
@@ -117,10 +117,10 @@ on-the-fly-webp-decoding-using-wasm-and-a-service-worker-33e519d8c21e
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
-![h-150](./assets/images/safari_logo.png)
-![h-150](./assets/images/jpef2000_logo.png)
+![](./assets/images/safari_logo.png 'h-150')
+![](./assets/images/jpef2000_logo.png 'h-150')
 
 <br>
 
@@ -128,15 +128,15 @@ PNG reste meilleur avec peu de couleurs (diagrammes)
 
 Performances de compressions similaires mais bien plus souple (ex: compressions différentes par région)
 
-![center h-400](./assets/images/caniuse_jpeg2000.png)
+![](./assets/images/caniuse_jpeg2000.png 'center h-400')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # JPeg XR
 
-![h-150 center](./assets/images/edge_logo.png)
+![](./assets/images/edge_logo.png 'h-150 center')
 
 ~35% plus petit que le JPEG
 
@@ -144,11 +144,11 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 
 <br>
 
-![center h-400](./assets/images/caniuse_jpegxr.png)
+![](./assets/images/caniuse_jpegxr.png 'center h-400')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Fallback
 
@@ -164,11 +164,11 @@ Performances de compressions similaires mais bien plus souple (ex: compressions 
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Gif is 💀
 
-![center h-200](./assets/images/gif_size.png)
+![](./assets/images/gif_size.png 'center h-200')
 
 <br>
 
@@ -187,21 +187,21 @@ ffmpeg -i input.gif output.mp4
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition mask" data-type-show="prez" -->
+<!-- .slide: data-background="./assets/images/scripts_bg.jpg" class="transition mask" data-type-show="on-stage" -->
 
 # Scripts
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
 # Download & Excecution cost
 
-![h-700](./assets/images/download_execution_bg.png)
+![](./assets/images/download_execution_bg.png 'h-700')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Réduire le "poid" de vos scripts
 
@@ -215,28 +215,28 @@ ffmpeg -i input.gif output.mp4
 
 ##==##
 
-<!-- .slide: class="full-center"  data-type-show="prez"-->
+<!-- .slide: class="full-center"  data-type-show="on-stage"-->
 
 # Devtools Code coverage
 
-![h-700](./assets/images/devtools_code_coverage.png)
+![](./assets/images/devtools_code_coverage.png 'h-700')
 
 Notes:
 https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
 # Parse / Compile
 
-![h-700](./assets/images/parse_compile.png)
+![](./assets/images/parse_compile.png 'h-700')
 
 ##==##
 
-<!-- .slide: class="" data-type-show="prez"-->
+<!-- .slide: class="" data-type-show="on-stage"-->
 
-![h-800 center](./assets/images/javascript_parse_cost.png)
+![](./assets/images/javascript_parse_cost.png 'h-800 center')
 
 [The cost of javascript - 2018](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
 
@@ -244,29 +244,29 @@ https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverag
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
-![h-800](./assets/images/javascript_parse_cost_phone.png)
-
-##==##
-
-<!-- .slide: class="full-center" data-type-show="prez"-->
-
-![h-800](./assets/images/time_to_interactive.png)
+![](./assets/images/javascript_parse_cost_phone.png 'h-800')
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
-![h-800](./assets/images/tti_on_mobile.png)
+![](./assets/images/time_to_interactive.png 'h-800')
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
+
+![](./assets/images/tti_on_mobile.png 'h-800')
+
+##==##
+
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
 # Chargement des scripts tiers
 
-![h-600](./assets/images/load_scrip_order.png)
+![](./assets/images/load_scrip_order.png 'h-600')
 
 Notes:
 
@@ -277,11 +277,11 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="" data-type-show="prez"-->
+<!-- .slide: class="" data-type-show="on-stage"-->
 
 # HTTP2
 
-![h-500 center](./assets/images/http2_demo.gif)
+![](./assets/images/http2_demo.gif 'h-500 center')
 
 [HTTP2 Golang demo](https://http2.golang.org/gophertiles?latency=0)
 
@@ -294,11 +294,11 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
 # HTTP1 Waterfall
 
-![h-800](./assets/images/watefall_http1.jpg)
+![](./assets/images/watefall_http1.jpg 'h-800')
 
 Notes:
 
@@ -308,11 +308,11 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
 # HTTP2 Waterfall
 
-![h-800](./assets/images/watefall_http2.jpg)
+![](./assets/images/watefall_http2.jpg 'h-800')
 
 Notes:
 
@@ -323,16 +323,16 @@ Notes:
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # HTTP n'est pas le futur...
 
 ... c'est le présent
-![h-600](./assets/images/caniuse-http2.png)
+![](./assets/images/caniuse-http2.png 'h-600')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # How to ?
 

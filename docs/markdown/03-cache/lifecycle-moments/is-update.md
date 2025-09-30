@@ -1,4 +1,4 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Workbox
 
@@ -9,7 +9,7 @@ Ajouter des slides pour expliquer comment utiliser workbox
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de caches
 

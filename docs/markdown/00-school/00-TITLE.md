@@ -4,7 +4,7 @@
 
 ##==##
 
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" data-type-show="prez" -->
+<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="pwa" data-type-show="on-stage" -->
 
 # **Welcome to Sfeir School**
 
@@ -12,7 +12,7 @@
 
 ##==##
 
-<!-- .slide: class="bg-blur" data-type-show="prez" -->
+<!-- .slide: class="bg-blur" data-type-show="on-stage" -->
 
 <br>
 
@@ -20,7 +20,7 @@
 
 <br>
 
-![sfeir-icons](wifi)<!-- .element: style="--icon-size:300px; --icon-color:var(--light-grey);" -->
+![](wifi 'tc-icons feather')<!-- .element: style="--tc-icon-size:300px; --tc-icon-color:var(--light-grey);" -->
 
 <br>
 
@@ -29,13 +29,13 @@ Credentials
 <!-- .element: class="center" -->
 <br>
 
-![sfeir-icons big](user)<!-- .element: style="--icon-color:var(--light-grey);" --> SSID
+![](user 'tc-icons feather tc-big')<!-- .element: style="--tc-icon-color:var(--light-grey);" --> SSID
 
-![sfeir-icons big](lock)<!-- .element: style="--icon-color:var(--light-grey);" --> PWD
+![](lock 'tc-icons feather tc-big')<!-- .element: style="--tc-icon-color:var(--light-grey);" --> PWD
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Déroulement de la formation
 

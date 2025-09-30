@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage"-->
 
 # Network Only
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Stratégies de cache : Network-only
 
-![center h-800](./assets/images/cache-strategy-network-only.png)
+![](./assets/images/cache-strategy-network-only.png 'center h-800')
 
 Notes:
 on ne veut pas de cache car l'opération est critique/ne peut pas fonctionner hors ligne.
@@ -17,7 +17,7 @@ Si ce n'est qu'une partie de l'application, il est important d'expliquer clairem
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage"-->
 
 # Network-only : Utilisation
 
@@ -38,7 +38,7 @@ Il n'y a pas ici d'initialisation
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage"-->
 
 # Network-only : Utilisation (Real Life example)
 
@@ -59,7 +59,7 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Network Only (Appels serveurs)
 
@@ -75,7 +75,7 @@ On va en général réserver ça à certaines requêtes. On notera qu'on ne pass
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Network-only : Avec Workbox bis
 
@@ -98,7 +98,7 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Network Only avec Workbox
 
@@ -115,13 +115,13 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache on-stage"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular
 

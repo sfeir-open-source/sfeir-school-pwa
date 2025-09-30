@@ -1,14 +1,14 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Service Worker
 
-![center](./assets/images/service_worker_explain.svg)
+![](./assets/images/service_worker_explain.svg 'center')
 
 Notes: Un service worker est un proxy programmable côté client entre la webapp et l'exterieur
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/grid_background.svg" data-type-show="prez" -->
+<!-- .slide: data-background="./assets/images/grid_background.svg" data-type-show="on-stage" -->
 
 <div class="grid-worker">
     <div class="cell-1">
@@ -35,11 +35,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Support
 
-![center h-600](./assets/images/caniuse_serviceworker.png)
+![](./assets/images/caniuse_serviceworker.png 'center h-600')
 
 <br>
 <h2 class="center"><a href="https://jakearchibald.github.io/isserviceworkerready/" target="_blank">Is Service Worker Ready ?</a></h2>

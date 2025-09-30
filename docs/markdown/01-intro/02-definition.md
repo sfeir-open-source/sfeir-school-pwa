@@ -1,4 +1,4 @@
-<!-- .slide: class="transition" data-type-show="prez" -->
+<!-- .slide: class="transition" data-type-show="on-stage" -->
 
 # Définition
 
@@ -11,9 +11,9 @@ But... What does this actually mean in practice?
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
-![center h-800](./assets/images/before_target.png)
+![](./assets/images/before_target.png 'center h-800')
 
 <span class="target-capacities">Capacités</span>
 <span class="target-touch">La portée</span>
@@ -26,9 +26,9 @@ The web is safer, and it’s permission model is more respectful of your privacy
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
-![center h-800](./assets/images/after_target.png)
+![](./assets/images/after_target.png 'center h-800')
 
 <span class="target-capacities">Capacités</span>
 <span class="target-touch">La portée</span>
@@ -40,26 +40,26 @@ A Progressive Web App is simply that, a great user experience that feels integra
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Intégrée
 
-![w-400](./assets/images/screenshot_integrated.png)
-![w-400](./assets/images/screenshot_integrated_2.png)
-![w-400](./assets/images/screenshot_integrated_3.png)
+![](./assets/images/screenshot_integrated.png 'w-400')
+![](./assets/images/screenshot_integrated_2.png 'w-400')
+![](./assets/images/screenshot_integrated_3.png 'w-400')
 
 Notes:
 Parler du fait que c'est complétement intégrer maintenant et que c'est transparant pour l'utilisateur
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Case Studies
 
-![w-300](./assets/images/screenshot_georges.png)
-![w-300](./assets/images/gabary_phone_book_my_show.png)
-![w-300](./assets/images/gabary_phone_twitter-lite.png)
+![](./assets/images/screenshot_georges.png 'w-300')
+![](./assets/images/gabary_phone_book_my_show.png 'w-300')
+![](./assets/images/gabary_phone_twitter-lite.png 'w-300')
 
 <p>
 <span class="center"><a href="https://developers.google.com/web/showcase/2018/asda-george" target="_blank">Georges.com</a></span>
@@ -69,11 +69,11 @@ Parler du fait que c'est complétement intégrer maintenant et que c'est transpa
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Au delà du buzz word
 
-![center w-1000](./assets/images/buzz_words.png)
+![](./assets/images/buzz_words.png 'center w-1000')
 
 Notes:
 Souvent réduit à “une web app installable” -> fausse impression de nouvelle plateforme / type d’app
@@ -82,7 +82,7 @@ De nouvelles technos pour un MEILLEUR web, sans oublier les best practices “hi
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Progressive
 
@@ -103,7 +103,7 @@ But... What does this actually mean in practice?
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Progressive
 

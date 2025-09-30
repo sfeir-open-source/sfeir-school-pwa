@@ -26,19 +26,19 @@
     width: 100%;
   }
 
-  img:not([alt='speaker']) {
+  img:not(.speaker) {
     padding: 25px;
   }
-  img[alt*='red'] {
+  img.red {
     background: $red;
   }
-  img[alt*='green'] {
+  img.green {
     background: $green;
   }
-  img[alt*='blue'] {
+  img.blue {
     background: $blue;
   }
-  img[alt*='purple'] {
+  img.purple {
     background: $purple;
   }
 }

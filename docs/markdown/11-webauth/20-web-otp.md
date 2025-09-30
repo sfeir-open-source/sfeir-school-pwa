@@ -1,10 +1,10 @@
-<!-- .slide: class="transition" data-type-show="prez"-->
+<!-- .slide: class="transition" data-type-show="on-stage"-->
 
 # WebOTP
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -14,15 +14,15 @@ API permettant de récupérer des OTP (One Time Password) envoyés par SMS.
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
-![center h-800](./assets/images/webotp.svg)
+![](./assets/images/webotp.svg 'center h-800')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -34,7 +34,7 @@ API permettant de récupérer des OTP (One Time Password) envoyés par SMS.
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -46,7 +46,7 @@ API permettant de récupérer des OTP (One Time Password) envoyés par SMS.
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -63,7 +63,7 @@ L'utilisation d'un type "text" est volontaire car le type "number" affiche aussi
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -87,7 +87,7 @@ Your OTP Code: 123456
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -103,7 +103,7 @@ if ('OTPCredential' in window) {
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -123,7 +123,7 @@ if ('OTPCredential' in window) {
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -141,7 +141,7 @@ navigator.credentials.get({
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -158,7 +158,7 @@ Ne marche que sur Chrome et si vous êtes connectés avec le même compte !
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebOTP API
 
@@ -170,7 +170,7 @@ Ne marche que sur Chrome et si vous êtes connectés avec le même compte !
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # Tableau de compatibilité
 

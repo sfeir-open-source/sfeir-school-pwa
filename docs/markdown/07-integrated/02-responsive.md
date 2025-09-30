@@ -1,14 +1,15 @@
-<!-- .slide: class="transition"  data-type-show="prez"-->
+<!-- .slide: class="transition"  data-type-show="on-stage"-->
 
 # Responsive Design
 
 ##==##
 
-<!-- .slide: class="" data-type-show="prez"-->
+<!-- .slide: class="" data-type-show="on-stage"-->
 
 # Responsive Design ?
 
 <br />
+
 **Une application doit pouvoir être disponible sur tout type de périphérique**
 
 - Pas de développement pour une taille d'écran unique / plateforme.
@@ -16,13 +17,15 @@
 - Éviter la perte de confiance de l'utilisateur.
 
 <br />
+
 Par exemple :
+
 - Ne jamais avoir besoin d'un scroll horizontal sur mobile.
 - Éviter les tailles fixées en pixel.
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Comment faire ?
 
@@ -30,12 +33,13 @@ Par exemple :
 - Utilisez Flexbox et GridLayout
 - Utilisez les media queries
 
-![center h-300](./assets/images/caniuse_flexbox.png)
-![center h-300](./assets/images/caniuse_gridlayout.png)
+![](./assets/images/caniuse_flexbox.png 'center h-300')
+
+![](./assets/images/caniuse_gridlayout.png 'center h-300')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Le meta tag viewport
 
@@ -53,28 +57,28 @@ Sinon le viewport va être définit comme faisant 980px sur la plupart des brows
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Relative sizing ?
 
-![center h-600](./assets/images/relative-sizing.png)
+![](./assets/images/relative-sizing.png 'center h-600')
 
 Notes: Les tailles relatives peuvent aider, mais ne sont pas assez.
 Ce type de layout sur mobile va rendre des contenus beaucoup trop petit pour être utilisable
 
 ##==##
 
-<!-- .slide: data-type-show="prez"-->
+<!-- .slide: data-type-show="on-stage"-->
 
 # Media queries
 
-![center h-600](./assets/images/media-queries.png)
+![](./assets/images/media-queries.png 'center h-600')
 
 Notes: Utiliser différentes règles CSS pour différentes taille du viewport, basé sur la largeur
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Media queries (exemples)
 
@@ -94,7 +98,7 @@ Notes: Commencer par le plus petit, et en faire celui par défaut
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Media queries en javascript
 
@@ -110,7 +114,7 @@ if (window.matchMedia(media).matches) {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Calc() à la rescousse
 
@@ -130,7 +134,7 @@ Notes: Si vous souhaitez 2 images sur la largeur, avec une marge, calc permet de
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # ⚠️ Faire attention
 

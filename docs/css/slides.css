@@ -1,32 +1,43 @@
-.reveal .slides section .center {
-  text-align: center;
-}
-.reveal .slides section .big-text {
-  font-size: 3em;
-}
-.reveal .slides section.sfeir-basic-slide .center-big {
-  text-align: center;
-  font-size: 2.5em;
-  color: black;
-}
-.reveal .slides section.sfeir-basic-slide h1.center-big {
-  font-size: 3em;
-}
-.reveal .slides section.with-code pre.big-code:not(.literal), .reveal .slides section.with-code-dark pre.big-code:not(.literal) {
-  position: relative;
-  top: 0;
-}
-.reveal .slides section img[alt*=full-width-screen] {
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.reveal .slides section img[alt*=bottom] {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+/*
+.reveal .slides section {
+  .center {
+    text-align: center;
+  }
+  .big-text {
+    font-size: 3em;
+  }
 
+  &.sfeir-basic-slide {
+    .center-big {
+      text-align: center;
+      font-size: 2.5em;
+      color: black;
+    }
+    h1.center-big {
+      font-size: 3em;
+    }
+  }
+
+  &.with-code,
+  &.with-code-dark {
+    pre.big-code:not(.literal) {
+      position: relative;
+      top: 0;
+    }
+  }
+
+  img[alt*='full-width-screen'] {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  img[alt*='bottom'] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}*/
 /**
 Specifics
 */
@@ -52,19 +63,19 @@ Specifics
   text-align: center;
   width: 100%;
 }
-.reveal .slides section img:not([alt=speaker]) {
+.reveal .slides section img:not(.speaker) {
   padding: 25px;
 }
-.reveal .slides section img[alt*=red] {
+.reveal .slides section img.red {
   background: #dd311f;
 }
-.reveal .slides section img[alt*=green] {
+.reveal .slides section img.green {
   background: #249f5a;
 }
-.reveal .slides section img[alt*=blue] {
+.reveal .slides section img.blue {
   background: #314ffe;
 }
-.reveal .slides section img[alt*=purple] {
+.reveal .slides section img.purple {
   background: #773f9b;
 }
 
@@ -95,7 +106,7 @@ Specifics
   color: white;
   display: grid;
   grid-template-columns: 50%;
-  grid-template-areas: "a b" "c d";
+  grid-template-areas: 'a b' 'c d';
   width: 100%;
   height: 100%;
   text-align: center;
@@ -135,13 +146,19 @@ Specifics
 
 .reveal .slides section.mariane h1 {
   position: absolute;
-  bottom: 500px;
+  bottom: 600px;
   width: 100%;
   color: white;
 }
 
-.reveal .slides section.with-code.max-height pre code {
-  max-height: 800px;
+/*
+.reveal .slides section {
+  // Do some stuff
+
+  &.with-code.max-height pre code {
+    max-height: 800px;
+  }
 }
+*/
 
 /*# sourceMappingURL=slides.css.map */

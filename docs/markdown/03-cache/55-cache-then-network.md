@@ -1,21 +1,21 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage"-->
 
 # Cache Then Network
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Stratégies de cache : Cache-Then-Network
 
-![center h-800](./assets/images/cache-strategy-cache-then-network.png)
+![](./assets/images/cache-strategy-cache-then-network.png 'center h-800')
 
 Notes:
 Ici, on récupère le cache, et en même temps, on va chercher le network. Quand le résultat du network est là, alors on rafraichit de façon pro-active la page. Nécessite une approche en plusieurs étape
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-Then-Network : example
 
@@ -42,7 +42,7 @@ On ne renvoie pas directement le résultat du network !! On met en cache le rés
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-Then-Network : example (suite)
 
@@ -62,7 +62,7 @@ const networkUpdate = fetch('data.json')
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-Then-Network : example (suite)
 
@@ -85,7 +85,7 @@ caches
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache Then Network
 
@@ -101,7 +101,7 @@ caches
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-Then-Network : Avec Workbox
 
@@ -126,7 +126,7 @@ On reste en Network first car l'objectif est d'aller sur le serveur, par contre 
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache Then Network avec Workbox
 
@@ -142,13 +142,13 @@ On reste en Network first car l'objectif est d'aller sur le serveur, par contre 
 
 ##==##
 
-<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache on-stage"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular
 

@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez"-->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage"-->
 
 # Entry Point & App Shell
 
@@ -14,7 +14,7 @@ Should it include the main navigation UI?
 
 <br>
 
-![center](./assets/images/PRPL/prpl_loading-appshell_html-vs-js.png)
+![](./assets/images/PRPL/prpl_loading-appshell_html-vs-js.png 'center')
 
 Notes:
 left: application shell is in html -> heavy entry point
@@ -24,7 +24,7 @@ The App Entrypoint should have minimal static dependencies, in other words, not 
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Shell
 
@@ -32,7 +32,7 @@ The App Entrypoint should have minimal static dependencies, in other words, not 
 include everything needed for first paint
 </p>
 
-![center h-800](./assets/images/app_shell.png)
+![](./assets/images/app_shell.png 'center h-800')
 
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/architecture/app-shell)
 

@@ -1,4 +1,4 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAPIs for your Device
 
@@ -20,7 +20,7 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Demandez (gentiment) la permission !
 
@@ -52,43 +52,43 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
-![h-800](./assets/images/install_do.png)
-![h-800](./assets/images/install_dont.png)
+![](./assets/images/install_do.png 'h-800')
+![](./assets/images/install_dont.png 'h-800')
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/geolocation.png" class="transition mask" data-type-show="prez"-->
+<!-- .slide: data-background="./assets/images/geolocation.png" class="transition mask" data-type-show="on-stage"-->
 
 # Geolocation
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Support 🎉
 
-![center h-600](./assets/images/caniuse_geolocation.png)
+![](./assets/images/caniuse_geolocation.png 'center h-600')
 
 Notes:
 Tous sauf IE8, Safari 4 & Opera Mini
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/fullscreen_api.jpg" class="transition bottom" data-type-show="prez"-->
+<!-- .slide: data-background="./assets/images/fullscreen_api.jpg" class="transition bottom" data-type-show="on-stage"-->
 
 # API
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Support
 
 <br>
 
-![center h-700](./assets/images/caniuse_fullscreen.png)
+![](./assets/images/caniuse_fullscreen.png 'center h-700')
 
 Notes:
 IE 11 doesn't allow going to fullscreen mode when the event that triggers msRequestFullscreen() is a keydown or pointerdown event (keypress and click do work)
@@ -100,17 +100,17 @@ Opera 12.1 uses the older specificaton's :fullscreen-ancestor pseudo-class inste
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # Appeler un numéro depuis un site web ?
 
-![h-400](./assets/images/call_phone_1.png)
-![h-400](./assets/images/call_phone_2.png)
-![h-400](./assets/images/call_phone_3.png)
+![](./assets/images/call_phone_1.png 'h-400')
+![](./assets/images/call_phone_2.png 'h-400')
+![](./assets/images/call_phone_3.png 'h-400')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Click to call
 
@@ -132,21 +132,21 @@ https://developers.google.com/web/fundamentals/native-hardware/click-to-call/
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Support 👌
 
-![center h-800](./assets/images/support_call_phone.png)
+![](./assets/images/support_call_phone.png 'center h-800')
 
 ##==##
 
-<!-- .slide: data-type-show="prez"-->
+<!-- .slide: data-type-show="on-stage"-->
 
 # Effectuer un achat en ligne ?
 
 <br><br>
 
-![center h-500](./assets/images/buy_online.png)
+![](./assets/images/buy_online.png 'center h-500')
 
 Notes:
 Buying goods online is a convenient but often frustrating experience, particularly on mobile devices. Although mobile traffic continues to increase, mobile conversions account for only about a third of all completed purchases. In other words, users abandon mobile purchases twice as often as desktop purchases. Why?
@@ -163,21 +163,21 @@ Je pense que pour cette partie, on peut adopter un bon rythme avec la répétiti
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Payment Request API
 
-![center h-800](./assets/images/payment_request_api.png)
+![](./assets/images/payment_request_api.png 'center h-800')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Payment Request API : process
 
 <br>
 
-![center h-700](./assets/images/payment_request_process.png)
+![](./assets/images/payment_request_process.png 'center h-700')
 
 Notes:
 https://developers.google.com/web/fundamentals/payments/
@@ -187,23 +187,28 @@ The browser then presents the payments UI to the user, who selects a payment met
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Support 🚀
 
-![center h-800](./assets/images/caniuse_payment.png)
+![](./assets/images/caniuse_payment.png 'center h-800')
 
 Notes:
 MAJ 2019-05-16
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # Partager un contenu ?
 
-![h-500](./assets/images/url_image.png)
-![h-400](./assets/images/sup_share.png)
+<div class="flex-row">
+
+![](./assets/images/url_image.png 'h-500')
+
+![](./assets/images/sup_share.png 'h-400')
+
+</div>
 
 Notes:
 Good news, everybody! In Chrome 61 for Android, we've launched the navigator.share() method, which allows websites to invoke the native sharing capabilities of the host platform.
@@ -211,7 +216,7 @@ This method, part of the simple Web Share API—written by Matt Giuca on the Chr
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez"-->
+<!-- .slide: class="with-code" data-type-show="on-stage"-->
 
 # Share API
 
@@ -238,41 +243,41 @@ This method, part of the simple Web Share API—written by Matt Giuca on the Chr
 
 ##==##
 
-<!-- .slide: data-type-show="prez"  -->
+<!-- .slide: data-type-show="on-stage"  -->
 
 # Support 🧐
 
-![center h-800](./assets/images/caniuse_webshare.png)
+![](./assets/images/caniuse_webshare.png 'center h-800')
 
 Notes:
 Update on 2024-06-10
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # What web can do today ?
 
-![center h-900](./assets/images/whatwebcandotoday.png)
+![](./assets/images/whatwebcandotoday.png 'center h-900')
 
 Notes:
 à reprendre avec une vrais liste qu'on pourra mettre à jour
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez" -->
+<!-- .slide: class="full-center" data-type-show="on-stage" -->
 
 ![](./assets/images/webauthn/good-signup-in_io18.png)
 
 ##==##
 
-<!-- .slide: data-background="white" class="full-center" data-type-show="prez"-->
+<!-- .slide: data-background="white" class="full-center" data-type-show="on-stage"-->
 
 ![](./assets/images/webauthn/webauthn-logo.png)
 
 ##==##
 
-<!-- .slide: class="transition left underline" data-background="./assets/images/webauthn/bored.jpeg" data-type-show="prez"-->
+<!-- .slide: class="transition left" data-background="./assets/images/webauthn/bored.jpeg" data-type-show="on-stage"-->
 
 # Security is boring!
 
@@ -281,19 +286,19 @@ ajoute de la friction pour l'utilisateur
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
 
-![signup-email h-900](./assets/images/webauthn/signup-email.jpg)
-
-##==##
-
-<!-- .slide: class="full-center" data-type-show="prez"-->
-
-![password-strength h-600](./assets/images/webauthn/password-strength-meters.png)
+![](./assets/images/webauthn/signup-email.jpg 'signup-email h-900')
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/webauthn/one-tap.png" class="full-center transition" data-type-show="prez"-->
+<!-- .slide: class="full-center" data-type-show="on-stage"-->
+
+![](./assets/images/webauthn/password-strength-meters.png 'password-strength h-600')
+
+##==##
+
+<!-- .slide: data-background="./assets/images/webauthn/one-tap.png" class="full-center transition" data-type-show="on-stage"-->
 
 Notes:
 un premier pas vers une meilleur UX
@@ -301,7 +306,7 @@ mais quid de la sécu ?
 
 ##==##
 
-<!-- .slide: data-background="black" class="full-center mariane" data-type-show="prez"-->
+<!-- .slide: data-background="black" class="full-center mariane" data-type-show="on-stage"-->
 
 What's new?
 
@@ -309,4 +314,4 @@ What's new?
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/webauthn/2fa-new.png" class="full-center"  data-type-show="prez"-->
+<!-- .slide: data-background="./assets/images/webauthn/2fa-new.png" class="full-center"  data-type-show="on-stage"-->

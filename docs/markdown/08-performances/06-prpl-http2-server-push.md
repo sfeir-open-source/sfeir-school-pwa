@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez"-->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage"-->
 
 # Server Push
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # HTTP/2 Server Push
 
-![center](./assets/images/PRPL/push01.svg)
+![](./assets/images/PRPL/push01.svg 'center')
 
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/performance/http2/)
 
@@ -16,7 +16,7 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 | Keyword       | Description                                                                                                                  |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------- |

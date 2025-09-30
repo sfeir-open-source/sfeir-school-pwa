@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache-cache
 
@@ -14,8 +14,8 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Delete Cache
 
-![center h-700](./assets/images/sw_delete_cache.png)
+![](./assets/images/sw_delete_cache.png 'center h-700')

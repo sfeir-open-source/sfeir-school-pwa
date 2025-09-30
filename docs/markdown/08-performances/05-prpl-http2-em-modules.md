@@ -1,16 +1,16 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # HTTP/2 Multiplexing
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # HTTP/2 Multiplexing
 
 <br><br>
 
-![center](./assets/images/PRPL/multiplexing01.svg)
+![](./assets/images/PRPL/multiplexing01.svg 'center')
 
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/performance/http2/)
 
@@ -18,11 +18,11 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # ES Modules
 
-![center h-800](./assets/images/PRPL/es_module.png)
+![](./assets/images/PRPL/es_module.png 'center h-800')
 
 © [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) [Mozilla](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 
@@ -30,11 +30,11 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez"-->
+<!-- .slide: data-type-show="on-stage"-->
 
 # Performance
 
-![center h-800](./assets/images/PRPL/renderer-main-thread-time-breakdown.png)
+![](./assets/images/PRPL/renderer-main-thread-time-breakdown.png 'center h-800')
 
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/primers/modules)
 
@@ -42,11 +42,11 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Bundling
 
-![center h-800](./assets/images/PRPL/app-build-bundles.png)
+![](./assets/images/PRPL/app-build-bundles.png 'center h-800')
 
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
 
@@ -54,11 +54,11 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Dynamic import
 
-![center h-800](./assets/images/PRPL/dynamic_import_graph.png)
+![](./assets/images/PRPL/dynamic_import_graph.png 'center h-800')
 
 © [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) [Mozilla](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 

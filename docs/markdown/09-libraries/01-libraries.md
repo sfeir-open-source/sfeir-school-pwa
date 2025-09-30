@@ -1,4 +1,4 @@
-<!-- .slide: class="" data-type-show="prez"-->
+<!-- .slide: class="" data-type-show="on-stage"-->
 
 # Workbox
 
@@ -12,7 +12,7 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Prpl-server-node
 
@@ -26,7 +26,7 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Http2-Push-Manifest
 
@@ -40,7 +40,7 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Http2push-gae
 

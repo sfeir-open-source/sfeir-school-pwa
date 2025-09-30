@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Syncrhonisation de données
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez" -->
+<!-- .slide: class="full-center" data-type-show="on-stage" -->
 
 # Avant le Background-sync
 
@@ -14,14 +14,14 @@
 1. Mettre en place un mécanisme de relance au démarrage de l'application au cas où
 
 <br><br><br><br>
-![h-300](./assets/images/wifi_no-wifi.png)
+![](./assets/images/wifi_no-wifi.png 'h-300')
 Connexion toujours disponible ?
 
 Notes:
 
 ##==##
 
-<!-- .slide: class="full-center" data-type-show="prez" -->
+<!-- .slide: class="full-center" data-type-show="on-stage" -->
 
 # Background-sync
 
@@ -32,14 +32,14 @@ Notes:
 1. Recommencer 🙃
 
 <br><br><br><br>
-![h-300](./assets/images/wifi_no-wifi.png)
+![](./assets/images/wifi_no-wifi.png 'h-300')
 Connexion toujours disponible ?
 
 Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Background-sync
 
@@ -71,7 +71,7 @@ tag = unique sinon ecrase
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Real World Code
 
@@ -95,7 +95,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Real World Code
 
@@ -119,7 +119,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code"  data-background="#fb8c00" data-type-show="prez" -->
+<!-- .slide: class="with-code"  data-background="#fb8c00" data-type-show="on-stage" -->
 
 # BackgroundSync - Wokrbox
 
@@ -147,17 +147,17 @@ Notes:
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Utilisabilité
 
-![h-600](./assets/images/caniuse-background-sync.png)
+![](./assets/images/caniuse-background-sync.png 'h-600')
 
 Notes: 03/07/2019
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez"-->
+<!-- .slide: class="exercice" data-type-show="on-stage"-->
 
 # Mettons en place du background Sync
 
@@ -171,13 +171,13 @@ Notes: 03/07/2019
 
 ##==##
 
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Periodic Background Sync
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 ## PBS: Periodic Background Sync
 
@@ -188,7 +188,7 @@ Infos du 03/09/20
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Demander l'autorisation
 
@@ -212,7 +212,7 @@ Toujours demander l'autorisation !!
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 ## Enregistrement du PBS
 
@@ -238,7 +238,7 @@ En général, pas plus d'une syncrho par jour !
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 ## Désinscription du PBS
 
@@ -257,7 +257,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 ## Réponse à un pbs event
 
@@ -278,10 +278,10 @@ self.addEventListener('periodicsync', event => {
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Utilisabilité
 
-![h-600](./assets/images/caniuse_pbs.png)
+![](./assets/images/caniuse_pbs.png 'h-600')
 
 Notes: 03/09/2020

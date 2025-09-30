@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Bye bye le cache
 
@@ -16,8 +16,8 @@ Lors de l’event “activate”, supprimer le cache dynamic !
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Sinon ...on a Workbox
 
-![center h-700](./assets/images/workbox.png)
+![](./assets/images/workbox.png 'center h-700')

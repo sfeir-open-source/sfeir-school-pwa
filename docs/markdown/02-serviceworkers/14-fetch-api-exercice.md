@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" data-type-show="prez"-->
+<!-- .slide: class="exercice" data-type-show="on-stage"-->
 
 # Fetch API
 

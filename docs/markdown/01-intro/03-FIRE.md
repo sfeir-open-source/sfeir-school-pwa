@@ -1,4 +1,4 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # 🔥 F.I.R.E. 🔥
 
@@ -6,16 +6,16 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # PWA F.I.R.E. 💡
 
 <br>
 
-![red w-300](./assets/images/performante_icon.png)
-![green w-300](./assets/images/integrated_icon.png)
-![blue w-300](./assets/images/fiable_icon.png)
-![purple w-300](./assets/images/engaging_icon.png)
+![](./assets/images/performante_icon.png 'red w-300')
+![](./assets/images/integrated_icon.png 'green w-300')
+![](./assets/images/fiable_icon.png 'blue w-300')
+![](./assets/images/engaging_icon.png 'purple w-300')
 
 <p>
 <span class="center">Performante<br>(Fast)</span>
@@ -42,16 +42,16 @@ Linkable → Peut être tout simplement identifier par une URL
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # PWA F.I.R.E. ✨
 
 <br>
 
-![red w-300](./assets/images/performante_icon.png)
-![green w-300](./assets/images/integrated_icon.png)
-![blue w-300](./assets/images/fiable_icon.png)
-![purple w-300](./assets/images/engaging_icon.png)
+![](./assets/images/performante_icon.png 'red w-300')
+![](./assets/images/integrated_icon.png 'green w-300')
+![](./assets/images/fiable_icon.png 'blue w-300')
+![](./assets/images/engaging_icon.png 'purple w-300')
 
 <p>
 <span class="center">App<br>Shell</span>
@@ -62,16 +62,16 @@ Linkable → Peut être tout simplement identifier par une URL
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # 🔥 F.I.R.E. 🔥
 
 <br>
 
-![red w-300](./assets/images/performante_icon.png)
-![green w-300](./assets/images/integrated_icon.png)
-![blue w-300](./assets/images/fiable_icon.png)
-![purple w-300](./assets/images/engaging_icon.png)
+![](./assets/images/performante_icon.png 'red w-300')
+![](./assets/images/integrated_icon.png 'green w-300')
+![](./assets/images/fiable_icon.png 'blue w-300')
+![](./assets/images/engaging_icon.png 'purple w-300')
 
 <p>
 <span class="center">Performance<br><br>(loading<br>& rendering)</span>

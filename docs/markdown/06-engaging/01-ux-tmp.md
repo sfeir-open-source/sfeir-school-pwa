@@ -1,14 +1,12 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # UX
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Tips pour une bonne UX
-
-<!-- .slide:  -->
 
 - Misez sur l'asynchrone
 - Evitez les Gestures non classiques

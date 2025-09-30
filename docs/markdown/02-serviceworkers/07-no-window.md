@@ -1,10 +1,10 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WorkerGlobalScope
 
 <br>
 
-![float-left w-300](./assets/images/no_way.png)
+![](./assets/images/no_way.png 'float-left w-300')
 
 <span class="big-text center"><strong>browsing context<br>⇒ Window</span>
 

@@ -1,4 +1,4 @@
-<!-- .slide: class="center" data-type-show="prez" -->
+<!-- .slide: class="center" data-type-show="on-stage" -->
 
 # Channel Messaging API
 

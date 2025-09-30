@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # MessageChannel pour la communication direct
 
@@ -27,7 +27,7 @@ function send_direct_message_to_sw(message) {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Répondre directement
 
@@ -44,7 +44,7 @@ self.addEventListener('message', event => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="on-stage" -->
 
 # Avec Workbox
 
@@ -64,7 +64,7 @@ console.log('Service Worker version:', swVersion);
 
 ##==##
 
-<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="on-stage" -->
 
 # Avec Workbox
 

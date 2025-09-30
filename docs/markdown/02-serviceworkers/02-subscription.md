@@ -1,10 +1,10 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # **Service Worker :** Souscription
 
 <br>
 
-![center](./assets/images/sw_souscription.png)
+![](./assets/images/sw_souscription.png 'center')
 
 ⚠️ register renvoi une Promise
 
@@ -12,13 +12,13 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # ⚠️ Scope
 
 <br><br>
 
-![center](./assets/images/sw_scope.png)
+![](./assets/images/sw_scope.png 'center')
 
 <br>
 

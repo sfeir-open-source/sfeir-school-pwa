@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Créer votre propre manifest
 
@@ -15,17 +15,17 @@
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/installabilite.png" class="transition mask" data-type-show="prez" -->
+<!-- .slide: data-background="./assets/images/installabilite.png" class="transition mask" data-type-show="on-stage" -->
 
 # Installabilité
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++##
 
 # Ajouter à l’écran d’accueil
-
-##--##
 
 <br><br>
 
@@ -35,15 +35,17 @@
   <br><br>
 - Utilisateur engagé...
 
-##--##
+##++##
 
-![center h-600](./assets/images/pwa_add_to_screen.png)
+##++##
+
+![](./assets/images/pwa_add_to_screen.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Et aussi ...
 
@@ -59,7 +61,7 @@ Notes:
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Pour IOS
 
@@ -75,22 +77,22 @@ Notes:
 
 ##==##
 
-<!-- .slide: data-background="./assets/images/install_banner.png" data-type-show="prez" -->
+<!-- .slide: data-background="./assets/images/install_banner.png" data-type-show="on-stage" -->
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Bannière
 
-![center h-700](./assets/images/banniere.png)
+![](./assets/images/banniere.png 'center h-700')
 
 Notes:
 https://developers.google.com/web/fundamentals/engage-and-retain/app-install-banners/web-app-install-banners?hl=en
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Bannière : L’évènement beforeinstallprompt
 
@@ -108,7 +110,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Bannière : L’évènement beforeinstallprompt
 
@@ -130,7 +132,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Reporter l’installation de la bannière
 
@@ -152,7 +154,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Reporter l’installation de la bannière
 
@@ -172,7 +174,7 @@ btnSave.addEventListener('click', () => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Reporter l’installation de la bannière
 
@@ -197,7 +199,7 @@ btnSave.addEventListener('click', () => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Désactiver la bannière
 
@@ -217,7 +219,7 @@ window.addEventListener('beforeinstallprompt', e => {
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # ⚠️ Chrome on Android
 

@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage"-->
 
 # Network First
 
 ##==##
 
-<!-- .sllide: data-type-show="prez-cache prez" -->
+<!-- .sllide: data-type-show="prez-cache on-stage" -->
 
 # Stratégies de cache : Network-first
 
-![center h-800](./assets/images/cache-strategy-network-first.png)
+![](./assets/images/cache-strategy-network-first.png 'center h-800')
 Notes:
 D'abord le réseau, et si erreur, le cache
 Donne au utilisateurs en ligne une version fraiche, et en offline une version en cache qui peut être périmée
@@ -17,7 +17,7 @@ Avatars, classement,
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Network-first : example
 
@@ -44,7 +44,7 @@ On va sur le réseau et en cas d'échec on prend ce qu'il y a en cache
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Network First
 
@@ -59,7 +59,7 @@ On va sur le réseau et en cas d'échec on prend ce qu'il y a en cache
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage"-->
 
 # Network-first : Avec Workbox
 
@@ -84,7 +84,7 @@ Networkd first sera quand même plus adapté à des urls serveur
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Network First avec Workbox
 
@@ -99,13 +99,13 @@ Networkd first sera quand même plus adapté à des urls serveur
 
 ##==##
 
-<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache on-stage"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular - pour les assets
 
@@ -135,7 +135,7 @@ Update: lazy tells the service worker to not cache those resources. Instead, it 
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular - pour les urls type api
 

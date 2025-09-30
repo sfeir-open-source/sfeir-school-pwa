@@ -1,23 +1,20 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Windows Store
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++##
 
 # A - APPX Manifest
 
-Notes:
-Cf https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#set-up-and-run-your-universal-windows-app
-
-##--##
-
 <br>
 
-![center h-400](./assets/images/visual-studio-logo.png)
-
-##--##
+![](./assets/images/visual-studio-logo.png 'center h-400')
+##++##
+##++##
 
 <br><br>
 
@@ -30,23 +27,23 @@ Cf https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-
 4 - Add infos and assets
 
 5 - Test it (Build & Run)
+##++##
 
+Notes:
+Cf https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#set-up-and-run-your-universal-windows-app
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++##
 
 # B - Create your app
 
-Notes:
-Cf https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name
-
-##--##
-
 <br>
 
-![center h-400](./assets/images/windows-dev-center.jpg)
-
-##--##
+![](./assets/images/windows-dev-center.jpg 'center h-400')
+##++##
+##++##
 
 <br><br>
 
@@ -59,23 +56,23 @@ Cf https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reser
 4 - Reserve product name.
 
 5 - Update your appxmanifest.xml accordingly
+##++##
 
+Notes:
+Cf https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++##
 
 # C - Build & Submit
 
-Notes:
-Cf https://docs.pwabuilder.com/quickstart/2018/02/03/quick-start-pwa-using-cli-tools.html
-
-##--##
-
 <br>
 
-![center h-400](./assets/images/pwabuilder-logo.png)
-
-##--##
+![](./assets/images/pwabuilder-logo.png 'center h-400')
+##++##
+##++##
 
 <br><br>
 
@@ -96,19 +93,22 @@ $ pwabuilder package -p windows10 -l debug
 4 - Submit through the Windows Dev Center Dashboard
 
 5 - and wait...
+##++##
 
+Notes:
+Cf https://docs.pwabuilder.com/quickstart/2018/02/03/quick-start-pwa-using-cli-tools.html
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # OR...
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # Automatic PWA importing
 
 <br><br>
 
-![center](./assets/images/bing-logo.png)
+![](./assets/images/bing-logo.png 'center')

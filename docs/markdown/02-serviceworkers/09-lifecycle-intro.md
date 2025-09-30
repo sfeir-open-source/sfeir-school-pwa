@@ -1,18 +1,18 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 <br>
 
-![center h-600](./assets/images/sw_lifecycle.png)
+![](./assets/images/sw_lifecycle.png 'center h-600')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Première installation
 
 <br>
 
-![center h-600](./assets/images/sw_installing.gif)
+![](./assets/images/sw_installing.gif 'center h-600')
 
 Notes:
 
@@ -24,13 +24,13 @@ Notes:
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Mise à jour
 
 <br>
 
-![center h-600](./assets/images/sw_updating.gif)
+![](./assets/images/sw_updating.gif 'center h-600')
 
 Notes:
 https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
@@ -48,11 +48,11 @@ https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 <br>
 
-![center h-700](./assets/images/sw_lifecycle_recap.png)
+![](./assets/images/sw_lifecycle_recap.png 'center h-700')
 
 Notes:
 The service worker becomes idle when not in use and restarts when it's next needed. You cannot rely on a global state persisting between events. If there is information that you need to persist and reuse across restarts, you can use IndexedDB databases.

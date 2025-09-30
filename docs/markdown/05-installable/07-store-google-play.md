@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Google Play
 
 ##==##
 
-<!-- .slide: class="mariane"  data-type-show="prez"-->
+<!-- .slide: class="mariane"  data-type-show="on-stage"-->
 
 <br><br>
 
-![center](./assets/images/store/firtman-twa.png)
+![](./assets/images/store/firtman-twa.png 'center')
 
 [Google Play Store now open for progressive web apps](https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc)
 
@@ -22,7 +22,7 @@ Just to point out that there is much more to it than just simply publishing PWAs
 
 ##==##
 
-<!-- .slide: data-background="" class="flex-row" data-type-show="prez" -->
+<!-- .slide: data-background="" class="flex-row" data-type-show="on-stage" -->
 
 <br><br>
 
@@ -36,17 +36,18 @@ ACTIVITIES
 
 Notes:
 Un nouvelle façon d'apporter d'apporter une experience web dans une application android native
-##==##
-
-<!-- .slide: class="flex-row" data-type-show="prez" -->
-
-![center](./assets/images/store/webview.png)
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
-![center](./assets/images/store/custom-tabs.png)
+![](./assets/images/store/webview.png 'center')
+
+##==##
+
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
+
+![](./assets/images/store/custom-tabs.png 'center')
 
 Notes:
 A toutes les possibilité d'une PWA
@@ -54,33 +55,35 @@ Ressemble a une page web avec la barre au dessus
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++##
 
 # Trusted Web Activities
 
-##--##
-![center h-800](./assets/images/twa-fullscreen.png)
+![](./assets/images/twa-fullscreen.png 'center h-800')
+##++##
+##++##
 
-##--##
-![center h-800](./assets/images/twa-description.png)
+![](./assets/images/twa-description.png 'center h-800')
+##++##
 
 Notes:
 Pas simplement un wrapper d'une appli web qu'on envoie sur le store
 Par exemple, installation store, mode avion => Dino / car par de SW installé
-
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Webview vs Custom Tabs vs TWA
 
 <!-- .slide: class="flex-row" -->
 
-![center h-700](./assets/images/advantages-twa.png)
+![](./assets/images/advantages-twa.png 'center h-700')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # TWA
 
@@ -99,7 +102,7 @@ Il est vérifié que le propriétaire de l'application est le propriétaire du c
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez" -->
+<!-- .slide: class="flex-row" data-type-show="on-stage" -->
 
 # TWA
 
@@ -119,7 +122,7 @@ Accés aux dernières API
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 <br><br><br>
 

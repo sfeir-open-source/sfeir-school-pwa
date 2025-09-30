@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage"-->
 
 # Offline Cookbook - Bonus
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Offline Cookbook
 
@@ -24,18 +24,18 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # On Install - as a dependency
 
-![center h-800](./assets/images/cm-on-install-dep.png)
+![](./assets/images/cm-on-install-dep.png 'center h-800')
 
 Notes:
 Utile pour les données de l'appCache
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="on-stage" -->
 
 # On Install - as a dependency : example
 
@@ -61,18 +61,18 @@ self.addEventListener('install', function(event) {
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # On Install - not as a dependency
 
-![center h-800](./assets/images/cm-on-install-not.png)
+![](./assets/images/cm-on-install-not.png 'center h-800')
 
 Notes:
 Utile pour précharger des données sans tout attendre ! Genre mise en cache de pleins d'éléments mais on priorise uniquement une certaine mise en cache
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="on-stage" -->
 
 # On Install - not as a dependency : example
 
@@ -95,11 +95,11 @@ self.addEventListener('install', function(event) {
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # On Activate
 
-![center h-800](./assets/images/cm-on-activate.png)
+![](./assets/images/cm-on-activate.png 'center h-800')
 
 Notes:
 
@@ -107,7 +107,7 @@ Stratégie classique de nétoyage de cache sur activation du service worker
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="on-stage" -->
 
 # On Activate : example
 
@@ -133,18 +133,18 @@ self.addEventListener('activate', function(event) {
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # On user interaction
 
-![center h-450](./assets/images/cm-on-user-interaction.png)
+![](./assets/images/cm-on-user-interaction.png 'center h-450')
 
 Notes:
 Cas un peu plus original, on se sert d'une interaction utilisateur pour directement mettre en cache certaines données -> une sorte de read it later !
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="on-stage" -->
 
 # On user interaction : example
 
@@ -169,18 +169,18 @@ document.querySelector('.cache-article').addEventListener('click', function(even
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # On push message
 
-![center h-800](./assets/images/cm-on-push.png)
+![](./assets/images/cm-on-push.png 'center h-800')
 
 Notes:
 Ce qui est intéressant c'est qu'on met en cache les données sur un push avant d'afficher la notification qui amènera l'utilisateur à ouvrir la page avec le résultat déjà présent
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="on-stage" -->
 
 # On push message : example
 
@@ -219,18 +219,18 @@ self.addEventListener('notificationclick', function(event) {
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Cache and network race
 
-![center h-800](./assets/images/ss-cache-and-network-race.png)
+![](./assets/images/ss-cache-and-network-race.png 'center h-800')
 
 Notes:
 Dans le cas où les disques sont très lent d'accès (antivirus, ...)
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Cache and network race : example
 
@@ -246,18 +246,18 @@ self.addEventListener('fetch', function(event) {
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Service worker-side templating
 
-![center h-800](./assets/images/ss-sw-side-templating.png)
+![](./assets/images/ss-sw-side-templating.png 'center h-800')
 
 Notes:
 Cas où on va faire du SSR mais côté service worker. On ne solicite plus le serveur que pour les données
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="on-stage" -->
 
 # Service worker-side templating : example
 

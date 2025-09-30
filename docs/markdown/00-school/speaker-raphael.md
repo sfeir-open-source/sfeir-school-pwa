@@ -1,17 +1,17 @@
-<!-- .slide: class="speaker-slide" data-type-show="prez" -->
+<!-- .slide: class="speaker-slide" data-type-show="on-stage" -->
+
+<div class="speaker-slide">
 
 # Présentation
 
-![speaker](./assets/images/raphaelbauduin.jpg)
+![](./assets/images/raphaelbauduin.jpg 'speaker')
 
 ## Raphaël Bauduin
 
 ### Développeur
 
-<!-- .element: class="icon-rule icon-first" -->
-
 ### @raphaelbd
 
-<!-- .element: class="icon-twitter icon-second" -->
+![](./assets/images/logo_sfeir_bleu_orange.png 'company')
 
-![company](./assets/images/logo_sfeir_bleu_orange.png)
+</div>

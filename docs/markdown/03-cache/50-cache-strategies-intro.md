@@ -1,10 +1,10 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez-cache prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="prez-cache on-stage" -->
 
 # Strategies de cache
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez-cache prez" -->
+<!-- .slide: class="flex-row" data-type-show="prez-cache on-stage" -->
 
 # Stratégies de cache
 
@@ -24,11 +24,11 @@ Certaines stratégies ne sont pas à utiliser toutes seules, en général, on va
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de cache : Cache-only
 
-![center h-800](./assets/images/cache-strategy-cache-only.png)
+![](./assets/images/cache-strategy-cache-only.png 'center h-800')
 Notes:
 Ideal pour tout ce qui est considéré comme static a une version du site.
 
@@ -37,11 +37,11 @@ You should have cached these in the install event, so you can depend on them bei
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de cache : Network-only
 
-![center h-800](./assets/images/cache-strategy-network-only.png)
+![](./assets/images/cache-strategy-network-only.png 'center h-800')
 
 Notes:
 on ne veut pas de cache car l'opération est critique/ne peut pas fonctionner hors ligne.
@@ -50,21 +50,21 @@ Si ce n'est qu'une partie de l'application, il est important d'expliquer clairem
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de cache : Cache-first
 
-![center h-800](./assets/images/cache-strategy-cache-first.png)
+![](./assets/images/cache-strategy-cache-first.png 'center h-800')
 Notes:
 D'abord le cache, et si pas trouvé, network
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de cache : Network-first
 
-![center h-800](./assets/images/cache-strategy-network-first.png)
+![](./assets/images/cache-strategy-network-first.png 'center h-800')
 Notes:
 D'abord le réseau, et si erreur, le cache
 Donne au utilisateurs en ligne une version fraiche, et en offline une version en cache qui peut être périmée
@@ -73,22 +73,22 @@ Avatars, classement,
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de cache : Cache-Then-Network
 
-![center h-800](./assets/images/cache-strategy-cache-then-network.png)
+![](./assets/images/cache-strategy-cache-then-network.png 'center h-800')
 
 Notes:
 Ici, on récupère le cache, et en même temps, on va chercher le network. Quand le résultat du network est là, alors on rafraichit de façon pro-active la page
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de cache : Stale-While-Revalidate
 
-![center h-800](./assets/images/cache-strategy-stale-while-revalidate.png)
+![](./assets/images/cache-strategy-stale-while-revalidate.png 'center h-800')
 
 Notes:
 Proche de la version Cache-Then-Network
@@ -96,18 +96,18 @@ Si il existe une version en cache, on l'utilise, puis on telecharge la nouvelle 
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Stratégies de cache : Generic-Fallback
 
-![center h-800](./assets/images/cache-strategy-generic-fallback.png)
+![](./assets/images/cache-strategy-generic-fallback.png 'center h-800')
 
 Notes:
 Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveur, sinon, on prend un résultat par défaut
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Comment faire avec Workbox en cas de besoins spécifiques ?
 
@@ -119,7 +119,7 @@ Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveu
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage" -->
 
 # Comment faire avec Workbox en cas de besoins spécifiques ?
 
@@ -138,13 +138,13 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="transition" data-type-show="prez-cache prez" -->
+<!-- .slide: class="transition" data-type-show="prez-cache on-stage" -->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Avec les frameworks
 
@@ -154,7 +154,7 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage" -->
 
 # Avec Angular
 
@@ -181,7 +181,7 @@ Ce mode là n'est prévu que pour des choses fonctionnant sans appels serve
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage" -->
 
 # Comment faire du spécifique avec Angular ?
 
@@ -203,7 +203,7 @@ self.addEventListener('activate', event => event.waitUntil( ...))
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage" -->
 
 # Comment faire du spécifique avec Angular ?
 
@@ -227,7 +227,7 @@ export class AppModule {}
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez"-->
+<!-- .slide: data-type-show="prez-cache on-stage"-->
 
 # Avec React
 
@@ -240,7 +240,7 @@ export class AppModule {}
 
 # Avec VueJS
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez" -->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage" -->
 
 En utilisant aussi Workbox dans le fichier de config de vue
 

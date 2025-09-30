@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Recap : Arrow function
 

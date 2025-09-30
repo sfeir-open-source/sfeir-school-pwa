@@ -1,23 +1,23 @@
-<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition mask" data-type-show="prez" -->
+<!-- .slide: data-background="./assets/images/control_bg.jpg" class="transition mask" data-type-show="on-stage" -->
 
 # Contrôler le cycle de vie
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 ## Devtools
 
 ### Jouer avec le cycle de vie
 
-![h-600](./assets/images/lifecycle-console.png)
+![](./assets/images/lifecycle-console.png 'h-600')
 
 Notes:
 Montrer à quoi sert le "update on reload" & "unregister" & "update" & numéro de l'identifiant du service worker
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Event API
 
@@ -32,17 +32,18 @@ self.addEventListener('install', event => event.waitUntil(// Promise));
 Notes: Un event est asynchrone, il se termine avant que la Promise ne soit fullfiled
 Se termine avant que l'on ai fini les actions a faire
 Fixé avec waitUntil, qui va attendre la résolution de la dernière promise a l'interieur avant de terminer l'event
+
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Installation
 
-![center h-600](./assets/images/sw_life_cycle_installing.png)
+![](./assets/images/sw_life_cycle_installing.png 'center h-600')
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # skipWaiting
 
@@ -75,15 +76,15 @@ The claim() method of the of the Clients interface allows an active Service Work
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Activation
 
-![center h-600](./assets/images/sw_life_cycle_activating.png)
+![](./assets/images/sw_life_cycle_activating.png 'center h-600')
 
 ##==##
 
-<!-- .slide: class="with-code"  data-type-show="prez"-->
+<!-- .slide: class="with-code"  data-type-show="on-stage"-->
 
 # claim
 

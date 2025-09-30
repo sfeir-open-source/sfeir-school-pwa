@@ -1,10 +1,10 @@
-<!-- .slide: class="transition" data-type-show="prez"-->
+<!-- .slide: class="transition" data-type-show="on-stage"-->
 
 # WebAuthN
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN ou FIDO Authentication
 
@@ -16,7 +16,7 @@ Leur but est de proposer des standards d'authentification forte qui soient à la
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN Pourquoi ?
 
@@ -27,11 +27,13 @@ Leur but est de proposer des standards d'authentification forte qui soient à la
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN Fonctionnement ?
 
-![full-center h-800](./assets/images/webAuthN-how.svg)
+![](./assets/images/webAuthN-how.svg 'h-800')
+
+<!-- .element: class="full-center" -->
 
 Notes:
 
@@ -47,21 +49,25 @@ Notes:
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Pourquoi WebAuthN est resistant au phishing ?
 
 ## Exemple de phishing
 
-![full-center h-800](./assets/images/webAuthN-phishing.svg)
+![](./assets/images/webAuthN-phishing.svg 'h-800')
+
+<!-- .element: class="full-center" -->
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Pourquoi WebAuthN est resistant au phishing ?
 
-![full-center h-800](./assets/images/webAuthN-phishing-check.svg)
+![](./assets/images/webAuthN-phishing-check.svg 'h-800')
+
+<!-- .element: class="full-center" -->
 
 Notes:
 Lorsque le défi est reçu, l'authentificateur vérifie le nom de domaine d'où provient le défi.
@@ -70,21 +76,23 @@ où il saisit ses informations d'identification, qui sont ensuite utilisées pou
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN, quels moyens d'authentification ?
 
-![full-center h-800](./assets/images/webAuthN-authenticators.svg)
+![](./assets/images/webAuthN-authenticators.svg 'h-800')
+
+<!-- .element: class="full-center" -->
 
 ##==##
 
-<!-- .slide: class="transition" data-type-show="prez"-->
+<!-- .slide: class="transition" data-type-show="on-stage"-->
 
 # WebAuthN - L'enregistrement
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - L'enregistrement
 
@@ -103,7 +111,7 @@ const response = await rawGetResponse.json();
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - L'enregistrement
 
@@ -155,7 +163,7 @@ This OPTIONAL member contains additional parameters requesting additional proces
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - L'enregistrement
 
@@ -177,7 +185,7 @@ This OPTIONAL member contains additional parameters requesting additional proces
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - L'enregistrement
 
@@ -195,7 +203,7 @@ On renvoie le challenge au navigateur pour qu'il puisse créer la signature.
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - L'enregistrement
 
@@ -217,7 +225,7 @@ return await _fetch(`/auth/signinResponse`, credential);
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - L'enregistrement
 
@@ -225,19 +233,21 @@ Par la suite, on va stocker les informations côté serveur et côté client de 
 
 ##==##
 
-<!-- .slide: class="transition" data-type-show="prez"-->
+<!-- .slide: class="transition" data-type-show="on-stage"-->
 
 # WebAuthN - L'authentification
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - L'authentification
 
 En fait l'authentification fonctionne de la même manière que l'enregistrement en terme d'étapes.
 
-![full-center h-800](./assets/images/webAuthN-how.svg)
+![](./assets/images/webAuthN-how.svg 'h-800')
+
+<!-- .element: class="full-center" -->
 
 Notes:
 
@@ -253,7 +263,7 @@ Notes:
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - multiples authenticators
 
@@ -263,7 +273,7 @@ Il est donc recommandé d'avoir la possibilité de "stocker" / "associer" plusie
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # WebAuthN - authent sans mot de passe ?
 

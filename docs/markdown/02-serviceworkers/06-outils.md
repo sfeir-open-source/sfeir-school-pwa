@@ -1,28 +1,28 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Outils
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Chrome Devtools
 
-![center h-800](assets/images/chrome_devtools.png)
+![](assets/images/chrome_devtools.png 'center h-800')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Firefox Devtools
 
 Saisir _about:debugging_ dans l'url d'un nouvel onglet
 
-![center h-500](assets/images/firefox_devtools.png)
+![](assets/images/firefox_devtools.png 'center h-500')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Safari Devtools
 
@@ -30,11 +30,11 @@ Cliquer sur _Preferences_ / _Advanced_ et cocher l'option 'Show Develop menu in 
 
 Cliquer sur _Develop_ / _Service workers_ / _http://localhost:8080_
 
-![center h-400](assets/images/safari_devtools.png)
+![](assets/images/safari_devtools.png 'center h-400')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # En savoir plus sur les devtools ?
 

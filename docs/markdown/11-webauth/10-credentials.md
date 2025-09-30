@@ -1,10 +1,10 @@
-<!-- .slide: class="transition" data-type-show="prez"-->
+<!-- .slide: class="transition" data-type-show="on-stage"-->
 
 # Credentials
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Credential Management API
 
@@ -17,23 +17,23 @@ Api permettant de stocker de stocker et récupérer des informations d'identific
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Flot d'enregistrement
 
-![center h-800](./assets/images/credential-managment-register.svg)
+![](./assets/images/credential-managment-register.svg 'center h-800')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Flot Auto Sign-In
 
-![center h-800](./assets/images/credential-managment-auto-sign-in.svg)
+![](./assets/images/credential-managment-auto-sign-in.svg 'center h-800')
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Détail de l'API : Existence
 
@@ -47,7 +47,7 @@ if (window.PasswordCredential || window.FederatedCredential) {
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # Détail de l'API : Enregistrement
 
@@ -59,7 +59,7 @@ navigator.credentials.store(credential);
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # Enregistrement d'un password
 
@@ -75,7 +75,7 @@ new PasswordCredential({
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # Enregistrement d'une identité fédérée
 
@@ -94,7 +94,7 @@ Le `protocol` doit être à `null` si il peut être inéféré par le provider
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # Détail de l'API : Auto Sign-In
 
@@ -112,7 +112,7 @@ On peut "forcer" l'auto sign-in ou le proposer à l'utilisateur.
 
 ##==##
 
-  <!-- .slide: data-type-show="prez" -->
+  <!-- .slide: data-type-show="on-stage" -->
 
 # Auto Sign-In : fonctionnement
 
@@ -135,7 +135,7 @@ Attention, si il y a plusieurs comptes et qu'on est en mode 'silent', ça ne ren
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Auto Sign-In : médiation
 
@@ -149,7 +149,7 @@ La médiation peut prendre 3 valeurs :
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Auto Sign-In : récupération des credentials
 
@@ -170,8 +170,8 @@ navigator.credentials.get({...}).then((credential) => {
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Tableau de compatibilité
 
-![center h-800](./assets/images/caniuse_credential-managment.png)
+![](./assets/images/caniuse_credential-managment.png 'center h-800')

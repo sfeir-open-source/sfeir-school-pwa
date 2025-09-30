@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Offline.html
 
@@ -13,8 +13,8 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Offline First
 
-![center h-700](./assets/images/sw_offline_first.png)
+![](./assets/images/sw_offline_first.png 'center h-700')

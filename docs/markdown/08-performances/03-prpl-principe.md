@@ -1,25 +1,25 @@
-<!-- .slide: class="transition" data-type-show="prez"-->
+<!-- .slide: class="transition" data-type-show="on-stage"-->
 
 # The PRPL Pattern
 
 ##==##
 
-<!-- .slide: class="transition bg-blue" data-type-show="prez"-->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage"-->
 
 # Principles
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # P.R.P.L
 
 <br>
 
-![border-circle red w-300](./assets/images/PRPL/push.png)
-![border-circle green w-300](./assets/images/PRPL/render.svg)
-![border-circle blue w-300](./assets/images/PRPL/precache.png)
-![border-circle purple w-300](./assets/images/PRPL/lazy.png)
+![](./assets/images/PRPL/push.png 'border-circle red w-300')
+![](./assets/images/PRPL/render.svg 'border-circle green w-300')
+![](./assets/images/PRPL/precache.png 'border-circle blue w-300')
+![](./assets/images/PRPL/lazy.png 'border-circle purple w-300')
 
 <p>
 <span class="center"><strong>PUSH</strong></span>
@@ -30,16 +30,16 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # P.R.P.L
 
 <br>
 
-![border-circle red w-300](./assets/images/PRPL/push.png)
-![border-circle green w-300](./assets/images/PRPL/render.svg)
-![border-circle blue w-300](./assets/images/PRPL/precache.png)
-![border-circle purple w-300](./assets/images/PRPL/lazy.png)
+![](./assets/images/PRPL/push.png 'border-circle red w-300')
+![](./assets/images/PRPL/render.svg 'border-circle green w-300')
+![](./assets/images/PRPL/precache.png 'border-circle blue w-300')
+![](./assets/images/PRPL/lazy.png 'border-circle purple w-300')
 
 <p>
 <span class="center"><strong>PUSH</strong><br/> critical resources<br/> for the initial URL route</span>
@@ -50,24 +50,24 @@
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # P.R.P.L
 
-![center h-800](./assets/images/prpl.png)
+![](./assets/images/prpl.png 'center h-800')
 
 ##==##
 
-<!-- .slide: class="flex-row" data-type-show="prez"-->
+<!-- .slide: class="flex-row" data-type-show="on-stage"-->
 
 # P.R.P.L
 
 <br>
 
-![border-circle red w-300](./assets/images/PRPL/push.png)
-![border-circle green w-300](./assets/images/PRPL/render.svg)
-![border-circle blue w-300](./assets/images/PRPL/precache.png)
-![border-circle purple w-300](./assets/images/PRPL/lazy.png)
+![](./assets/images/PRPL/push.png 'border-circle red w-300')
+![](./assets/images/PRPL/render.svg 'border-circle green w-300')
+![](./assets/images/PRPL/precache.png 'border-circle blue w-300')
+![](./assets/images/PRPL/lazy.png 'border-circle purple w-300')
 
 <p>
 <span class="center">HTTP/2 Server Push</span>
@@ -78,11 +78,11 @@
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # App Structure
 
-![center h-800](./assets/images/PRPL/app-build-components.png)
+![](./assets/images/PRPL/app-build-components.png 'center h-800')
 
 © [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) [Google](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
 

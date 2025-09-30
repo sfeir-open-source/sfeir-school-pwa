@@ -1,4 +1,4 @@
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Ressources
 
@@ -12,6 +12,6 @@
 
 ##==##
 
-<!-- .slide: class="transition" data-type-show="prez" -->
+<!-- .slide: class="transition" data-type-show="on-stage" -->
 
 # Conclusion

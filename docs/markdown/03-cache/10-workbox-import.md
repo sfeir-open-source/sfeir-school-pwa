@@ -1,10 +1,10 @@
-<!-- .slide: class="transition" data-background="#fb8c00" data-type-show="prez" -->
+<!-- .slide: class="transition" data-background="#fb8c00" data-type-show="on-stage" -->
 
 # Workbox
 
 ##==##
 
-<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-background="#fb8c00" data-type-show="on-stage" -->
 
 # Importer Workbox
 

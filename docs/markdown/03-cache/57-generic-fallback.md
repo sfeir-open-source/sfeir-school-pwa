@@ -1,21 +1,21 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage"-->
 
 # Generic Fallback
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Stratégies de cache : Generic-Fallback
 
-![center h-800](./assets/images/cache-strategy-generic-fallback.png)
+![](./assets/images/cache-strategy-generic-fallback.png 'center h-800')
 
 Notes:
 Si il existe une version en cache, on l'utilise, sinon, on prend celle du serveur, sinon, on prend un résultat par défaut
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Generic-Fallback : example
 
@@ -36,7 +36,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Generic FallBack
 
@@ -50,7 +50,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Generic Fallback : Avec Workbox
 
@@ -73,7 +73,7 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Generic Fallback avec Workbox
 
@@ -87,13 +87,13 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache on-stage"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular
 

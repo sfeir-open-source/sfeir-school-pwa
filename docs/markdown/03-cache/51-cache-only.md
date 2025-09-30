@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-green" data-type-show="prez-cache prez" -->
+<!-- .slide: class="transition bg-green" data-type-show="prez-cache on-stage" -->
 
 # Cache Only
 
 ##==##
 
-<!-- .slide: data-type-show="prez-cache prez" -->
+<!-- .slide: data-type-show="prez-cache on-stage" -->
 
 # Stratégies de cache : Cache-only
 
-![center h-800](./assets/images/cache-strategy-cache-only.png)
+![](./assets/images/cache-strategy-cache-only.png 'center h-800')
 Notes:
 Ideal pour tout ce qui est considéré comme static a une version du site.
 
@@ -17,7 +17,7 @@ You should have cached these in the install event, so you can depend on them bei
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-only : Initialisation
 
@@ -40,7 +40,7 @@ self.addEventListener('install', event =>
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez-cache prez" -->
+<!-- .slide: class="with-code" data-type-show="prez-cache on-stage" -->
 
 # Cache-only : Utilisation
 
@@ -56,7 +56,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache Only (ou installation App-Shell)
 
@@ -70,7 +70,7 @@ self.addEventListener('fetch', event => {
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-only : Avec Workbox (Initialisation et Utilisation)
 
@@ -93,7 +93,7 @@ precacheAndRoute(cacheAppShellStatic);
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Cache-only : Avec Workbox (Initialisation et Utilisation) bis
 
@@ -116,7 +116,7 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="exercice" data-type-show="prez" -->
+<!-- .slide: class="exercice" data-type-show="on-stage" -->
 
 # Cache Only avec Workbox
 
@@ -131,13 +131,13 @@ registerRoute(
 
 ##==##
 
-<!-- .slide: class="transition bg-white" data-type-show="prez-cache prez"-->
+<!-- .slide: class="transition bg-white" data-type-show="prez-cache on-stage"-->
 
 # Avec les frameworks
 
 ##==##
 
-<!-- .slide: class="with-code max-height" data-type-show="prez-cache prez"-->
+<!-- .slide: class="with-code max-height" data-type-show="prez-cache on-stage"-->
 
 # Avec Angular
 

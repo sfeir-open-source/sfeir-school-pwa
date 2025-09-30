@@ -1,14 +1,14 @@
-<!-- .slide: class="transition bg-blue" data-type-show="prez" -->
+<!-- .slide: class="transition bg-blue" data-type-show="on-stage" -->
 
 # Rendre l'application installable
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Objectifs
 
-![h-700 float-left](./assets/images/devoxx_app.gif)
+![](./assets/images/devoxx_app.gif 'h-700 float-left')
 
 <!-- .element: style="margin-left:500px; margin-right:50px;" -->
 
@@ -22,13 +22,13 @@
 
 ##==##
 
-<!-- .slide: class="transition top mask" data-background="./assets/images/manifest.png" data-type-show="prez" -->
+<!-- .slide: class="transition top mask" data-background="./assets/images/manifest.png" data-type-show="on-stage" -->
 
 # Le Manifest
 
 ##==##
 
-<!-- .slide: class="with-code" data-type-show="prez" -->
+<!-- .slide: class="with-code" data-type-show="on-stage" -->
 
 # Manifest : lier à l'application
 
@@ -46,13 +46,11 @@ https://developers.google.com/web/updates/2014/11/Support-for-installable-web-ap
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Le fichier
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -73,21 +71,21 @@ https://developers.google.com/web/updates/2014/11/Support-for-installable-web-ap
 }
 ```
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/black_phone.png)
+![](./assets/images/black_phone.png 'center h-600')
+##++##
 
 Notes:
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Icône
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -106,22 +104,21 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
+##++##
+##++##
+
+![](./assets/images/pwa_icon.png 'center h-600')
+
+##++##
+
 Notes:
-##--##
-
-![center h-600](./assets/images/pwa_icon.png)
-
-Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Page de garde (splash screen)
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -137,21 +134,20 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_splash.png)
+![](./assets/images/pwa_splash.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Premier écran
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -163,21 +159,20 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_first-screen.png)
+![](./assets/images/pwa_first-screen.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Premier écran pour l'analytics
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -189,21 +184,20 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_first-screen.png)
+![](./assets/images/pwa_first-screen.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Browser
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -215,21 +209,20 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_first-screen-window.png)
+![](./assets/images/pwa_first-screen-window.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Standalone
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -241,21 +234,20 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_first-screen-standalone.png)
+![](./assets/images/pwa_first-screen-standalone.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Minimal-ui
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -267,21 +259,20 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_first-screen.png)
+![](./assets/images/pwa_first-screen.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Video Games
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -294,21 +285,20 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_games.png)
+![](./assets/images/pwa_games.png 'center h-600')
+##++##
 
 Notes:
-
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="tc-multiple-columns" -->
+
+##++## class="with-code"
 
 # Video Games
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 {
@@ -321,21 +311,22 @@ Notes:
 
 <!-- .element: class="big-code" -->
 
-##--##
+##++##
+##++##
 
-![center h-600](./assets/images/pwa_games_landscape.png)
+![](./assets/images/pwa_games_landscape.png 'center h-600')
+##++##
 
 Notes:
 
 <br>
-
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Générateur de manifest
 
-![center h-700](./assets/images/manifest_generator.png)
+![](./assets/images/manifest_generator.png 'center h-700')
 
 <br>
 
@@ -347,8 +338,8 @@ https://app-manifest.firebaseapp.com/
 
 ##==##
 
-<!-- .slide: data-type-show="prez" -->
+<!-- .slide: data-type-show="on-stage" -->
 
 # Tester
 
-![center h-800](./assets/images/devtools_manifest.png)
+![](./assets/images/devtools_manifest.png 'center h-800')
